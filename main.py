@@ -5,7 +5,6 @@ from url_processor import UrlProcessor
 from summary_generator import SummaryGenerator
 from image_extractor import ImageExtractor
 
-# Comment
 def main(input_file: str, output_file: str) -> None:
     csv_handler = CsvHandler(input_file, output_file)
     try:
