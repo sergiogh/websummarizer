@@ -13,6 +13,7 @@ class SummaryGenerator:
         try:
             response = openai.ChatCompletion.create(
                 model='gpt-4',
+                temperature=0.5,
                 messages=[
                     {"role": "system", "content": prompt},
                     {"role": "system", "content": self.content[:8000]},
