@@ -3,6 +3,7 @@ from io import StringIO
 from datetime import datetime, timedelta
 from typing import List, Dict
 import csv
+import os
 
 
 class SpreadsheetConnector:
@@ -14,7 +15,7 @@ class SpreadsheetConnector:
 
     def get_content(self) -> None:
         try:
-            spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1snMpgRVto2fuOh4MYfsrw9A-Xw9LER7dUwnk22XgkCc/export?format=csv'
+            spreadsheet_url = os.getenv('GOOGLE_SHEET')
             response = requests.get(spreadsheet_url)
             csv_content = StringIO(response.text)
             reader = csv.reader(csv_content)

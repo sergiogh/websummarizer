@@ -12,7 +12,7 @@ class ImageExtractor:
         """Extract the most relevant image from the URL."""
         try:
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-            response = requests.get(self.url, headers=headers)
+            response = requests.get(self.url, headers=headers, timeout=25)
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             images = soup.find_all('img', {'src': True})

@@ -1,5 +1,6 @@
 import openai
 from typing import Optional
+import os
 
 class SummaryGenerator:
     def __init__(self, content: str):
@@ -9,7 +10,7 @@ class SummaryGenerator:
     def generate_summary(self, prompt) -> None:
         """Generate a summary of the content using the GPT4 API."""
 
-        openai.api_key = "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"
+        openai.api_key = os.getenv('OPENAI_API_KEY')
         try:
             response = openai.ChatCompletion.create(
                 model='gpt-4',

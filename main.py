@@ -1,10 +1,14 @@
-## main.py
+from dotenv import load_dotenv
+
 from spreadsheet_connector import SpreadsheetConnector
 from url_processor import UrlProcessor
 from summary_generator import SummaryGenerator
 from image_extractor import ImageExtractor
 
+
 def main() -> None:
+
+    load_dotenv()
     
     spreadsheet_handler = SpreadsheetConnector()
     spreadsheet_handler.get_content()
