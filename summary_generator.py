@@ -8,13 +8,12 @@ class SummaryGenerator:
         self.summary: Optional[str] = None
 
     def generate_summary(self, prompt) -> None:
-        """Generate a summary of the content using the GPT4 API."""
+        """Generate a summary of the content."""
 
         openai.api_key = os.getenv('OPENAI_API_KEY')
         try:
             response = openai.ChatCompletion.create(
-                model='gpt-4',
-                temperature=0.5,
+                model='o1',
                 messages=[
                     {"role": "system", "content": prompt},
                     {"role": "system", "content": self.content[:8000]},
@@ -23,7 +22,7 @@ class SummaryGenerator:
             )
             
             self.summary = response['choices'][0]['message']['content']
-
+            
         except Exception as e:
             print(f"Error generating summary: {e}")
             self.summary = None
