@@ -99,6 +99,14 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertIn("Key detail:", standardized)
         self.assertIn("Why this matters:", standardized)
 
+    def test_standardize_story_summary_keeps_vs_sentence_complete(self):
+        standardized = standardize_story_summary(
+            "The team benchmarked runtime improvements in production. "
+            "The solver achieved 13.7 s vs. 45.7 s on the same family of instances. "
+            "This improves reliability under tight latency budgets."
+        )
+        self.assertIn("13.7 s vs. 45.7 s", standardized)
+
     def test_curate_stories_applies_primary_and_overflow_limits(self):
         stories = []
         for idx in range(30):

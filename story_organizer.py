@@ -297,10 +297,34 @@ def _split_sentences(text: str) -> List[str]:
     if not text:
         return []
     cleaned = _normalize_spaces(text)
-    parts = re.split(r"(?<=[.!?])\s+", cleaned)
+
+    placeholder = "<DOT>"
+    abbreviations = (
+        "vs.",
+        "e.g.",
+        "i.e.",
+        "etc.",
+        "mr.",
+        "mrs.",
+        "ms.",
+        "dr.",
+        "prof.",
+        "sr.",
+        "jr.",
+    )
+    protected = cleaned
+    for token in abbreviations:
+        protected = re.sub(
+            re.escape(token),
+            token.replace(".", placeholder),
+            protected,
+            flags=re.IGNORECASE,
+        )
+
+    parts = re.split(r"(?<=[.!?])\s+", protected)
     sentences = []
     for part in parts:
-        sentence = _normalize_spaces(part)
+        sentence = _normalize_spaces(part.replace(placeholder, "."))
         if sentence:
             sentences.append(sentence)
     return sentences
@@ -311,16 +335,6 @@ def _ensure_sentence(text: str, fallback: str) -> str:
     if sentence and sentence[-1] not in ".!?":
         sentence += "."
     return sentence
-
-
-def _trim_words(text: str, max_words: int = 36) -> str:
-    words = (text or "").split()
-    if len(words) <= max_words:
-        return text
-    trimmed = " ".join(words[:max_words]).rstrip(" ,;:")
-    if trimmed and trimmed[-1] not in ".!?":
-        trimmed += "…"
-    return trimmed
 
 
 def _find_metric_sentence(sentences: Sequence[str]) -> str:
@@ -376,9 +390,9 @@ def standardize_story_summary(summary: str) -> str:
     if not why:
         why = "The source provides a concrete development but limited explicit impact context"
 
-    what = _ensure_sentence(_trim_words(what), "No source summary was generated.")
-    key = _ensure_sentence(_trim_words(key), "No quantitative metric disclosed in source.")
-    why = _ensure_sentence(_trim_words(why), "No impact statement can be derived from the available source text.")
+    what = _ensure_sentence(what, "No source summary was generated.")
+    key = _ensure_sentence(key, "No quantitative metric disclosed in source.")
+    why = _ensure_sentence(why, "No impact statement can be derived from the available source text.")
 
     return f"{_WHAT_LABEL} {what}\n{_KEY_LABEL} {key}\n{_WHY_LABEL} {why}"
 
