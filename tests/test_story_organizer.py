@@ -95,9 +95,11 @@ class StoryOrganizerTests(unittest.TestCase):
             "This enables larger optimization workloads on hardware."
         )
 
-        self.assertIn("What happened:", standardized)
-        self.assertIn("Key detail:", standardized)
-        self.assertIn("Why this matters:", standardized)
+        self.assertNotIn("What happened:", standardized)
+        self.assertNotIn("Key detail:", standardized)
+        self.assertNotIn("Why this matters:", standardized)
+        self.assertIn("This matters because", standardized)
+        self.assertIn("Recent newsletters", standardized)
 
     def test_standardize_story_summary_keeps_vs_sentence_complete(self):
         standardized = standardize_story_summary(
@@ -126,6 +128,28 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_RESEARCH], 3)
         self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_INDUSTRY_INVESTMENT], 3)
         self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_POLICY_SECURITY], 2)
+
+    def test_overflow_prefers_lower_relevance_stories(self):
+        stories = []
+        for idx in range(20):
+            tag = "research" if idx < 8 else "other"
+            summary = (
+                "A benchmark study reports 99 percent fidelity and a major deployment milestone."
+                if idx < 8
+                else "General update with limited details."
+            )
+            stories.append(
+                {
+                    "story_id": str(idx),
+                    "title": f"Story {idx}",
+                    "summary": summary,
+                    "url": f"https://example.com/story-{idx}",
+                    "tag": tag,
+                }
+            )
+        curated = curate_stories(stories, primary_limit=8, overflow_limit=4)
+        overflow_ids = {story["story_id"] for story in curated["overflow"]}
+        self.assertTrue(any(int(story_id) >= 8 for story_id in overflow_ids))
 
 
 if __name__ == "__main__":
