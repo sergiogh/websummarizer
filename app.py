@@ -1247,7 +1247,7 @@ ARCHIVE_EDITOR_TEMPLATE = """<!DOCTYPE html>
         <div class="chat-note" id="model-label"></div>
       </header>
       <div class="chat-key" id="chat-key">
-        <label for="chat-api-key">OpenAI API key</label>
+        <label for="chat-api-key" id="chat-api-key-label">OpenAI API key (optional override)</label>
         <input id="chat-api-key" type="password" autocomplete="off" placeholder="sk-..." />
       </div>
       <div id="chat-log" class="chat-log"></div>
@@ -1274,6 +1274,7 @@ ARCHIVE_EDITOR_TEMPLATE = """<!DOCTYPE html>
     const chatSend = document.getElementById('chat-send');
     const chatKeyContainer = document.getElementById('chat-key');
     const chatApiKey = document.getElementById('chat-api-key');
+    const chatApiKeyLabel = document.getElementById('chat-api-key-label');
     const modelLabel = document.getElementById('model-label');
     const resetButton = document.getElementById('reset-button');
     const applyPreviewButton = document.getElementById('apply-preview-button');
@@ -1440,8 +1441,14 @@ ARCHIVE_EDITOR_TEMPLATE = """<!DOCTYPE html>
       : 'Loaded from server archive';
     modelLabel.textContent = 'Model: ' + String(bootstrap.model || 'gpt-5') + '. Prompts edit the full HTML and update preview live.';
 
+    chatKeyContainer.classList.add('visible');
     if (bootstrap.requires_api_key) {
-      chatKeyContainer.classList.add('visible');
+      if (chatApiKeyLabel) {
+        chatApiKeyLabel.textContent = 'OpenAI API key (required)';
+      }
+      if (chatApiKey) {
+        chatApiKey.placeholder = 'sk-... (required)';
+      }
     }
 
     addChatMessage('assistant', 'Share what to change. I will update the HTML and refresh the preview.');
@@ -2612,16 +2619,15 @@ def apply_archive_edit():
     html_content = payload.get("html") or ""
     instruction = (payload.get("instruction") or "").strip()
     provided_api_key = (payload.get("openai_api_key") or "").strip()
+    effective_api_key = provided_api_key or (os.getenv("OPENAI_API_KEY") or "").strip()
 
     if not isinstance(html_content, str):
         return jsonify({"ok": False, "error": "Invalid HTML payload."}), 400
     if not instruction:
         return jsonify({"ok": False, "error": "Edit instruction is required."}), 400
 
-    try:
-        prepare_runtime_env(api_key=provided_api_key, require_openai=True)
-    except Exception as exc:
-        return jsonify({"ok": False, "error": str(exc)}), 500
+    if not effective_api_key:
+        return jsonify({"ok": False, "error": "OpenAI API key is required."}), 400
 
     raw_messages = payload.get("messages") or []
     history = []
@@ -2660,7 +2666,7 @@ def apply_archive_edit():
     )
 
     try:
-        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        client = OpenAI(api_key=effective_api_key)
         messages = [{"role": "system", "content": system_prompt}]
         messages.extend(history)
         messages.append({"role": "user", "content": prompt})
