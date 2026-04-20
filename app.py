@@ -2669,7 +2669,6 @@ def apply_archive_edit():
             completion = client.chat.completions.create(
                 model=OPENAI_EDIT_MODEL,
                 messages=messages,
-                temperature=0.2,
             )
             content = ""
             if getattr(completion, "choices", None):
@@ -2717,7 +2716,6 @@ def apply_archive_edit():
             completion = client.chat.completions.create(
                 model=OPENAI_EDIT_MODEL,
                 messages=body_messages,
-                temperature=0.2,
             )
             content = ""
             if getattr(completion, "choices", None):
