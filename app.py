@@ -53,6 +53,8 @@ STORY_PARSE_TIMEOUT_SECONDS = int(os.getenv("STORY_PARSE_TIMEOUT_SECONDS", "210"
 FALLBACK_FETCH_TIMEOUT_SECONDS = int(os.getenv("FALLBACK_FETCH_TIMEOUT_SECONDS", "8"))
 OPENAI_IMAGE_MODEL = os.getenv("OPENAI_IMAGE_MODEL", "dall-e-3")
 OPENAI_EDIT_MODEL = os.getenv("OPENAI_EDIT_MODEL", "gpt-5")
+OPENAI_EDIT_HISTORY_LIMIT = int(os.getenv("OPENAI_EDIT_HISTORY_LIMIT", "10"))
+OPENAI_EDIT_MAX_BODY_CHARS = int(os.getenv("OPENAI_EDIT_MAX_BODY_CHARS", "450000"))
 DEFAULT_GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1DY5RJlMcSuRGZ-0cvoK5VWoWzu4AMFh3gHglVqU9Src/export?format=csv&gid=0"
 
 
@@ -906,6 +908,70 @@ def parse_html_edit_response(raw_text: str, fallback_html: str):
         return cleaned, "Applied your requested edits."
 
     return fallback_html, cleaned[:220]
+
+
+def parse_body_edit_response(raw_text: str, fallback_body: str):
+    cleaned = _strip_markdown_fence(raw_text)
+    if not cleaned:
+        return fallback_body, "Applied your requested edits."
+
+    try:
+        parsed = json.loads(cleaned)
+        if isinstance(parsed, dict):
+            updated_body = parsed.get("updated_body_html") or parsed.get("body_html") or ""
+            assistant_message = parsed.get("assistant_message") or parsed.get("message") or ""
+            if isinstance(updated_body, str) and updated_body.strip():
+                return updated_body, (assistant_message or "Applied your requested edits.")
+    except Exception:
+        pass
+
+    if "<" in cleaned:
+        return cleaned, "Applied your requested edits."
+    return fallback_body, cleaned[:220]
+
+
+_DATA_URI_RE = re.compile(r"data:[^\"'\s>]+;base64,[A-Za-z0-9+/=\s]+", flags=re.IGNORECASE)
+
+
+def redact_inline_data_uris(html_content: str):
+    if not html_content:
+        return "", {}, 0
+
+    replacements = {}
+
+    def _replace(match):
+        token = "__INLINE_DATA_URI_%05d__" % (len(replacements) + 1)
+        replacements[token] = match.group(0)
+        return token
+
+    redacted = _DATA_URI_RE.sub(_replace, html_content)
+    return redacted, replacements, len(replacements)
+
+
+def restore_inline_data_uris(html_content: str, replacements):
+    restored = html_content or ""
+    for token, value in (replacements or {}).items():
+        restored = restored.replace(token, value)
+    return restored
+
+
+def extract_body_segments(html_content: str):
+    match = re.search(r"(<body\b[^>]*>)([\s\S]*?)(</body>)", html_content or "", flags=re.IGNORECASE)
+    if not match:
+        return None
+    prefix = (html_content or "")[: match.start(2)]
+    body = match.group(2)
+    suffix = (html_content or "")[match.end(2) :]
+    return prefix, body, suffix
+
+
+def is_request_too_large_error(exc: Exception) -> bool:
+    message = str(exc).lower()
+    return (
+        "request too large" in message
+        or ("tokens per min" in message and "requested" in message and "limit" in message)
+        or ("rate_limit_exceeded" in message and "tokens" in message)
+    )
 
 
 ARCHIVE_EDITOR_TEMPLATE = """<!DOCTYPE html>
@@ -2560,7 +2626,7 @@ def apply_archive_edit():
     raw_messages = payload.get("messages") or []
     history = []
     if isinstance(raw_messages, list):
-        for item in raw_messages[-10:]:
+        for item in raw_messages[-OPENAI_EDIT_HISTORY_LIMIT:]:
             if not isinstance(item, dict):
                 continue
             role = (item.get("role") or "").strip()
@@ -2569,11 +2635,19 @@ def apply_archive_edit():
                 continue
             history.append({"role": role, "content": content[:1200]})
 
+    model_html, data_uri_tokens, data_uri_count = redact_inline_data_uris(html_content)
+    asset_note = ""
+    if data_uri_count:
+        asset_note = (
+            "\n\nNote: inline base64 asset payloads were replaced with placeholder tokens like "
+            "__INLINE_DATA_URI_00001__ to keep this request within token limits. Preserve these tokens."
+        )
+
     prompt = (
         "User request:\n%s\n\n"
         "Current HTML:\n%s\n\n"
         "Return the complete updated HTML document."
-    ) % (instruction, html_content)
+    ) % (instruction, model_html + asset_note)
 
     system_prompt = (
         "You are an HTML newsletter editor.\n"
@@ -2591,17 +2665,74 @@ def apply_archive_edit():
         messages.extend(history)
         messages.append({"role": "user", "content": prompt})
 
-        completion = client.chat.completions.create(
-            model=OPENAI_EDIT_MODEL,
-            messages=messages,
-            temperature=0.2,
-        )
-        content = ""
-        if getattr(completion, "choices", None):
-            content = completion.choices[0].message.content or ""
-        updated_html, assistant_message = parse_html_edit_response(content, html_content)
+        try:
+            completion = client.chat.completions.create(
+                model=OPENAI_EDIT_MODEL,
+                messages=messages,
+                temperature=0.2,
+            )
+            content = ""
+            if getattr(completion, "choices", None):
+                content = completion.choices[0].message.content or ""
+            updated_html_model, assistant_message = parse_html_edit_response(content, model_html)
+        except Exception as exc:
+            if not is_request_too_large_error(exc):
+                raise
+
+            body_segments = extract_body_segments(model_html)
+            if not body_segments:
+                raise
+
+            prefix, body_html, suffix = body_segments
+            if len(body_html) > OPENAI_EDIT_MAX_BODY_CHARS:
+                return jsonify(
+                    {
+                        "ok": False,
+                        "error": (
+                            "Edit request is still too large after optimization. "
+                            "Try editing a smaller section or removing oversized embedded content first."
+                        ),
+                    }
+                ), 413
+
+            body_system_prompt = (
+                "You are an HTML newsletter editor.\n"
+                "Apply the user request only to the provided BODY fragment.\n"
+                "Return valid HTML fragment for the body contents only (no <html>, <head>, or <body> wrapper).\n"
+                "Preserve placeholder tokens like __INLINE_DATA_URI_00001__ unless user requested removing that element.\n"
+                "Respond as strict JSON with exactly two keys:\n"
+                "updated_body_html: full edited body fragment\n"
+                "assistant_message: concise summary of what changed."
+            )
+            body_prompt = (
+                "User request:\n%s\n\n"
+                "Current BODY HTML fragment:\n%s\n\n"
+                "Return only the updated BODY fragment."
+            ) % (instruction, body_html + asset_note)
+
+            body_messages = [
+                {"role": "system", "content": body_system_prompt},
+                {"role": "user", "content": body_prompt},
+            ]
+            completion = client.chat.completions.create(
+                model=OPENAI_EDIT_MODEL,
+                messages=body_messages,
+                temperature=0.2,
+            )
+            content = ""
+            if getattr(completion, "choices", None):
+                content = completion.choices[0].message.content or ""
+            updated_body, assistant_message = parse_body_edit_response(content, body_html)
+            updated_html_model = prefix + updated_body + suffix
+
+        updated_html = restore_inline_data_uris(updated_html_model, data_uri_tokens)
         if not updated_html.strip():
             return jsonify({"ok": False, "error": "The model returned an empty HTML document."}), 500
+        if data_uri_count:
+            assistant_message = (
+                (assistant_message or "Applied your requested edits.")
+                + " Preserved %d inline asset payload(s)." % data_uri_count
+            )
         return jsonify(
             {
                 "ok": True,
