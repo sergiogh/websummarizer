@@ -1,4 +1,5 @@
 import base64
+import json
 import os
 import re
 import threading
@@ -51,6 +52,7 @@ DEFAULT_LOOKBACK_DAYS = 7
 STORY_PARSE_TIMEOUT_SECONDS = int(os.getenv("STORY_PARSE_TIMEOUT_SECONDS", "210"))
 FALLBACK_FETCH_TIMEOUT_SECONDS = int(os.getenv("FALLBACK_FETCH_TIMEOUT_SECONDS", "8"))
 OPENAI_IMAGE_MODEL = os.getenv("OPENAI_IMAGE_MODEL", "dall-e-3")
+OPENAI_EDIT_MODEL = os.getenv("OPENAI_EDIT_MODEL", "gpt-5")
 DEFAULT_GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1DY5RJlMcSuRGZ-0cvoK5VWoWzu4AMFh3gHglVqU9Src/export?format=csv&gid=0"
 
 
@@ -638,7 +640,7 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
     if not summary:
         return None
 
-    rewritten_title = generate_title(summary, url, is_paper)
+    rewritten_title = generate_title(summary, url, is_paper, source_title=title_seed)
     if not rewritten_title or not rewritten_title.strip():
         rewritten_title = title_seed
     rewritten_title = sanitize_story_title(rewritten_title, is_paper=is_paper)
@@ -668,13 +670,51 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
     }
 
 
-def finalize_newsletter(results):
+def _normalize_additional_links(items):
+    normalized = []
+    seen_urls = set()
+    for item in items or []:
+        if not isinstance(item, dict):
+            continue
+        url = str(item.get("url") or "").strip()
+        if not url:
+            continue
+        url_key = url.lower()
+        if url_key in seen_urls:
+            continue
+        raw_title = str(item.get("title_seed") or item.get("title") or "").strip()
+        clean_title = remove_publisher_mentions(
+            sanitize_story_title(raw_title or url, is_paper=False),
+            url,
+        )
+        if not clean_title:
+            clean_title = url
+        normalized.append({"url": url, "title": clean_title})
+        seen_urls.add(url_key)
+    return normalized
+
+
+def finalize_newsletter(results, additional_links=None):
     if not results:
         raise RuntimeError("No newsletter stories were generated.")
 
     curated = curate_stories(results)
     primary_results = curated["primary"]
     overflow_results = curated["overflow"]
+    manual_additional_links = _normalize_additional_links(additional_links)
+    primary_urls = {str(story.get("url") or "").strip().lower() for story in primary_results if story.get("url")}
+    merged_overflow = []
+    seen_overflow_urls = set(primary_urls)
+    for story in manual_additional_links + overflow_results:
+        story_url = str(story.get("url") or "").strip()
+        if not story_url:
+            continue
+        url_key = story_url.lower()
+        if url_key in seen_overflow_urls:
+            continue
+        merged_overflow.append(story)
+        seen_overflow_urls.add(url_key)
+    overflow_results = merged_overflow
 
     digest = build_story_digest(primary_results)
     global_summary = generate_global_summary(digest) or "Weekly newsletter generated."
@@ -817,6 +857,567 @@ def format_archive_timestamp(value) -> str:
     return str(value)
 
 
+def decode_html_payload(raw_html) -> str:
+    if raw_html is None:
+        return ""
+    if isinstance(raw_html, str):
+        return raw_html
+    for encoding in ("utf-8", "utf-8-sig", "latin-1"):
+        try:
+            return raw_html.decode(encoding)
+        except Exception:
+            continue
+    try:
+        return raw_html.decode("utf-8", errors="ignore")
+    except Exception:
+        return ""
+
+
+def _strip_markdown_fence(text: str) -> str:
+    cleaned = (text or "").strip()
+    fenced = re.match(r"^```(?:json|html)?\s*([\s\S]*?)\s*```$", cleaned, flags=re.IGNORECASE)
+    if fenced:
+        return fenced.group(1).strip()
+    return cleaned
+
+
+def parse_html_edit_response(raw_text: str, fallback_html: str):
+    cleaned = _strip_markdown_fence(raw_text)
+    if not cleaned:
+        return fallback_html, "Applied your requested edits."
+
+    try:
+        parsed = json.loads(cleaned)
+        if isinstance(parsed, dict):
+            updated_html = parsed.get("updated_html") or parsed.get("html") or ""
+            assistant_message = parsed.get("assistant_message") or parsed.get("message") or ""
+            if isinstance(updated_html, str) and updated_html.strip():
+                return updated_html, (assistant_message or "Applied your requested edits.")
+    except Exception:
+        pass
+
+    html_match = re.search(r"\bHTML:\s*([\s\S]+)$", cleaned, flags=re.IGNORECASE)
+    if html_match:
+        candidate = html_match.group(1).strip()
+        if candidate:
+            return candidate, "Applied your requested edits."
+
+    if "<html" in cleaned.lower() or cleaned.lstrip().lower().startswith("<!doctype"):
+        return cleaned, "Applied your requested edits."
+
+    return fallback_html, cleaned[:220]
+
+
+ARCHIVE_EDITOR_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Edition Mode</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.min.css">
+  <style>
+    :root {
+      --ink: #162233;
+      --muted: #5f738b;
+      --line: #d4e1ee;
+      --panel: #ffffff;
+      --canvas: #f3f7fb;
+      --accent: #0f766e;
+      --chat: #0b1729;
+      --chat-muted: #8fa4bc;
+      --chat-user: #1e3a8a;
+      --chat-assistant: #10223f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(15,118,110,0.12), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(28,99,213,0.1), transparent 26%),
+        linear-gradient(180deg, #f9fbff 0%, #ecf2f8 100%);
+    }
+    .editor-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 16px;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    @media (max-width: 1180px) {
+      .editor-layout {
+        grid-template-columns: 1fr;
+      }
+      .chat-sidebar {
+        min-height: 420px;
+      }
+    }
+    .canvas-panel {
+      background: rgba(255,255,255,0.86);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 18px 38px rgba(16, 31, 55, 0.08);
+      backdrop-filter: blur(8px);
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 14px;
+      min-height: 0;
+    }
+    .canvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .canvas-header h1 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .meta {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    button {
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #0f766e 0%, #1250a8 100%);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 9px 14px;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: #fff;
+      color: #184870;
+      border: 1px solid #9ac7c3;
+    }
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      min-height: 0;
+      height: calc(100vh - 120px);
+    }
+    @media (max-width: 1180px) {
+      .workspace-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+    }
+    .editor-pane,
+    .preview-pane {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--panel);
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+    }
+    .pane-label {
+      border-bottom: 1px solid var(--line);
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      padding: 8px 10px;
+      background: var(--canvas);
+    }
+    .CodeMirror {
+      height: 100%;
+      font-size: 13px;
+      font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+    }
+    textarea#html-editor {
+      width: 100%;
+      height: 100%;
+      border: none;
+      padding: 10px;
+      font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+      font-size: 13px;
+      resize: vertical;
+    }
+    #live-preview {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #ffffff;
+      flex: 1;
+    }
+    .chat-sidebar {
+      background: var(--chat);
+      color: #f2f6fb;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 184, 226, 0.22);
+      padding: 14px;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 10px;
+      min-height: 0;
+      box-shadow: 0 20px 44px rgba(9, 16, 28, 0.34);
+    }
+    .chat-header h2 {
+      margin: 0;
+      font-size: 1.02rem;
+    }
+    .chat-note {
+      margin-top: 4px;
+      color: var(--chat-muted);
+      font-size: 0.86rem;
+      line-height: 1.45;
+    }
+    .chat-key {
+      display: none;
+      gap: 6px;
+    }
+    .chat-key.visible {
+      display: grid;
+    }
+    .chat-key label {
+      font-size: 0.82rem;
+      color: var(--chat-muted);
+    }
+    .chat-key input {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(148, 184, 226, 0.35);
+      background: #0f1d33;
+      color: #eff6ff;
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+    .chat-log {
+      border: 1px solid rgba(148, 184, 226, 0.25);
+      border-radius: 12px;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: rgba(8, 18, 34, 0.88);
+      min-height: 240px;
+      max-height: calc(100vh - 360px);
+    }
+    .chat-message {
+      border-radius: 12px;
+      padding: 8px 10px;
+      font-size: 0.92rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .chat-message.user {
+      background: var(--chat-user);
+      align-self: flex-end;
+    }
+    .chat-message.assistant {
+      background: var(--chat-assistant);
+      border: 1px solid rgba(148, 184, 226, 0.22);
+      align-self: stretch;
+    }
+    .chat-form {
+      display: grid;
+      gap: 8px;
+    }
+    .chat-form textarea {
+      width: 100%;
+      resize: vertical;
+      min-height: 84px;
+      max-height: 220px;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 184, 226, 0.35);
+      padding: 10px;
+      background: #0f1d33;
+      color: #f0f6ff;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+    .chat-form button {
+      justify-self: end;
+    }
+  </style>
+</head>
+<body>
+  <div class="editor-layout">
+    <section class="canvas-panel">
+      <header class="canvas-header">
+        <div>
+          <h1 id="document-name">Newsletter Edition Mode</h1>
+          <div class="meta" id="document-meta"></div>
+        </div>
+        <div class="toolbar">
+          <button type="button" class="secondary" id="reset-button">Reset</button>
+          <button type="button" class="secondary" id="apply-preview-button">Apply Preview</button>
+          <button type="button" class="secondary" id="open-tab-button">Open Render</button>
+          <button type="button" id="download-button">Download HTML</button>
+        </div>
+      </header>
+      <div class="workspace-grid">
+        <section class="editor-pane">
+          <div class="pane-label">HTML Source</div>
+          <textarea id="html-editor"></textarea>
+        </section>
+        <section class="preview-pane">
+          <div class="pane-label">Live Preview</div>
+          <iframe id="live-preview" title="Newsletter preview"></iframe>
+        </section>
+      </div>
+    </section>
+    <aside class="chat-sidebar">
+      <header class="chat-header">
+        <h2>AI Edit Assistant</h2>
+        <div class="chat-note" id="model-label"></div>
+      </header>
+      <div class="chat-key" id="chat-key">
+        <label for="chat-api-key">OpenAI API key</label>
+        <input id="chat-api-key" type="password" autocomplete="off" placeholder="sk-..." />
+      </div>
+      <div id="chat-log" class="chat-log"></div>
+      <form id="chat-form" class="chat-form">
+        <textarea id="chat-input" placeholder="Ask for precise HTML changes, visual tweaks, rewrites, or layout updates."></textarea>
+        <button type="submit" id="chat-send">Send</button>
+      </form>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/xml/xml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/css/css.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+
+  <script>
+    const bootstrap = __EDITOR_BOOTSTRAP__;
+    const textarea = document.getElementById('html-editor');
+    const previewFrame = document.getElementById('live-preview');
+    const chatLog = document.getElementById('chat-log');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatSend = document.getElementById('chat-send');
+    const chatKeyContainer = document.getElementById('chat-key');
+    const chatApiKey = document.getElementById('chat-api-key');
+    const modelLabel = document.getElementById('model-label');
+    const resetButton = document.getElementById('reset-button');
+    const applyPreviewButton = document.getElementById('apply-preview-button');
+    const downloadButton = document.getElementById('download-button');
+    const openTabButton = document.getElementById('open-tab-button');
+    const documentName = document.getElementById('document-name');
+    const documentMeta = document.getElementById('document-meta');
+
+    const chatMessages = [];
+    let editor = null;
+    let originalHtml = String(bootstrap.initial_html || '');
+    let activeFilename = String(bootstrap.filename || 'newsletter.html');
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function addChatMessage(role, text) {
+      const safeRole = role === 'user' ? 'user' : 'assistant';
+      const content = String(text || '').trim();
+      if (!content) return;
+      chatMessages.push({ role: safeRole, content: content });
+      const row = document.createElement('div');
+      row.className = 'chat-message ' + safeRole;
+      row.innerHTML = escapeHtml(content);
+      chatLog.appendChild(row);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    function getEditorValue() {
+      return editor ? editor.getValue() : textarea.value;
+    }
+
+    function setEditorValue(value) {
+      if (editor) {
+        editor.setValue(String(value || ''));
+      } else {
+        textarea.value = String(value || '');
+      }
+    }
+
+    function refreshPreview() {
+      previewFrame.srcdoc = getEditorValue();
+    }
+
+    function loadBrowserArchiveIfNeeded() {
+      if (String(bootstrap.source || '') !== 'browser') {
+        return;
+      }
+      const token = String(bootstrap.token || '');
+      if (!token) {
+        addChatMessage('assistant', 'Missing local browser archive token for this editing session.');
+        return;
+      }
+      try {
+        const raw = localStorage.getItem(token);
+        if (!raw) {
+          addChatMessage('assistant', 'Could not find the browser-saved newsletter for this token.');
+          return;
+        }
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed.html === 'string') {
+          originalHtml = parsed.html;
+          if (parsed.filename) {
+            activeFilename = String(parsed.filename);
+          }
+        }
+      } catch (error) {
+        addChatMessage('assistant', 'Failed to load browser archive: ' + (error.message || 'Unknown error'));
+      }
+    }
+
+    function openRenderedTab() {
+      const blob = new Blob([getEditorValue()], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank', 'noopener');
+      setTimeout(function () { URL.revokeObjectURL(url); }, 60000);
+    }
+
+    function downloadHtml() {
+      const blob = new Blob([getEditorValue()], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = activeFilename || 'newsletter_edited.html';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(function () { URL.revokeObjectURL(url); }, 60000);
+    }
+
+    function initEditor() {
+      if (window.CodeMirror && window.CodeMirror.fromTextArea) {
+        editor = window.CodeMirror.fromTextArea(textarea, {
+          mode: 'htmlmixed',
+          lineNumbers: true,
+          lineWrapping: true,
+          indentUnit: 2,
+          tabSize: 2,
+        });
+        editor.on('changes', function () {
+          refreshPreview();
+        });
+      }
+    }
+
+    async function applyPrompt(prompt) {
+      const apiKey = chatApiKey ? String(chatApiKey.value || '').trim() : '';
+      if (bootstrap.requires_api_key && !apiKey) {
+        addChatMessage('assistant', 'Add your OpenAI API key first so I can apply this edit.');
+        return;
+      }
+
+      chatSend.disabled = true;
+      try {
+        const response = await fetch('/archive/edit/apply', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            html: getEditorValue(),
+            instruction: prompt,
+            openai_api_key: apiKey,
+            messages: chatMessages.slice(-10),
+          }),
+        });
+        let payload = {};
+        try {
+          payload = await response.json();
+        } catch (error) {
+          payload = { ok: false, error: 'Failed to read editor response.' };
+        }
+        if (!response.ok || payload.ok === false) {
+          throw new Error(payload.error || ('Request failed with status ' + response.status));
+        }
+        if (typeof payload.updated_html === 'string' && payload.updated_html.trim()) {
+          setEditorValue(payload.updated_html);
+          refreshPreview();
+        }
+        addChatMessage('assistant', payload.assistant_message || 'Applied your requested edit.');
+      } catch (error) {
+        addChatMessage('assistant', 'Edit failed: ' + (error.message || 'Unknown error'));
+      } finally {
+        chatSend.disabled = false;
+      }
+    }
+
+    loadBrowserArchiveIfNeeded();
+    initEditor();
+
+    if (!originalHtml.trim()) {
+      originalHtml = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Newsletter</title></head><body><h1>No newsletter content loaded.</h1></body></html>';
+    }
+    setEditorValue(originalHtml);
+    refreshPreview();
+
+    documentName.textContent = 'Edition Mode: ' + activeFilename;
+    documentMeta.textContent = String(bootstrap.source || 'server') === 'browser'
+      ? 'Loaded from browser archive'
+      : 'Loaded from server archive';
+    modelLabel.textContent = 'Model: ' + String(bootstrap.model || 'gpt-5') + '. Prompts edit the full HTML and update preview live.';
+
+    if (bootstrap.requires_api_key) {
+      chatKeyContainer.classList.add('visible');
+    }
+
+    addChatMessage('assistant', 'Share what to change. I will update the HTML and refresh the preview.');
+
+    chatForm.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const prompt = String(chatInput.value || '').trim();
+      if (!prompt) return;
+      chatInput.value = '';
+      addChatMessage('user', prompt);
+      await applyPrompt(prompt);
+    });
+
+    resetButton.addEventListener('click', function () {
+      setEditorValue(originalHtml);
+      refreshPreview();
+      addChatMessage('assistant', 'Reset to the original archived HTML.');
+    });
+
+    applyPreviewButton.addEventListener('click', function () {
+      refreshPreview();
+    });
+
+    openTabButton.addEventListener('click', function () {
+      openRenderedTab();
+    });
+
+    downloadButton.addEventListener('click', function () {
+      downloadHtml();
+    });
+  </script>
+</body>
+</html>
+"""
+
+
+def render_archive_editor_html(bootstrap_payload: dict) -> str:
+    return ARCHIVE_EDITOR_TEMPLATE.replace(
+        "__EDITOR_BOOTSTRAP__", json.dumps(bootstrap_payload, ensure_ascii=False)
+    )
+
+
 @app.route("/")
 @require_auth
 def home():
@@ -832,7 +1433,10 @@ def home():
                     <div class="archive-name">{name}</div>
                     <div class="archive-meta">{uploaded_at}</div>
                   </div>
-                  <a class="archive-link" href="/archive?pathname={pathname}">Open</a>
+                  <div class="archive-actions">
+                    <a class="archive-link" href="/archive?pathname={pathname}" target="_blank" rel="noopener">Open</a>
+                    <a class="archive-link" href="/archive/edit?pathname={pathname}" target="_blank" rel="noopener">Edit</a>
+                  </div>
                 </li>
                 """.format(
                     name=escape(item["filename"]),
@@ -1061,6 +1665,12 @@ def home():
         .archive-link:hover {{
           text-decoration: underline;
         }}
+        .archive-actions {{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          flex-wrap: wrap;
+        }}
         .browser-open {{
           border: none;
           background: transparent;
@@ -1121,6 +1731,24 @@ def home():
           margin-top: 4px;
           width: 18px;
           height: 18px;
+        }}
+        .preview-selection {{
+          margin-top: 8px;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }}
+        .preview-selection-option {{
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          color: var(--muted);
+          font-size: 0.88rem;
+          font-weight: 700;
+        }}
+        .preview-selection-option input {{
+          width: 16px;
+          height: 16px;
         }}
       </style>
     </head>
@@ -1278,6 +1906,19 @@ def home():
           setTimeout(() => URL.revokeObjectURL(url), 60000);
         }}
 
+        function openBrowserArchiveEditor(index) {{
+          const items = readBrowserArchive();
+          const item = items[index];
+          if (!item) return;
+          const token = 'websummarizer-editor-' + Date.now() + '-' + Math.random().toString(16).slice(2);
+          localStorage.setItem(token, JSON.stringify({{
+            filename: item.filename,
+            generatedAt: item.generatedAt,
+            html: item.html,
+          }}));
+          window.open('/archive/edit?source=browser&token=' + encodeURIComponent(token), '_blank', 'noopener');
+        }}
+
         function renderBrowserArchives() {{
           const items = readBrowserArchive();
           if (!items.length) {{
@@ -1291,57 +1932,127 @@ def home():
                 '<div class="archive-name">' + item.filename + '</div>' +
                 '<div class="archive-meta">' + item.generatedAt + '</div>' +
               '</div>' +
-              '<button class="browser-open" type="button" onclick="openBrowserArchive(' + index + ')">Open</button>' +
+              '<div class="archive-actions">' +
+                '<button class="browser-open" type="button" onclick="openBrowserArchive(' + index + ')">Open</button>' +
+                '<button class="browser-open" type="button" onclick="openBrowserArchiveEditor(' + index + ')">Edit</button>' +
+              '</div>' +
             '</li>';
           }}).join('') + '</ul>';
         }}
 
         window.openBrowserArchive = openBrowserArchive;
+        window.openBrowserArchiveEditor = openBrowserArchiveEditor;
         renderBrowserArchives();
 
         function storyKey(story) {{
           return String(story.index) + '::' + String(story.url || '');
         }}
 
+        function getSelectionMode(primaryChecked, additionalChecked) {{
+          if (additionalChecked) {{
+            return 'additional';
+          }}
+          if (primaryChecked) {{
+            return 'primary';
+          }}
+          return 'skip';
+        }}
+
         function getSelectionMap() {{
           const map = {{}};
-          previewList.querySelectorAll('.preview-story-checkbox').forEach((checkbox) => {{
-            map[String(checkbox.dataset.storyKey || '')] = checkbox.checked;
+          previewList.querySelectorAll('.preview-selection').forEach((row) => {{
+            const key = String(row.dataset.storyKey || '');
+            const primary = row.querySelector('.preview-story-checkbox-primary');
+            const additional = row.querySelector('.preview-story-checkbox-additional');
+            if (!key || !primary || !additional) {{
+              return;
+            }}
+            map[key] = getSelectionMode(Boolean(primary.checked), Boolean(additional.checked));
           }});
           return map;
         }}
 
         function refreshPreviewMeta() {{
-          const checkboxes = previewList.querySelectorAll('.preview-story-checkbox');
-          if (!checkboxes.length) {{
+          const rows = previewList.querySelectorAll('.preview-selection');
+          if (!rows.length) {{
             return;
           }}
-          const total = checkboxes.length;
-          let selected = 0;
-          checkboxes.forEach((checkbox) => {{
-            if (checkbox.checked) {{
-              selected += 1;
+          const total = rows.length;
+          let selectedPrimary = 0;
+          let selectedAdditional = 0;
+          rows.forEach((row) => {{
+            const primary = row.querySelector('.preview-story-checkbox-primary');
+            const additional = row.querySelector('.preview-story-checkbox-additional');
+            const mode = getSelectionMode(Boolean(primary && primary.checked), Boolean(additional && additional.checked));
+            if (mode === 'primary') {{
+              selectedPrimary += 1;
+            }} else if (mode === 'additional') {{
+              selectedAdditional += 1;
             }}
           }});
-          previewMeta.textContent = selected + '/' + total + ' selected between ' + previewStartDate + ' and ' + previewEndDate;
+          const skipped = total - selectedPrimary - selectedAdditional;
+          previewMeta.textContent =
+            selectedPrimary + ' in newsletter · ' +
+            selectedAdditional + ' additional links · ' +
+            skipped + ' skipped' +
+            ' between ' + previewStartDate + ' and ' + previewEndDate;
+        }}
+
+        function handleSelectionToggle(event) {{
+          const target = event.target;
+          if (!target) {{
+            return;
+          }}
+          const row = target.closest('.preview-selection');
+          if (!row) {{
+            return;
+          }}
+          const primary = row.querySelector('.preview-story-checkbox-primary');
+          const additional = row.querySelector('.preview-story-checkbox-additional');
+          if (!primary || !additional) {{
+            return;
+          }}
+
+          if (target.classList.contains('preview-story-checkbox-additional') && additional.checked) {{
+            primary.checked = false;
+          }}
+          if (target.classList.contains('preview-story-checkbox-primary') && primary.checked) {{
+            additional.checked = false;
+          }}
+          refreshPreviewMeta();
         }}
 
         function setAllSelections(checked) {{
-          const checkboxes = previewList.querySelectorAll('.preview-story-checkbox');
-          checkboxes.forEach((checkbox) => {{
-            checkbox.checked = checked;
+          const rows = previewList.querySelectorAll('.preview-selection');
+          rows.forEach((row) => {{
+            const primary = row.querySelector('.preview-story-checkbox-primary');
+            const additional = row.querySelector('.preview-story-checkbox-additional');
+            if (primary) {{
+              primary.checked = checked;
+            }}
+            if (additional) {{
+              additional.checked = false;
+            }}
           }});
           refreshPreviewMeta();
         }}
 
-        function getSelectedStories(stories) {{
-          const selectedKeys = new Set();
-          previewList.querySelectorAll('.preview-story-checkbox').forEach((checkbox) => {{
-            if (checkbox.checked) {{
-              selectedKeys.add(String(checkbox.dataset.storyKey || ''));
+        function getStorySelections(stories) {{
+          const selectionMap = getSelectionMap();
+          const selectedStories = [];
+          const additionalStories = [];
+          (Array.isArray(stories) ? stories : []).forEach((story) => {{
+            const mode = String(selectionMap[storyKey(story)] || 'skip');
+            if (mode === 'primary') {{
+              selectedStories.push(story);
+            }} else if (mode === 'additional') {{
+              additionalStories.push(story);
             }}
           }});
-          return (Array.isArray(stories) ? stories : []).filter((story) => selectedKeys.has(storyKey(story)));
+          return {{
+            selectedStories: selectedStories,
+            additionalStories: additionalStories,
+          }};
         }}
 
         function renderPreview(stories, startDate, endDate, selectionMap) {{
@@ -1361,22 +2072,33 @@ def home():
             const tag = escapeHtml(story.tag || 'untagged');
             const published = escapeHtml(story.published_at || 'unknown date');
             const key = storyKey(story);
-            const checked = Object.prototype.hasOwnProperty.call(safeSelection, key) ? Boolean(safeSelection[key]) : true;
-            const checkedAttr = checked ? ' checked' : '';
+            const savedMode = Object.prototype.hasOwnProperty.call(safeSelection, key) ? safeSelection[key] : 'primary';
+            const mode = savedMode === true ? 'primary' : (savedMode === false ? 'skip' : String(savedMode || 'primary'));
+            const primaryCheckedAttr = mode === 'primary' ? ' checked' : '';
+            const additionalCheckedAttr = mode === 'additional' ? ' checked' : '';
             return '<li class="archive-item">' +
               '<div class="preview-item">' +
-                '<input type="checkbox" class="preview-checkbox preview-story-checkbox" data-story-key="' + escapeHtml(key) + '"' + checkedAttr + ' />' +
                 '<div>' +
                   '<div class="archive-name">' + (idx + 1) + '. ' + title + '</div>' +
                   '<div class="archive-meta">' + published + ' · ' + tag + '</div>' +
                   '<div class="archive-meta">' + url + '</div>' +
+                  '<div class="preview-selection" data-story-key="' + escapeHtml(key) + '">' +
+                    '<label class="preview-selection-option">' +
+                      '<input type="checkbox" class="preview-story-checkbox-primary"' + primaryCheckedAttr + ' />' +
+                      '<span>Add to newsletter</span>' +
+                    '</label>' +
+                    '<label class="preview-selection-option">' +
+                      '<input type="checkbox" class="preview-story-checkbox-additional"' + additionalCheckedAttr + ' />' +
+                      '<span>Additional links</span>' +
+                    '</label>' +
+                  '</div>' +
                 '</div>' +
               '</div>' +
             '</li>';
           }}).join('') + '</ul>';
 
-          previewList.querySelectorAll('.preview-story-checkbox').forEach((checkbox) => {{
-            checkbox.addEventListener('change', refreshPreviewMeta);
+          previewList.querySelectorAll('.preview-story-checkbox-primary, .preview-story-checkbox-additional').forEach((checkbox) => {{
+            checkbox.addEventListener('change', handleSelectionToggle);
           }});
           refreshPreviewMeta();
         }}
@@ -1462,17 +2184,19 @@ def home():
             const startPayload = await postForm('/generate/start', formData);
             const stories = Array.isArray(startPayload.stories) ? startPayload.stories : [];
             renderPreview(stories, startPayload.start_date, startPayload.end_date, previousSelection);
-            const selectedStories = getSelectedStories(stories);
+            const selections = getStorySelections(stories);
+            const selectedStories = selections.selectedStories;
+            const additionalStories = selections.additionalStories;
             const total = selectedStories.length;
             if (!total) {{
-              throw new Error('Select at least one story in preview before generating.');
+              throw new Error('Select at least one story with "Add to newsletter" before generating.');
             }}
             const parsedStories = [];
             let skippedCount = 0;
             let fallbackCount = 0;
 
             updateProgress({{
-              message: 'Loaded ' + stories.length + ' stories from sheet; selected ' + total + ' for parsing.',
+              message: 'Loaded ' + stories.length + ' stories from sheet; selected ' + total + ' for newsletter and ' + additionalStories.length + ' as additional links.',
               total: total,
               scanned: 0,
               parsed: 0,
@@ -1542,6 +2266,7 @@ def home():
 
             const payload = await postJson('/generate/finalize', {{
               stories: parsedStories,
+              additional_links: additionalStories,
               openai_api_key: apiKey,
             }});
 
@@ -1728,11 +2453,15 @@ def generate_finalize():
     try:
         prepare_runtime_env(api_key=(payload.get("openai_api_key") or "").strip())
         raw_stories = payload.get("stories") or []
+        raw_additional_links = payload.get("additional_links") or []
         if not isinstance(raw_stories, list):
             return jsonify({"ok": False, "error": "Invalid stories payload."}), 400
+        if not isinstance(raw_additional_links, list):
+            return jsonify({"ok": False, "error": "Invalid additional links payload."}), 400
 
         stories = [story for story in raw_stories if isinstance(story, dict)]
-        newsletter = finalize_newsletter(stories)
+        additional_links = [story for story in raw_additional_links if isinstance(story, dict)]
+        newsletter = finalize_newsletter(stories, additional_links=additional_links)
         timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         filename = "newsletter_%s.html" % timestamp
         generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -1773,6 +2502,116 @@ def generate():
             "error": "Deprecated endpoint. Refresh this page and retry generation.",
         }
     ), 410
+
+
+@app.route("/archive/edit")
+@require_auth
+def edit_archive():
+    pathname = (request.args.get("pathname") or "").strip()
+    source = (request.args.get("source") or "server").strip().lower()
+    token = (request.args.get("token") or "").strip()
+    filename = (request.args.get("filename") or "").strip() or "newsletter_edited.html"
+    initial_html = ""
+
+    if pathname:
+        if not is_valid_archive_path(pathname):
+            return Response("Not found", status=404)
+        result = load_newsletter_html(pathname)
+        if result is None:
+            return Response("Not found", status=404)
+        html_content, _content_type = result
+        initial_html = decode_html_payload(html_content)
+        filename = pathname.split("/")[-1]
+        source = "server"
+    elif source == "browser":
+        source = "browser"
+    else:
+        return Response("Not found", status=404)
+
+    payload = {
+        "source": source,
+        "token": token,
+        "filename": filename,
+        "initial_html": initial_html,
+        "requires_api_key": not bool(os.getenv("OPENAI_API_KEY")),
+        "model": OPENAI_EDIT_MODEL,
+    }
+    return Response(render_archive_editor_html(payload), content_type="text/html; charset=utf-8")
+
+
+@app.route("/archive/edit/apply", methods=["POST"])
+@require_auth
+def apply_archive_edit():
+    payload = request.get_json(silent=True) or {}
+    html_content = payload.get("html") or ""
+    instruction = (payload.get("instruction") or "").strip()
+    provided_api_key = (payload.get("openai_api_key") or "").strip()
+
+    if not isinstance(html_content, str):
+        return jsonify({"ok": False, "error": "Invalid HTML payload."}), 400
+    if not instruction:
+        return jsonify({"ok": False, "error": "Edit instruction is required."}), 400
+
+    try:
+        prepare_runtime_env(api_key=provided_api_key, require_openai=True)
+    except Exception as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+
+    raw_messages = payload.get("messages") or []
+    history = []
+    if isinstance(raw_messages, list):
+        for item in raw_messages[-10:]:
+            if not isinstance(item, dict):
+                continue
+            role = (item.get("role") or "").strip()
+            content = (item.get("content") or "").strip()
+            if role not in {"user", "assistant"} or not content:
+                continue
+            history.append({"role": role, "content": content[:1200]})
+
+    prompt = (
+        "User request:\n%s\n\n"
+        "Current HTML:\n%s\n\n"
+        "Return the complete updated HTML document."
+    ) % (instruction, html_content)
+
+    system_prompt = (
+        "You are an HTML newsletter editor.\n"
+        "Apply the user request directly to the provided HTML.\n"
+        "Keep the output as a complete, valid HTML document.\n"
+        "Never omit sections unless the user asked for removal.\n"
+        "Respond as strict JSON with exactly two keys:\n"
+        "updated_html: full edited HTML string\n"
+        "assistant_message: concise summary of what was changed."
+    )
+
+    try:
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        messages = [{"role": "system", "content": system_prompt}]
+        messages.extend(history)
+        messages.append({"role": "user", "content": prompt})
+
+        completion = client.chat.completions.create(
+            model=OPENAI_EDIT_MODEL,
+            messages=messages,
+            temperature=0.2,
+        )
+        content = ""
+        if getattr(completion, "choices", None):
+            content = completion.choices[0].message.content or ""
+        updated_html, assistant_message = parse_html_edit_response(content, html_content)
+        if not updated_html.strip():
+            return jsonify({"ok": False, "error": "The model returned an empty HTML document."}), 500
+        return jsonify(
+            {
+                "ok": True,
+                "updated_html": updated_html,
+                "assistant_message": assistant_message or "Applied your requested edits.",
+                "model": OPENAI_EDIT_MODEL,
+            }
+        )
+    except Exception as exc:
+        return jsonify({"ok": False, "error": "Failed to apply AI edit: %s" % exc}), 500
 
 
 @app.route("/archive")
