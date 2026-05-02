@@ -1,0 +1,16 @@
+2025/
+artifacts/
+node_modules/
+__pycache__/
+tests/
+
+*.png
+newsletter_*.html
+newsletter_*.png
+newsletter_*_highlight.png
+
+.venv/
+.env
+.env.*
+.DS_Store
+*.md
