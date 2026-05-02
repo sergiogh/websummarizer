@@ -14,13 +14,24 @@ import html
 
 from artifact_store import ArtifactStore
 from prompt_loader import get_prompt
-from qa_checks import qa_title_summary
+from qa_checks import (
+    qa_title_summary,
+    validate_aggregate_grounding,
+    validate_story_grounding,
+    validate_summary_claims,
+)
 from quantum_bits_comic import (
     build_comic_asset_url,
     fetch_latest_quantum_bits_comic,
     resolve_comic_for_render,
 )
 from story_organizer import STORY_BUCKET_LABELS, build_story_digest, group_stories, order_stories
+from story_grounding import (
+    failure_summary,
+    filter_passed_stories,
+    generate_grounded_summary,
+    generate_grounded_title,
+)
 from title_utils import sanitize_story_title
 
 app = Flask(__name__)
@@ -58,9 +69,18 @@ def process_url(url, title, fallback_summary):
         full_text = paper_processor.download_paper()
         if full_text:
             print(f"Successfully downloaded paper, length: {len(full_text)} characters")
+            paper_sections = paper_processor.extract_paper_sections(full_text)
             return {
                 "raw": full_text,
                 "clean": full_text,
+                "metadata": {
+                    "source_url": url,
+                    "html_title": title,
+                    "h1": title,
+                    "extraction_status": "paper",
+                    "clean_text_length": len(full_text),
+                    "paper_sections": paper_sections,
+                },
                 "is_paper": True,
                 "paper_type": paper_processor.paper_type
             }
@@ -81,11 +101,12 @@ def process_url(url, title, fallback_summary):
     return {
         "raw": raw_content or "",
         "clean": url_processor.content or "",
+        "metadata": getattr(url_processor, "metadata", {}) or {},
         "is_paper": False,
         "paper_type": None
     }
 
-def generate_summary(title, content, url=None):
+def generate_summary(title, content, url=None, source_metadata=None):
     # Check if this is a scientific paper and use specialized analysis
     if url:
         paper_processor = ScientificPaperProcessor(url)
@@ -98,10 +119,36 @@ def generate_summary(title, content, url=None):
                 print("Paper analysis failed, falling back to standard summary")
     
     # Standard summary generation for non-papers
-    prompt = get_prompt("summary.api")
-    summary_generator = SummaryGenerator(f"{title} - {content}")
-    summary_generator.generate_summary(prompt)
-    return summary_generator.summary
+    grounded = generate_grounded_summary(
+        title,
+        content,
+        url or "",
+        source_metadata or {},
+        prompt_key="summary.story.grounded.api",
+    )
+    return grounded["summary"]
+
+def generate_summary_result(title, content, url=None, source_metadata=None):
+    if url:
+        paper_processor = ScientificPaperProcessor(url)
+        if paper_processor.is_scientific_paper():
+            analysis = paper_processor.analyze_paper(title, content)
+            if analysis:
+                return {
+                    "status": "ok",
+                    "summary": analysis,
+                    "matched_title": title,
+                    "evidence": [],
+                    "confidence": 0.85,
+                }
+
+    return generate_grounded_summary(
+        title,
+        content,
+        url or "",
+        source_metadata or {},
+        prompt_key="summary.story.grounded.api",
+    )
 
 def generate_title(summary, url=None, is_paper=False, source_title=""):
     if is_paper:
@@ -123,6 +170,19 @@ def generate_title(summary, url=None, is_paper=False, source_title=""):
         title = f"[PAPER] {title}"
     return title
 
+def generate_title_result(source_title, content, url=None, is_paper=False, source_metadata=None, summary=""):
+    if is_paper:
+        title = generate_title(summary or content[:2000], url, is_paper=True, source_title=source_title)
+        return {"status": "ok" if title else "insufficient_content", "title": title or "", "evidence": [], "confidence": 0.8}
+
+    return generate_grounded_title(
+        source_title or "",
+        content or "",
+        url or "",
+        source_metadata or {},
+        prompt_key="title.story.grounded.api",
+    )
+
 # Image extraction removed for newsletter-only text output
 
 def generate_global_summary(total_content):
@@ -142,6 +202,39 @@ def generate_podcast_summary(total_content):
     podcast_summarizer = SummaryGenerator(total_content)
     podcast_summarizer.generate_summary(prompt)
     return podcast_summarizer.summary
+
+def build_aggregate_outputs(results):
+    passed_results = filter_passed_stories(results)
+    aggregate_results = passed_results or []
+    if not aggregate_results:
+        return {
+            "passed_results": [],
+            "global_summary": "No stories passed source-grounding checks. Review flagged stories before publishing this issue.",
+            "micro_summary": "Newsletter needs source review",
+            "podcast_summary": "No podcast research content was generated because no selected stories passed source-grounding checks.",
+            "aggregate_qa": {
+                "global_summary": {"passed": False, "flags": ["no_passed_stories"]},
+                "headline": {"passed": False, "flags": ["no_passed_stories"]},
+                "podcast_summary": {"passed": False, "flags": ["no_passed_stories"]},
+            },
+        }
+
+    total_content = build_story_digest(aggregate_results)
+    global_summary = generate_global_summary(total_content)
+    micro_summary = generate_newsletter_headline(global_summary)
+    podcast_summary = generate_podcast_summary(total_content)
+    aggregate_qa = {
+        "global_summary": validate_aggregate_grounding(global_summary or "", aggregate_results),
+        "headline": validate_aggregate_grounding(micro_summary or "", aggregate_results),
+        "podcast_summary": validate_aggregate_grounding(podcast_summary or "", aggregate_results),
+    }
+    return {
+        "passed_results": aggregate_results,
+        "global_summary": global_summary,
+        "micro_summary": micro_summary,
+        "podcast_summary": podcast_summary,
+        "aggregate_qa": aggregate_qa,
+    }
 
 def extract_key_facts(clean_content):
     prompt = get_prompt("provenance.why")
@@ -222,27 +315,20 @@ def create_newsletter(results, global_summary, micro_summary, podcast_summary, c
     review_result = review_newsletter_content_api(
         results, global_summary, micro_summary, podcast_summary
     )
-    
-    # Apply review recommendations to correct any issues
-    corrected_content = apply_review_recommendations_api(
-        review_result, results, global_summary, micro_summary, podcast_summary
-    )
-    
-    # Use corrected content if available, otherwise use original
-    final_headline = corrected_content.get('headline', micro_summary)
-    final_global_summary = corrected_content.get('global_summary', global_summary)
-    final_podcast_summary = corrected_content.get('podcast_summary', podcast_summary)
-    
-    # Update article summaries if corrections were provided
+
+    # Do not auto-rewrite generated stories after review unless the original
+    # source text is included in the correction pass. Rewriting from newsletter
+    # text alone can reintroduce hallucinations.
+    final_headline = micro_summary
+    final_global_summary = global_summary
+    final_podcast_summary = podcast_summary
     final_results = results.copy()
-    if 'articles' in corrected_content and corrected_content['articles']:
-        for i, corrected_summary in enumerate(corrected_content['articles']):
-            if i < len(final_results):
-                final_results[i] = final_results[i].copy()
-                final_results[i]['summary'] = corrected_summary
+    all_grounded = all(not result.get("qa_flags") for result in final_results)
     
     newsletter = f"<h1>{final_headline}</h1>"
-    newsletter += f"<div style='background-color: #27ae60; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em; display: inline-block; margin-bottom: 10px;'>✓ Verified Content - All quotes and data sourced from provided materials</div>"
+    badge_text = "Verified Content - source-grounding checks passed" if all_grounded else "Needs Review - one or more stories failed source-grounding checks"
+    badge_color = "#27ae60" if all_grounded else "#b45309"
+    newsletter += f"<div style='background-color: {badge_color}; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em; display: inline-block; margin-bottom: 10px;'>{_escape(badge_text)}</div>"
     newsletter += f"<h2>Quick Recap</h2><p>{final_global_summary}</p>"
     newsletter += render_comic_section(comic)
     newsletter += "</br></br><h2>The Week in Quantum Computing</h2>"
@@ -283,6 +369,30 @@ def load_story_details(run_id, story_id):
     provenance = _load_json(os.path.join(story_dir, "provenance.json"), {})
     return qa, provenance
 
+def load_story_artifacts(run_id, story_id):
+    story_dir = artifact_store.story_dir(run_id, story_id)
+    clean_path = os.path.join(story_dir, "clean.txt")
+    raw_path = os.path.join(story_dir, "raw.txt")
+    try:
+        with open(clean_path, "r", encoding="utf-8") as file:
+            clean_text = file.read()
+    except Exception:
+        clean_text = ""
+    try:
+        with open(raw_path, "r", encoding="utf-8") as file:
+            raw_text = file.read()
+    except Exception:
+        raw_text = ""
+    return {
+        "qa": _load_json(os.path.join(story_dir, "qa.json"), {}),
+        "provenance": _load_json(os.path.join(story_dir, "provenance.json"), {}),
+        "fetch": _load_json(os.path.join(story_dir, "fetch.json"), {}),
+        "summary": _load_json(os.path.join(story_dir, "summary.json"), {}),
+        "title": _load_json(os.path.join(story_dir, "title.json"), {}),
+        "clean_text": clean_text,
+        "raw_text": raw_text,
+    }
+
 def extract_overrides_from_form(form, results):
     new_overrides = {}
     for idx, result in enumerate(results):
@@ -310,26 +420,46 @@ def regenerate_story(run_id, story_id, overrides):
         clean_content = ""
 
     title_seed = overrides.get(story_id, {}).get("title", "")
-    summary = generate_summary(title_seed, clean_content, url)
+    source_metadata = fetch.get("metadata", {})
+    summary_result = generate_summary_result(title_seed, clean_content, url, source_metadata)
+    summary = summary_result["summary"]
 
     if not title_seed:
-        title_seed = generate_title(summary, url, is_paper, source_title=fetch.get("title", ""))
+        title_result = generate_title_result(
+            fetch.get("input_title", ""),
+            clean_content,
+            url,
+            is_paper,
+            source_metadata,
+            summary,
+        )
+        title_seed = title_result.get("title") or generate_title(summary, url, is_paper, source_title=fetch.get("title", ""))
 
     title_seed = sanitize_story_title(title_seed, is_paper=is_paper)
     qa_result = qa_title_summary(title_seed, summary)
+    grounding_result = validate_story_grounding(title_seed, summary, clean_content, source_metadata)
+    claim_result = validate_summary_claims(summary, clean_content)
+    if not claim_result["passed"]:
+        grounding_result["flags"] = list(dict.fromkeys(grounding_result["flags"] + ["summary_claims_not_supported"]))
+        grounding_result["passed"] = False
+        grounding_result["claim_check"] = claim_result
+    if not grounding_result["passed"]:
+        summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+        qa_result["summary_fixed"] = summary
+        qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
     final_title = qa_result["title_fixed"]
     final_summary = qa_result["summary_fixed"]
 
     why_log = extract_key_facts(clean_content)
 
-    artifact_store.save_json(run_id, story_id, "summary", {"summary": final_summary})
+    artifact_store.save_json(run_id, story_id, "summary", {"summary": final_summary, "grounded": summary_result})
     artifact_store.save_json(run_id, story_id, "title", {"title": final_title})
     artifact_store.save_json(run_id, story_id, "qa", qa_result)
     artifact_store.save_json(
         run_id,
         story_id,
         "provenance",
-        {"url": url, "title": final_title, "why": why_log}
+        {"url": url, "title": final_title, "why": why_log, "grounding": grounding_result}
     )
 
     overrides[story_id] = {"title": final_title, "summary": final_summary}
@@ -404,6 +534,11 @@ ARTICLES:
 Title: {result['title']}
 URL: {result['url']}
 Summary: {result['summary']}
+Extracted Page Title: {result.get('source_metadata', {}).get('html_title', '')}
+Extracted Page Headline: {result.get('source_metadata', {}).get('h1', '')}
+Extraction Status: {result.get('source_metadata', {}).get('extraction_status', '')}
+QA Flags: {', '.join(result.get('qa_flags', [])) or 'none'}
+Evidence Snippets: {' | '.join(result.get('summary_evidence', []))}
 # Image handling removed for newsletter-only text output
 ---
 """
@@ -473,22 +608,53 @@ def run_generation(selected_stories, source="api"):
             "fetch",
             {
                 "url": story["url"],
+                "input_title": story.get("title", ""),
                 "is_paper": content_bundle["is_paper"],
                 "paper_type": content_bundle["paper_type"],
+                "metadata": content_bundle.get("metadata", {}),
                 "raw_length": len(content_bundle["raw"] or ""),
                 "clean_length": len(content_bundle["clean"] or "")
             }
         )
 
-        summary = generate_summary(story.get('title', ''), content_bundle["clean"], story['url'])
-        artifact_store.save_json(run_id, story_id, "summary", {"summary": summary})
+        summary_result = generate_summary_result(
+            story.get('title', ''),
+            content_bundle["clean"],
+            story['url'],
+            content_bundle.get("metadata", {}),
+        )
+        summary = summary_result["summary"]
+        artifact_store.save_json(run_id, story_id, "summary", {"summary": summary, "grounded": summary_result})
 
         if not story.get('title'):
-            story['title'] = generate_title(summary, story['url'], is_paper, source_title=story.get('title', ''))
+            title_result = generate_title_result(
+                story.get('title', ''),
+                content_bundle["clean"],
+                story['url'],
+                is_paper,
+                content_bundle.get("metadata", {}),
+                summary,
+            )
+            story['title'] = title_result.get("title") or generate_title(summary, story['url'], is_paper, source_title=story.get('title', ''))
         story['title'] = sanitize_story_title(story['title'], is_paper=is_paper)
 
         artifact_store.save_json(run_id, story_id, "title", {"title": story["title"]})
         qa_result = qa_title_summary(story["title"], summary)
+        grounding_result = validate_story_grounding(
+            story["title"],
+            summary,
+            content_bundle["clean"],
+            content_bundle.get("metadata", {}),
+        )
+        claim_result = validate_summary_claims(summary, content_bundle["clean"])
+        if not claim_result["passed"]:
+            grounding_result["flags"] = list(dict.fromkeys(grounding_result["flags"] + ["summary_claims_not_supported"]))
+            grounding_result["passed"] = False
+            grounding_result["claim_check"] = claim_result
+        if not grounding_result["passed"]:
+            summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+            qa_result["summary_fixed"] = summary
+            qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
         artifact_store.save_json(run_id, story_id, "qa", qa_result)
         story["title"] = qa_result["title_fixed"]
         summary = qa_result["summary_fixed"]
@@ -498,7 +664,13 @@ def run_generation(selected_stories, source="api"):
             run_id,
             story_id,
             "provenance",
-            {"url": story["url"], "title": story["title"], "why": why_log}
+            {
+                "url": story["url"],
+                "title": story["title"],
+                "why": why_log,
+                "grounding": grounding_result,
+                "summary_evidence": summary_result.get("evidence", []),
+            }
         )
 
         results.append({
@@ -508,15 +680,18 @@ def run_generation(selected_stories, source="api"):
             'summary': summary,
             'tag': story.get('tag', ''),
             'is_paper': bool(content_bundle["is_paper"] or is_paper),
-            'paper_type': content_bundle["paper_type"]
+            'paper_type': content_bundle["paper_type"],
+            'qa_flags': qa_result.get("flags", []),
+            'source_metadata': content_bundle.get("metadata", {}),
+            'summary_evidence': summary_result.get("evidence", []),
+            'grounding': grounding_result
         })
 
     results = order_stories(results)
-    total_content = build_story_digest(results)
-
-    global_summary = generate_global_summary(total_content)
-    micro_summary = generate_newsletter_headline(global_summary)
-    podcast_summary = generate_podcast_summary(total_content)
+    aggregate_outputs = build_aggregate_outputs(results)
+    global_summary = aggregate_outputs["global_summary"]
+    micro_summary = aggregate_outputs["micro_summary"]
+    podcast_summary = aggregate_outputs["podcast_summary"]
     comic = fetch_latest_quantum_bits_comic(artifact_store.run_dir(run_id))
 
     artifact_store.save_run_json(
@@ -527,6 +702,8 @@ def run_generation(selected_stories, source="api"):
             "global_summary": global_summary,
             "micro_summary": micro_summary,
             "podcast_summary": podcast_summary,
+            "aggregate_qa": aggregate_outputs["aggregate_qa"],
+            "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],
             "comic": comic
         }
     )
@@ -877,6 +1054,7 @@ def admin_run(run_id):
           <div class='summary'>{global_summary}</div>
           <div class='actions'>
             <a href='/admin'>Back to runs</a>
+            <a href='/admin/run/{run_id}/review'>Review failed stories</a>
             <a href='/admin/run/{run_id}/preview' target='_blank'>Preview newsletter</a>
           </div>
           <form method='post'>
@@ -905,6 +1083,99 @@ def admin_preview(run_id):
         resolve_comic_for_render(comic, comic_image_src)
     )
     return newsletter
+
+@app.route('/admin/run/<run_id>/review', methods=['GET'])
+def admin_review_failed_stories(run_id):
+    run_data = load_run_results(run_id)
+    rows = []
+    for idx, result in enumerate(run_data["results"]):
+        story_id = _story_id_for_result(result, idx)
+        artifacts = load_story_artifacts(run_id, story_id)
+        qa = artifacts["qa"]
+        provenance = artifacts["provenance"]
+        fetch = artifacts["fetch"]
+        metadata = fetch.get("metadata", {}) or result.get("source_metadata", {}) or {}
+        flags = qa.get("flags") or result.get("qa_flags") or []
+        grounding = provenance.get("grounding") or result.get("grounding") or {}
+        if not flags and grounding.get("passed", True):
+            continue
+
+        evidence = result.get("summary_evidence") or provenance.get("summary_evidence") or []
+        claim_check = grounding.get("claim_check") or {}
+        unsupported = claim_check.get("unsupported_claims") or []
+        clean_preview = _escape(artifacts["clean_text"][:6000])
+        raw_preview = _escape(artifacts["raw_text"][:2500])
+        evidence_html = "".join(f"<li>{_escape(item)}</li>" for item in evidence) or "<li>No evidence snippets recorded.</li>"
+        unsupported_html = "".join(
+            f"<li><strong>{_escape(item.get('claim', ''))}</strong><br><span>{_escape(item.get('best_evidence', ''))}</span></li>"
+            for item in unsupported
+        ) or "<li>No claim-level failures recorded.</li>"
+
+        rows.append(f"""
+        <section class='review-card'>
+          <div class='story-meta'>Story {idx + 1} · <a href='{_escape(result.get('url', ''))}' target='_blank' rel='noopener noreferrer'>{_escape(result.get('url', ''))}</a></div>
+          <h2>{_escape(result.get('title', 'Untitled'))}</h2>
+          <div class='flags'>{_escape(', '.join(flags) or 'Grounding failed')}</div>
+          <div class='grid'>
+            <div>
+              <h3>Generated Summary</h3>
+              <p>{_escape(result.get('summary', ''))}</p>
+              <h3>Evidence Snippets</h3>
+              <ul>{evidence_html}</ul>
+              <h3>Unsupported Claims</h3>
+              <ul>{unsupported_html}</ul>
+            </div>
+            <div>
+              <h3>Source Identity</h3>
+              <dl>
+                <dt>Submitted URL</dt><dd>{_escape(metadata.get('submitted_url') or fetch.get('url') or result.get('url', ''))}</dd>
+                <dt>Final URL</dt><dd>{_escape(metadata.get('final_url') or metadata.get('source_url') or '')}</dd>
+                <dt>Page Title</dt><dd>{_escape(metadata.get('html_title', ''))}</dd>
+                <dt>Headline</dt><dd>{_escape(metadata.get('h1', ''))}</dd>
+                <dt>Extraction</dt><dd>{_escape(metadata.get('extraction_status', ''))} / {_escape(metadata.get('extraction_method', ''))}</dd>
+              </dl>
+            </div>
+          </div>
+          <details open>
+            <summary>Extracted article text</summary>
+            <pre>{clean_preview}</pre>
+          </details>
+          <details>
+            <summary>Raw source preview</summary>
+            <pre>{raw_preview}</pre>
+          </details>
+        </section>
+        """)
+
+    rows_html = "\n".join(rows) or "<div class='empty'>No failed stories in this run.</div>"
+    return f"""
+    <html>
+      <head>
+        <title>Admin - Review Failed Stories</title>
+        <style>
+          body {{ font-family: 'Helvetica Neue', Arial, sans-serif; padding: 24px; background: #f8fafc; color: #111827; }}
+          main {{ max-width: 1200px; margin: 0 auto; }}
+          a {{ color: #1d4ed8; }}
+          .review-card {{ background: white; border-radius: 12px; padding: 18px; margin: 16px 0; box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08); }}
+          .story-meta {{ color: #64748b; font-size: 0.9em; }}
+          .flags {{ display: inline-block; background: #b45309; color: white; padding: 5px 9px; border-radius: 999px; font-size: 0.82em; }}
+          .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }}
+          dt {{ font-weight: 700; margin-top: 8px; }}
+          dd {{ margin-left: 0; color: #334155; overflow-wrap: anywhere; }}
+          pre {{ white-space: pre-wrap; background: #0f172a; color: #e2e8f0; padding: 14px; border-radius: 10px; max-height: 460px; overflow: auto; }}
+          summary {{ cursor: pointer; font-weight: 700; margin-top: 14px; }}
+          .empty {{ background: white; padding: 18px; border-radius: 12px; }}
+        </style>
+      </head>
+      <body>
+        <main>
+          <p><a href='/admin/run/{run_id}'>Back to run</a></p>
+          <h1>Failed Story Review</h1>
+          {rows_html}
+        </main>
+      </body>
+    </html>
+    """
 
 @app.route('/admin/run/<run_id>/regenerate', methods=['POST'])
 def admin_regenerate_story(run_id):

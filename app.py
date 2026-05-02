@@ -14,9 +14,12 @@ from flask import Flask, Response, jsonify, request
 from openai import OpenAI
 
 from api import (
+    build_aggregate_outputs,
     generate_global_summary,
     generate_newsletter_headline,
     generate_summary,
+    generate_summary_result,
+    generate_title_result,
     generate_title,
     load_spreadsheet_data,
     process_url,
@@ -31,7 +34,7 @@ from blob_archive import (
 from image_extractor import ImageExtractor
 from prompt_loader import get_prompt
 from quantum_bits_comic import fetch_latest_quantum_bits_comic, resolve_comic_for_render
-from qa_checks import qa_title_summary
+from qa_checks import qa_title_summary, validate_story_grounding
 from scientific_paper_processor import ScientificPaperProcessor
 from story_organizer import (
     STORY_BUCKET_DESCRIPTIONS,
@@ -40,6 +43,7 @@ from story_organizer import (
     curate_stories,
     group_stories,
 )
+from story_grounding import failure_summary
 from title_utils import sanitize_story_title
 
 load_dotenv()
@@ -249,6 +253,18 @@ def render_newsletter_html(
         """ % "".join(toc_items)
 
     comic_section = render_comic_section(comic)
+    all_grounded = all(not story.get("qa_flags") for story in results)
+    badge_text = (
+        "Verified Content - source-grounding checks passed"
+        if all_grounded
+        else "Needs Review - one or more stories failed source-grounding checks"
+    )
+    badge_color = "#0f766e" if all_grounded else "#b45309"
+    verification_badge = (
+        '<div style="display:inline-block; margin-top:14px; padding:6px 10px; '
+        'border-radius:999px; background:%s; color:white; font-family:Arial,sans-serif; '
+        'font-size:0.82rem;">%s</div>'
+    ) % (badge_color, escape(badge_text))
     cover_image_html = ""
     if cover_image_src:
         cover_image_html = '<img src="%s" alt="%s" class="highlight-image" />' % (
@@ -452,6 +468,7 @@ def render_newsletter_html(
       <h1>{headline}</h1>
       <div class="meta">Generated {generated_at}</div>
       <div class="issue-stats">This week: {primary_count} selected stories</div>
+      {verification_badge}
       <div class="recap">{global_summary}</div>
       {table_of_contents}
       {cover_image_html}
@@ -467,6 +484,7 @@ def render_newsletter_html(
         generated_at=generated_at,
         primary_count=len(results),
         global_summary=escape(global_summary),
+        verification_badge=verification_badge,
         table_of_contents=table_of_contents,
         cover_image_html=cover_image_html,
         comic_section=comic_section,
@@ -575,7 +593,7 @@ def build_fallback_story(index: int, url: str, title_seed: str, tag: str, reason
 
     quick_text = extract_quick_text(url)
     summary_parts = [
-        "Fallback summary: source parsing exceeded the processing budget, so this item uses available metadata.",
+        "Unable to generate a source-grounded summary: source parsing exceeded the processing budget, so this item needs manual review.",
     ]
     if reason:
         summary_parts.append(f"Reason: {reason}.")
@@ -603,6 +621,9 @@ def build_fallback_story(index: int, url: str, title_seed: str, tag: str, reason
         "is_paper": is_paper,
         "paper_type": paper_processor.paper_type,
         "is_fallback": True,
+        "qa_flags": ["fallback_timeout"],
+        "source_metadata": {"source_url": url, "extraction_status": "timeout_fallback"},
+        "summary_evidence": [],
     }
 
 
@@ -638,11 +659,25 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
     paper_processor = ScientificPaperProcessor(url)
     is_paper = paper_processor.is_scientific_paper()
     content_bundle = process_url(url, title_seed, "")
-    summary = generate_summary(title_seed, content_bundle["clean"], url)
+    summary_result = generate_summary_result(
+        title_seed,
+        content_bundle["clean"],
+        url,
+        content_bundle.get("metadata", {}),
+    )
+    summary = summary_result["summary"]
     if not summary:
         return None
 
-    rewritten_title = generate_title(summary, url, is_paper, source_title=title_seed)
+    title_result = generate_title_result(
+        title_seed,
+        content_bundle["clean"],
+        url,
+        is_paper,
+        content_bundle.get("metadata", {}),
+        summary,
+    )
+    rewritten_title = title_result.get("title") or generate_title(summary, url, is_paper, source_title=title_seed)
     if not rewritten_title or not rewritten_title.strip():
         rewritten_title = title_seed
     rewritten_title = sanitize_story_title(rewritten_title, is_paper=is_paper)
@@ -650,6 +685,16 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
     if not rewritten_title or not rewritten_title.strip():
         rewritten_title = remove_publisher_mentions(sanitize_story_title(title_seed, is_paper=is_paper), url)
     qa_result = qa_title_summary(rewritten_title, summary)
+    grounding_result = validate_story_grounding(
+        rewritten_title,
+        summary,
+        content_bundle["clean"],
+        content_bundle.get("metadata", {}),
+    )
+    if not grounding_result["passed"]:
+        summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+        qa_result["summary_fixed"] = summary
+        qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
 
     article_image = ""
     try:
@@ -669,6 +714,10 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
         "is_paper": bool(content_bundle["is_paper"] or is_paper),
         "paper_type": content_bundle["paper_type"],
         "is_fallback": False,
+        "qa_flags": qa_result.get("flags", []),
+        "source_metadata": content_bundle.get("metadata", {}),
+        "summary_evidence": summary_result.get("evidence", []),
+        "grounding": grounding_result,
     }
 
 
@@ -718,9 +767,9 @@ def finalize_newsletter(results, additional_links=None):
         seen_overflow_urls.add(url_key)
     overflow_results = merged_overflow
 
-    digest = build_story_digest(primary_results)
-    global_summary = generate_global_summary(digest) or "Weekly newsletter generated."
-    headline = generate_newsletter_headline(global_summary) or "Weekly Quantum Newsletter"
+    aggregate_outputs = build_aggregate_outputs(primary_results)
+    global_summary = aggregate_outputs["global_summary"] or "Weekly newsletter generated."
+    headline = aggregate_outputs["micro_summary"] or "Weekly Quantum Newsletter"
     cover_image_src = generate_cover_image_data_url(global_summary, headline)
 
     comic = None
@@ -748,6 +797,8 @@ def finalize_newsletter(results, additional_links=None):
         "results": primary_results,
         "overflow_results": overflow_results,
         "channel_counts": curated["channel_counts"],
+        "aggregate_qa": aggregate_outputs["aggregate_qa"],
+        "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],
         "html": html_content,
         "comic": comic,
         "cover_image_src": cover_image_src,

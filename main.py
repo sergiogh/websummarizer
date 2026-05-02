@@ -16,7 +16,12 @@ import sys
 
 from artifact_store import ArtifactStore
 from prompt_loader import get_prompt
-from qa_checks import qa_title_summary
+from qa_checks import (
+    qa_title_summary,
+    validate_aggregate_grounding,
+    validate_story_grounding,
+    validate_summary_claims,
+)
 from quantum_bits_comic import fetch_latest_quantum_bits_comic, resolve_comic_for_render
 from story_organizer import (
     STORY_BUCKET_DESCRIPTIONS,
@@ -24,6 +29,12 @@ from story_organizer import (
     build_story_digest,
     curate_stories,
     group_stories,
+)
+from story_grounding import (
+    failure_summary,
+    filter_passed_stories,
+    generate_grounded_summary,
+    generate_grounded_title,
 )
 from title_utils import sanitize_story_title
 
@@ -43,9 +54,18 @@ def process_url(url, title, fallback_summary):
         full_text = paper_processor.download_paper()
         if full_text:
             print(f"Successfully downloaded paper, length: {len(full_text)} characters")
+            paper_sections = paper_processor.extract_paper_sections(full_text)
             return {
                 "raw": full_text,
                 "clean": full_text,
+                "metadata": {
+                    "source_url": url,
+                    "html_title": title,
+                    "h1": title,
+                    "extraction_status": "paper",
+                    "clean_text_length": len(full_text),
+                    "paper_sections": paper_sections,
+                },
                 "is_paper": True,
                 "paper_type": paper_processor.paper_type
             }
@@ -66,11 +86,12 @@ def process_url(url, title, fallback_summary):
     return {
         "raw": raw_content or "",
         "clean": url_processor.content or "",
+        "metadata": getattr(url_processor, "metadata", {}) or {},
         "is_paper": False,
         "paper_type": None
     }
 
-def generate_summary(title, content, url=None):
+def generate_summary(title, content, url=None, source_metadata=None):
     # Check if this is a scientific paper and use specialized analysis
     if url:
         paper_processor = ScientificPaperProcessor(url)
@@ -83,10 +104,33 @@ def generate_summary(title, content, url=None):
                 print("Paper analysis failed, falling back to standard summary")
     
     # Standard summary generation for non-papers
-    prompt = get_prompt("summary.newsletter")
-    summary_generator = SummaryGenerator(f"{title} - {content}")
-    summary_generator.generate_summary(prompt)
-    return summary_generator.summary
+    summary_result = generate_summary_result(title, content, url, source_metadata)
+    return summary_result["summary"]
+
+def generate_summary_result(title, content, url=None, source_metadata=None):
+    if url:
+        paper_processor = ScientificPaperProcessor(url)
+        if paper_processor.is_scientific_paper():
+            print(f"Generating concise summary for scientific paper: {title}")
+            analysis = paper_processor.analyze_paper(title, content)
+            if analysis:
+                return {
+                    "status": "ok",
+                    "summary": analysis,
+                    "matched_title": title,
+                    "evidence": [],
+                    "confidence": 0.85,
+                }
+            else:
+                print("Paper analysis failed, falling back to standard summary")
+
+    return generate_grounded_summary(
+        title,
+        content,
+        url or "",
+        source_metadata or {},
+        prompt_key="summary.story.grounded",
+    )
 
 def generate_title(summary, url=None, is_paper=False):
     if is_paper:
@@ -100,6 +144,19 @@ def generate_title(summary, url=None, is_paper=False):
         # Add [PAPER] prefix
         title = f"[PAPER] {title}"
     return title
+
+def generate_title_result(source_title, content, url=None, is_paper=False, source_metadata=None, summary=""):
+    if is_paper:
+        title = generate_title(summary or content[:2000], url, is_paper=True)
+        return {"status": "ok" if title else "insufficient_content", "title": title or "", "evidence": [], "confidence": 0.8}
+
+    return generate_grounded_title(
+        source_title or "",
+        content or "",
+        url or "",
+        source_metadata or {},
+        prompt_key="title.story.grounded",
+    )
 
 def extract_image(url):
     image_extractor = ImageExtractor(url)
@@ -123,6 +180,37 @@ def generate_podcast_summary(total_content):
     podcast_summarizer = SummaryGenerator(total_content)
     podcast_summarizer.generate_summary(prompt)
     return podcast_summarizer.summary
+
+def build_aggregate_outputs(results):
+    passed_results = filter_passed_stories(results)
+    if not passed_results:
+        return {
+            "passed_results": [],
+            "global_summary": "No stories passed source-grounding checks. Review flagged stories before publishing this issue.",
+            "micro_summary": "Newsletter needs source review",
+            "podcast_summary": "No podcast research content was generated because no selected stories passed source-grounding checks.",
+            "aggregate_qa": {
+                "global_summary": {"passed": False, "flags": ["no_passed_stories"]},
+                "headline": {"passed": False, "flags": ["no_passed_stories"]},
+                "podcast_summary": {"passed": False, "flags": ["no_passed_stories"]},
+            },
+        }
+
+    total_content = build_story_digest(passed_results)
+    global_summary = generate_global_summary(total_content)
+    micro_summary = generate_newsletter_headline(global_summary)
+    podcast_summary = generate_podcast_summary(total_content)
+    return {
+        "passed_results": passed_results,
+        "global_summary": global_summary,
+        "micro_summary": micro_summary,
+        "podcast_summary": podcast_summary,
+        "aggregate_qa": {
+            "global_summary": validate_aggregate_grounding(global_summary or "", passed_results),
+            "headline": validate_aggregate_grounding(micro_summary or "", passed_results),
+            "podcast_summary": validate_aggregate_grounding(podcast_summary or "", passed_results),
+        },
+    }
 
 def extract_key_facts(clean_content):
     prompt = get_prompt("provenance.why")
@@ -150,6 +238,11 @@ Title: {result['title']}
 URL: {result['url']}
 Summary: {result['summary']}
 Image URL: {result.get('image_url', 'No image')}
+Extracted Page Title: {result.get('source_metadata', {}).get('html_title', '')}
+Extracted Page Headline: {result.get('source_metadata', {}).get('h1', '')}
+Extraction Status: {result.get('source_metadata', {}).get('extraction_status', '')}
+QA Flags: {', '.join(result.get('qa_flags', [])) or 'none'}
+Evidence Snippets: {' | '.join(result.get('summary_evidence', []))}
 ---
 """
 
@@ -324,24 +417,14 @@ def create_newsletter(results, global_summary, micro_summary, podcast_summary, c
     print(review_result)
     print("-------------------------")
     
-    # Apply review recommendations to correct any issues
-    print("\nApplying review recommendations...")
-    corrected_content = apply_review_recommendations(
-        review_result, results, global_summary, micro_summary, podcast_summary
-    )
-    
-    # Use corrected content if available, otherwise use original
-    final_headline = corrected_content.get('headline', micro_summary)
-    final_global_summary = corrected_content.get('global_summary', global_summary)
-    final_podcast_summary = corrected_content.get('podcast_summary', podcast_summary)
-    
-    # Update article summaries if corrections were provided
+    # Do not auto-rewrite generated stories after review unless the original
+    # source text is included in the correction pass. Rewriting from newsletter
+    # text alone can reintroduce hallucinations.
+    final_headline = micro_summary
+    final_global_summary = global_summary
+    final_podcast_summary = podcast_summary
     final_results = results.copy()
-    if 'articles' in corrected_content and corrected_content['articles']:
-        for i, corrected_summary in enumerate(corrected_content['articles']):
-            if i < len(final_results):
-                final_results[i] = final_results[i].copy()
-                final_results[i]['summary'] = corrected_summary
+    all_grounded = all(not result.get("qa_flags") for result in final_results)
     
     print("\nFinal verification complete. Generating newsletter HTML...")
     
@@ -538,7 +621,7 @@ def create_newsletter(results, global_summary, micro_summary, podcast_summary, c
     </style>
 </head>
 <body>
-    <div class="verification-badge">✓ Verified Content - All quotes and data sourced from provided materials</div>
+    <div class="verification-badge">{'Verified Content - source-grounding checks passed' if all_grounded else 'Needs Review - one or more stories failed source-grounding checks'}</div>
     <h1>{final_headline}</h1>
     <p class="issue-stats">This week: {len(final_results)} selected stories</p>"""
     
@@ -672,26 +755,42 @@ def main() -> None:
             "fetch",
             {
                 "url": url,
+                "input_title": spreadsheet_handler.titles[i],
                 "is_paper": content_bundle["is_paper"],
                 "paper_type": content_bundle["paper_type"],
+                "metadata": content_bundle.get("metadata", {}),
                 "raw_length": len(content_bundle["raw"] or ""),
                 "clean_length": len(content_bundle["clean"] or "")
             }
         )
 
-        summary = generate_summary(spreadsheet_handler.titles[i], content_bundle["clean"], url)
+        summary_result = generate_summary_result(
+            spreadsheet_handler.titles[i],
+            content_bundle["clean"],
+            url,
+            content_bundle.get("metadata", {}),
+        )
+        summary = summary_result["summary"]
         
         # Skip if summary generation failed
         if summary is None:
             print(f"Warning: Could not generate summary for {url}")
             continue
 
-        artifact_store.save_json(run_id, story_id, "summary", {"summary": summary})
+        artifact_store.save_json(run_id, story_id, "summary", {"summary": summary, "grounded": summary_result})
         
         # Handle title generation/formatting
         if not spreadsheet_handler.titles[i] or spreadsheet_handler.titles[i].strip() == "":
             # Generate new title
-            new_title = generate_title(summary, url, is_paper)
+            title_result = generate_title_result(
+                spreadsheet_handler.titles[i],
+                content_bundle["clean"],
+                url,
+                is_paper,
+                content_bundle.get("metadata", {}),
+                summary,
+            )
+            new_title = title_result.get("title") or generate_title(summary, url, is_paper)
             if new_title is not None:
                 spreadsheet_handler.titles[i] = new_title
                 print(f"Generated new title: {spreadsheet_handler.titles[i]}")
@@ -703,6 +802,21 @@ def main() -> None:
         artifact_store.save_json(run_id, story_id, "title", {"title": spreadsheet_handler.titles[i]})
 
         qa_result = qa_title_summary(spreadsheet_handler.titles[i], summary)
+        grounding_result = validate_story_grounding(
+            spreadsheet_handler.titles[i],
+            summary,
+            content_bundle["clean"],
+            content_bundle.get("metadata", {}),
+        )
+        claim_result = validate_summary_claims(summary, content_bundle["clean"])
+        if not claim_result["passed"]:
+            grounding_result["flags"] = list(dict.fromkeys(grounding_result["flags"] + ["summary_claims_not_supported"]))
+            grounding_result["passed"] = False
+            grounding_result["claim_check"] = claim_result
+        if not grounding_result["passed"]:
+            summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+            qa_result["summary_fixed"] = summary
+            qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
         artifact_store.save_json(run_id, story_id, "qa", qa_result)
 
         spreadsheet_handler.titles[i] = qa_result["title_fixed"]
@@ -713,7 +827,13 @@ def main() -> None:
             run_id,
             story_id,
             "provenance",
-            {"url": url, "title": spreadsheet_handler.titles[i], "why": why_log}
+            {
+                "url": url,
+                "title": spreadsheet_handler.titles[i],
+                "why": why_log,
+                "grounding": grounding_result,
+                "summary_evidence": summary_result.get("evidence", []),
+            }
         )
         
         image_url = extract_image(url)
@@ -726,7 +846,11 @@ def main() -> None:
             'image_url': image_url,
             'tag': spreadsheet_handler.tags[i],
             'is_paper': bool(content_bundle["is_paper"] or is_paper),
-            'paper_type': content_bundle["paper_type"]
+            'paper_type': content_bundle["paper_type"],
+            'qa_flags': qa_result.get("flags", []),
+            'source_metadata': content_bundle.get("metadata", {}),
+            'summary_evidence': summary_result.get("evidence", []),
+            'grounding': grounding_result,
         })
 
     if not results:
@@ -736,20 +860,19 @@ def main() -> None:
     curated = curate_stories(results)
     primary_results = curated["primary"]
     overflow_results = curated["overflow"]
+    aggregate_outputs = build_aggregate_outputs(primary_results)
 
-    total_content = build_story_digest(primary_results)
-
-    global_summary = generate_global_summary(total_content)
+    global_summary = aggregate_outputs["global_summary"]
     if global_summary is None:
         print("Error: Could not generate global summary. Exiting.")
         return
 
-    micro_summary = generate_newsletter_headline(global_summary)
+    micro_summary = aggregate_outputs["micro_summary"]
     if micro_summary is None:
         print("Error: Could not generate newsletter headline. Exiting.")
         return
 
-    podcast_summary = generate_podcast_summary(total_content)
+    podcast_summary = aggregate_outputs["podcast_summary"]
     if podcast_summary is None:
         print("Error: Could not generate podcast summary. Exiting.")
         return
@@ -766,6 +889,8 @@ def main() -> None:
             "global_summary": global_summary,
             "micro_summary": micro_summary,
             "podcast_summary": podcast_summary,
+            "aggregate_qa": aggregate_outputs["aggregate_qa"],
+            "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],
             "comic": comic
         }
     )

@@ -1,8 +1,5 @@
 import re
-from collections import Counter
 from datetime import datetime
-from html import unescape
-from pathlib import Path
 from typing import Dict, Iterable, List, Sequence, Tuple
 from urllib.parse import urlparse
 
@@ -225,9 +222,6 @@ _WHY_LABEL = "Why this matters:"
 
 _FALLBACK_KEY_DETAIL = "No quantitative metric disclosed in source"
 _FALLBACK_WHY = "No impact statement can be derived from the available source text"
-_DEFAULT_HISTORY_CONTEXT = "Recent newsletters in this area show steady momentum and continued validation of practical quantum use cases."
-
-_HISTORICAL_CONTEXT_CACHE: Dict[str, str] = {}
 
 _MIN_PRIMARY_PER_BUCKET = {
     STORY_BUCKET_RESEARCH: 3,
@@ -371,66 +365,7 @@ def _find_impact_sentence(sentences: Sequence[str]) -> str:
     return ""
 
 
-def _extract_titles_from_newsletter(html_text: str) -> List[str]:
-    matches = re.findall(r"<h3>\s*<a[^>]*>(.*?)</a>\s*</h3>", html_text, flags=re.IGNORECASE | re.DOTALL)
-    titles = []
-    for match in matches:
-        no_tags = re.sub(r"<[^>]+>", "", match)
-        title = _normalize_spaces(unescape(no_tags))
-        if title:
-            titles.append(title)
-    return titles
-
-
-def _recent_newsletter_paths(limit: int = 24) -> List[Path]:
-    candidates: List[Path] = []
-    root = Path.cwd()
-    candidates.extend(root.glob("newsletter_*.html"))
-    archive_2025 = root / "2025"
-    if archive_2025.exists():
-        candidates.extend(archive_2025.glob("newsletter_*.html"))
-    existing = [path for path in candidates if path.exists() and path.is_file()]
-    existing.sort(key=lambda item: item.stat().st_mtime, reverse=True)
-    return existing[:limit]
-
-
-def _build_historical_context_cache() -> Dict[str, str]:
-    counters: Dict[str, Counter] = {bucket: Counter() for bucket in STORY_BUCKET_SEQUENCE}
-    token_pattern = re.compile(r"[a-z]{5,}")
-
-    for path in _recent_newsletter_paths():
-        try:
-            html_text = path.read_text(encoding="utf-8", errors="ignore")
-        except Exception:
-            continue
-        for title in _extract_titles_from_newsletter(html_text):
-            bucket = classify_story_bucket(title=title, summary="", url="")
-            tokens = token_pattern.findall(title.lower())
-            filtered = [token for token in tokens if token not in _STOPWORDS]
-            counters[bucket].update(filtered)
-
-    context: Dict[str, str] = {}
-    for bucket in STORY_BUCKET_SEQUENCE:
-        top_terms = [token for token, _ in counters[bucket].most_common(3)]
-        if len(top_terms) >= 2:
-            if len(top_terms) == 2:
-                joined = f"{top_terms[0]} and {top_terms[1]}"
-            else:
-                joined = f"{top_terms[0]}, {top_terms[1]}, and {top_terms[2]}"
-            context[bucket] = f"Recent newsletters in this area repeatedly focused on {joined}."
-        else:
-            context[bucket] = _DEFAULT_HISTORY_CONTEXT
-    return context
-
-
-def _historical_context_sentence(bucket: str) -> str:
-    global _HISTORICAL_CONTEXT_CACHE
-    if not _HISTORICAL_CONTEXT_CACHE:
-        _HISTORICAL_CONTEXT_CACHE = _build_historical_context_cache()
-    return _HISTORICAL_CONTEXT_CACHE.get(bucket, _DEFAULT_HISTORY_CONTEXT)
-
-
-def _compose_narrative_summary(what: str, key: str, why: str, bucket: str) -> str:
+def _compose_narrative_summary(what: str, key: str, why: str) -> str:
     primary = [_ensure_sentence(what, "No source summary was generated.")]
 
     if key and key != _FALLBACK_KEY_DETAIL:
@@ -440,25 +375,27 @@ def _compose_narrative_summary(what: str, key: str, why: str, bucket: str) -> st
 
     why_text = why
     if not why_text or why_text == _FALLBACK_WHY:
-        why_text = "This matters because it reflects practical progress that can be evaluated against recent developments."
+        why_text = "The available source text does not provide an explicit impact statement"
     why_clause = _sentence_to_clause(why_text)
-    primary.append(_ensure_sentence(f"This matters because {why_clause}", "This matters because the development has direct relevance for near-term quantum progress."))
-
-    history = _historical_context_sentence(bucket)
-    if history:
-        primary.append(_ensure_sentence(history, _DEFAULT_HISTORY_CONTEXT))
+    if "does not provide an explicit impact statement" in why_text:
+        primary.append(_ensure_sentence(why_text, _FALLBACK_WHY + "."))
+    else:
+        primary.append(_ensure_sentence(f"This matters because {why_clause}", "The available source text does not provide an explicit impact statement."))
 
     return " ".join(primary)
 
 
-def standardize_story_summary(summary: str, story_bucket: str = STORY_BUCKET_OTHER) -> str:
+def standardize_story_summary(
+    summary: str,
+    story_bucket: str = STORY_BUCKET_OTHER,
+    story_title: str = "",
+) -> str:
     text = _normalize_spaces(summary)
     if not text:
         return _compose_narrative_summary(
             "No source summary was generated.",
             _FALLBACK_KEY_DETAIL,
             _FALLBACK_WHY,
-            story_bucket,
         )
 
     existing_what = _extract_labeled(text, _WHAT_LABEL, (_KEY_LABEL, _WHY_LABEL))
@@ -487,7 +424,7 @@ def standardize_story_summary(summary: str, story_bucket: str = STORY_BUCKET_OTH
     if not why:
         why = "The source provides a concrete development but limited explicit impact context"
 
-    return _compose_narrative_summary(what, key, why, story_bucket)
+    return _compose_narrative_summary(what, key, why)
 
 
 def classify_story_bucket(
@@ -549,6 +486,7 @@ def enrich_story(result: Dict[str, object]) -> Dict[str, object]:
     enriched["summary"] = standardize_story_summary(
         str(result.get("summary", "") or ""),
         story_bucket=story_bucket,
+        story_title=str(result.get("title", "") or ""),
     )
     return enriched
 
