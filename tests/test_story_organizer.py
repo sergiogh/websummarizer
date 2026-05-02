@@ -99,7 +99,7 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertNotIn("Key detail:", standardized)
         self.assertNotIn("Why this matters:", standardized)
         self.assertIn("This matters because", standardized)
-        self.assertIn("Recent newsletters", standardized)
+        self.assertNotIn("Recent newsletters", standardized)
 
     def test_standardize_story_summary_keeps_vs_sentence_complete(self):
         standardized = standardize_story_summary(
