@@ -1,0 +1,5 @@
+{
+  "url": "https://www.quantamagazine.org/networks-hold-the-key-to-a-decades-old-problem-about-waves-20260128/",
+  "title": "Networks Hold the Key to a Decades-Old Problem About Waves | Quanta Magazine",
+  "why": "- Mathematicians have achieved the first significant advance in 20 years on the decades-old \"Chowla’s cosine problem,\" a fundamental and unresolved question about the Fourier transform.\n- The breakthrough sheds light on basic properties of sums of cosine waves, an essential building block in Fourier analysis used widely across science and engineering.\n- The new approach to the problem emerged not from traditional Fourier analysis, but from techniques in graph theory, specifically related to the study of network structures and the \"MaxCut\" problem.\n- The research highlights a surprising and fruitful connection between the mathematics of graphs (relevant to circuit design and energy states in physical systems) and deep, unanswered questions in harmonic analysis.\n- This development advances our broader understanding of the structure of Fourier series, which underpin many computational and quantum algorithms."
+}

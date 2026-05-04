@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/9kgeXKkZ6HddXnEC4",
+  "title": "Digital security in the Quantum Era",
+  "why": "- Quantum computers have the potential to solve problems that current supercomputers cannot, impacting fields like drug discovery, materials science, and energy.\n- Large-scale quantum computers could break widely used public-key cryptosystems that protect sensitive data such as bank transfers, private communications, trade secrets, and classified information.\n- Malicious actors are likely already engaging in \"store now, decrypt later\" attacks, collecting encrypted data to decrypt once quantum computers become available.\n- The National Institute of Standards & Technology (NIST) announced the first set of post-quantum cryptography (PQC) standards in 2024, following a multi-year international process.\n- Industry leaders have begun rolling out post-quantum cryptography in their products and infrastructure and are focused on achieving \"crypto agility\" and facilitating a secure migration to post-quantum security standards."
+}

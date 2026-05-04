@@ -1,0 +1,5 @@
+{
+  "url": "https://www.confluent.io/blog/confluent-cloud-post-quantum-cryptography-roadmap/",
+  "title": "Post-Quantum Cryptography in Confluent Cloud",
+  "why": "- The topic is post-quantum cryptography in Confluent Cloud.\n- There is a webinar being offered to discuss resilience from fire drills to zero-loss, specifically related to post-quantum cryptography.\n- The focus is on security for data streaming platforms like Confluent Cloud in the context of quantum computing threats."
+}

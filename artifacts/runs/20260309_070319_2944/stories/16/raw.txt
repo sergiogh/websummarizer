@@ -1,0 +1,833 @@
+<!DOCTYPE html><!-- Last Published: Sun Mar 01 2026 05:52:05 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.quera.com" data-wf-page="65883e089c1ad56db2f331b4" data-wf-site="643b94c382e84463a9e52264" lang="en" data-wf-collection="65883e089c1ad56db2f331f6" data-wf-item-slug="mythbuster-quantum-computing-is-ready-for-immediate-large-scale-production"><head><meta charset="utf-8"/><title></title><meta content="" name="description"/><meta content="" property="og:title"/><meta content="" property="og:description"/><meta content="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1.webp" property="og:image"/><meta content="" property="twitter:title"/><meta content="" property="twitter:description"/><meta content="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1.webp" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="u13FiT3pWQ7R7qlee5Om-aClpw2MYNkxgBPPB51DLcI" name="google-site-verification"/><link href="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/css/quera-c87685.shared.c7086bbb9.css" rel="stylesheet" type="text/css" integrity="sha384-xwhru5QRXEY313MqHgIYzl3DXR29+OEvkAnKKz8IHzhGsgH+lMX1t1octaD454HW" crossorigin="anonymous"/><style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="ef413af3-65bc-0cc8-e7a6-f54cdb8d8666"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="b336a10a-2fac-b787-908e-976659f6d4d7"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3b7e9f1a-decd-4679-c743-5d760b4b9d86"] {display:none;opacity:0;}}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Varela:400"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68be68f402c5b4265218f40d_Favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68be68f9bca07cd38e068428_Webclip.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z7CMRL');</script>
+<!-- End Google Tag Manager -->
+
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsload@1/cmsload.js"></script>
+
+<link rel="alternate" hreflang="en" href="https://www.quera.com">
+<link rel="alternate" hreflang="ja" href="https://ja.quera.com">
+<link rel="alternate" hreflang="ko" href="https://ko.quera.com">
+<link rel="alternate" hreflang="de" href="https://de.quera.com">
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_fc2c93991e297799f67c5c4c12e2f1a51'
+    });
+</script>
+
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"6632ff9bacd39f01c761ac94"})},
+document.head.appendChild(o)}initApollo();</script>
+<!-- [Attributes by Finsweet] CMS Load -->
+
+
+<style>
+.weglot-container {
+    display: none !important;
+}
+  .error-div{
+display:none;
+}
+</style>
+
+<!-- Finsweet Attributes [Social Share]-->
+<script async type="module"
+src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+fs-socialshare
+></script>
+
+<!-- Finsweet Attributes -->
+<script async type="module"
+src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+fs-readtime
+></script><!-- [Attributes by Finsweet] Social Share 
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"></script> -->
+
+    <link rel="canonical" href="" />
+<!-- [Attributes by Finsweet] Powerful Rich Text -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-richtext@1/richtext.js"></script>
+
+<!-- Finsweet Attributes [Social Share]-->
+<script async type="module"
+src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+fs-socialshare
+></script>
+
+<!-- Finsweet Attributes -->
+<script async type="module"
+src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+fs-readtime
+></script></head><body class="body_v2"><div class="rem_code w-embed"><style>
+  html { font-size: calc(0.3437500000000001rem + 0.23437499999999992vw); }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.34374999999999994rem + 0.23437500000000006vw); } }
+  @media screen and (max-width:1280px) { html { font-size: calc(0.170138888888889rem + 0.45138888888888873vw); } }
+  @media screen and (max-width:992px) { html { font-size: 0.625rem; } }
+</style></div><div data-w-id="9a856d2c-bc8f-f193-f499-b58ff1dcd347" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar_v2 w-nav"><div class="navbar-v2_element"><div class="container_v2 is--nav"><div class="navbar-v2_inner"><a href="/" class="barnd-v2 w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68adb32ac8e19135fcc0cb65_af0390bc875d5c819361dd8b73723b87_logo%20white.svg" loading="lazy" width="134" height="39" alt="" class="nav_logo-v2"/></a><nav role="navigation" class="nav_menu-v2 w-nav-menu"><div class="nav_menu-div"><div class="nav_menu-v2_links-holder"><div data-hover="true" data-delay="0" class="nav_dropdown-v2 w-dropdown"><div class="nav-dropdown-toggle_v2 w-dropdown-toggle"><div>Why QuEra</div><svg viewBox="0 0 17 17" fill="currentColor" class="nav_arrow"><path d="M8.49267 10.7641L12.3467 6.91113L11.6397 6.20312L8.49267 9.35013L5.34667 6.20312L4.63867 6.91113L8.49267 10.7641Z" class="button_arrow-path"></path></svg></div><nav class="nav-dropdown_list-v2 w-dropdown-list"><div class="nav-dropdown-list_inner-v2"><div class="w-layout-grid nav-dropdown_links-grid"><a href="/vision-mission" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68d8fb3f5155deb2432c0eb6_vision%20and%20mision.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Vision and Mission</p></a><a href="/neutral-atom-platform" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9b70ba5c83d8fa477c83_Atom.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Neutral Atom Advantage</p></a><a href="/quantum-error-correction" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9b70e3e2596454074e43_Warning.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Quantum Error Correction (QEC)</p></a><a href="/our-quantum-roadmap" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9b7033ce20cf8928671e_Compass.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Roadmap &amp; Innovation Path</p></a><a href="/partners" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9b708df192cff0f59397_Handshake.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Partners</p></a><a href="/about" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68c97cebe43fa8cce6c0c425_Leadership.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Leadership</p></a></div></div></nav></div><div data-hover="true" data-delay="0" class="nav_dropdown-v2 w-dropdown"><div class="nav-dropdown-toggle_v2 w-dropdown-toggle"><div>Solutions</div><svg viewBox="0 0 17 17" fill="currentColor" class="nav_arrow"><path d="M8.49267 10.7641L12.3467 6.91113L11.6397 6.20312L8.49267 9.35013L5.34667 6.20312L4.63867 6.91113L8.49267 10.7641Z" class="button_arrow-path"></path></svg></div><nav class="nav-dropdown_list-v2 w-dropdown-list"><div class="nav-dropdown-list_inner-v2"><div class="w-layout-grid nav-dropdown_links-grid"><a href="/hpc-centers" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68bd8df766517b37509c8b43_hpc%20centers.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>HPC Centers</p></a><a href="/national-programs" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9e100f7e69a443c72e_National%20Programs.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>National Programs</p></a><a href="/enterprise-innovators" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9ff85677e7e9a96469_Enterprise%20Innovations.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Enterprise Innovations</p></a></div></div></nav></div><div data-hover="true" data-delay="0" class="nav_dropdown-v2 w-dropdown"><div class="nav-dropdown-toggle_v2 w-dropdown-toggle"><div>Platform &amp; Services</div><svg viewBox="0 0 17 17" fill="currentColor" class="nav_arrow"><path d="M8.49267 10.7641L12.3467 6.91113L11.6397 6.20312L8.49267 9.35013L5.34667 6.20312L4.63867 6.91113L8.49267 10.7641Z" class="button_arrow-path"></path></svg></div><nav class="nav-dropdown_list-v2 w-dropdown-list"><div class="nav-dropdown-list_inner-v2"><div class="w-layout-grid nav-dropdown_links-grid"><a href="/aquila" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9e14015fb00dc16c17_Aquila.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Aquila</p></a><a href="/gemini" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68bd8df7ba682fdd7844974f_Gemini-Class.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Gemini-Class</p></a><a href="/premium-access" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9f133a128ca0fb8ae3_Premium%20Cloud%20Access.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Premium Cloud Access</p></a><a href="/on-premise-quantum-computers" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68bd8cfc9ad2629c53fa51a6_CornersOut.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>On-Premise Deployment</p></a><a href="/co-design" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9eedc3b37cce5b3554_Algoritm%20Co-Design.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Algorithm Co-Design</p></a><a href="/bloqade" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9e16a2dd4da860e808_Emulators%20(Bloqade).svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Emulators (Bloqade)</p></a></div></div></nav></div><div data-hover="true" data-delay="0" class="nav_dropdown-v2 w-dropdown"><div class="nav-dropdown-toggle_v2 w-dropdown-toggle"><div class="nav-dropdown-text-holder"><div red-dot="main" class="red-dot v2"></div><div>Proof &amp; Resources</div></div><svg viewBox="0 0 17 17" fill="currentColor" class="nav_arrow"><path d="M8.49267 10.7641L12.3467 6.91113L11.6397 6.20312L8.49267 9.35013L5.34667 6.20312L4.63867 6.91113L8.49267 10.7641Z" class="button_arrow-path"></path></svg></div><nav class="nav-dropdown_list-v2 w-dropdown-list"><div class="nav-dropdown-list_inner-v2"><div class="w-layout-grid nav-dropdown_links-grid"><a href="/publications" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9e08698f9b67d249d2_Publications.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><div class="dropdown_red-dot-wrapper"><p>Publications</p><div red-dot="publications" class="red-dot v2"></div></div></a><a href="/news" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9eb934b457bd63db8b_News%20%26%20Events.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><div class="dropdown_red-dot-wrapper"><p>News &amp; Events</p><div red-dot="news-and-events" class="red-dot v2"></div></div></a><a href="/blog" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9f941f59b9d9230c12_Blog%20%26%20Thought%20Leadership.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><div class="dropdown_red-dot-wrapper"><p>Blog &amp; Thought Leadership</p><div red-dot="blog" class="red-dot v2"></div></div></a><a href="/glossary" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9ffe6b011ad69546f7_Glossary.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Glossary</p></a><a href="/podcasts" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9e4a2a287f38d59fd4_Podcast.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><div class="dropdown_red-dot-wrapper"><p>Podcast</p><div red-dot="podcasts" class="red-dot v2"></div></div></a><a href="/media-kit" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9f2507976268c698ba_Media%20Kit.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Media Kit</p></a></div></div></nav></div><div data-hover="true" data-delay="0" class="nav_dropdown-v2 w-dropdown"><div class="nav-dropdown-toggle_v2 w-dropdown-toggle"><div>Engage</div><svg viewBox="0 0 17 17" fill="currentColor" class="nav_arrow"><path d="M8.49267 10.7641L12.3467 6.91113L11.6397 6.20312L8.49267 9.35013L5.34667 6.20312L4.63867 6.91113L8.49267 10.7641Z" class="button_arrow-path"></path></svg></div><nav class="nav-dropdown_list-v2 last w-dropdown-list"><div class="nav-dropdown-list_inner-v2"><div class="w-layout-grid nav-dropdown_links-grid _2-col"><a href="/request-a-quantum-consultation" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/69940a949b4b287eac1ca979_request%20a%20cons.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Request a Consultation</p></a><a href="/careers" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9fd7b176cd874b37ec_Careers.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Careers</p></a><a href="/ask-our-scientists" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6909c90759bd3f91bc388ee0_AddressBook.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Ask our scientists</p></a><a href="https://quera-store.com/" target="_blank" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/69005c928092960668d0f5ee_mdi_shopping-outline.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Store</p></a><a href="/contact-us" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ae9e9ee26f59825c8b3c75_Contact%20Us.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Contact Us</p></a><a href="/ask-ai-about-quera" class="nav_dropdown-item w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/69940a9460a1970bfc2018a0_ask%20ai.svg" loading="lazy" width="18" height="19" alt="" class="nav_icon-v2"/><p>Ask AI about QuEra</p></a></div><div class="nav-dropdown_contact-grid"><div id="w-node-_9a856d2c-bc8f-f193-f499-b58ff1dcd3e4-f1dcd347" class="nav-dropdown_content-item"><p class="p4">Contact Information</p><p class="description_v2 white_no-underline white-important">Phone: +1 617-588-7207<br/>Email: info@quera.com</p></div><div class="nav-dropdown_content-item"><p class="p4">Office Location</p><p class="description_v2">1380 Soldiers Field Road,<br/>Boston, MA 02135, USA</p></div></div></div></nav></div></div><div tablet="" class="mobile-menu_btn-holder"><a data-wf--button--variant="purple" href="/contact-us" class="button w-variant-003434fb-fde3-ad8e-8756-647c30215a5b w-inline-block"><div>Contact us</div><svg viewBox="0 0 24 25" fill="currentColor" class="button_arrow"><path d="M15.8698 13.2077L10.2128 18.8647L8.79883 17.4507L13.7488 12.5007L8.79883 7.55072L10.2128 6.13672L15.8698 11.7937C16.0573 11.9812 16.1626 12.2356 16.1626 12.5007C16.1626 12.7659 16.0573 13.0202 15.8698 13.2077Z"></path></svg></a></div></div></nav><div class="mobile_right-menu"><div class="nav-v2_btn-holder"><div open-search-popup="" class="button search"><svg viewBox="0 0 20 20" fill="currentColor" class="button_arrow white-stroke-12"><path d="M18.0969 16.762L15.0173 13.7073C16.2127 12.2168 16.7916 10.325 16.635 8.42077C16.4784 6.51657 15.5981 4.74476 14.1753 3.46964C12.7524 2.19453 10.895 1.51304 8.98511 1.5653C7.07519 1.61756 5.25789 2.3996 3.90687 3.75062C2.55585 5.10164 1.77381 6.91894 1.72155 8.82886C1.66929 10.7388 2.35078 12.5961 3.62589 14.019C4.90101 15.4419 6.67282 16.3221 8.57702 16.4788C10.4812 16.6354 12.3731 16.0565 13.8635 14.8611L16.9182 17.9158C16.9954 17.9936 17.0872 18.0553 17.1884 18.0975C17.2895 18.1396 17.398 18.1613 17.5076 18.1613C17.6172 18.1613 17.7257 18.1396 17.8268 18.0975C17.928 18.0553 18.0198 17.9936 18.0969 17.9158C18.2466 17.761 18.3302 17.5542 18.3302 17.3389C18.3302 17.1236 18.2466 16.9168 18.0969 16.762ZM9.2068 14.8611C8.05758 14.8611 6.93417 14.5203 5.97864 13.8818C5.0231 13.2434 4.27834 12.3359 3.83856 11.2742C3.39877 10.2124 3.2837 9.04411 3.5079 7.91697C3.7321 6.78984 4.28551 5.75449 5.09813 4.94188C5.91074 4.12926 6.94609 3.57585 8.07322 3.35165C9.20036 3.12745 10.3687 3.24252 11.4304 3.68231C12.4921 4.12209 13.3996 4.86685 14.0381 5.82239C14.6766 6.77792 15.0173 7.90133 15.0173 9.05055C15.0173 10.5916 14.4052 12.0695 13.3155 13.1592C12.2258 14.2489 10.7479 14.8611 9.2068 14.8611Z"></path></svg></div><div desktop="" class="desktop"><a data-wf--button--variant="purple-small" href="/contact-us" class="button w-variant-f07ae9b6-eb92-0fd7-6286-bab908bd898b w-inline-block"><div>Contact us</div><svg viewBox="0 0 24 25" fill="currentColor" class="button_arrow"><path d="M15.8698 13.2077L10.2128 18.8647L8.79883 17.4507L13.7488 12.5007L8.79883 7.55072L10.2128 6.13672L15.8698 11.7937C16.0573 11.9812 16.1626 12.2356 16.1626 12.5007C16.1626 12.7659 16.0573 13.0202 15.8698 13.2077Z"></path></svg></a></div></div><div class="menu_btn-v2 w-nav-button"><div class="menu_icons-holder v22"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68aeb040d72450ddb9da53a1_material-symbols_menu-rounded.svg" loading="lazy" width="29" height="29" alt="" class="menu-icon_v2 open"/><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68aebdd5d772eb01bc3bf652_material-symbols_close-rounded.svg" loading="lazy" width="29" height="29" alt="" class="menu-icon_v2 close"/></div></div></div></div></div></div><div class="nav_css w-embed"><style>
+.w--open .nav_arrow{
+transform: rotateZ(180deg);
+}
+.w--open .nav-dropdown_list-v2{
+opacity:1;
+pointer-events:auto;
+}
+.w--current .nav_icon-v2{
+filter: brightness(0) saturate(100%) invert(46%) sepia(95%) saturate(428%) hue-rotate(339deg) brightness(102%) contrast(111%);
+}
+</style></div><div id="searchresults" class="searchresults v2"><div class="search-block_holder static"><form action="/search" id="searchform" class="search_block inside-results v2 w-form"><label for="search-2" class="serch_label">Search</label><input class="search_input v2 w-input" maxlength="256" name="query" placeholder="Search" type="search" id="search" required=""/><input type="submit" class="button search_button w-button" value="Search"/></form><div id="searchresults-list" data-lenis-prevent="" class="search_result-list v2"></div><div close-search-popup="" class="close_search v2"><img loading="lazy" src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6440f429532729b54e578345_x%20icon.svg" alt="x icon
+" class="x-search-icon"/></div></div></div><div class="search_v2-css w-embed"><style>
+/*scrollbar search*/
+/*width*/
+.search_result-list::-webkit-scrollbar {
+width:10px;
+}
+/*track*/
+.search_result-list::-webkit-scrollbar-track {
+background:rgba(255, 255, 255, 0.11);
+
+  border-radius:6px;
+
+
+}
+/*thumb*/
+.search_result-list::-webkit-scrollbar-thumb {
+background:var(--_v2---grey-300);
+ 
+ 
+  border-radius:6px;
+}
+
+
+
+.search_item{
+background-color:rgba(255, 255, 255, 0.11);
+border-radius:7px;
+padding:2.4rem;
+}
+.serch_link {
+color:white;
+}
+.search_item:hover{
+border-color:var(--_v2---orange-600);
+}
+.search_item-right{
+gap:2.2rem;
+}
+.serch_link{
+    letter-spacing: -.03em;
+    font-family: Outfit, Arial, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 125%;
+}
+@media (max-width:767px){
+.search-result-items{
+gap:0.8rem;
+ }
+.serch_link{
+ font-size: 2.4rem;
+ }
+}
+
+
+</style></div><div class="red-dots-collection-lists-container"><div id="last-publication-collection" class="last-publication-collection w-dyn-list"><div class="w-dyn-empty"></div></div><div id="last-news-event-collection" class="last-news-collection w-dyn-list"><div class="w-dyn-empty"><div>No items found.</div></div></div><div id="last-news-event-collection" class="last-events-collection w-dyn-list"><div red-dot="events-list" role="list" class="w-dyn-items"><div role="listitem" class="article-fields w-dyn-item"><div>The QED-C Quantum Summit</div></div></div></div><div id="last-news-event-collection" class="last-blog-collection w-dyn-list"><div class="w-dyn-empty"><div>No items found.</div></div></div><div id="last-blog-collection" class="last-podcasts-collection w-dyn-list"><div class="w-dyn-empty"></div></div><div class="red-dot-functionality-js w-embed w-script"><script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar_v2");
+  if (!navbar) return;
+
+  // ---- Helpers ----
+  const $ = (sel) => navbar.querySelector(sel);
+  const $$ = (sel) => Array.from(navbar.querySelectorAll(sel));
+
+  const setVisible = (el, isVisible) => {
+    if (!el) return;
+    el.style.display = isVisible ? "block" : "none";
+  };
+
+  // A "list contains a child" = list has at least one CMS item
+  // (Webflow CMS items are typically .w-dyn-item inside .w-dyn-items)
+  const listHasItems = (listEl) => {
+    if (!listEl) return false;
+    return !!listEl.querySelector(".w-dyn-item");
+  };
+
+  // ---- Dots ----
+  const dotMain          = $('[red-dot="main"]');
+  const dotPublications  = $('[red-dot="publications"]');
+  const dotNewsEvents    = $('[red-dot="news-and-events"]');
+  const dotBlog          = $('[red-dot="blog"]');
+  const dotPodcasts      = $('[red-dot="podcasts"]');
+
+  // Ensure all dots start hidden (even if Webflow styles change later)
+  [dotMain, dotPublications, dotNewsEvents, dotBlog, dotPodcasts].forEach(d => setVisible(d, false));
+
+  // ---- Lists ----
+  const publicationsList = $('[red-dot="publications-list"]');
+  const newsList         = $('[red-dot="news-list"]');
+  const eventsList       = $('[red-dot="events-list"]');
+  const blogList         = $('[red-dot="blog-list"]');
+  const podcastsList     = $('[red-dot="podcasts-list"]');
+
+  // ---- Rules ----
+  const hasPublications = listHasItems(publicationsList);
+  const hasNews         = listHasItems(newsList);
+  const hasEvents       = listHasItems(eventsList);
+  const hasBlog         = listHasItems(blogList);
+  const hasPodcasts     = listHasItems(podcastsList);
+
+  // 1) If list has items -> corresponding dot visible
+  setVisible(dotPublications, hasPublications);
+  setVisible(dotNewsEvents, (hasNews || hasEvents)); // shared dot
+  setVisible(dotBlog, hasBlog);
+  setVisible(dotPodcasts, hasPodcasts);
+
+  // 2) If any dot is visible -> main visible
+  const anySectionDotVisible = hasPublications || hasNews || hasEvents || hasBlog || hasPodcasts;
+  setVisible(dotMain, anySectionDotVisible);
+});
+</script></div></div></div><div class="global_css-v2 navbar-v2 w-embed"><style>
+@media (max-width: 992px){
+[desktop]{
+		display:none !important;
+}}
+@media (min-width: 993px){
+[tablet]{
+		display:none !important;
+}}
+@media (max-width: 766px){
+[desktop-tablet]{
+		display:none !important;
+}}
+@media (min-width: 767px){
+[mobile]{
+		display:none !important;
+}}
+
+
+[purple-orange-gradient]{
+  background: linear-gradient(
+    90deg,
+    #7F3EFF 4%,
+    #FA82EC 52%,
+    #FF7C24 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;  /* Firefox support */
+  color: transparent;
+  display: inline-block;
+}
+[purple-orange-gradient-vertical]{
+  background: linear-gradient(
+    180deg,
+    #F28A71 4%,
+    #FA82EC 52%,
+    #A252FA 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;  /* Firefox support */
+  color: transparent;
+  display: inline-block;
+}
+[dots-bg]{
+  background-image: radial-gradient(#F4F4F4 1.68px, transparent 1.68px);
+  background-size: 12px 12px; /* spacing between dots */
+  background-repeat: repeat;
+}
+[dots-bg-on-dark] {
+  background-image: radial-gradient(rgba(64, 64, 64, 0.3) 1.68px, transparent 1.68px);
+  background-size: 12px 12px; /* spacing between dots */
+  background-repeat: repeat;
+}
+
+textarea{
+resize:none
+}
+
+.section-bg {
+  position: relative;
+  background: #0f0c24; /* dark base */
+  overflow: hidden;
+}
+
+.section-bg::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 130, 236, 0.9) 25%,
+    rgba(127, 62, 255, 0.7) 50%,
+    rgba(15, 12, 36, 0) 70%
+  );
+  filter: blur(40px);
+  z-index: 0;
+}
+
+
+</style></div><main class="main is_clip"><div class="old"><div class="inner_hero-section"><div class="container"><div class="inner_hero-content"><a href="/old/blog" class="link-back_holder w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643f8ddf07be6036b8bebf07_angle-right.svg" loading="lazy" width="8" height="12" alt="arrow left" class="back-arrow"/><div class="text-link yellow">Back to all</div></a><div class="inner_header-holder"><h1 class="h3">Mythbuster: Quantum Computing is Ready for Immediate Large-Scale Production</h1></div><div class="inner_post-details"><div class="inner_post-details-left"><div class="inner_deatils-item"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643f906c66296ab3742d65df_calendar.svg" loading="lazy" width="18" height="21" alt="calender icon" class="calender-img"/><div class="inner_details-text">February 14, 2026</div></div><div class="inner_deatils-item w-condition-invisible"><div class="white-dot"></div><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643f906c3befe842380987a5_clock.svg" loading="lazy" width="20" height="21" alt="clock icon" class="clock-img"/><div class="inner_details-text margin-7-5 w-dyn-bind-empty"></div><div class="inner_details-text">min read</div></div></div><div class="inner_post-details-right"><div class="white-dot hide-mobile"></div><div class="blog_tab non-clickable"><div>Technology</div></div><div class="white-dot"></div><div data-w-id="b336a10a-2fac-b787-908e-976659f6d4d6" class="inner_deatils-item margin-32"><div class="share-icon_holder"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643f906cde8f6e5543cd4e23_share.svg" loading="lazy" width="22" height="22" alt="share icon" data-w-id="b336a10a-2fac-b787-908e-976659f6d4d7" class="share-img white"/><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643fee008f7063114c44dfc2_share.svg" loading="lazy" width="22" height="22" alt="share icon" data-w-id="ef413af3-65bc-0cc8-e7a6-f54cdb8d8666" class="share-img yellow"/></div><div class="inner_details-text yellow">Share</div></div><div data-w-id="3b7e9f1a-decd-4679-c743-5d760b4b9d86" class="share-buttons_holder"><a fs-socialshare-element="twitter" href="#" class="share-button w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643fedf8a280c7d0b577b012_twitter.svg" loading="lazy" width="20" height="17" alt="twitter icon" class="twitter_icon"/></a><a fs-socialshare-element="linkedin" href="#" class="share-button w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643fedf84e53a2730126211d_linkedin.svg" loading="lazy" width="18" height="19" alt="limkdein icon" class="linkedin_icon"/></a><a data-w-id="9e4c3fa9-552c-e017-8fef-b52419c780d2" href="#" class="share-button copy w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643fedf84debf06802d50edf_link.svg" loading="lazy" width="26" height="21" alt="copy to clipboard icon" class="copy_icon"/><div style="opacity:0" class="copied-text">Copied!</div></a></div></div></div></div></div></div><div class="rich_section"><div class="container"><div class="rich_content"><img src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1.webp 768w" class="rich_main-img"/><div fs-richtext-element="rich-text" class="blog_rich-text w-richtext"><p><strong>Reality:</strong> Quantum computing is not ready for large-scale production. It is ready for serious, structured engagement, and the organizations that start now will be best positioned when the hardware crosses key thresholds.</p><p>Current quantum systems deliver real scientific and strategic value through pilot projects and co-design engagements. But they do not yet meet the operational bar that HPC centers apply to production workloads: repeatable results, auditable provenance, multi-tenant scheduling, and cost-predictable throughput. Acknowledging this honestly is the starting point for making good decisions about quantum investment.</p><p>At the same time, there is substantial value in working with today&#x27;s hardware. Teams that gain hands-on experience with quantum problem formulation, algorithm design, and hybrid integration now are building skills with long lead times. Early experimentation positions organizations to capitalize quickly when fault-tolerant systems arrive, rather than scrambling to catch up.</p><h2><strong>Why This Myth Persists</strong></h2><p><strong>Oversimplified metrics.</strong> Qubit counts and isolated demonstrations are easier to communicate than end-to-end time-to-answer and variance across production-like workloads. A headline about &quot;1,000 qubits&quot; tells you about capacity, not capability.</p><p><strong>Category confusion.</strong> &quot;Supremacy&quot; and &quot;advantage&quot; experiments are often scientific milestones. They are not proof of broad enterprise readiness, and conflating the two leads to misaligned expectations.</p><p><strong>Hype-driven procurement cycles.</strong> Budget windows and innovation mandates reward quick narratives. Nuanced readiness assessments are harder to fit into a slide deck, but they protect against expensive missteps.</p><h2><strong>What &quot;Production-Ready&quot; Actually Means in HPC Terms</strong></h2><p>If you are evaluating quantum hardware for your center, apply the same operational guardrails you use for any new accelerator:</p><p><strong>Reliability.</strong> P95/P99 success rates and stability windows across shifts and maintenance cycles. </p><p><strong>Performance under orchestration.</strong> Throughput and queue behavior when scheduled by Slurm or Kubernetes alongside CPUs and GPUs. Quantum must function as an HPC peer, not a standalone exotic system.</p><p><strong>Reproducibility and auditability.</strong> Run-to-run consistency, provenance logging, and telemetry hooks that meet institutional standards for scientific computing.</p><p><strong>Security and governance.</strong> Access control, tenancy isolation, data handling, and compliance alignment. For organizations subject to NIST 800-53, FedRAMP, CMMC, or export controls (ITAR/EAR), this is non-negotiable and often drives the decision between cloud and on-premises deployment.</p><p><strong>Cost predictability.</strong> Cost per successful answer, including compilation, execution, error mitigation, and retries. Budget predictability at monthly and quarterly horizons matters for sustained programs.</p><h2><strong>Technical Constraints Worth Tracking</strong></h2><p>These are the factors that determine whether a quantum system can deliver useful results for your specific workloads:</p><p><strong>Qubit quality and coherence</strong> limit circuit depth and the size of problems you can meaningfully address. Raw qubit counts without fidelity context are incomplete at best.</p><p><strong>Error rates and correction overhead.</strong> Error mitigation techniques help today but carry runtime and sample-count trade-offs. Full error correction works on a small scale, as recent demonstrations have shown, but remains resource-intensive. The transition from physical to a large number of logical qubits is the defining challenge of this era.</p><p><strong>Connectivity and routing overhead.</strong> Extra operations to connect distant qubits add time and error. Architectures differ significantly here. Field-Programmable Qubit Arrays (FPQAs) and atom shuttling can dynamically reconfigure qubit connectivity to match problem structure, reducing routing penalties that fixed-topology systems must pay.</p><p><strong>Calibration drift and uptime.</strong> Stability over hours matters for batch workloads. Ask vendors about uptime across an 8-hour window, not just peak performance snapshots. Room-temperature operation simplifies this challenge compared to systems requiring millikelvin cryogenic environments.</p><p><strong>Compiler and control stack maturity.</strong> Placement, scheduling, and gate-level optimizations determine usable performance as much as the underlying hardware. A capable compiler can close the gap between raw hardware specs and delivered results.</p><h2><strong>What to Measure Instead of &quot;Ready or Not Ready&quot;</strong></h2><p>Binary assessments are not useful. Track these metrics against your specific problem instances:</p><p><strong>Time-to-answer</strong> for your workloads, from queue to compile to execute to post-process.</p><p><strong>Solution quality</strong> versus classical baselines, including variance and confidence intervals, not just best-case snapshots.</p><p><strong>P95/P99 success rate</strong> and calibration-induced downtime over realistic operational windows.</p><p><strong>Routing overhead:</strong> swap counts and added depth for your problem graphs. This is where architecture choices have outsized impact.</p><p><strong>Hybrid efficiency:</strong> data movement latency, kernel granularity, and orchestration overhead between quantum and classical resources.</p><p><strong>Cost per successful run</strong> and budget predictability at program-relevant horizons.</p><h2><strong>How to Read Common Claims</strong></h2><p><strong>&quot;Thousands of qubits.&quot;</strong> Capacity, not capability. Ask for depth at target fidelity, routing overhead for representative circuits, and end-to-end metrics on problems that matter to you.</p><p><strong>&quot;High fidelity.&quot;</strong> Request variance and stability over an 8-hour window, not a single cherry-picked number. Fidelity that degrades under sustained workloads is not production fidelity.</p><p><strong>&quot;Utility/advantage demonstration.&quot;</strong> Clarify task relevance to your domain, the classical baseline used, sample complexity, and net time-to-answer including all overhead.</p><p><strong>&quot;Error mitigation replaces error correction.&quot;</strong> Mitigation is useful today, but carries runtime and sample-count trade-offs that compound with circuit size. Quantify total cost and accuracy before relying on mitigation as a long-term strategy. The industry&#x27;s trajectory is toward fault-tolerant error correction, and your roadmap should account for that transition.</p><h2><strong>What Is Genuinely Useful Today</strong></h2><p>Quantum computing is not ready for production, but it is ready for structured engagement that builds real organizational capability.</p><p><strong>Algorithm co-design.</strong> Identify which problem encodings and heuristics survive current noise and topology constraints. This informs future model choices and ensures your organization is not starting from scratch when fault-tolerant hardware arrives. Structured co-design engagements, where domain scientists partner with quantum specialists, consistently produce more actionable results than unsupported hardware access alone.</p><p><strong>Workforce development and quantum literacy.</strong> Train teams on quantum problem formulation, kernel design, and hybrid integration. These skills have long lead times, and starting now provides a durable competitive advantage. Open-source tools like QuEra’s Bloqade let teams experiment with emulators before committing to hardware.</p><p><strong>Hybrid workflow patterns.</strong> Establish scheduling, telemetry, and data governance patterns so quantum becomes a manageable resource class within your existing HPC infrastructure. The integration work you do today, connecting quantum processing units to your CPU/GPU pipelines through standard job schedulers, transfers directly to next-generation systems.</p><p><strong>Targeted domain applications.</strong> Physics-inspired simulations, certain optimization heuristics, and sampler/estimator subroutines where the hardware&#x27;s native strengths align with the workload. Focus on problems where quantum&#x27;s structure matches your problem&#x27;s structure, rather than forcing arbitrary workloads onto quantum hardware.</p><h2><strong>Bottom Line</strong></h2><p>Quantum computing is not ready for immediate large-scale production. We are direct about that because credibility matters more than hype.</p><p>What quantum computing <em>is</em> ready for: serious, structured engagement that builds the skills, workflows, and organizational readiness your team will need when fault-tolerant systems arrive. Measure with production-level KPIs. Integrate thoughtfully with your HPC stack. Invest in people and processes now.</p><p>The organizations that treat quantum as a strategic capability under active development, rather than waiting for a binary &quot;ready&quot; signal, will be the ones positioned to move fastest when the hardware crosses key thresholds. That moment is closer than many realize, and preparation time is finite.</p><p>‍</p></div></div></div><div class="blog_banners-holder w-condition-invisible"><div class="blog_banner _1 hide"><div class="blog-banner_content"><h3 class="h3 blog-banner"><span class="banner_span">Learn more about </span><br/>machine learning <br/>with QuEra</h3><a href="#" class="main-btn_blue w-inline-block"><div>Listen to the podcast</div></a></div></div><div class="collection-list-wrapper w-dyn-list"><div class="w-dyn-empty"><div>No items found.</div></div></div></div></div><div class="also_section"><div class="container"><div class="also_content"><div class="also_header-holder"><h3 class="inner-post_h3">See also</h3></div><div class="also_posts-holder"><div class="more_blog-posts"><div class="blog_collection-wrapper w-dyn-list"><div fs-cmsload-element="list" role="list" class="blog_collection-list w-dyn-items"><div role="listitem" class="blog_collection-item w-dyn-item"><a href="/blog-posts/the-global-quantum-hpc-ecosystem-national-and-regional-strategies-talent-and-institutional-momentum" class="blog_post-card w-inline-block"><img src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b49ef00d1170bba026ae_The%20Global%20Quantum-HPC%20Ecosystem.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b49ef00d1170bba026ae_The%20Global%20Quantum-HPC%20Ecosystem-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b49ef00d1170bba026ae_The%20Global%20Quantum-HPC%20Ecosystem-p-800.webp 800w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b49ef00d1170bba026ae_The%20Global%20Quantum-HPC%20Ecosystem-p-1080.webp 1080w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b49ef00d1170bba026ae_The%20Global%20Quantum-HPC%20Ecosystem.webp 1126w" class="all-posts_img"/><div class="blog-post_card-lower"><div class="blog-post_lower-upper"><div fs-cmsfilter-field="Category" class="blog_card-category">Technology</div><div class="blog_post-name">The Global Quantum-HPC Ecosystem: National and Regional Strategies, Talent, and Institutional Momentum</div></div><div class="blog-post_date-read-holder"><div class="blog_card-date-read">February 14, 2026</div><div class="reading-time_holder w-condition-invisible"><div class="blog-card_vertical-divider"></div><div class="blog_card-date-read w-dyn-bind-empty"></div><div class="blog_card-date-read">min read</div></div></div></div></a></div><div role="listitem" class="blog_collection-item w-dyn-item"><a href="/blog-posts/error-correction-and-fault-tolerance-the-engineering-sprint-toward-reliable-quantum-computing" class="blog_post-card w-inline-block"><img src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b3a28876bdf09abbd296_Error%20Correction%20and%20Fault%20Tolerance.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b3a28876bdf09abbd296_Error%20Correction%20and%20Fault%20Tolerance-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b3a28876bdf09abbd296_Error%20Correction%20and%20Fault%20Tolerance-p-800.webp 800w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b3a28876bdf09abbd296_Error%20Correction%20and%20Fault%20Tolerance-p-1080.webp 1080w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b3a28876bdf09abbd296_Error%20Correction%20and%20Fault%20Tolerance.webp 1126w" class="all-posts_img"/><div class="blog-post_card-lower"><div class="blog-post_lower-upper"><div fs-cmsfilter-field="Category" class="blog_card-category">Technology</div><div class="blog_post-name">Error Correction and Fault Tolerance: The Engineering Sprint Toward Reliable Quantum Computing</div></div><div class="blog-post_date-read-holder"><div class="blog_card-date-read">February 14, 2026</div><div class="reading-time_holder w-condition-invisible"><div class="blog-card_vertical-divider"></div><div class="blog_card-date-read w-dyn-bind-empty"></div><div class="blog_card-date-read">min read</div></div></div></div></a></div><div role="listitem" class="blog_collection-item w-dyn-item"><a href="/blog-posts/the-hybrid-quantum-hpc-architecture-is-taking-shape" class="blog_post-card w-inline-block"><img src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b2b46ce16e41d5e5fbae_The%20Hybrid%20Quantum-HPC%20Architecture%20Is%20Taking%20Shape.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b2b46ce16e41d5e5fbae_The%20Hybrid%20Quantum-HPC%20Architecture%20Is%20Taking%20Shape-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b2b46ce16e41d5e5fbae_The%20Hybrid%20Quantum-HPC%20Architecture%20Is%20Taking%20Shape-p-800.webp 800w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b2b46ce16e41d5e5fbae_The%20Hybrid%20Quantum-HPC%20Architecture%20Is%20Taking%20Shape-p-1080.webp 1080w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6990b2b46ce16e41d5e5fbae_The%20Hybrid%20Quantum-HPC%20Architecture%20Is%20Taking%20Shape.webp 1126w" class="all-posts_img"/><div class="blog-post_card-lower"><div class="blog-post_lower-upper"><div fs-cmsfilter-field="Category" class="blog_card-category">Technology</div><div class="blog_post-name">The Hybrid Quantum-HPC Architecture Is Taking Shape</div></div><div class="blog-post_date-read-holder"><div class="blog_card-date-read">February 14, 2026</div><div class="reading-time_holder w-condition-invisible"><div class="blog-card_vertical-divider"></div><div class="blog_card-date-read w-dyn-bind-empty"></div><div class="blog_card-date-read">min read</div></div></div></div></a></div></div></div></div></div></div></div></div></div><div class="new is_flex"><section class="blog_inner_hero_wrap"><div class="container_v2"><div class="blog_inner_hero_layout"><div class="blog_inner_hero_header_wrap"><div class="back_link_wrap_v2"><a href="/blog" class="back_link_v2 w-inline-block"><div class="back_link_icon_wrap_v2"><div class="back_link_icon_v2 w-embed"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.296188 5.65703L5.95319 2.65793e-05L7.36719 1.41403L2.41719 6.36403L7.36719 11.314L5.95319 12.728L0.296188 7.07103C0.108717 6.8835 0.00340181 6.62919 0.00340184 6.36403C0.00340186 6.09886 0.108718 5.84455 0.296188 5.65703Z" fill="currentColor"/>
+</svg></div></div><div class="p4 semi-bold line-height-113">Back to all</div></a></div><div class="category_wrap"><div class="p2 dark-blue_text">Technology</div></div><h1 fs-socialshare-element="url" class="blog_inner_name h2_v2 dark-bg_text">Mythbuster: Quantum Computing is Ready for Immediate Large-Scale Production</h1><div class="blog_inner_date_wrap"><div class="p2 blog-date">February 14, 2026</div><div class="hide"><div class="blog_inner_read_time_wrap w-condition-invisible"><div class="blog_inner_date__dot"></div><div class="blog_inner_read_time"><div class="p2 blog-date w-dyn-bind-empty"></div><div class="p2 blog-date">min read</div></div></div></div><div class="blog_inner_date__dot"></div><div class="blog_inner_read_time"><div class="p2 blog-date"><span fs-readtime-element="time">6</span> min read</div></div></div></div><div class="blog_inner_hero_visual_wrap"><img src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/69908b2f9f45fec3572ee2e8_Busted-qubits-1.webp 768w" class="blog_inner_hero_visual"/></div></div></div><div class="article_bg_wrap"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1).webp" loading="lazy" width="1920" sizes="(max-width: 1919px) 100vw, 1920px" alt="Abstract background with white center and soft gradient corners in purple and orange with dotted patterns." srcset="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1)-p-1600.webp 1600w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1)-p-2000.webp 2000w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1)-p-2600.webp 2600w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6902334027dc5bf813610a44_Bg-glossary-inner-2x%20(1).webp 3840w" class="article_bg_img"/></div></section><section class="blog_inner_content_wrap"><div class="container_v2"><div class="article_holder without_bottom_border"><div class="blog_rich_text_holder blog_inner"><div id="article" fs-readtime-element="contents" fs-richtext-element="rich-text" class="blog_rich_text inner w-richtext"><p><strong>Reality:</strong> Quantum computing is not ready for large-scale production. It is ready for serious, structured engagement, and the organizations that start now will be best positioned when the hardware crosses key thresholds.</p><p>Current quantum systems deliver real scientific and strategic value through pilot projects and co-design engagements. But they do not yet meet the operational bar that HPC centers apply to production workloads: repeatable results, auditable provenance, multi-tenant scheduling, and cost-predictable throughput. Acknowledging this honestly is the starting point for making good decisions about quantum investment.</p><p>At the same time, there is substantial value in working with today&#x27;s hardware. Teams that gain hands-on experience with quantum problem formulation, algorithm design, and hybrid integration now are building skills with long lead times. Early experimentation positions organizations to capitalize quickly when fault-tolerant systems arrive, rather than scrambling to catch up.</p><h2><strong>Why This Myth Persists</strong></h2><p><strong>Oversimplified metrics.</strong> Qubit counts and isolated demonstrations are easier to communicate than end-to-end time-to-answer and variance across production-like workloads. A headline about &quot;1,000 qubits&quot; tells you about capacity, not capability.</p><p><strong>Category confusion.</strong> &quot;Supremacy&quot; and &quot;advantage&quot; experiments are often scientific milestones. They are not proof of broad enterprise readiness, and conflating the two leads to misaligned expectations.</p><p><strong>Hype-driven procurement cycles.</strong> Budget windows and innovation mandates reward quick narratives. Nuanced readiness assessments are harder to fit into a slide deck, but they protect against expensive missteps.</p><h2><strong>What &quot;Production-Ready&quot; Actually Means in HPC Terms</strong></h2><p>If you are evaluating quantum hardware for your center, apply the same operational guardrails you use for any new accelerator:</p><p><strong>Reliability.</strong> P95/P99 success rates and stability windows across shifts and maintenance cycles. </p><p><strong>Performance under orchestration.</strong> Throughput and queue behavior when scheduled by Slurm or Kubernetes alongside CPUs and GPUs. Quantum must function as an HPC peer, not a standalone exotic system.</p><p><strong>Reproducibility and auditability.</strong> Run-to-run consistency, provenance logging, and telemetry hooks that meet institutional standards for scientific computing.</p><p><strong>Security and governance.</strong> Access control, tenancy isolation, data handling, and compliance alignment. For organizations subject to NIST 800-53, FedRAMP, CMMC, or export controls (ITAR/EAR), this is non-negotiable and often drives the decision between cloud and on-premises deployment.</p><p><strong>Cost predictability.</strong> Cost per successful answer, including compilation, execution, error mitigation, and retries. Budget predictability at monthly and quarterly horizons matters for sustained programs.</p><h2><strong>Technical Constraints Worth Tracking</strong></h2><p>These are the factors that determine whether a quantum system can deliver useful results for your specific workloads:</p><p><strong>Qubit quality and coherence</strong> limit circuit depth and the size of problems you can meaningfully address. Raw qubit counts without fidelity context are incomplete at best.</p><p><strong>Error rates and correction overhead.</strong> Error mitigation techniques help today but carry runtime and sample-count trade-offs. Full error correction works on a small scale, as recent demonstrations have shown, but remains resource-intensive. The transition from physical to a large number of logical qubits is the defining challenge of this era.</p><p><strong>Connectivity and routing overhead.</strong> Extra operations to connect distant qubits add time and error. Architectures differ significantly here. Field-Programmable Qubit Arrays (FPQAs) and atom shuttling can dynamically reconfigure qubit connectivity to match problem structure, reducing routing penalties that fixed-topology systems must pay.</p><p><strong>Calibration drift and uptime.</strong> Stability over hours matters for batch workloads. Ask vendors about uptime across an 8-hour window, not just peak performance snapshots. Room-temperature operation simplifies this challenge compared to systems requiring millikelvin cryogenic environments.</p><p><strong>Compiler and control stack maturity.</strong> Placement, scheduling, and gate-level optimizations determine usable performance as much as the underlying hardware. A capable compiler can close the gap between raw hardware specs and delivered results.</p><h2><strong>What to Measure Instead of &quot;Ready or Not Ready&quot;</strong></h2><p>Binary assessments are not useful. Track these metrics against your specific problem instances:</p><p><strong>Time-to-answer</strong> for your workloads, from queue to compile to execute to post-process.</p><p><strong>Solution quality</strong> versus classical baselines, including variance and confidence intervals, not just best-case snapshots.</p><p><strong>P95/P99 success rate</strong> and calibration-induced downtime over realistic operational windows.</p><p><strong>Routing overhead:</strong> swap counts and added depth for your problem graphs. This is where architecture choices have outsized impact.</p><p><strong>Hybrid efficiency:</strong> data movement latency, kernel granularity, and orchestration overhead between quantum and classical resources.</p><p><strong>Cost per successful run</strong> and budget predictability at program-relevant horizons.</p><h2><strong>How to Read Common Claims</strong></h2><p><strong>&quot;Thousands of qubits.&quot;</strong> Capacity, not capability. Ask for depth at target fidelity, routing overhead for representative circuits, and end-to-end metrics on problems that matter to you.</p><p><strong>&quot;High fidelity.&quot;</strong> Request variance and stability over an 8-hour window, not a single cherry-picked number. Fidelity that degrades under sustained workloads is not production fidelity.</p><p><strong>&quot;Utility/advantage demonstration.&quot;</strong> Clarify task relevance to your domain, the classical baseline used, sample complexity, and net time-to-answer including all overhead.</p><p><strong>&quot;Error mitigation replaces error correction.&quot;</strong> Mitigation is useful today, but carries runtime and sample-count trade-offs that compound with circuit size. Quantify total cost and accuracy before relying on mitigation as a long-term strategy. The industry&#x27;s trajectory is toward fault-tolerant error correction, and your roadmap should account for that transition.</p><h2><strong>What Is Genuinely Useful Today</strong></h2><p>Quantum computing is not ready for production, but it is ready for structured engagement that builds real organizational capability.</p><p><strong>Algorithm co-design.</strong> Identify which problem encodings and heuristics survive current noise and topology constraints. This informs future model choices and ensures your organization is not starting from scratch when fault-tolerant hardware arrives. Structured co-design engagements, where domain scientists partner with quantum specialists, consistently produce more actionable results than unsupported hardware access alone.</p><p><strong>Workforce development and quantum literacy.</strong> Train teams on quantum problem formulation, kernel design, and hybrid integration. These skills have long lead times, and starting now provides a durable competitive advantage. Open-source tools like QuEra’s Bloqade let teams experiment with emulators before committing to hardware.</p><p><strong>Hybrid workflow patterns.</strong> Establish scheduling, telemetry, and data governance patterns so quantum becomes a manageable resource class within your existing HPC infrastructure. The integration work you do today, connecting quantum processing units to your CPU/GPU pipelines through standard job schedulers, transfers directly to next-generation systems.</p><p><strong>Targeted domain applications.</strong> Physics-inspired simulations, certain optimization heuristics, and sampler/estimator subroutines where the hardware&#x27;s native strengths align with the workload. Focus on problems where quantum&#x27;s structure matches your problem&#x27;s structure, rather than forcing arbitrary workloads onto quantum hardware.</p><h2><strong>Bottom Line</strong></h2><p>Quantum computing is not ready for immediate large-scale production. We are direct about that because credibility matters more than hype.</p><p>What quantum computing <em>is</em> ready for: serious, structured engagement that builds the skills, workflows, and organizational readiness your team will need when fault-tolerant systems arrive. Measure with production-level KPIs. Integrate thoughtfully with your HPC stack. Invest in people and processes now.</p><p>The organizations that treat quantum as a strategic capability under active development, rather than waiting for a binary &quot;ready&quot; signal, will be the ones positioned to move fastest when the hardware crosses key thresholds. That moment is closer than many realize, and preparation time is finite.</p><p>‍</p></div><div class="blog_banners-holder w-condition-invisible"><div class="blog_banner _1 hide"><div class="blog-banner_content"><h3 class="h3 blog-banner"><span class="banner_span">Learn more about </span><br/>machine learning <br/>with QuEra</h3><a href="#" class="main-btn_blue w-inline-block"><div>Listen to the podcast</div></a></div></div><div class="collection-list-wrapper w-dyn-list"><div class="w-dyn-empty"><div>No items found.</div></div></div></div></div><div class="article_sidebar_wrap"><aside class="article_sidebar"><div class="sticky_sidebar blog_inner"><div class="toc_wrap"><div class="sidebar_heading"><h3 class="p2 dark-blue_text semi-bold">Table of contents</h3></div><div class="anchor-links_holder"><div class="anchor-link hide"><div>This is some text inside of a div block.</div></div></div></div><div class="share_button_wrap"><div class="p2 semi-bold coal_500_text">Share</div><div class="share_link_wrap"><a fs-socialshare-element="url" href="#" class="share-button v2 copy w-inline-block"><div class="share-button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.55 2.95L10.15 1.35C10.95 0.55 12.55 0.55 13.35 1.35L14.15 2.15C14.95 2.95 14.95 4.55 14.15 5.35L10.15 9.35C9.35 10.15 7.75 10.15 6.95 9.35M6.95 12.55L5.35 14.15C4.55 14.95 2.95 14.95 2.15 14.15L1.35 13.35C0.55 12.55 0.55 10.95 1.35 10.15L5.35 6.15C6.15 5.35 7.75 5.35 8.55 6.15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="copied-text v2">Copied!</div></a><a fs-socialshare-element="linkedin" href="#" class="share-button v2 w-inline-block"><div class="share-button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.93809 1.46978C2.9379 1.85939 2.78293 2.23298 2.5073 2.50834C2.23166 2.7837 1.85793 2.93829 1.46831 2.93809C1.0787 2.9379 0.705116 2.78293 0.429754 2.5073C0.154392 2.23166 -0.000194624 1.85793 1.83896e-07 1.46831C0.000194991 1.0787 0.155156 0.705116 0.430793 0.429754C0.70643 0.154392 1.08016 -0.000194624 1.46978 1.83896e-07C1.85939 0.000194991 2.23298 0.155156 2.50834 0.430793C2.7837 0.70643 2.93829 1.08016 2.93809 1.46978ZM2.98216 4.02592H0.0440715V13.2221H2.98216V4.02592ZM7.62434 4.02592H4.70094V13.2221H7.59496V8.39633C7.59496 5.70798 11.0986 5.45824 11.0986 8.39633V13.2221H14V7.39738C14 2.86537 8.81427 3.03431 7.59496 5.25992L7.62434 4.02592Z" fill="currentColor"/>
+</svg></div></a><a fs-socialshare-element="x" href="#" class="share-button v2 w-inline-block"><div class="share-button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.025 0H13.172L8.482 5.374L14 12.688H9.68L6.294 8.253L2.424 12.688H0.275L5.291 6.938L0 0.000999987H4.43L7.486 4.054L11.025 0ZM10.27 11.4H11.46L3.78 1.221H2.504L10.27 11.4Z" fill="currentColor"/>
+</svg></div></a></div></div></div></aside></div><div class="u-embed-css w-embed"><style>
+  .blog_rich_text > *:first-child {
+    margin-top: 0 !important;
+  }  
+
+  .blog_rich_text > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .article_sidebar {
+    box-shadow: inset 1px 0 0 var(--_v2---grey-300);
+  }
+  
+</style></div></div></div></section><section class="blog_inner_reading_wrap"><div class="container_v2 border_top"><div class="blog_inner_reading_layout"><h2 class="h2_v2 coral_black_text">Continue reading</h2><div class="all-news_wrapper w-dyn-list"><div id="all-list" fs-cmsload-element="list" fs-cmsload-mode="load-under" role="list" class="all-resources_list resources_wrapper blog_inner w-dyn-items"><div role="listitem" class="all-news_item w-dyn-item"><a href="/blog-posts/how-quantum-accelerates-businesses-today---and-how-to-do-it-for-your-business" class="all-news_card width-auto w-inline-block"><div class="all-news_logo-holder lower-aspect-ratio"><div class="collection_tag-name-w"><div class="collection_tag-pin w-condition-invisible"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="pin-svg"><path d="M9.94985 2.77404L10.0088 2.82612L13.4598 6.27705C13.5655 6.38338 13.6297 6.52409 13.6407 6.67367C13.6516 6.82325 13.6087 6.97181 13.5195 7.09243C13.4304 7.21305 13.301 7.29775 13.1548 7.33119C13.0086 7.36462 12.8552 7.34457 12.7225 7.27468L10.7323 9.26429L9.8388 11.6467C9.81526 11.7096 9.78179 11.7682 9.73966 11.8205L9.69574 11.8707L8.75458 12.8118C8.64646 12.9198 8.50267 12.9846 8.35019 12.994C8.1977 13.0035 8.047 12.957 7.92636 12.8633L7.86675 12.8112L6.11431 11.0594L3.73442 13.4387C3.62151 13.5512 3.46999 13.6165 3.31066 13.6214C3.15132 13.6263 2.9961 13.5703 2.87653 13.4649C2.75696 13.3594 2.68201 13.2124 2.66689 13.0537C2.65177 12.895 2.69763 12.7365 2.79514 12.6104L2.84722 12.5515L5.22648 10.1716L3.47466 8.41913C3.36663 8.31109 3.30173 8.16734 3.29214 8.01486C3.28256 7.86237 3.32893 7.71163 3.42258 7.59091L3.47466 7.53193L4.41582 6.59077C4.46316 6.54325 4.51782 6.50364 4.5777 6.47343L4.63919 6.44708L7.02096 5.55298L9.01057 3.56399C8.94273 3.43714 8.92053 3.29083 8.9477 3.14957C8.97487 3.0083 9.04975 2.88066 9.15981 2.78803C9.26987 2.6954 9.40841 2.64339 9.55224 2.64073C9.69607 2.63807 9.83645 2.68554 9.94985 2.77404Z" fill="#670EFF"></path></svg></div><div class="collection_tag-name_v2">Opinion</div></div><img loading="lazy" src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/65cbe6bee92ae5da6bf73df4_QuantumBusiness-2.webp" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/65cbe6bee92ae5da6bf73df4_QuantumBusiness-2-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/65cbe6bee92ae5da6bf73df4_QuantumBusiness-2-p-800.webp 800w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/65cbe6bee92ae5da6bf73df4_QuantumBusiness-2.webp 896w" class="all-news_blog-img"/></div><div class="all-news_item-low"><div fs-cmssort-type="date" news-date="February 5, 2024" class="p4">February 5, 2024</div><p class="p2">How Quantum Accelerates Businesses Today – and How to Do It for Your Business</p></div><div class="pinned_div w-embed"><div pin="false" ></div></div></a></div><div role="listitem" class="all-news_item w-dyn-item"><a href="/blog-posts/current-and-future-state-of-quantum-computing" class="all-news_card width-auto w-inline-block"><div class="all-news_logo-holder lower-aspect-ratio"><div class="collection_tag-name-w"><div class="collection_tag-pin w-condition-invisible"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="pin-svg"><path d="M9.94985 2.77404L10.0088 2.82612L13.4598 6.27705C13.5655 6.38338 13.6297 6.52409 13.6407 6.67367C13.6516 6.82325 13.6087 6.97181 13.5195 7.09243C13.4304 7.21305 13.301 7.29775 13.1548 7.33119C13.0086 7.36462 12.8552 7.34457 12.7225 7.27468L10.7323 9.26429L9.8388 11.6467C9.81526 11.7096 9.78179 11.7682 9.73966 11.8205L9.69574 11.8707L8.75458 12.8118C8.64646 12.9198 8.50267 12.9846 8.35019 12.994C8.1977 13.0035 8.047 12.957 7.92636 12.8633L7.86675 12.8112L6.11431 11.0594L3.73442 13.4387C3.62151 13.5512 3.46999 13.6165 3.31066 13.6214C3.15132 13.6263 2.9961 13.5703 2.87653 13.4649C2.75696 13.3594 2.68201 13.2124 2.66689 13.0537C2.65177 12.895 2.69763 12.7365 2.79514 12.6104L2.84722 12.5515L5.22648 10.1716L3.47466 8.41913C3.36663 8.31109 3.30173 8.16734 3.29214 8.01486C3.28256 7.86237 3.32893 7.71163 3.42258 7.59091L3.47466 7.53193L4.41582 6.59077C4.46316 6.54325 4.51782 6.50364 4.5777 6.47343L4.63919 6.44708L7.02096 5.55298L9.01057 3.56399C8.94273 3.43714 8.92053 3.29083 8.9477 3.14957C8.97487 3.0083 9.04975 2.88066 9.15981 2.78803C9.26987 2.6954 9.40841 2.64339 9.55224 2.64073C9.69607 2.63807 9.83645 2.68554 9.94985 2.77404Z" fill="#670EFF"></path></svg></div><div class="collection_tag-name_v2">Opinion</div></div><img loading="lazy" src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/66add6bfe76f472807dd3868_survey-map.webp" alt="" class="all-news_blog-img"/></div><div class="all-news_item-low"><div fs-cmssort-type="date" news-date="August 3, 2024" class="p4">August 3, 2024</div><p class="p2">Survey Report: The Current and Future State of Quantum Computing</p></div><div class="pinned_div w-embed"><div pin="false" ></div></div></a></div><div role="listitem" class="all-news_item w-dyn-item"><a href="/blog-posts/quantum-computing-programming-languages" class="all-news_card width-auto w-inline-block"><div class="all-news_logo-holder lower-aspect-ratio"><div class="collection_tag-name-w"><div class="collection_tag-pin w-condition-invisible"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="pin-svg"><path d="M9.94985 2.77404L10.0088 2.82612L13.4598 6.27705C13.5655 6.38338 13.6297 6.52409 13.6407 6.67367C13.6516 6.82325 13.6087 6.97181 13.5195 7.09243C13.4304 7.21305 13.301 7.29775 13.1548 7.33119C13.0086 7.36462 12.8552 7.34457 12.7225 7.27468L10.7323 9.26429L9.8388 11.6467C9.81526 11.7096 9.78179 11.7682 9.73966 11.8205L9.69574 11.8707L8.75458 12.8118C8.64646 12.9198 8.50267 12.9846 8.35019 12.994C8.1977 13.0035 8.047 12.957 7.92636 12.8633L7.86675 12.8112L6.11431 11.0594L3.73442 13.4387C3.62151 13.5512 3.46999 13.6165 3.31066 13.6214C3.15132 13.6263 2.9961 13.5703 2.87653 13.4649C2.75696 13.3594 2.68201 13.2124 2.66689 13.0537C2.65177 12.895 2.69763 12.7365 2.79514 12.6104L2.84722 12.5515L5.22648 10.1716L3.47466 8.41913C3.36663 8.31109 3.30173 8.16734 3.29214 8.01486C3.28256 7.86237 3.32893 7.71163 3.42258 7.59091L3.47466 7.53193L4.41582 6.59077C4.46316 6.54325 4.51782 6.50364 4.5777 6.47343L4.63919 6.44708L7.02096 5.55298L9.01057 3.56399C8.94273 3.43714 8.92053 3.29083 8.9477 3.14957C8.97487 3.0083 9.04975 2.88066 9.15981 2.78803C9.26987 2.6954 9.40841 2.64339 9.55224 2.64073C9.69607 2.63807 9.83645 2.68554 9.94985 2.77404Z" fill="#670EFF"></path></svg></div><div class="collection_tag-name_v2">Technology</div></div><img loading="lazy" src="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6585be52d933b28d38dd759b_quantum%20tower%20of%20babel%20copy.webp" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6585be52d933b28d38dd759b_quantum%20tower%20of%20babel%20copy-p-500.webp 500w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6585be52d933b28d38dd759b_quantum%20tower%20of%20babel%20copy-p-800.webp 800w, https://cdn.prod.website-files.com/643d2eea03135260bdaca209/6585be52d933b28d38dd759b_quantum%20tower%20of%20babel%20copy.webp 896w" class="all-news_blog-img"/></div><div class="all-news_item-low"><div fs-cmssort-type="date" news-date="November 26, 2023" class="p4">November 26, 2023</div><p class="p2">The Landscape of Quantum Computing Programming Languages</p></div><div class="pinned_div w-embed"><div pin="false" ></div></div></a></div></div></div></div></div></section></div></main><section data-wf--footer-v2--variant="base" class="footer_v2"><div class="footer_v2-shape-holder"><div class="footer-v2_blue-shape"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ac4c2ef923280e98cf80e0_footer%20blue.svg" loading="lazy" width="1920" height="266" alt="" class="footer_shape blue"/><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68ac4c2eef815dfbea19f257_footer%20gradeitn.svg" loading="lazy" width="1920" height="266" alt="" class="footer_shape color"/><div class="footer_shape-blue-line"></div></div><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68bd3b0a13de4e5bad3bf547_7685652771fe9138412e4a901ebdef89_footer%20mobile%20bg.png" loading="lazy" width="375" height="200" alt="Abstract gradient background with smooth blend of purple, pink, and orange hues." srcset="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68bd3b0a13de4e5bad3bf547_7685652771fe9138412e4a901ebdef89_footer%20mobile%20bg-p-500.png 500w, https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68bd3b0a13de4e5bad3bf547_7685652771fe9138412e4a901ebdef89_footer%20mobile%20bg.png 750w" sizes="(max-width: 479px) 100vw, 375px" class="footer_mobile-gradient"/></div><div id="sign-up-newsletter" class="footer-v2_area"><div class="container_v2 _1196"><div class="footer-v2_inner"><div class="footer-2_form-block w-form"><form id="wf-form-footer-Form" name="wf-form-footer-Form" data-name="footer Form" method="get" class="footer-2_form" data-wf-page-id="65883e089c1ad56db2f331b4" data-wf-element-id="1c4a1fef-fc91-569b-0095-0c806294b31b" data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"><div class="footer_up"><h2 class="h2_v2 center-text">Sign up for our newsletter</h2><div class="w-layout-grid inputs_holder"><div class="form-field-wrapper"><input class="input_v2 w-input" data-wfhsfieldname="FormTextInput-2" maxlength="256" name="First-Name" wr-type="required-field" data-name="First Name" placeholder="First Name" type="text" id="First-name" required=""/><div wr-type="error" class="error-div v2"><div>* Please fill your first name</div></div></div><div class="form-field-wrapper"><input class="input_v2 w-input" data-wfhsfieldname="FormTextInput-3" maxlength="256" name="Last-Name" wr-type="required-field" data-name="Last Name" placeholder="Last Name" type="text" id="Last-name" required=""/><div wr-type="error" class="error-div v2"><div>* Please fill your last name</div></div></div><div class="form-field-wrapper"><input class="input_v2 w-input" data-wfhsfieldname="FormTextInput-4" maxlength="256" name="Email" wr-type="required-field" data-name="Email" placeholder="Email" type="email" id="Email" required=""/><input class="footer_form-input-field ip is-ip w-input" data-wfhsfieldname="FormTextInput-5" maxlength="256" name="IP-Address" data-name="IP Address" placeholder="Email" type="text" id="ip-form-input"/><input class="footer_form-input-field page-name w-input" data-wfhsfieldname="FormTextInput-6" maxlength="256" name="Page-Name" data-name="Page Name" placeholder="page name" type="text" id="page-name"/><div wr-type="error" class="error-div v2"><div>* Wrong email address format</div></div></div></div></div><div class="footer-form_low"><div data-theme="dark" data-sitekey="6LdH4BEmAAAAABCy3Yld_KdCDdKooH_9_Erztk_h" class="w-form-formrecaptcha recaptcha-2 g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div><input type="submit" data-wait="Please wait..." class="main-btn_yellow _100--width hide w-button" value="Sign up"/><div wr-type="submit" class="button purple"><div>Sign up</div></div></div><input type="hidden" name="hutk" value=""/><input type="hidden" name="ipAddress" value=""/><input type="hidden" name="pageUri" value=""/><input type="hidden" name="pageId" value=""/><input type="hidden" name="pageName" value=""/></form><div class="success-message w-form-done"><div class="success-div_v2"><p class="h2_v2">You have successfully subscribed  to our Newsletter</p></div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><div class="footer-v2_low"><div class="footer-v2_low-left"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68adb32ac8e19135fcc0cb65_af0390bc875d5c819361dd8b73723b87_logo%20white.svg" loading="lazy" width="134" height="39" alt="" class="footer-v2_logo"/><div class="footer_desc_wrap"><a href="/terms-of-use" class="description_v2 white_no-underline">Terms of use &amp; Privacy policy</a><div class="footer_desc_divider"></div><a href="/ai-info-page" class="description_v2 white_no-underline">AI Info</a></div><div class="date-rights w-embed w-script"><p class="description_v2" id="copyright">© <span id="year_desktop"></span> QuEra Computing Inc. All rights reserved</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const yearSpan = document.getElementById("year_desktop");
+    yearSpan.textContent = new Date().getFullYear();
+  });
+</script></div></div><div class="footer-v2_low-right"><div class="social-icons_holder"><a href="https://www.linkedin.com/company/quera-computing-inc/" target="_blank" class="social-icon_holder w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643bea10d85d9d45a26295f8_linkedin.svg" loading="lazy" width="31" height="30" alt="linkdein icon" class="share_icon linkedin"/></a><a href="http://queracomputing.bsky.social/" target="_blank" class="social-icon_holder w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/677f969f51eee59fd482f174_Vector.svg" loading="lazy" width="35" height="32" alt="" class="share_icon"/></a><a href="https://join.slack.com/t/querapublic/shared_invite/zt-32vcxdms5-8NxGs~xyRmEol2ilUZiUiQ" target="_blank" class="social-icon_holder w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/6490d348c51130c0c329d38d_slack-icon-white.webp" loading="lazy" width="37" height="26" alt="slack logo" class="share_icon"/></a><a href="https://twitter.com/QueraComputing/" target="_blank" class="social-icon_holder w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/68adb46935a0c25f178feb6b_prime_twitter.svg" loading="lazy" width="37" height="26" alt="" class="share_icon"/></a><a href="https://www.youtube.com/@QuEraComputing" target="_blank" class="social-icon_holder w-inline-block"><img src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/643bea10388272dff2db78c4_youtube.svg" loading="lazy" width="37" height="26" alt="youtube icon" class="share_icon youtube"/></a></div><div class="footer-v2_info"><p class="description_v2">1380 Soldiers Field RoadBoston, MA 02135 USA</p><div desktop-tablet="" class="div-block-22"></div><a href="tel:+1617-588-7207" class="description_v2 white_no-underline">+1 617-588-7207</a></div></div></div></div></div></section><div class="css w-embed"><style>
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+  .all-news_item:hover .all-news_blog-img {
+    transform: scale(1.1);
+  }
+  
+}
+
+</style></div><div class="table_css w-embed"><style>
+/* ==============================
+   Tables inside blog_rich_text
+   ============================== */
+.blog_rich_text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #1a2340;          /* text color */
+  background-color: #fff;   /* optional table background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Table headers */
+.blog_rich_text table thead th {
+  background-color: #ff5900; /* brand color */
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Table cells */
+.blog_rich_text table tbody td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+/* Zebra stripes for readability */
+.blog_rich_text table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Links inside tables */
+.blog_rich_text table a {
+  color: #ff5900;
+  text-decoration: underline;
+}
+
+.blog_rich_text table a:hover {
+  text-decoration: none;
+}
+
+/* ==============================
+   Make tables scrollable on mobile
+   ============================== */
+.w-embed:has(table) {
+  overflow-x: auto;                  /* horizontal scroll if table is wider */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  width: 100%;
+  padding-bottom: 8px;               /* optional padding for scroll */
+}
+
+.w-embed:has(table) table {
+  min-width: 600px;                  /* prevents table from squishing too much */
+  border-collapse: collapse;
+}
+
+/* ==============================
+   Optional: responsive adjustments
+   ============================== */
+@media (max-width: 768px) {
+  .blog_rich_text table thead th,
+  .blog_rich_text table tbody td {
+    font-size: 14px; /* slightly smaller on mobile */
+    padding: 8px 12px;
+  }
+}
+
+
+
+</style></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=643b94c382e84463a9e52264" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/js/quera-c87685.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/643b94c382e84463a9e52264/js/quera-c87685.1e3ef28b.f8d629aa28459fed.js" type="text/javascript" integrity="sha384-jAUE9jE2WavjecbUZN8OsMZTwbeqWmJAnRd4HHaEqwkoQNqIQojdRqrwCXv52ce+" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/gsap/3.14.2/gsap.min.js" type="text/javascript"></script><script src="https://cdn.prod.website-files.com/gsap/3.14.2/ScrollTrigger.min.js" type="text/javascript"></script><script type="text/javascript">gsap.registerPlugin(ScrollTrigger);</script><script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z7CMRL"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Accessibility plugin -->
+<script src="https://cdn.enable.co.il/licenses/enable-L20652xaluk3omwh-0723-47221/init.js"></script>
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/23137321.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+<!-- Start of Adding IP Address To Form Submissions -->
+<script type="application/javascript">
+  // Wait for the DOM to be fully loaded
+  document.addEventListener("DOMContentLoaded", async function() {
+    // Async function to fetch IP
+    async function fetchIP() {
+      try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const json = await response.json();
+        return json.ip;
+      } catch (err) {
+        console.error(`Error fetching IP: ${err}`);
+        throw err; // Rethrow the error to be caught by the retry logic
+      }
+    }
+
+    // Function to handle retries with exponential backoff
+    async function fetchIPWithRetry(retryCount = 5, backoff = 500) {
+      for (let i = 0; i < retryCount; i++) {
+        try {
+          let ip = await fetchIP();
+          if (!ip){
+            throw new Error("Received falsy IP address");
+          }
+          return ip; // Attempt to fetch the IP
+        } catch (err) {
+          // If this was the last attempt, throw the error
+          if (i === retryCount - 1) throw err;
+
+          await new Promise(resolve => setTimeout(resolve, backoff));
+          backoff *= 2; // Double the backoff interval for the next attempt
+        }
+      }
+    }
+
+    // Using the retry function to fetch the IP and handle it accordingly
+    try {
+      const ip = await fetchIPWithRetry(); // Fetch IP with retries
+      // Inject the IP into all elements with class 'is-ip'
+      const ipElements = document.getElementsByClassName('is-ip');
+      for (let i = 0; i < ipElements.length; i++) {
+        ipElements[i].value = ip;
+      }
+    } catch (err) {
+      console.error(`Failed to fetch IP after multiple attempts: ${err}`);
+    }
+  });
+</script>
+<!-- End of Adding IP Address To Form Submissions -->
+
+<script>
+
+  //smooth-scrolling
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+    direction: 'vertical', // vertical, horizontal
+    gestureDirection: 'vertical', // vertical, horizontal, both
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    infinite: false,
+  })
+
+  //get scroll value
+  lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const openBtn = document.querySelector("[open-search-popup]");
+    const closeBtn = document.querySelector("[close-search-popup]");
+    const popup = document.querySelector("#searchresults");
+    const body = document.body;
+
+    if (!popup || !openBtn || !closeBtn) return;
+
+    // ---- OPEN POPUP ----
+    openBtn.addEventListener("click", () => {
+      popup.style.display = "flex";
+      popup.style.opacity = "0";
+      popup.setAttribute("data-lenis-prevent", "");
+      body.classList.add("no-scroll");
+
+      requestAnimationFrame(() => {
+        popup.style.transition = "opacity 0.3s ease";
+        popup.style.opacity = "1";
+      });
+    });
+
+    // ---- CLOSE POPUP ----
+    closeBtn.addEventListener("click", () => {
+      popup.style.transition = "opacity 0.3s ease";
+      popup.style.opacity = "0";
+
+      popup.addEventListener("transitionend", function handler() {
+        popup.style.display = "none";
+        popup.removeAttribute("data-lenis-prevent");
+        body.classList.remove("no-scroll");
+        popup.removeEventListener("transitionend", handler);
+      });
+    });
+  });
+
+
+  // Search Inside Navbar
+  $('#searchform').on('submit', function() {
+    var q = $('#search').val();
+
+    $.ajax({
+      url: "/search?query=" + q,
+      type: 'GET',
+      success: function(data) {
+        console.log(data); // Log the received data
+        $('#searchresults-list').html($(data).find('.search-result-wrapper').html());
+        // $('#searchresults').addClass('showresults');
+        $("#searchresults-list").scrollTop(0);
+
+        // Now run your logic to hide certain results
+        const toggleElements = document.querySelectorAll('[data-search="toggle"]');
+
+        toggleElements.forEach(toggleElement => {
+          const innerHTML = toggleElement.innerHTML.trim();
+
+          if (innerHTML.startsWith("true")) {
+            const resultParent = toggleElement.closest('[data-search="result"]');
+            if (resultParent) {
+              resultParent.style.display = "none";
+            }
+          }
+        });
+      }
+    });
+
+    return false;
+  });
+
+
+  //disable scroll while mobile menu open
+  $('.menu-button').on('click', function() {
+    $('.body').toggleClass('no-scroll');
+  });
+  $('#search-button').on('click', function() {
+    $('.body').toggleClass('no-scroll');
+  });
+
+  //check the height of the nav and add half of it to be margin top of the H1
+  //$(document).ready(function(){
+  //var navHeight = $('#nav').height() / 2;
+  //$('#hero-heading').css('margin-top', navHeight);
+  //});
+
+  //$(window).resize(function(){
+  //var navHeight = $('#nav').height() / 2;
+  //$('#hero-heading').css('margin-top', navHeight);
+  //});
+  //detect from which page footer form submitted
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  console.log("page is=" + page );
+  var pageName = document.getElementById("page-name");
+  pageName.value = page;
+
+  //Form error
+  window.addEventListener("load", (event) => {
+
+    const footerForm = document.getElementById("wf-form-footer-Form");
+    console.log("footer form = " + footerForm);
+    footerForm.addEventListener('submit', (event) => {
+      console.log("after change text");
+      $(this).find('#near-form').text('You have successfully subscribed to our Newsletter!');
+    });
+
+
+    $('form [wr-type="error"]').hide(); // Hide errors
+    $('form [wr-type="required-field"]').removeClass('error'); // Remove error state from fields
+
+    var formErrors = false
+
+    function fieldError(field) {
+      field.siblings('[wr-type="error"]').show(); // Show error message
+      field.addClass('error'); // Add error state to this field
+      formErrors = true;
+    }
+
+
+    $('form [wr-type="submit"]').click(function() {
+      var form = $(this).closest('form');
+      // Check each required field within this form
+      form.find('[wr-type="required-field"]').each(function() {
+        if ($(this).val().length === 0) { // If this field is empty
+          fieldError($(this));
+        } else if ($(this).attr('type') === 'email' // Validation for email fields
+                   && ($(this).val().indexOf('@') === -1 || $(this).val().indexOf('.') === -1)) {
+          fieldError($(this));
+        }
+      });
+            // RADIO VALIDATION
+      form.find('[wr-type="radio-group"]').each(function () {
+        const radios = $(this).find('input[type="radio"]');
+        const isChecked = radios.is(':checked');
+
+        if (!isChecked) {
+          $(this)
+            .siblings('[wr-type="error"]')
+            .show();
+
+          radios.addClass('error');
+          formErrors = true;
+        }
+      });
+
+      // CLEAR RADIO ERROR ON CHANGE (with delegated listener)
+      $(document).on('change', 'input[type="radio"]', function () {
+        const radioGroup = $(this).closest('[wr-type="radio-group"]');
+        radioGroup.siblings('[wr-type="error"]').hide();
+        radioGroup.find('input[type="radio"]').removeClass('error');
+      });
+
+
+      // Submit this form if there are no errors
+      if (!formErrors) {
+        console.log('Form variable type:', typeof form);
+        console.log('Form variable content:', form);
+        form.submit();
+        console.log("form should submit already");
+
+        if(form.hasClass("footer_form")) {
+          console.log(form.hasClass("footer_form"))
+          //$('#near-form').text('You have successfully subscribed to our Newsletter!');
+        }
+
+      }
+    });
+
+    $('form [wr-type="required-field"]').on('keypress blur', function() {
+      $(this).removeClass('error');
+      $(this).siblings('[wr-type="error"]').hide();
+      formErrors = false;
+    });
+
+    $('input, textarea').keypress(function(e) { 
+      if ($(this).closest('form.search_block').length > 0){
+        return;
+      }
+      else{
+        if (e.keyCode == 13) {
+          e.preventDefault();
+          $(this).trigger("change");
+          console.log($(this));
+          $(this).closest('form').find('[wr-type="submit"]').click();
+        }}
+    });
+  });
+
+</script>
+
+<script>
+  // Character Limit Check In Forms
+  document.addEventListener("DOMContentLoaded", () => {
+    const textarea = document.querySelector("textarea[data-char-limit]");
+    const counter = document.querySelector('[data-char-text]');
+    const maxChars = 500;
+
+    if (textarea && counter) {
+      // Initialize counter text
+      counter.textContent = `0 / ${maxChars} characters`;
+
+      textarea.addEventListener('input', () => {
+        let currentLength = textarea.value.length;
+
+        // Limit characters
+        if (currentLength > maxChars) {
+          textarea.value = textarea.value.substring(0, maxChars);
+          currentLength = maxChars;
+        }
+
+        // Update counter text
+        counter.textContent = `${currentLength} / ${maxChars} characters`;
+
+        // Optional: turn text red when at limit
+        if (currentLength >= maxChars) {
+          counter.style.color = "var(--red)"; // red when limit reached
+        } else {
+          counter.style.color = ""; // reset to Webflow default
+        }
+      });
+    }
+  });
+</script>
+<script>
+     // Get the URL from the variable or use the current page's URL if empty
+        var url = '' // Your URL variable here
+        console.log("url is=" + url);
+        if (url === "") {
+            url = window.location.href;
+            console.log("url is=" + url);
+        }
+        
+        // Set the canonical tag's href attribute to the URL
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('link[rel="canonical"]').href = url;
+        });
+        
+        
+//copy url of the page on click of copy icon
+var $temp = $("<input>");
+var $url = $(location).attr('href');
+
+$('.share-button.v2.copy').on('click', function() {
+  $("body").append($temp);
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+  //$('.copied_text').addClass('show');
+})
+</script>
+
+<script>
+
+let article = document.getElementById('article');
+
+// Remove top margin if first element is <h2>
+if (article.firstElementChild && article.firstElementChild.tagName === 'H2') {
+  article.firstElementChild.style.marginTop = '0';
+}
+
+// Run code only on desktop
+if (window.innerWidth > 992) {
+
+  function addUniqueIdToHeadings() {
+    const richTextElements = document.querySelectorAll('.blog_rich_text');
+    const sidebarAnchorLinksHolder = document.querySelector('.anchor-links_holder');
+    const sidebarWrap = document.querySelector('.toc_wrap');
+    let counter = 1;
+    let totalHeadings = 0;
+
+    richTextElements.forEach((richTextElement) => {
+      const h2Elements = richTextElement.querySelectorAll('h2');
+      totalHeadings += h2Elements.length;
+
+      h2Elements.forEach((heading) => {
+        const uniqueId = `heading-${counter}`;
+        heading.setAttribute('id', uniqueId);
+        counter++;
+
+        const anchorLink = document.createElement('a');
+        anchorLink.setAttribute('href', `#${uniqueId}`);
+        anchorLink.classList.add('anchor-link');
+        anchorLink.textContent = heading.textContent;
+
+        sidebarAnchorLinksHolder.appendChild(anchorLink);
+      });
+    });
+
+    // ✅ Hide or show sidebar based on presence of <h2>
+    if (totalHeadings === 0) {
+      sidebarWrap.style.display = 'none';
+    } else {
+      sidebarWrap.style.display = 'block';
+    }
+  }
+
+  // Function to highlight active link based on scroll
+  function updateActiveLink() {
+    var headings = $(".blog_rich_text h2");
+    var sidebarLinks = $(".anchor-links_holder a");
+    var offset = 200;
+    var currentTop = $(window).scrollTop();
+    var activeHeading = null;
+
+    for (var i = 0; i < headings.length; i++) {
+      var heading = headings[i];
+      var headingTop = $(heading).offset().top;
+      var nextHeadingTop = i + 1 < headings.length ? $(headings[i + 1]).offset().top : Infinity;
+
+      if (currentTop + offset >= headingTop && currentTop + offset < nextHeadingTop) {
+        activeHeading = heading;
+        break;
+      }
+    }
+
+    sidebarLinks.removeClass("active");
+    if (activeHeading) {
+      var activeLinkId = $(activeHeading).attr("id");
+      $('a[href="#' + activeLinkId + '"]').addClass("active");
+    }
+  }
+
+  window.onload = function() {
+    addUniqueIdToHeadings();
+    updateActiveLink();
+  };
+
+  $(window).scroll(updateActiveLink);
+}
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toc = document.querySelector(".toc_wrap");
+    const share = document.querySelector(".share_button_wrap");
+
+    if (!toc || !share) return;
+
+    const updateBorder = () => {
+      const style = getComputedStyle(toc);
+      share.style.borderTop = style.display === "none" ? "none" : "1px solid var(--_v2---grey-300))";
+    };
+
+    // Initial check
+    updateBorder();
+
+    // Watch for changes to toc_wrap
+    const observer = new MutationObserver(updateBorder);
+    observer.observe(toc, { attributes: true, attributeFilter: ["style", "class"] });
+  });
+</script>
+
+<script src="https://hubspotonwebflow.com/assets/js/form-124.js" type="text/javascript" integrity="sha384-bjyNIOqAKScdeQ3THsDZLGagNN56B4X2Auu9YZIGu+tA/PlggMk4jbWruG/P6zYj" crossorigin="anonymous"></script></body></html>

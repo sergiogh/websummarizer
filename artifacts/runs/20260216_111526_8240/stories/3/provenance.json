@@ -1,0 +1,5 @@
+{
+  "url": "https://aws.amazon.com/blogs/quantum-computing/reservoir-computing-on-an-analog-rydberg-atom-quantum-computer/",
+  "title": "Reservoir computing on an analog Rydberg-atom quantum computer | Amazon Web Services",
+  "why": "- The story demonstrates how quantum reservoir computing (QRC) can address machine learning challenges using Rydberg-atom quantum computers.\n- The QRC algorithm was experimentally implemented for tasks including image classification and time series prediction.\n- QRC outperformed classical methods, particularly for small datasets relevant to pharmaceutical research.\n- The research was performed on analog Rydberg-atom quantum computers and can be reproduced by readers using Amazon Braket."
+}

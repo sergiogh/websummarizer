@@ -1,0 +1,5 @@
+{
+  "url": "https://spectrum.ieee.org/quantum-twins",
+  "title": "[PAPER] “Quantum Twins” Simulate What Supercomputers Can’t - Spectrum",
+  "why": "- Silicon Quantum Computing has unveiled the Quantum Twins product, a silicon quantum simulator now available to customers.\n- The device consists of 15,000 quantum dots and can simulate complex phenomena such as a material transitioning from an insulator to a metal, including all intermediate states.\n- The simulator uses application-specific chips where problems are encoded directly into the geometry and structure of the array, rather than using conventional qubits.\n- The company’s manufacturing process can place single phosphorus atoms in silicon with subnanometer precision and can produce up to 250,000 registers on a chip within 8 hours, allowing for a chip design turnaround in a week.\n- The new analog quantum simulator can simulate problems, such as the metal-insulator transition in a two-dimensional material, that cannot be modeled by classical computers."
+}

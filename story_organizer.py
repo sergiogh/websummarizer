@@ -223,13 +223,7 @@ _WHY_LABEL = "Why this matters:"
 _FALLBACK_KEY_DETAIL = "No quantitative metric disclosed in source"
 _FALLBACK_WHY = "No impact statement can be derived from the available source text"
 
-_MIN_PRIMARY_PER_BUCKET = {
-    STORY_BUCKET_RESEARCH: 3,
-    STORY_BUCKET_INDUSTRY_INVESTMENT: 3,
-    STORY_BUCKET_POLICY_SECURITY: 2,
-}
-
-_DEFAULT_PRIMARY_LIMIT = 12
+_DEFAULT_PRIMARY_LIMIT = 20
 _DEFAULT_OVERFLOW_LIMIT = 8
 
 _STOPWORDS = {
@@ -289,6 +283,20 @@ def _sentence_to_clause(text: str) -> str:
     if not cleaned:
         return ""
     return cleaned[0].lower() + cleaned[1:] if len(cleaned) > 1 else cleaned.lower()
+
+
+def _strip_matter_prefix(text: str) -> str:
+    cleaned = _normalize_spaces(text)
+    previous = None
+    while cleaned and cleaned != previous:
+        previous = cleaned
+        cleaned = re.sub(
+            r"^(?:why\s+(?:this|it)\s+matters\s*:?\s*)?(?:this|it)\s+matters\s+because\s+",
+            "",
+            cleaned,
+            flags=re.IGNORECASE,
+        ).strip()
+    return cleaned
 
 
 def _extract_labeled(text: str, label: str, next_labels: Sequence[str]) -> str:
@@ -376,11 +384,19 @@ def _compose_narrative_summary(what: str, key: str, why: str) -> str:
     why_text = why
     if not why_text or why_text == _FALLBACK_WHY:
         why_text = "The available source text does not provide an explicit impact statement"
-    why_clause = _sentence_to_clause(why_text)
     if "does not provide an explicit impact statement" in why_text:
         primary.append(_ensure_sentence(why_text, _FALLBACK_WHY + "."))
     else:
-        primary.append(_ensure_sentence(f"This matters because {why_clause}", "The available source text does not provide an explicit impact statement."))
+        why_text = _strip_matter_prefix(why_text)
+        if not why_text:
+            why_text = "The available source text does not provide an explicit impact statement"
+        why_clause = _sentence_to_clause(why_text)
+        primary.append(
+            _ensure_sentence(
+                f"This matters because {why_clause}",
+                "The available source text does not provide an explicit impact statement.",
+            )
+        )
 
     return " ".join(primary)
 
@@ -620,39 +636,20 @@ def curate_stories(
 
     deduped = _dedupe_stories(prepared)
 
-    by_bucket: Dict[str, List[Dict[str, object]]] = {bucket: [] for bucket in STORY_BUCKET_SEQUENCE}
-    for story in deduped:
-        by_bucket[story.get("story_bucket", STORY_BUCKET_OTHER)].append(story)
+    ranked = sorted(
+        deduped,
+        key=lambda item: (-int(item.get("_score", 0)), int(item.get("_index", 0))),
+    )
+    selected = ranked[:primary_limit]
+    selected_ids = {
+        str(story.get("story_id", "")) + "::" + str(story.get("url", ""))
+        for story in selected
+    }
 
-    for bucket in by_bucket:
-        by_bucket[bucket] = sorted(
-            by_bucket[bucket],
-            key=lambda item: (-int(item.get("_score", 0)), int(item.get("_index", 0))),
-        )
-
-    selected: List[Dict[str, object]] = []
-    selected_ids = set()
-
-    for bucket, minimum in _MIN_PRIMARY_PER_BUCKET.items():
-        candidates = by_bucket.get(bucket, [])
-        for story in candidates[: min(minimum, len(candidates))]:
-            key = str(story.get("story_id", "")) + "::" + str(story.get("url", ""))
-            if key in selected_ids or len(selected) >= primary_limit:
-                continue
-            selected.append(story)
-            selected_ids.add(key)
-
-    ranked = sorted(deduped, key=lambda item: (-int(item.get("_score", 0)), int(item.get("_index", 0))) )
-    for story in ranked:
-        key = str(story.get("story_id", "")) + "::" + str(story.get("url", ""))
-        if key in selected_ids:
-            continue
-        if len(selected) >= primary_limit:
-            break
-        selected.append(story)
-        selected_ids.add(key)
-
-    primary = sorted(selected, key=lambda item: (_BUCKET_PRIORITY[item["story_bucket"]], int(item.get("_index", 0))))
+    primary = sorted(
+        selected,
+        key=lambda item: (_BUCKET_PRIORITY[item["story_bucket"]], int(item.get("_index", 0))),
+    )
 
     # Reflow should prioritize lower relevance stories.
     overflow_candidates = []

@@ -1,0 +1,5 @@
+{
+  "url": "https://www.ibm.com/quantum/blog/quantum-advantage-tracker",
+  "title": "Quantum Advantage Tracker: the race to advantage | IBM Quantum Computing Blog",
+  "why": "- The open-source Quantum Advantage Tracker allows researchers to compare quantum and classical computing methods in real time, supporting faster, collaborative progress toward verifying quantum advantage.\n- Over 30 submissions from leading institutions have been made to the Tracker, including experiments run on IBM and Quantinuum hardware, highlighting broad community engagement.\n- Continuous, rapid-fire exchanges on the Tracker enable updates and refinements to experiments much faster than traditional scientific publishing cycles.\n- Recent experiments with \"peaked circuits\" demonstrated scenarios where quantum hardware drastically outperformed classical methods, but subsequent classical algorithm improvements quickly closed the gap, emphasizing the need for ongoing, open benchmarking.\n- The Tracker is fostering a collaborative environment where quantum advantage is pursued through transparent, rigorous validation and iterative challenge between quantum and classical approaches."
+}

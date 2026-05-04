@@ -1,0 +1,5 @@
+{
+  "url": "https://www.maybellquantum.com/news/coldcloud",
+  "title": "Maybell Quantum Launches ColdCloud®: A Patented Architecture for Scalable Quantum Cryogenics | Maybell",
+  "why": "- ColdCloud® is the world’s first scalable cryogenic cooling platform designed specifically for efficient quantum computing.\n- The system delivers over 10 times the energy efficiency of legacy dilution refrigerators and reduces cooldown times from days to hours.\n- ColdCloud centralizes cryogenic cooling power and distributes it to independent, lightweight nodes, enabling greater modularity and scalability.\n- The new architecture uses up to 90% less electricity, 90% less cooling water, and up to 80% less Helium-3 per qubit compared to traditional arrays.\n- ColdCloud is protected by more than 25 patents covering its centralized cooling, distributed node architecture, and novel cryogenic cycles.\n- The first ColdCloud system will be online in 2026, with broader deployments expected in 2027, aiming to take quantum computing from lab settings to commercial-scale datacenters."
+}

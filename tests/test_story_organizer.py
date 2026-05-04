@@ -92,22 +92,44 @@ class StoryOrganizerTests(unittest.TestCase):
     def test_standardize_story_summary_produces_three_required_labels(self):
         standardized = standardize_story_summary(
             "IonQ launched a new system with 64 qubits. The company reported 99.2 percent fidelity. "
-            "This enables larger optimization workloads on hardware."
+            "This enables larger optimization workloads on hardware.",
+            story_title="IonQ announces system update",
         )
 
         self.assertNotIn("What happened:", standardized)
         self.assertNotIn("Key detail:", standardized)
         self.assertNotIn("Why this matters:", standardized)
         self.assertIn("This matters because", standardized)
-        self.assertIn("Recent newsletters", standardized)
+        self.assertNotIn("Related context:", standardized)
+        self.assertNotIn("Recent newsletters", standardized)
 
     def test_standardize_story_summary_keeps_vs_sentence_complete(self):
         standardized = standardize_story_summary(
             "The team benchmarked runtime improvements in production. "
             "The solver achieved 13.7 s vs. 45.7 s on the same family of instances. "
-            "This improves reliability under tight latency budgets."
+            "This improves reliability under tight latency budgets.",
+            story_title="Benchmark runtime improvements",
         )
         self.assertIn("13.7 s vs. 45.7 s", standardized)
+
+    def test_standardize_story_summary_does_not_duplicate_matter_prefix(self):
+        standardized = standardize_story_summary(
+            "IonQ launched a new system with 64 qubits. The company reported 99.2 percent fidelity. "
+            "This matters because it gives users a larger hardware target.",
+            story_title="IonQ announces system update",
+        )
+
+        self.assertIn("This matters because it gives users a larger hardware target.", standardized)
+        self.assertNotIn("this matters because this matters because", standardized.lower())
+        self.assertNotIn("this matters because it matters because", standardized.lower())
+
+        repeated = standardize_story_summary(
+            "A quantum startup announced a deployment. It reported 64 qubits. "
+            "It matters because it matters because customers can test larger circuits.",
+            story_title="Quantum startup deployment",
+        )
+        self.assertIn("This matters because customers can test larger circuits.", repeated)
+        self.assertNotIn("it matters because it matters because", repeated.lower())
 
     def test_curate_stories_applies_primary_and_overflow_limits(self):
         stories = []
@@ -123,15 +145,57 @@ class StoryOrganizerTests(unittest.TestCase):
             )
 
         curated = curate_stories(stories)
-        self.assertLessEqual(len(curated["primary"]), 12)
+        self.assertLessEqual(len(curated["primary"]), 20)
         self.assertLessEqual(len(curated["overflow"]), 8)
         self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_RESEARCH], 3)
         self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_INDUSTRY_INVESTMENT], 3)
         self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_POLICY_SECURITY], 2)
 
-    def test_overflow_prefers_lower_relevance_stories(self):
+    def test_curate_stories_keeps_less_than_twenty_in_primary(self):
+        stories = []
+        for idx in range(19):
+            stories.append(
+                {
+                    "story_id": str(idx),
+                    "title": f"Quantum update {idx}",
+                    "summary": "A benchmark study reports 95 percent fidelity and a new deployment milestone.",
+                    "url": f"https://example.com/story-{idx}",
+                    "tag": "research" if idx % 2 == 0 else "investment",
+                }
+            )
+
+        curated = curate_stories(stories)
+        self.assertEqual(len(curated["primary"]), 19)
+        self.assertEqual(len(curated["overflow"]), 0)
+
+    def test_default_overflow_uses_least_relevant_story(self):
         stories = []
         for idx in range(20):
+            stories.append(
+                {
+                    "story_id": f"high-{idx}",
+                    "title": f"High signal quantum benchmark {idx}",
+                    "summary": "A benchmark study reports 99 percent fidelity and a major deployment milestone.",
+                    "url": f"https://example.edu/2026/03/{idx+1:02d}/story-{idx}",
+                    "tag": "other",
+                }
+            )
+        stories.append(
+            {
+                "story_id": "low",
+                "title": "General quantum mention",
+                "summary": "General update with limited details.",
+                "url": "https://example.com/general-update",
+                "tag": "policy",
+            }
+        )
+
+        curated = curate_stories(stories)
+        self.assertEqual([story["story_id"] for story in curated["overflow"]], ["low"])
+
+    def test_overflow_prefers_lower_relevance_stories(self):
+        stories = []
+        for idx in range(24):
             tag = "research" if idx < 8 else "other"
             summary = (
                 "A benchmark study reports 99 percent fidelity and a major deployment milestone."

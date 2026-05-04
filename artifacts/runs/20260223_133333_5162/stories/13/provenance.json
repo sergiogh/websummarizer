@@ -1,0 +1,5 @@
+{
+  "url": "https://www.digitaljournal.com/tech-science/quantum-computing-tracking-qubit-fluctuations-in-real-time/article",
+  "title": "Quantum computing: Tracking qubit fluctuations in real time - Digital Journal",
+  "why": "- Researchers have developed a real-time monitoring system that tracks qubit fluctuations about 100 times faster than previous methods.\n- The system uses fast FPGA-based control hardware to identify instantly when a qubit shifts from “good” to “bad,” enabling rapid response to qubit instability.\n- Standard testing methods previously took up to a minute to measure qubit performance, missing rapid fluctuations and only providing average values.\n- The new method updates its estimate of a qubit’s relaxation (energy loss) rate within milliseconds, matching the natural speed of qubit fluctuations.\n- By continually refining its measurements in real-time, this advance opens a new path toward stabilizing and scaling future quantum processors."
+}

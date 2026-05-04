@@ -1,0 +1,940 @@
+Large-scale portfolio optimization on a trapped-ion quantum computer
+Alejandro Gomez Cadavid1,2, Ananth Kaushik7, Pranav Chandarana1,2, Miguel Angel
+Lopez-Ruiz7, Gaurav Dev1,3, Willie Aboumrad7, Qi Zhang1, Claudio Girotto7, Sebasti ´an V .
+Romero1,4,5, Martin Roetteler7, Enrique Solano1,∗Marco Pistoia7,8, and Narendra N. Hegade1,6†
+1Kipu Quantum GmbH, Greifswalderstrasse 212, 10405 Berlin, Germany
+2Department of Physical Chemistry, University of the Basque Country EHU, Apartado 644, 48080 Bilbao, Spain
+3TUM School of Management, Technische Universit¨ at M¨ unchen, Bildungscampus 9, 74076 Heilbronn, Germany
+4Instituto de Ciencia de Materiales de Madrid (CSIC), Cantoblanco, E-28049 Madrid, Spain
+5Departamento de F´ ısica Te´ orica de la Materia Condensada, Universidad Aut´ onoma de Madrid, E-28049 Madrid, Spain
+6IDAL, Electronic Engineering Department, ETSE-UV , University of Valencia, Avgda. Universitat s/n, 46100 Burjassot, Valencia, Spain
+7IonQ Inc., 4505 Campus Dr, College Park, MD 20740, USA
+8IonQ Italia, Rome, Italy
+(Dated: March 2, 2026)
+We present an end-to-end pipeline for large-scale portfolio selection with cardinality constraints and exper-
+imentally demonstrate it on trapped-ion quantum processors using hardware-aware decomposition. Building
+on RMT-based correlation-matrix denoising and community detection, we identify correlated asset groups and
+introduce a correlation-guided greedy splitting scheme that caps each cluster by the executable qubit budget.
+Each cluster defines a hardware-embeddable QUBO subproblem that we solve using bias-field digitized counter-
+diabatic quantum optimization (BF-DCQO), a non-variational method that avoids classical parameter-training
+loops. We recombine low-energy candidates into global portfolios and enforce feasibility with a two-stage
+post-processing routine: fast repair followed by a cardinality-preserving swap local search. We benchmark the
+workflow on a 250-asset universe taken from the S&P 500 and execute subproblems on a 64-qubit Barium devel-
+opment system similar to the forthcoming IonQ Tempo line. We observe that larger executable subproblem sizes
+reduce decomposition error and systematically improve final objective values and risk–return trade-offs relative
+to randomized baselines under identical post-processing. Overall, the results establish a hardware-tested route
+for scaling financial optimization problems, defined by a trade space in which executable problem size and
+circuit cost are balanced against the resulting solution quality.
+I. INTRODUCTION
+Optimization problems arising in financial decision-making
+often involve discrete choices, combinatorial constraints, and
+noisy input data [1, 2]. Among them, portfolio selec-
+tion with cardinality constraints is a prototypical challeng-
+ing problem [3–6], in which an investor must choose a fixed
+number of assets while balancing expected return against
+risk, building upon the classical mean-variance framework of
+Markowitz [7]. As problem sizes increase, classical meth-
+ods quickly become computationally impractical, and heuris-
+tic approaches tend to dominate in realistic settings.
+Quantum computing has emerged as a promising comple-
+mentary technology for combinatorial optimization. Many
+financial formulations can be expressed as quadratic uncon-
+strained binary optimization (QUBO) problems and mapped
+to Ising models [6, 8], enabling the use of quantum algo-
+rithms such as quantum annealing [9, 10], the quantum ap-
+proximate optimization algorithm (QAOA) [11], and digitized
+counterdiabatic approaches such as digitized counterdiabatic
+quantum optimization (DCQO) [12, 13] and bias-field DCQO
+(BF-DCQO) [14, 15]. However, current quantum processors
+remain constrained by limited qubit counts, restricted connec-
+tivity, and finite coherence times, which collectively bound the
+∗enr.solano@gmail.com
+†narendrahegade5@gmail.comsize and complexity of executable problem instances. These
+practical limitations motivate the development of frameworks
+that explicitly incorporate hardware constraints into the de-
+sign of quantum optimization algorithms, enabling more scal-
+able and reliable implementations on contemporary quantum
+platforms [16–18]. In this regard, several efforts have sought
+to tackle large-scale industrial problems on current quantum
+computers, either by decomposing problems into subproblems
+or by encoding them in a qubit-efficient manner [19–21].
+Existing demonstrations of quantum optimization for fi-
+nancial applications are constrained by device size and by
+the practical cost of executing strongly coupled objective
+functions under near-term noise and runtime limitations.
+Cardinality-constrained portfolio selection is a representative
+example: it is NP-hard, induces many pairwise couplings, and
+requires enforcing an exactK-asset constraint, all of which
+complicate direct hardware execution at realistic scales. Re-
+cent work has shown that correlation-structure-aware decom-
+position can mitigate these challenges by denoising empirical
+correlation matrices and partitioning the asset universe into
+communities that can be solved separately [20].
+We build on this direction with an end-to-end workflow
+that explicitly ties the decomposition to the executable qubit
+budget and instantiates the solve stage with a non-variational
+quantum optimizer. Starting from a QUBO/Ising formu-
+lation of fixed-cardinality portfolio selection, we enforce a
+strict hardware size cap via a correlation-guided splitting rule
+that converts oversized communities into clusters that fit a
+target qubit budget. We solve the resulting Ising subprob-arXiv:2602.23976v1  [quant-ph]  27 Feb 2026
+
+2
+lems on trapped-ion quantum hardware using bias-field digi-
+tized counterdiabatic quantum optimization (BF-DCQO) [12,
+14, 15], and construct global portfolios by recombining low-
+energy subproblem candidates followed by a cardinality-
+enforcing refinement step.
+We benchmark the approach on a 250-asset universe and
+experimentally execute subproblems with 36 qubits and up to
+60 qubits on a 64-qubit trapped-ion system. We observe that
+larger executable subproblem sizes reduce decomposition er-
+ror and improve final objective values and risk-return trade-
+offs relative to classical cluster-based and randomized base-
+lines under identical post-processing. This establishes a di-
+rect link between available qubit budget, decomposition gran-
+ularity, and end-to-end solution quality, supporting hardware-
+aware quantum optimization workflows for applied financial
+decision-making on near-term devices.
+The remainder of this paper is organized as follows. In
+Sec. II we present the fixed-cardinality portfolio selection
+problem and the QUBO/Ising mapping used throughout. In
+Sec. III we detail the hardware-aware pipeline, including
+RMT-based denoising of correlations, community detection
+with an explicit qubit-budget cap, BF-DCQO execution on
+the resulting subproblems, and a cardinality-preserving local-
+search refinement used at both the cluster and global levels. In
+Sec. IV we evaluate the pipeline on a 250-asset universe and
+report trapped-ion hardware executions on IonQ systems with
+36-qubit and 64-qubit configurations (executing subproblems
+up to 60 qubits), highlighting how decomposition granular-
+ity and reconstructed portfolio quality change with available
+qubits. We conclude with implications for near-term hardware
+execution of dense Ising/QUBO objectives and extensions en-
+abled by larger qubit counts and improved fidelities.
+II. PORTFOLIO OPTIMIZATION PROBLEM
+Portfolio selection aims to identify an optimal subset of as-
+sets that balances expected return and risk, subject to practi-
+cal constraints such as cardinality, diversification, and regula-
+tory requirements. In this work, we consider a combinatorial
+portfolio optimization problem in which decisions are binary:
+each assetiis either included (x i=1) or excluded (x i=0)
+from the portfolio. This discrete structure allows a direct map-
+ping to quadratic unconstrained binary optimization (QUBO)
+objectives and Ising Hamiltonians compatible with quantum
+optimization algorithms such as BF-DCQO.
+Problem definition:Letµ idenote the expected return of
+asseti, and letC∈Rn×nbe the covariance matrix. The goal
+is to select a subset of exactlyKassets (a fixed-cardinality
+constraint) that optimizes a risk–return trade-off. The binary
+vectorx=(x 1,...,x n) must satisfyPn
+i=1xi=K. The classical
+objective
+min
+x∈{0,1}nγ−1
+2µTx+γ+1
+2xTCx
+s.t.nX
+i=1xi=K,(1)combines a risk termP
+i,jCi jxixjwith a linear return termP
+iµixi, using a weighting parameterγ∈[−1,1] to interpo-
+late between pure risk-minimization (γ=1) and pure return-
+maximization (γ=−1). In this paper, we setγ=0 to balance
+the risk and return terms in Eq. (1).
+QUBO formulation:To encode the cardinality constraint
+into a QUBO, we augment the objective with a quadratic
+penalty of the form (Pn
+i=1xi−K)2, multiplied by a sufficiently
+large coefficient to enforce feasibility. After expanding and
+collecting terms, the full cost function can be written in the
+standard QUBO form
+f(x)=x⊤Qx+q⊤x+const,(2)
+whereQcontains contributions from the covariance term and
+the quadratic part of the penalty, andqcollects the linear re-
+turn terms and the linear part of the penalty. This representa-
+tion is directly compatible with classical as well as with quan-
+tum heuristics. See Appendix A for the explicit construction
+ofQandqfrom Eq. (1).
+Ising representation:For quantum hardware that natively
+implements Pauli interactions, it is convenient to convert bi-
+nary variables to Ising spins viax i=(1−z i)/2, where
+zi∈{−1,+1}. Substitution yields an Ising Hamiltonian of the
+generic form
+Hf=X
+ihizi+X
+i<jJi jzizj+const.,(3)
+with fieldsh iand couplingsJ i jobtained through a linear trans-
+formation ofQandq, see Appendix A. This structure aligns
+directly with the BF-DCQO optimizer described in Sec. III C,
+whereH fis the target Hamiltonian.
+III. METHODS
+A. Hardware-aware decomposition pipeline
+To ensure that each QUBO subproblem fits on a target
+quantum processor with a maximum qubit capacityQ max, we
+partition the asset universe into clusters whose sizes do not ex-
+ceed this limit. This is achieved through Alg. 1. The method
+proceeds in two stages. First, we apply a denoising decom-
+position of the correlation matrixCbased on Refs. [20, 22].
+where the correlation matrix is partitioned into three spectral
+components:
+C=C noise+C⋆+C global,(4)
+whereC noisecorresponds to eigenmodes consistent with noise,
+Cglobal is the dominant market mode, andC ⋆contains the
+structured, informative eigenmodes. Clustering is performed
+only onC ⋆, which improves robustness by suppressing noise-
+driven relationships.
+A community detection method is applied toC ⋆, produc-
+ing an initial hard partition of assets. These communities re-
+flect meaningful correlation structure, but their sizes may ex-
+ceed the hardware-boundQ max. Therefore, a second stage
+
+3
+0.1780.180Annual Risk0.100.11Annual Return
+10111⋯0110⋯1010⋯11⋯⋯11⋯01010⋯10110⋯110⋯⋯11⋯010010⋯110111⋯1010⋯⋯(a)(b)(c)(d)(e)
+FIG. 1. Schematic of the end-to-end pipeline: (a) original problem; (b) community detection and size-bounded splitting produce clusters with
+|Cm|≤Q max; (c) each cluster is mapped to an Ising instance and solved via BF-DCQO (or classically for small clusters); (d–e) low-energy
+cluster candidates are recombined into global portfolios and refined using a cardinality-preserving local search.
+Algorithm 1:Hardware-Aware Clustering
+(GetClusters)
+Input:Correlation matrixC; hardware qubit limitQ max
+Output:Clusters{C 1,...,C M}with|C m|≤Q max
+1RMT denoising:DecomposeCintoC noise,C⋆,Cglobal using
+Marchenko-Pastur spectral separation
+2Initial clustering [22]:Apply a community-detection
+method (e.g. Louvain) toC ⋆to obtain initial communities
+{C(0)
+u}
+3foreachcommunityC(0)
+udo
+4if|C(0)
+u|≤Q maxthen
+5KeepC(0)
+uunchanged and append it to the output set
+6else
+7Initialize:R←C(0)
+u
+8whileR,∅do
+9if|R|≤Q maxthen
+10AppendRas a final cluster; break
+11- Compute the restricted matrixC R=C[R,R]
+12- Compute degreesd i=P
+j|(CR)i j|−1∀i∈R
+13- Select seedi⋆=arg max idi
+14- Compute similaritiess j=|(C R)i⋆j|
+15- LetJbe the indices of theQ maxlargests j
+16- Form a new clusterC new={R[j] :j∈J}
+17- AppendC newto the output set
+18- UpdateR←R\C new
+19returnFinal set of clusters{C 1,...,C M}
+enforces the maximum cluster size without discarding any
+assets. Oversized communities are recursively split using
+a correlation-aware greedy procedure: within each commu-
+nity, we select a high-degree node (in the absolute-correlation
+graph) and group it with its most strongly correlated neigh-
+bours up to sizeQ max. The selected nodes form a final cluster,
+are removed from the pool, and the process continues until all
+remaining nodes fit within the size constraint.
+The resulting set of clustersCforms a complete partition of
+the asset universe,
+MG
+m=1Cm={1,...,n},|C m|≤Q max∀m,(5)
+guaranteeing that each cluster defines a QUBO subproblem
+embeddable on the target quantum hardware.B. Trapped-ion hardware
+The experiments reported here were carried out on mod-
+ern trapped-ion quantum processors. This hardware platform
+is particularly well suited for implementing dense Ising or
+QUBO Hamiltonians due to its long intrinsic qubit coherence
+times and its ability to realize highly reconfigurable, near–all-
+to-all two-qubit interactions mediated by collective motional
+modes. These characteristics allow dense coupling graphs to
+be implemented directly, substantially reducing the need for
+SWAP operations that typically inflate circuit depth on devices
+with limited connectivity.
+Our primary results were obtained using IonQ’s Forte and
+Forte Enterprise quantum processing units (QPUs) [23], each
+of which utilize 36 qubits encoded in the hyperfine ground
+states of trapped171Yb+ions, while selected experiments were
+performed on a larger, IonQ-designed Barium development
+system similar to the forthcoming IonQ Tempo line. This sys-
+tem utilizes up to 64 Barium qubits in a long-chain, steered-
+beam architecture to extend the capabilities of Forte-class pro-
+cessors. Across all devices, ions are produced via laser abla-
+tion and selective ionization and are confined within compact,
+integrated vacuum packages utilizing surface linear Paul traps.
+Universal control is implemented through two-photon Raman
+transitions driven by 355 nm laser pulses for the Ytterbium
+systems and 532 nm laser pulses for the Barium system, en-
+abling a gate set composed of arbitrary single-qubit rotations
+and entanglingZZgates.
+These QPUs leverage advanced optical control systems
+based on acousto-optic deflectors (AODs) to enable indepen-
+dent beam steering to individual ions, significantly reducing
+beam alignment errors [24, 25], and are supported by auto-
+mated calibration software to ensure scalable operation. Re-
+garding performance, the IonQ Forte and Forte Enterprise
+systems demonstrated median direct randomized benchmark-
+ing fidelities for two-qubit gates of 99.3% and 99.5%, re-
+spectively, with typical gate durations of 950µs. Single-
+qubit gate fidelities were approximately 99.98% with opera-
+tion times of 130µs. Data processing protocols across the sys-
+tems include sample debiasing, achieved by grouping the total
+number of shots into batches of 25 and averaging over these
+groups [26]. Furthermore, the 64-Qubit Barium development
+system incorporates leakage checks to discard samples where
+quantum states have interacted with the environment. Col-
+
+4
+lectively, these architectures support consistent high gate fi-
+delities, making them well-suited for quantum optimization
+experiments featuring dense interaction structures.
+C. Quantum optimizer
+Bias-field digitized counterdiabatic quantum optimization
+(BF-DCQO) is a recent algorithm proposed to tackle opti-
+mization problems encoded as Ising problems [14, 15, 27].
+BF-DCQO builds up on an adiabatic path from a biased ini-
+tial HamiltonianH i=P
+j
+−X j+hb
+jZj
+to the target Hamilto-
+nianH f, i.e.H ad=(1−λ)H i+λH f, whereλis a schedul-
+ing function satisfyingλ(0)=0,λ(T)=1, andTbeing the
+evolution time. Specifically, in all experiments we use the
+smooth scheduleλ(t)=sin2hπ
+2sin2πt
+2Ti
+, whose first deriva-
+tive vanishes att=0 andt=T. Doing arbitrary long
+evolution times is not feasible experimentally due to deco-
+herence. Then, a counterdiabatic (CD) protocol is needed
+to overcome this issue, which modifies the adiabatic path as
+H=H ad+˙λAλ. We chooseA λas the first order nested com-
+mutator expansion [28], namelyA λ=iα(λ)h
+Hi,Hfi
+, where
+α(λ)=−h
+Hi,Hfi2
+/h
+Had,h
+Hi,Hfii2
+. Throughout,∥·∥de-
+notes the trace norm.
+For short evolution times, the magnitude of the CD term
+dominates over the adiabatic one, i.e.˙λAλ≫∥Had∥, and
+the time evolution operatorUis effectively generated by
+H≈ ˙λAλ. Doing this effective time evolution in a digital quan-
+tum computer is known as digitized counterdiabatic quantum
+optimization (DCQO) in the impulse regime [29]. The dig-
+itization of the time evolution operator can be done through
+Trotterization, yielding
+Udig=nstepsY
+k=1ntermsY
+j=1e−i∆t H j(k∆t),(6)
+whereT=n steps∆tand the Hamiltonian has been expanded
+asH=Pnterms
+j=1Hj, see Algorithm 2. To further reduce cir-
+cuit depth and accumulated noise in the digital implementa-
+tion, we employ a pruning procedure at the compilation level.
+Pruning consists of discarding gates whose rotation angles
+fall below a fixed thresholdθ cut-off , as these correspond to
+weak contributions to the implemented evolution. In practice,
+this acts as a controlled approximation that lowers hardware
+overhead while preserving the dominant structure of the cost
+Hamiltonian.
+The circuits are built using Qiskit [30]. Once compiled,
+BF-DCQO applies DCQO iteratively by modifying the bias
+fieldshb
+jfromH i, favoring a certain orientation of the qubits,
+see Algorithm 3. Furthermore, at each iteration we select the
+nllowest-energy samples and perform five sweeps of zero-
+temperature simulated annealing as post-processing to correct
+for bit-flip errors while getting better samples. We then up-
+date the bias fields using the empirical spin orientations of the
+measured distributionh(b)
+i←−⟨σz
+i⟩, where⟨σz
+i⟩is computed
+from the subset of post-processedn lsamples. In this work,Algorithm 2:Digitized Counterdiabatic Evolution
+(DCQO)
+Input:Initial HamiltonianH i, target HamiltonianH f,
+scheduleλ(t), time step∆t, thresholdθ cut-off
+Output:Digitized unitary evolution operatorU dig
+1Compute the counterdiabatic termA λ=iα(λ)[H i,H f]
+2InitializeU dig←I
+3fork=1...n stepsdo
+4-Letλ k=λ(k∆t)
+5-EvaluateH k=˙λkAλk
+6-DecomposeH k=P
+jrj,kPj,k, withP j,ka Pauli product
+7-Compute the Trotterized step
+Uk=Y
+j∈Jexp
+−i∆t r j,kPj,k
+8whereJis the set of indices for which∆t r j,k>θ cut-off
+9-UpdateU dig←U kUdig
+10returnU dig
+Algorithm 3:Bias-Field Digitized Counterdiabatic
+Quantum Optimization (BF-DCQO)
+Input:Target HamiltonianH f; initial bias fieldsh(b)
+j; number
+of iterationsR, number of low energy samples to keep
+nl
+Output:Best sampled bitstring
+1forr=1...Rdo
+2-Construct biased driver
+H(r)
+i=X
+j
+−X j+h(b)
+j,rZj
+3-Execute DCQO using Algorithm 2 and obtain
+measurement samples
+4-Compute classical energies of all measured bitstrings
+underH f
+5-Sort samples by increasing energy
+6-Post-select then llowest-energy samples and estimate
+⟨σz
+j⟩
+7-Seth(b)
+j,r+1←−⟨σz
+j⟩
+8returnDistributions of bitstrings from the iterations
+we limit ourselves ton l=10. Additionally, further problem-
+specific post-processing is admitted on the generated samples,
+as will be described in the next section.
+D. Post-processing
+The use of classical post-processing is motivated by two
+practical considerations. First, the quantum circuits used in
+this work do not explicitly preserve the cardinality constraint,
+and sampling noise further spreads the measurement out-
+comes around the target Hamming weight. As a result, low-
+energy samples produced by BF-DCQO typically concentrate
+
+5
+near, but not exactly on, configurations with the desired car-
+dinality. This first phase of the post-processing therefore per-
+forms a deterministic repair that projects these near-feasible
+solutions onto the constraint manifold in a controlled manner.
+Second, once feasibility is restored, the repaired configu-
+ration can be viewed as a high-quality starting point for a
+short local exploration. We perform a lightweight neighbor-
+hood search restricted to fixed Hamming weight. This reflects
+the broader working hypothesis that near-term quantum op-
+timizers can be effective at identifying promising regions of
+the search space, while classical heuristics remain well-suited
+to perform fine-grained improvements [31]. We present this
+two-phase approach in Algorithm 4.
+Gradient-based Hamming weight recovery.––Letw(x)=Pn
+i=1xidenote the Hamming weight ofx, and let∇f(x) be the
+continuous gradient of the quadratic form
+∇f(x)=2Qx+q.(7)
+Ifw(x)=K, we skip this phase. Otherwise:
+•Ifw(x)>K, we must deactivate (w(x)−K) assets.
+Among all indicesiwithx i=1, we sort them by de-
+creasing∇f(x) iand flip to 0 the firstw(x)−Kindices.
+Intuitively, large positive gradient entries indicate vari-
+ables that are most harmful to keep active.
+•Ifw(x)<K, we must activate (K−w(x)) assets. Among
+all indicesiwithx i=0, we sort them by increasing
+∇f(x) iand flip to 1 the firstK−w(x) indices. Small
+(or negative) gradient entries indicate variables that are
+beneficial to activate.
+This phase yields a bit stringxthat satisfiesw(x)=Kwith
+a single pass of gradient-based flips.
+First-improvement swap-based local search.––Starting
+from the repaired configurationxof weightK, we perform
+a local search over the cardinality-preserving neighborhood
+defined by all pairwise swaps (i,j) withx i=0 andx j=1:
+x′=x+e i−e j,
+wheree iis thei-th unit vector. In each iteration, we randomly
+permute the sets of indices withx i=0 andx j=1 and scan
+swap pairs in this randomized order. The first swap that yields
+a strict improvementf(x′)<f(x) is accepted immediately
+(first-improvement rule), and the index sets are updated ac-
+cordingly. To control runtime, we limit the number of swap
+evaluations per iteration to 100 and terminate the search if
+either a maximum number of iterations is reached or no im-
+proving swap is found for a prescribed number of consecutive
+iterations. The procedure returns the locally optimal (w.r.t.
+swap moves) bit string of weightK, together with bookkeep-
+ing information such as the number of iterations and the im-
+provements achieved in each phase.
+IV . RESULTS
+We benchmark the hardware-aware quantum optimization
+pipeline described in Sec. II and Sec. III on real data. OurAlgorithm 4:Two-phase local search with cardinality
+constraint
+Input:Initialx∈{0,1}n; QUBO (Q,q,c); target weightK;
+max itersT max; patienceP.
+Output:Locally improved ˜xwithP
+i˜xi=K.
+1f init←x⊤Qx+q⊤x+c;w←P
+ixi
+2Phase 1: cardinality repair
+3ifw,Kthen
+4g←2Qx+q
+5ifw>KthenS←{i:x i=1}sorted byg iin
+descending order; flipx i←0 for first (w−K) indices in
+S
+6elseS←{i:x i=0}sorted byg iin ascending order; flip
+xi←1 for first (K−w) indices inS
+7f p1←x⊤Qx+q⊤x+c;∆ p1←f init−f p1
+8Phase 2: swap local search
+9f←f p1;t←0;p←0
+10S 0←{i:x i=0};S 1←{j:x j=1}
+11maxSwaps←min 100,|S 0||S1|
+12whilet<T max andp<Pdo
+13improved←false;s←0
+14randomly permuteS 0andS 1
+15fori∈S 0do
+16ifimproved or s≥maxSwapsthen
+17break
+18forj∈S 1do
+19ifs≥maxSwapsthen
+20break
+21x i←1,x j←0;f′←x⊤Qx+q⊤x+c;
+s←s+1
+22iff′<fthen
+23f←f′;S 0←{k:x k=0};
+S1←{k:x k=1}
+24improved←true;p←0;break
+25else
+26x i←0,x j←1
+27ifnotimprovedthen
+28p←p+1
+29t←t+1
+30return˜x←x
+TABLE I. Cluster statistics for the hardware-aware decomposition of
+a 250-asset universe under different qubit limitsQ max. In bold font
+the system sizes that were tackled on quantum hardware.
+Hardware # Clusters Cluster sizes
+36 qubits 14 [2,8,36,5,10,13,10,1,26,24,36,19,36,24]
+64 qubits 11 [2,8,41,10,13,10,1,26,24,55,60]
+goal is to assess how the decomposition adapts to different
+hardware qubit limits, and how the BF-DCQO plus local-
+search combination performs on the resulting portfolio opti-
+mization instances. In particular, we focus on the end-to-end
+executability of the pipeline, starting from a dense 250-asset
+objective, proceeding through hardware-sized Ising subprob-
+lems, and culminating in reconstructed global portfolios that
+satisfy the fixed-cardinality constraint.
+
+6
+51525DensityGlobal reference
+Recombined reference + LS
+Recombined referenceBF-DCQO + LS
+BF-DCQO
+(a)
+51525Density(b)
+1.9 2.0 2.1 2.251015Density
+3.6 3.8 4.0(c)
+Objective Value
+FIG. 2. Energy distribution of global candidate portfolios under dif-
+ferent hardware and pruning configurations. From top to bottom,
+the panels correspond to (a) the 36-qubit decomposition with high
+pruning on IonQ Forte, (b) the 36-qubit decomposition with medium
+pruning on IonQ Forte, and (c) the 64-qubit decomposition with
+medium pruning on the IonQ 64-qubit Barium development system.
+Orange histograms show the energy distribution obtained by running
+BF-DCQO on the largest subproblem, applying the two-phase local
+search at the cluster level and then, recombining into global can-
+didates. Blue histograms show the corresponding distributions af-
+ter applying the two-phase local-search post-processing. Red dotted
+vertical lines indicate the energy of the recombined optimal solution
+obtained by merging the individually optimal subproblem solutions,
+while blue dash-dotted lines denote this recombined optimum after
+local search. The black dashed lines mark the global optimum of the
+full problem, obtained by the Gurobi solver.
+We construct the universe ofn=250 assets from the
+S&P 500 index. For each constituent, we use daily closing
+prices over the period2020-01-02to2025-08-22, corre-
+sponding to 1418 trading days. Daily log-returns are then
+computed asr t=log (pt/pt−1). From the resulting return
+matrix, we select the 250 assets with the most complete his-
+tory, leading to a final data set with dimensions approximately
+(1418,250). From these returns, we compute the sample mean
+vector, covariance matrix, and the empirical correlation matrix
+used in the decomposition pipeline. We takeK=n/2=125
+for the global cardinality constraint.
+We consider two target devices with different limits:
+Qmax =36 andQ max =64 qubits, corresponding to
+IonQ Forte and the 64-qubit Barium development sys-
+0.090.110.13Annual Return(a)BF-DCQO+LS
+Random selection+LSGlobal reference
+Recombined reference+LS
+0.090.110.13Annual Return(b)
+0.18 0.20 0.22
+Annual Risk0.090.110.13Annual Return(c)
+2.002.402.803.20
+Global objective
+2.002.402.803.20
+Global objective
+2.002.402.803.20
+Global objectiveFIG. 3. Return-risk distribution of global candidate portfolios gener-
+ated by the clustered BF-DCQO pipeline under different hardware
+and pruning configurations. From top to bottom, the panels cor-
+respond to (a) the 36-qubit decomposition with high pruning, (b)
+the 36-qubit decomposition with medium pruning, and (c) the 64-
+qubit decomposition with medium pruning. Square markers denote
+portfolios obtained from random initialization followed by classi-
+cal post-processing, while circular markers represent post-processed
+candidates. The global reference portfolio is indicated by a red star,
+and the recombined reference portfolio is shown as a blue×. The
+color scale encodes the objective value of each portfolio. The post-
+processing budget is intentionally small (Sec. III D) so that differ-
+ences primarily reflect the quality of the initial candidate pools.
+tem. In both cases, the full 250-asset universe is parti-
+tioned into independent subproblems whose sizes do not
+exceed the correspondingQ max. Following Algorithm 1,
+for the 36-qubit setting we obtain 14 clusters with sizes
+[2,8,36,5,10,13,10,1,26,24,36,19,36,24], yielding three
+subproblems of the maximal size 36. For the 64-qubit set-
+ting the same universe is grouped into 11 clusters of sizes
+[2,8,41,10,13,10,1,26,24,55,60], with the largest subprob-
+lems containing 41, 55, and 60 assets. This is summarized in
+Table I. As expected, increasing the qubit budget reduces the
+number of clusters and allows for larger instances to be treated
+directly on quantum hardware.
+For each cluster we construct the cost functionf subproblem (x)
+usingK subproblem =n subproblem/2 for the cardinality constraint.
+We map it to an Ising HamiltonianH f, and run the BF-DCQO
+algorithm. All cluster problems are solved with the same
+quantum hyperparameters: two Trotter steps with time step
+∆t=0.1, and 10 iterations per tackled subproblem. For the
+IonQ Forte runs, we only tackle the three 36 qubit subprob-
+lems using BF-DCQO with 4000 shots per iteration. The re-
+maining subproblems of smaller size are solved exactly us-
+
+7
+ing Gurobi [32] via Qiskit [30]. Similarly, we only tackle
+the 41,55,60-qubit instances with the 64-qubit Barium de-
+velopment system using 4000, 5000 and 6000 shots per it-
+eration, respectively. We also define two levels of pruning
+for each case. For the 36-qubit decomposition, medium prun-
+ing removes roughly 40% of the gates following Algorithm 2,
+whereas high pruning the 60%. On the other hand, for the
+64-qubit decomposition, we only implement medium pruning,
+which removes about 50%−70% of the gates.
+To construct approximate solutions for the global 250-asset
+portfolio, we recombine cluster solutions by direct concatena-
+tion. For a fixed cluster ordering, a global bitstring is formed
+by placing the bits of each cluster-level candidate into their
+corresponding asset positions, yielding a full-length portfolio
+configuration. Based on this recombination rule, we build a
+candidate pool of size 1000 by sampling and post-processing
+low-energy cluster solutions. Specifically, for each cluster
+tackled with BF-DCQO, we collect the best bitstring from
+each iteration, adding up to a total of 10 bitstrings per cluster.
+These bitstrings are then post-processed at the cluster-level
+following the two-phase local search procedure of Sec. III D,
+using a maximum of 100 iterations and an early-stop after one
+iteration without improvement. The raw distributions for each
+subproblem are shown in Appendix B. In this way, we gener-
+ate 1000 global independent bitstrings, providing a diverse set
+of candidate portfolios concentrated in low-energy regions of
+the global objective. Then, these global candidates are further
+refined using the two-phase local search.
+Figure 2 shows the distribution of objective values of global
+candidate portfolios generated by recombining low-energy so-
+lutions of the clustered subproblems. A comparison of the
+three panels shows that increasing the available qubit bud-
+get fromQ max=36 toQ max=64 systematically improves
+the best post-processed objective values obtained from the re-
+combined candidate pool. The 64-qubit decomposition yields
+post-processed solutions that are closer to the global refer-
+ence optimum than those obtained in the 36-qubit cases. At
+fixed hardware size (36 qubits), medium pruning produces
+a slightly but not significantly lower-energy distribution than
+high pruning. This suggests that lower-resource Hamiltonian
+representations may remain competitive in practice, particu-
+larly on near-term devices where reduced circuit complexity
+can partially offset the loss of model fidelity.
+Importantly, Fig. 2 indicates that, in several cases, the best
+post-processed portfolios achieve objective values lower than
+those of the post-processed recombined reference, which is
+obtained by merging the individually optimal subproblem so-
+lutions and applying local search on it. This behavior high-
+lights the nontrivial role of global local search: candidate
+portfolios that are suboptimal prior to post-processing can be
+steered toward lower-energy configurations once the global
+cardinality constraint is enforced and inter-cluster swap moves
+are allowed. As a result, the recombined reference should be
+viewed as a baseline rather than an upper bound on achievable
+solution quality within the hybrid pipeline.
+Despite the substantial improvement introduced by local
+search, the post-processed distributions do not collapse onto
+the global optimum, even in the largest (64-qubit) hardwaresetting. This residual gap indicates that the dominant limita-
+tions arise from the approximate nature of the decomposition.
+Nevertheless, the observed monotonic improvement with in-
+creasing qubit budget demonstrates that the hardware-aware
+decomposition adapts smoothly to larger devices and that
+larger embeddable subproblems translate directly into higher-
+quality global portfolios within the same hybrid pipeline.
+Figure 3 represents the global candidate portfolios in the
+annualized risk-return plane. While the QUBO/Ising objec-
+tive ranks portfolios by a single scalar value, it does not reveal
+how solutions trade offfinancial risk against expected return.
+Showing candidate solutions in the risk-return plane, there-
+fore, allows one to assess the financial structure and diversity
+of the solution set produced by the hybrid pipeline.
+Across all configurations, BF-DCQO with local search (LS)
+generates a broad distribution of feasible portfolios spanning
+a continuous range of risk and return levels. The presence of
+extended bands of solutions with comparable objective values
+indicates a high degree of near-degeneracy in the combina-
+torial objective, whereby portfolios with similar energies can
+exhibit meaningfully different financial characteristics. In par-
+ticular, low-objective portfolios are not confined to extreme-
+risk or extreme-return regions, but instead populate the inte-
+rior of the feasible domain, demonstrating that objective im-
+provements are associated with financially interpretable trade-
+offs.
+V . CONCLUSIONS
+We presented a hardware-aware decomposition pipeline for
+fixed-cardinality portfolio optimization that enables end-to-
+end execution on today’s and near-term gate-based quantum
+processors. The central design choice is to treat the executable
+qubit budget as an explicit constraint during decomposition,
+producing hardware-sized Ising subproblems and a practical
+path from empirical market data to feasible portfolios under
+realistic device limits.
+On a 250-asset equity universe, we evaluated the full work-
+flow under trapped-ion-motivated qubit budgets and executed
+the largest subproblems on IonQ hardware using BF-DCQO.
+We observe that increasing the executable subproblem size
+improves the final global portfolio quality after recombination
+and post-processing, consistent with reduced decomposition-
+induced approximation error as fewer cross-cluster interac-
+tions are omitted. At a fixed qubit budget, varying the prun-
+ing level yields similar end-to-end performance, indicating
+that moderate approximations of the implemented Hamilto-
+nian can reduce circuit cost without necessarily degrading the
+final solution quality on current noisy hardware. These obser-
+vations clarify a practical trade-offbetween circuit complexity
+and optimization performance in decomposition-based quan-
+tum workflows.
+Several directions merit further study. Algorithmically, in-
+corporating cross-cluster couplings more explicitly during re-
+combination and expanding the neighborhood structure used
+in global refinement could further close the gap to the global
+optimum. From the hardware perspective, larger qubit counts
+
+8
+and improved gate fidelities would directly translate into
+larger executable subproblems and fewer clusters, improv-
+ing solution quality within the same pipeline. Finally, be-
+cause subproblems can be solved independently, the work-
+flow is naturally parallel and could leverage multiple homo-
+geneous or heterogeneous QPUs. Overall, our results estab-
+lish hardware-aware decomposition as a practical and scal-
+able pathway for bringing quantum optimization methods to
+structured financial decision problems on today’s and near-
+term quantum processors.
+ACKNOWLEDGMENTS
+We thank Michael Wurster and Sebastian Wagner for their
+support on the Kipu Quantum Hub platform while running the
+experiments. We thank Coleman Collins, Neal Pisenti, and
+Ken Wright for discussions and their support.
+Appendix A: QUBO/Ising formulation
+The optimization of Eq. (1) contains a cardinality con-
+straint. In this appendix, we show how to convert this con-
+strained problem into an unconstrained one, and additionally,
+how to map it into an Ising Hamiltonian.
+We define the QUBO cost functionf(x) as a penalized
+objective for the configurations that violate the constraint,
+namely
+f(x)=γ−1
+2µTx+γ+1
+2xTCx+ ΛnX
+i=1xi−K2
+,(A1)
+whereΛis the Lagrange multiplier, quantifying the strength of
+the penalty for invalid configurations. Expanding the penalty
+term results in
+f(x)= γ−1
+2µT−2KΛ1T!
+x+xT 1+γ
+2C−Λ1·1T!
+x+K2Λ
+=x⊤Qx+q⊤x+K2Λ,(A2)
+which is equivalent to Eq. (2). Additionally, in this work,
+we pick the penalty coefficient as
+Λ =2·max
+i∈{1,...,n}Ii,(A3)
+whereI i=|q i+Q ii|+Pn
+j=1,j,i|Qi j|. This ensures that con-
+straint violations are always more costly than any potential
+benefit from the original objective. The factor of 2 provides a
+conservative safety margin, while the influence-based calcu-
+lation makes the penalty adaptive to the problem’s coefficient
+magnitudes.
+In order write the cost function as a HamiltonianH f, whose
+ground state is the solution of the optimization problem, we
+perform the mappingx→1
+2(1−z), withz=(z 1,···,z n)
+0.045 0.050 0.055 0.0600200400Density(a)Reference
+BF-DCQO + LS (Cluster)BF-DCQO (raw)
+0.06 0.07 0.080200Density(b)
+0.065 0.070 0.075 0.080 0.085
+Objective Value0200400Density(c)FIG. 4. Superposed top-10 samples of each iteration of BF-DCQO
+on IonQ Forte using high pruning. We show the distributions before
+and after cluster-level local search for (a) the first 36-qubit cluster,
+(b) the second 36-qubit cluster and (c) the last 36-qubit cluster.
+0.045 0.050 0.055 0.0600250500Density(a)Reference
+BF-DCQO + LS (Cluster)BF-DCQO (raw)
+0.06 0.07 0.080200Density(b)
+0.065 0.070 0.075 0.080 0.085
+Objective Value0100200Density(c)
+FIG. 5. Superposed top-10 samples of each iteration of BF-DCQO on
+IonQ Forte using medium pruning. We show the distributions before
+and after cluster-level local search for (a) the first 36-qubit cluster,
+(b) the second 36-qubit cluster and (c) the last 36-qubit cluster.
+andz i∈[−1,1] the Pauli-Z operator for thei-th spin. After
+
+9
+0.06 0.080100200Density(a)Reference
+BF-DCQO + LS (Cluster)BF-DCQO (raw)
+0.075 0.100 0.125 0.150 0.175050100Density(b)
+0.125 0.150 0.175 0.200
+Objective Value050Density(c)
+FIG. 6. Superposed top-10 samples of each iteration of BF-DCQO
+on the 64-qubit Barium development system using medium pruning.
+We show the distributions before and after cluster-level local search
+for (a) the 41-qubit cluster, (b) the 55-qubit cluster and (c) the 60-
+qubit cluster.substitution, we obtain
+Hf=1
+4zTQz−1
+2
+1TQ+qT
+z+1
+41TQ1+1
+2qT1+KΛ
+=hTz+zTJz+const.,(A4)
+which is equivalent to Eq. (3)
+Appendix B: Raw quantum distributions for the subproblems
+In this section, we show the distributions for the clusters
+of the 36-qubit decompositions as well as the 64-qubit ones,
+see Figs. 4,5 and 6. The qualitative differences between the
+36- and 64- qubit runs distributions can be explained by two
+main factors. First, on the hardware side, the device exhibited
+stronger noise, making it more difficult to skew the distribu-
+tions effectively. In addition, the entangling gate budget was
+kept the same for both the 36-qubit and 64-qubit runs. As
+a result, the larger system suffered from a reduced solution
+quality. Second, algorithmically, the bias update for the 36-
+qubit cases was computed using only 10 states, whereas for
+the 64-qubit case, we used 100 states. This choice was made
+to prevent overly strong early biases, given the larger Hilbert
+space. While this helps avoid trapping effects as system size
+increases, it can also cause the distribution to have a larger
+variance, especially in the presence of noise.
+[1] R. Mansini, W. Ogryczak, and M. G. Speranza, Twenty years
+of linear programming based portfolio optimization, European
+Journal of Operational Research234, 518 (2014), 60 years fol-
+lowing Harry Markowitz’s contribution to portfolio theory and
+operations research.
+[2] S. Ceria and R. A. Stubbs, Incorporating estimation errors into
+portfolio selection: Robust portfolio construction, Journal of
+Asset Management7, 109 (2006).
+[3] H. Kellerer, R. Mansini, and M. G. Speranza, Selecting portfo-
+lios with fixed costs and minimum transaction lots, Annals of
+Operations Research99, 287 (2000).
+[4] T.-J. Chang, N. Meade, J. Beasley, and Y . Sharaiha, Heuristics
+for cardinality constrained portfolio optimisation, Computers &
+Operations Research27, 1271 (2000).
+[5] N. J. J. , M. D. H. , C. A. L. , and G. M. , Computational
+aspects of alternative portfolio selection models in the presence
+of discrete asset choice constraints, Quantitative Finance1, 489
+(2001).
+[6] D. Bertsimas and R. Shioda, Algorithm for cardinality-
+constrained quadratic optimization, Computational Optimiza-
+tion and Applications43, 1 (2009).
+[7] H. Markowitz, Portfolio selection, The Journal of Finance7, 77
+(1952).
+[8] A. Lucas, Ising formulations of many np problems, Frontiers in
+physics2, 74887 (2014).
+[9] G. Rosenberg, P. Haghnegahdar, P. Goddard, P. Carr, K. Wu,
+and M. L. de Prado, Solving the optimal trading trajectory prob-
+lem using a quantum annealer, IEEE Journal of Selected Topics
+in Signal Processing10, 1053 (2016).[10] T. Albash and D. A. Lidar, Adiabatic quantum computation,
+Rev. Mod. Phys.90, 015002 (2018).
+[11] E. Farhi, J. Goldstone, and S. Gutmann, A quantum approxi-
+mate optimization algorithm (2014), arXiv:1411.4028 [quant-
+ph].
+[12] N. N. Hegade, K. Paul, Y . Ding, M. Sanz, F. Albarr ´an-
+Arriagada, E. Solano, and X. Chen, Shortcuts to adiabaticity
+in digitized adiabatic quantum computing, Phys. Rev. Appl.15,
+024038 (2021).
+[13] N. N. Hegade, P. Chandarana, K. Paul, X. Chen, F. Albarr ´an-
+Arriagada, and E. Solano, Portfolio optimization with digitized
+counterdiabatic quantum algorithms, Phys. Rev. Res.4, 043204
+(2022).
+[14] A. G. Cadavid, A. Dalal, A. Simen, E. Solano, and N. N.
+Hegade, Bias-field digitized counterdiabatic quantum optimiza-
+tion, Phys. Rev. Res.7, L022010 (2025).
+[15] S. V . Romero, A.-M. Visuri, A. Gomez Cadavid, A. Simen,
+E. Solano, and N. N. Hegade, Bias-field digitized counterdia-
+batic quantum algorithm for higher-order binary optimization,
+Communications Physics8, 348 (2025).
+[16] D. J. Egger, J. Mare ˇcek, and S. Woerner, Warm-starting quan-
+tum optimization, Quantum5, 479 (2021).
+[17] M. P. Harrigan, K. J. Sung, M. Neeley, K. J. Satzinger, F. Arute,
+K. Arya, J. Atalaya, J. C. Bardin, R. Barends, S. Boixo,et al.,
+Quantum approximate optimization of non-planar graph prob-
+lems on a planar superconducting processor, Nature Physics17,
+332–336 (2021).
+[18] E. Pelofske, A. B ¨artschi, and S. Eidenbenz, Short-depth qaoa
+circuits and quantum annealing on higher-order ising models,
+npj Quantum Information10, 30 (2024).
+
+10
+[19] Z. Zhao, L. Fan, and Z. Han, Hybrid quantum benders’ de-
+composition for mixed-integer linear programming, in2022
+IEEE Wireless Communications and Networking Conference
+(WCNC)(IEEE, 2022) pp. 2536–2540.
+[20] A. Acharya, R. Yalovetzky, P. Minssen, S. Chakrabarti,
+R. Shaydulin, R. Raymond, Y . Sun, D. Herman, R. S. Andrist,
+G. Salton, M. J. A. Schuetz, H. G. Katzgraber, and M. Pistoia,
+Decomposition pipeline for large-scale portfolio optimization
+with applications to near-term quantum computing, Phys. Rev.
+Res.7, 023142 (2025).
+[21] V . P. Soloviev and M. Krompiec, Large-scale portfolio op-
+timization using pauli correlation encoding, arXiv preprint
+arXiv:2511.21305 (2025).
+[22] ”JPMorgan Chase & Contributors”, dcmppln: Decomposi-
+tion Pipeline for Large-Scale Portfolio Optimization,https:
+//github.com/jpmorganchase/dcmppln(2024), gitHub
+repository, accessed 2026-01-19.
+[23] J.-S. Chen, E. Nielsen, M. Ebert, V . Inlek, K. Wright, V . Chap-
+lin, A. Maksymov, E. P ´aez, A. Poudel, P. Maunz,et al., Bench-
+marking a trapped-ion quantum computer with 30 qubits, Quan-
+tum8, 1516 (2024).
+[24] S. Kim, R. R. McLeod, M. Saffman, and K. H. Wagner,
+Doppler-free, multiwavelength acousto-optic deflector for two-
+photon addressing arrays of Rb atoms in a quantum information
+processor, Appl. Opt.47, 1816 (2008).[25] I. Pogorelov, T. Feldker, C. D. Marciniak, L. Postler, G. Ja-
+cob, O. Krieglsteiner, V . Podlesnic, M. Meth, V . Negnevit-
+sky, M. Stadler,et al., Compact Ion-Trap Quantum Computing
+Demonstrator, PRX Quantum2, 020343 (2021).
+[26] A. Maksymov, J. Nguyen, Y . Nam, and I. Markov, Enhanc-
+ing quantum computer performance via symmetrization (2023),
+arXiv:2301.07233 [quant-ph].
+[27] P. Chandarana, A. G. Cadavid, S. V . Romero, A. Simen,
+E. Solano, and N. N. Hegade, Runtime quantum advantage with
+digital quantum optimization (2025), arXiv:2505.08663 [quant-
+ph].
+[28] P. W. Claeys, M. Pandey, D. Sels, and A. Polkovnikov, Floquet-
+engineering counterdiabatic protocols in quantum many-body
+systems, Phys. Rev. Lett.123, 090602 (2019).
+[29] A. G. Cadavid, I. Montalban, A. Dalal, E. Solano, and N. N.
+Hegade, Efficient digitized counterdiabatic quantum optimiza-
+tion algorithm within the impulse regime for portfolio optimiza-
+tion, Phys. Rev. Appl.22, 054037 (2024).
+[30] A. Javadi-Abhari, M. Treinish, K. Krsulich, C. J. Wood, J. Lish-
+man, J. Gacon, S. Martiel, P. D. Nation, L. S. Bishop, A. W.
+Cross, B. R. Johnson, and J. M. Gambetta, Quantum comput-
+ing with Qiskit (2024), arXiv:2405.08810 [quant-ph].
+[31] P. Chandarana, S. V . Romero, A. G. Cadavid, A. Simen,
+E. Solano, and N. N. Hegade, Hybrid sequential quantum com-
+puting (2025), arXiv:2510.05851 [quant-ph].
+[32] Gurobi Optimization, LLC, Gurobi Optimizer Reference Man-
+ual,https://www.gurobi.com(2024).

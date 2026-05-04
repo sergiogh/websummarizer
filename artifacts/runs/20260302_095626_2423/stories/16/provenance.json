@@ -1,0 +1,5 @@
+{
+  "url": "https://security.googleblog.com/2026/02/cultivating-robust-and-efficient.html",
+  "title": "Google Online Security Blog: Cultivating a robust and efficient quantum-safe HTTPS",
+  "why": "- Chrome is developing Merkle Tree Certificates (MTCs) to enable HTTPS certificates secure against quantum computers.\n- MTCs replace traditional X.509 certificate chains with compact Merkle Tree proofs, reducing bandwidth and performance penalties associated with quantum-resistant algorithms.\n- Chrome's rollout plan includes three phases: feasibility testing with Cloudflare, inviting CT Log operators to help bootstrap public MTCs, and creating a dedicated Chrome Quantum-resistant Root Store (CQRS) that only supports MTCs.\n- MTCs make certificate transparency a fundamental property, ensuring no certificate can be issued without inclusion in a public tree.\n- Chrome is actively collaborating with standards bodies, such as the IETF, to ensure industry-wide adoption and compatibility of quantum-safe HTTPS."
+}

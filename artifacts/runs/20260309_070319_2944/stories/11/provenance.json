@@ -1,0 +1,5 @@
+{
+  "url": "https://www.quantinuum.com/blog/skinny-logic-quantum-codes-go-on-a-diet#",
+  "title": "Skinny Logic: Quantum Codes Go on a Diet",
+  "why": "- Researchers achieved the creation of up to 94 error-detected qubits and 48 error-corrected logical qubits from just 98 physical qubits, greatly reducing resource overhead.\n- The new method allows a world-record 2:1 physical-to-logical qubit encoding rate, enabled by nesting (concatenating) two efficient quantum error-detecting codes.\n- Logical qubits produced by this method consistently outperformed their physical counterparts in benchmark tests, sometimes by factors of 10 to 100.\n- Using 64 error-detected logical qubits, the team conducted a large-scale simulation of quantum magnetism in three dimensions, which is challenging for classical computers.\n- This advance marks a significant step toward large-scale, fault-tolerant quantum computing and validates a key milestone on the company's technical roadmap."
+}

@@ -1,0 +1,5 @@
+{
+  "url": "https://postquantum.com/post-quantum/shor-rsa-ecc-diffie-hellman/",
+  "title": "How ECC Became the Easiest Quantum Target",
+  "why": "- Elliptic Curve Cryptography (ECC) is more vulnerable to quantum computers than RSA at equivalent classical security levels, because quantum algorithms like Shor’s require significantly fewer resources to break ECC keys.\n- At equivalent classical security (e.g., P-256 ECC vs. RSA-3072), breaking ECC requires roughly 2.6 times fewer logical qubits and 148 times fewer quantum gates than breaking RSA.\n- ECC underpins critical modern infrastructure, securing every TLS 1.3 handshake, every passkey, and every Bitcoin and Ethereum transaction.\n- The reason for ECC's quantum vulnerability is its smaller key sizes: while efficient against classical attacks, these smaller keys make ECC an easier target for quantum computers.\n- Security leaders are advised that migrating from ECC may need to be prioritized before migrating from RSA, due to the relative ease of attacking ECC with quantum computers."
+}

@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/2g9xO928a2VTUGlu1",
+  "title": "Quantum chemistry may not be the “killer app” for quantum computers after all | New Scientist",
+  "why": "- Two leading quantum computing algorithms for quantum chemistry—variational quantum eigensolver (VQE) and quantum phase estimation (QPE)—may have very limited practical use, even as quantum hardware improves.\n- For VQE to match the accuracy of classical chemistry algorithms, quantum computers would need to be virtually error-free (fault-tolerant), a technology that does not yet exist.\n- Even with future fault-tolerant quantum computers, QPE faces an “orthogonality catastrophe,” where its effectiveness for calculating molecular energy drops exponentially as molecule size increases.\n- The study calls into question the widely held belief that quantum chemistry will be a “killer application” for quantum computers, highlighting significant ongoing challenges even in a fault-tolerant era.\n- Quantum computers may still have potential in chemistry for tasks other than energy calculations, such as simulating how systems respond to external perturbations."
+}

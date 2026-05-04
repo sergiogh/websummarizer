@@ -1,0 +1,5 @@
+{
+  "url": "https://meetiqm.com/press-releases/iqm-and-zurich-instruments-launch-real-time-quantum-error-correction-demonstrator-with-nvidia-nvqlink/",
+  "title": "IQM and Zurich Instruments launch real-time quantum error correction demonstrator with NVIDIA NVQLink - IQM Quantum Computers",
+  "why": "- A real-time quantum error correction (QEC) demonstrator has been launched by integrating IQM’s superconducting quantum processor, Zurich Instruments’ ZQCS Quantum Control System, and the NVIDIA NVQLink platform.\n- The project aims to deliver a scalable and fault-tolerant quantum computing system suitable for enterprise and datacenter deployment.\n- The demonstrator combines a 20-qubit superconducting quantum computer, advanced quantum control electronics, and GPU-accelerated classical computing for closed-loop, low-latency decoding and feedback.\n- This initiative establishes a foundation for standardized, enterprise-ready quantum systems and supports the reliable operation of logical qubits at scale."
+}

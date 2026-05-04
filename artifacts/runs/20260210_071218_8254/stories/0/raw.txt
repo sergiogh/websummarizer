@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+    <title>EU granting SUPREME consortium -  Fraunhofer IAF</title>
+
+    <!-- Avoid annoying toolbar on images in Internet Explorer -->
+    <meta http-equiv="imagetoolbar" content="no" />
+    <!-- Information for Robots -->
+    <meta name="robots" content="noodp,noydir,index,follow" />
+    <link rel="alternate" href="https://www.iaf.fraunhofer.de/de/medien/pressemitteilungen/EU-Foerderung-fuer-SUPREME-Konsortium.html" hreflang="de"/>
+    <link rel="alternate" href="https://www.iaf.fraunhofer.de/en/media-library/press-releases/EU-granting-SUPREME-consortium.html" hreflang="en"/>
+    <!-- open graph and twitter share meta data -->
+    <meta property="og:title" content="EU selects SUPREME consortium to develop the union’s superconducting technology for wider industrialization"/>
+    <meta property="og:description" content="The European Union has granted EUR 25 million to the SUPREME consortium, marking a significant milestone in industrialization of superconducting quantum technologies across Europe. Together with national funding from the member states, the total funding adds up to 50 million Euros. Key objectives of the initiative include developing stable superconducting technology and giving access to it for both industry and academia. The first phase will commence in early 2026 and span three and a half years, bringing together 23 partners from eight Member States."/>
+    <meta property="og:url" content="https://www.iaf.fraunhofer.de/en/media-library/press-releases/EU-granting-SUPREME-consortium.html"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Fraunhofer Institute for Applied Solid State Physics IAF"/>
+        <meta property="og:image" content="https://www.iaf.fraunhofer.de/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/socialMediaImage.img.4col.large.jpg/1693404249895/-DSC2051-gerade-web.jpg" />
+        <meta property="og:image:width" content="1440" />
+        <meta property="og:image:height" content="1920" />
+        <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="last-modified" content="2026-02-03T11:31:21.239Z" />
+	<meta name="pubdate" content="2026-02-03T12:31:21.239+01:00" />
+    <meta name="copyright" content="Copyright" />
+    <!-- / LEGACY meta tags end -->
+
+    <!--[if !IE]>-->
+        <link rel="stylesheet" href="/etc.clientlibs/fraunhofer/ui/website/css/fraunhofer.min.3ed9d7d677cdf827963599044315a9d6.css" type="text/css">
+<!--<![endif]-->
+
+    <!--[if gt IE 8]>
+    	<![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/etc.clientlibs/fraunhofer/ui/website/css/lte_ie8.min.css" type="text/css">
+<script src="/etc.clientlibs/fraunhofer/ui/website/js/lte_ie8.min.js"></script>
+<![endif]-->
+    
+    <!-- Favorite icon -->
+    <link rel="shortcut icon" href="/static/css/fraunhofer/resources/img/favicons/favicon_16x16.ico" type="image/x-icon"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/css/fraunhofer/resources/img/favicons/apple-touch-icon_180x180.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/static/css/fraunhofer/resources/img/favicons/mstile-144x144.png">
+	<link rel="icon" type="image/png" href="/static/css/fraunhofer/resources/img/favicons/favicon_32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/static/css/fraunhofer/resources/img/favicons/favicon_96x96.png" sizes="96x96">
+	<link rel="icon" type="image/svg+xml" href="/static/css/fraunhofer/resources/img/favicons/favicon.svg" sizes="any">
+	
+    <!-- Platform for Internet Content Selection (PICS) self-rating -->
+    <link rel="meta" href="/static/css/fraunhofer/resources/pics.rdf" type="application/rdf+xml" title="PICS labels"/>
+    <!-- Open Search -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Fraunhofer Institute for Applied Solid State Physics IAF (en)" href="/en.opensearch.xml"/>
+        <link rel="alternate" type="application/rss+xml" title="News" href="https://www.iaf.fraunhofer.de/en/rss-feed.rss"/>
+	</head>
+<body class="col-3" itemtype="https://schema.org/WebPage" itemscope="itemscope">
+    <div class="fhg-wrapper">
+        <header>
+    <input type="hidden" class="available-languages-servlet-path" data-path="/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content.languages.json" />
+<div class="fhg-header">
+    <div class="fhg-grid">
+        <div class="row1">
+            <div class="fhg-grid-item fhg-grid-3-2-1-1 section-search">
+                <section role="search">
+                    <form method="get" action="/en/search.html" id="search-form" data-suggest-url="/bin/wcm/enterprisesearch/suggest">
+                        <div>
+                            <input type="hidden" name="_charset_" value="UTF-8" />
+                            <input name="numberResults"
+                                value="10" type="hidden" />
+                            <input name="page" value="1" type="hidden" />
+
+                            <input name="scope" value="IAF" type="hidden"/>
+                            <input name="language" value="en" type="hidden"/>
+                            <input id="search-query-default-foo" disabled="disabled" value="Suchbegriff" type="hidden"/>
+                            <input name="lang" id="search-query-default-foo-hidden" value="en" type="hidden"/>
+
+                            <input type="text" autocomplete="off" name="queryString"
+                                id="EU\u002Dgranting\u002DSUPREME\u002DconsortiumsearchQuery" class="hasDefault ac_input queryStringContentHeader" maxlength="100"/>
+
+                        </div>
+                        <button type="submit">Search</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="fhg-grid-item fhg-grid-1-1-1-1 section-title">
+                <a href="/en.html"><div class="logo-heading">
+                    	<img class="logo" alt="" title="" src="/content/dam/iaf/iaf_190x52.gif"/>
+                        Fraunhofer Institute for Applied Solid State Physics IAF</div>
+                </a></div>
+        </div>
+
+
+        <div class="row2">
+            <div class="fhg-grid-item fhg-grid-1-1-1-1 section-about text-site-identifier">
+                <a href="/en.html">Fraunhofer Institute for Applied Solid State Physics IAF</a></div>
+
+            <div class="fhg-grid-item fhg-grid-3-2-1-1 section-nav" id="menu">
+                <div class="row2-1">
+
+                    <div class="fhg-grid-item section-menu-plus">
+                        <nav>
+                            <ul>
+                                <li><a href="/en/media-library.html">Media library</a></li>
+                                <li><a href="/en/institute.html">The Institute</a></li>
+                                <li><a href="/en/events.html">Events</a></li>
+                                <li><a href="/en/contact.html">Contact</a></li>
+                                <li><a href="/en/media-library/newsletter-subscription.html">Newsletter</a></li>
+                                <li class="lang"><a href="/de/medien/pressemitteilungen/EU-Foerderung-fuer-SUPREME-Konsortium.html">Deutsch</a></li>
+                                        </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="nav-fhg" id="nav"><div class="section-menu">
+        <nav>
+            <ul class="fhg-mainmenu">
+            <li class="lvl-1 ">
+	                <span class="navigable"><a href="/en/customers.html">For Customers</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/customers.html">For Customers</a></span>
+	                            <ul>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/customers/quantum-systems.html">Quantum Technologies</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/quantum-systems/quantum-sensing.html">Quantum Sensing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/quantum-systems/quantum-computing.html">Quantum Computing</a></li>
+		                                                </ul>
+                                                </li>
+	                                <li class="lvl-2">
+                                            <a href="/en/customers/electronic-circuits.html">Electronic Circuits</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/customers/optoelectronic-devices.html">Optoelectronics</a></li>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/customers/measurement-services.html">Our Services & Application Laboratories</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/application-laboratory-infrared-lasers.html">Application laboratory infrared lasers</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/high-frequency-measurement-facilities.html">High frequency measurement facilities</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/analysis-of-semiconductor-materials.html">Analysis of semiconductor materials</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/wafer-runs.html">Multi-Project Wafer Runs</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/epitaxy-on-demand.html">Epitaxy on demand</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/modules-ICs.html">Modules and integrated circuits</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/robotik-labor.html">3D measuring laboratory</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/application-laboratory-quantum-sensing.html">Application laboratory quantum sensing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/applab-quantum-computing.html">Application laboratory for quantum computing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/customers/measurement-services/diamant-synthesis.html">Epitaxy and processing of NV diamond</a></li>
+		                                                </ul>
+                                                </li>
+	                                <li class="lvl-2">
+                                            <a href="/en/customers/value-chain-semiconductor.html">Value chain at Fraunhofer IAF</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/customers/research-development.html">References</a></li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1 ">
+	                <span class="navigable"><a href="/en/researchers.html">For Researchers</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/researchers.html">For Researchers</a></span>
+	                            <ul>
+	                                <li class="lvl-2">
+                                            <a href="/en/researchers/quantum-systems.html">Quantum Technologies</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/researchers/electronic-circuits.html">Electronic Circuits</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/researchers/optoelectronic-devices.html">Optoelectronic Devices</a></li>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/researchers/material-development.html">Material development</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/researchers/material-development/ife-fusion-energy.html">IFE Targetry HUB</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/researchers/material-development/ife-fusion-energy/consortium-IFE-Targetry-HUB.html">Consortium IFE Targetry HUB</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                </ul>
+                                                </li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1 ">
+	                <span class="navigable"><a href="/en/networkers.html">For Cooperations</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/networkers.html">For Cooperations</a></span>
+	                            <ul>
+	                                <li class="lvl-2">
+                                            <a href="/en/networkers/affiliated-partners.html">Affiliated Partners</a></li>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/networkers/KQC.html">Competence Center Quantum Computing</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/networkers/KQC/projects.html">Projects</a></li>
+		                                                </ul>
+                                                </li>
+	                                <li class="lvl-2">
+                                            <a href="/en/networkers/quantum-bw.html">Quantum<sup>BW</sup></a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/networkers/quantum-sensing-hub-freiburg.html">Quantum Sensing Hub Freiburg</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/networkers/spin-offs.html">Spin-offs</a></li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1  showInHeader">
+	                <span class="navigable"><a href="/en/institute.html">The Institute</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/institute.html">The Institute</a></span>
+	                            <ul>
+	                                <li class="lvl-2">
+                                            <a href="/en/institute/advisory_board.html">Advisory Board</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/institute/research-fab-microelectronics-germany.html">Research Fab Microelectronics</a></li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1  showInHeader">
+	                <span class="navigable"><a href="/en/events.html">Events</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/events.html">Events</a></span>
+	                            <ul>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/pcim-expo-and-conference.html">PCIM Expo & Conference</a></li>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/events/laser-world-of-photonics.html">Laser World of Photonics</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/events/laser-world-of-photonics/fraunhofer-iaf-at-laser-world-of-photonics.html">Fraunhofer IAF at Laser World of Photonics</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/events/laser-world-of-photonics/fraunhofer-iaf-at-world-of-quantum.html">Fraunhofer IAF at World of Quantum</a></li>
+		                                                </ul>
+                                                </li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/eumw.html">European Microwave Week</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/control.html">Control 2023</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/infrared-colloquium.html">Infrared Colloquium 2025</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/quantum-effects.html">Quantum Effects</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/quantum-computing-compact.html">Quantum Computing Compact @ Quantum Effects​</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/students-day.html">Students' Day</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/QBN-wg-meeting-quantum-sensing-and-imaging.html">QBN WG Meeting on Quantum Sensing and Imaging</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/AFQC-scale-up.html">AFQC Scale up</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/hannover-messe.html">Hannover Messe</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/quantumbw-colloquium.html">Quantum<sup>BW</sup> Colloquium</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/quantumbw-autumn-school.html">Quantum<sup>BW</sup> Autumn School</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/green-ict-camp-students.html">FMD-Green ICT Camp for students</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/webinare-fusion-science.html">WebinarFusion Science and Technology / Target development</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/industry-day-2025.html">Industry Innovation Days 2025</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/events/gtc-events.html">General Terms and Conditions of Events</a></li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1 ">
+	                <span class="navigable"><a href="/en/applicants.html">For Applicants</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/applicants.html">For Applicants</a></span>
+	                            <ul>
+	                                <li class="lvl-2">
+                                            <a href="/en/applicants/grantprogram.html">Grant program</a></li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1  showInHeader">
+	                <span class="navigable"><a href="/en/media-library.html">Media library</a></span>
+	                        <div class="submenu">
+	                        	<span class="btn close">[X]</span>
+	                        	<span class="mainmenu-title follow-link"><a href="/en/media-library.html">Media library</a></span>
+	                            <ul>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/media-library/press-releases.html">Press Releases</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/mirphab-sensor-boutique-for-early-adopters.html">MIRPHAB: Sensor boutique for early adopters</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/director.html">Director of the Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/gemic2018.html">Gemic 2018</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/nano-diamond.html">MRT with diamond - DiaPol</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/drug-or-duplicate.html">Drug or duplicate?</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/hannover-messe-2018.html">Hannover Messe 2018</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/aluminum-scandium-nitride-via-mocvd.html">World’s first production of  aluminum scandium nitride via MOCVD</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/elkawe.html">Fraunhofer lighthouse project ElKaWe</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/terranova2019.html">Terranova project update 2019</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/AppLab-Quantum_Sensing.html">AppLab Quantum Sensing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/MOSHEMT.html">MOSHEMT</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/PiTrans.html">PiTrans</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/100-V-Technology.html">100-V-Technology</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-competence-center-quantum-computing-bw.html">Start Competence Center Quantum Computing BW</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/ariadne.html">ARIADNE</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/PCIM.html">PCIM</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/membrane-laser-module-for-spectral-measurement-methods.html">Membrane laser module for spectral measurement technologies</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/european-project-aims-to-scale-up-quantum-computing-technology.html">European project aims to scale up quantum computing technology</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/german-quantum-processor-superconducting-qubits.html">With superconducting qubits on the way to the quantum computer</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/rokora-safe-hrc-with-radar.html">Innovative sensor solution for cobots – secure human-robot collaboration thanks to radar</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-qlsi-silicon-spin-qubits.html">New EU Quantum Flagship consortium launches a project on silicon spin qubits as a platform for large-scale quantum computing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-lighthouse-project-sentinel.html">Fraunhofer launches lighthouse project to develop technologies for 6G</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/on-chip-photon-pair-sources.html">Fraunhofer IAF researches compact on-chip photon pair sources for quantum technologies</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/zepowel_energy_efficient_sensor_nodes.html">Economical wireless communication</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/gan-low-voltage-ics.html">GaN low-voltage designs enable compact 3-phase motor inverter IC</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-project-t-kos.html">Terahertz technologies for visionary innovations in communications and sensor technology</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-project-open6ghub.html">“Open6GHub” project—67 million euros funding from BMBF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-project-matqu.html">Stable European industry-scale fabrication value chains for solid-state-based quantum computer development</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/winning-project-greenict.html">Project on energy-saving mobile radio base stations wins silver in innovation competition </a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/satellite-transmits-test-signals-in-Q-and-W-band.html">Satellite transmits test signals in Q and W band for the first time</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/intelligent-led-work-lighting.html">In the right light—intelligent and sustainable LED work lighting</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/project-unio.html">Project "UN:IO"</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/change-of-management.html">Oliver Ambacher passes management of the institute to Rüdiger Quay</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/energy-saving-mobile-radio-base-stations-edgelimit-enters-next-phase.html">Solution for energy-saving mobile radio base stations: “EdgeLimit-Green ICT” project enters next phase</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/using-diamond-to-realize-hybrid-quantum-processor.html">Using diamond to realize a hybrid quantum processor “made in Germany”</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/esa-contract-award-t2sl.html">ESA contract award for High-Performance Type-2 Super Lattice (T2SL) Infrared Detectors </a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/spectroscopic-100-percent-inspection-for-quality-assurance.html">Inline-capable spectroscopic 100% inspection for industrial quality assurance and process control</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/highly-sensitive-quantum-magnetometers.html">Highly sensitive quantum magnetometers on their way  to industry</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/more-precise-diagnoses-and-personalized-therapies-due-to-hyperpolarized-nuclear-magnetic-resonance.html">More precise diagnoses and personalized therapies due to hyperpolarized nuclear magnetic resonance</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/world-s-first-measurement-of-magnetic-field-dependent-stimulated.html">World's first measurement of magnetic-field-dependent stimulated emission</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/baden-wuerttemberg-funds-collaborative-research-projects-on-quantum-computing.html">Baden-Württemberg funds collaborative research projects on quantum computing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/a-decade-of-applied-research-and-development-made-in-the-uk.html">A decade of applied research and development made in the UK</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/milestone-tHz-communication.html">Milestone of THz communication</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/fraunhofer-iaf-expands-research-infrastructure-for-semiconductor-technologies.html">Fraunhofer IAF expands research infrastructure for semiconductor technologies</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/european-supply-chain-diamond-based-quantum-technologies.html">Cornerstone of a European supply chain for diamond-based quantum technologies</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/from-quantum-awareness-to-quantum-readiness.html">From Quantum Awareness to Quantum Readiness with successful know-how transfer   </a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/e-band-transmitter-module-gan-6g-mobile-communications.html">E-band transmitter module based on GaN for 6G mobile communications</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/CompetenceCenterGreentICT.html">Launch of the Competence Center Green ICT @ FMD</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/ultimategan-end-of-project.html">EU research: Energy-saving chips made of gallium nitride boost efficiency and CO2 savings</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/traffic-safety-thermographic-monitoring.html">Increased traffic safety through thermographic monitoring</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/beacon-project.html">BEACON – W-band Integrated Active Receive Front-End</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/Start-fmd-qnc.html">Research Fab for Quantum and Neuromorphic Computing: Launch of the Germany-wide cooperation FMD-QNC</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/grant-project-radioblocks.html">RADIOBLOCKS: A new European consortium to develop next generation technologies for radio astronomy infrastructures</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/project-launch-neuroq.html">project launch NeuroQ</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/project-start-of-qu-test-and-qu-pilot.html">Project start of Qu-Test and Qu-Pilot</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/launch-of-project-amadeus.html">Launch of project AMADEUS</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/start-quantumbw.html">Baden-Württemberg launches innovation offensive in quantum technologies</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/ir-colloquium-2023.html">IR-Colloquium 2023</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/disk-laser-quantum-frequency-converters.html">Semiconductor disk laser as low-noise pump source for high-precision quantum frequency converters</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/magnetic-imaging-quantum-sensing.html">Fast magnetic imaging with diamond-based quantum sensor technology</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/power-electronics--milestrone-in-elkawe-project.html">Power electronics  milestrone in ELKaWe project</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/project-launch-of-gan4emobil.html">Project launch of GaN4EmoBiL</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/cryogenic-on-wafer-prober-determines-qubit-quality.html">Cryogenic on-wafer prober determines quality of qubit devices for quantum computing and quantum sensing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/MMIC-EuMW2023.html">Fraunhofer IAF presents outstanding results of MMIC research and development</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/quantum-technologies-are-approaching-application.html">Quantum technologies are approaching application</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/mini-magnetic-resonance-tomograph-made-of-diamond.html">A mini-magnetic resonance tomograph made of diamond</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/setup-simulation-chemical-processes-qc4bw.html">Setup for the simulation of chemical processes in the quantum computing project QC4BW</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/QMag-project-completion.html">Quantum magnetometers detect the smallest material defects at an early stage</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/with-vecsels-towards-the-quantum-internet.html">With VECSELs towards the quantum internet</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/dual-leadership-at-fraunhofer-iaf--dr--patricie-merkert-and-prof.html">Dual leadership at Fraunhofer IAF: Dr. Patricie Merkert and Prof. Rüdiger Quay take over as institute directors</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/1200-v-gan-hemts-energy-transition.html">1200 V GaN HEMTs for the energy transition</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/ARCITC-scalable-quantum-processors.html">EU-project joins forces towards the era of scalable control technology for quantum processors</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/new-semiconductor-material-AlYN.html">New semiconductor material AlYN</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/gan-transistors-and-hpas-mmw-satellite-communications.html">GaN transistors and high-power amplifiers for millimeter wave satellite communications</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/low-noise-amplifiers-aboard-arctic-weather-satellite.html">Fraunhofer IAF low-noise amplifiers aboard the Arctic Weather Satellite</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/quantum-computer-research-continues-in-baden-wuerttemberg.html">Pioneering quantum computer research continues in Baden-Württemberg</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/Demonstration-NV-diamond-laser-system.html">First successful demonstration of a dual-media NV diamond laser system</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/development-successes-diamond-spin-photon-quantum-computers.html">Major development successes in diamond spin photon quantum computers</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/quantum-brilliance-quantum-accelerator.html">First Quantum Brilliance room temperature quantum accelerator in Europe</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/d-band-demo-6g.html">Pioneering 6G D-Band Trials</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/european-chiplet-innovation-apecs-pilot-line-starts.html">European Chiplet Innovation: APECS Pilot Line starts  Operation in the Framework of the EU Chips Act</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/fraunhofer-iaf-expands-technology-capabilities-for-chiplet-innovations.html">Fraunhofer IAF expands technology capabilities for chiplet innovations within the APECS pilot line</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/virtual-applab-qs.html">Virtual Application Lab for Quantum Sensing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/bidirectional-1200-v-gan-switch-free-wheeling-diodes.html">Bidirectional 1200 V GaN switch with integrated free-wheeling diodes</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/automated-manufacturing-process-quantum-cascade-laser-modules.html">Semi-automated manufacturing process for cost-efficient quantum cascade laser modules</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/first-room-temperature-quantum-accelerator-in-europe.html">Up and running—first room-temperature quantum accelerator of its kind in Europe</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/miniaturized-quantum-magnetometer-offers-new-measurement-possibilities.html">Miniaturized quantum magnetometer offers new measurement possibilities for a wide range of applications</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/SPINNING-project-completed.html">SPINNING project results highlight the enormous potential of spin-photon-based quantum computers</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/supreme-consortium-scale-up-superconducting-quantum-chips.html">EU selects SUPREME consortium to scale up industrial production of superconducting quantum chips</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/Groundbreaking-ceremony-IZN.html">Groundbreaking ceremony for the Engineering Center for Sustainability (IZN)</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/quench-increase-detectable-frequencies-quantum-sensor.html">EU’s QUENCH Project Advances Chemical Analysis with Diamond-Based Quantum Sensors</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/erc-starting-grant-moench.html">ERC Starting Grant for Junior Professor Stefan Mönch</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/eumw-2025.html">EuMW: Semiconductor technology for broadband satellite communications achieves record efficiency</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/esa-cubesat-demonstrates-worlds-first-75-ghz-beacon-and-safe-deorbit.html">ESA-Led CubeSat Demonstrates World’s First 75 GHz Beacon From Space and Concludes Mission With Safe Deorbit</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/kqcbw-continues.html">Quantum Computing Competence Center Baden-Württemberg Hones its Focus</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/erc-synergy-grant.html">ERC Synergy Grant: €10 million funding </a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/press-releases/EU-granting-SUPREME-consortium.html">EU granting SUPREME consortium</a></li>
+		                                                </ul>
+                                                </li>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/media-library/newsarchive.html">Newsarchive</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/newsarchive/interviews.html">Interviews</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-stefano-leone.html">Stefano Leone</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-wolfgang-templ-michael-mikulla.html">In conversation with Wolfgang Templ from NOKIA</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-josef-rosenzweig-klaus-koehler.html">In conversation with Josef Rosenzweig and Klaus Köhler</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-tomas-kraemer-ruediger-quay.html">In conversation with the research coordinator Tomas Krämer</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-katjanelson-janjeske.html">In conversation with the dentist Katja Nelson</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-joerg-wrachtrup-xavier-vidal.html">Im Gespräch mit Jörg Wrachtrup</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-tommaso-calarco-quantum-computing.html">Im Gespräch mit Tommaso Calarco</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-sequence.html">Low-noise high-frequency electronics for quantum computers</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-new-executive-director-quay.html">In conversation with the new executive director Prof. Dr. Rüdiger Quay</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-energy-efficient-mobile-communication.html">In conversation about energy-efficient mobile communication</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-satellite-technology.html">In conversation about satellite technology</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-esa.html">Interview ESA</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-competence-center-quantum-computing.html">In conversation about the Competence Center Quantum Computing Baden-Württemberg</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-quantum-brilliance.html">“Working door to door with partners”</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-tno.html">“What we have in common are highly-skilled enthusiastic professionals”</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-inatech.html">“A cheerful give and take“</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-felix-heinz.html">“The excellent HEMT technology and the IAF’s high-tech laboratory equipment make working here very attractive for me.”</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-isabel-streicher.html">“The flexibility in material development at Fraunhofer IAF is truly exceptional.”</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-roesch.html">“Industrial companies can only benefit from such international expertise.”</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/newsarchive/interviews/interview-duarte.html">“What I love about my work is how much I get to do.”</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/cooperation-of-fraunhofer-and-rohde---schwarz-for-6g.html">Cooperation of Fraunhofer and Rohde & Schwarz for 6G</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/zero_power.html">Towards Zero Power Electronics</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/qbn-meeting-on-quantum-sensing.html">QBN Meeting on Quantum Sensing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/matqu-second-general-assembly.html">Second General Assembly in the EU-funded project MATQu</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/qbn-meeting-2023.html">QBN Meeting 2023</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/ir-spectroscopy-for-pharmaceutical-quality-control.html">IR spectroscopy for pharmaceutical quality control</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/eumw2023.html">EuMW2023</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/kareem-mansour-green-ict-award-2023.html">Kareem Mansour receives Green ICT Award for master's thesis at Fraunhofer IAF and INATECH</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/hiroshi-amano-invites-researchers.html">Nobel laureate Hiroshi Amano invites researchers of Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/quantum-future-award-2023-felix-hahl.html">Double victory at the Quantum Future Award 2023 for Dr. Felix Hahl from Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/-icns-14--two-awards-for-fraunhofer-iaf-researchers.html"> ICNS-14: Two awards for Fraunhofer IAF researchers</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/stefan-moench-receives-new-junior-professorship-at-the-universit.html">Stefan Mönch receives new junior professorship at the University of Stuttgart</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/ruediger-quay-elected-to-the-executive-board-of-the-information-.html">Rüdiger Quay elected to the Executive Board of the Information Technology Society within the VDE</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/scalable-semiconductor-quantum-processor-quasar.html">Development of a scalable semiconductor quantum processor is progressing</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/students--day-2024.html">Students‘ Day 2024</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/fraunhofer-iaf-joins-gan-valley.html">Fraunhofer IAF joins GaN Valley</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/ieee-jestpe-award.html">IEEE JESTPE Award</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/neuroq-project-meeting-2024.html">NeuroQ project meeting 2024</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/ieee-best-oral-presentation-award-for-michael-basler.html">IEEE Best Oral Presentation Award for Michael Basler</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/ESREF2024-Best-Paper-Award.html">ESREF Best Paper Award for Michael Dammann</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/fraunhofer-iaf-mobilsiegel-sustainable-mobility.html">Fraunhofer IAF receives the “MobilSiegel” for sustainable mobility for the second time</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/quantum-flagship-spinus.html">EU Quantum Flagship Project SPINUS</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/spinning-project-meeting.html">The “SPINNING” project will reach all milestones </a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/kickoff-inertial-fusion-targetry-hub.html">Pioneering research into laser-based inertial fusion begins in Germany</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/kick-off-apecs-fraunhofer-iaf.html">Kick-off of the APECS sub-project at Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/girls--day-2025-at-fraunhofer-iaf111.html">Girls’ Day 2025 at Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/michael-basler-wins-best-paper-award-pcim-2025.html">Michael Basler wins Best Paper Award at PCIM Conference 2025</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/UMS-visit.html">UMS Visits Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/studentsday2025.html">Students' Day 2025</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/fraunhofer-iaf-at-ims-2025.html">Fraunhofer IAF at the International Microwave Symposium 2025</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/KQCBW-developer-conference.html">KQCBW Developer Conference</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/IMS-20205-awards.html">Awards for Fraunhofer IAF researchers at IMS 2025</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/second-project-meeting-ife-targetry-hub-inertial-fusion.html">Second project meeting of the IFE Targetry Hub for laser-based inertial fusion</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/NeuroQ-mid-term-meeting.html">NeuroQ Project enters the second half</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/europeam-weather-satellite-metop-sg-a1-fraunhofer-iaf-lna-chips.html">European weather satellite MetOp-SG-A1 uses Fraunhofer IAF LNA chips</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/diversity-days.html">Fraunhofer IAF Diversity Days 2025</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/industry-innovation-days-2025.html">Industry Innovation Days 2025 at Fraunhofer IAF</a></li>
+		                                                <li class="lvl-3">
+		                                                        <a href="/en/media-library/newsarchive/project-meeting-ife-targetry-hub.html">Fusion energy: Project meeting of the IFE Targetry Hub at Fraunhofer IAF</a></li>
+		                                                </ul>
+                                                </li>
+	                                <li class="lvl-2">
+                                            <a href="/en/media-library/photos.html">Press images</a></li>
+	                                <li class="lvl-2">
+                                            <a href="/en/media-library/videos.html">Videos and Animations</a></li>
+	                                <li class="lvl-2 is-expandable">
+                                            <span class="follow-link navigable"><a href="/en/media-library/publications.html">Scientific Publications</a></span>
+
+		                                            <ul>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/high-frequency-electronics-2018.html">High Frequency Electronics</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics-2018/high-frequency-electronics-2017.html">High Frequency Electronics 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics-2018/high-frequency-electronics-2016.html">High Frequency Electronics 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics-2018/high-frequency-electronics-2015.html">High Frequency Electronics 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics-2018/high-frequency-electronics-2014.html">High Frequency Electronics 2014</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/power-electronics-2018.html">Power Electronics</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics-2018/power-electronics-2017.html">Power Electronics 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics-2018/power-electronics-2016.html">Power Electronics 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics-2018/power-electronics-2015.html">Power Electronics 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics-2018/power-electronics-2014.html">Power Electronics 2014</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/photodetectors-2018.html">Photodetectors</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/photodetectors-2018/photodetectors-2017.html">Photodetectors 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/photodetectors-2018/photodetectors-2016.html">Photodetectors 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/photodetectors-2018/photodetectors-2015.html">Photodetectors 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/photodetectors-2018/photodetectors-2014.html">Photodetectors 2014</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/semiconductor-lasers-2018.html">Semiconductor Lasers</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/semiconductor-lasers-2018/semiconductor-lasers-2017.html">Semiconductor Lasers 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/semiconductor-lasers-2018/semiconductor-lasers-2016.html">Semiconductor Lasers 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/semiconductor-lasers-2018/semiconductor-lasers-2015.html">Semiconductor Lasers 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/semiconductor-lasers-2018/semiconductor-lasers-2014.html">Semiconductor Lasers 2014</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/diamond-devices-2018.html">Diamond Devices</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2018/diamond-devices-2017.html">Diamond Devices 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2018/diamond-devices-2016.html">Diamond Devices 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2018/diamond-devices-2015.html">Diamond Devices 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2018/diamond-devices-2014.html">Diamond Devices 2014</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/high-frequency-electronics.html">High Frequency Electronics</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2017.html">High Frequency Electronics 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2016.html">High Frequency Electronics 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2015.html">High Frequency Electronics 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2014.html">High Frequency Electronics 2014</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2018.html">High Frequency Electronics 2018</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2019.html">High Frequency Electronics 2019</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2020.html">High Frequency Electronics 2020</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2021.html">High Frequency Electronics</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2022.html">High Frequency Electronics</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2023.html">High Frequency Electronics</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/high-frequency-electronics/high-frequency-electronics-2024.html">High Frequency Electronics</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/power-electronics.html">Power Electronics</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2017.html">Power Electronics 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2016.html">Power Electronics 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2015.html">Power Electronics 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2014.html">Power Electronics 2014</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2018.html">Power Electronics 2018</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2019.html">Power Electronics 2019</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2020.html">Power Electronics 2020</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2021.html">Power Electronics</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2022.html">Power Electronics</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2023.html">Power Electronics</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/power-electronics/power-electronics-2024.html">Power Electronics</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/optoelectronics.html">Optoelectronics</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2017.html">Photodetectors 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2016.html">Photodetectors 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2015.html">Photodetectors 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2014.html">Photodetectors 2014</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2018.html">Photodetectors 2018</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2019.html">Photodetectors 2019</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2020.html">Photodetectors 2020</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2021.html">Photodetectors</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2022.html">Photodetectors</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/photodetectors-2023.html">Photodetectors</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/semiconductor-lasers-2023.html">Semiconductor Lasers</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/semiconductor-lasers-2022.html">Semiconductor Lasers</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/semiconductor-lasers-2021.html">Semiconductor Lasers</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/optoelectronics/optoelectronics-2024.html">Optoelectronics</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/quantum-components.html">Semiconductor Lasers</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/quantum-components/quantum-components-2024.html">Semiconductor Lasers</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/diamond-devices-2020.html">Diamond Devices</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2020/diamond-devices-2017.html">Diamond Devices 2017</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2020/diamond-devices-2016.html">Diamond Devices 2016</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2020/diamond-devices-2015.html">Diamond Devices 2015</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2020/diamond-devices-2014.html">Diamond Devices 2014</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2020/diamond-devices-2018.html">Diamond Devices 2018</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/diamond-devices-2020/diamond-devices-2019.html">Diamond Devices 2019</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                <li class="lvl-3">
+		                                                        <span class="navigable"><a href="/en/media-library/publications/quantum-systems.html">Quantum Systems</a></span>
+		
+		                                                                <ul>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/quantum-systems/quantum-systems-2021.html">Quantum Systems</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/quantum-systems/quantum-systems-2022.html">Quantum Systems</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/quantum-systems/quantum-systems-2023.html">Quantum Systems</a></li>
+		                                                                    <li class="lvl-4">
+		                                                                            <a href="/en/media-library/publications/quantum-systems/quantum-systems-2024.html">Quantum Systems</a></li>
+		                                                                    </ul>
+		                                                            </li>
+		                                                </ul>
+                                                </li>
+	                                </ul>
+	                        </div>
+	                    </li>
+			<li class="lvl-1  showInHeader">
+	                <span><a href="/en/contact.html">Contact</a></span>
+                    	</li>
+			<li class="more lvl-1" id="morefield"><span class="navigable"><span>More</span></span>
+	                <ul></ul>
+	            </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+<div data-emptytext="stage_parsys_hint" class="dummyclass"><div class="fhg-stage-slider js-stage-slider" 
+    data-autoplaytimeout="6000" 
+    data-smartspeed="1000">
+    <div class="frames">
+    <div class="item js-carousel-item"><!--[if IE]>
+        <style type="text/css">
+            .image-style-6eb930f6e044b20d0dec68a001f1fd11 {
+                background-position: 78% 42%;
+                background-image: url('/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.1col.jpg/1770031192033/-DSC2051-gerade-web.jpg');
+            }
+            @media (min-width: 321px) and (max-width: 640px) {
+                .image-style-6eb930f6e044b20d0dec68a001f1fd11 {
+                    background-image: url('/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.2col.jpg/1770031192033/-DSC2051-gerade-web.jpg');
+                }
+            }
+            @media (min-width: 641px) and (max-width: 960px) {
+                .image-style-6eb930f6e044b20d0dec68a001f1fd11 {
+                    background-image: url('/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.3col.jpg/1770031192033/-DSC2051-gerade-web.jpg');
+                }
+            }
+            @media (min-width: 961px) and (max-width: 1440px) {
+                .image-style-6eb930f6e044b20d0dec68a001f1fd11 {
+                    background-image: url('/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.4col.jpg/1770031192033/-DSC2051-gerade-web.jpg');
+                }
+            }
+            @media (min-width: 1441px) {
+                .image-style-6eb930f6e044b20d0dec68a001f1fd11 {
+                    background-image: url('/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.jpg/1770031192033/-DSC2051-gerade-web.jpg');
+                }
+            }
+        </style>
+        <div class="image-wrapper image-style-6eb930f6e044b20d0dec68a001f1fd11"></div>
+        <![endif]-->
+        <![if !IE]>
+        <figure  itemscope="" itemtype="http://schema.org/ImageObject" itemprop="image" class="fhg-content image "><picture>
+				    <!--[if IE 9]><video style="display: none;"><![endif]-->
+				    <source srcset="/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.4col.jpg/1770031192033/-DSC2051-gerade-web.jpg" media="(max-width: 1440px)">
+				    <source srcset="/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.3col.jpg/1770031192033/-DSC2051-gerade-web.jpg" media="(max-width: 960px)">
+				    <source srcset="/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.2col.jpg/1770031192033/-DSC2051-gerade-web.jpg" media="(max-width: 640px)">
+				    <source srcset="/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.1col.jpg/1770031192033/-DSC2051-gerade-web.jpg" media="(max-width: 320px)">
+				    <!--[if IE 9]></video><![endif]-->
+				    <img data-height="1262.0" src="/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/stage/stageParsys/stage_slide/image.img.jpg/1770031192033/-DSC2051-gerade-web.jpg" alt="Main chamber of the cryogenic wafer prober with 200-mm wafer on a chuck which is moved under the probe card. " data-width="1920.0" style="object-position:78% 42%;" itemprop="url contentUrl" title="Main chamber of the cryogenic wafer prober with 200-mm wafer">
+				    </picture>
+			<figcaption>
+        <span  itemprop="copyrightNotice" class="figure-meta text-copyright">© Fraunhofer IAF</span><div  itemprop="description" class="figure-desc">View into the main chamber with a 200-mm wafer in the center on the chuck which is moved under the probe card. The system is testing a wafer from the QUASAR project, in which researchers are developing single-electron transistors (SETs) based on silicon quantum wells to be used as a device for spin qubits.</div></figcaption>
+</figure><![endif]>
+    <div class="caption caption__copyright-only">
+        <p class="copyright text-secondary">© Fraunhofer IAF</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<nav class="breadcrumbs text-secondary">
+
+	<div class="drop-down-bar">
+		<p>Where am I?</p>
+	</div>
+	<div class="wrapper">
+		<ul>
+			<li><a href="/en.html">Homepage</a></li>
+					<li><a href="/en/media-library.html">Media library</a></li>
+					<li><a href="/en/media-library/press-releases.html">Press Releases</a></li>
+					<li>EU granting SUPREME consortium</li>
+					</ul>
+	</div>
+</nav>
+<div class="fhg-section-separator fhg-heading-separator fhg-grid fhg-grid-4-columns ">
+    <div class="fhg-grid-item">
+        <h1>Press release</h1>
+        </div>
+    <div class="fhg-grid-item empty"></div>
+    </div>
+</header>
+<div class="fhg-main fhg-grid fhg-grid-3-columns">
+            <div data-emptytext="pressrel_content_hint" class="pressArticle"><div class="sep sectionseparator"><script data-scf-json="true" type='application/json' id='/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/fixedContent/sep'>{"id":"/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/fixedContent/sep","resourceType":"fraunhofer/components/sectionseparator","url":"/en/media-library/press-releases/EU-granting-SUPREME-consortium/_jcr_content/fixedContent/sep.social.json","friendlyUrl":"/en/media-library/press-releases/EU-granting-SUPREME-consortium.html"}</script><div class="fhg-section-separator"></div>
+</div>
+<div class="fhg-grid-section fhg-event-details">
+    <section id="main" role="main">
+        <div class="fhg-content-article fhg-event-details fhg-grid">
+        	<article  itemscope="" itemtype="https://schema.org/Article"><div class="fhg-grid-item fhg-grid-3-2-1 fhg-content heading">
+                    <h1  itemprop="headline">EU selects SUPREME consortium to develop the union’s superconducting technology for wider industrialization </h1><p class="text-meta">
+                        <span class="type">Press release from our partner VTT Technical Research Centre of Finland /</span>
+						<time  datetime="2026-02-02T09:25:00Z" itemprop="datePublished" class="date">February 02, 2026</time></p>
+                </div>
+                <div class="fhg-grid-item fhg-grid-3-2-1 fhg-content">
+	                	<p><b>The European Union has granted EUR 25 million to the SUPREME consortium, marking a significant milestone in industrialization of superconducting quantum technologies across Europe. Together with national funding from the member states, the total funding adds up to 50 million Euros. Key objectives of the initiative include developing stable superconducting technology and giving access to it for both industry and academia. The first phase will commence in early 2026 and span three and a half years, bringing together 23 partners from eight Member States.</b></p>
+	                </div>
+                <div class="pressArticleParsys parsys"><div data-emptytext="linklist_add_items" class="fhg-content-article fhg-grid section"><article>
+    <div class="row">
+        <div class=" fhg-grid-item fhg-grid-3-2-1">
+        <div class="fhg-content fhg-richtext">
+<p>SUPREME is launched with the mission to industrialize superconducting quantum technologies and strengthen Europe’s position as a global leader in quantum innovation. The aim is to develop scalable and stable fabrication processes for superconducting quantum devices and make them accessible to European SME’s, large enterprises, startups and academia. The project has a total budget of approximately EUR 50 million, with funding provided equally by the EU Chips Joint Undertaking and national funding agencies. The funding has been approved to cover the first phase of the initiative, spanning 3,5 years.</p> 
+<p>“This initiative has been set to strengthen the European quantum ecosystem. We will make sure that the innovations developed through SUPREME can be widely adopted by businesses across Europe, ultimately delivering significant market impact. To support this, we will execute on an ambitious roadmap, which will guide and accelerate the industrialization of superconducting quantum technologies”, says Pekka Pursula, Vice President for Microelectronics and Quantum Technology at VTT and coordinator of the SUPREME consortium.</p> 
+<p>The key objective is the development of stable technologies and giving access to them for industry and academia. A significant milestone will be fabrication and demonstration of a 3D-integrated qubit module containing 200 qubits. This will showcase the improved stability, higher yield and improved reproducibility of the key fabrication processes for superconducting quantum chips.</p> 
+<p>SUPREME focuses on developing and validating key quantum processes, including angle-evaporated junctions, etched junctions, 3D integration and hybrid processes for applications in quantum computing, quantum sensing and quantum communication. The aim is to reach technology readiness level TRL 6 and manufacturing readiness level MRL 6.</p> 
+<p>Fraunhofer IAF’s role is to ensure the quality assessment of qubit devices. To this end, the institute operates one of the few cryogenic systems worldwide for the statistical characterization of such devices on 150 mm and 300 mm wafers. The on-wafer prober enables the fully automated characterization of large quantities at measurement temperatures below 2 K (-271.15 °C). Using this measurement data, qubit devices fabrication can be systematically optimized and significantly scaled up.</p> 
+<h4><b>Enabling European industry growth and innovation</b></h4> 
+<p>To maximize impact, SUPREME will make its fabrication processes available for companies by offering piloting services. Access to the technologies will be given through Process Design Kits (PDKs) and pilot runs to enable companies to design and develop their own quantum devices and systems.</p> 
+<p>Shared fabrication runs are particularly beneficial for early-stage companies, allowing sharing the cost of full wafer fabrication run between many users. Process design kits (PDKs) provide design rules and validated process specifications.</p> 
+<p>SUPREME is committed to strengthen Europe’s position in quantum technology by building the basis for European technology sovereignty for superconducting quantum technologies. It significantly contributes to goals of the European Quantum and the European Chips Act.</p> 
+<h4><b>Consortium partners</b></h4> 
+<p>The consortium combines European expertise in superconducting technology from academia, RTO’s, industrial technology developers and end-users and&nbsp;involves the following 23 partners from eight EU Member States:</p> 
+<ul> 
+ <li><b>Research organizations and academia</b>:<br> VTT, coordinator (Finland); TNO (Netherlands); Delft University of Technology (Netherlands); Bayerische Akademie Der Wissenschaften (Germany); Fraunhofer Gesellschaft für Angewandte Forschung e.V. (Germany); Max-Planck-Gesellschaft (Germany); Leibniz Institute of Photonic Technology e.V. (Germany); The French Alternative Energies and Atomic Energy Commission - CEA (France); University of Naples Federico II (Italy); Fondazione Bruno Kessler (Italy); Institut de Física d’Altes Energies - IFAE (Spain); Silicon Austria Labs (Austria)</li> 
+ <li><b>Large enterprises</b>:<br> Infineon Technologies AG (Germany); IQM Finland Oy (Finland)</li> 
+ <li><b>Small and medium enterprises:</b><br> Arctic Instruments Oy (Finland); Alice &amp; Bob (France); QuantWare BV (Netherlands); Single Quantum BV (Netherlands); QphoX BV (Netherlands); Peak Quantum GmbH (Germany); Silent Waves (France); Amires, The Business Innovation Management Institute (Czech Republic); Qilimanjaro Quantum Tech S.L. (Spain)</li> 
+</ul> 
+<p>&nbsp;</p> 
+<p><i>The use of the photos is permitted exclusively in connection with this press release and with indication of the copyright.</i></p></div>
+</div>
+</div>
+</article>
+</div>
+</div>
+<div class="fhg-grid-item fhg-grid-3-3-2-1 fhg-content">
+                	<p>Last modified:&nbsp;
+                	<time  datetime="2026-02-02T09:25:00Z" itemprop="dateModified">February 02, 2026</time></p>
+                </div>
+                </article></div>
+    </section>
+</div></div>
+<div class="contentPar parsys"><div data-emptytext="teaser_overview_parsys_hint" class="teaser section"><div class="sep sectionseparator"><script data-scf-json="true" type='application/json' id='/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/contentPar/teaser_overview/sep'>{"id":"/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/contentPar/teaser_overview/sep","resourceType":"fraunhofer/components/sectionseparator","url":"/en/media-library/press-releases/EU-granting-SUPREME-consortium/_jcr_content/contentPar/teaser_overview/sep.social.json","friendlyUrl":"/en/media-library/press-releases/EU-granting-SUPREME-consortium.html"}</script><div class="fhg-section-separator"></div>
+</div>
+<div class="fhg-grid teaser-layout fhg-grid-4-columns">
+	<div class="fhg-grid-item teaser-layout__title ">
+		<h2 class="teaser-layout__title-headline fragment" id="Further-information">Further information</h2>
+			</div>
+    
+    <div class="fhg-grid teaser-layout--masonry js-teaser-layout--masonry" data-config-masonry='{"horizontalOrder":false}'>
+    	<div class="fhg-grid-column-sizer"></div>
+		<div class="teaserPar parsys"><div data-emptytext="linklist_add_items" class="teaser__item section"><div class="fhg-grid-item teaser-default teaser-default--size-2x1 teaser-default--variant- teaser-default--color-blue  teaser-default--has-image js-teaser-ellipsis">
+    <div class="teaser-default__content">
+    	<a href="/en/customers.html" class="teaser-default__image teaser-default__image--linked teaser-default__image--large large" style="background-image: url(&#39;/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/contentPar/teaser_overview/teaserPar/teaser/image.img.2col.large.jpg/1770030196278/Fraunhofer-IAF-MOCVD-Halbleiterproduktion.jpg&#39;);background-position: 50% 50%" target="_self" title="learn more">&nbsp;</a><div class="teaser-default__text">
+        	<div class="teaser-default__text-caption js-teaser-default__text-caption">
+	            <p class="teaser-default__text-caption-copyright">© Fraunhofer IAF</p>
+	                <h3 class="teaser-default__text-headline">Our research portfolio</h3>
+	            <div class="teaser-default__text-richtext"><p>Fraunhofer IAF is one of the world's leading research institutions in the fields of III-V semiconductors and synthetic diamond.&nbsp;</p></div>
+	            </div>
+	        <div class="teaser-default__text-cta js-teaser-default__text-cta">
+	            <a href="/en/customers.html" class="teaser-default__text-cta--button" target="_self" title="learn more">learn more</a></div>
+        </div>
+    	</div>
+</div>
+</div>
+<div data-emptytext="linklist_add_items" class="teaser__item section"><div class="fhg-grid-item teaser-default teaser-default--size-1x1 teaser-default--variant- teaser-default--color-green  js-teaser-ellipsis">
+    <div class="teaser-default__content">
+    	<div class="teaser-default__text">
+        	<div class="teaser-default__text-caption js-teaser-default__text-caption">
+	            <h3 class="teaser-default__text-headline">How to cooperate with us</h3>
+	            <div class="teaser-default__text-richtext"><p>&nbsp;With decades of experience, state-of-the-art technological equipment and strong partnerships, we come up with innovative answers to your questions.</p></div>
+	            </div>
+	        <div class="teaser-default__text-cta js-teaser-default__text-cta">
+	            <a href="/en/networkers.html" class="teaser-default__text-cta--button" target="_self" title="learn more">learn more</a></div>
+        </div>
+    	</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+        <div class="fhg-sidebar">
+                <aside>
+                    <div class="bcardssnav parsysbcardssnav parsys"><div class="business-card blue-ribbon">
+    <h3>Contact</h3>
+    <div class="card-container" >
+        <div class="businesscardinclude"><div class="card"><div class="img img-horizontal">
+        <img src="/content/businesscards/iaf_v/Jennifer_Funk/jcr:content/businesscard/image.img.1col.jpg/1728294471494/VK-Funk-Jennifer.jpg" alt="Jennifer Funk"/>
+            </div>
+    <div class="content">
+        <h3>Contact Press / Media</h3>
+        <div class="info">
+            <h4 class="name">
+                Jennifer Funk</h4>
+            <p class="position">Editor</p>
+            <p class="address">
+                Tullastraße 72<br/>79108&nbsp;Freiburg</p>
+            <p class="phone">
+                Phone&nbsp;+49 761 5159-418</p>
+            <div class="cta-block">
+                <ul class="fhg-list arrowed-list">
+                    <li class="sendMail"><a href="/en/send-mail?l=en&m=1.6eefd64619aabe13faaed25212a9ef54&k=4a656e6e696665722046756e6b&r=2f656e2f6d656469612d6c6962726172792f70726573732d72656c65617365732f45552d6772616e74696e672d53555052454d452d636f6e736f727469756d2e68746d6c" contact="Jennifer Funk">Send email</a></li>
+                    
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+            </div>
+        <div class="sep sectionseparator"><script data-scf-json="true" type='application/json' id='/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/sep'>{"id":"/en/media-library/press-releases/EU-granting-SUPREME-consortium/jcr:content/sep","resourceType":"fraunhofer/components/sectionseparator","url":"/en/media-library/press-releases/EU-granting-SUPREME-consortium/_jcr_content/sep.social.json","friendlyUrl":"/en/media-library/press-releases/EU-granting-SUPREME-consortium.html"}</script><div class="fhg-section-separator"></div>
+</div>
+<footer>
+    <div class="fhg-footer">
+        <h2 class="invisible fragment" id="Navigation-and-Social-Media">Navigation and Social Media</h2>
+        <div class="fhg-grid">
+            <div class="fhg-social">
+    <div class="fhg-grid">
+        <div class="fhg-grid-item fhg-grid-3-2-2-1">
+		</div>
+        <div class="fhg-grid-item fhg-grid-1-1-1-1 secondary-buttons">
+            <div class="fhg-grid-item-contents">
+                <button class="print">Print</button>
+                <!--<button>Download</button>-->
+            </div>
+        </div>
+    </div>
+</div><div class="row-quick-links links-list">
+        <div class="fhg-grid-item fhg-grid-1-1-1-1 section-h-links">
+            <h3 class="fhg-block-heading">Quick Links</h3>
+            </div>
+        <div class="fhg-grid-item fhg-grid-3-2-1-1 section-links">
+            <ul class="fhg-list arrowed-list">
+                <li class="">
+                        <a href="/en/customers.html">For Customers</a></li>
+                <li class="">
+                        <a href="/en/networkers.html">For Cooperations</a></li>
+                <li class="">
+                        <a href="/en/researchers.html">For Researchers</a></li>
+                </ul>
+        </div>
+    </div>
+<div class="row-social">
+                </div>
+            <div class="row-footer-nav">
+    <div class="fhg-grid-item fhg-grid-3-2-1-1 section-menu text-secondary">
+        <nav>
+            <ul>
+                <li>
+                        <a href="/en/media-library/newsletter-subscription.html">Newsletter</a></li>
+                <li>
+                        <a href="/en.html">Homepage</a></li>
+                <li>
+                        <a href="/en/publishing_notes.html">Publishing Notes</a></li>
+                <li>
+                        <a href="/en/data_protection.html">Data Protection</a></li>
+                </ul>
+        </nav>
+    </div>
+    <div class="fhg-grid-item fhg-grid-1-1-1-1 section-copy text-secondary">
+    	<span>© 2026 </span>     
+    </div>
+</div>
+</div>
+        <div class="print-footer">
+            <p><strong>Source: Fraunhofer-Gesellschaft<br>Fraunhofer Institute for Applied Solid State Physics IAF - EU granting SUPREME consortium</strong></p>
+            <p>Online in Internet; URL: https://www.iaf.fraunhofer.de/en/media-library/press-releases/EU-granting-SUPREME-consortium.html</p>
+            <p>Date: 10.2.2026 14:32</p>
+        </div>
+    </div>
+</footer>
+</div>
+    <script src="/etc.clientlibs/fraunhofer/ui/website/js/thirdparty/requirejs.min.js"></script>
+<script src="/etc.clientlibs/fraunhofer/ui/website/js/fraunhofer.min.js"></script>
+<!--[if lte IE 9]>
+    <script type="text/javascript">
+        require(['input-placeholder']);
+    </script>
+<![endif]-->
+<!-- Tracking Code BEGIN --><script type="text/javascript">(function(d,s){var l=d.createElement(s),e=d.getElementsByTagName(s)[0];
+l.async=true;l.type='text/javascript';
+l.src='https://c.leadlab.click/e5700448c6bf47f6.js';
+e.parentNode.insertBefore(l,e);})(document,'script');</script><!-- Tracking Code END --></body>
+</html>

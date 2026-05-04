@@ -1,0 +1,5 @@
+{
+  "url": "https://www.sqc.com.au/news/sqc-launches-quantum-twins",
+  "title": "Silicon Quantum Computing | SQC Launches \"Quantum Twins\" Enabling Simulation of Quantum Physics and Chemistry",
+  "why": "- SQC has launched Quantum Twins, an application-specific quantum simulator designed to accelerate molecule and materials discovery.\n- Quantum Twins are composed of large arrays of qubit registers (quantum dots) patterned on pure silicon with 0.13 nanometer atomic precision, allowing for custom chips that physically encode direct replicas of systems and chemical interactions.\n- The platform enables simulation of quantum systems that is impossible for classical computers, enhancing the understanding of quantum interactions such as magnetism, atomic interactions, and superconductivity.\n- The demonstrated system includes 15,000 qubit registers, with the company also showing capability to pattern 250,000 qubit registers in eight hours.\n- SQC can design, produce, and test new quantum chips in under a week due to its full-stack approach, supporting rapid innovation and scaling.\n- Quantum Twins are already available to customers via direct contract with SQC."
+}

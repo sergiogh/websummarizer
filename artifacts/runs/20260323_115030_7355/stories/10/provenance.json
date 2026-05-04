@@ -1,0 +1,5 @@
+{
+  "url": "https://www.executivegov.com/articles/pnnl-nvidia-gpu-acceleration-quantum",
+  "title": "PNNL, NVIDIA to Add GPU Acceleration to Quantum Computing",
+  "why": "- Pacific Northwest National Laboratory and NVIDIA are developing an open-source framework that connects GPU acceleration to quantum-classical computing using NVIDIA's NVQLink platform.\n- The framework is designed to expand access to advanced quantum research capabilities by lowering barriers for scientists and engineers.\n- Integration involves NVIDIA GH200 Grace Hopper Superchips with FPGA-based measurement and control systems, enabling high-throughput computing with minimal delay, which is critical for quantum experiments.\n- The direct GPU-quantum processor connection allows for more detailed exploration of quantum control and measurement than typically possible through cloud-based services.\n- The open system architecture leverages high-performance classical GPUs to handle the intensive real-time computing demands of quantum processors."
+}

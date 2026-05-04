@@ -1,0 +1,270 @@
+Subjects
+Quantum information
+Quantum optics
+Abstract
+Quantum networks, integrating quantum communication, quantum metrology, and distributed quantum computing, could provide secure and efficient information transfer, high-resolution sensing, and an exponential speed-up in information processing
+1
+. Deterministic entanglement distribution over long distances is a prerequisite for scalable quantum networks
+2–5
+. However, the exponential photon loss in optical fibres prohibits efficient and deterministic entanglement distribution. Quantum repeaters
+6
+, incorporating entanglement swapping
+4,7,8
+and entanglement purification
+9–11
+with quantum memories, offer the most promising means to overcome this limitation in fibre-based quantum networks. Despite numerous pioneering efforts
+12–25
+, a critical bottleneck remains, as remote memory-memory entanglement suffers from decoherence more rapidly than it can be established and purified over long distances. Here, we demonstrate memory-memory entanglement between two nodes connected by 10 km of spooled fibre surviving beyond the average entanglement establishment time. This is enabled by the development of long-lived trapped-ion memories, an efficient telecom interface, and a high-visibility single-photon entanglement protocol
+26,27
+. As an application, we report a proof-of-principle device-independent quantum key distributio (DI-QKD) demonstration with finite-size analysis over 10 km and a positive key rate over 101 km in the asymptotic limit, with both distances exceeding previous work by more than two orders of magnitude
+28–30
+. Our work provides a critical building block for quantum repeaters and marks an important step toward scalable quantum networks.
+Access through your institution
+Buy or subscribe
+This is a preview of subscription content,
+access via your institution
+Access options
+Access through your institution
+Access Nature and 54 other Nature Portfolio journals
+Get Nature+, our best-value online-access subscription
+$32.99
+/ 30 days
+cancel any time
+Learn more
+Subscribe to this journal
+Receive 51 print issues and online access
+$199.00 per year
+only $3.90 per issue
+Learn more
+Rent or buy this article
+Prices vary by article type
+from
+$1.95
+to
+$39.95
+Learn more
+Prices may be subject to local taxes which are calculated during checkout
+Similar content being viewed by others
+Experimental demonstration of memory-enhanced scaling for entanglement connection of quantum repeater segments
+Article
+25 February 2021
+Telecom quantum photonic interface for a
+40
+Ca
++
+single-ion quantum memory
+Article
+Open access
+10 April 2023
+Metropolitan-scale ion-photon entanglement via a quantum network node with hybrid multiplexing enhancements
+Article
+Open access
+06 December 2025
+Author information
+Author notes
+These authors contributed equally: Wen-Zhao Liu, Ya-Bin Zhou, Jiu-Peng Chen, Bin Wang
+Authors and Affiliations
+Hefei National Research Center for Physical Sciences at the Microscale and School of Physical Sciences, University of Science and Technology of China, Hefei, Anhui, China
+Wen-Zhao Liu, Ya-Bin Zhou, Jiu-Peng Chen, Ao Teng, Xiao-Wen Han, Guang-Cheng Liu, Zhi-Jiong Zhang, Yi Yang, Feng-Guang Liu, Chao-Hui Xue, Bo-Wen Yang, Jin Yang, Chao Zeng, Yi-Zheng Zhen, Feihu Xu, Ye Wang, Yong Wan, Qiang Zhang & Jian-Wei Pan
+Shanghai Research Center for Quantum Science and CAS Center for Excellence in Quantum Information and Quantum Physics, University of Science and Technology of China, Shanghai, China
+Wen-Zhao Liu, Ya-Bin Zhou, Jiu-Peng Chen, Ao Teng, Xiao-Wen Han, Guang-Cheng Liu, Zhi-Jiong Zhang, Yi Yang, Feng-Guang Liu, Chao-Hui Xue, Bo-Wen Yang, Jin Yang, Chao Zeng, Du-Ruo Pan, Yi-Zheng Zhen, Feihu Xu, Ye Wang, Yong Wan, Qiang Zhang & Jian-Wei Pan
+Hefei National Laboratory, University of Science and Technology of China, Hefei, China
+Wen-Zhao Liu, Ya-Bin Zhou, Jiu-Peng Chen, Bin Wang, Ao Teng, Xiao-Wen Han, Guang-Cheng Liu, Zhi-Jiong Zhang, Yi Yang, Feng-Guang Liu, Chao-Hui Xue, Bo-Wen Yang, Jin Yang, Chao Zeng, Ming-Yang Zheng, Yi-Zheng Zhen, Xiongfeng Ma, Feihu Xu, Ye Wang, Yong Wan, Qiang Zhang & Jian-Wei Pan
+Jinan Institute of Quantum Technology, Jinan, China
+Bin Wang, Yi Yang, Ming-Yang Zheng & Qiang Zhang
+Department of Physics, Anhui Normal University, Wuhu, Anhui, China
+Jin Yang
+QICI Quantum Information and Computation Initiative, School of Computing and Data Science, The University of Hong Kong, Hong Kong SAR, China
+Xingjian Zhang, Shen Cao & Qi Zhao
+National Key Laboratory of Materials for Integrated Circuits, Shanghai Institute of Microsystem and Information Technology, Chinese Academy of Sciences (SIMIT, CAS), Shanghai, China
+You Xiao, Hao Li & Lixing You
+Center for Quantum Information, Institute for Interdisciplinary Information Sciences, Tsinghua University, Beijing, China
+Xiongfeng Ma
+Authors
+Wen-Zhao Liu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Ya-Bin Zhou
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Jiu-Peng Chen
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Bin Wang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Ao Teng
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Xiao-Wen Han
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Guang-Cheng Liu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Zhi-Jiong Zhang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Yi Yang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Feng-Guang Liu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Chao-Hui Xue
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Bo-Wen Yang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Jin Yang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Chao Zeng
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Du-Ruo Pan
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Ming-Yang Zheng
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Xingjian Zhang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Shen Cao
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Yi-Zheng Zhen
+View author publications
+Search author on:
+PubMed
+Google Scholar
+You Xiao
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Hao Li
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Lixing You
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Xiongfeng Ma
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Qi Zhao
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Feihu Xu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Ye Wang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Yong Wan
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Qiang Zhang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Jian-Wei Pan
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Corresponding authors
+Correspondence to
+Ye Wang
+,
+Yong Wan
+,
+Qiang Zhang
+or
+Jian-Wei Pan
+.
+Supplementary information
+Supplementary Information
+Supplementary Information, including Supplementary Figures 1–9, Supplementary Tables 1–5, and Supplementary References.
+Peer Review File
+Rights and permissions
+Reprints and permissions
+About this article
+Cite this article
+Liu, WZ., Zhou, YB., Chen, JP.
+et al.
+Long-lived remote ion-ion entanglement for scalable quantum repeaters.
+Nature
+(2026). https://doi.org/10.1038/s41586-026-10177-4
+Download citation
+Received
+:
+26 September 2025
+Accepted
+:
+23 January 2026
+Published
+:
+02 February 2026
+DOI
+:
+https://doi.org/10.1038/s41586-026-10177-4
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative

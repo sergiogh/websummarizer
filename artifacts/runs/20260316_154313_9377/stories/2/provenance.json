@@ -1,0 +1,5 @@
+{
+  "url": "https://www.nature.com/articles/s41467-026-70420-4",
+  "title": "[PAPER] Superior resilience to poisoning and amenability to unlearning in quantum machine learning",
+  "why": "- Quantum neural networks demonstrate superior resilience to data corruption compared to classical neural networks, as shown in a comparative study.\n- Classical models tend to memorize corrupted data rigidly, resulting in poor generalization, while quantum models respond with a phase transition-like behavior that reveals a critical noise threshold.\n- A framework of quantum machine unlearning is introduced, showing that quantum models can efficiently forget erroneous data, whereas classical models are less adaptable.\n- The findings highlight quantum machine learning's intrinsic resilience and efficient adaptability, supporting its potential for developing more trustworthy and reliable artificial intelligence."
+}

@@ -1,0 +1,6007 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html id="html" class="ltr" dir="ltr" lang="en-US">
+
+<head>
+
+		<title>Quantum Tycoon, an educational video game for discovering quantum computing - Current events - University of Barcelona</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+
+
+
+
+
+
+
+
+<meta content="The Institute of Cosmos Sciences (ICCUB) and the Institute of Nanoscience and Nanotechnology (IN2UB) present a new app, available on Google Play, which combines entertainment and scientific dissemination." lang="en-US" name="description" />
+
+
+<script type="importmap">{"imports":{"react-dom":"/o/frontend-js-react-web/__liferay__/exports/react-dom.js","@clayui/breadcrumb":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$breadcrumb.js","@clayui/charts":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$charts.js","@clayui/empty-state":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$empty-state.js","react":"/o/frontend-js-react-web/__liferay__/exports/react.js","react-dom-16":"/o/frontend-js-react-web/__liferay__/exports/react-dom-16.js","@clayui/navigation-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$navigation-bar.js","@clayui/icon":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$icon.js","@clayui/table":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$table.js","@clayui/slider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$slider.js","@clayui/multi-select":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-select.js","@clayui/nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$nav.js","@clayui/provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js","@clayui/panel":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$panel.js","@clayui/list":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$list.js","@liferay/dynamic-data-mapping-form-field-type":"/o/dynamic-data-mapping-form-field-type/__liferay__/index.js","@clayui/date-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$date-picker.js","@clayui/label":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$label.js","@liferay/frontend-js-api/data-set":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api$data-set.js","@clayui/core":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$core.js","@clayui/pagination-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination-bar.js","@clayui/layout":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$layout.js","@clayui/multi-step-nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-step-nav.js","@liferay/frontend-js-api":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api.js","@clayui/toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$toolbar.js","@clayui/badge":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$badge.js","react-dom-18":"/o/frontend-js-react-web/__liferay__/exports/react-dom-18.js","@clayui/link":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$link.js","@clayui/card":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$card.js","@clayui/tooltip":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js","@clayui/button":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$button.js","@clayui/tabs":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tabs.js","@clayui/sticker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$sticker.js","@clayui/form":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$form.js","@clayui/popover":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$popover.js","@clayui/shared":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$shared.js","@clayui/localized-input":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$localized-input.js","@clayui/modal":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$modal.js","@clayui/color-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$color-picker.js","@clayui/pagination":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination.js","@clayui/autocomplete":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js","@clayui/management-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$management-toolbar.js","@clayui/time-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$time-picker.js","@clayui/upper-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$upper-toolbar.js","@clayui/loading-indicator":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$loading-indicator.js","@clayui/drop-down":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$drop-down.js","@clayui/data-provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$data-provider.js","@liferay/language/":"/o/js/language/","@clayui/css":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$css.js","@clayui/alert":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$alert.js","@clayui/progress-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$progress-bar.js","react-16":"/o/frontend-js-react-web/__liferay__/exports/react-16.js","react-18":"/o/frontend-js-react-web/__liferay__/exports/react-18.js"},"scopes":{}}</script><script data-senna-track="temporary">var Liferay = window.Liferay || {};Liferay.Icons = Liferay.Icons || {};Liferay.Icons.controlPanelSpritemap = 'https://web.ub.edu/o/admin-theme/images/clay/icons.svg'; Liferay.Icons.spritemap = 'https://web.ub.edu/o/ub-theme/images/clay/icons.svg';</script>
+<script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=en_US&t=1770197666850&/o/frontend-js-jquery-web/jquery/jquery.min.js&/o/frontend-js-jquery-web/jquery/init.js&/o/frontend-js-jquery-web/jquery/ajax.js&/o/frontend-js-jquery-web/jquery/bootstrap.bundle.min.js&/o/frontend-js-jquery-web/jquery/collapsible_search.js&/o/frontend-js-jquery-web/jquery/fm.js&/o/frontend-js-jquery-web/jquery/form.js&/o/frontend-js-jquery-web/jquery/popper.min.js&/o/frontend-js-jquery-web/jquery/side_navigation.js" type="text/javascript"></script>
+<script data-senna-track="permanent" type="text/javascript">window.Liferay = window.Liferay || {}; window.Liferay.CSP = {nonce: ''};</script>
+<link data-senna-track="temporary" href="https://web.ub.edu/web/actualitat/w/quantum-tycoon-videojoc-educatiu" rel="canonical" />
+<link data-senna-track="temporary" href="https://web.ub.edu/es/web/actualitat/w/quantum-tycoon-videojuego-educativo" hreflang="es-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://web.ub.edu/web/actualitat/w/quantum-tycoon-videojoc-educatiu" hreflang="ca-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://web.ub.edu/en/web/actualitat/w/quantum-tycoon-educational-video" hreflang="en-US" rel="alternate" />
+<link data-senna-track="temporary" href="https://web.ub.edu/web/actualitat/w/quantum-tycoon-videojoc-educatiu" hreflang="x-default" rel="alternate" />
+<meta property="og:description" content="The Institute of Cosmos Sciences (ICCUB) and the Institute of Nanoscience and Nanotechnology (IN2UB) present a new app, available on Google Play, which combines entertainment and scientific dissemination.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:site_name" content="Current events">
+<meta property="og:title" content="Quantum Tycoon, an educational video game for discovering quantum computing">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://web.ub.edu/web/actualitat/w/quantum-tycoon-videojoc-educatiu">
+<meta property="og:image" content="https://web.ub.edu/documents/2710030/46107399/quantumtycoonweb1.jpg/f1d33cf4-10de-e3b4-1655-29b58f9b64e3?version=1.0&amp;t=1770631992054&amp;download=true">
+
+<meta property="og:image:secure_url" content="https://web.ub.edu/documents/2710030/46107399/quantumtycoonweb1.jpg/f1d33cf4-10de-e3b4-1655-29b58f9b64e3?version=1.0&amp;t=1770631992054&amp;download=true">
+<meta property="og:image:url" content="https://web.ub.edu/documents/2710030/46107399/quantumtycoonweb1.jpg/f1d33cf4-10de-e3b4-1655-29b58f9b64e3?version=1.0&amp;t=1770631992054&amp;download=true">
+
+
+<link href="https://web.ub.edu/o/ub-theme/images/favicon.ico" rel="apple-touch-icon" />
+<link href="https://web.ub.edu/o/ub-theme/images/favicon.ico" rel="icon" />
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://web.ub.edu/o/ub-theme/css/clay.css?browserId=other&amp;themeId=ub_WAR_ubtheme&amp;minifierType=css&amp;languageId=en_US&amp;t=1770197516000" id="liferayAUICSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+	<link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=ub_WAR_ubtheme&amp;languageId=en_US&amp;com_liferay_analytics_reports_web_internal_portlet_AnalyticsReportsPortlet:%2Fo%2Fanalytics-reports-web%2Fcss%2Fmain.css&amp;com_liferay_journal_content_web_portlet_JournalContentPortlet:%2Fo%2Fjournal-content-web%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fo%2Fproduct-navigation-product-menu-web%2Fcss%2Fmain.css&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal:%2Fo%2Fsite-navigation-menu-web%2Fcss%2Fmain.css&amp;t=1770197516000" rel="stylesheet" type="text/css"
+ data-senna-track="temporary" id="45cf03f" />
+
+
+
+
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function () {
+				return true;
+			},
+
+			
+
+			getMajorVersion: function () {
+				return 14.1;
+			},
+
+			getRevision: function () {
+				return '605.1';
+			},
+			getVersion: function () {
+				return '14.1';
+			},
+
+			
+
+			isAir: function () {
+				return false;
+			},
+			isChrome: function () {
+				return false;
+			},
+			isEdge: function () {
+				return false;
+			},
+			isFirefox: function () {
+				return false;
+			},
+			isGecko: function () {
+				return true;
+			},
+			isIe: function () {
+				return false;
+			},
+			isIphone: function () {
+				return true;
+			},
+			isLinux: function () {
+				return false;
+			},
+			isMac: function () {
+				return true;
+			},
+			isMobile: function () {
+				return true;
+			},
+			isMozilla: function () {
+				return false;
+			},
+			isOpera: function () {
+				return false;
+			},
+			isRtf: function () {
+				return true;
+			},
+			isSafari: function () {
+				return true;
+			},
+			isSun: function () {
+				return false;
+			},
+			isWebKit: function () {
+				return true;
+			},
+			isWindows: function () {
+				return false;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function () {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			
+		];
+
+		(function () {
+			var available = {};
+
+			var direction = {};
+
+			
+
+				available['ca_ES'] = 'Catalan\x20\x28Spain\x29';
+				direction['ca_ES'] = 'ltr';
+
+			
+
+				available['en_US'] = 'English\x20\x28United\x20States\x29';
+				direction['en_US'] = 'ltr';
+
+			
+
+				available['es_ES'] = 'Spanish\x20\x28Spain\x29';
+				direction['es_ES'] = 'ltr';
+
+			
+
+			let _cache = {};
+
+			if (Liferay && Liferay.Language && Liferay.Language._cache) {
+				_cache = Liferay.Language._cache;
+			}
+
+			Liferay.Language = {
+				_cache,
+				available,
+				direction,
+				get: function(key) {
+					let value = Liferay.Language._cache[key];
+
+					if (value === undefined) {
+						value = key;
+					}
+
+					return value;
+				}
+			};
+		})();
+
+		var featureFlags = {"LPD-10964":false,"LPD-37927":false,"LPD-10889":false,"LPS-193884":false,"LPD-30371":false,"LPD-11131":true,"LPS-178642":false,"LPS-193005":false,"LPD-31789":false,"LPD-10562":false,"LPD-11212":false,"COMMERCE-8087":false,"LPD-39304":true,"LPD-13311":true,"LRAC-10757":false,"LPD-35941":false,"LPS-180090":false,"LPS-178052":false,"LPD-21414":false,"LPS-185892":false,"LPS-186620":false,"LPD-40533":true,"LPD-40534":true,"LPS-184404":false,"LPD-40530":true,"LPD-20640":false,"LPS-198183":false,"LPD-38869":false,"LPD-35678":false,"LPD-6378":false,"LPS-153714":false,"LPD-11848":false,"LPS-170670":false,"LPD-7822":false,"LPS-169981":false,"LPD-21926":false,"LPS-177027":false,"LPD-37531":false,"LPD-11003":false,"LPD-36446":false,"LPD-39437":false,"LPS-135430":false,"LPD-20556":false,"LPD-45276":false,"LPS-134060":false,"LPS-164563":false,"LPD-32050":false,"LPS-122920":false,"LPS-199086":false,"LPD-35128":false,"LPD-10588":false,"LPD-13778":true,"LPD-11313":false,"LPD-6368":false,"LPD-34594":false,"LPS-202104":false,"LPD-19955":false,"LPD-35443":false,"LPD-39967":false,"LPD-11235":false,"LPD-11232":false,"LPS-196935":true,"LPD-43542":false,"LPS-176691":false,"LPS-197909":false,"LPD-29516":false,"COMMERCE-8949":false,"LPD-11228":false,"LPS-153813":false,"LPD-17809":false,"COMMERCE-13024":false,"LPS-165482":false,"LPS-193551":false,"LPS-197477":false,"LPS-174816":false,"LPS-186360":false,"LPD-30204":false,"LPD-32867":false,"LPS-153332":false,"LPD-35013":true,"LPS-179669":false,"LPS-174417":false,"LPD-44091":true,"LPD-31212":false,"LPD-18221":false,"LPS-155284":false,"LRAC-15017":false,"LPD-19870":false,"LPS-200108":false,"LPD-20131":false,"LPS-159643":false,"LPS-129412":false,"LPS-169837":false,"LPD-20379":false};
+
+		Liferay.FeatureFlags = Object.keys(featureFlags).reduce(
+			(acc, key) => ({
+				...acc, [key]: featureFlags[key] === 'true' || featureFlags[key] === true
+			}), {}
+		);
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 104857600
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function () {
+					return '35';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function () {
+					return '/en/group/actualitat/~/control_panel/manage';
+				},
+
+				getLayoutRelativeURL: function () {
+					return '/en/web/actualitat/w/quantum-tycoon-educational-video';
+				},
+				getLayoutURL: function () {
+					return '/en/web/actualitat/w/quantum-tycoon-educational-video';
+				},
+				getParentLayoutId: function () {
+					return '0';
+				},
+				isControlPanel: function () {
+					return false;
+				},
+				isPrivateLayout: function () {
+					return 'false';
+				},
+				isVirtualLayout: function () {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function () {
+				return 'en-US';
+			},
+			getCanonicalURL: function () {
+
+				
+
+				return 'https\x3a\x2f\x2fweb\x2eub\x2eedu\x2fweb\x2factualitat\x2fw\x2fquantum-tycoon-videojoc-educatiu';
+			},
+			getCDNBaseURL: function () {
+				return 'https://web.ub.edu';
+			},
+			getCDNDynamicResourcesHost: function () {
+				return '';
+			},
+			getCDNHost: function () {
+				return '';
+			},
+			getCompanyGroupId: function () {
+				return '20124';
+			},
+			getCompanyId: function () {
+				return '20098';
+			},
+			getDefaultLanguageId: function () {
+				return 'ca_ES';
+			},
+			getDoAsUserIdEncoded: function () {
+				return '';
+			},
+			getLanguageId: function () {
+				return 'en_US';
+			},
+			getParentGroupId: function () {
+				return '2710030';
+			},
+			getPathContext: function () {
+				return '';
+			},
+			getPathImage: function () {
+				return '/image';
+			},
+			getPathJavaScript: function () {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function () {
+				return '/en/c';
+			},
+			getPathThemeImages: function () {
+				return 'https://web.ub.edu/o/ub-theme/images';
+			},
+			getPathThemeRoot: function () {
+				return '/o/ub-theme';
+			},
+			getPlid: function () {
+				return '1919';
+			},
+			getPortalURL: function () {
+				return 'https://web.ub.edu';
+			},
+			getRealUserId: function () {
+				return '20103';
+			},
+			getRemoteAddr: function () {
+				return '64.79.144.115';
+			},
+			getRemoteHost: function () {
+				return '64.79.144.115';
+			},
+			getScopeGroupId: function () {
+				return '2710030';
+			},
+			getScopeGroupIdOrLiveGroupId: function () {
+				return '2710030';
+			},
+			getSessionId: function () {
+				return '';
+			},
+			getSiteAdminURL: function () {
+				return 'https://web.ub.edu/group/actualitat/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function () {
+				return '2710030';
+			},
+			getTimeZone: function() {
+				return 'Europe/Paris';
+			},
+			getURLControlPanel: function() {
+				return '/en/group/control_panel?refererPlid=1919';
+			},
+			getURLHome: function () {
+				return 'https\x3a\x2f\x2fweb\x2eub\x2eedu\x2fweb\x2fguest';
+			},
+			getUserEmailAddress: function () {
+				return '';
+			},
+			getUserId: function () {
+				return '20103';
+			},
+			getUserName: function () {
+				return '';
+			},
+			isAddSessionIdToURL: function () {
+				return false;
+			},
+			isImpersonated: function () {
+				return false;
+			},
+			isSignedIn: function () {
+				return false;
+			},
+
+			isStagedPortlet: function () {
+				
+					
+						return false;
+					
+				
+			},
+
+			isStateExclusive: function () {
+				return false;
+			},
+			isStateMaximized: function () {
+				return false;
+			},
+			isStatePopUp: function () {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getCombine: function () {
+				return true;
+			},
+			getComboPath: function () {
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&t=1757105613031&';
+			},
+			getDateFormat: function () {
+				return '%m/%d/%Y';
+			},
+			getEditorCKEditorPath: function () {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function () {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function () {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function () {
+				return '/o/frontend-js-web';
+			},
+			getPortletRootPath: function () {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function () {
+				return '?browserId=other&minifierType=&languageId=en_US&t=1757105613031';
+			}
+		};
+
+		Liferay.authToken = '9UqjJ8ob';
+
+		
+
+		Liferay.currentURL = '\x2fen\x2fweb\x2factualitat\x2fw\x2fquantum-tycoon-educational-video';
+		Liferay.currentURLEncoded = '\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video';
+	// ]]>
+</script>
+
+<script data-senna-track="temporary" type="text/javascript">window.__CONFIG__= {basePath: '',combine: true, defaultURLParams: null, explainResolutions: false, exposeGlobal: false, logLevel: 'warn', moduleType: 'module', namespace:'Liferay', nonce: '', reportMismatchedAnonymousModules: 'warn', resolvePath: '/o/js_resolve_modules', url: '/combo/?browserId=other&minifierType=js&languageId=en_US&t=1757105613031&', waitTimeout: 60000};</script><script data-senna-track="permanent" src="/o/frontend-js-loader-modules-extender/loader.js?&mac=9WaMmhziBCkScHZwrrVcOR7VZF4=&browserId=other&languageId=en_US&minifierType=js" type="text/javascript"></script><script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=en_US&t=1757105613031&/o/frontend-js-aui-web/aui/aui/aui-min.js&/o/frontend-js-aui-web/liferay/modules.js&/o/frontend-js-aui-web/liferay/aui_sandbox.js&/o/frontend-js-aui-web/aui/attribute-base/attribute-base-min.js&/o/frontend-js-aui-web/aui/attribute-complex/attribute-complex-min.js&/o/frontend-js-aui-web/aui/attribute-core/attribute-core-min.js&/o/frontend-js-aui-web/aui/attribute-observable/attribute-observable-min.js&/o/frontend-js-aui-web/aui/attribute-extras/attribute-extras-min.js&/o/frontend-js-aui-web/aui/event-custom-base/event-custom-base-min.js&/o/frontend-js-aui-web/aui/event-custom-complex/event-custom-complex-min.js&/o/frontend-js-aui-web/aui/oop/oop-min.js&/o/frontend-js-aui-web/aui/aui-base-lang/aui-base-lang-min.js&/o/frontend-js-aui-web/liferay/dependency.js&/o/frontend-js-aui-web/liferay/util.js&/o/frontend-js-web/liferay/dom_task_runner.js&/o/frontend-js-web/liferay/events.js&/o/frontend-js-web/liferay/lazy_load.js&/o/frontend-js-web/liferay/liferay.js&/o/frontend-js-web/liferay/global.bundle.js&/o/frontend-js-web/liferay/portlet.js&/o/frontend-js-web/liferay/workflow.js&/o/oauth2-provider-web/js/liferay.js" type="text/javascript"></script>
+<script data-senna-track="temporary" type="text/javascript">window.Liferay = Liferay || {}; window.Liferay.OAuth2 = {getAuthorizeURL: function() {return 'https://web.ub.edu/o/oauth2/authorize';}, getBuiltInRedirectURL: function() {return 'https://web.ub.edu/o/oauth2/redirect';}, getIntrospectURL: function() { return 'https://web.ub.edu/o/oauth2/introspect';}, getTokenURL: function() {return 'https://web.ub.edu/o/oauth2/token';}, getUserAgentApplication: function(externalReferenceCode) {return Liferay.OAuth2._userAgentApplications[externalReferenceCode];}, _userAgentApplications: {}}</script><script data-senna-track="temporary" type="text/javascript">try {var MODULE_MAIN='dynamic-data-mapping-web@5.0.115/index';var MODULE_PATH='/o/dynamic-data-mapping-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	const LiferayAUI = Liferay.AUI;
+
+	AUI().applyConfig({
+		groups: {
+			ddm: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: LiferayAUI.getFilterConfig(),
+				modules: {
+					'liferay-ddm-form': {
+						path: 'ddm_form.js',
+						requires: [
+							'aui-base',
+							'aui-datatable',
+							'aui-datatype',
+							'aui-image-viewer',
+							'aui-parse-content',
+							'aui-set',
+							'aui-sortable-list',
+							'json',
+							'liferay-form',
+							'liferay-map-base',
+							'liferay-translation-manager',
+							'liferay-util-window',
+						],
+					},
+					'liferay-portlet-dynamic-data-mapping': {
+						condition: {
+							trigger: 'liferay-document-library',
+						},
+						path: 'main.js',
+						requires: [
+							'arraysort',
+							'aui-form-builder-deprecated',
+							'aui-form-validator',
+							'aui-map',
+							'aui-text-unicode',
+							'json',
+							'liferay-menu',
+							'liferay-translation-manager',
+							'liferay-util-window',
+							'text',
+						],
+					},
+					'liferay-portlet-dynamic-data-mapping-custom-fields': {
+						condition: {
+							trigger: 'liferay-document-library',
+						},
+						path: 'custom_fields.js',
+						requires: ['liferay-portlet-dynamic-data-mapping'],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-editor-alloyeditor-web@5.0.56/index';var MODULE_PATH='/o/frontend-editor-alloyeditor-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			alloyeditor: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-alloy-editor': {
+						path: 'alloyeditor.js',
+						requires: [
+							'aui-component',
+							'liferay-portlet-base',
+							'timers',
+						],
+					},
+					'liferay-alloy-editor-source': {
+						path: 'alloyeditor_source.js',
+						requires: [
+							'aui-debounce',
+							'liferay-fullscreen-source-editor',
+							'liferay-source-editor',
+							'plugin',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='exportimport-web@5.0.100/index';var MODULE_PATH='/o/exportimport-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			exportimportweb: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-export-import-export-import': {
+						path: 'main.js',
+						requires: [
+							'aui-datatype',
+							'aui-dialog-iframe-deprecated',
+							'aui-modal',
+							'aui-parse-content',
+							'aui-toggler',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='staging-processes-web@5.0.65/index';var MODULE_PATH='/o/staging-processes-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			stagingprocessesweb: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-staging-processes-export-import': {
+						path: 'main.js',
+						requires: [
+							'aui-datatype',
+							'aui-dialog-iframe-deprecated',
+							'aui-modal',
+							'aui-parse-content',
+							'aui-toggler',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-react-web@5.0.54/index';var MODULE_PATH='/o/frontend-js-react-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			react: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-workflow-kaleo-designer-web@5.0.146/index';var MODULE_PATH='/o/portal-workflow-kaleo-designer-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			'kaleo-designer': {
+				base: MODULE_PATH + '/designer/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-kaleo-designer-autocomplete-util': {
+						path: 'autocomplete_util.js',
+						requires: ['autocomplete', 'autocomplete-highlighters'],
+					},
+					'liferay-kaleo-designer-definition-diagram-controller': {
+						path: 'definition_diagram_controller.js',
+						requires: [
+							'liferay-kaleo-designer-field-normalizer',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-dialogs': {
+						path: 'dialogs.js',
+						requires: ['liferay-util-window'],
+					},
+					'liferay-kaleo-designer-editors': {
+						path: 'editors.js',
+						requires: [
+							'aui-ace-editor',
+							'aui-ace-editor-mode-xml',
+							'aui-base',
+							'aui-datatype',
+							'aui-node',
+							'liferay-kaleo-designer-autocomplete-util',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-field-normalizer': {
+						path: 'field_normalizer.js',
+						requires: ['liferay-kaleo-designer-remote-services'],
+					},
+					'liferay-kaleo-designer-nodes': {
+						path: 'nodes.js',
+						requires: [
+							'aui-datatable',
+							'aui-datatype',
+							'aui-diagram-builder',
+							'liferay-kaleo-designer-editors',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-remote-services': {
+						path: 'remote_services.js',
+						requires: ['aui-io'],
+					},
+					'liferay-kaleo-designer-templates': {
+						path: 'templates.js',
+						requires: ['aui-tpl-snippets-deprecated'],
+					},
+					'liferay-kaleo-designer-utils': {
+						path: 'utils.js',
+						requires: [],
+					},
+					'liferay-kaleo-designer-xml-definition': {
+						path: 'xml_definition.js',
+						requires: [
+							'aui-base',
+							'aui-component',
+							'dataschema-xml',
+							'datatype-xml',
+						],
+					},
+					'liferay-kaleo-designer-xml-definition-serializer': {
+						path: 'xml_definition_serializer.js',
+						requires: ['escape', 'liferay-kaleo-designer-xml-util'],
+					},
+					'liferay-kaleo-designer-xml-util': {
+						path: 'xml_util.js',
+						requires: ['aui-base'],
+					},
+					'liferay-portlet-kaleo-designer': {
+						path: 'main.js',
+						requires: [
+							'aui-ace-editor',
+							'aui-ace-editor-mode-xml',
+							'aui-tpl-snippets-deprecated',
+							'dataschema-xml',
+							'datasource',
+							'datatype-xml',
+							'event-valuechange',
+							'io-form',
+							'liferay-kaleo-designer-autocomplete-util',
+							'liferay-kaleo-designer-editors',
+							'liferay-kaleo-designer-nodes',
+							'liferay-kaleo-designer-remote-services',
+							'liferay-kaleo-designer-utils',
+							'liferay-kaleo-designer-xml-util',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/designer/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-search-web@6.0.148/index';var MODULE_PATH='/o/portal-search-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			search: {
+				base: MODULE_PATH + '/js/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-search-custom-range-facet': {
+						path: 'custom_range_facet.js',
+						requires: ['aui-form-validator'],
+					},
+				},
+				root: MODULE_PATH + '/js/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='calendar-web@5.0.105/index';var MODULE_PATH='/o/calendar-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			calendar: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-calendar-a11y': {
+						path: 'calendar_a11y.js',
+						requires: ['calendar'],
+					},
+					'liferay-calendar-container': {
+						path: 'calendar_container.js',
+						requires: [
+							'aui-alert',
+							'aui-base',
+							'aui-component',
+							'liferay-portlet-base',
+						],
+					},
+					'liferay-calendar-date-picker-sanitizer': {
+						path: 'date_picker_sanitizer.js',
+						requires: ['aui-base'],
+					},
+					'liferay-calendar-interval-selector': {
+						path: 'interval_selector.js',
+						requires: ['aui-base', 'liferay-portlet-base'],
+					},
+					'liferay-calendar-interval-selector-scheduler-event-link': {
+						path: 'interval_selector_scheduler_event_link.js',
+						requires: ['aui-base', 'liferay-portlet-base'],
+					},
+					'liferay-calendar-list': {
+						path: 'calendar_list.js',
+						requires: [
+							'aui-template-deprecated',
+							'liferay-scheduler',
+						],
+					},
+					'liferay-calendar-message-util': {
+						path: 'message_util.js',
+						requires: ['liferay-util-window'],
+					},
+					'liferay-calendar-recurrence-converter': {
+						path: 'recurrence_converter.js',
+						requires: [],
+					},
+					'liferay-calendar-recurrence-dialog': {
+						path: 'recurrence.js',
+						requires: [
+							'aui-base',
+							'liferay-calendar-recurrence-util',
+						],
+					},
+					'liferay-calendar-recurrence-util': {
+						path: 'recurrence_util.js',
+						requires: ['aui-base', 'liferay-util-window'],
+					},
+					'liferay-calendar-reminders': {
+						path: 'calendar_reminders.js',
+						requires: ['aui-base'],
+					},
+					'liferay-calendar-remote-services': {
+						path: 'remote_services.js',
+						requires: [
+							'aui-base',
+							'aui-component',
+							'liferay-calendar-util',
+							'liferay-portlet-base',
+						],
+					},
+					'liferay-calendar-session-listener': {
+						path: 'session_listener.js',
+						requires: ['aui-base', 'liferay-scheduler'],
+					},
+					'liferay-calendar-simple-color-picker': {
+						path: 'simple_color_picker.js',
+						requires: ['aui-base', 'aui-template-deprecated'],
+					},
+					'liferay-calendar-simple-menu': {
+						path: 'simple_menu.js',
+						requires: [
+							'aui-base',
+							'aui-template-deprecated',
+							'event-outside',
+							'event-touch',
+							'widget-modality',
+							'widget-position',
+							'widget-position-align',
+							'widget-position-constrain',
+							'widget-stack',
+							'widget-stdmod',
+						],
+					},
+					'liferay-calendar-util': {
+						path: 'calendar_util.js',
+						requires: [
+							'aui-datatype',
+							'aui-io',
+							'aui-scheduler',
+							'aui-toolbar',
+							'autocomplete',
+							'autocomplete-highlighters',
+						],
+					},
+					'liferay-scheduler': {
+						path: 'scheduler.js',
+						requires: [
+							'async-queue',
+							'aui-datatype',
+							'aui-scheduler',
+							'dd-plugin',
+							'liferay-calendar-a11y',
+							'liferay-calendar-message-util',
+							'liferay-calendar-recurrence-converter',
+							'liferay-calendar-recurrence-util',
+							'liferay-calendar-util',
+							'liferay-scheduler-event-recorder',
+							'liferay-scheduler-models',
+							'promise',
+							'resize-plugin',
+						],
+					},
+					'liferay-scheduler-event-recorder': {
+						path: 'scheduler_event_recorder.js',
+						requires: [
+							'dd-plugin',
+							'liferay-calendar-util',
+							'resize-plugin',
+						],
+					},
+					'liferay-scheduler-models': {
+						path: 'scheduler_models.js',
+						requires: [
+							'aui-datatype',
+							'dd-plugin',
+							'liferay-calendar-util',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-state-web@1.0.30/index';var MODULE_PATH='/o/frontend-js-state-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			state: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='contacts-web@5.0.65/index';var MODULE_PATH='/o/contacts-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			contactscenter: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-contacts-center': {
+						path: 'main.js',
+						requires: [
+							'aui-io-plugin-deprecated',
+							'aui-toolbar',
+							'autocomplete-base',
+							'datasource-io',
+							'json-parse',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-js-components-web@2.0.80/index';var MODULE_PATH='/o/frontend-js-components-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			components: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/document-library-web@6.0.198/index';var MODULE_PATH='/o/document-library-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			dl: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'document-library-upload-component': {
+						path: 'DocumentLibraryUpload.js',
+						requires: [
+							'aui-component',
+							'aui-data-set-deprecated',
+							'aui-overlay-manager-deprecated',
+							'aui-overlay-mask-deprecated',
+							'aui-parse-content',
+							'aui-progressbar',
+							'aui-template-deprecated',
+							'liferay-search-container',
+							'querystring-parse-simple',
+							'uploader',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}</script>
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	        <script data-senna-track="permanent" type="text/javascript">
+            var addthis_share = {
+                title: "Quantum Tycoon, an educational video game for discovering quantum computing",
+                description: "<p><strong>The Institute of Cosmos Sciences (ICCUB) and the Institute of Nanoscience and Nanotechnology (IN2UB) at the University of Barcelona have released <span><a href="https://serviparticules.ub.edu/materials/aplicacions/quantum-tycoon">Quantum Tycoon</a></span>, an educational app that combines entertainment and scientific dissemination to bring quantum computing to the general public in an interactive and accessible way.</strong></p>",
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://web.ub.edu/o/ub-theme/css/main.css?browserId=other&amp;themeId=ub_WAR_ubtheme&amp;minifierType=css&amp;languageId=en_US&amp;t=1770197516000" id="liferayThemeCSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+
+
+<style data-senna-track="temporary" type="text/css">
+	:root {
+		--font-roboto-medium: Roboto-Medium, Segoe UI,system-ui,-apple-system,sans-serif;
+		--font-roboto-extra-bold: Roboto-ExtraBold, Google Sans,Segoe UI,system-ui,-apple-system,sans-serif;
+		--color-gray-light: #EBEBEB;
+		--spacer-0: 0;
+		--font-roboto-regular: Roboto-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+		--color-primary: #0072CE;
+		--color-tertiary-light: #754861;
+		--color-light: #FFFFFF;
+		--color-gray-dark: #646464;
+		--color-dark: #000000;
+		--spacer-2: 4px;
+		--color-tertiary: #335866;
+		--spacer-1: 2px;
+		--spacer-4: 16px;
+		--spacer-3: 8px;
+		--color-secondary: #8F460A;
+		--spacer-6: 40px;
+		--spacer-5: 24px;
+		--color-secundary-light: #869130;
+		--color-gray-dark-plus: #222222;
+		--spacer-7: 48px;
+		--font-roboto-bold: Roboto-Bold, Google Sans,Segoe UI,system-ui,-apple-system,sans-serif;
+	}
+</style>
+<link data-senna-track="permanent" href="/o/frontend-js-aui-web/alloy_ui.css?&mac=favIEq7hPo8AEd6k+N5OVADEEls=&browserId=other&languageId=en_US&minifierType=css&themeId=ub_WAR_ubtheme" rel="stylesheet"></link>
+<link data-senna-track="temporary" href="/o/layout-common-styles/main.css?plid=1919&segmentsExperienceId=45537636&t=17683137202081672676416460" rel="stylesheet" type="text/css"><script type="module">
+import {init} from '/o/frontend-js-spa-web/__liferay__/index.js';
+{
+init({"navigationExceptionSelectors":":not([target=\"_blank\"]):not([data-senna-off]):not([data-resource-href]):not([data-cke-saved-href]):not([data-cke-saved-href])","cacheExpirationTime":-1,"clearScreensCache":false,"portletsBlacklist":["es_ricoh_ub_jpa_CampanyaAdminPortlet","com_liferay_login_web_portlet_CreateAccountPortlet","com_liferay_nested_portlets_web_portlet_NestedPortletsPortlet","com_liferay_site_navigation_directory_web_portlet_SitesDirectoryPortlet","com_liferay_questions_web_internal_portlet_QuestionsPortlet","com_liferay_account_admin_web_internal_portlet_AccountUsersRegistrationPortlet","com_liferay_login_web_portlet_ForgotPasswordPortlet","com_liferay_portal_language_override_web_internal_portlet_PLOPortlet","es_ricoh_ub_jpa_JPAAdminPortlet","es_ricoh_ub_ensenyaments_EnsenyamentsAdminPortlet","es_ricoh_ub_ensenyaments_facultat_EnsenyamentsAdminPortlet","com_liferay_login_web_portlet_LoginPortlet","com_liferay_login_web_portlet_FastLoginPortlet"],"excludedTargetPortlets":["com_liferay_users_admin_web_portlet_UsersAdminPortlet","com_liferay_server_admin_web_portlet_ServerAdminPortlet"],"validStatusCodes":[221,490,494,499,491,496,492,493,495,220],"debugEnabled":false,"loginRedirect":"","excludedPaths":["/c/document_library","/documents","/image"],"preloadCSS":false,"userNotification":{"message":"It looks like this is taking longer than expected.","title":"Oops","timeout":30000},"requestTimeout":0});
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title:event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Google Consent Mode -->
+<script data-cookieconsent="ignore">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag("consent", "default", {
+    ad_personalization: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    wait_for_update: 500
+  });
+  gtag("set", "ads_data_redaction", true);
+</script>
+<!-- End Google Consent Mode-->
+			<!-- Google Tag Manager --> 
+			<script data-cookieconsent="ignore">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+			})(window,document,'script','dataLayer','GTM-MLPG24R');</script> 
+			<!-- End Google Tag Manager --> 
+			<!-- Cookiebot  -->
+<script
+id="Cookiebot" 
+src="https://consent.cookiebot.com/uc.js" 
+data-cbid="88355e31-7fef-4d33-b6e9-f715351dd339" 
+data-blockingmode="auto" 
+type="text/javascript"
+data-consentmode-defaults="disabled" 
+></script>
+<!-- End Cookiebot  -->
+	<script type="text/javascript" src="https://web.ub.edu/o/ub-theme/js/ics/ics.min.js" defer></script>
+	<script type="text/javascript" src="https://web.ub.edu/o/ub-theme/js/ics/FileSaver.min.js" defer></script>
+	<script type="text/javascript" src="https://web.ub.edu/o/ub-theme/js/glider/glider.min.js"></script>
+	<script src="https://cse.google.com/cse.js?cx=e05dc8f67391bd6b2" data-senna-track="permanent"></script>
+
+</head>
+<body class="other mobile controls-visible  yui3-skin-sam signed-out public-page site is-subsite">
+			<!-- Google Tag Manager (noscript) -->
+			<noscript>
+				<iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-MLPG24R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+			</noscript>
+			<!-- End Google Tag Manager (noscript) -->
+<style>
+  :root {
+    --color-site: #0072CE;
+    --chevron-right-icon-color-site: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 18L15 12L9 6' stroke='%230072CE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    --chevron-down-icon-color-site: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9L12 15L18 9' stroke='%230072CE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    --chevron-right-icon-color-site: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 18L15 12L9 6' stroke='%230072CE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    --trending-up-icon-color-site-other: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cg fill='%230072CE' fill-rule='nonzero'%3E%3Cpath d='M22.8443018,24.0770465 L1.15569823,24.0770465 C0.500802568,24.0770465 0,23.576244 0,22.9213483 L0,1.15569823 C0,0.500802568 0.500802568,0 1.15569823,0 C1.8105939,0 2.31139647,0.500802568 2.31139647,1.15569823 L2.31139647,21.7656501 L22.8443018,21.7656501 C23.4991974,21.7656501 24,22.2664526 24,22.9213483 C24,23.576244 23.4991974,24.0770465 22.8443018,24.0770465 Z' id='Path'%3E%3C/path%3E%3Cpath d='M1.6565008,17.7977528 C1.34831461,17.7977528 1.04012841,17.682183 0.808988764,17.4510433 C0.385232745,16.988764 0.385232745,16.2568218 0.847512039,15.8330658 L7.85874799,9.09149278 C8.32102729,8.66773676 9.01444623,8.66773676 9.47672552,9.09149278 L12.9823435,12.4430177 L20.7255217,5.08507223 C21.187801,4.66131621 21.9197432,4.66131621 22.3434992,5.12359551 C22.7672552,5.5858748 22.7672552,6.31781701 22.3049759,6.74157303 L13.752809,14.8699839 C13.2905297,15.29374 12.5971108,15.29374 12.1733547,14.8699839 L8.70626003,11.5569823 L2.46548957,17.4510433 C2.23434992,17.682183 1.964687,17.7977528 1.6565008,17.7977528 Z' id='Path'%3E%3C/path%3E%3Cpolygon id='Path' points='19.3001605 4.08346709 23.1910112 8.16693419 23.2680578 4.19903692'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+    --trending-up-icon-color-site: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill='none' stroke='%230072CE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%0A%3E%3Cpolyline points='23 6 13.5 15.5 8.5 10.5 1 18' /%3E%3Cpolyline points='17 6 23 6 23 12' /%3E%3C/svg%3E");
+    --radio-check-icon-color-site: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 15 12' fill='none'%3E%3Cpath d='M1 8L4 11L14 1' stroke='%230072CE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="d-flex flex-column min-vh-100">
+	<div class="d-flex flex-column flex-fill" id="wrapper">
+
+		<header id="banner" role="banner">
+<div class="container-xl d-flex">
+    <div id="heading">
+        <div class="site-title">
+            
+                <a class="logo custom-logo"
+                    href="https://web.ub.edu/en"
+                    title="Go to Universitat de Barcelona"
+                >
+                    <img alt="Go to Universitat de Barcelona" height="73" src="/image/company_logo?img_id=45626902&amp;t=1770197641341" width="268" />
+                </a>
+
+        </div>
+    </div>
+
+    <div id="respon-navs" class="navigations ml-xl-auto subsite">
+        <div class="navigation-top d-xl-flex justify-content-xl-end align-items-center px-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+					
+
+						
+
+						
+
+							
+
+							<div class="" data-fragments-editor-item-id="20132-2686431" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="journal-content-article " data-analytics-asset-id="2686429" data-analytics-asset-title="No editar - Menú superior" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="2686431">
+			
+
+			<nav id="navigationTop" role="navigation" class="ub-tpl-enlaces-menu-superior">
+  <ul>
+          <li>
+        <a data-senna-off="true" href="/en/home">
+          UB.EDU
+        </a>
+      </li>
+      <li>
+        <a data-senna-off="true" href="https://web.ub.edu/web/directori/">
+            <img alt="Icona usuari" data-fileentryid="2686807" src="/documents/2685349/2686580/usuari.svg/e2128230-b4b2-0c9d-517b-3e4a99daa646?t=1662534668089" />
+          Staff directory
+        </a>
+      </li>
+      <li>
+        <a data-senna-off="true" href="https://intranet.ub.edu/dyn/cms/">
+            <img alt="Icona enllaç extern" data-fileentryid="2686597" src="/documents/2685349/2686580/enllac-extern.svg/27e74544-80dc-a0cd-0b2d-9687cdb9415c?t=1662534667530" />
+          PTGAS and PDI
+        </a>
+      </li>
+      <li>
+        <a data-senna-off="true" href="https://web.ub.edu/web/estudiants/">
+            <img alt="Icona enllaç extern" data-fileentryid="2686597" src="/documents/2685349/2686580/enllac-extern.svg/27e74544-80dc-a0cd-0b2d-9687cdb9415c?t=1662534667530" />
+          Students
+        </a>
+      </li>
+  </ul>
+</nav>
+
+			
+		</div>
+
+		
+
+	
+
+
+
+							</div>
+						
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            <div class="options lang-selector">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_  portlet-static portlet-static-end portlet-decorate portlet-language " id="p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_">
+		<span id="p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="ub-adt-language">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="langMenu" data-toggle="dropdown" aria-expanded="false">en <span class="arrow down"></span></button>
+                <div class="dropdown-menu" aria-labelledby="langMenu">
+                    <a class="dropdown-item" href="/en/c/portal/update_language?redirect=%2Fen%2Fweb%2Factualitat%2Fw%2Fquantum-tycoon-educational-video&groupId=2710030&privateLayout=false&layoutId=35&languageId=ca_ES" title="català" hreflang="ca_ES" ><span class="d-block d-xl-none">català</span><span  class="d-none d-xl-block">ca</span></a><a class="dropdown-item" href="/en/c/portal/update_language?redirect=%2Fen%2Fweb%2Factualitat%2Fw%2Fquantum-tycoon-educational-video&groupId=2710030&privateLayout=false&layoutId=35&languageId=es_ES" title="español" hreflang="es_ES" ><span class="d-block d-xl-none">español</span><span  class="d-none d-xl-block">es</span></a>
+                </div>
+            </div>
+        </div>
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="navigation-bottom d-xl-flex justify-content-xl-between  align-items-center">
+                <div class="container-title-subtitle d-none d-xl-block">
+                    <div class="container-title">
+                        <a class="title-subsite-link" href="https://web.ub.edu/en/web/actualitat" title="Go to Current events">
+                            <div id="title-subsite-desktop" class="title-subsite title2">Current events</div>
+                        </a>
+                    </div>
+                </div>
+            <div class="d-xl-none">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-decorate portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+					<nav id="navigation" role="navigation" class="ub-adt-nav-menu-principal">
+		<ul class="nav">
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/news">News</a>
+
+				</li>
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/agenda-activities">Agenda</a>
+
+				</li>
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/social-networks">Social networks</a>
+
+				</li>
+				<li class="nav-item dropdown">
+
+
+						<a class="nav-link  border-0 bg-transparent browsable-haschildren d-xl-none" href="https://web.ub.edu/en/web/actualitat/press-room">
+							Press room
+						</a>
+						<button class="nav-link  dropdown-toggle border-0 bg-transparent small-button" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+							<span class="d-none d-xl-inline">
+								Press room
+							</span>
+							<svg role="presentation" class="sprite-svg d-none d-xl-inline-block">
+								<use href="https://web.ub.edu/o/ub-theme/images/ico/sprites.svg#other-icons-dropdown"/>
+							</svg>
+						</button>
+
+						<div class="dropdown-menu dropdown-menu--level1">
+							<div class="title-submenu d-none d-xl-block">
+								<a class="nav-link " href='https://web.ub.edu/en/web/actualitat/press-room'>Press room</a>
+							</div>
+							<ul class="list-unstyled one-column" role="menu">
+
+
+									<li class="" id="layout_36735194" role="presentation">
+											<a class="dropdown-item mr-xl-0" aria-labelledby="layout_36735194" href='https://web.ub.edu/en/web/actualitat/press-releases'   role="menuitem">Press releases</a>
+
+									</li>
+
+
+									<li class="" id="layout_36735192" role="presentation">
+											<a class="dropdown-item mr-xl-0" aria-labelledby="layout_36735192" href='https://web.ub.edu/en/web/actualitat/experts-opinion'   role="menuitem">Experts opinion</a>
+
+									</li>
+
+
+									<li class="" id="layout_36735193" role="presentation">
+											<a class="dropdown-item mr-xl-0" aria-labelledby="layout_36735193" href='https://web.ub.edu/en/web/actualitat/toolkit-journalists'   role="menuitem">Toolkit for journalists8880</a>
+
+									</li>
+							</ul>
+						</div>
+				</li>
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/communication-at-the-ub">Area for Communication at the UB</a>
+
+				</li>
+		</ul>
+	</nav>
+
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+
+            <div class="options d-none d-xl-block">
+                <button type="button" class="btnSearch" aria-label="Search box" aria-expanded="false">
+                    <img src="https://web.ub.edu/o/ub-theme/images/ico/Search.svg" alt="" role="presentation" class="icon-show" />
+                    <img src="https://web.ub.edu/o/ub-theme/images/ico/icon-close.svg" alt="" role="presentation" class="icon-close" />
+            </div>
+        </div>
+    </div>
+
+    <div class="options d-xl-none ml-auto">
+        <button type="button" class="btnSearch" aria-label="Search box" aria-expanded="false">
+            <img src="https://web.ub.edu/o/ub-theme/images/ico/Search.svg" alt="" role="presentation" class="icon-show" />
+            <img src="https://web.ub.edu/o/ub-theme/images/ico/icon-close-black.svg" alt="" role="presentation" class="icon-close" />
+        </button>
+    </div>
+                
+
+</div>
+<div class="" id="searchMenu">
+    <div class="container-xl search-container">
+        <h2 class="theme-search-title" id="theme-search-title">Search</h2>
+        <form class="w-100">
+            <input aria-labelledby="theme-search-title" title="" class="form-control" placeholder="Search by text" name="search-input-gs-gd-js" onkeyup="ub_principal_search(this)" type="text" value="" />
+        </form>
+        <div id="theme-search-propuestas"></div>
+    </div>
+</div>
+    <div id="navigation-sub-site" class="navigation-sub-site d-xl-flex align-items-center">
+        <div class="container-xl">
+            <div class="d-flex justify-content-between d-xl-none">
+                <div class="container-title-subtitle">
+                    <a class="title-subsite-link d-flex" href="https://web.ub.edu/en/web/actualitat" title="Go to Current events">
+                        <div class="title-subsite title2 mb-0 d-flex flex-column justify-content-center">Current events</div>
+                    </a>
+                </div>
+                <button class="menu d-inline-block d-xl-none" aria-label="acceso.menu.responsivo" aria-expanded="false">
+                    <svg role="presentation" width="50" height="50" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </div>
+            <div class="d-none d-xl-block">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-decorate portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+					<nav id="navigation" role="navigation" class="ub-adt-nav-menu-principal">
+		<ul class="nav">
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/news">News</a>
+
+				</li>
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/agenda-activities">Agenda</a>
+
+				</li>
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/social-networks">Social networks</a>
+
+				</li>
+				<li class="nav-item dropdown">
+
+
+						<a class="nav-link  border-0 bg-transparent browsable-haschildren d-xl-none" href="https://web.ub.edu/en/web/actualitat/press-room">
+							Press room
+						</a>
+						<button class="nav-link  dropdown-toggle border-0 bg-transparent small-button" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+							<span class="d-none d-xl-inline">
+								Press room
+							</span>
+							<svg role="presentation" class="sprite-svg d-none d-xl-inline-block">
+								<use href="https://web.ub.edu/o/ub-theme/images/ico/sprites.svg#other-icons-dropdown"/>
+							</svg>
+						</button>
+
+						<div class="dropdown-menu dropdown-menu--level1">
+							<div class="title-submenu d-none d-xl-block">
+								<a class="nav-link " href='https://web.ub.edu/en/web/actualitat/press-room'>Press room</a>
+							</div>
+							<ul class="list-unstyled one-column" role="menu">
+
+
+									<li class="" id="layout_36735194" role="presentation">
+											<a class="dropdown-item mr-xl-0" aria-labelledby="layout_36735194" href='https://web.ub.edu/en/web/actualitat/press-releases'   role="menuitem">Press releases</a>
+
+									</li>
+
+
+									<li class="" id="layout_36735192" role="presentation">
+											<a class="dropdown-item mr-xl-0" aria-labelledby="layout_36735192" href='https://web.ub.edu/en/web/actualitat/experts-opinion'   role="menuitem">Experts opinion</a>
+
+									</li>
+
+
+									<li class="" id="layout_36735193" role="presentation">
+											<a class="dropdown-item mr-xl-0" aria-labelledby="layout_36735193" href='https://web.ub.edu/en/web/actualitat/toolkit-journalists'   role="menuitem">Toolkit for journalists8880</a>
+
+									</li>
+							</ul>
+						</div>
+				</li>
+				<li class="nav-item ">
+
+
+						<a class="nav-link " href="https://web.ub.edu/en/web/actualitat/communication-at-the-ub">Area for Communication at the UB</a>
+
+				</li>
+		</ul>
+	</nav>
+
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+		</header>
+		<section class="flex-fill main-content" id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+		
+
+		
+			
+		
+
+		
+			
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	<div class="layout-content portlet-layout"id="main-content" role="main"><div class="lfr-layout-structure-item-ub-frg-container lfr-layout-structure-item-d7a58d55-fa06-2740-2402-02c34feec7fd "><div id="fragment-edd96ade-99a1-d2c4-f568-233cd29eb8b6" ><div class="ub-frg-container  ">
+  <div class="container-xl">
+    <div><div class="lfr-layout-structure-item-com-liferay-site-navigation-menu-web-portlet-sitenavigationmenuportlet lfr-layout-structure-item-030ffa67-487f-266c-b0e0-dc82337b2481 "><div id="fragment-525b729c-4e15-d42c-d781-cdce680535aa">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-decorate portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc">
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+<div class="d-none d-xl-block" id="breadcrumbs">
+    <ol>
+
+
+            
+                <li class="site">
+                    <a href="https://web.ub.edu/en">University of Barcelona</a><span class="slice">/</span>
+                </li>
+            
+        
+                <li class="site">
+                    <a href="https://web.ub.edu/en/web/actualitat">Current events</a><span class="slice">/</span>
+                </li>
+            
+
+                        <li>
+                            <a href="https://web.ub.edu/en/web/actualitat/news">News</a><span class="slice">/</span>
+                        </li>
+        <li>Quantum Tycoon, an educational video game for discovering quantum computing</li>
+    </ol>
+</div>
+			
+			
+		
+	
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div></div></div>
+  </div>
+</div></div><style >.ub-frg-container {
+  
+}</style></div><div class="lfr-layout-structure-item-basic-component-html lfr-layout-structure-item-b858e9d7-11ad-38db-6b8d-fe2f17d5b38c "><div id="fragment-58e0309f-c19b-639b-4671-6dd0015cdf10" > <div class="component-html" data-lfr-editable-id="element-html" data-lfr-editable-type="html"><!-- Solucion temporal. Hay que revisar porque razon liferay_journal no funciona -->
+
+    <!-- Novedad -->
+
+    <!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="journal-content-article " data-analytics-asset-id="48476360" data-analytics-asset-title="Quantum Tycoon, an educational video game for discovering quantum computing" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="48476362">
+			
+
+			
+
+			
+		</div>
+
+		
+
+	
+
+
+    -->
+
+    <div class="ub-tpl-nota-prensa-detalle ub-tpl-novedad-detalle">
+        <div class="container-xl d-flex justify-content-between flex-wrap">
+    		<div class="prensa-title mb-2 w-100">
+    			<h1 class="novedad-title">
+    				Quantum Tycoon, an educational video game for discovering quantum computing
+    			</h1>
+    		</div>
+            <div class="social-share mt-md-2 w-100">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media">
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+					
+
+						
+
+						
+
+							
+
+							<div class="" data-fragments-editor-item-id="20132-15787594" data-fragments-editor-item-type="fragments-editor-mapped-item">
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="journal-content-article " data-analytics-asset-id="15787592" data-analytics-asset-title="Share Social Media" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="15787594">
+			
+
+			<!-- AddToAny BEGIN -->
+<div class="social-container d-flex">
+  <span class="share">Share:</span>
+	<div id="addtoany" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="">
+          <a class="underline-links-none a2a_button_linkedin"></a>
+          <a class="underline-links-none a2a_button_bluesky"></a>
+          <a class="underline-links-none a2a_button_facebook"></a>
+          <a class="underline-links-none a2a_button_whatsapp"></a>
+  </div>
+  <script>$('#addtoany').prop('data-a2a-url', window.location.href)</script>
+</div>
+<script>
+  var a2a_config = a2a_config || {};
+  a2a_config.locale = document.documentElement.lang;
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+
+			
+		</div>
+
+		
+
+	
+
+
+
+							</div>
+						
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <section class="novedad-header d-md-none">
+            <div class="container-xl">
+                    <div class="image-container">
+                        <picture data-fileentryid="48476376"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/48476376/Thumbnail-300x300/quantumtycoonweb1.jpg?t=1770631992054"><source media="(max-width:720px) and (min-width:300px)" srcset="/o/adaptive-media/image/48476376/Preview-1000x0/quantumtycoonweb1.jpg?t=1770631992054"><img class="novedad-image" alt="" data-fileentryid="48476376" src="/documents/2710030/46107399/quantumtycoonweb1.jpg/f1d33cf4-10de-e3b4-1655-29b58f9b64e3?t=1770631992054"></picture>
+                    </div>
+                <div class="novedad-categories mb-2">
+                            <span class="category">News</span>
+                                <span class="separador">|</span>
+                            <span class="category">Research</span>
+                </div>
+                <div class="novedad-fecha">(09/02/2026)</div>
+                    <div class="novedad-description"><p><strong>The Institute of Cosmos Sciences (ICCUB) and the Institute of Nanoscience and Nanotechnology (IN2UB) at the University of Barcelona have released <span><a href="https://serviparticules.ub.edu/materials/aplicacions/quantum-tycoon">Quantum Tycoon</a></span>, an educational app that combines entertainment and scientific dissemination to bring quantum computing to the general public in an interactive and accessible way.</strong></p></div>
+            </div>
+        </section>
+
+        <section class="novedad-header d-none d-md-block">
+            <div class="container-xl p-4">
+                <div class="row">
+                    <div class="col-5 pl-md-2">
+                            <div class="image-container">
+                                <picture data-fileentryid="48476376"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/48476376/Thumbnail-300x300/quantumtycoonweb1.jpg?t=1770631992054"><source media="(max-width:720px) and (min-width:300px)" srcset="/o/adaptive-media/image/48476376/Preview-1000x0/quantumtycoonweb1.jpg?t=1770631992054"><img class="novedad-image" alt="" data-fileentryid="48476376" src="/documents/2710030/46107399/quantumtycoonweb1.jpg/f1d33cf4-10de-e3b4-1655-29b58f9b64e3?t=1770631992054"></picture>
+                            </div>
+                    </div>
+
+                    <div class="col-7 position-relative d-flex flex-column">
+                        <div class="novedad-categories mb-2">
+                            		<span class="category">News</span>
+                                			<span class="separador">|</span>
+                            		<span class="category">Research</span>
+                        </div>
+                        <div class="novedad-fecha">09/02/2026</div>
+                            <div class="novedad-description"><p><strong>The Institute of Cosmos Sciences (ICCUB) and the Institute of Nanoscience and Nanotechnology (IN2UB) at the University of Barcelona have released <span><a href="https://serviparticules.ub.edu/materials/aplicacions/quantum-tycoon">Quantum Tycoon</a></span>, an educational app that combines entertainment and scientific dissemination to bring quantum computing to the general public in an interactive and accessible way.</strong></p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <section class="cuerpo-texto container-xl">
+                <div class="novedad-cuerpo"><p>The app, which can now be downloaded for free on Google Play, was developed by Gabriel Linares and Guillem Pérez, students at the UB’s Faculty of Physics, under the supervision of researchers Bruno Julià, from the Department of Quantum Physics and Astrophysics and the ICCUB, and Carles Calero, from the Department of Condensed Matter Physics and the IN2UB.</p>
+
+<p>In Quantum Tycoon, the user takes charge of a quantum computer company and must manage resources, develop technology, and complete tasks using real quantum algorithms, such as Grover’s algorithm. The game introduces key concepts of quantum technologies within a simulation and strategy environment while maintaining an engaging gaming experience.</p>
+
+<p>“We wanted to explore the idea that established game styles can be adapted to an educational format without sacrificing playability in the process,” says Gabriel Linares, one of the game’s creators. “I think we’ve succeeded!”</p>
+
+<p>Professor Bruno Julià highlights the importance of the initiative in the current context: “This game represents a qualitative leap forward in our commitment to rigorously disseminating a discipline as complex and yet as topical as quantum science and technology. The aim is to reach a wide audience and bring this knowledge closer to society.”</p>
+
+<p>In order to continue improving the app, the project team invites users to complete a short <span><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=qzwxosOxOk-7ESFXRH3btOMvOR-w_nNOud9HC6VWbLpURTJGODFZNVJLS1M1NE41SzdETVozVEU3OS4u&amp;fromie=true">feedback form</a></span>. Players’ opinions and suggestions will be key to optimizing the user experience, incorporating new features, and improving its educational component.</p>
+
+<p>With this launch, ICCUB and IN2UB reinforce their commitment to innovative scientific dissemination and education, and explore new digital formats to make cutting-edge scientific disciplines accessible to the general public.</p>
+
+<p>The Quantum Tycoon app can be found on the <span><a href="https://web.ub.edu/en/web/aplicacions-mobils">UB mobile apps page</a></span> or directly on <span><a href="https://play.google.com/store/apps/details?id=edu.ub.QuantumTycoon&amp;hl=en">Google Play</a></span>.</p>
+
+<p>&nbsp;</p></div>
+            </section>
+    </div></div></div><style >.component-html img {
+	max-width: 100%;
+}</style></div></div>
+
+
+
+
+			
+			
+		
+	
+
+
+<form action="#" aria-hidden="true" class="hide" id="hrefFm" method="post" name="hrefFm"><span></span><button hidden type="submit">Hidden</button></form>
+
+	
+		</section>
+
+		<div id="dialog" role="dialog">
+			<div class="content"></div>
+			<button type="button" id="close" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		</div>
+
+		<footer id="footer" role="contentinfo" class="underline-links-reverse">
+<nav>
+    <div class="arrow1">
+        <div class="container-xl">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+					
+
+						
+
+						
+
+							
+
+							<div class="" data-fragments-editor-item-id="20132-2686719" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="journal-content-article " data-analytics-asset-id="2686717" data-analytics-asset-title="Enllaços UB en" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="2686719">
+			
+
+			<div class="row">
+  <div class="logo col-xl-5 col-lg-3 col-sm-12 py-3">
+        <a class="p-0 underline-links-none" href="https://web.ub.edu/en" data-label="Footer  Link" aria-label="Main link">
+            <img alt="Go to Universitat de Barcelona" src="https://web.ub.edu/documents/2685349/2686580/marca_peu_150.png.jpg/d1edc411-ab53-7e7d-88a5-866227bab7f2?t=1669825612958" width="268" height="73" />
+        </a>
+  </div>
+  <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 py-3">
+    <div class="row">
+      <div class="col-6">
+        <ul class="terminos" role="navigation">
+            <li>
+              <a data-senna-off="true" href="/en/legal-notice">
+                Legal notice
+              </a>
+            </li>
+            <li>
+              <a data-senna-off="true" href="/en/cookie-policy">
+                Cookies
+              </a>
+            </li>
+            <li>
+              <a data-senna-off="true" href="/en/accessibility">
+                Accessibility
+              </a>
+            </li>
+            <li>
+              <a data-senna-off="true" href="/en/contact">
+                Contact us
+              </a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="terminos" role="navigation">
+            <li>
+              <a data-senna-off="true" href="https://shop.ub.edu/">
+                UB Shop
+              </a>
+            </li>
+            <li>
+              <a data-senna-off="true" href="http://www.edicions.ub.edu/">
+                UB Editions
+              </a>
+            </li>
+            <li>
+              <a data-senna-off="true" href="http://www.ub.edu/espais">
+                Facility rental
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 bgGray py-5 py-lg-3">
+    <ul class="destacados" role="navigation">
+        <li>
+          <a data-senna-off="true" href="https://seu.ub.edu">
+            Electronic Office
+          </a>
+        </li>
+        <li>
+          <a data-senna-off="true" href="https://web.ub.edu/web/transparencia/">
+            Transparency portal
+          </a>
+        </li>
+        <li>
+          <a data-senna-off="true" href="https://www.ub.edu/bustiaetica/">
+            Ethics and integrity mailbox
+          </a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+			
+		</div>
+
+		
+
+	
+
+
+
+							</div>
+						
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="arrow2 container-xl">
+        <div class="row">
+            <div class="col-xl-5 col-lg-4 col-xs-12 py-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+					
+
+						
+
+						
+
+							
+
+							<div class="" data-fragments-editor-item-id="20132-2686687" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="journal-content-article " data-analytics-asset-id="2686685" data-analytics-asset-title="No editar - Xarxes socials" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="2686687">
+			
+
+				    <p class="m-0">The UB in social media</p>
+     <ul role="list" aria-label="social">
+                <li>
+                        <a href="https://www.instagram.com/UniBarcelona/">
+                            <img width="35" height="35" alt="Instagram" data-fileentryid="2687365" src="/documents/2685349/2686580/Instagram.svg/7a2e1bad-0842-d3f1-065c-04899bc3f582?t=1662540803573" />
+                        </a>
+                </li>
+                <li>
+                        <a href="https://www.linkedin.com/school/university-of-barcelona/mycompany/">
+                            <img width="35" height="35" alt="LinkedIn" data-fileentryid="2687341" src="/documents/2685349/2686580/Linkedn.svg/fa29292a-02d1-824b-3f68-c5e6b1ea1c83?t=1662540803153" />
+                        </a>
+                </li>
+                <li>
+                        <a href="https://www.facebook.com/UniversitatdeBarcelona">
+                            <img width="35" height="35" alt="Facebook" data-fileentryid="2687389" src="/documents/2685349/2686580/Facebook.svg/60ce83b7-72e4-4180-17d6-13c87b7230dc?t=1662540804143" />
+                        </a>
+                </li>
+                <li>
+                        <a href="https://bsky.app/profile/unibarcelona.bsky.social">
+                            <picture data-fileentryid="29431768"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/29431768/Thumbnail-300x300/shutterstock.png?t=1732124049543" /><source media="(max-width:1000px) and (min-width:300px)" srcset="/o/adaptive-media/image/29431768/Preview-1000x0/shutterstock.png?t=1732124049543" /><img width="35" height="35" alt="Shutterstock" data-fileentryid="29431768" src="/documents/2685349/2686580/shutterstock.png/0d86ff45-4a76-1e84-4fb7-a413ac1c814e?t=1732124049543" /></picture>
+                        </a>
+                </li>
+                <li>
+                        <a href="https://www.tiktok.com/@unibarcelona">
+                            <img width="35" height="35" alt="tik tok" data-fileentryid="2884970" src="/documents/2685349/2686580/Tik.svg/f7dcb68f-141f-c925-f798-ea539dbbdafa?t=1669210135534" />
+                        </a>
+                </li>
+                <li>
+                        <a href="https://www.youtube.com/user/UB">
+                            <img width="35" height="35" alt="Youtube" data-fileentryid="2687353" src="/documents/2685349/2686580/Youtube.svg/97b61596-a3f6-1297-30f3-41bf5f9b37c3?t=1662540803381" />
+                        </a>
+                </li>
+                <li>
+                        <a href="https://www.ivoox.com/podcast-l-8217-actualitat-ub-podcast_sq_f1922725_1.html">
+                            <picture data-fileentryid="2687329"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/2687329/Thumbnail-300x300/ivoox.svg.png?t=1761728930729" /><source media="(max-width:414px) and (min-width:300px)" srcset="/o/adaptive-media/image/2687329/Preview-1000x0/ivoox.svg.png?t=1761728930729" /><img width="35" height="35" alt="ivoox" data-fileentryid="2687329" src="/documents/2685349/2686580/ivoox.svg.png/fb63b95f-3485-4af8-2cd5-c1be31f6daa7?t=1761728930729" /></picture>
+                        </a>
+                </li>
+                <li>
+                        <a href="https://t.me/s/unibarcelona/">
+                            <img width="35" height="35" alt="Telegram" data-fileentryid="2687317" src="/documents/2685349/2686580/Telegram.svg/6fdf4219-5e05-a873-0237-b75a86a29d8a?t=1669209124876" />
+                        </a>
+                </li>
+                <li>
+                        <a href="https://www.ub.edu/ubtv/en">
+                            <img width="35" height="35" alt="ubtv" data-fileentryid="23818506" src="/documents/2685349/2686580/icona+UBtv.svg/50190092-065f-cb7c-a2d9-49e3805588ae?t=1733217745138" />
+                        </a>
+                </li>
+    </ul>
+
+
+			
+		</div>
+
+		
+
+	
+
+
+
+							</div>
+						
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+            <div class="col-xl-7 col-lg-8 col-xs-12 justify-content-lg-start py-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones">
+
+
+	<div class="portlet-content">
+
+		<div class="autofit-float autofit-row portlet-header">
+			<div class="autofit-col autofit-col-end">
+				<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>				</div>
+			</div>
+		</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+				
+					
+					
+					
+					
+
+						
+
+						
+
+							
+
+							<div class="" data-fragments-editor-item-id="20132-2686733" data-fragments-editor-item-type="fragments-editor-mapped-item" >
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="journal-content-article " data-analytics-asset-id="2686731" data-analytics-asset-title="Logos institucions" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="2686733">
+			
+
+			     <ul role="list" class="institucional-links" aria-label="Secondary links">
+                
+	            <li>
+	                <a href="https://web.ub.edu/web/charm-eu">
+    	                <span>Founder of</span>
+                            <picture data-fileentryid="2804153"><source media="(max-width:132px)" srcset="/o/adaptive-media/image/2804153/Preview-1000x0/charm-eu.png?t=1706877758374" /><source media="(max-width:132px) and (min-width:132px)" srcset="/o/adaptive-media/image/2804153/Thumbnail-300x300/charm-eu.png?t=1706877758374" /><img alt="Charm eu" data-fileentryid="2804153" src="/documents/2685349/2686580/charm-eu.png/acfeb475-bbbc-d633-5207-c7eb136a07f9?t=1706877758374" /></picture>
+                    </a>
+	            </li>
+                
+	            <li>
+	                <a href="https://web.ub.edu/web/leru/">
+    	                <span>Member of</span>
+                            <img alt="LERU" data-fileentryid="2803305" src="/documents/2685349/2686580/leru.svg/86b79a07-9ec5-05da-a802-594f31658595?t=1666252319789" />
+                    </a>
+	            </li>
+                
+	            <li>
+	                <a href="https://www.vives.org/">
+    	                <span>Member of</span>
+                            <img alt="Xarxa Vives" data-fileentryid="2804138" src="/documents/2685349/2686580/xarxa-vives.svg/b88fd4f8-a2ad-a899-1082-2e122724788d?t=1669287898780" />
+                    </a>
+	            </li>
+                
+	            <li>
+	                <a href="https://web.ub.edu/web/hr">
+    	                <span>International excellence</span>
+                            <img alt="International excellence hr" data-fileentryid="2804162" src="/documents/2685349/2686580/hr.svg/f01a0bc8-fb54-444b-e30e-2648a9e172ba?t=1666175234547" />
+                    </a>
+	            </li>
+                
+	            <li>
+	                <a href="https://erasmus-plus.ec.europa.eu/resources-and-tools/erasmus-charter-for-higher-education">
+    	                <span>European recognition</span>
+                            <picture data-fileentryid="5228710"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/5228710/Thumbnail-300x300/MicrosoftTeams-image.png?t=1677674794425" /><source media="(max-width:469px) and (min-width:300px)" srcset="/o/adaptive-media/image/5228710/Preview-1000x0/MicrosoftTeams-image.png?t=1677674794425" /><img alt="Charter" data-fileentryid="5228710" src="/documents/2685349/2686580/MicrosoftTeams-image.png/97926250-afcb-1405-173d-2ac72a9fed60?t=1677674794425" /></picture>
+                    </a>
+	            </li>
+    </ul>
+
+
+			
+		</div>
+
+		
+
+	
+
+
+
+							</div>
+						
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="top">
+	<a href="#html" title="Go to top"><span class="arrow up"></span></a>
+</div>		</footer>
+		<div id="top-layer-content" class="top-layer-content">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<script type="text/javascript">
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_share_social_media\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	function getValueByAttribute(node, attr) {
+		return (
+			node.dataset[attr] ||
+			(node.parentElement && node.parentElement.dataset[attr])
+		);
+	}
+
+	function sendDocumentDownloadedAnalyticsEvent(anchor) {
+		var fileEntryId = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryId'
+		);
+		var title = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryTitle'
+		);
+		var version = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryVersion'
+		);
+
+		if (fileEntryId) {
+			Analytics.send('documentDownloaded', 'Document', {
+				groupId: themeDisplay.getScopeGroupId(),
+				fileEntryId,
+				preview:
+					!!window._com_liferay_document_library_analytics_isViewFileEntry,
+				title,
+				version,
+			});
+		}
+	}
+
+	function handleDownloadClick(event) {
+		if (window.Analytics) {
+			if (event.target.nodeName.toLowerCase() === 'a') {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target
+				);
+			}
+			else if (
+				event.target.parentNode &&
+				event.target.parentNode.nodeName.toLowerCase() === 'a'
+			) {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target.parentNode
+				);
+			}
+			else {
+				var target = event.target;
+				var matchTextContent =
+					target.textContent &&
+					target.textContent.toLowerCase() ===
+						'download';
+				var matchTitle =
+					target.title && target.title.toLowerCase() === 'download';
+				var matchAction = target.action === 'download';
+				var matchLexiconIcon = !!target.querySelector(
+					'.lexicon-icon-download'
+				);
+				var matchLexiconClassName = target.classList.contains(
+					'lexicon-icon-download'
+				);
+				var matchParentTitle =
+					target.parentNode &&
+					target.parentNode.title &&
+					target.parentNode.title.toLowerCase() === 'download';
+				var matchParentLexiconClassName =
+					target.parentNode &&
+					target.parentNode.classList.contains('lexicon-icon-download');
+
+				if (
+					matchTextContent ||
+					matchTitle ||
+					matchParentTitle ||
+					matchAction ||
+					matchLexiconIcon ||
+					matchLexiconClassName ||
+					matchParentLexiconClassName
+				) {
+					var selectedFiles = document.querySelectorAll(
+						'.form .custom-control-input:checked'
+					);
+
+					selectedFiles.forEach(({value}) => {
+						var selectedFile = document.querySelector(
+							'[data-analytics-file-entry-id="' + value + '"]'
+						);
+
+						sendDocumentDownloadedAnalyticsEvent(
+							selectedFile
+						);
+					});
+				}
+			}
+		}
+	}
+
+	Liferay.once('destroyPortlet', () => {
+		document.body.removeEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+	Liferay.once('portletReady', () => {
+		document.body.addEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function (data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function (event) {
+		if (window.Analytics) {
+			let title = event.contentTitle;
+
+			if (!title) {
+				const dmNode = document.querySelector(
+					'[data-analytics-file-entry-id="' + event.classPK + '"]'
+				);
+
+				if (dmNode) {
+					title = dmNode.dataset.analyticsFileEntryTitle;
+				}
+			}
+
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score,
+				title,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function () {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function (event) {
+		if (window.Analytics) {
+			const eventProperties = {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text,
+			};
+
+			const blogNode = document.querySelector(
+				'[data-analytics-asset-id="' + event.classPK + '"]'
+			);
+
+			const dmNode = document.querySelector(
+				'[data-analytics-file-entry-id="' + event.classPK + '"]'
+			);
+
+			if (blogNode) {
+				eventProperties.title = blogNode.dataset.analyticsAssetTitle;
+			}
+			else if (dmNode) {
+				eventProperties.title = dmNode.dataset.analyticsFileEntryTitle;
+			}
+
+			Analytics.send('posted', 'Comment', eventProperties);
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();
+
+	if (window.svg4everybody && Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	Liferay.Util.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.add('open');
+		}
+	);
+
+	Liferay.Util.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.remove('open');
+		}
+	);
+})();
+
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fen\x2fweb\x2factualitat\x2fw\x2fquantum-tycoon-educational-video';
+		Liferay.currentURLEncoded = '\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video';
+
+	// ]]>
+
+(function() {var $ = AUI.$;var _ = AUI._;
+		import(Liferay.ThemeDisplay.getPathContext() + '/o/frontend-js-web/__liferay__/index.js').then(
+			({openToast}) => {
+				AUI().use(
+					'liferay-session',
+					function () {
+						Liferay.Session = new Liferay.SessionBase(
+							{
+								autoExtend: true,
+								redirectOnExpire: false,
+								redirectUrl: 'https\x3a\x2f\x2fweb\x2eub\x2eedu\x2fweb\x2fguest',
+								sessionLength: 900,
+								sessionTimeoutOffset: 70,
+								warningLength: 60
+							}
+						);
+
+						
+					}
+				);
+			}
+		)
+	})();
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_menusuperior\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_',
+			portletId: 'com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menuprincipal\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footermenu\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_xczc\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerinstituciones\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial',
+			refreshURL: '\x2fen\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1919\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footersocial\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen\x252Fweb\x252Factualitat\x252Fw\x252Fquantum-tycoon-educational-video',
+			refreshURLData: {}
+		}
+	);
+
+
+</script><script type="module">
+import {InfoItemActionHandler as ComponentModule} from '/o/layout-taglib/__liferay__/index.js';
+AUI().use(
+  'liferay-menu',
+function(A) {
+{
+Liferay.component('infoItemActionComponent', new ComponentModule({"executeInfoItemActionURL":"https:\/\/web.ub.edu\/en\/c\/portal\/execute_info_item_action?p_l_mode=view&plid=1919","namespace":"","spritemap":"https:\/\/web.ub.edu\/o\/ub-theme\/images\/clay\/icons.svg"}), { destroyOnNavigate: true, portletId: ''});
+}
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 0; i < liferayNotices.length; i++) {
+		Liferay.Util.openToast(liferayNotices[i]);
+	}
+
+})();
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://web.ub.edu/o/ub-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=en_US&amp;t=1770197516000" type="text/javascript"></script>
+
+
+
+
+<script type="module">
+import {main} from '/o/frontend-js-alert-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-tabs-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-dropdown-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-tooltip-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-collapse-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="text/javascript">
+Liferay.CustomDialogs = {enabled: false};
+
+</script><script>
+
+</script><script type="module">
+import {runThirdPartyCookiesInterval} from '/o/cookies-banner-web/__liferay__/index.js';
+{
+runThirdPartyCookiesInterval();
+}
+
+</script>
+<script>
+    function ub_principal_search(keyword){
+        let keyPress = event.keyCode;
+        if (keyPress === 13) {
+             event.preventDefault();
+             let params = new URLSearchParams(window.location.href)
+             const ubsearch = 'https://web.ub.edu/en/search';
+             params = new URLSearchParams(ubsearch+"?keyword="+keyword.value);
+             let decoded = decodeURIComponent(params);
+             window.location.href = decoded;
+        }
+    }
+
+    const launchPropuestaSearch = (propuesta) => {
+        let params = new URLSearchParams(window.location.href)
+        const ubsearch = 'https://web.ub.edu/en/search';
+        params = new URLSearchParams(ubsearch+"?keyword=" + propuesta);
+        let decoded = decodeURIComponent(params);
+        window.location.href = decoded;
+    }
+
+    Liferay.on('allPortletsReady', function() {
+        document.querySelector('.btnSearch').addEventListener("click", () => {
+            let propuestasHtml = '<div class="propuestas">';
+            propuestasHtml += '<span class="propuestas-title">Useful links...</span>';
+            propuestasHtml += '<a class="propuesta-link" href="javascript:void(0);" onclick="launchPropuestaSearch(\'Doctoral Programmes\')">Doctoral Programmes</a>';
+            propuestasHtml += '<a class="propuesta-link" href="javascript:void(0);" onclick="launchPropuestaSearch(\'Historical archive\')">Historical archive</a>';
+            propuestasHtml += '<a class="propuesta-link" href="javascript:void(0);" onclick="launchPropuestaSearch(\'Scientific dissemination\')">Scientific dissemination</a>';
+            propuestasHtml += '</div>';
+
+            document.getElementById('theme-search-propuestas').innerHTML = propuestasHtml;
+
+        });
+    });
+
+</script></body>
+
+</html>
+		
+	
+

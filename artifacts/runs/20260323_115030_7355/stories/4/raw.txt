@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<title>Government to spend £2bn on quantum computing | Electronics Weekly</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://www.electronicsweekly.com/xmlrpc.php" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/favicon-16x16.png" sizes="16x16">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://www.electronicsweekly.com/wp-content/themes/ew/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	        <script> 
+            if(!app_recaptcha_data){
+                var app_recaptcha_data = {"site_key":"6LfdMOoZAAAAAIyectsllBuaZQqBEVx9-uDcJP0V","field_name":"g-recaptcha-response","version":"v2","enabled":1}            }
+        </script>
+        		<script type="text/javascript">
+		var ajaxurl = 'https://www.electronicsweekly.com/wp-admin/admin-ajax.php';
+		</script>
+		
+	<!-- This site is optimized with the Yoast SEO Premium plugin v26.7 (Yoast SEO v27.1) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<meta name="description" content="The government announced today that it is to spend £2bn on quantum computing research over the next four years. The Department of Science, Innovation and" />
+	<link rel="canonical" href="https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Government to spend £2bn on quantum computing | Electronics Weekly" />
+	<meta name="twitter:description" content="The government announced today that it is to spend £2bn on quantum computing research over the next four years. The Department of Science, Innovation and" />
+	<meta name="twitter:image" content="https://static.electronicsweekly.com/wp-content/uploads/2025/06/20142300/UBC-quantum-networks.webp" />
+	<meta name="twitter:creator" content="@ElectronicsNews" />
+	<meta name="twitter:site" content="@ElectronicsNews" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="David Manners" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="4 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#article","isPartOf":{"@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/"},"author":{"name":"David Manners","@id":"https://www.electronicsweekly.com/#/schema/person/2a780b9be8bba42fec1819c53ddcfefc"},"headline":"Government to spend £2bn on quantum computing","datePublished":"2026-03-17T06:35:38+00:00","dateModified":"2026-03-19T17:05:59+00:00","mainEntityOfPage":{"@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/"},"wordCount":743,"commentCount":0,"image":{"@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#primaryimage"},"thumbnailUrl":"https://static.electronicsweekly.com/wp-content/uploads/2025/06/20142300/UBC-quantum-networks.webp","keywords":["Quantum"],"articleSection":["Business","Research"],"inLanguage":"en-GB","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#respond"]}]},{"@type":"WebPage","@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/","url":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/","name":"Government to spend £2bn on quantum computing | Electronics Weekly","isPartOf":{"@id":"https://www.electronicsweekly.com/#website"},"primaryImageOfPage":{"@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#primaryimage"},"image":{"@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#primaryimage"},"thumbnailUrl":"https://static.electronicsweekly.com/wp-content/uploads/2025/06/20142300/UBC-quantum-networks.webp","datePublished":"2026-03-17T06:35:38+00:00","dateModified":"2026-03-19T17:05:59+00:00","author":{"@id":"https://www.electronicsweekly.com/#/schema/person/2a780b9be8bba42fec1819c53ddcfefc"},"description":"The government announced today that it is to spend £2bn on quantum computing research over the next four years. The Department of Science, Innovation and","breadcrumb":{"@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#primaryimage","url":"https://static.electronicsweekly.com/wp-content/uploads/2025/06/20142300/UBC-quantum-networks.webp","contentUrl":"https://static.electronicsweekly.com/wp-content/uploads/2025/06/20142300/UBC-quantum-networks.webp","width":1920,"height":1080},{"@type":"BreadcrumbList","@id":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.electronicsweekly.com/"},{"@type":"ListItem","position":2,"name":"Government to spend £2bn on quantum computing"}]},{"@type":"WebSite","@id":"https://www.electronicsweekly.com/#website","url":"https://www.electronicsweekly.com/","name":"Electronics Weekly","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.electronicsweekly.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"},{"@type":"Person","@id":"https://www.electronicsweekly.com/#/schema/person/2a780b9be8bba42fec1819c53ddcfefc","name":"David Manners","image":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.electronicsweekly.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/a05637694a85fd60bfb196027ecc4292c042bb26582d0b0f63bda20f8134e7e4?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/a05637694a85fd60bfb196027ecc4292c042bb26582d0b0f63bda20f8134e7e4?s=96&d=mm&r=g","caption":"David Manners"},"description":"David Manners has more than forty-years experience writing about the electronics industry, its major trends and leading players. As well as writing business, components and research news, he is the author of the site's most popular blog, Mannerisms. This features series of posts such as Fables, Markets, Shenanigans, and Memory Lanes, across a wide range of topics.","url":"https://www.electronicsweekly.com/author/david-manners/"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.electronicsweekly.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//partner.googleadservices.com' />
+<link rel='dns-prefetch' href='//securepubads.g.doubleclick.net' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel="alternate" type="application/rss+xml" title="Electronics Weekly &raquo; Feed" href="https://www.electronicsweekly.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Electronics Weekly &raquo; Comments Feed" href="https://www.electronicsweekly.com/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Electronics Weekly &raquo; iCal Feed" href="https://www.electronicsweekly.com/events/?ical=1" />
+<link rel="alternate" type="application/rss+xml" title="Electronics Weekly &raquo; Government to spend £2bn on quantum computing Comments Feed" href="https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/feed/" />
+<!-- electronicsweekly.com is managing ads with Advanced Ads – https://wpadvancedads.com/ --><script id="elect-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<link rel='stylesheet' id='wp-pc-style-css' href='https://www.electronicsweekly.com/wp-content/plugins/mbm-preference-center/assets/pc-style.css?ver=6.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.electronicsweekly.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wp-polls-css' href='https://www.electronicsweekly.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.77.1' type='text/css' media='all' />
+<style id='wp-polls-inline-css' type='text/css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('https://www.electronicsweekly.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel='stylesheet' id='wp-ulike-css' href='https://www.electronicsweekly.com/wp-content/plugins/wp-ulike/assets/css/wp-ulike.min.css?ver=4.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-v4shim-css' href='https://www.electronicsweekly.com/wp-content/plugins/cred-frontend-editor/vendor/toolset/toolset-common/res/lib/font-awesome/css/v4-shims.css?ver=5.13.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.electronicsweekly.com/wp-content/plugins/cred-frontend-editor/vendor/toolset/toolset-common/res/lib/font-awesome/css/all.css?ver=5.13.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='ew-custom-style-css' href='https://www.electronicsweekly.com/wp-content/themes/ew/build/styles/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tie-styles-css' href='https://www.electronicsweekly.com/wp-content/themes/ew/dist/styles/style.css?ver=2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.electronicsweekly.com/wp-includes/css/dashicons.min.css?ver=6.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='toolset-select2-css-css' href='https://www.electronicsweekly.com/wp-content/plugins/cred-frontend-editor/vendor/toolset/toolset-common/res/lib/select2/select2.css?ver=6.8.1' type='text/css' media='screen' />
+<link rel='stylesheet' id='utility-style-css' href='https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/assets/css/utility.css?ver=6.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='myaccount_style-css' href='https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/assets/css/style.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ibx_style-css' href='https://www.electronicsweekly.com/wp-content/mu-plugins/MBM-inbox-companion/assets/dist/styles/styles.css?ver=1.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='omnilist_style-css' href='https://www.electronicsweekly.com/wp-content/plugins/omnilist/assets/css/style.css?ver=1.2.0' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/cred-frontend-editor/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=166000" id="toolset-common-es-frontend-js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=6.8.1" id="jquery-header-js"></script>
+<script type="text/javascript" src="//partner.googleadservices.com/gampad/google_service.js?ver=1.0.0" id="google-service-js"></script>
+<script type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js?ver=1.0.0" id="google-gpt-js"></script>
+<link rel="https://api.w.org/" href="https://www.electronicsweekly.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.electronicsweekly.com/wp-json/wp/v2/posts/891372" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.electronicsweekly.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.1" />
+<link rel='shortlink' href='https://www.electronicsweekly.com/?p=891372' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.electronicsweekly.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.electronicsweekly.com%2Fnews%2Fbusiness%2Fgovernmet-to-spend-2bn-on-quantum-computing-2026-03%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.electronicsweekly.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.electronicsweekly.com%2Fnews%2Fbusiness%2Fgovernmet-to-spend-2bn-on-quantum-computing-2026-03%2F&#038;format=xml" />
+<script type="text/javascript">
+	var mbm_dfp_article_id = "891372";
+	var mbm_dfp_category_key = "Business";
+	var mbm_dfp_md5_key = "b292a865ade868e53d613a4b8dd2512c"; //is the md5 of url - /news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/
+	var mbm_dfp_link = "/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/";
+	var mbm_dfp_hash_tag_value = location.hash.slice(1) || ""; 
+
+	var mbm_dfp_cat_md5 = new Array();
+	var mbm_dfp_cat_name = new Array();
+	var mbm_dfp_taxonomy_list = new Array();
+
+	mbm_dfp_cat_md5[0]="76d965092a52059af3efacb7c35ebf43"; //is the md5 of /business/
+	mbm_dfp_cat_name[0]="/business/"; 
+	mbm_dfp_taxonomy_list.push("16039"); // is the id of business
+	mbm_dfp_cat_md5[1]="0144d13ca63bef8f74c84789c6e77d31"; //is the md5 of /news/
+	mbm_dfp_cat_name[1]="/news/"; 
+	mbm_dfp_taxonomy_list.push("12640"); // is the id of news
+	mbm_dfp_cat_md5[2]="2bdea3b483286f5951f3524698101fe6"; //is the md5 of /research-news/
+	mbm_dfp_cat_name[2]="/research-news/"; 
+	mbm_dfp_taxonomy_list.push("12658"); // is the id of research-news
+	mbm_dfp_cat_md5[3]="957c4e88e7c66e0da775ea183597737b"; //is the md5 of /quantum/
+	mbm_dfp_cat_name[3]="/quantum/"; 
+	mbm_dfp_taxonomy_list.push("13997"); // is the id of quantum
+	var mbm_user_type = ""; 
+	var mbm_user_expiry = ""; 
+
+</script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://www.electronicsweekly.com"><link rel="alternate" href="https://www.electronicsweekly.com/wp-json/tribe/events/v1/" /><script type='text/javascript'>
+	/* <![CDATA[ */
+	var tievar = {'go_to' : 'Go to...'};
+	var tie = {"ajaxurl":"https://www.electronicsweekly.com/wp-admin/admin-ajax.php" , "your_rating":"Your Rating:"};
+	/* ]]> */
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<style type="text/css" media="screen"> 
+
+
+
+
+
+</style> 
+
+<link rel="stylesheet" href="//releases.flowplayer.org/6.0.4/skin/minimalist.css" >
+<script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
+<script src="//releases.flowplayer.org/drive-analytics/flowplayer.drive-analytics.min.js"></script>
+<!-- Include the line below if you want to use the HLS.js plugin to avoid flash use on modern browsers -->
+<script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
+<!-- Include lines below to support multiple resolutions via quality selector plugin -->
+<link rel="stylesheet" href="//releases.flowplayer.org/quality-selector/flowplayer.quality-selector.css">
+<script src="//releases.flowplayer.org/quality-selector/flowplayer.quality-selector.min.js"></script>
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-PKNPKL9');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Adobe Analytics -->
+<script src="//assets.adobedtm.com/launch-ENf2b6c3db2ce54c91841764d3a7a10d12.min.js" async></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58DV2QFC');</script>
+<!-- End Google Tag Manager -->
+<style>
+#menu-item-845768 a {
+    font-weight: 700;
+    color:#FF0000;
+}
+.author-bio-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #000;
+}
+.share-post a
+ {
+  font-weight: bold;
+    color: #cd031b;
+}
+
+.author-info a {
+  all: unset !important;
+  cursor: pointer !important;
+}
+</style>
+        <script>
+            var digitalData = {"page_data":{"page_url":"https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/","page_domain":"https://www.electronicsweekly.com","page_path":"/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/","page_title":"","page_categories":"Business:Research","page_type":"Article","page_previous_url":"https://www.electronicsweekly.com/news/page/4/","javascript_errors":""},"journey_data":{"is_mobile":"true","mega_menu_clicked":"","mega_menu_item":"","footer_menu_clicked":"","footer_menu_item":"","homepage_link_clicked":"","homepage_section":"","social_link_clicked":"","social_type":"","login_success":"","logout_success":"","registation_success":"","subscriptions_success":"","newsletter_signup":"","internal_campaign":"","external_campaign":"","contact_us_submitted":""},"user_data":{"logged_in_status":"logged out","registered_user_id":"","anonymous_user_id":"","user_email":"","user_type_test":"","user_type":"","marketing_data":{"sms":"false","email":"false","post":"false"}},"search_data":{"search_page":"false","search_term":"","search_results":"","null_search":"false"},"article_data":{"article_page":true,"author":"David Manners","publish_data":"17/03/2026 06:35:38","article_name":"Government to spend \u00a32bn on quantum computing","article_category":"Business:Research","article_id":891372,"story_id":891372},"author":{"@type":"Person","@id":"https://www.electronicsweekly.com/author/david-manners/","name":"David Manners","description":"David Manners has more than forty-years experience writing about the electronics industry, its major trends and leading players. As well as writing business, components and research news, he is the author of the site's most popular blog, Mannerisms. This features series of posts such as Fables, Markets, Shenanigans, and Memory Lanes, across a wide range of topics.","url":"https://www.electronicsweekly.com/author/david-manners/","image":"https://static.electronicsweekly.com/wp-content/uploads/2015/08/25162118/David-Manners-011-small.jpg"}};
+
+            ;(function($){
+                $(document).on('click', '.modal-form[data-name="login"]' , function(e) {
+                    digitalData["page_data"]["page_type"] = 'login';
+                });
+                if ($(".login-form").length > 0) {
+                    digitalData["page_data"]["page_type"] = 'login';
+                }
+                digitalData["page_data"]["page_title"] = document.title;
+            })(jQuery);
+        </script>
+                <meta name="primarynavigation" content="Business:Research" />
+        <meta name="section" content="Business" />
+        <meta name="categories" content="Business:Research" />
+        <meta name="storyid" content="891372" />
+        <meta name="WT.seg_CompanyType" content="" />
+        <meta name="language" content="en" />
+        <meta name="WT.seg_1" content="" />
+        <meta name="WT.seg2" content="" />
+        <meta name="WT.seg3" content="" />
+        <meta name="WT.seg4" content="" />
+        <meta name="WT.seg7" content="" />
+        <meta name="status" content="" />
+        <meta name="articlePage" content="1" />
+        <meta name="articleName" content="Government to spend £2bn on quantum computing" />
+        <meta name="articleAuthor" content="David Manners" />
+        <meta name="articleId" content="891372" />
+        <meta name="PublishDate" content="17/03/2026 06:35:38" />
+        		<style type="text/css" id="wp-custom-css">
+			.fc-consent-root .fc-stacks ul li:nth-of-type(2) {
+    display: none !important;
+}
+
+.fc-site-macro-logo.fc-header-image-container .fc-header-image{
+    display: none !important;
+}
+.fc-consent-root .fc-dialog .fc-header h2 {
+		margin-top:10px!important;
+    display: none !important;
+}
+.fc-consent-root .fc-dialog .fc-header h1{
+		padding-top:15px !important;
+}		</style>
+		
+    <script type="text/javascript">
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-4168817-16', 'auto');
+       ga('create', 'UA-4168817-42', 'auto', {'name': 'ABCAudit', 'alwaysSendReferrer': true});
+
+       ga(function() {
+           var tracker = ga.getByName('ABCAudit');
+        var originalSendHitTask = tracker.get('sendHitTask');
+
+        tracker.set('sendHitTask', function(model) {
+            var payLoad = model.get('hitPayload');
+            originalSendHitTask(model);
+            var gifRequest = new XMLHttpRequest();
+            gifRequest.open('GET', '/__utm.gif?'+ payLoad, true);
+            gifRequest.send(model.get('hitPayload'));
+        });
+       });
+
+       ga('send', 'pageview');
+       ga('ABCAudit.send', 'pageview');
+
+    </script>
+
+    <script type='text/javascript' src="https://static.electronicsweekly.com/js/ew_boilerplate.js"></script> 
+    <!-- <script type='text/javascript' src="https://www.electronicsweekly.com/wp-content/themes/ew/build/scripts/ew_boilerplate.js"></script> -->
+</head>
+<body id="top" class="wp-singular post-template-default single single-post postid-891372 single-format-standard wp-theme-ew user-can-subscribe tribe-no-js">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKNPKL9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58DV2QFC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+        <aside id="slide-out">
+            <div class="mobile-user-nav"></div>
+            <div class="search-mobile search-block">
+                    <form method="get" id="searchform" action="https://www.electronicsweekly.com/">
+                            <input type="text" id="s" name="s" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}"  />
+                            <button class="search-button" type="submit" value="Search"></button>
+                        </form>
+                </div><!-- .search-mobile /-->
+            <div id="mobile-menu"></div>
+        </aside><!-- #slide-out /-->
+    <div class="wrapper animated ">
+
+                    <div class="top-nav fade-in animated1 head_menu">
+
+                        <div class="top-menu"><ul id="menu-top-menu" class="menu"><li id="menu-item-845766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-845766"><a href="/about-us/">About Us</a></li>
+<li id="menu-item-845767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-845767"><a href="/contact-us/">Contact Us</a></li>
+<li id="menu-item-845768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-845768"><a href="/advertise/?utm_source=editorial&#038;utm_medium=website&#038;utm_campaign=advertise_promotion">Advertise</a></li>
+<li id="menu-item-488053" class="register-sign-up-newsletter menu-item menu-item-type-custom menu-item-object-custom menu-item-488053"><a href="/altlogin/">Newsletter sign-up</a></li>
+</ul></div> 
+                    
+    <ul id="not-registered">
+        
+                <li><a href='https://www.electronicsweekly.com/altlogin/' class='alt-login-link'>Login / Register</a></li>
+
+            </ul>
+
+                    <!-- <ul class="post-content-menu"><li><a href="" class="post-content-menu-link">Post Content</a></li></ul> -->
+
+        </div><!-- .top-menu /-->
+        
+        <header id="theme-header">
+        <div class="header-content fade-in animated1">
+                    <div class="mobileNav" id="mobileSections">
+                            <div class="mobile-toolbar">
+                                <div class="toolbar toggle container-sleeve">
+                                    <a id="slide-out-open" class="btn btnMenu" title="menu" href="#">
+                                        <span class="burger">&nbsp;</span><span class="menu">Menu</span>
+                                    </a>
+                                    <a id="slide-out-close" class="btn btnMenu" title="menu" href="#" style="display: none">
+                                        <span class="burger">&nbsp;</span><span class="menu">Menu</span>
+                                    </a>
+                                    <div class="account-container">
+                                        <div class="sleeve">
+                                            <a href="#" class="btn">
+                                                <span class="core-icon i-menu-account i-menu-account-dims">&nbsp;</span>
+                                            </a>
+                                            <div class="mobile-account-menu">
+                                                <ul>
+                                                    
+                <li><a href='https://www.electronicsweekly.com/altlogin/' class='alt-login-link'>Sign In</a></li>                                                                                                        
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toolbar">
+                                    <a href="/" class="mobile-logo">
+                                        <img src="https://static.electronicsweekly.com/wp-content/uploads/2025/10/02105926/EW-STACKEDLOGO-2025-WEB.webp" height="40"  alt="Electronics Weekly" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="container">
+
+            <div class="logo">
+
+                                <a title="Electronics Weekly" href="https://www.electronicsweekly.com/">
+                    <img src="https://static.electronicsweekly.com/wp-content/uploads/2025/10/02105926/EW-STACKEDLOGO-2025-WEB.webp"  height="90px" alt="Electronics Weekly" /><strong>Electronics Weekly </strong>
+                </a>
+
+            </div><!-- .logo /-->
+
+                            <div class="adv-top">
+
+                                <div id="Top">
+                                <script type="text/javascript">
+                                  if (jQuery(window).width() > 768) {
+                                    GA_googleFillSlot("Top");
+                                  }
+                                </script>
+                                </div>
+                                <div id="x01">
+                                <script type="text/javascript">
+                                  if (jQuery(window).width() <= 768) {
+                                    GA_googleFillSlot("x01");
+                                  }
+                                </script>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+            <div class="clear"></div>
+        </div>
+                                <nav id="main-nav" class="fade-in animated2 fixed-enabled">
+            <div class="container">
+                <div class="main-menu"><ul id="menu-main-menu" class="menu"><li id="menu-item-495279" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+<li id="menu-item-451377" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a href="/news/">News</a></li>
+<li id="menu-item-445267" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  current-post-ancestor  current-menu-parent  current-post-parent  menu-item-has-children"><a href="https://www.electronicsweekly.com/news/business/">Business</a>
+<ul class="sub-menu">
+	<li id="menu-item-445201" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/business/manufacturing/">Manufacturing</a></li>
+	<li id="menu-item-445129" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/business/distribution/">Distribution</a></li>
+	<li id="menu-item-445128" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/business/finance/">Finance</a></li>
+	<li id="menu-item-445132" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/business/market-research/">Market Research</a></li>
+	<li id="menu-item-445130" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/business/information-technology/">Information Technology</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-445193" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  menu-item-has-children"><a href="https://www.electronicsweekly.com/market-sectors/">Markets</a>
+<ul class="sub-menu">
+	<li id="menu-item-827995" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/ai/">AI</a></li>
+	<li id="menu-item-445134" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/automotive-electronics/">Automotive Electronics</a></li>
+	<li id="menu-item-445135" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/embedded-systems/">Embedded Systems</a></li>
+	<li id="menu-item-445136" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/industrial-electronics/">Industrial Electronics</a></li>
+	<li id="menu-item-445137" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/internet-of-things/">Internet of Things</a></li>
+	<li id="menu-item-445138" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/medical-electronics/">Medical Electronics</a></li>
+	<li id="menu-item-445139" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/military-aerospace-electronics/">Military/Aerospace Electronics</a></li>
+	<li id="menu-item-445140" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/market-sectors/power/">Power</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-445141" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  menu-item-has-children"><a href="https://www.electronicsweekly.com/news/design/">Design</a>
+<ul class="sub-menu">
+	<li id="menu-item-445142" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/design/communications/">Communications</a></li>
+	<li id="menu-item-445143" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/design/eda-and-ip/">EDA and IP</a></li>
+	<li id="menu-item-445144" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/design/legislation/">Legislation &amp; Skills</a></li>
+	<li id="menu-item-445210" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  current-post-ancestor  current-menu-parent  current-post-parent"><a href="https://www.electronicsweekly.com/news/research-news/">Research</a></li>
+	<li id="menu-item-815526" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/design/stem/">STEM Education</a></li>
+	<li id="menu-item-445214" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/design/test-and-measurement-2/">Testing</a></li>
+	<li id="menu-item-445215" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/design/university-electronics/">University Electronics</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-445149" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  menu-item-has-children"><a href="https://www.electronicsweekly.com/news/products/">Products</a>
+<ul class="sub-menu">
+	<li id="menu-item-445271" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/analogue-linear-mixed-signal-ics/">Analogue / Linear / Mixed Signal ICs</a></li>
+	<li id="menu-item-445159" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/fpga-pld/">FPGA / PLD</a></li>
+	<li id="menu-item-445160" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/led/">LED Lighting</a></li>
+	<li id="menu-item-445162" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/microprocessors/">Microprocessors</a></li>
+	<li id="menu-item-445164" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/power-supplies/">Power Supplies</a></li>
+	<li id="menu-item-445165" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/raspberry-pi-development/">Raspberry Pi Development</a></li>
+	<li id="menu-item-445166" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/rf-microwave-optoelectronics/">RF &amp; Microwave</a></li>
+	<li id="menu-item-445167" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/sensors-products/">Sensors &#038; Opto</a></li>
+	<li id="menu-item-445152" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/bus-systems-sbcs/">Single Board Computers</a></li>
+	<li id="menu-item-445169" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/news/products/test-measurement-products/">Test &amp; Measurement</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-445266" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  menu-item-has-children"><a href="https://www.electronicsweekly.com/blogs/">Blogs</a>
+<ul class="sub-menu">
+	<li id="menu-item-445173" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/blogs/electro-ramblings/">Electro Ramblings</a></li>
+	<li id="menu-item-445174" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/blogs/engineer-in-wonderland/">Engineer In Wonderland</a></li>
+	<li id="menu-item-445176" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/blogs/gadget-master/">Gadget Master</a></li>
+	<li id="menu-item-445178" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/blogs/mannerisms/">Mannerisms</a></li>
+	<li id="menu-item-445179" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/blogs/viewpoints/">Viewpoints</a></li>
+	<li id="menu-item-445177" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/blogs/led-luminaries/">Led Luminaries</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-857084" class="menu-item  menu-item-type-custom  menu-item-object-custom  menu-item-has-children"><a title="Electronics Weekly podcasts" href="https://www.electronicsweekly.com/electronics-weekly-podcast-chiips/">Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-857088" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a title="Electronics Weekly Podcast" target="_blank" href="https://www.electronicsweekly.com/electronics-weekly-podcast-chiips/">EW Podcast &#8211; CHIIPS</a></li>
+	<li id="menu-item-857087" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a title="Electronics Weekly video" href="/ew-tv/">EW TV</a></li>
+	<li id="menu-item-857086" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a title="Electronics Weekly Digital Editions" href="/digital-edition/">EW Digital Editions</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-445191" class="menu-item  menu-item-type-custom  menu-item-object-custom  menu-item-has-children"><a href="/events/">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-525389" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="https://www.electronicsweekly.com/events/">Calendar</a></li>
+	<li id="menu-item-518041" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a title="Electronica" href="https://www.electronicsweekly.com/news/electronica/">Electronica</a></li>
+	<li id="menu-item-445184" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a title="Elektra Awards" target="_blank" href="https://www.elektraawards.co.uk/">Electronics Weekly Elektra Awards</a></li>
+	<li id="menu-item-816362" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a title="EW BrightSparks" href="/brightsparks/">Electronics Weekly BrightSparks Awards</a></li>
+	<li id="menu-item-830392" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a title="Electronics Weekly Women Leaders in Electronics Awards" href="https://wliea.electronicsweekly.com/WLIEA2024/en/page/home">Electronics Weekly Women Leaders in Electronics Awards</a></li>
+	<li id="menu-item-518042" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a href="/tag/embedded-world/">Embedded World</a></li>
+	<li id="menu-item-889260" class="menu-item  menu-item-type-post_type  menu-item-object-page"><a href="https://www.electronicsweekly.com/energy-efficiency-for-ai/">Energy Efficiency for the AI Age</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+<li id="menu-item-655168" class="menu-item  menu-item-type-custom  menu-item-object-custom  menu-item-has-children"><a href="/whitepapers/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-809071" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a href="/ew-compare/?search_token=5055557-4&amp;series_token=505555">EW Compare &#8211; Comparison Search Engine</a></li>
+	<li id="menu-item-516441" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a href="https://ew.componentsearchengine.com/">Component search engine</a></li>
+	<li id="menu-item-765572" class="menu-item  menu-item-type-custom  menu-item-object-custom"><a href="/whitepapers/">Whitepapers and competitions</a></li>
+</ul> <!--End Sub Menu -->
+</li>
+</ul></div>
+                <div class="search-block">
+                    <form method="get" id="searchform" action="https://www.electronicsweekly.com/">
+                        <button class="search-button" type="submit" value="Search"></button>
+                        <input type="text" id="s" name="s" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}"  />
+                    </form>
+                </div><!-- .search-block /-->
+            </div><!-- .container /-->
+            <div id="DFP-EW-Undernav" class="undernav">
+                <script>
+                  if (jQuery(window).width() > 768) {
+                     GA_googleFillSlot("DFP-EW-Undernav");
+                  }
+                </script>
+            </div>
+        </nav><!-- .main-nav /-->
+        <div class="clear"></div>
+        <div id="loading"></div>
+
+        <!-- <div id="BillboardTop">
+            <script>
+              if (jQuery(window).width() > 768) {
+                GA_googleFillSlot("BillboardTop");
+              }
+            </script>
+        </div> -->
+
+        
+        </header><!-- #header /-->
+
+        <div class="container">
+
+    <div id="main-content" class="container fade-in animated3">
+            <!-- <div id="x02">
+                <script type="text/javascript">
+                  if (jQuery(window).width() <= 768) {
+                    GA_googleFillSlot("x02");
+                  }
+                </script>
+            </div> -->
+<div class="content-wrap">
+	<div class="content">
+		<div>
+
+			<div xmlns:v="http://rdf.data-vocabulary.org/#"  id="crumbs"><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" class="crumbs-home" href="https://www.electronicsweekly.com"><i class="tieicon-home"></i>Home</a></span> &raquo; <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://www.electronicsweekly.com/news/">News</a></span> &raquo; <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://www.electronicsweekly.com/news/business/">Business</a></span> <span class="current"></span></div>
+		<button
+    class="addToBookmarks
+    "
+    rel="User_AddToBookmarks"
+    >
+    Add to Bookmarks</button>
+				                
+									
+								
+	            		
+<p class="post-meta">
+		
+	<span class="post-meta-author">By  <a href="https://www.electronicsweekly.com/author/david-manners/" title="">David Manners </a></span>
+	
+	
+		
+	 <span class="tie-date">Posted on 17th March 2026 | Modified on 19th March 2026</span>	
+</p>
+<div class="clear"></div>
+	
+	            
+			<article class="post-listing post-891372 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-research-news tag-quantum">
+			
+	            
+	                        <div class="entry header">
+	                            <h1 class="name post-title entry-title" itemprop="itemReviewed" itemscope itemtype="http://schema.org/Thing"><span itemprop="name">Government to spend £2bn on quantum computing</span></h1>
+	                           <div class="intro"><p><p>The government announced today that it is to spend £2bn on quantum computing research over the next four years.</p></p>
+</div>
+	                            	                            
+								                           
+                        </div>
+                    
+                        			<div class="post-inner">
+
+				<div class="entry">
+					                                
+					
+<p>The Department of Science, Innovation and Technology (DSIT) says it is encouraging companies to initially<span class="Apple-converted-space"> </span>build prototype quantum computers with a view to having commercial versions available in the next decade.</p><div class="elect-content" style="margin-left: auto; margin-right: auto; text-align: center; " id="elect-221926788"><div id="x02">
+<script type="text/javascript"> if ($(window).width() <= 768) { googletag.display('x02'); } </script>
+</div>
+</div>
+<p>DSIT is targeting applications<span class="Apple-converted-space"> </span>in financial services, quantum navigation, energy and pharmaceuticals.</p><div class="elect-test" style="margin-left: auto; margin-right: auto; text-align: center; " id="elect-2067181610"><div id="DFP-EW-InRead1">
+<script type="text/javascript"> if ($(window).width() > 768) { googletag.display('DFP-EW-InRead1'); } </script>
+</div>
+<BR>
+</div>
+<p>The next step in the UK’s plans for quantum technology will help deliver personalised treatments,  potential cures for diseases, safeguard national security and deliver high-paid jobs – revolutionising the health and wealth of hardworking people across the UK and delivering on the government’s <a rel="image" href="https://www.gov.uk/government/collections/the-uks-modern-industrial-strategy-2025" target="_blank" rel="nofollow">Modern Industrial Strategy</a>.</p><div class="elect-post-content-2" style="margin-left: auto; margin-right: auto; text-align: center; " id="elect-1327617537"><div id="DFP-EW-InRead1-Mobile">
+<script type="text/javascript"> if ($(window).width() <= 768) { googletag.display('DFP-EW-InRead1-Mobile'); } </script>
+</div>
+</div><div class="elect-post-content-1" style="margin-left: auto; margin-right: auto; text-align: center; " id="elect-531144727"><?php echo do_shortcode('[inread_parallax slot="DFP-EW-InRead2-Mobile" width="300"]'); ?><style> #DFP-EW-InRead2-Mobile { display: block!important; } @media only screen and (max-width: 768px) {  } </style>
+<BR></div><div class="elect-post-content" style="margin-left: auto; margin-right: auto; text-align: center; " id="elect-745264562"><?php echo do_shortcode('[inread_parallax slot="DFP-EW-InRead2-Mobile" width="300"]'); ?><style> #DFP-EW-InRead2-Mobile { display: block!important; } @media only screen and (max-width: 768px) {  } </style></div>
+<p>The UK will  become the first country to benefit from revolutionary quantum computers, sensors and networks, and support the emergence of the next generation of leading British companies that will help shape the curve of progress.</p>
+<p>&#8220;As of today, the UK is the first country in the world to commit to an advanced procurement to build large-scale quantum computers on our shores by the early 2030s. Joining R&amp;D,  manufacturing, software, hardware and procurement into a single programme, we will be world leaders in developing and deploying large-scale quantum computers,&#8221; says DSIT.</p>
+<p>&#8220;These systems will be built in Britain – creating British jobs, new opportunities for British businesses and opening new routes of investment to flow into  our economy from all over the world.&#8221;</p>
+<p>Technology secretary Liz Kendall said: &#8220;I am determined this country grasps the benefits  quantum computing will bring. It is only by keeping pace with technological progress that we  can deliver the high-paid jobs, cutting-edge public services and innovations which change lives.</p>
+<p>&#8220;Today’s announcements are an investment in our future &#8211; unlocking better health, wealth and more opportunities for communities across the country.</p>
+<p>&#8220;This government is ushering in a quantum leap &#8211; making the choice today to back UK scientists, companies, and innovators so we can deliver a future that works for all.&#8221;</p>
+<p>ProQure:Scaling UK Quantum Computing &#8221;will launch next week, where companies will be invited to table proposals to partner with us to deliver state-of-the-art prototypes for evaluation.</p>
+<p>&#8220;Prototypes will then be assessed, with the most promising companies invited to deliver larger scale machines for use by scientists, researchers, the public sector and businesses, as part of our national computing infrastructure.</p>
+<p><img decoding="async" class="alignleft wp-image-305788 size-thumbnail" src="https://static.electronicsweekly.com/wp-content/uploads/sites/26/2013/09/Quantum-computing-at-Bristol-150x124.jpg" alt="Government to spend £2bn on quantum computing" width="150" height="124" />&#8220;This will also accelerate growth of the UK’s already thriving quantum industry-supporting homegrown firms as they scale-up and grow while building an environment which encourages private backers from around the world to pour money into the sector, capturing everything from hardware, processors and manufacturing through to sustained investment in UK supply chains.&#8221;</p>
+<p>Estimates show <a rel="image" href="https://www.oxfordeconomics.com/resource/quantum-computing-could-boost-uk-productivity-and-gdp-growth-but-government-support-is-crucial/" target="_blank" rel="nofollow">quantum could boost productivity by 7% in the next two decades</a>, creating more than 100,000 jobs in the process. That would mean £212bn-worth of economic impact – the equivalent of adding the <a rel="image" href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/regionaleconomicactivitybygrossdomesticproductuk/1998to2023" target="_blank" rel="nofollow">combined annual GDP of Wales and Northern Ireland</a>.</p>
+<p>The technology is already being put to work across the country, with Q-BIOMED researchers at the University College London exploring wearable brain scanners to support people suffering from epilepsy.</p>
+<p>Laying the foundations that will give the UK a rich pool of quantum talent, the government’s flagship TechFirst programme will launch new partnerships with companies in the sector – offering up to 100 fully funded internships. This will give people the tools they need to embark on future, high-paying careers in the field.</p>
+<p>The UK launched  a National Quantum Technologies programme in 2014, which has already been backed by more than £1bn in public funding to support skills, research and infrastructure.</p>
+<p>The UK’s credentials as a global magnet for private investment are also thriving. Coinciding with today’s announcements, several global companies are announcing technical breakthroughs delivered in the UK, as well as new and recent investment commitments including:</p>
+<ul>
+<li>Infleqtion has delivered a 100-qubit quantum computer at the National Quantum Computing Centre, marking a significant step forward in developing large-scale systems for operational capability</li>
+<li>Vescent has selected the UK’s National Physical Laboratory for its next office outside the US, backing worldleading talent and expertise across UK institutions</li>
+<li>IonQ has formed a major strategic research partnership with Cambridge University. This will create the IonQ Quantum Innovation Centre, hosting IonQ’s most advanced 256-qubit computer, accelerating research and discovery in the UK.</li>
+</ul>
+<p>The raft of measures set out today lays the foundations for new investment, jobs, and improved public services across the country, says the DSIT.</p>
+<p><a rel="image" href="https://www.electronicsweekly.com/tag/quantum/">See all our Quantum content</a>.</p>
+                                    
+										
+									</div><!-- .entry /-->
+
+										<section id="related_posts">
+		<div class="block-head">
+                        <header class="cat-box-title">
+                            <div>Recommended Articles</div>
+                            <span class="borderline"></span>
+                        </header>
+                </div>
+		<ul class="post-listing" rel="Article_Recommended">
+						<li class="related-item">
+							
+				<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/news/business/quantum-computer-for-cambridge-university-2026-03/" title="Permalink to Quantum computer for Cambridge University" rel="bookmark">
+						<img width="300" height="200" src="https://static.electronicsweekly.com/wp-content/uploads/2026/03/11150742/IMG_1861-300x200.webp" class="attachment-tie-large size-tie-large wp-post-image"  decoding="async" fetchpriority="high" alt="IMG_1861-300x200.webp" />											</a>
+				</div><!-- post-thumbnail /-->
+							
+				<h3><a href="https://www.electronicsweekly.com/news/business/quantum-computer-for-cambridge-university-2026-03/" title="Permalink to Quantum computer for Cambridge University" rel="bookmark">Quantum computer for Cambridge University</a></h3>
+			</li>
+						<li class="related-item">
+							
+				<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/news/business/eu-quantum-effort-2026-02/" title="Permalink to EU quantum effort" rel="bookmark">
+						<img width="300" height="200" src="https://static.electronicsweekly.com/wp-content/uploads/2026/02/03170650/EU-Supreme-300x200.webp" class="attachment-tie-large size-tie-large wp-post-image"  decoding="async" loading="lazy" alt="EU-Supreme-300x200.webp" />											</a>
+				</div><!-- post-thumbnail /-->
+							
+				<h3><a href="https://www.electronicsweekly.com/news/business/eu-quantum-effort-2026-02/" title="Permalink to EU quantum effort" rel="bookmark">EU quantum effort</a></h3>
+			</li>
+						<li class="related-item">
+							
+				<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/news/business/ionq-to-buy-skywater-2026-01/" title="Permalink to IonQ to buy Skywater" rel="bookmark">
+						<img width="300" height="200" src="https://static.electronicsweekly.com/wp-content/uploads/2022/06/10100050/SkyWater-MN-300x200.jpg" class="attachment-tie-large size-tie-large wp-post-image"  decoding="async" loading="lazy" alt="SkyWater-MN-300x200.jpg" />											</a>
+				</div><!-- post-thumbnail /-->
+							
+				<h3><a href="https://www.electronicsweekly.com/news/business/ionq-to-buy-skywater-2026-01/" title="Permalink to IonQ to buy Skywater" rel="bookmark">IonQ to buy Skywater</a></h3>
+			</li>
+						<li class="related-item last">
+							
+				<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/news/business/100bn-fund-for-quantum-hooks-up-with-harwell-cluster-2025-11/" title="Permalink to £100m fund for quantum hooks up with Harwell Cluster" rel="bookmark">
+						<img width="300" height="200" src="https://static.electronicsweekly.com/wp-content/uploads/2025/11/24160722/IMG_1352-300x200.webp" class="attachment-tie-large size-tie-large wp-post-image"  decoding="async" loading="lazy" srcset="https://static.electronicsweekly.com/wp-content/uploads/2025/11/24160722/IMG_1352-300x200.webp 300w, https://static.electronicsweekly.com/wp-content/uploads/2025/11/24160722/IMG_1352-1024x683.webp 1024w, https://static.electronicsweekly.com/wp-content/uploads/2025/11/24160722/IMG_1352-768x512.webp 768w, https://static.electronicsweekly.com/wp-content/uploads/2025/11/24160722/IMG_1352-1536x1024.webp 1536w, https://static.electronicsweekly.com/wp-content/uploads/2025/11/24160722/IMG_1352.webp 1600w" sizes="auto, (max-width: 300px) 100vw, 300px" alt="IMG_1352-300x200.webp" />											</a>
+				</div><!-- post-thumbnail /-->
+							
+				<h3><a href="https://www.electronicsweekly.com/news/business/100bn-fund-for-quantum-hooks-up-with-harwell-cluster-2025-11/" title="Permalink to £100m fund for quantum hooks up with Harwell Cluster" rel="bookmark">£100m fund for quantum hooks up with Harwell Cluster</a></h3>
+			</li>
+					</ul>
+	</section>
+									<div class="clear"></div>
+
+				<span style="display:none"><a href="https://www.electronicsweekly.com/tag/quantum/" rel="tag">Quantum</a></span>				<span style="display:none" class="updated">2026-03-17</span>
+								<div style="display:none" class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person"><strong class="fn" itemprop="name"><a href="https://www.electronicsweekly.com/author/david-manners/" title="Posts by David Manners" rel="author">David Manners</a></strong></div>
+							</div><!-- .post-inner -->
+                        																  <div class="clear"></div>
+								  <div class="author-info">
+								    								      <img class="author-img" src="https://static.electronicsweekly.com/wp-content/uploads/2015/08/25162118/David-Manners-011-small-150x150.jpg" alt="David Manners" />
+								    								    <div class="author-info-content">
+								      <p><strong>
+								      	<a href="https://www.electronicsweekly.com/author/david-manners/">
+								      		David Manners								      	</a>
+								      </strong></p>
+								      <p>David Manners has more than forty-years experience writing about the electronics industry, its major trends and leading players. As well as writing business, components and research news, he is the author of the site's most popular blog, Mannerisms. This features series of posts such as Fables, Markets, Shenanigans, and Memory Lanes, across a wide range of topics.</p>
+								    </div>
+								  </div>
+								
+				
+	                	<div class="share-post">
+	<script>
+	window.___gcfg = {lang: 'en-US'};
+	(function(w, d, s) {
+	  function go(){
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.src = url; js.id = id;
+		  fjs.parentNode.insertBefore(js, fjs);
+		};
+		load('//connect.facebook.net/en/all.js#xfbml=1', 'fbjssdk');
+		load('https://apis.google.com/js/plusone.js', 'gplus1js');
+		load('//platform.twitter.com/widgets.js', 'tweetjs');
+	  }
+	  if (w.addEventListener) { w.addEventListener("load", go, false); }
+	  else if (w.attachEvent) { w.attachEvent("onload",go); }
+	}(window, document, 'script'));
+	</script>
+	<ul>			
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/" data-text="Government to spend £2bn on quantum computing" data-via="" data-lang="en">tweet</a></li>
+				<li>
+			<div id="fb-root"></div>
+			<div class="fb-share-button" data-href="https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/" data-layout="button_count" data-width="90"></div>
+		</li>
+						<li><script src="https://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/" data-counter="right"></script></li>
+		
+			<li><a href="mailto:?body=https://www.electronicsweekly.com/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/"><i class="fa fa-envelope-o fa-6" aria-hidden="true"></i> Email</a></li>
+		</ul>
+	<div class="clear"></div>
+</div> <!-- .share-post -->					
+			</article><!-- .post-listing -->
+	                
+	                <div rel="Article_Scroll"></div>
+	                
+			<p class="post-tag">Tagged with: <a href="https://www.electronicsweekly.com/tag/quantum/" rel="tag">Quantum</a></p>
+	                <div class="newsletter">
+	                    <h2> Get <strong> Electronics Weekly </strong> every day </h2>
+	                    <form action="https://www.electronicsweekly.com/newsletters/" class="sky-form inline" method="post" validate="validate">
+	                        <fieldset>		
+	                            <div class="row">
+	                                    <section class="col col-9">
+	                                            <label class="input">
+	                                                <input name="email" value="" placeholder="Email Address" type="email">
+	                                            </label>
+	                                    </section>
+	                                    <section class="col col-3">
+	                                            <button type="submit" class="button" rel="Article_Newsletter">Subscribe</button>
+	                                    </section>
+	                            </div>
+	                        </fieldset>
+	                    </form>
+
+	                </div>
+	                
+						
+						<div class="post-navigation" rel="Article_NextPrev">
+				<div class="post-previous"><a href="https://www.electronicsweekly.com/news/business/memory-shortage-to-last-4-5-years-says-sk-boss-2026-03/" rel="prev"><span>Previous:</span> Memory shortage to last 4-5 years says SK boss</a></div>
+				<div class="post-next"><a href="https://www.electronicsweekly.com/news/business/nvidia-announces-seven-vera-rubin-chips-in-volume-production-2026-03/" rel="next"><span>Next:</span> Nvidia announces seven Vera Rubin chips in volume production</a></div>
+			</div><!-- .post-navigation -->
+						
+			
+			
+					<div id="comments">
+
+               
+
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/news/business/governmet-to-spend-2bn-on-quantum-computing-2026-03/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.electronicsweekly.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="form-submit"><input rel="Article_Comment" name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='891372' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f5bcde830a" /></p>      
+                <input type="hidden" id="g-recaptcha-response-v3" name="g-recaptcha-response-v3"><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="160"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+		</div><!-- .theiaStickySidebar -->
+	</div><!-- .content -->
+<aside class="sidebar-narrow">
+		<div class="theiaStickySidebar">
+			<div id="text-html-widget-14" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>DIGITAL EDITIONS</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p><a href="https://www.electronicsweekly.com/digital-edition/">Click to list the Digital Editions of the <i>Electronics Weekly</i> magazine. Then select the month to view.</a></p><p><a href="https://www.electronicsweekly.com/digital-edition/">
+<img src="https://static.electronicsweekly.com/wp-content/uploads/2026/03/19091946/EW-cover-Apr.webp" width="160"></a></p><p><a href="https://www.electronicsweekly.com/digital-edition/" ><b>List all the magazines »</b></a></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="text-html-widget-20" class="widget text-html"><div>			<div id="text-html-widget-20" class="text-html-box" >
+			<div id="Position1">                         
+<script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Position1'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-23" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>Electronics Weekly @ 65!</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>Read our special features celebrating 65 years of <i>Electronics Weekly</i> and looking ahead to the future of the industry.</p>
+<p><a href="https://www.electronicsweekly.com/news/business/celebrating-65-years-of-electronics-weekly-2025-09/"><b>Read the Electronics Weekly @ 65 features »</b></a>
+<p><a href="https://www.electronicsweekly.com/news/business/celebrating-65-years-of-electronics-weekly-2025-09/"><img src="https://static.electronicsweekly.com/wp-content/uploads/2025/09/09095321/EW-at-65.webp" width="143"></a></p>
+<p>Read the first ever <i>Electronics Weekly</i> online: 7th September 1960. We've scanned the very first edition so you can enjoy it.</p>
+<p><a href="https://www.electronicsweekly.com/news/editors-picks-reflections-on-the-first-issue-of-electronics-weekly-2025-09/"><b>Read the very first edition »</b></a></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="text-html-widget-30" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>Tune into EW&#8217;s CHIIPS Podcast</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>The excellent <i>Electronics Weekly</i> podcast, CHIIPS, is brought to you by our editor Caroline Hayes. Hear interesting insights from a range of industry figures.</p><p><a href="https://www.electronicsweekly.com/electronics-weekly-podcast-chiips/" target="_blank">
+<img src="https://static.electronicsweekly.com/wp-content/uploads/2025/03/03123438/EW-CHIIPS-podcast-podbean-200.jpg" width="160"></a></p><p><a href="https://www.electronicsweekly.com/electronics-weekly-podcast-chiips/" target="_blank"><b>Catch all the episodes »</b></a></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="posts-list-widget-3" class="widget posts-list"><div class="widget-top"><header class="cat-box-title">
+                        <div>Most Popular			</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container">					<ul   rel="General_Popular" >
+								<li>
+							<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/blogs/gadget-master/general/sign-up-for-the-newsletter-2-2026-03/" title="Permalink to Get the Gadget Master newsletter!" rel="bookmark"><img width="646" height="150" src="https://static.electronicsweekly.com/gadget-master/wp-content/uploads/sites/4/2014/04/gadget-master.png" class="attachment-tie-medium size-tie-medium wp-post-image"  decoding="async" loading="lazy" srcset="https://static.electronicsweekly.com/gadget-master/wp-content/uploads/sites/4/2014/04/gadget-master.png 646w, https://static.electronicsweekly.com/gadget-master/wp-content/uploads/sites/4/2014/04/gadget-master-300x70.png 300w" sizes="auto, (max-width: 646px) 100vw, 646px" alt="gadget-master.png" /><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3 ><a href="https://www.electronicsweekly.com/blogs/gadget-master/general/sign-up-for-the-newsletter-2-2026-03/" title="Get the Gadget Master newsletter!">Get the Gadget Master newsletter!</a></h3>
+			</li>
+				<li>
+							<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/blogs/electro-ramblings/site-update/get-mannerisms-gadget-master-daily-weekly-newsletter-form-2026-03/" title="Permalink to Get Mannerisms, Gadget Master, the Daily and the Weekly, in newsletter form" rel="bookmark"><img width="710" height="537" src="https://static.electronicsweekly.com/wp-content/uploads/2023/01/24104603/Mannerisms-newsletter.jpg" class="attachment-tie-medium size-tie-medium wp-post-image"  decoding="async" loading="lazy" srcset="https://static.electronicsweekly.com/wp-content/uploads/2023/01/24104603/Mannerisms-newsletter.jpg 710w, https://static.electronicsweekly.com/wp-content/uploads/2023/01/24104603/Mannerisms-newsletter-300x227.jpg 300w" sizes="auto, (max-width: 710px) 100vw, 710px" alt="Mannerisms-newsletter.jpg" /><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3 ><a href="https://www.electronicsweekly.com/blogs/electro-ramblings/site-update/get-mannerisms-gadget-master-daily-weekly-newsletter-form-2026-03/" title="Get Mannerisms, Gadget Master, the Daily and the Weekly, in newsletter form">Get Mannerisms, Gadget Master, the Daily and the Weekly, in newsletter form</a></h3>
+			</li>
+				<li>
+							<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/news/embedded-world-2026-get-the-full-electronics-weekly-guide-2026-03/" title="Permalink to Embedded World 2026: Get the full Electronics Weekly Guide" rel="bookmark"><img width="798" height="496" src="https://static.electronicsweekly.com/wp-content/uploads/2025/03/10102407/Embedded-World-Europe-large.webp" class="attachment-tie-medium size-tie-medium wp-post-image"  decoding="async" loading="lazy" srcset="https://static.electronicsweekly.com/wp-content/uploads/2025/03/10102407/Embedded-World-Europe-large.webp 798w, https://static.electronicsweekly.com/wp-content/uploads/2025/03/10102407/Embedded-World-Europe-large-300x186.webp 300w, https://static.electronicsweekly.com/wp-content/uploads/2025/03/10102407/Embedded-World-Europe-large-768x477.webp 768w" sizes="auto, (max-width: 798px) 100vw, 798px" alt="Embedded-World-Europe-large.webp" /><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3 ><a href="https://www.electronicsweekly.com/news/embedded-world-2026-get-the-full-electronics-weekly-guide-2026-03/" title="Embedded World 2026: Get the full Electronics Weekly Guide">Embedded World 2026: Get the full Electronics Weekly Guide</a></h3>
+			</li>
+				<li>
+							<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/blogs/gadget-master/raspberry-pi-gadget-master/raspberry-pi-flash-drive-writes-as-fast-as-usb-3-0-will-go-2026-02/" title="Permalink to Raspberry Pi Flash Drive writes as fast as USB 3.0 will go" rel="bookmark"><img width="800" height="533" src="https://static.electronicsweekly.com/wp-content/uploads/2026/02/24150140/Flash-drive-lifestyle-smaller-800x533-1.webp" class="attachment-tie-medium size-tie-medium wp-post-image"  decoding="async" loading="lazy" srcset="https://static.electronicsweekly.com/wp-content/uploads/2026/02/24150140/Flash-drive-lifestyle-smaller-800x533-1.webp 800w, https://static.electronicsweekly.com/wp-content/uploads/2026/02/24150140/Flash-drive-lifestyle-smaller-800x533-1-300x200.webp 300w, https://static.electronicsweekly.com/wp-content/uploads/2026/02/24150140/Flash-drive-lifestyle-smaller-800x533-1-768x512.webp 768w" sizes="auto, (max-width: 800px) 100vw, 800px" alt="Flash-drive-lifestyle-smaller-800x533-1.webp" /><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3 ><a href="https://www.electronicsweekly.com/blogs/gadget-master/raspberry-pi-gadget-master/raspberry-pi-flash-drive-writes-as-fast-as-usb-3-0-will-go-2026-02/" title="Raspberry Pi Flash Drive writes as fast as USB 3.0 will go">Raspberry Pi Flash Drive writes as fast as USB 3.0 will go</a></h3>
+			</li>
+				<li>
+							<div class="post-thumbnail">
+					<a href="https://www.electronicsweekly.com/blogs/gadget-master/robot/swarming-robots-bid-to-translate-music-into-light-and-motion-2026-02/" title="Permalink to Swarming robots bid to translate music into light and motion" rel="bookmark"><img width="800" height="618" src="https://static.electronicsweekly.com/wp-content/uploads/2026/02/24122913/Swarming-robots.webp" class="attachment-tie-medium size-tie-medium wp-post-image"  decoding="async" loading="lazy" srcset="https://static.electronicsweekly.com/wp-content/uploads/2026/02/24122913/Swarming-robots.webp 800w, https://static.electronicsweekly.com/wp-content/uploads/2026/02/24122913/Swarming-robots-300x232.webp 300w, https://static.electronicsweekly.com/wp-content/uploads/2026/02/24122913/Swarming-robots-768x593.webp 768w" sizes="auto, (max-width: 800px) 100vw, 800px" alt="Swarming-robots.webp" /><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3 ><a href="https://www.electronicsweekly.com/blogs/gadget-master/robot/swarming-robots-bid-to-translate-music-into-light-and-motion-2026-02/" title="Swarming robots bid to translate music into light and motion">Swarming robots bid to translate music into light and motion</a></h3>
+			</li>
+						</ul>
+			<div class="clear"></div>
+	</div></div><!-- .widget /--><div id="text-html-widget-12" class="widget text-html"><div>			<div id="text-html-widget-12" class="text-html-box" >
+			<div id="posts-list-widget-3" class="widget posts-list custom-widget">
+<div class="widget-top"><header class="cat-box-title">
+			                        <div>Work Break</div>
+			                        <span class="borderline"></span>
+			                        </header></div>
+		
+<div class="widget-container">
+
+
+<ul rel="General_Workbreak">
+			<li>
+									
+							<div class="post-thumbnail">
+								<a href="//www.electronicsweekly.com/sudoku/" title="Sudoku" rel="bookmark"><img src="https://static.electronicsweekly.com/wp-content/uploads/2023/04/27181603/Suduko-example.jpg" class="attachment-tie-small wp-post-image" alt="Sudoku" height="70" width="70"><span class="overlay-icon"></span></a>
+
+							</div><!-- post-thumbnail /-->
+										<h3><a href="//www.electronicsweekly.com/sudoku/" title="Sudoku">Sudoku</a></h3>
+			</li>
+
+						</ul>
+			<div class="clear"></div>
+	</div>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="posts-list-widget-2" class="widget posts-list"><div class="widget-top"><header class="cat-box-title">
+                        <div>Latest Comments			</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container">					<ul class="comment-list"  rel="General_Comments"  >
+								<li>
+				<a href="https://www.electronicsweekly.com/blogs/mannerisms/democracy-and-standards/5g-has-widened-the-digital-divide-2026-03/#comment-1541290">
+				<strong>zeitghost</strong> on <strong>5G has widened the digital divide:</strong> ‘We are doomed.... ‘</a>
+			</li>
+			<li>
+				<a href="https://www.electronicsweekly.com/blogs/mannerisms/fable/fable-the-german-who-loved-england-and-became-a-lord-2026-03/#comment-1541251">
+				<strong>David Manners</strong> on <strong>Fable: The German Who Loved England And Became A Lord:</strong> ‘Yes indeed Jamo - Hugo it was - the 1st Baron Hirst... ‘</a>
+			</li>
+			<li>
+				<a href="https://www.electronicsweekly.com/blogs/mannerisms/consumer/billionaires-2026-03/#comment-1541244">
+				<strong>Tim van Iersel</strong> on <strong>Billionaires:</strong> ‘justice for the bottom billionaires!... ‘</a>
+			</li>
+			<li>
+				<a href="https://www.electronicsweekly.com/blogs/mannerisms/fable/fable-the-german-who-loved-england-and-became-a-lord-2026-03/#comment-1541232">
+				<strong>jamo spingal</strong> on <strong>Fable: The German Who Loved England And Became A Lord:</strong> ‘Hugo Hirst (Hirsch) of GEC ? Gen AI is good at this stuff I... ‘</a>
+			</li>
+					</ul>
+			<div class="clear"></div>
+	</div></div><!-- .widget /--><div id="text-html-widget-10" class="widget text-html"><div>			<div id="text-html-widget-10" class="text-html-box" >
+			
+<div id="Position2">
+                                <script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Position2'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-19" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>Don&#8217;t miss out on EW Newsletters</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>Get our news, blogs and comments straight to your inbox! Sign up for the <i>Electronics Weekly</i> newsletters: Mannerisms, Gadget Master and the Daily and Weekly roundups.</p><p><a href="https://www.electronicsweekly.com/blogs/electro-ramblings/general-electronics/mannerisms-gadget-master-daily-weekly-newsletter-form-2018-02/">
+<img src="https://static.electronicsweekly.com/wp-content/uploads/2017/05/25161521/Daily-News-newsletter-160x190.jpg" width="160"></a></p><p><a href="https://www.electronicsweekly.com/blogs/electro-ramblings/general-electronics/mannerisms-gadget-master-daily-weekly-newsletter-form-2018-02/"><b>Find out more »</b></a></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="media_image-2" class="widget widget_media_image"><div class="widget-top"><header class="cat-box-title">
+                        <div>Digital Edition</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><a href="https://www.electronicsweekly.com/digital-edition/"><img width="226" height="300" src="https://static.electronicsweekly.com/wp-content/uploads/2026/03/19091946/EW-cover-Apr.webp" class="image wp-image-891526  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" title="Digital Edition" decoding="async" loading="lazy" /></a></div></div><!-- .widget /-->		</div>
+</aside>
+<aside class="sidebar">
+		<div class="theiaStickySidebar">
+			<div id="text-html-widget-17" class="widget text-html"><div>			<div id="text-html-widget-17" class="text-html-box" >
+						</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-1" class="widget text-html"><div>			<div id="text-html-widget-1" class="text-html-box" >
+			<div id="Right1">
+<script> 
+if ($(window).width() > 768) {
+ googletag.cmd.push(function() { googletag.display('Right1'); });      
+}
+ </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="social-1" class="widget social-icons-widget">			<div class="widget social-icons-widget">
+					<div class="social-icons icon_32" rel="General_Social">
+		<a class="ttip" title="Rss" rel="noopener noreferrer" href="https://www.electronicsweekly.com/feed/" target="_blank"><i class="tieicon-rss"></i></a><a class="ttip" title="Facebook" rel="noopener noreferrer" href="https://www.facebook.com/ElectronicsWeekly" target="_blank"><i class="tieicon-facebook"></i></a><a class="ttip twitter" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/ElectronicsNews" target="_blank"><img decoding="async" loading="lazy" src="https://cdn-uploads.emap.com/wp-content/uploads/2023/09/07153126/Twitter-X-White-Logo-PNG.png" alt="" class="wp-image-5296" width="13" height="12"></a><a class="ttip" title="LinkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/company/electronics-weekly/" target="_blank"><i class="tieicon-linkedin"></i></a><a class="ttip" title="Youtube" rel="noopener noreferrer" href="http://www.youtube.com/c/electronicsweekly " target="_blank"><i class="tieicon-youtube"></i></a>	</div>
+
+			<!-- </div> -->
+		</div></div><!-- .widget /--><div id="text-html-widget-15" class="widget text-html"><div>			<div id="text-html-widget-15" class="text-html-box" >
+			<div class="subscribe">
+  <a href="https://www.electronicsweekly.com/altlogin/"  class="register-sign-up-newsletter" >
+    <div class="subscribe-content">
+      <h4>Register and Sign up for <span>e-Newsletter</span></h4>
+    </div>
+    <div class="subscribe-icon"></div>
+  </a>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-11" class="widget text-html"><div>			<div id="text-html-widget-11" class="text-html-box" >
+			<div id="Right2">                                
+<script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Right2'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-25" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>Space Electronics</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>Keep up with developments relating to space technology - satellite technology, PNT, thermal imaging, SatIoT, spaceports and more</p>
+<p><a href="https://www.electronicsweekly.com/market-sectors/military-aerospace-electronics/"><b>View our busy aerospace section »</b></a></p>
+<p><a href="https://www.electronicsweekly.com/market-sectors/military-aerospace-electronics/"><img src="https://static.electronicsweekly.com/wp-content/uploads/2023/03/07114359/Clearspace-detail.jpg" width="275"></a></p>
+<p><i>Image: ESA</i></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="text-html-widget-3" class="widget text-html"><div>			<div id="text-html-widget-3" class="text-html-box" >
+			<div id="Right3">
+<script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Right3'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-5" class="widget text-html"><div>			<div id="text-html-widget-5" class="text-html-box" >
+			<div id="Right4">
+<script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Right4'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-24" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>Electronics Weekly @ 65!</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>Read our special supplement celebrating 65 years of <i>Electronics Weekly</i> and looking ahead to the future of the industry.</p>
+<p><a href="https://www.electronicsweekly.com/news/business/celebrating-65-years-of-electronics-weekly-2025-09/"><b>Read the Electronics Weekly @ 65 feature »</b></a>
+<p><a href="https://www.electronicsweekly.com/news/read-first-ever-electronics-weekly-line-7th-september-1960-2020-09/"><img src="https://static.electronicsweekly.com/wp-content/uploads/2025/09/09095321/EW-at-65.webp" width="143"></a></p>
+<p>Read the first ever <i>Electronics Weekly</i> online: 7th September 1960. We've scanned the very first edition so you can enjoy it.</p>
+<p><a href="https://www.electronicsweekly.com/news/read-first-ever-electronics-weekly-line-7th-september-1960-2020-09/"><b>Read the very first edition »</b></a></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="text-html-widget-21" class="widget text-html"><div>			<div id="text-html-widget-21" class="text-html-box" >
+			<div id="DFP-EW-MPU-MOBILE">  
+<script>
+if ($(window).width() <= 768) {
+                                    googletag.cmd.push(function() { googletag.display('DFP-EW-MPU-MOBILE'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-26" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>IoT &#8211; Internet of Things</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>Keep up with developments relating to the Internet of Things (IoT) - Industrial IoT, sensors, Edge AI, battery technology, SatIoT and more</p>
+<p><a href="https://www.electronicsweekly.com/market-sectors/internet-of-things/"><b>View our popular Internet of Things section »</b></a></p>
+<p><a href="https://www.electronicsweekly.com/market-sectors/internet-of-things/"><img src="https://static.electronicsweekly.com/wp-content/uploads/2022/08/24171429/ESA-NAVISP_for_driving_pillars-300x169.jpg" width="275"></a></p>
+<p><i>Image: ESA</i></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="text-html-widget-29" class="widget text-html"><div>			<div id="text-html-widget-29" class="text-html-box" >
+			<div id="Right5">
+<script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Right5'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /--><div id="text-html-widget-27" class="widget text-html"><div class="widget-top"><header class="cat-box-title">
+                        <div>Power</div>
+                        <span class="borderline"></span>
+                        </header></div>
+						<div class="widget-container"><div ><p>Keep up with developments relating to Power electronics - MOSFETs, batteries, PSUs and more, for example</p>
+<p><a href="https://www.electronicsweekly.com/market-sectors/power/"><b>View our busy Power section »</b></a></p>
+<p><a href="https://www.electronicsweekly.com/market-sectors/power/"><img src="https://static.electronicsweekly.com/wp-content/uploads/2024/03/26104449/Infineon-top-side-cooled-mosfet-SSO10T-300x200.jpg" width="275"></a></p>
+<p><i>Image: Infineon</i></p>
+				</div><div class="clear"></div></div></div><!-- .widget /--><div id="text-html-widget-28" class="widget text-html"><div>			<div id="text-html-widget-28" class="text-html-box" >
+			<div id="Right6">
+<script>
+if ($(window).width() > 768) {
+                                    googletag.cmd.push(function() { googletag.display('Right6'); });
+}
+                                </script>
+</div>			</div>
+		</div></div><!-- .widget /-->		</div>
+</aside>
+</div> <!-- .content-wrap -->
+
+
+		<div class="clear"></div>
+	</div><!-- .container /-->
+		</div><!-- .container -->
+	<script type="text/javascript">
+  	if (jQuery(window).width() <= 768) {
+    	googletag.cmd.push(function() { googletag.display('x03'); });
+  	}
+</script>
+<footer class="fade-in animated4">
+	<div id="footer-widget-area" class="wide-narrow-2c container">
+
+			<div id="footer-first" class="footer-widgets-box">
+			<div id="nav_menu-1" class="footer-widget widget_nav_menu"><div class="footer-widget-top"><div>News</div></div>
+						<div class="footer-widget-container"><div class="menu-ew-news-container"><ul id="menu-ew-news" class="menu"><li id="menu-item-445248" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445248"><a href="https://www.electronicsweekly.com/market-sectors/embedded-systems/">Embedded Systems</a></li>
+<li id="menu-item-445249" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445249"><a href="https://www.electronicsweekly.com/news/products/led/">LED Lighting</a></li>
+<li id="menu-item-445250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445250"><a href="https://www.electronicsweekly.com/market-sectors/power/">Power</a></li>
+<li id="menu-item-445252" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445252"><a href="https://www.electronicsweekly.com/news/design/communications/">Communications</a></li>
+<li id="menu-item-445253" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445253"><a href="https://www.electronicsweekly.com/market-sectors/internet-of-things/">Internet of Things</a></li>
+<li id="menu-item-445254" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445254"><a href="https://www.electronicsweekly.com/market-sectors/automotive-electronics/">Automotive Electronics</a></li>
+<li id="menu-item-445262" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445262"><a href="https://www.electronicsweekly.com/news/business/finance/">Finance</a></li>
+</ul></div></div></div><!-- .widget /--><div id="nav_menu-2" class="footer-widget widget_nav_menu"><div class="footer-widget-top"><div>Blogs</div></div>
+						<div class="footer-widget-container"><div class="menu-ew-blogs-container"><ul id="menu-ew-blogs" class="menu"><li id="menu-item-445256" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445256"><a href="https://www.electronicsweekly.com/blogs/electro-ramblings/">Electro Ramblings</a></li>
+<li id="menu-item-445258" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445258"><a href="https://www.electronicsweekly.com/blogs/gadget-master/">Gadget Master</a></li>
+<li id="menu-item-445259" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445259"><a href="https://www.electronicsweekly.com/blogs/engineer-in-wonderland/">Engineer In Wonderland</a></li>
+<li id="menu-item-445261" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-445261"><a href="https://www.electronicsweekly.com/blogs/mannerisms/">Mannerisms</a></li>
+</ul></div></div></div><!-- .widget /--><div id="nav_menu-3" class="footer-widget widget_nav_menu"><div class="footer-widget-top"><div>EW Portfolio</div></div>
+						<div class="footer-widget-container"><div class="menu-ew-portfolio-container"><ul id="menu-ew-portfolio" class="menu"><li id="menu-item-445237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445237"><a href="https://www.electronicsweekly.com/about-us/">About Us</a></li>
+<li id="menu-item-445234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-445234"><a href="https://www.elektraawards.co.uk/">Elektra Awards</a></li>
+<li id="menu-item-880700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-880700"><a href="https://wliea.electronicsweekly.com/WLIEA2024/en/page/home">Women Leaders In Electronics</a></li>
+<li id="menu-item-880701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-880701"><a href="https://www.electronicsweekly.com/electronics-weekly-podcast-chiips/">Podcast &#8211; CHIIPS</a></li>
+<li id="menu-item-445296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445296"><a href="https://www.electronicsweekly.com/sitemap/">Site Map</a></li>
+</ul></div></div></div><!-- .widget /-->		</div>
+	
+			<div id="footer-second" class="footer-widgets-box">
+			<div id="text-html-widget-6" class="footer-widget text-html"><div class="footer-widget-top"><div>About Us</div></div>
+						<div class="footer-widget-container"><div ><img src="https://static.electronicsweekly.com/wp-content/uploads/2015/08/electronics-weekly-footer1.png">
+<br/>
+Established in 1960, Electronics Weekly is the market-leading, longest-established electronics magazine, read in print and online by key decision makers throughout the industry. Electronics Weekly reaches an international audience of 200,000 people each month across print, online, email, social media and events, and readers rate its editorial as "informative, interesting and relevant"*. Our prestigious events portfolio includes Electronics Weekly’s Elektra Awards, Electronics Weekly’s BrightSparks, and the recently added Electronics Weekly’s Women Leaders in Electronics Awards and more.
+*2022 Fusion Insight & Strategy survey.
+				</div><div class="clear"></div></div></div><!-- .widget /-->		</div><!-- #second .widget-area -->
+	
+
+	
+		
+	</div><!-- #footer-widget-area -->
+	<div class="clear"></div>
+</footer><!-- .Footer /-->
+				
+	<div class="clear"></div>
+	<div class="footer-bottom fade-in animated4">
+		<div class="container">
+
+					<div class="social-icons icon_flat" rel="General_Social">
+		<a class="ttip" title="Rss" rel="noopener noreferrer" href="https://www.electronicsweekly.com/feed/" target="_blank"><i class="tieicon-rss"></i></a><a class="ttip" title="Facebook" rel="noopener noreferrer" href="https://www.facebook.com/ElectronicsWeekly" target="_blank"><i class="tieicon-facebook"></i></a><a class="ttip twitter" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/ElectronicsNews" target="_blank"><img decoding="async" loading="lazy" src="https://cdn-uploads.emap.com/wp-content/uploads/2023/09/07153126/Twitter-X-White-Logo-PNG.png" alt="" class="wp-image-5296" width="13" height="12"></a><a class="ttip" title="LinkedIn" rel="noopener noreferrer" href="https://www.linkedin.com/company/electronics-weekly/" target="_blank"><i class="tieicon-linkedin"></i></a><a class="ttip" title="Youtube" rel="noopener noreferrer" href="http://www.youtube.com/c/electronicsweekly " target="_blank"><i class="tieicon-youtube"></i></a>	</div>
+
+			<div class="alignleft">
+			Copyright ©2026 <strong>Electronics Weekly</strong> <span>|News|Products|Blogs - Owned by Emap, Southern House, CR0 1XG (020 39532600)</span> <a href="//www.electronicsweekly.com/terms-and-conditions/">Terms and Conditions</a> <a href="//www.electronicsweekly.com/privacy-policy/">Privacy policy</a>			</div>
+		</div><!-- .Container -->
+	</div><!-- .Footer bottom -->
+        
+</div><!-- .Wrapper -->
+	<div id="topcontrol" class="tieicon-up-open" title="Scroll To Top"></div>
+<div id="fb-root"></div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ew\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+        <script type="text/javascript">
+            var mbm_fex = {
+                ajaxurl: 'https://www.electronicsweekly.com/wp-admin/admin-ajax.php',
+            };
+        </script>
+        		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script type="text/javascript" async src="//l.getsitecontrol.com/z4q633lw.js"></script>
+<style>
+.undernav iframe
+ {
+display: none;
+}
+.fixed-nav .undernav iframe{
+display: block !important;
+}
+</style><script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel='stylesheet' id='mbm_gdpr_style-css' href='https://www.electronicsweekly.com/wp-content/plugins/MBM-GDPR/assets/dist/css/MBM_GDPR.min.css?ver=1.0.1' type='text/css' media='all' />
+<script type="text/javascript" id="mediaelement-core-js-before">
+/* <![CDATA[ */
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.8.1" id="mediaelement-migrate-js"></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"","videoShortcodeLibrary":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.8.1" id="wp-mediaelement-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/MBM-SEO/assets/js/alt_tags.js?ver=1.10.0" id="MBM-SEO-alt_tags-js"></script>
+<script type="text/javascript" id="wp-pc-js-js-extra">
+/* <![CDATA[ */
+var pcDataParam = {"newsletterProvider":"preference-center"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/mbm-preference-center/assets/jspc.js?ver=6.8.1" id="wp-pc-js-js"></script>
+<script type="text/javascript" id="myaccount_script-js-extra">
+/* <![CDATA[ */
+var myaccount_script = {"ajaxurl":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/assets/js/script.min.js?ver=1.1.5" id="myaccount_script-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/src/Extensions/Ew/Profile/form.js?ver=1.1.5" id="myaccount_profile_form-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/src/Extensions/Ew/Subscriptions/form.js?ver=1.1.5" id="myaccount_subscriptions_form-js"></script>
+<script type="text/javascript" id="bookmark-js-js-extra">
+/* <![CDATA[ */
+var myaccount_bookmarks = {"ajaxurl":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php"};
+var mbm_bookmark = {"ajaxurl":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/src/Addons/Bookmarks/assets/js/bookmark.js?ver=6.8.1" id="bookmark-js-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/MBM-Forms-Builder/assets/js/MBM_Forms.js?ver=6.8.1" id="mbmformjs-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/mbm_ab_track/ads.js?ver=6.8.1" id="ad_blocker_bait-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/mbm_ab_track/ab_track.js?ver=6.8.1" id="ad_blocker_track-js"></script>
+<script type="text/javascript" id="wp-polls-js-extra">
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.77.1" id="wp-polls-js"></script>
+<script type="text/javascript" id="wp_ulike-js-extra">
+/* <![CDATA[ */
+var wp_ulike_params = {"ajax_url":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php","notifications":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/wp-ulike/assets/js/wp-ulike.min.js?ver=4.6.9" id="wp_ulike-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/gravityforms/js/jquery.json-1.3.js?ver=1.9.13" id="gform_json-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=1.9.13" id="gform_gravityforms-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/themes/ew/dist/scripts/scripts.min.js?ver=2.1" id="tie-script-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" id="jquery-ui-datepicker-js-after">
+/* <![CDATA[ */
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"dS MM yy","firstDay":1,"isRTL":false});});
+/* ]]> */
+</script>
+<script src='https://www.electronicsweekly.com/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js'></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script src='https://www.electronicsweekly.com/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js'></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/jquery/suggest.min.js?ver=1.1-20110113" id="suggest-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/cred-frontend-editor/vendor/toolset/toolset-common/toolset-forms/js/main.js?ver=0.1.2" id="wptoolset-forms-js"></script>
+<script type="text/javascript" id="wptoolset-field-date-js-extra">
+/* <![CDATA[ */
+var wptDateData = {"buttonImage":"https:\/\/www.electronicsweekly.com\/wp-content\/plugins\/cred-frontend-editor\/vendor\/toolset\/toolset-common\/toolset-forms\/images\/calendar.gif","buttonText":"Select date","dateFormat":"MM d, yy","dateFormatPhp":"F j, Y","dateFormatNote":"Input format: F j, Y","yearMin":"1583","yearMax":"3000","ajaxurl":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php","readonly":"This is a read-only date input","readonly_image":"https:\/\/www.electronicsweekly.com\/wp-content\/plugins\/cred-frontend-editor\/vendor\/toolset\/toolset-common\/toolset-forms\/images\/calendar-readonly.gif","datepicker_style_url":"https:\/\/www.electronicsweekly.com\/wp-content\/plugins\/cred-frontend-editor\/vendor\/toolset\/toolset-common\/toolset-forms\/css\/wpt-jquery-ui\/jquery-ui-1.11.4.custom.css"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/cred-frontend-editor/vendor/toolset/toolset-common/toolset-forms/js/date.js?ver=0.1.2" id="wptoolset-field-date-js"></script>
+<script type="text/javascript" id="mbm-comment-validation-js-extra">
+/* <![CDATA[ */
+var recaptchaSettings = {"site_key":"6LfGnzUoAAAAAIDIYbliAXUFMqOxz-JOIobtmVAO","enable":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/mbm-comment//assets/comment-validation.js" id="mbm-comment-validation-js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LfGnzUoAAAAAIDIYbliAXUFMqOxz-JOIobtmVAO" id="google-recaptcha-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/my-account/assets/js/utility.js?ver=6.8.1" id="utilityjs-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/MBM-inbox-companion/assets/dist/scripts/scripts.min.js?ver=1.3.0" id="ibx__inbox_companion_js-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/MBM-frontend-extras/assets/dist/js/mbm_fex.min.js?ver=6.8.1" id="mbm_fex_lib-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.3" id="jquery-ui-sortable-js"></script>
+<script type="text/javascript" id="omnilist_script-js-extra">
+/* <![CDATA[ */
+var omnilist_directory = {"ajaxurl":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php","path_url":"https:\/\/www.electronicsweekly.com\/wp-content\/plugins\/omnilist\/","theme_url":"https:\/\/www.electronicsweekly.com\/wp-content\/themes\/ew","listurl":"https:\/\/www.electronicsweekly.com\/profile\/list\/","entry_label":"Resources for Engineers"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/omnilist/assets/js/script.min.js?ver=1.2.0" id="omnilist_script-js"></script>
+<script type="text/javascript" id="mbm-tools-js-js-extra">
+/* <![CDATA[ */
+var mbm_tools = {"ajaxurl":"https:\/\/www.electronicsweekly.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/mu-plugins/MBM_tools/assets/js/tools.js?ver=6.8.1" id="mbm-tools-js-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-includes/js/comment-reply.min.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script defer type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1768832254" id="akismet-frontend-js"></script>
+<script type="text/javascript" src="https://www.electronicsweekly.com/wp-content/plugins/MBM-GDPR/assets/dist/js/MBM_GDPR.min.js?ver=1.0.1" id="mbm-gdpr-js"></script>
+<script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>        
+        <!---- getsitecontrol START --->
+        <script>
+            window.gsc=window.gsc||function(){
+                (gsc.q=gsc.q||[]).push(arguments)
+            };
+            var targetParameters = {"user_status":"","logged_in_status":"logged out","user_type":"","company_id":"","company_name":"","email_domain":"","user_expiry":"","subscription_expiry_in_days":"","viewed_subscription_upsell":false};
+            gsc('params', targetParameters);
+        </script>
+        <!---- getsitecontrol END --->
+
+
+        <div class="sky-form-popup 640x500">
+<div id="x96" class="popup-advert">
+<script>
+	if (jQuery(window).width() > 768) {
+		GA_googleFillSlot('x96');
+	}
+</script>
+</div>
+<button type='button' class='button close modal-closer'>x</button>
+</div>
+<div id="sky-form-modal-overlay" class="sky-form-modal-overlay"></div>
+<div id="Frame1" class="wallpaper-iframe">
+<script>
+	if (jQuery(window).width() > 768) {
+		GA_googleFillSlot("Frame1");
+	}
+</script>
+</div>
+    
+<!-- <div id="DFP-EW-Sidekick">
+<script>
+	if (jQuery(window).width() > 768) {
+		GA_googleFillSlot("DFP-EW-Sidekick");
+	}
+</script> 
+</div>
+
+<div id="banderole-ad">
+	<button class="close">x</button>
+	<div id="banderole-creative">
+		<div id="DFP-EW-Banderole">
+			<script>
+				if (jQuery(window).width() > 768) {
+					GA_googleFillSlot("DFP-EW-Banderole");
+				}
+			</script>
+		</div>
+
+	</div>
+</div>
+<div id="banderole-trigger">
+	<div id="DFP-EW-Banderole-Trigger">
+		<script>
+			if (jQuery(window).width() > 768) {
+				GA_googleFillSlot("DFP-EW-Banderole-Trigger");
+			}
+		</script>
+	</div>
+</div>
+
+<div id="gpt-ad-fslb">
+<script>
+	if (jQuery(window).width() > 768) {
+		GA_googleFillSlot("gpt-ad-fslb");
+	}
+</script>    
+</div> -->
+
+</body>
+</html>

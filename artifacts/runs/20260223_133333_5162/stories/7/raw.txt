@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	
+        <!-- Google Tag Manager -->
+        
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        
+        })(window,document,'script','dataLayer', 'GTM-TB3VSRKZ');</script>
+        
+        <!-- End Google Tag Manager -->
+    
+        <script>
+          window.dataLayer = window.dataLayer || [];
+    
+          function trackAllFormSubmissions() {
+              document.querySelectorAll('form').forEach((form, index) => {
+                  console.log('form', form);
+                  if (!form.dataset.trackingBound) {
+                      form.addEventListener('submit', function () {
+                          window.dataLayer.push({
+                              event: 'form_submit'
+                          });
+                          console.log(`[GTM] Pushed form_submit`);
+                      });
+                      form.dataset.trackingBound = 'true';
+                  }
+              });
+          }
+    
+          window.addEventListener('DOMContentLoaded', trackAllFormSubmissions);
+        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin v24.2 (Yoast SEO v24.2) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="MerLin 0.3 introduces a benchmark-driven, hardware-aware framework for photonic and hybrid quantum machine learning, integrating optimized linear-optical simulation with PyTorch workflows." />
+	<link rel="canonical" href="https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="MerLin: Photonic Quantum Machine Learning, Engineered for Utility" />
+	<meta property="og:description" content="MerLin 0.3 introduces a benchmark-driven, hardware-aware framework for photonic and hybrid quantum machine learning, integrating optimized linear-optical simulation with PyTorch workflows." />
+	<meta property="og:url" content="https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/" />
+	<meta property="og:site_name" content="Quandela" />
+	<meta property="article:published_time" content="2026-02-19T11:23:20+00:00" />
+	<meta property="article:modified_time" content="2026-02-19T14:27:26+00:00" />
+	<meta property="og:image" content="https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="533" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Manali Jamkar" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@Quandela_SAS" />
+	<meta name="twitter:site" content="@Quandela_SAS" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#article","isPartOf":{"@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/"},"author":{"name":"Manali Jamkar","@id":"https://www.quandela.com/#/schema/person/a70f5351de9e89a6b7b435df2b9186f6"},"headline":"MerLin: Photonic Quantum Machine Learning, Engineered for Utility","datePublished":"2026-02-19T11:23:20+00:00","dateModified":"2026-02-19T14:27:26+00:00","mainEntityOfPage":{"@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/"},"wordCount":731,"publisher":{"@id":"https://www.quandela.com/#organization"},"image":{"@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#primaryimage"},"thumbnailUrl":"https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg","keywords":["Photonic QML"],"articleSection":["Photonics Technology","Quantum"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/","url":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/","name":"MerLin: Photonic Quantum Machine Learning, Engineered for Utility - Quandela","isPartOf":{"@id":"https://www.quandela.com/#website"},"primaryImageOfPage":{"@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#primaryimage"},"image":{"@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#primaryimage"},"thumbnailUrl":"https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg","datePublished":"2026-02-19T11:23:20+00:00","dateModified":"2026-02-19T14:27:26+00:00","description":"MerLin 0.3 introduces a benchmark-driven, hardware-aware framework for photonic and hybrid quantum machine learning, integrating optimized linear-optical simulation with PyTorch workflows.","breadcrumb":{"@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#primaryimage","url":"https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg","contentUrl":"https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg","width":800,"height":533},{"@type":"BreadcrumbList","@id":"https://www.quandela.com/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.quandela.com/"},{"@type":"ListItem","position":2,"name":"MerLin: Photonic Quantum Machine Learning, Engineered for Utility"}]},{"@type":"WebSite","@id":"https://www.quandela.com/#website","url":"https://www.quandela.com/","name":"Quandela","description":"Driven by Quantum, Empowered by Quandela","publisher":{"@id":"https://www.quandela.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.quandela.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.quandela.com/#organization","name":"Quandela","url":"https://www.quandela.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.quandela.com/#/schema/logo/image/","url":"https://www.quandela.com/wp-content/uploads/2024/09/Logo-Quandela-2025.png","contentUrl":"https://www.quandela.com/wp-content/uploads/2024/09/Logo-Quandela-2025.png","width":3511,"height":890,"caption":"Quandela"},"image":{"@id":"https://www.quandela.com/#/schema/logo/image/"},"sameAs":["https://x.com/Quandela_SAS","https://www.linkedin.com/company/quandela","https://www.youtube.com/@quandela2110"]},{"@type":"Person","@id":"https://www.quandela.com/#/schema/person/a70f5351de9e89a6b7b435df2b9186f6","name":"Manali Jamkar","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.quandela.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/e59f59eed8183aa4057c619b8dd59188?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/e59f59eed8183aa4057c619b8dd59188?s=96&d=mm&r=g","caption":"Manali Jamkar"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<title>MerLin: Photonic Quantum Machine Learning, Engineered for Utility - Quandela</title>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id='wp-block-button-inline-css'>
+.wp-block-button__link{box-sizing:border-box;cursor:pointer;display:inline-block;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}
+</style>
+<style id='wp-block-buttons-inline-css'>
+.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}
+</style>
+<style id='wp-block-columns-inline-css'>
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id='wp-block-post-date-inline-css'>
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-embed-inline-css'>
+.wp-block-embed.alignleft,.wp-block-embed.alignright,.wp-block[data-align=left]>[data-type="core/embed"],.wp-block[data-align=right]>[data-type="core/embed"]{max-width:360px;width:100%}.wp-block-embed.alignleft .wp-block-embed__wrapper,.wp-block-embed.alignright .wp-block-embed__wrapper,.wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,.wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper{min-width:280px}.wp-block-cover .wp-block-embed{min-height:240px;min-width:320px}.wp-block-embed{overflow-wrap:break-word}.wp-block-embed :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-embed iframe{max-width:100%}.wp-block-embed__wrapper{position:relative}.wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before{content:"";display:block;padding-top:50%}.wp-embed-responsive .wp-has-aspect-ratio iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before{padding-top:42.85%}.wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before{padding-top:50%}.wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before{padding-top:56.25%}.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before{padding-top:75%}.wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before{padding-top:100%}.wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before{padding-top:177.77%}.wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before{padding-top:200%}
+</style>
+<style id='wp-block-code-inline-css'>
+.wp-block-code{box-sizing:border-box}.wp-block-code code{display:block;font-family:inherit;overflow-wrap:break-word;white-space:pre-wrap}
+</style>
+<style id='wp-block-separator-inline-css'>
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+</style>
+<style id='wp-block-post-content-inline-css'>
+.wp-block-post-content{display:flow-root}
+</style>
+<link rel='stylesheet' id='wp-block-cover-css' href='https://www.quandela.com/wp-includes/blocks/cover/style.min.css?ver=6.7.1' media='all' />
+<style id='wp-block-comments-inline-css'>
+.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--surface-dark: #000000;--wp--preset--color--brand-blue: #455DEC;--wp--preset--color--type-white-primary: #FFFFFF;--wp--preset--color--type-white-tertiary: rgba(255, 255, 255, 0.5);--wp--preset--color--type-white-secondary: rgba(255, 255, 255, 0.7);--wp--preset--color--type-white-40: rgba(255, 255, 255, 0.4);--wp--preset--color--type-black-primary: #1A1A1A;--wp--preset--color--grey-dark: #51555C;--wp--preset--color--brand-orange: #F07362;--wp--preset--color--contrast: #FFFFFF;--wp--preset--color--dark-primary: #1A1A1A;--wp--preset--color--grey: #7C7F84;--wp--preset--color--grey-light: #E5E7EB;--wp--preset--color--text-primary: #FFFFFF;--wp--preset--color--text-secondary: #BABABA;--wp--preset--color--tertairy: #8C8C8C;--wp--preset--color--photons-secondary: rgba(26, 26, 26, 0.7);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--black-cover-270: linear-gradient(270deg, rgba(0, 0, 0, 0) 59.93%, #000000 100%);--wp--preset--gradient--quote-block-background: radial-gradient(184.63% 246.67% at 63.89% -50.56%, #435BEC 7.5%, #455DEC 10%, #F07362 47.5%, #3F54D5 65%, #3646AA 76.96%, #2E3A83 85.04%, #232848 93.6%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.469), 20px);--wp--preset--font-size--large: clamp(22.041px, 1.378rem + ((1vw - 3.2px) * 1.091), 36px);--wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 1.327), 42px);--wp--preset--font-family--abc-oracle: ABCOracle;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 40px;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 80px;--wp--preset--spacing--8: 8px;--wp--preset--spacing--12: 12px;--wp--preset--spacing--16: 16px;--wp--preset--spacing--24: 24px;--wp--preset--spacing--32: 32px;--wp--preset--spacing--48: 48px;--wp--preset--spacing--56: 56px;--wp--preset--spacing--64: 64px;--wp--preset--spacing--72: 72px;--wp--preset--spacing--88: 88px;--wp--preset--spacing--96: 96px;--wp--preset--spacing--104: 104px;--wp--preset--spacing--112: 112px;--wp--preset--spacing--120: 120px;--wp--preset--spacing--128: 128px;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-left: auto !important;margin-right: auto !important;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--surface-dark);color: var(--wp--preset--color--type-white-primary);font-family: var(--wp--preset--font-family--abc-oracle);font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.156), 16px);font-style: normal;font-weight: 400;letter-spacing: 0px;line-height: 1;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: 0px;--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: 0px;}a:where(:not(.wp-element-button)){color: #a8b2ff;font-family: var(--wp--preset--font-family--abc-oracle);text-decoration: none;}:root :where(a:where(:not(.wp-element-button)):hover){color: var(--wp--preset--color--brand-blue);text-decoration: none;}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--abc-oracle);font-style: normal;font-weight: 700;}h1{font-size: clamp(36.666px, 2.292rem + ((1vw - 3.2px) * 2.396), 67.34px);font-style: normal;font-weight: 700;letter-spacing: -0.5px;}h2{font-size: clamp(24.034px, 1.502rem + ((1vw - 3.2px) * 1.247), 40px);font-style: normal;font-weight: 400;letter-spacing: 0.5px;}h3{font-size: clamp(22.994px, 1.437rem + ((1vw - 3.2px) * 1.165), 37.9px);font-style: normal;font-weight: 400;letter-spacing: 0.25px;}h4{font-size: clamp(1.092rem, 1.092rem + ((1vw - 0.2rem) * 0.76), 1.7rem);font-style: normal;font-weight: 700;}h5{font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.531), 1.3rem);font-style: normal;font-weight: 700;}h6{color: var(--wp--preset--color--type-white-tertiary);font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.156), 16px);font-style: normal;font-weight: 700;letter-spacing: 0.5px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--brand-blue);border-color: var(--wp--preset--color--brand-blue);border-width: 1px;border-style: solid;color: var(--wp--preset--color--type-white-primary);font-family: inherit;font-size: 12px;font-style: normal;font-weight: 700;letter-spacing: 1px;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;text-transform: uppercase;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-surface-dark-color{color: var(--wp--preset--color--surface-dark) !important;}.has-brand-blue-color{color: var(--wp--preset--color--brand-blue) !important;}.has-type-white-primary-color{color: var(--wp--preset--color--type-white-primary) !important;}.has-type-white-tertiary-color{color: var(--wp--preset--color--type-white-tertiary) !important;}.has-type-white-secondary-color{color: var(--wp--preset--color--type-white-secondary) !important;}.has-type-white-40-color{color: var(--wp--preset--color--type-white-40) !important;}.has-type-black-primary-color{color: var(--wp--preset--color--type-black-primary) !important;}.has-grey-dark-color{color: var(--wp--preset--color--grey-dark) !important;}.has-brand-orange-color{color: var(--wp--preset--color--brand-orange) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-dark-primary-color{color: var(--wp--preset--color--dark-primary) !important;}.has-grey-color{color: var(--wp--preset--color--grey) !important;}.has-grey-light-color{color: var(--wp--preset--color--grey-light) !important;}.has-text-primary-color{color: var(--wp--preset--color--text-primary) !important;}.has-text-secondary-color{color: var(--wp--preset--color--text-secondary) !important;}.has-tertairy-color{color: var(--wp--preset--color--tertairy) !important;}.has-photons-secondary-color{color: var(--wp--preset--color--photons-secondary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-surface-dark-background-color{background-color: var(--wp--preset--color--surface-dark) !important;}.has-brand-blue-background-color{background-color: var(--wp--preset--color--brand-blue) !important;}.has-type-white-primary-background-color{background-color: var(--wp--preset--color--type-white-primary) !important;}.has-type-white-tertiary-background-color{background-color: var(--wp--preset--color--type-white-tertiary) !important;}.has-type-white-secondary-background-color{background-color: var(--wp--preset--color--type-white-secondary) !important;}.has-type-white-40-background-color{background-color: var(--wp--preset--color--type-white-40) !important;}.has-type-black-primary-background-color{background-color: var(--wp--preset--color--type-black-primary) !important;}.has-grey-dark-background-color{background-color: var(--wp--preset--color--grey-dark) !important;}.has-brand-orange-background-color{background-color: var(--wp--preset--color--brand-orange) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-dark-primary-background-color{background-color: var(--wp--preset--color--dark-primary) !important;}.has-grey-background-color{background-color: var(--wp--preset--color--grey) !important;}.has-grey-light-background-color{background-color: var(--wp--preset--color--grey-light) !important;}.has-text-primary-background-color{background-color: var(--wp--preset--color--text-primary) !important;}.has-text-secondary-background-color{background-color: var(--wp--preset--color--text-secondary) !important;}.has-tertairy-background-color{background-color: var(--wp--preset--color--tertairy) !important;}.has-photons-secondary-background-color{background-color: var(--wp--preset--color--photons-secondary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-surface-dark-border-color{border-color: var(--wp--preset--color--surface-dark) !important;}.has-brand-blue-border-color{border-color: var(--wp--preset--color--brand-blue) !important;}.has-type-white-primary-border-color{border-color: var(--wp--preset--color--type-white-primary) !important;}.has-type-white-tertiary-border-color{border-color: var(--wp--preset--color--type-white-tertiary) !important;}.has-type-white-secondary-border-color{border-color: var(--wp--preset--color--type-white-secondary) !important;}.has-type-white-40-border-color{border-color: var(--wp--preset--color--type-white-40) !important;}.has-type-black-primary-border-color{border-color: var(--wp--preset--color--type-black-primary) !important;}.has-grey-dark-border-color{border-color: var(--wp--preset--color--grey-dark) !important;}.has-brand-orange-border-color{border-color: var(--wp--preset--color--brand-orange) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-dark-primary-border-color{border-color: var(--wp--preset--color--dark-primary) !important;}.has-grey-border-color{border-color: var(--wp--preset--color--grey) !important;}.has-grey-light-border-color{border-color: var(--wp--preset--color--grey-light) !important;}.has-text-primary-border-color{border-color: var(--wp--preset--color--text-primary) !important;}.has-text-secondary-border-color{border-color: var(--wp--preset--color--text-secondary) !important;}.has-tertairy-border-color{border-color: var(--wp--preset--color--tertairy) !important;}.has-photons-secondary-border-color{border-color: var(--wp--preset--color--photons-secondary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-black-cover-270-gradient-background{background: var(--wp--preset--gradient--black-cover-270) !important;}.has-quote-block-background-gradient-background{background: var(--wp--preset--gradient--quote-block-background) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-abc-oracle-font-family{font-family: var(--wp--preset--font-family--abc-oracle) !important;}.q-mosaiq3-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),  url('https://www.quandela.com/wp-content/uploads/2025/04/arcturus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center top -500px; ;
+}
+:root :where(.wp-block-buttons-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-buttons-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-flow) > *{margin-block-start: 0.7rem;margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > *{margin-block-start: 0.7rem;margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-flex){gap: 0.7rem;}:root :where(.wp-block-buttons-is-layout-grid){gap: 0.7rem;}
+:root :where(.wp-block-code){background-color: var(--wp--preset--color--type-white-secondary);border-radius: 3px;border-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--type-black-primary);font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.156), 16px);font-style: normal;font-weight: 300;line-height: 1.6;padding-top: var(--wp--preset--spacing--32);padding-right: var(--wp--preset--spacing--32);padding-bottom: var(--wp--preset--spacing--32);padding-left: var(--wp--preset--spacing--32);text-transform: none;}
+:root :where(.wp-block-cover){padding-top: var(--wp--preset--spacing--104);padding-bottom: var(--wp--preset--spacing--104);}
+:root :where(.wp-block-list){font-family: var(--wp--preset--font-family--abc-oracle);font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.156), 16px);font-style: normal;font-weight: 400;letter-spacing: 0.5px;line-height: 1.5;padding-left: var(--wp--preset--spacing--10);}
+:root :where(.wp-block-list > li){font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.156), 16px);font-style: normal;font-weight: 400;letter-spacing: 0.5px;line-height: 1.5;margin-left: var(--wp--preset--spacing--32);}
+:root :where(p){font-family: var(--wp--preset--font-family--abc-oracle);font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.156), 16px);font-style: normal;font-weight: 400;letter-spacing: 0.5px;line-height: 1.5;}
+:root :where(.wp-block-post-date){color: var(--wp--preset--color--contrast-2);font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button))){color: var(--wp--preset--color--contrast-2);text-decoration: none;}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-featured-image img, .wp-block-post-featured-image .block-editor-media-placeholder, .wp-block-post-featured-image .wp-block-post-featured-image__overlay){border-radius: var(--wp--preset--spacing--20);}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){font-size: clamp(23.043px, 1.44rem + ((1vw - 3.2px) * 1.169), 38px);font-style: normal;font-weight: 700;letter-spacing: 0.25px;line-height: 1.1;text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-separator){border-color: var(--wp--preset--color--type-white-tertiary);border-width: 0 0 1px 0;border-style: solid;color: var(--wp--preset--color--contrast);}:root :where(.wp-block-separator){}:root :where(.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull)){width: 100%}
+</style>
+<style id='block-style-variation-styles-inline-css'>
+:root :where(.wp-block-button.is-style-outline--1 .wp-block-button__link){background: transparent none;border-color: var(--wp--preset--color--brand-blue);border-width: 1px;border-style: solid;color: var(--wp--preset--color--type-white-primary);padding-top: 0.667em;padding-right: 1.33em;padding-bottom: 0.667em;padding-left: 1.33em;}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-container-core-buttons-is-layout-1{justify-content:center;}.wp-container-core-group-is-layout-3{flex-wrap:nowrap;gap:var(--wp--preset--spacing--12);justify-content:flex-end;}.wp-container-core-group-is-layout-4{flex-wrap:nowrap;}.wp-container-core-group-is-layout-5{flex-direction:column;align-items:flex-end;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-elements-30105e4e5dd31ca3da87b73393bf049a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--tertairy);}.wp-elements-3d0709f755ee31eef7459cda66a06025 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--tertairy);}.wp-container-core-group-is-layout-7{flex-wrap:nowrap;gap:5px;}.wp-container-core-group-is-layout-9{flex-wrap:nowrap;gap:var(--wp--preset--spacing--32);}.wp-container-core-group-is-layout-11 > .alignfull{margin-right:calc(var(--wp--preset--spacing--24) * -1);margin-left:calc(var(--wp--preset--spacing--24) * -1);}.wp-container-core-group-is-layout-12{gap:var(--wp--preset--spacing--80);flex-direction:column;align-items:stretch;justify-content:space-between;}.wp-container-core-group-is-layout-13 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-13 > * + *{margin-block-start:var(--wp--preset--spacing--24);margin-block-end:0;}.wp-container-core-group-is-layout-14 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-14 > * + *{margin-block-start:var(--wp--preset--spacing--40);margin-block-end:0;}.wp-container-core-group-is-layout-15 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-15 > * + *{margin-block-start:var(--wp--preset--spacing--40);margin-block-end:0;}.wp-container-core-group-is-layout-18 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-18 > * + *{margin-block-start:var(--wp--preset--spacing--32);margin-block-end:0;}.wp-container-core-group-is-layout-20 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-20 > * + *{margin-block-start:var(--wp--preset--spacing--64);margin-block-end:0;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;gap:var(--wp--preset--spacing--32) var(--wp--preset--spacing--48);}.wp-container-core-group-is-layout-22{flex-wrap:nowrap;}.wp-container-core-group-is-layout-23 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-23 > * + *{margin-block-start:var(--wp--preset--spacing--64);margin-block-end:0;}.wp-container-core-group-is-layout-25{flex-direction:column;align-items:flex-start;justify-content:space-between;}.wp-container-core-columns-is-layout-3{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-4{flex-wrap:nowrap;}
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link rel='stylesheet' id='quandela-flags-css' href='https://www.quandela.com/wp-content/plugins/custom-language-switcher/assets/css/flags.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='quandela-language-switcher-css' href='https://www.quandela.com/wp-content/plugins/custom-language-switcher/assets/css/language-switcher.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='q-custom-style-css' href='https://www.quandela.com/wp-content/themes/quandela/assets/css/q-custom-style.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='rbl-carousel-css' href='https://www.quandela.com/wp-content/themes/quandela/assets/css/rbl-carousel-component.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='theme-style-css' href='https://www.quandela.com/wp-content/themes/quandela/style.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='custom-jobs-style-css' href='https://www.quandela.com/wp-content/themes/quandela/custom-style/jobs-style.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='news-filter-style-css' href='https://www.quandela.com/wp-content/themes/quandela/custom-style/post-type-item-style.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='slim-select-css-css' href='https://www.quandela.com/wp-content/themes/quandela/assets/slimselect/slimselect.css?ver=6.7.1' media='all' />
+<script src="https://www.quandela.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.quandela.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/assets/js/q-custom-style.js?ver=6.7.1" id="q-custom-style.js-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/web-component/carousel-component.js" id="carousel-component-js"></script>
+<style class='wp-fonts-local'>
+@font-face{font-family:ABCOracle;font-style:normal;font-weight:1 1000;font-display:fallback;src:url('https://www.quandela.com/wp-content/themes/quandela/assets/fonts/abc-oracle/ABCOracleVariable.woff2') format('woff2'), url('https://www.quandela.com/wp-content/themes/quandela/assets/fonts/abc-oracle/ABCOracleVariable.woff') format('woff'), url('https://www.quandela.com/wp-content/themes/quandela/assets/fonts/abc-oracle/ABCOracleVariable.ttf') format('truetype');}
+</style>
+<link rel="icon" href="https://www.quandela.com/wp-content/uploads/2024/10/cropped-quandela-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.quandela.com/wp-content/uploads/2024/10/cropped-quandela-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.quandela.com/wp-content/uploads/2024/10/cropped-quandela-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.quandela.com/wp-content/uploads/2024/10/cropped-quandela-favicon-270x270.png" />
+</head>
+
+<body class="post-template-default single single-post postid-2387 single-format-standard wp-embed-responsive">
+
+    <!-- Google Analytics -->
+    <!-- Google Tag Manager (noscript) -->
+    
+    <noscript>
+        <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-TB3VSRKZ'
+    height='0' width='0' style='display:none;visibility:hidden'></iframe>
+    </noscript>
+    
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- end of Google Analytics-->
+    
+<div class="wp-site-blocks"><header class="wp-block-template-part"><div class="contact-button-all-page wp-block-template-part"><div style="position: relative; transition: 0.3s;"><a style="color: #fff" href="/about-us/contact-us/">Contact us</a> </div></div>
+
+<div class="wp-block-template-part"></div>
+
+
+<div class="wp-block-group homepage-container is-layout-flow wp-block-group-is-layout-flow" style="padding-top:var(--wp--preset--spacing--12);padding-bottom:var(--wp--preset--spacing--12)"><div class="q-navigator-mobile wp-block-template-part">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .navbar-mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .navbar-mobile {
+                display: flex;
+                gap: 16px;
+            }
+        }
+        .navbar-mobile {
+            justify-content: space-between;
+            align-items: center;
+            padding: 6vw 0;
+        }
+
+        .navbar-mobile a {
+            width: 50%;
+        }
+        .navbar-mobile img {
+            width: 100%;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-right a{
+            width: 100%;
+        }
+
+        .close-icon {
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            top: 10vh;
+            right: 6vw;
+            z-index: 1001;
+        }
+
+        .close-icon {
+            display: none;
+        }
+
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .menu-content {
+            position: absolute;
+            top: 20vh;
+            text-align: center;
+        }
+
+        .menu-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu-content ul li {
+            margin: 20px 0;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+
+        .menu-overlay.active {
+            display: flex;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        .menu-overlay.active ~ .menu-icon {
+            display: none;
+        }
+
+        .menu-overlay.active ~ .close-icon {
+            display: block;
+        }
+
+        .mb-dropdown-children {
+            height: 0; overflow: hidden; transition: height 0.5s ease;
+        }
+        .mb-child-item {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .menu-title {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar-mobile">
+    <a href="/"><img decoding="async" ecoding="async" src="/wp-content/themes/quandela/assets/images/quandela-logo.png" alt=""></a>
+    <div class="navbar-right">
+        <div style="margin: 1em 0;">
+            <div id="cls-language-switcher" class="language-switcher"><button class="language-switcher__button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
+                <path
+                    d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2ZM28,15H22A24.26,24.26,0,0,0,19.21,4.45,12,12,0,0,1,28,15ZM16,28a5,5,0,0,1-.67,0A21.85,21.85,0,0,1,12,17H20a21.85,21.85,0,0,1-3.3,11A5,5,0,0,1,16,28ZM12,15a21.85,21.85,0,0,1,3.3-11,6,6,0,0,1,1.34,0A21.85,21.85,0,0,1,20,15Zm.76-10.55A24.26,24.26,0,0,0,10,15h-6A12,12,0,0,1,12.79,4.45ZM4.05,17h6a24.26,24.26,0,0,0,2.75,10.55A12,12,0,0,1,4.05,17ZM19.21,27.55A24.26,24.26,0,0,0,22,17h6A12,12,0,0,1,19.21,27.55Z"></path>
+            </svg>
+            <span>English</span>
+        </button><div class="language-switcher__options"><a class="current-lang" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=en_US" style="font-size:14px;"><span>English</span><span style="font-size: 12px; color: #737373;">English</span></a><a class="" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=fr_FR" style="font-size:14px;"><span>French</span><span style="font-size: 12px; color: #737373;">Français</span></a><a class="" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=fr_CA" style="font-size:14px;"><span>French (Québec)</span><span style="font-size: 12px; color: #737373;">Français (Québec)</span></a><a class="" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=ko_KR" style="font-size:14px;"><span>Korean</span><span style="font-size: 12px; color: #737373;">한국어</span></a></div></div>        </div>
+        <svg class="menu-icon" id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path fill="currentColor" d="M220 128a4 4 0 0 1-4 4H40a4 4 0 0 1 0-8h176a4 4 0 0 1 4 4M40 68h176a4 4 0 0 0 0-8H40a4 4 0 0 0 0 8m176 120H40a4 4 0 0 0 0 8h176a4 4 0 0 0 0-8"/></svg>
+        <svg class="close-icon" id="close-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m12 12.708l-5.246 5.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 11.292l5.246-5.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L12.708 12l5.246 5.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16z"/></svg>
+    </div>
+</div>
+
+<div class="menu-overlay" id="menu-overlay">
+    <div class="menu-content">
+        <ul>
+                        <li class="menu-item">
+                <div class="menu-title">
+                    PRODUCTS AND SERVICES                </div>
+                <div class="mb-dropdown-children">
+                                                                                    <a class="mb-child-item" href="https://www.quandela.com/products-and-services/mosaiq/">
+                            <div> Mosaiq </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/qpus/ascella2/">
+                            <div> Ascella </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/qpus/belenos/">
+                            <div> Belenos </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/qpus/canopus/">
+                            <div> Canopus </div>
+                                                    </a>
+                                                                                    <a class="mb-child-item" href="https://www.quandela.com/products-and-services/entropy/">
+                            <div> Entropy </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/products-and-services/quantum-toolbox/">
+                            <div> Quantum Toolbox  </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/products-and-services/quantum-acceleration-programme/">
+                            <div> Quantum acceleration program </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/products-and-services/cloud/">
+                            <div> Cloud Offers </div>
+                                                    </a>
+                                                                                    <a class="mb-child-item" href="https://www.quandela.com/products-and-services/prometheus/">
+                            <div> Prometheus </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/products-and-services/perceval/">
+                            <div> Perceval </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/products-and-services/merlin/">
+                            <div> Merlin </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/products-and-services/hub/">
+                            <div> Quandela Hub </div>
+                                                    </a>
+                                                        </div>
+
+            </li>
+                        <li class="menu-item">
+                <div class="menu-title">
+                    RESOURCES                </div>
+                <div class="mb-dropdown-children">
+                                            <a class="mb-child-item" href="https://www.quandela.com/resources/publications/">
+                            <div> Publications </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/resources/use-cases/">
+                            <div> Use cases </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/resources/quantum-computing-glossary/">
+                            <div> Quantum computing glossary </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/resources/quandela-partner-network/">
+                            <div> Quandela partner network </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/resources/blog/">
+                            <div> Blog </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/resources/training-center/">
+                            <div> Training centre </div>
+                                                    </a>
+                                                        </div>
+
+            </li>
+                        <li class="menu-item">
+                <div class="menu-title">
+                    TECHNOLOGY                </div>
+                <div class="mb-dropdown-children">
+                                            <a class="mb-child-item" href="https://www.quandela.com/technology/the-power-of-single-photon-sources/">
+                            <div> The power of single photon sources </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/technology/our-approach/">
+                            <div> Our approach to quantum algorithms </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/technology/roadmap/">
+                            <div> Roadmap </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/technology/photonics-architecture/">
+                            <div> Photonics architecture </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/technology/quantum-machine-learning/">
+                            <div> Quantum machine learning </div>
+                                                    </a>
+                                                        </div>
+
+            </li>
+                        <li class="menu-item">
+                <div class="menu-title">
+                    ABOUT US                </div>
+                <div class="mb-dropdown-children">
+                                            <a class="mb-child-item" href="https://www.quandela.com/about-us/">
+                            <div> About us </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/about-us/newsroom/">
+                            <div> Newsroom </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/about-us/careers/">
+                            <div> Join us </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/about-us#h-scientific-partners-and-collaborations">
+                            <div> Scientific Projects </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/about-us/events/">
+                            <div> Events </div>
+                                                    </a>
+                                            <a class="mb-child-item" href="https://www.quandela.com/about-us/contact-us/">
+                            <div> Contact us </div>
+                                                    </a>
+                                                        </div>
+
+            </li>
+                    </ul>
+        <div class="wp-block-button is-style-outline">
+            <a class="wp-block-button__link wp-element-button"href="https://hub.quandela.com"target="_blank" rel="noopener noreferrer">
+                Quandela Hub
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    let menuIcon = document.getElementById('menu-icon');
+    let closeIcon = document.getElementById('close-icon');
+    let menuOverlay = document.getElementById('menu-overlay');
+    let body = document.body;
+
+    function toggleMenu() {
+        menuOverlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+
+        if (menuOverlay.classList.contains('active')) {
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        } else {
+            menuIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+        }
+    }
+
+    menuIcon.addEventListener('click', toggleMenu);
+
+    closeIcon.addEventListener('click', toggleMenu);
+
+    document.querySelectorAll('.menu-title').forEach(function(title) {
+        title.addEventListener('click', function() {
+            document.querySelectorAll('.mb-dropdown-children').forEach(function(dropdown) {
+                dropdown.style.height = '0'; // Đặt chiều cao của tất cả các mục con về 0
+            });
+
+            const dropdown = this.nextElementSibling;
+            if (dropdown.style.height === '0px' || dropdown.style.height === '') {
+                dropdown.style.height = dropdown.scrollHeight + 'px';
+            } else {
+                dropdown.style.height = '0';
+            }
+        });
+    });
+</script>
+</body>
+</html>
+</div>
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex" id="desktop-header">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:30%">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<a href="/"><img decoding="async" style="max-height:94px; max-width: 100%" ecoding="async" src="/wp-content/themes/quandela/assets/images/quandela-logo.png" alt=""></a>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:70%">
+<div class="wp-block-group q-custom-header is-vertical is-content-justification-right is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex"><div class="wp-block-template-part">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
+    <div class="wp-block-button is-style-outline is-style-outline--1">
+        <a class="wp-block-button__link wp-element-button" href="https://hub.quandela.com"
+           target="_blank" rel="noopener">
+            Quandela Hub        </a></div>
+    </div>
+</div>
+
+<div class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><div id="cls-language-switcher" class="language-switcher"><button class="language-switcher__button"><br />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
+                <path
+                    d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2ZM28,15H22A24.26,24.26,0,0,0,19.21,4.45,12,12,0,0,1,28,15ZM16,28a5,5,0,0,1-.67,0A21.85,21.85,0,0,1,12,17H20a21.85,21.85,0,0,1-3.3,11A5,5,0,0,1,16,28ZM12,15a21.85,21.85,0,0,1,3.3-11,6,6,0,0,1,1.34,0A21.85,21.85,0,0,1,20,15Zm.76-10.55A24.26,24.26,0,0,0,10,15h-6A12,12,0,0,1,12.79,4.45ZM4.05,17h6a24.26,24.26,0,0,0,2.75,10.55A12,12,0,0,1,4.05,17ZM19.21,27.55A24.26,24.26,0,0,0,22,17h6A12,12,0,0,1,19.21,27.55Z"></path>
+            </svg><br />
+            <span>English</span><br />
+        </button></p>
+<div class="language-switcher__options"><a class="current-lang" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=en_US" style="font-size:14px;"><span>English</span><span style="font-size: 12px; color: #737373;">English</span></a><a class="" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=fr_FR" style="font-size:14px;"><span>French</span><span style="font-size: 12px; color: #737373;">Français</span></a><a class="" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=fr_CA" style="font-size:14px;"><span>French (Québec)</span><span style="font-size: 12px; color: #737373;">Français (Québec)</span></a><a class="" href="/resources/blog/merlin-photonic-quantum-machine-learning-engineered-for-utility/?lang=ko_KR" style="font-size:14px;"><span>Korean</span><span style="font-size: 12px; color: #737373;">한국어</span></a></div>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex"><div class="wp-block-template-part"><html lang="en">
+<head>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .navbar .dropdown-name {
+            color: white;
+            text-decoration: none;
+            padding: 10px 10px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            word-break: keep-all;
+        }
+        .navbar .dropdown-name:hover {
+            border-bottom: 2px solid var(--wp--preset--color--brand-blue);
+            /*background-color: var(--wp--preset--color--type-white-tertiary);*/
+            color:  var(--wp--preset--color--brand-blue);
+        }
+
+        .navbar .dropdown-name:hover svg {
+            fill:  var(--wp--preset--color--brand-blue);
+        }
+
+        .navbar .dropdown-active {
+            border-bottom: 2px solid var(--wp--preset--color--brand-blue);
+            color:  var(--wp--preset--color--brand-blue) !important;
+            background-color: #455dec29;
+        }
+
+        .navbar .dropdown-active svg {
+            fill:  var(--wp--preset--color--brand-blue);
+        }
+
+        .navbar .dropdown {
+            display: inline-block;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--wp--preset--color--type-white-primary);
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            left: 0;
+            padding: 2em 0;
+        }
+
+        .navbar .dropdown-item-wrapper {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 1em; /* Adjust padding as needed */
+        }
+        .navbar .dropdown-item {
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .navbar .dropdown-title {
+            display: flex;
+            gap: 24px;
+            font-size: 16px;
+            font-weight: bold;
+            justify-content: space-between;
+            color: var(--wp--preset--color--type-black-primary);
+            padding-bottom: 0rem;
+            border-bottom: thin solid var(--wp--preset--color--grey-dark);
+            text-transform: uppercase;
+        }
+
+        .navbar .dropdown-item svg {
+            fill: #0c0c0c;
+        }
+
+        .navbar .dropdown-item:hover {
+            /*background-color: #f1f1f1;*/
+        }
+        .navbar .dropdown-summary {
+            color: var(--wp--preset--color--grey-dark);
+            margin-bottom: 0px;
+            line-height: 1.5em;
+            height: 3em;
+        }
+        .navbar .dropdown-item:hover {
+            .dropdown-title {
+                color: var(--wp--preset--color--brand-orange);
+            }
+
+        }
+        .navbar .dropdown-sub-link {
+            color: var(--wp--preset--color--brand-blue);;
+        }
+
+        .navbar .part-title {
+            font-size: 20px !important;
+            border-bottom: none;
+            justify-content: center;
+            text-transform: uppercase;
+            color: var(--wp--preset--color--brand-blue);;
+        }
+    </style>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all dropdown elements
+        let dropdowns = document.querySelectorAll('.dropdown');
+
+        // Add click event listener to each dropdown
+        dropdowns.forEach(function(dropdown) {
+            let dropdownName = dropdown.querySelector('.dropdown-name');
+            let dropdownContent = dropdown.querySelector('.dropdown-content');
+
+            dropdownName.addEventListener('click', handleFocus);
+            dropdownName.addEventListener('mouseover', handleFocus);
+            function handleFocus (event) {
+                event.preventDefault();
+
+
+                if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+                    dropdownContent.style.display = 'block';
+                    dropdownName.classList.add('dropdown-active')
+                }
+
+                dropdowns.forEach(function(dropdown) {
+                    let dropdownName = dropdown.querySelector('.dropdown-name');
+                    let dropdownContent = dropdown.querySelector('.dropdown-content');
+                    if (!dropdown.contains(event.target)) {
+                        dropdownContent.style.display = 'none';
+                        dropdownName.classList.remove('dropdown-active')
+                    }
+                });
+
+            }
+        });
+
+        let isMouseInside = false;
+        const navbar = document.querySelector('.navbar')
+
+        navbar.addEventListener('mouseenter', () => {
+            isMouseInside = true;
+        });
+
+        function handleClickOut(event) {
+            if (isMouseInside) return;
+            dropdowns.forEach(function(dropdown) {
+                let dropdownName = dropdown.querySelector('.dropdown-name');
+                let dropdownContent = dropdown.querySelector('.dropdown-content');
+                if (!dropdown.contains(event?.target)) {
+                    dropdownContent.style.display = 'none';
+                    dropdownName.classList.remove('dropdown-active')
+                }
+            });
+        }
+
+        navbar.addEventListener('mouseleave', (event) => {
+            setTimeout(() => {
+                handleClickOut(event);
+            }, 500)
+            isMouseInside = false;
+        });
+        document.addEventListener("scroll", handleClickOut);
+        document.addEventListener('click', handleClickOut);
+
+    });
+</script>
+
+<body>
+
+<div class="navbar">
+            <div class="dropdown">
+            <a class='dropdown-name' href="#">PRODUCTS AND SERVICES                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="rgba(255,255,255,1)"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            </a>
+            <div class="dropdown-content">
+                <div class="dropdown-item-wrapper">
+                    
+                                        <div class="dropdown-part">
+                        <div class="dropdown-title part-title">Quantum Computers</div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/mosaiq/">
+                                    <div class="dropdown-title">
+                                        <div> Mosaiq </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Discover the world&#039;s best quantum computers based on photonics</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/qpus/ascella2/">
+                                    <div class="dropdown-title">
+                                        <div> Ascella </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Our first quantum computer deployed out of the lab</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/qpus/belenos/">
+                                    <div class="dropdown-title">
+                                        <div> Belenos </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Our second-generation quantum computer with 12 qubits</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/qpus/canopus/">
+                                    <div class="dropdown-title">
+                                        <div> Canopus </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Our latest quantum computer, based on state-of-the-art technologies</p>
+                                                                    </a>
+                            </div>
+                                            </div>
+                                        <div class="dropdown-part">
+                        <div class="dropdown-title part-title">Solutions</div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/entropy/">
+                                    <div class="dropdown-title">
+                                        <div> Entropy </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Our quantum-certified random number generator based on photon entanglement</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/quantum-toolbox/">
+                                    <div class="dropdown-title">
+                                        <div> Quantum Toolbox  </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Get access to packaged primitives tailored for specific applications</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/quantum-acceleration-programme/">
+                                    <div class="dropdown-title">
+                                        <div> Quantum acceleration program </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Our unique quantum computing consulting offer to corporates</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/cloud/">
+                                    <div class="dropdown-title">
+                                        <div> Cloud Offers </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Access quantum processors, simulators, and algorithms in direct access or via our partners</p>
+                                                                    </a>
+                            </div>
+                                            </div>
+                                        <div class="dropdown-part">
+                        <div class="dropdown-title part-title">Developer Tools</div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/prometheus/">
+                                    <div class="dropdown-title">
+                                        <div> Prometheus </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">The most efficient quantum light sources for researchers</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/perceval/">
+                                    <div class="dropdown-title">
+                                        <div> Perceval </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">The open-source framework for quantum programming</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/merlin/">
+                                    <div class="dropdown-title">
+                                        <div> Merlin </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">The framework dedicated to AI developers community</p>
+                                                                    </a>
+                            </div>
+                                                    <div class="dropdown-item">
+                                <a  href="https://www.quandela.com/products-and-services/hub/">
+                                    <div class="dropdown-title">
+                                        <div> Quandela Hub </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                        </div>
+                                    </div>
+                                    <p class="dropdown-summary">Embark on your quantum journey with Quandela Hub</p>
+                                                                    </a>
+                            </div>
+                                            </div>
+                                    </div>
+            </div>
+        </div>
+            <div class="dropdown">
+            <a class='dropdown-name' href="#">RESOURCES                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="rgba(255,255,255,1)"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            </a>
+            <div class="dropdown-content">
+                <div class="dropdown-item-wrapper">
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/resources/publications/">
+                            <div class="dropdown-title">
+                                <div> Publications </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Papers of our research teams</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/resources/use-cases/">
+                            <div class="dropdown-title">
+                                <div> Use cases </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Quantum algorithms solving industrial problems</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/resources/quantum-computing-glossary/">
+                            <div class="dropdown-title">
+                                <div> Quantum computing glossary </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Explore and understand the quantum vocabulary</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/resources/quandela-partner-network/">
+                            <div class="dropdown-title">
+                                <div> Quandela partner network </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Become a Quandela partner</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/resources/blog/">
+                            <div class="dropdown-title">
+                                <div> Blog </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Collection of articles and opinion pieces</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/resources/training-center/">
+                            <div class="dropdown-title">
+                                <div> Training centre </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Discover our quantum computing trainings</p>
+                                                    </a>
+                    </div>
+                    
+                                    </div>
+            </div>
+        </div>
+            <div class="dropdown">
+            <a class='dropdown-name' href="#">TECHNOLOGY                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="rgba(255,255,255,1)"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            </a>
+            <div class="dropdown-content">
+                <div class="dropdown-item-wrapper">
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/technology/the-power-of-single-photon-sources/">
+                            <div class="dropdown-title">
+                                <div> The power of single photon sources </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Discover our quantum dots</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/technology/our-approach/">
+                            <div class="dropdown-title">
+                                <div> Our approach to quantum algorithms </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">A full-stack process</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/technology/roadmap/">
+                            <div class="dropdown-title">
+                                <div> Roadmap </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Our roadmap to fault-tolerant quantum computing</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/technology/photonics-architecture/">
+                            <div class="dropdown-title">
+                                <div> Photonics architecture </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Scalable, modular designs for QPUs</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/technology/quantum-machine-learning/">
+                            <div class="dropdown-title">
+                                <div> Quantum machine learning </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Combining the strengths of classical and quantum computing</p>
+                                                    </a>
+                    </div>
+                    
+                                    </div>
+            </div>
+        </div>
+            <div class="dropdown">
+            <a class='dropdown-name' href="#">ABOUT US                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="rgba(255,255,255,1)"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            </a>
+            <div class="dropdown-content">
+                <div class="dropdown-item-wrapper">
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/about-us/">
+                            <div class="dropdown-title">
+                                <div> About us </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">History, values, and leadership</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/about-us/newsroom/">
+                            <div class="dropdown-title">
+                                <div> Newsroom </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Press release and media kit</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/about-us/careers/">
+                            <div class="dropdown-title">
+                                <div> Join us </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Teams and careers</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/about-us#h-scientific-partners-and-collaborations">
+                            <div class="dropdown-title">
+                                <div> Scientific Projects </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Scientific Projects</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/about-us/events/">
+                            <div class="dropdown-title">
+                                <div> Events </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Past and upcoming events</p>
+                                                    </a>
+                    </div>
+                                        <div class="dropdown-item">
+                        <a  href="https://www.quandela.com/about-us/contact-us/">
+                            <div class="dropdown-title">
+                                <div> Contact us </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"  viewBox="0 0 24 24"><path fill="currentColor" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="dropdown-summary">Our premises</p>
+                                                    </a>
+                    </div>
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="wp-block-group homepage-container has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-15 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--48);padding-bottom:var(--wp--preset--spacing--48)">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-14 wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-13 wp-block-group-is-layout-constrained">
+<div class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-12 wp-block-group-is-layout-flex" style="min-height:100%">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<p style="font-style:normal;font-weight:700;text-transform:uppercase"><a href="/resources/blog/">BLOG</a> / ARTICLE</p>
+
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-7 wp-block-group-is-layout-flex">
+<p class="has-tertairy-color has-text-color has-link-color wp-elements-30105e4e5dd31ca3da87b73393bf049a" style="font-size:14px;font-style:normal;font-weight:500;letter-spacing:1px;line-height:1">Published on</p>
+
+
+<div style="font-size:14px;font-style:normal;font-weight:500;line-height:1;letter-spacing:1px;" class="has-text-align-left has-link-color wp-elements-3d0709f755ee31eef7459cda66a06025 wp-block-post-date has-text-color has-tertairy-color"><time datetime="2026-02-19T11:23:20+00:00">February 19, 2026</time></div></div>
+
+
+<h1 style="letter-spacing:0px;" class="wp-block-post-title has-inter-font-family">MerLin: Photonic Quantum Machine Learning, Engineered for Utility</h1></div>
+
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-9 wp-block-group-is-layout-flex"><div class="wp-block-template-part"><div class="post-tags-container">
+    <ul class="post-tags__list">
+                        <li class="post-tag">
+                    <a href="https://www.quandela.com/resources/blog/?tag=photonic-qml"><button class="tag-button">Photonic QML</button></a>
+                </li>
+                </ul>
+</div></div></div>
+</div>
+
+
+
+<div class="wp-block-group has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-11 wp-block-group-is-layout-constrained" style="border-bottom-color:var(--wp--preset--color--brand-blue);border-bottom-width:1px;background-color:#0c0c0c;padding-top:var(--wp--preset--spacing--24);padding-right:var(--wp--preset--spacing--24);padding-bottom:var(--wp--preset--spacing--24);padding-left:var(--wp--preset--spacing--24)"></div>
+</div>
+</div>
+</div>
+
+
+<div class="wp-block-template-part"><div class="social-share-buttons">
+                                    <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F" target="_blank" class="social-share-button facebook"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/facebook.svg" alt="Share on Facebook"/></span><span class="social-share-button__content">Share on Facebook</span></a><br />
+                                                <a href="https://x.com/share?text=MerLin:%20Photonic%20Quantum%20Machine%20Learning,%20Engineered%20for%20Utility&#038;url=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F" target="_blank" class="social-share-button x"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/x.svg" alt="Share on X"/></span><span class="social-share-button__content">Share on X</span></a><br />
+                                                <a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F&#038;title=MerLin:%20Photonic%20Quantum%20Machine%20Learning,%20Engineered%20for%20Utility" target="_blank" class="social-share-button linkedin"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/linkedin-20.svg" alt="Share on LinkedIn"/></span><span class="social-share-button__content">Share on LinkedIn</span></a><br />
+                                                <a href="mailto:?subject=MerLin:%20Photonic%20Quantum%20Machine%20Learning,%20Engineered%20for%20Utility&#038;body=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F" target="_blank" class="social-share-button email"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/mail.svg" alt="Share via Mail"/></span><span class="social-share-button__content">Share via Mail</span></a><br />
+                                                <a href="javascript:void(0);" onclick="copyToClipboard('https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F', this)" class="social-share-button copy"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/link.svg" alt="Copy URL"/></span><span class="social-share-button__content">Copy URL</span></a></p>
+<div class="copy-notification">URL copied</div>
+</p></div>
+<p>    <script>
+        function copyToClipboard(text, element) {
+            const tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            const notification = element.parentNode.querySelector('.copy-notification');
+            notification.classList.add('show-notification');
+            setTimeout(function() {
+                notification.classList.remove('show-notification');
+            }, 2000);
+        }
+    </script></p>
+</div></div>
+
+
+
+<div class="wp-block-cover" style="border-bottom-color:var(--wp--preset--color--grey);border-bottom-width:1px"><span aria-hidden="true" class="wp-block-cover__background has-surface-dark-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-block-cover-is-layout-constrained">
+<div class="wp-block-columns post-detail-main-section is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+<div class="wp-block-group custom-post-author has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><div class="wp-block-template-part"><div id="author-container">
+</div>
+<div id="post-related-publications-container" class="post-related-publications-container">
+</div>
+
+<style>
+    .author-box {
+        border-bottom: solid 1px var(--wp--preset--color--text-secondary);
+        padding-bottom: 20px;
+        margin: 10px 0;
+    }
+    .author__image {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 50%;
+    }
+
+    .author__name {
+        margin: 20px 0 0 0;
+    }
+
+    .author__summary {
+        color: var(--wp--preset--color--type-white-secondary) !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+    }
+
+    .author__linkedin {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid var(--wp--preset--color--type-white-secondary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .author__linkedin img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .author__quote {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-custom-post-author {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .custom-post-author {
+            display: none;
+        }
+        .mobile-custom-post-author {
+            display: block;
+        }
+    }
+    .post-related-publications-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .post-related-publication-row {
+        display: flex;
+        word-break: break-word;
+        gap: 10px;
+        padding: 8px 0;
+        border-top: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+    }
+</style>
+
+<script type="text/javascript">var authors = [{"id":"90","type":"researcher","name":"Jean Senellart","email":"jean.senellart@quandela.com","avatar":"wp-content\/uploads\/avatar\/citations.jpeg","summary":"Chief Product Officer","quote":"","metadata":null,"linkedin_url":"https:\/\/www.linkedin.com\/in\/jeansenellart\/","research_website":"https:\/\/scholar.google.com\/citations?user=ZYGQwKMAAAAJ","priority_order":null,"media_post_ids":null,"code":null,"detail_page":null,"project_end_date":null}];</script><script type="text/javascript">var publications = [];</script>
+<script>
+
+    function renderPostAuthor(authorBox, author) {
+        /*
+         |------------------------------------------------------------
+         | authorData Object Fields
+         |------------------------------------------------------------
+         | The `authorData` object includes the following fields:
+         |
+         | - name:      The author's name.
+         | - avatar:     The URL of the author's avatar image URL.
+         | - summary:   A brief summary or title of the author.
+         | - linkedIn:  URL to the author's LinkedIn profile.
+         | - quote:     A quote from the author.
+         |
+         */
+        authorBox.innerHTML = '';
+        console.log('authorData', author)
+
+        // Add author's image (avatar) if available
+        if (author.avatar) {
+            const authorImage = document.createElement('div');
+            authorImage.classList.add('author__image');
+            authorImage.style.backgroundImage = `url('/${author.avatar}')`;
+            authorBox.appendChild(authorImage);
+        }
+
+        // Add author's name if available
+        if (author.name) {
+            const authorName = document.createElement('h2');
+            authorName.classList.add('author__name');
+            authorName.textContent = author.name;
+            authorBox.appendChild(authorName);
+        }
+
+        // Add author's summary (title) if available
+        if (author.summary) {
+            const authorSummary = document.createElement('p');
+            authorSummary.classList.add('author__summary');
+            authorSummary.textContent = author.summary;
+            authorBox.appendChild(authorSummary);
+        }
+
+        // Add author's LinkedIn profile link as an image button if available
+        if (author.linkedin_url) {
+            const linkedInLink = document.createElement('a');
+            linkedInLink.classList.add('author__linkedin');
+            linkedInLink.href = author.linkedin_url;
+            linkedInLink.target = "_blank"; // Open the link in a new tab
+
+            const linkedInIcon = document.createElement('img');
+            linkedInIcon.src = '/wp-content/themes/quandela/assets/icons/linkedin-20.svg';
+            linkedInIcon.alt = 'LinkedIn';
+            linkedInLink.appendChild(linkedInIcon);
+
+            authorBox.appendChild(linkedInLink);
+        }
+
+        // Add author's quote if available
+        if (author.quote) {
+            const authorQuote = document.createElement('p');
+            authorQuote.classList.add('author__quote');
+            authorQuote.textContent = author.quote;
+            authorBox.appendChild(authorQuote);
+        }
+    }
+
+    function renderRelatedPublication(container, publication) {
+        const text = document.createElement('span');
+        text.textContent = 'QUICK LINKS: '
+
+        const contentRow = document.createElement('div');
+        contentRow.className = 'post-related-publication-row';
+        const icon = document.createElement('div');
+        icon.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM7 6H11V10H7V6ZM7 12H17V14H7V12ZM7 16H17V18H7V16ZM13 7H17V9H13V7Z"></path></svg>`;
+        const title = document.createElement('div');
+        const link = document.createElement('a');
+        link.target = '_blank';
+        link.href = publication.publish_url;
+        link.innerHTML = `<span>${publication.title}</span>`
+        title.append(link)
+        contentRow.append(icon);
+        contentRow.append(title);
+
+        container.append(text);
+        container.append(contentRow);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const authorContainer = document.getElementById('author-container');
+        console.log('authorContainer', authorContainer)
+        authorContainer.innerHTML = '';
+        if (typeof authors !== 'undefined' && authors) {
+            authors.forEach( author => {
+                const authorBox = document.createElement('div');
+                authorBox.className = 'author-box';
+                renderPostAuthor(authorBox, author);
+                authorContainer.appendChild(authorBox);
+            })
+        }
+
+        const relatedPublicationsContainer = document.getElementById('post-related-publications-container');
+        relatedPublicationsContainer.innerHTML = '';
+        if (typeof publications !== 'undefined' && publications) {
+            publications.forEach(publication => {
+                renderRelatedPublication(relatedPublicationsContainer, publication);
+            })
+        }
+
+    });
+
+</script>
+
+</div></div>
+
+
+
+<div class="wp-block-group post-sticky-side-bar has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><div class="wp-block-template-part"><style>
+    .vertical-tree {
+        /*border-top: solid 1px var(--wp--preset--color--text-secondary);*/
+        padding: 10px 20px 0 0;
+        /*padding-top: 40px;*/
+        /*padding-bottom: 40px;*/
+    }
+
+    .vertical-tree ul.toc-item {
+        padding-left: 30px;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .vertical-tree ul.toc-item li {
+        margin: 0;
+        list-style-type: none;
+        position: relative;
+        padding: 5px;
+    }
+
+    .vertical-tree ul.toc-item li::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        left: -20px;
+        border-left: 1px solid #e56e5e;
+        bottom: 50px;
+    }
+
+    .vertical-tree ul.toc-item li::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 25px;
+        height: 20px;
+        left: -20px;
+        border-top: 1px solid #e56e5e;
+    }
+
+    .vertical-tree ul.toc-item li a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: white;
+    }
+    .vertical-tree ul.toc-item li a strong {
+        font-weight: 400;
+    }
+
+    .vertical-tree ul.toc-item li .toc-caret {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 1px solid #6B8AE6;
+        font-size: 14px;
+        font-weight: lighter;
+        margin-right: 10px;
+        position: absolute;
+        left: -30px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 10000;
+        /*transition: transform 0.3s ease;*/
+    }
+
+    .vertical-tree ul.toc-item li .toc-caret::before {
+        content: '+';
+    }
+
+    .vertical-tree ul.toc-item li .toc-caret.expanded::before {
+        content: '-';
+    }
+
+    .vertical-tree ul.toc-item {
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+    }
+
+    .vertical-tree ul.toc-item.collapsed {
+        height: 0;
+    }
+
+    .vertical-tree ul.toc-item li a:hover,
+    .vertical-tree ul.toc-item li a:hover {
+        color: #6B8AE6;
+    }
+    .vertical-tree h2 {
+        color: #6B8AE6;
+        font-size: 20px;
+    }
+    .vertical-tree ul.toc-item li a.highlight {
+        color: #6B8AE6;
+        font-weight: bold;
+    }
+
+</style>
+
+<div class="vertical-tree">
+    <h2>Table of Contents</h2>    <ul class="toc-item toc-level-1"><li><a href="#section-1"><strong>From isolated demonstrations to systematic discovery</strong></a></li><li><a href="#section-2"><strong>What is MerLin?</strong></a></li><li><a href="#section-3">Differentiable photonic quantum layers</a></li><li><a href="#section-4">Bridging photonic and qubit paradigms</a></li><li><a href="#section-5">Benchmarking 18 state-of-the-art models</a></li><li><a href="#section-6">Key technical insights</a></li><li><a href="#section-7">Why MerLin matters</a></li><li><a href="#section-8">References</a></li></ul></div>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-20 wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-18 wp-block-group-is-layout-constrained"><figure style="aspect-ratio:16/9;" class="wp-block-post-featured-image"><img width="800" height="533" src="https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="border-radius:10px;width:100%;height:100%;object-fit:cover;" decoding="async" fetchpriority="high" srcset="https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image.jpg 800w, https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image-300x200.jpg 300w, https://www.quandela.com/wp-content/uploads/2026/02/Merlin-blog-image-768x512.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
+
+<div class="entry-content wp-block-post-content has-inter-font-family is-layout-flow wp-block-post-content-is-layout-flow">
+<p><strong>Quantum machine learning will not scale on claims alone. It must be benchmarked, reproducible, hardware-aware, and useful at every stage. With the release of MerLin 0.3 and our accompanying </strong><a href="https://arxiv.org/pdf/2602.11092"><strong>scientific publication</strong></a><strong>, Quandela introduces a discovery engine for photonic and hybrid quantum machine learning. Built on optimized strong simulation of linear optics and native PyTorch integration, MerLin enables systematic, proof-driven exploration of where quantum structure creates measurable value — and where it does not. Utility now. Scale next.</strong></p>
+
+
+
+<p></p>
+
+
+
+<h4 id='section-1'><strong>From isolated demonstrations to systematic discovery</strong></h4>
+
+
+
+<p>Quantum machine learning (QML) has produced compelling ideas. But the field still faces a structural challenge:</p>
+
+
+
+<p>Results are often:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Difficult to reproduce</li>
+
+
+
+<li>Evaluated under heterogeneous assumptions</li>
+
+
+
+<li>Detached from hardware constraints</li>
+
+
+
+<li>Reported without standardized baselines as it is usually done in the AI world</li>
+</ul>
+
+
+
+<p>If quantum computing is to become deployable — not just demonstrable — QML must evolve from isolated experiments to systematic benchmarking.</p>
+
+
+
+<p>At Quandela, we believe in <strong>utility at every stage</strong> .<br>That principle guides both our hardware roadmap and our software ecosystem.</p>
+
+
+
+<p>MerLin was built to bring that same discipline to quantum machine learning.</p>
+
+
+
+<p></p>
+
+
+
+<h4 id='section-2'><strong>What is MerLin?</strong></h4>
+
+
+
+<p>MerLin (MerLin: A Discovery Engine for Photonic and Hybrid Quantum Machine Learning) is an open-source framework designed to:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Integrate photonic quantum circuits directly into modern ML workflows</li>
+
+
+
+<li>Enable scalable, differentiable training of quantum layers</li>
+
+
+
+<li>Provide reproducible benchmarking pipelines</li>
+
+
+
+<li>Remain hardware-aware by design</li>
+</ul>
+
+
+
+<p>It is built on <strong>Perceval</strong>, Quandela’s photonic quantum SDK , and leverages optimized Strong Linear Optical Simulation (SLOS) for exact simulation within the tractable regime.</p>
+
+
+
+<p>Unlike fragmented tooling ecosystems, MerLin connects:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Photonic circuit design</li>
+
+
+
+<li>PyTorch-native model training</li>
+
+
+
+<li>Benchmark-driven evaluation</li>
+
+
+
+<li>Cloud and hardware execution pathways</li>
+
+
+
+<li>Gate-based models to photonic models</li>
+</ul>
+
+
+
+<p>The objective is simple: <strong>turn photonic QML into an engineering discipline.</strong></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Q2B25 Paris | Xavier Pereira, Chief Growth Officer, Quandela" width="500" height="281" src="https://www.youtube.com/embed/8jclh7tIBaY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p></p>
+
+
+
+<h4 id='section-3'>Differentiable photonic quantum layers</h4>
+
+
+
+<p>At the core of MerLin lies the QuantumLayer, a PyTorch-compatible module representing a parametrized linear-optical circuit.</p>
+
+
+
+<p>Users can:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Construct and manipulate photonic circuits using high level primitives without any need to understand the underlying physics</li>
+
+
+
+<li>Encode classical data (angle or amplitude encoding)</li>
+
+
+
+<li>Select measurement strategies (probabilities, expectations, amplitudes)</li>
+
+
+
+<li>Train parameters through automatic differentiation</li>
+</ul>
+
+
+
+<p>MerLin accelerates simulation by precomputing sparse photon-number transition graphs. During optimization, only unitary-dependent coefficients are updated.</p>
+
+
+
+<p>The result: photonic quantum circuits become trainable components within standard AI pipelines — without sacrificing physical realism.</p>
+
+
+
+<p>This reflects a broader Quandela principle: <strong>Quantum must integrate into real computing environments, not remain isolated from them</strong>.</p>
+
+
+
+<pre class="wp-block-code"><code>builder = CircuitBuilder(n_modes=6)
+builder.add_entangling_layer(trainable=True, name="U1")
+builder.add_angle_encoding(modes=list(range(6)))
+builder.add_entangling_layer(trainable=True, name="U2")
+
+layer = QuantumLayer(
+    builder=builder,
+    n_photons=3,      # 3 photons evenly distributed on 6 modes
+    measurement_strategy=MeasurementStrategy.probs(),
+)
+
+optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+for _ in range(epochs):
+    layer.train()
+    optimizer.zero_grad()
+    probs = layer(X_train)
+    loss = F.cross_entropy(probs, y_train)
+    loss.backward()
+    optimizer.step()
+
+# Your layer is now trained !</code></pre>
+
+
+
+<p></p>
+
+
+
+<h4 id='section-4'>Bridging photonic and qubit paradigms</h4>
+
+
+
+<p>MerLin is not limited to photon-native architectures.</p>
+
+
+
+<p>Through a QuantumBridge abstraction, qubit-based circuits can be mapped into photonic encodings (e.g., dual-rail representations). This enables:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Cross-paradigm architectural comparison</li>
+
+
+
+<li>Hardware-relevant translation of gate-based QML models</li>
+
+
+
+<li>Controlled benchmarking under unified conditions</li>
+</ul>
+
+
+
+<p>Instead of debating abstractions, MerLin enables measurement.</p>
+
+
+
+<p>This is aligned with our differentiation: <strong>Quantum that works — deployable, efficient, and built for scale</strong>.</p>
+
+
+
+<p></p>
+
+
+
+<h4 id='section-5'>Benchmarking 18 state-of-the-art models</h4>
+
+
+
+<p>Alongside the framework, MerLin ships with <strong>18 reproduced state-of-the-art photonic and hybrid QML works</strong>, released as modular, reusable experiments.</p>
+
+
+
+<p>This matters because QML results are still frequently reported under heterogeneous assumptions, with limited baselines and inconsistent reproducibility. MerLin’s reproduced-paper collection provides a shared empirical starting point — and a practical way to compare architectures under unified conditions.</p>
+
+
+
+<p>Crucially, MerLin also supports cross-paradigm benchmarking: gate-based models can be translated into photonic encodings via the QuantumBridge, enabling controlled comparison between modalities.</p>
+
+
+
+<p>Quantum software should not drift away from hardware realities. It should prepare for them.</p>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h4 id='section-6'>Key technical insights</h4>
+
+
+
+<p>Our reproduction campaign revealed several structural observations:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Photon-native implementations can reproduce behaviors of gate-based architectures.</li>
+
+
+
+<li>Encoding strategy significantly impacts robustness and expressivity.</li>
+
+
+
+<li>Simulation efficiency gains enable larger-scale empirical exploration.</li>
+
+
+
+<li>Not all reported quantum advantages remain under standardized baselines.</li>
+</ul>
+
+
+
+<p>These findings reinforce a simple idea:</p>
+
+
+
+<p>Progress requires measurement.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h4 id='section-7'>Why MerLin matters</h4>
+
+
+
+<p>Quandela’s purpose is to deliver photonic quantum systems that create value now and scale credibly toward fault tolerance.</p>
+
+
+
+<p>MerLin extends that philosophy into quantum machine learning. It provides:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A reproducible foundation for photonic QML</li>
+
+
+
+<li>A bridge between classical AI and quantum hardware</li>
+
+
+
+<li>A benchmarking culture grounded in evidence</li>
+
+
+
+<li>An open ecosystem for researchers and developers</li>
+</ul>
+
+
+
+<p>Quantum computing will not mature through superlatives. It will mature through deployable systems, measurable progress, and disciplined engineering.</p>
+
+
+
+<p>MerLin 0.3 is one step in that direction.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h4 id='section-8'>References</h4>
+
+
+
+<ol class="wp-block-list">
+<li>C. Notton et al., <em>MerLin: A Discovery Engine for Photonic and Hybrid Quantum Machine Learning</em>, arXiv:2602.11092 (2026).</li>
+
+
+
+<li><a href="https://github.com/merlinquantum/merlin/releases/tag/0.3.1">MerLin GitHub Repository — Release 0.3</a></li>
+
+
+
+<li><a href="https://github.com/merlinquantum/reproduced_papers">Reproduced paper GitHub Repository</a></li>
+</ol>
+
+
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://arxiv.org/pdf/2602.11092">Read the full paper here</a></div>
+
+
+
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://merlinquantum.ai/quickstart/first_quantum_layer.html">try merlin 0.3 on github</a></div>
+</div>
+
+
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"></div>
+</div></div>
+
+
+
+<div class="wp-block-group mobile-custom-post-author has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><div class="wp-block-template-part"><div id="author-container">
+</div>
+<div id="post-related-publications-container" class="post-related-publications-container">
+</div>
+
+<style>
+    .author-box {
+        border-bottom: solid 1px var(--wp--preset--color--text-secondary);
+        padding-bottom: 20px;
+        margin: 10px 0;
+    }
+    .author__image {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 50%;
+    }
+
+    .author__name {
+        margin: 20px 0 0 0;
+    }
+
+    .author__summary {
+        color: var(--wp--preset--color--type-white-secondary) !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+    }
+
+    .author__linkedin {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid var(--wp--preset--color--type-white-secondary);
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .author__linkedin img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .author__quote {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-custom-post-author {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .custom-post-author {
+            display: none;
+        }
+        .mobile-custom-post-author {
+            display: block;
+        }
+    }
+    .post-related-publications-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .post-related-publication-row {
+        display: flex;
+        word-break: break-word;
+        gap: 10px;
+        padding: 8px 0;
+        border-top: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+    }
+</style>
+
+<script type="text/javascript">var authors = [{"id":"90","type":"researcher","name":"Jean Senellart","email":"jean.senellart@quandela.com","avatar":"wp-content\/uploads\/avatar\/citations.jpeg","summary":"Chief Product Officer","quote":"","metadata":null,"linkedin_url":"https:\/\/www.linkedin.com\/in\/jeansenellart\/","research_website":"https:\/\/scholar.google.com\/citations?user=ZYGQwKMAAAAJ","priority_order":null,"media_post_ids":null,"code":null,"detail_page":null,"project_end_date":null}];</script><script type="text/javascript">var publications = [];</script>
+<script>
+
+    function renderPostAuthor(authorBox, author) {
+        /*
+         |------------------------------------------------------------
+         | authorData Object Fields
+         |------------------------------------------------------------
+         | The `authorData` object includes the following fields:
+         |
+         | - name:      The author's name.
+         | - avatar:     The URL of the author's avatar image URL.
+         | - summary:   A brief summary or title of the author.
+         | - linkedIn:  URL to the author's LinkedIn profile.
+         | - quote:     A quote from the author.
+         |
+         */
+        authorBox.innerHTML = '';
+        console.log('authorData', author)
+
+        // Add author's image (avatar) if available
+        if (author.avatar) {
+            const authorImage = document.createElement('div');
+            authorImage.classList.add('author__image');
+            authorImage.style.backgroundImage = `url('/${author.avatar}')`;
+            authorBox.appendChild(authorImage);
+        }
+
+        // Add author's name if available
+        if (author.name) {
+            const authorName = document.createElement('h2');
+            authorName.classList.add('author__name');
+            authorName.textContent = author.name;
+            authorBox.appendChild(authorName);
+        }
+
+        // Add author's summary (title) if available
+        if (author.summary) {
+            const authorSummary = document.createElement('p');
+            authorSummary.classList.add('author__summary');
+            authorSummary.textContent = author.summary;
+            authorBox.appendChild(authorSummary);
+        }
+
+        // Add author's LinkedIn profile link as an image button if available
+        if (author.linkedin_url) {
+            const linkedInLink = document.createElement('a');
+            linkedInLink.classList.add('author__linkedin');
+            linkedInLink.href = author.linkedin_url;
+            linkedInLink.target = "_blank"; // Open the link in a new tab
+
+            const linkedInIcon = document.createElement('img');
+            linkedInIcon.src = '/wp-content/themes/quandela/assets/icons/linkedin-20.svg';
+            linkedInIcon.alt = 'LinkedIn';
+            linkedInLink.appendChild(linkedInIcon);
+
+            authorBox.appendChild(linkedInLink);
+        }
+
+        // Add author's quote if available
+        if (author.quote) {
+            const authorQuote = document.createElement('p');
+            authorQuote.classList.add('author__quote');
+            authorQuote.textContent = author.quote;
+            authorBox.appendChild(authorQuote);
+        }
+    }
+
+    function renderRelatedPublication(container, publication) {
+        const text = document.createElement('span');
+        text.textContent = 'QUICK LINKS: '
+
+        const contentRow = document.createElement('div');
+        contentRow.className = 'post-related-publication-row';
+        const icon = document.createElement('div');
+        icon.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM7 6H11V10H7V6ZM7 12H17V14H7V12ZM7 16H17V18H7V16ZM13 7H17V9H13V7Z"></path></svg>`;
+        const title = document.createElement('div');
+        const link = document.createElement('a');
+        link.target = '_blank';
+        link.href = publication.publish_url;
+        link.innerHTML = `<span>${publication.title}</span>`
+        title.append(link)
+        contentRow.append(icon);
+        contentRow.append(title);
+
+        container.append(text);
+        container.append(contentRow);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const authorContainer = document.getElementById('author-container');
+        console.log('authorContainer', authorContainer)
+        authorContainer.innerHTML = '';
+        if (typeof authors !== 'undefined' && authors) {
+            authors.forEach( author => {
+                const authorBox = document.createElement('div');
+                authorBox.className = 'author-box';
+                renderPostAuthor(authorBox, author);
+                authorContainer.appendChild(authorBox);
+            })
+        }
+
+        const relatedPublicationsContainer = document.getElementById('post-related-publications-container');
+        relatedPublicationsContainer.innerHTML = '';
+        if (typeof publications !== 'undefined' && publications) {
+            publications.forEach(publication => {
+                renderRelatedPublication(relatedPublicationsContainer, publication);
+            })
+        }
+
+    });
+
+</script>
+
+</div></div>
+</div>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-bottom-color:var(--wp--preset--color--grey);border-bottom-width:1px"><div class="wp-block-template-part"><div class="social-share-buttons">
+                                    <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F" target="_blank" class="social-share-button facebook"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/facebook.svg" alt="Share on Facebook"/></span><span class="social-share-button__content">Share on Facebook</span></a><br />
+                                                <a href="https://x.com/share?text=MerLin:%20Photonic%20Quantum%20Machine%20Learning,%20Engineered%20for%20Utility&#038;url=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F" target="_blank" class="social-share-button x"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/x.svg" alt="Share on X"/></span><span class="social-share-button__content">Share on X</span></a><br />
+                                                <a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F&#038;title=MerLin:%20Photonic%20Quantum%20Machine%20Learning,%20Engineered%20for%20Utility" target="_blank" class="social-share-button linkedin"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/linkedin-20.svg" alt="Share on LinkedIn"/></span><span class="social-share-button__content">Share on LinkedIn</span></a><br />
+                                                <a href="mailto:?subject=MerLin:%20Photonic%20Quantum%20Machine%20Learning,%20Engineered%20for%20Utility&#038;body=https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F" target="_blank" class="social-share-button email"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/mail.svg" alt="Share via Mail"/></span><span class="social-share-button__content">Share via Mail</span></a><br />
+                                                <a href="javascript:void(0);" onclick="copyToClipboard('https%3A%2F%2Fwww.quandela.com%2Fresources%2Fblog%2Fmerlin-photonic-quantum-machine-learning-engineered-for-utility%2F', this)" class="social-share-button copy"><span class="social-share-button__icon"><img decoding="async" src="/wp-content/themes/quandela/assets/icons/link.svg" alt="Copy URL"/></span><span class="social-share-button__content">Copy URL</span></a></p>
+<div class="copy-notification">URL copied</div>
+</p></div>
+<p>    <script>
+        function copyToClipboard(text, element) {
+            const tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            const notification = element.parentNode.querySelector('.copy-notification');
+            notification.classList.add('show-notification');
+            setTimeout(function() {
+                notification.classList.remove('show-notification');
+            }, 2000);
+        }
+    </script></p>
+</div>
+
+</div>
+
+
+
+<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-surface-dark-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-block-cover-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-23 wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading" id="section-1">Latest from the blog</h3>
+
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-22 wp-block-group-is-layout-flex"><div class="wp-block-template-part"><p class="default-post-grid__result">No posts found</p>
+</div></div>
+</div>
+</div></div>
+</div>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group homepage-container has-surface-dark-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-color:var(--wp--preset--color--type-white-40);border-top-width:1px;padding-top:var(--wp--preset--spacing--56);padding-bottom:var(--wp--preset--spacing--56)">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-stretch is-layout-flow wp-block-column-is-layout-flow" style="padding-top:var(--wp--preset--spacing--32);padding-bottom:var(--wp--preset--spacing--32);flex-basis:70%">
+<div class="wp-block-group is-vertical is-content-justification-left is-layout-flex wp-container-core-group-is-layout-25 wp-block-group-is-layout-flex" style="min-height:100%">
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/about-us/contact-us">contact us</a></div>
+</div>
+
+
+
+<a href="/"><img decoding="async" src="/wp-content/themes/quandela/assets/images/quandela-logo.png" alt="" style="max-width:460px;
+    width: 100%;
+"></a>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-top:var(--wp--preset--spacing--32);padding-bottom:var(--wp--preset--spacing--32);flex-basis:30%"><div class="wp-block-template-part"><div id="mc_embed_shell">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            clear: left;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+        <form action="https://quandela.us18.list-manage.com/subscribe/post?u=f23be43c1da654432a3876905&amp;id=cd786846e1&amp;f_id=00fba9e6f0"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              style="margin: 0;"
+              target="_blank">
+            <div id="mc_embed_signup_scroll"><h2 style="font-size: 16px;">Sign up to our newsletter</h2>
+                <div class="mc-field-group" style="width: 100%">
+                    <input style="height: 39px; padding: 0; margin: 0" type="email" placeholder="Enter your email"
+                           name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                </div>
+                <div class="clear" style="margin: 0; padding:0; width: 100%;">
+                    <div class="note" style="color: #ffffff80; font-size: 14px;" bis_skin_checked="1">
+                        By clicking subscribe, you have read and accepted the privacy policy
+                    </div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_f23be43c1da654432a3876905_cd786846e1" tabindex="-1" value=""></div>
+                <div class="clear">
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                            class="button custom-btn-subscribe">
+                        <div id="mc-embedded-subscribe-loader" class="lds-spinner" bis_skin_checked="1">
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                            <div bis_skin_checked="1"></div>
+                        </div>
+                        <span class="btn-text" style="letter-spacing: 0.7px">Subscribe</span>
+                    </button>
+                </div>
+                <div id="mce-responses" class="clear" style="margin: 0; padding:0; width: 100%;">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response custom-response-subscribe" id="mce-success-response"
+                         style="display: none;"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttonEl = document.getElementById("mc-embedded-subscribe");
+            buttonEl?.addEventListener('click', () => {
+                const emailInput = document.getElementById('mce-EMAIL');
+                if (emailInput.value.trim() === "") return;
+                const loaderEl = document.getElementById('mc-embedded-subscribe-loader');
+                if (loaderEl) {
+                    loaderEl.style.display="inline-block";
+                }
+
+                buttonEl.style.cursor = 'not-allowed';
+                buttonEl.style.pointerEvents="none";
+                setTimeout(() => {
+                    buttonEl.style.pointerEvents = "all";
+                    buttonEl.style.cursor = '';
+                    if (loaderEl) {
+                        loaderEl.style.display="none";
+                    }
+                }, 2000)
+            })
+        });
+    </script>
+    <script type="text/javascript">(function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'MMERGE1';
+            ftypes[1] = 'text';
+            fnames[2] = 'MMERGE2';
+            ftypes[2] = 'text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);</script>
+</div></div></div>
+</div>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center social-media-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-template-part"><ul class="social-media-links">
+    <li>
+        <a href="https://www.linkedin.com/company/quandela" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"> <defs> </defs> <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" > <path d="M 45 0 C 28.967 0 14.902 8.392 6.932 21.015 c 2.729 1.97 6.069 3.145 9.693 3.145 h 32.399 c 17.08 0 32.123 8.704 40.948 21.915 C 89.981 45.716 90 45.36 90 45 C 90 20.147 69.853 0 45 0 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,102,153); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 90 45 c 0 -1.207 -0.062 -2.399 -0.155 -3.583 C 81.002 27.735 66.02 20.885 49.024 20.885 H 16.625 c -3.159 0 -6.101 -0.494 -8.614 -1.504 C 3.387 26.046 0.51 34.014 0.063 42.629 c 9.023 11.127 22.794 18.247 38.236 18.247 h 0.744 c 9.038 0 13.101 3.942 13.329 12.925 c 0.004 -0.143 0.022 -0.282 0.022 -0.426 c 0 8.417 -3.516 15.355 -11.172 16.456 C 42.469 89.934 43.726 90 45 90 C 69.853 90 90 69.853 90 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(1,92,138); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 41.27 89.834 c 7.988 -1.072 14.169 -7.802 14.378 -16.034 c -0.228 -8.983 -7.566 -16.2 -16.604 -16.2 h -0.744 c -15.296 0 -28.947 -6.992 -37.973 -17.938 C 0.119 41.414 0 43.193 0 45 C 0 68.595 18.164 87.936 41.27 89.834 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,83,124); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 21.789 36.952 h 9.95 v 32.005 h -9.95 V 36.952 z M 26.765 21.043 c 3.18 0 5.765 2.585 5.765 5.77 c 0 3.182 -2.585 5.767 -5.765 5.767 c -3.188 0 -5.765 -2.585 -5.765 -5.767 C 21 23.627 23.577 21.043 26.765 21.043" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 37.979 36.952 h 9.541 v 4.377 h 0.136 c 1.328 -2.517 4.574 -5.169 9.412 -5.169 C 67.141 36.159 69 42.786 69 51.404 v 17.554 h -9.943 V 53.393 c 0 -3.713 -0.065 -8.486 -5.169 -8.486 c -5.177 0 -5.966 4.046 -5.966 8.22 v 15.831 h -9.943 V 36.952 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 45.011 44.787 c 0 0.144 -0.018 0.283 -0.021 0.426 v 0 C 44.993 45.07 45.011 44.931 45.011 44.787 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> </g> </svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://x.com/Quandela_SAS/status/1616076214460088320" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"> <defs> </defs> <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" > <path d="M 17.884 19.496 L 38.925 47.63 L 17.751 70.504 h 4.765 l 18.538 -20.027 l 14.978 20.027 h 16.217 L 50.024 40.788 l 19.708 -21.291 h -4.765 L 47.895 37.94 L 34.101 19.496 H 17.884 z M 24.892 23.006 h 7.45 L 65.24 66.993 h -7.45 L 24.892 23.006 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 3 C 21.841 3 3 21.841 3 45 c 0 23.159 18.841 42 42 42 c 23.159 0 42 -18.841 42 -42 C 87 21.841 68.159 3 45 3 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> </g> </svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/channel/UCl5YMpSqknJ1n-IT-XWfLsQ" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 48 48" id="Layer_1" version="1.1" viewBox="0 0 48 48" xml:space="preserve"><script xmlns=""/><circle cx="24" cy="24" fill="#CA3737" r="24"/><path d="M35.2,18.5c0-0.1,0-0.2-0.1-0.3c0,0,0-0.1,0-0.1c-0.3-0.9-1.1-1.5-2.1-1.5h0.2c0,0-3.9-0.6-9.2-0.6  c-5.2,0-9.2,0.6-9.2,0.6H15c-1,0-1.8,0.6-2.1,1.5c0,0,0,0.1,0,0.1c0,0.1,0,0.2-0.1,0.3c-0.1,1-0.4,3.1-0.4,5.5  c0,2.4,0.3,4.5,0.4,5.5c0,0.1,0,0.2,0.1,0.3c0,0,0,0.1,0,0.1c0.3,0.9,1.1,1.5,2.1,1.5h-0.2c0,0,3.9,0.6,9.2,0.6  c5.2,0,9.2-0.6,9.2-0.6H33c1,0,1.8-0.6,2.1-1.5c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3c0.1-1,0.4-3.1,0.4-5.5  C35.6,21.6,35.4,19.5,35.2,18.5z M27.4,24.5l-4.7,3.4C22.6,28,22.5,28,22.4,28c-0.1,0-0.2,0-0.3-0.1c-0.2-0.1-0.3-0.3-0.3-0.5v-6.8  c0-0.2,0.1-0.4,0.3-0.5c0.2-0.1,0.4-0.1,0.6,0l4.7,3.4c0.1,0.1,0.2,0.3,0.2,0.5C27.7,24.2,27.6,24.4,27.4,24.5z" fill="#FFFFFF"/><script xmlns=""/></svg>
+        </a>
+    </li>
+    <li>
+        <a href="https://discord.gg/FhWGPDqKWY" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"> <defs> </defs> <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" > <path d="M 45 0 C 28.967 0 14.902 8.392 6.932 21.015 c 2.729 1.97 6.069 3.145 9.693 3.145 h 32.399 c 17.08 0 32.123 8.704 40.948 21.915 C 89.981 45.716 90 45.36 90 45 C 90 20.147 69.853 0 45 0 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(105,131,205); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 90 45 c 0 -1.207 -0.062 -2.399 -0.155 -3.583 C 81.002 27.735 66.02 20.885 49.024 20.885 H 16.625 c -3.159 0 -6.101 -0.494 -8.614 -1.504 C 3.387 26.046 0.51 34.014 0.063 42.629 c 9.023 11.127 22.794 18.247 38.236 18.247 h 0.744 c 9.038 0 13.101 3.942 13.329 12.925 c 0.004 -0.143 0.022 -0.282 0.022 -0.426 c 0 8.417 -3.516 15.355 -11.172 16.456 C 42.469 89.934 43.726 90 45 90 C 69.853 90 90 69.853 90 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(97,121,189); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 41.27 89.834 c 7.988 -1.072 14.169 -7.802 14.378 -16.034 c -0.228 -8.983 -7.566 -16.2 -16.604 -16.2 h -0.744 c -15.296 0 -28.947 -6.992 -37.973 -17.938 C 0.119 41.414 0 43.193 0 45 C 0 68.595 18.164 87.936 41.27 89.834 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(88,110,172); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /> <path d="M 13.903 14.081 c -0.507 0 -0.907 0.445 -0.907 0.988 c 0 0.543 0.409 0.988 0.907 0.988 c 0.507 0 0.907 -0.445 0.907 -0.988 C 14.82 14.526 14.41 14.081 13.903 14.081 z M 17.151 14.081 c -0.507 0 -0.907 0.445 -0.907 0.988 c 0 0.543 0.409 0.988 0.907 0.988 c 0.507 0 0.907 -0.445 0.907 -0.988 C 18.058 14.526 17.658 14.081 17.151 14.081 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(2.81 0 0 2.81 1.4065934065934016 1.4065934065934016) " stroke-linecap="round" /> <path d="M 21.475 6.617 H 9.553 c -1.005 0 -1.824 0.819 -1.824 1.833 v 12.028 c 0 1.014 0.819 1.833 1.824 1.833 h 10.089 l -0.472 -1.646 l 1.139 1.059 l 1.077 0.996 l 1.913 1.69 V 8.45 C 23.298 7.435 22.48 6.617 21.475 6.617 z M 18.04 18.236 c 0 0 -0.32 -0.383 -0.587 -0.721 c 1.165 -0.329 1.61 -1.059 1.61 -1.059 c -0.365 0.24 -0.712 0.409 -1.023 0.525 c -0.445 0.187 -0.872 0.311 -1.29 0.383 c -0.854 0.16 -1.637 0.116 -2.304 -0.009 c -0.507 -0.098 -0.943 -0.24 -1.308 -0.383 c -0.205 -0.08 -0.427 -0.178 -0.649 -0.302 c -0.027 -0.018 -0.053 -0.027 -0.08 -0.044 c -0.018 -0.009 -0.027 -0.018 -0.036 -0.027 c -0.16 -0.089 -0.249 -0.151 -0.249 -0.151 s 0.427 0.712 1.557 1.05 c -0.267 0.338 -0.596 0.738 -0.596 0.738 c -1.966 -0.062 -2.714 -1.352 -2.714 -1.352 c 0 -2.865 1.281 -5.187 1.281 -5.187 c 1.281 -0.961 2.5 -0.934 2.5 -0.934 l 0.089 0.107 c -1.601 0.463 -2.34 1.165 -2.34 1.165 s 0.196 -0.107 0.525 -0.258 c 0.952 -0.418 1.708 -0.534 2.02 -0.56 c 0.053 -0.009 0.098 -0.018 0.151 -0.018 c 0.543 -0.071 1.157 -0.089 1.797 -0.018 c 0.845 0.098 1.753 0.347 2.678 0.854 c 0 0 -0.703 -0.667 -2.215 -1.13 l 0.125 -0.142 c 0 0 1.219 -0.027 2.5 0.934 c 0 0 1.281 2.322 1.281 5.187 C 20.763 16.884 20.007 18.174 18.04 18.236 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(2.81 0 0 2.81 1.4065934065934016 1.4065934065934016) " stroke-linecap="round" /> </g> </svg>
+        </a>
+    </li>
+</ul>
+<style>
+    .social-media-links {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .social-media-links li {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .social-media-links a svg {
+        width: 30px; /* Adjust the size of the icons */
+        height: 30px;
+        transition: transform 0.3s;
+    }
+
+    .social-media-links a:hover svg {
+        transform: scale(1.1); /* Slight zoom on hover */
+    }
+</style></div></div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<div style="display: flex; flex-wrap: wrap;"><span style="white-space: nowrap; margin-right:5px;">© Copyright 2025 Quandela.</span><span style="white-space: nowrap"> All rights reserved.</span></div>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<p class="has-text-align-right term-condition"><a href="/legal-terms/" data-type="link" data-id="https://www.quandela.com/legal-terms/">Terms &amp; Conditions </a>・ <a href="/privacy-policy/">Privacy Policy</a> ・  <span id="open_preferences_center" style="color: #a8b2ff; cursor: pointer; white-space: nowrap">Cookie Setting</span></p>
+</div>
+</div>
+</div>
+</footer></div>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script src="https://www.quandela.com/wp-content/plugins/custom-language-switcher/js/custom-language-script.js?ver=1.0" id="cls-language-switcher-script-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/common/back-to-top.js" id="back-to-top.js-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/jquery-common.js" id="jquery-common-script-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/jquery-pagination-client.js" id="jquery-pagination-client-script-js"></script>
+<script id="client-user-subscriptions-ajax-script-js-extra">
+var custom_ajax_object = {"ajax_url":"https:\/\/www.quandela.com\/wp-admin\/admin-ajax.php","nonce":"8ba0dda49d"};
+</script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/user-subscriptions/submit-subscriptions-handler-ajax.js" id="client-user-subscriptions-ajax-script-js"></script>
+<script id="init-application-js-extra">
+var custom_ajax_object = {"ajax_url":"https:\/\/www.quandela.com\/wp-admin\/admin-ajax.php","nonce":"8ba0dda49d"};
+</script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/init-application.js" id="init-application-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/assets/ISO/iso-639-1.js" id="iso6391-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/event/continents.js" id="continents-js-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/event/countries.js" id="countries-js-js"></script>
+<script id="glossary-filter-script-js-extra">
+var glossary_ajax_object = {"ajax_url":"https:\/\/www.quandela.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/glossary/search-filter-script.js?ver=1.0" id="glossary-filter-script-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/js/post-type/table-of-content-script.js" id="table-of-content-script-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/assets/slimselect/slimselect.min.js" id="slim-select-js-js"></script>
+<script src="https://www.quandela.com/wp-content/themes/quandela/assets/mathjax/3.2.0/tex-mml-chtml.js" id="mathjax-js"></script>
+</body>
+</html>
