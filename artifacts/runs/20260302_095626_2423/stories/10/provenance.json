@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/9iLpoutx61YidEUga",
+  "title": "Simulating fermions with a digital quantum computer | Nature Reviews Physics",
+  "why": "- Simulating physical systems with fermions is classically challenging, and quantum computers offer tools to study such systems through quantum simulation algorithms.\n- The simulation of fermionic systems on qubit-based quantum computers requires encoding the antisymmetric exchange of fermions into qubits.\n- First and second quantization provide different methods for encoding fermionic degrees of freedom into qubits, each with specific strengths and approaches based on system requirements.\n- Studying quantum systems that are beyond the capabilities of classical computers has been identified as one of the most important applications of quantum computing technology."
+}

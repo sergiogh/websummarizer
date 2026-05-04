@@ -1,0 +1,5 @@
+{
+  "url": "https://www.nature.com/articles/s41586-026-10177-4",
+  "title": "[PAPER] Long-lived remote ion-ion entanglement for scalable quantum repeaters",
+  "why": "- The study demonstrates memory-memory entanglement between two nodes connected by 10 km of spooled fibre, with entanglement surviving beyond the average establishment time.\n- This achievement is enabled by long-lived trapped-ion memories, an efficient telecom interface, and a high-visibility single-photon entanglement protocol.\n- A proof-of-principle device-independent quantum key distribution (DI-QKD) demonstration was achieved over 10 km with finite-size analysis, and a positive key rate was reported over 101 km in the asymptotic limit—both distances exceeding previous work by more than two orders of magnitude.\n- The results provide a critical building block for quantum repeaters and mark an important step toward scalable quantum networks."
+}

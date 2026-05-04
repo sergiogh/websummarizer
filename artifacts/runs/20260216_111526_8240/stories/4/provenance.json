@@ -1,0 +1,5 @@
+{
+  "url": "https://quantum-journal.org/papers/q-2026-02-03-1994/",
+  "title": "Quantum Architecture Search with Unsupervised Representation Learning – Quantum",
+  "why": "- The introduced framework uses unsupervised machine learning to represent quantum circuit architectures in a compact, continuous space, eliminating the need for performance labels or predictors.\n- The method allows efficient exploration of quantum circuit design space using reinforcement learning and Bayesian optimization, significantly reducing the number of circuit evaluations required.\n- The approach decouples circuit representation learning from the search process, enabling the learned representations to be reused across a variety of quantum computing tasks.\n- The best circuits discovered using this method were validated both in simulation and on IBM's ibm_sherbrooke quantum hardware, maintaining optimal performance under real noise conditions.\n- The results demonstrate that unsupervised representation learning is a scalable and efficient tool for quantum circuit design, particularly important for near-term, resource-limited quantum devices."
+}

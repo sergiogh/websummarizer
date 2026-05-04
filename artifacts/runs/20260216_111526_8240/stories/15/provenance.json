@@ -1,0 +1,5 @@
+{
+  "url": "https://www.phoronix.com/news/Intel-Quantum-Passes-OSS-End",
+  "title": "Intel Ends Work On Quantum Compiler Open-Source Bits - Phoronix",
+  "why": "- Intel has formally discontinued and archived its Quantum Passes open-source project, which provided additional compilation passes for the LLVM-based compiler in the Intel Quantum SDK.\n- The Intel Quantum SDK is described as a \"complete quantum computing stack\" used for simulation and to develop code intended for future quantum hardware.\n- The Quantum Passes project allowed developers to add custom compiler passes during the compilation process, which was integral to preparing quantum programs before targeting Intel quantum backends.\n- The Quantum Passes code was last updated a year ago (with Quantum SDK 1.1.1 release) and now the project repository is read-only and no longer maintained or supported by Intel.\n- This move follows a year without updates to the Intel Quantum SDK and is part of a broader pattern of Intel discontinuing open-source projects."
+}

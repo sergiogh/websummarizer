@@ -1,0 +1,5 @@
+{
+  "url": "https://www.quantamagazine.org/a-new-complexity-theory-for-the-quantum-age-20260217/",
+  "title": "A New Complexity Theory for the Quantum Age | Quanta Magazine",
+  "why": "- Traditional complexity theory cannot accommodate problems with quantum inputs and outputs, addressing only classical-to-classical transformations.\n- Henry Yuen is leading an effort to develop a new \"fully quantum\" complexity theory to handle problems where both inputs and outputs are inherently quantum.\n- Quantum cryptographic concepts like bit commitment behave fundamentally differently when quantum inputs are involved, revealing new complexity-theoretic challenges.\n- Recent research by Yuen and collaborators has identified that many seemingly unrelated quantum problems are actually equivalent, suggesting deep underlying structure in this new theory.\n- The logical relationship between classical and fully quantum complexity theories remains an open and fundamental question."
+}

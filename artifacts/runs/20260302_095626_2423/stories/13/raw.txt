@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>University of Glasgow spinout Quantcore raise £2.5m seed</title>
+<meta name="description" content="Quantcore, a University of Glasgow spin-out, has raised £2.5m in seed funding to create a sovereign supply chain for quantum hardware."/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="University of Glasgow spinout Quantcore raise £2.5m seed" />
+<meta property="og:description" content="Quantcore, a University of Glasgow spin-out, has raised £2.5m in seed funding to create a sovereign supply chain for quantum hardware." />
+<meta property="og:url" content="https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/" />
+<meta property="og:site_name" content="Quantcore" />
+<meta property="article:section" content="Uncategorized" />
+<meta property="og:updated_time" content="2026-02-25T14:47:01+00:00" />
+<meta property="og:image" content="https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-1024x683.jpg" />
+<meta property="og:image:secure_url" content="https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-1024x683.jpg" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="534" />
+<meta property="og:image:alt" content="quantcore" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2026-02-24T09:13:04+00:00" />
+<meta property="article:modified_time" content="2026-02-25T14:47:01+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="University of Glasgow spinout Quantcore raise £2.5m seed" />
+<meta name="twitter:description" content="Quantcore, a University of Glasgow spin-out, has raised £2.5m in seed funding to create a sovereign supply chain for quantum hardware." />
+<meta name="twitter:image" content="https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-1024x683.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="taylor@bode-studio.com" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="5 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["ResearchProject","Organization"],"@id":"https://quantcore.co.uk/#organization","name":"Quantcore","url":"https://quantcore.co.uk","logo":{"@type":"ImageObject","@id":"https://quantcore.co.uk/#logo","url":"https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore_Logo_Final_Black_Vector.svg","contentUrl":"https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore_Logo_Final_Black_Vector.svg","caption":"Quantcore","inLanguage":"en-US","width":"2129","height":"318"},"openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"]},{"@type":"WebSite","@id":"https://quantcore.co.uk/#website","url":"https://quantcore.co.uk","name":"Quantcore","publisher":{"@id":"https://quantcore.co.uk/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-scaled.jpg","url":"https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-scaled.jpg","width":"2560","height":"1707","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/#webpage","url":"https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/","name":"University of Glasgow spinout Quantcore raise \u00a32.5m seed","datePublished":"2026-02-24T09:13:04+00:00","dateModified":"2026-02-25T14:47:01+00:00","isPartOf":{"@id":"https://quantcore.co.uk/#website"},"primaryImageOfPage":{"@id":"https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-scaled.jpg"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://quantcore.co.uk/author/taylorbode-studio-com/","name":"taylor@bode-studio.com","url":"https://quantcore.co.uk/author/taylorbode-studio-com/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c33f4d4f3431932396756180ef07a33dfc7c2c19f7da85614ecd6ed6e82cc141?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c33f4d4f3431932396756180ef07a33dfc7c2c19f7da85614ecd6ed6e82cc141?s=96&amp;d=mm&amp;r=g","caption":"taylor@bode-studio.com","inLanguage":"en-US"},"sameAs":["http://quantcore.co.uk"],"worksFor":{"@id":"https://quantcore.co.uk/#organization"}},{"@type":"BlogPosting","headline":"University of Glasgow spinout Quantcore raise \u00a32.5m seed","keywords":"quantcore,university of glasgow,spinout,quantum computing,jack brennan","datePublished":"2026-02-24T09:13:04+00:00","dateModified":"2026-02-25T14:47:01+00:00","articleSection":"Uncategorized","author":{"@id":"https://quantcore.co.uk/author/taylorbode-studio-com/","name":"taylor@bode-studio.com"},"publisher":{"@id":"https://quantcore.co.uk/#organization"},"description":"Quantcore, a University of Glasgow spin-out, has raised \u00a32.5m in seed funding to create a sovereign supply chain for quantum hardware.","name":"University of Glasgow spinout Quantcore raise \u00a32.5m seed","@id":"https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/#richSnippet","isPartOf":{"@id":"https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/#webpage"},"image":{"@id":"https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-scaled.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Quantcore &raquo; Feed" href="https://quantcore.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Quantcore &raquo; Comments Feed" href="https://quantcore.co.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Quantcore &raquo; Quantcore&#8217;s £2.5m raise to build UK&#8217;s sovereign manufacturing capability Comments Feed" href="https://quantcore.co.uk/2-5m-raise-to-build-uks-sovereign-manufacturing-capability/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://quantcore.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquantcore.co.uk%2F2-5m-raise-to-build-uks-sovereign-manufacturing-capability%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://quantcore.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquantcore.co.uk%2F2-5m-raise-to-build-uks-sovereign-manufacturing-capability%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://quantcore.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.9.1' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://quantcore.co.uk/wp-content/themes/hello-elementor/style.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://quantcore.co.uk/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://quantcore.co.uk/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://quantcore.co.uk/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.35.0' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://quantcore.co.uk/wp-content/uploads/elementor/css/post-7.css?ver=1772030435' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://quantcore.co.uk/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.35.0' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.28.3' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.28.3' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://quantcore.co.uk/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.35.0' media='all' />
+<link rel='stylesheet' id='widget-image-box-css' href='https://quantcore.co.uk/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.35.0' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://quantcore.co.uk/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.35.0' media='all' />
+<link rel='stylesheet' id='widget-form-css' href='https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.28.3' media='all' />
+<link rel='stylesheet' id='widget-post-info-css' href='https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/css/widget-post-info.min.css?ver=3.28.3' media='all' />
+<link rel='stylesheet' id='widget-share-buttons-css' href='https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css?ver=3.28.3' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://quantcore.co.uk/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.35.0' media='all' />
+<link rel='stylesheet' id='elementor-post-19-css' href='https://quantcore.co.uk/wp-content/uploads/elementor/css/post-19.css?ver=1772030436' media='all' />
+<link rel='stylesheet' id='elementor-post-29-css' href='https://quantcore.co.uk/wp-content/uploads/elementor/css/post-29.css?ver=1772030436' media='all' />
+<link rel='stylesheet' id='elementor-post-298-css' href='https://quantcore.co.uk/wp-content/uploads/elementor/css/post-298.css?ver=1772030823' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-spacegrotesk-css' href='http://quantcore.co.uk/wp-content/uploads/elementor/google-fonts/css/spacegrotesk.css?ver=1744843940' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-poppins-css' href='http://quantcore.co.uk/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1744843940' media='all' />
+<script src="https://quantcore.co.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://quantcore.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-5D9BV9JM" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["quantcore.co.uk"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-5D9BV9JM");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://quantcore.co.uk/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://quantcore.co.uk/wp-json/wp/v2/posts/296" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://quantcore.co.uk/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://quantcore.co.uk/?p=296' />
+<meta name="generator" content="Site Kit by Google 1.173.0" /><meta name="generator" content="Elementor 3.35.0; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore-Favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore-Favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore-Favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore-Favicon-300x300.png" />
+</head>
+<body class="wp-singular post-template-default single single-post postid-296 single-format-standard wp-custom-logo wp-theme-hello-elementor elementor-default elementor-kit-7 elementor-page-298">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header data-elementor-type="header" data-elementor-id="19" class="elementor elementor-19 elementor-location-header" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-30040565 e-con-full e-flex e-con e-parent" data-id="30040565" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+		<div class="elementor-element elementor-element-75949e18 e-con-full e-flex e-con e-child" data-id="75949e18" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-75686de0 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="75686de0" data-element_type="widget" data-e-type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://quantcore.co.uk">
+			<img fetchpriority="high" width="2129" height="318" src="https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore_Logo_Final_Black_Vector.svg" class="attachment-full size-full wp-image-113" alt="" />				</a>
+											</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4f221be3 e-con-full e-flex e-con e-child" data-id="4f221be3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-307343fe elementor-nav-menu--stretch elementor-nav-menu__align-end elementor-nav-menu--dropdown-mobile elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="307343fe" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-307343fe" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-170"><a href="https://quantcore.co.uk/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://quantcore.co.uk/about-us/" class="elementor-item">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://quantcore.co.uk/product/" class="elementor-item">Product</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-307343fe" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-170"><a href="https://quantcore.co.uk/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://quantcore.co.uk/about-us/" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://quantcore.co.uk/product/" class="elementor-item" tabindex="-1">Product</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-df7c46b elementor-align-right elementor-widget elementor-widget-button" data-id="df7c46b" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://quantcore.co.uk/contact-page/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Contact us</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+				</header>
+				<div data-elementor-type="single-post" data-elementor-id="298" class="elementor elementor-298 elementor-location-single post-296 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-3cd6cf6f e-flex e-con-boxed e-con e-parent" data-id="3cd6cf6f" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-12dbfb19 elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="12dbfb19" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-featured-image.default">
+				<div class="elementor-widget-container">
+															<img width="800" height="534" src="https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-1024x683.jpg" class="attachment-large size-large wp-image-320" alt="" srcset="https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-1024x683.jpg 1024w, https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-300x200.jpg 300w, https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-768x512.jpg 768w, https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-1536x1024.jpg 1536w, https://quantcore.co.uk/wp-content/uploads/2026/02/Quantcore_3-2048x1365.jpg 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-7fb88d3f elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="7fb88d3f" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-title.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Quantcore&#8217;s £2.5m raise to build UK&#8217;s sovereign manufacturing capability</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-28c33f98 elementor-align-center elementor-widget elementor-widget-post-info" data-id="28c33f98" data-element_type="widget" data-e-type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-85ee600 elementor-inline-item" itemprop="datePublished">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
+										<time>February 24, 2026</time>					</span>
+								</li>
+				</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-41b5071d elementor-widget elementor-widget-theme-post-content" data-id="41b5071d" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+					
+<p><a href="https://quantcore.co.uk/">Quantcore</a>, a University of Glasgow spin-out, has raised £2.5m in seed funding to create a sovereign supply chain for quantum hardware, as the UK races to build domestic capacity in technologies critical to national security and economic competitiveness. The round was co-led by <a href="https://www.pxnventures.co.uk/" target="_blank" rel="noopener">PXN Ventures</a>, <a href="https://blackfinch.ventures/" target="_blank" rel="noopener">Blackfinch Ventures</a> and <a href="https://www.scottish-enterprise.com/" target="_blank" rel="noopener">Scottish Enterprise</a>, with investment also coming from <a href="https://www.quantumexp.co.uk/" target="_blank" rel="noopener">Quantum Exponential</a> and <a href="https://www.stac.ac/invest/" target="_blank" rel="noopener">STAC</a>.</p>
+
+
+
+<p>Quantcore is the only company in the UK manufacturing niobium-based components. One benefit of niobium is it can operate at higher temperatures than aluminium, which is one of the most common materials used by Quantcore’s global competitors.</p>
+
+
+
+<p>Thanks to the use of niobium, Quantcore is helping its customers, which include UK national laboratories, to save energy and do more with its quantum components at a more scalable rate.</p>
+
+
+
+<p>Operating from the University of Glasgow&#8217;s James Watt Nanofabrication Centre, the company designs, manufactures and tests the superconducting processors, resonators and sensors that form the core of quantum computers and advanced sensing systems.</p>
+
+
+
+<p>Beyond computing applications, Quantcore&#8217;s quantum sensors enable secure communications and unprecedented accuracy in medical imaging that classical technology cannot achieve, which could lead to breakthroughs in areas such as neuroscience, early disease detection, secure infrastructure, and fundamental physics.</p>
+
+
+
+<p>Following the investment, Quantcore plans to grow its team from four to 12 employees over the next 18 months, with engineering roles across design, manufacturing and cryogenic testing as well as non-technical positions to aid its commercial strategy.</p>
+
+
+
+<div style="height:29px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>Dr Jack Brennan, CEO and co-founder of Quantcore, said:</strong> &#8220;This technology is extremely powerful. One of the main features of quantum computers is that they will be really good at cracking codes. So, as a country, you have to ask: do you want to wait until other countries have this capability, or do you want to get there first?</p>
+
+
+
+<p>&#8220;The world is not what it was. If you want this technology, which you do, you need to be able to manufacture it domestically so you can control every part of it. That&#8217;s what we&#8217;re building from Scotland.</p>
+
+
+
+<p>&#8220;Classical computers are hitting a plateau as silicon reaches its limits. We&#8217;re entering a new paradigm based on fundamental physics, and it&#8217;s coming whether we like it or not. There&#8217;s no reason all the advanced tech in the UK has to be in London, Cambridge, and Oxford. Why not build it here?&#8221;</p>
+
+
+
+<div style="height:29px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>The investment comes at a time of geopolitical uncertainty and follows the UK government’s pledge to invest £670m into quantum computing as part of its 10-year modern industrial strategy, with the global quantum computing market projected to reach $20.2 billion by 2030.</p>
+
+
+
+<p>Quantcore was founded by Dr&nbsp;Jack&nbsp;Brennan, Dr Valentino Seferai, Wridhdhisom Karar, and Prof Martin Weides, and spun out from the University of Glasgow in August 2025. The company was also part the first cohort of deep tech startups to take part in the university’s Infinity G accelerator programme, led by STAC.</p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About PXN Ventures</strong></p>
+
+
+
+<p>PXN Ventures is the venture capital arm of PXN Group, formed as a result of two of the North’s best fund managers (Praetura Ventures and Par Equity) coming together to create an investor that the region deserves. With offices in Manchester, Edinburgh, Leeds and London, we deliver world-class investment programmes at scale to help build the Northern economy, supporting founders across a diverse range of sectors, including deep tech, life sciences and software.</p>
+
+
+
+<p>PXN Ventures is committed to backing early-stage founders across the North of the UK, with a long and growing list of northern success stories in our portfolio that have received early backing from PXN, including Modern Milkman, Phlo, AccessPay, Street Group and Advanced Electric Machines. As well as its EIS, VCT and institutional funds, including the GMC Life Sciences Fund II, PXN Ventures is the North West fund manager for the Northern Powerhouse Investment Fund II, which is managed on behalf of the British Business Bank. </p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About Scottish Enterprise</strong></p>
+
+
+
+<p><a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.scottish-enterprise.com%2Four-organisation%2Fwhat-we-do&amp;data=05%7C01%7CRoss.Nisbet%40scotent.co.uk%7C59748b24d26641baba3b08dbdecaa13d%7C50374495fdde4d04bc5c574982680e19%7C0%7C0%7C638348734091833353%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=Whgvq46XDI503nWMahmfcD8fNBm6ixd3cyCxw7BlQL0%3D&amp;reserved=0" target="_blank" rel="noopener">Scottish Enterprise</a> (SE) is Scotland’s national economic development agency and a non-departmental public body of the Scottish Government. It supports businesses to innovate and scale to transform the Scottish economy by focusing on new market opportunities through targeted investment, innovation and internationalisation. Follow us on <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2FScotEntNews&amp;data=05%7C01%7CRoss.Nisbet%40scotent.co.uk%7C59748b24d26641baba3b08dbdecaa13d%7C50374495fdde4d04bc5c574982680e19%7C0%7C0%7C638348734091833353%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=7QCacvRbSKUvoJ0rznZDD8AIjO6tiU5jTQidFlzBE7Y%3D&amp;reserved=0" target="_blank" rel="noopener">X</a> (formerly Twitter) and <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fscottish-enterprise%2F&amp;data=05%7C01%7CRoss.Nisbet%40scotent.co.uk%7C59748b24d26641baba3b08dbdecaa13d%7C50374495fdde4d04bc5c574982680e19%7C0%7C0%7C638348734091833353%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=9GRiaELHMI56mqnUy6YO%2Bk81CfrLPilBeA8d7sQVO2g%3D&amp;reserved=0" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About Blackfinch Group</strong></p>
+
+
+
+<p>Blackfinch&nbsp;Group is an award-winning investment specialist and trusted provider. Employing more than 150 full-time members of staff, it has a heritage dating back 30 years. The group provides tax-efficient investment solutions, managed portfolio services, early-stage investing, property&nbsp;financing&nbsp;and energy infrastructure investing. &nbsp; Inspired by the work of Charles Darwin and founded on evolutionary principles,&nbsp;Blackfinch&nbsp;adapts to and evolves with customer requirements, helping others to thrive.&nbsp;</p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About Blackfinch Ventures </strong></p>
+
+
+
+<p>Blackfinch Ventures invests in innovation. It targets high-growth opportunities, supporting and early-stage businesses with technological potential. The focus is on disruptive businesses, offering products that address real world needs, with the capability to make an impact in global markets. </p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About the University of Glasgow</strong></p>
+
+
+
+<p>Founded in 1451 and the fourth-oldest university in the English-speaking world, the University of Glasgow is recognised internationally for its ground-breaking research and world-class teaching.</p>
+
+
+
+<p>In 2024, the University’s top six spin-outs raised investment of more than £60 million, creating 250 jobs across a range of commercial and spin-out activity, and awarded more than £600,000 to 23 projects with commercial or spin-out potential as part of major funding drives in Medtech and the Arts and Humanities.  </p>
+
+
+
+<p>The University is also working with its partners Scottish Enterprise and Glasgow City Council to deliver jobs, training&nbsp;opportunities&nbsp;and economic growth through Glasgow Riverside Innovation District.&nbsp;</p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About STAC</strong></p>
+
+
+
+<p>STAC (Smart Things Accelerator Centre) is Scotland&#8217;s first industry-led technology accelerator, dedicated to nurturing Scottish technology startups in IoT, drones, robotics, quantum computing, photonics and smart devices to become globally competitive companies. Founded in 2021 and headquartered at Skypark in Glasgow, STAC operates through four main pillars: STAC Scale (18-month mentorship programme), STAC Jobs (talent platform), STAC Invest (investment arm), and thebeyond (physical campus). <a href="http://stac.ac" target="_blank" rel="noopener">stac.ac </a></p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>About Quantum Exponential</strong></p>
+
+
+
+<p>Quantum Exponential Group plc (Quantum Exponential) is a specialist investment firm dedicated to establishing a global lead in quantum technology portfolio management. The company identifies and supports high-potential pioneers across the full innovation lifecycle—from pre-seed to commercialisation—focusing on sectors such as <strong>finance, healthcare, defence and global resilience</strong>. </p>
+
+
+
+<p>Building on a track record of managing a dedicated quantum portfolio, Quantum Exponential is currently fundraising for a&nbsp;<strong>£100 million venture capital fund</strong>&nbsp;to strengthen the UK&#8217;s global leadership and support the National Quantum Strategy. Through strategic partnerships with the&nbsp;<strong>Harwell Quantum Cluster</strong>&nbsp;and other key national and international organisations, QEG leverages unparalleled market access to nurture groundbreaking advances in quantum computing, sensing, and cryptography across the UK, UK-aligned countries, and emerging global markets.&nbsp;</p>
+
+
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p></p>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7fb4bdff elementor-widget elementor-widget-heading" data-id="7fb4bdff" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default">Share the Post:</span>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1347fe82 elementor-share-buttons--view-icon elementor-share-buttons--skin-minimal elementor-share-buttons--color-custom elementor-share-buttons-mobile--align-center elementor-widget__width-inherit elementor-share-buttons--shape-square elementor-grid-0 elementor-widget elementor-widget-share-buttons" data-id="1347fe82" data-element_type="widget" data-e-type="widget" data-widget_type="share-buttons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-grid">
+								<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_facebook"
+							role="button"
+							tabindex="0"
+							aria-label="Share on facebook"
+						>
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_twitter"
+							role="button"
+							tabindex="0"
+							aria-label="Share on twitter"
+						>
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_linkedin"
+							role="button"
+							tabindex="0"
+							aria-label="Share on linkedin"
+						>
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>							</span>
+																				</div>
+					</div>
+						</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				<footer data-elementor-type="footer" data-elementor-id="29" class="elementor elementor-29 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-4a5d45d e-flex e-con-boxed e-con e-parent" data-id="4a5d45d" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-35f770a e-con-full e-flex e-con e-child" data-id="35f770a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-924659d elementor-widget elementor-widget-heading" data-id="924659d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Make breakthroughs and drive innovation in whatever way you see fit. 
+</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d1cc06e elementor-widget elementor-widget-text-editor" data-id="d1cc06e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>With our bespoke services, we can tailor our designs and outcomes to your exact specifications.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-adc607e elementor-align-center elementor-widget elementor-widget-button" data-id="adc607e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://quantcore.co.uk/contact-page/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Let's get started</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-598ca0cb e-con-full e-flex e-con e-parent" data-id="598ca0cb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-226486c7 e-con-full e-flex e-con e-child" data-id="226486c7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-32ce390b elementor-position-top elementor-widget elementor-widget-image-box" data-id="32ce390b" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img fetchpriority="high" width="2129" height="318" src="https://quantcore.co.uk/wp-content/uploads/2024/11/Quantcore_Logo_Final_Black_Vector.svg" class="attachment-full size-full wp-image-113" alt="" /></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">Leading advancements in quantum manufacturing</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-661eb80a e-con-full e-flex e-con e-child" data-id="661eb80a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6efa67ce elementor-widget elementor-widget-heading" data-id="6efa67ce" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Quick Links</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4ea37341 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="4ea37341" data-element_type="widget" data-e-type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-4ea37341" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-170"><a href="https://quantcore.co.uk/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://quantcore.co.uk/about-us/" class="elementor-item">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://quantcore.co.uk/product/" class="elementor-item">Product</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-4ea37341" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-170"><a href="https://quantcore.co.uk/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://quantcore.co.uk/about-us/" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://quantcore.co.uk/product/" class="elementor-item" tabindex="-1">Product</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cad7f72 e-con-full e-flex e-con e-child" data-id="cad7f72" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3f15b0ea elementor-widget elementor-widget-heading" data-id="3f15b0ea" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Get In Touch</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6303bb42 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6303bb42" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="mailto:info@quantcore.co.uk">
+
+											<span class="elementor-icon-list-text">info@quantcore.co.uk</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-255c733 elementor-button-align-start elementor-widget elementor-widget-form" data-id="255c733" data-element_type="widget" data-e-type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="Contact Form">
+			<input type="hidden" name="post_id" value="29"/>
+			<input type="hidden" name="form_id" value="255c733"/>
+			<input type="hidden" name="referer_title" value="Page Not Found - Quantcore" />
+
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
+												<label for="form-field-name" class="elementor-field-label elementor-screen-only">
+								Your Name							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Your Name" required="required">
+											</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Your Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Your Email" required="required">
+											</div>
+								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-field-required">
+												<label for="form-field-message" class="elementor-field-label elementor-screen-only">
+								Message							</label>
+						<textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Message" required="required"></textarea>				</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-sm" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">Send</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7a29d854 e-flex e-con-boxed e-con e-parent" data-id="7a29d854" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ad3136a elementor-widget elementor-widget-heading" data-id="ad3136a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">© 2026 All Rights Reserved.</p>				</div>
+				</div>
+					</div>
+				</div>
+				</footer>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script src="https://quantcore.co.uk/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.1.1" id="hello-theme-frontend-js"></script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.35.0" id="elementor-webpack-runtime-js"></script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.35.0" id="elementor-frontend-modules-js"></script>
+<script src="https://quantcore.co.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.35.0","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true},"urls":{"assets":"https:\/\/quantcore.co.uk\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/quantcore.co.uk\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/quantcore.co.uk\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"5eb9cb0f90"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":296,"title":"University%20of%20Glasgow%20spinout%20Quantcore%20raise%20%C2%A32.5m%20seed","excerpt":"","featuredImage":"https:\/\/quantcore.co.uk\/wp-content\/uploads\/2026\/02\/Quantcore_3-1024x683.jpg"}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.35.0" id="elementor-frontend-js"></script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.3" id="e-sticky-js"></script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.3" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://quantcore.co.uk/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script src="https://quantcore.co.uk/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/quantcore.co.uk\/wp-admin\/admin-ajax.php","nonce":"a56fac968b","urls":{"assets":"https:\/\/quantcore.co.uk\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/quantcore.co.uk\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/quantcore.co.uk\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.3" id="elementor-pro-frontend-js"></script>
+<script src="https://quantcore.co.uk/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.3" id="pro-elements-handlers-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://quantcore.co.uk/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://quantcore.co.uk/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+</body>
+</html>

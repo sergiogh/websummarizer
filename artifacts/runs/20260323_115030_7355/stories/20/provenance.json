@@ -1,0 +1,5 @@
+{
+  "url": "https://alice-bob.com/blog/how-alice-bob-uses-nvidias-cuda-q-to-accelerate-quantum-error-correction-research/",
+  "title": "How Alice & Bob Uses NVIDIA CUDA-Q to Accelerate Quantum Error Correction Research - Alice & Bob",
+  "why": "- Alice & Bob used NVIDIA CUDA-Q to accelerate simulations of quantum error correction for their cat-qubit QPUs, specifically for Elevator Codes.\n- GPU acceleration (using CUDA-Q) enabled a 9.25x speedup in decoding simulations compared to a CPU-only approach (1 hour 57 minutes vs 18 hours 2 minutes for 100,000 simulated shots).\n- Faster decoding cycles allow for more aggressive iteration on code design and exploration of architectural variations in quantum error correction research.\n- Elevator Codes, designed for Alice & Bob’s cat qubits, reach very low logical error rates needed for large-scale quantum algorithms and quantum chemistry simulations.\n- The tight integration of classical (GPU/CPU) and quantum hardware, enabled by platforms like CUDA-Q, is helping to advance the path toward scalable, fault-tolerant quantum computing."
+}

@@ -1,0 +1,2874 @@
+Computing with many encoded logical qubits beyond break-even
+Shival Dasu,1,∗Matthew DeCross,1,∗Andrew Y. Guo,1Ali Lavasani,1Jan Behrends,2Asmae Benhemou,3
+Yi-Hsiang Chen,1Karl Mayer,1Chris N. Self,2Selwyn Simsek,3Basudha Srivastava,2M.S. Allman,1
+Jake Arkinstall,2Justin G. Bohnet,1Nathaniel Q. Burdick,4J.P. Campora III,1Alex Chernoguzov,1
+Samuel F. Cooper,1Robert D. Delaney,1Joan M. Dreiling,1Brian Estey,1Caroline Figgatt,1Cameron
+Foltz,1John P. Gaebler,1Alex Hall,1Craig A. Holliman,5Ali A. Husain,4Akhil Isanaka,1Colin J.
+Kennedy,1Yuga Kodama,5Nikhil Kotibhaskar,3Nathan K. Lysne,5Ivaylo S. Madjarov,1Michael Mills,1
+Alistair R. Milne,3Brian Neyenhuis,1Annie J. Park,1Anthony Ransford,1Adam P. Reed,1Steven J.
+Sanders,1Charles H. Baldwin,1David Hayes,1Ben Criger,2Andrew C. Potter,1and David Amaro3
+1Quantinuum, Broomfield, CO 80021, USA
+2Quantinuum, Terrington House, Cambridge, CB2 1NL, UK
+3Quantinuum, Partnership House, Carlisle Place, London, SW1P 1BX, UK
+4Quantinuum, Brooklyn Park, MN 55422, USA
+5Quantinuum K.K., Chiyoda-ku, Tokyo, Japan
+(Dated: February 26, 2026)
+High-rate quantum error correcting (QEC) codes encode many logical qubits in a given number of
+physical qubits, making them promising candidates for quantum computation. Implementing high-
+rate codes at a scale that both frustrates classical computing and improves performance by encoding
+requires both high fidelity gates and long-range qubit connectivity—both of which are offered by
+trapped-ion quantum computers. Here, we demonstrate computations that outperform their un-
+encoded counterparts in the high-rateJk+ 2, k,2Kiceberg quantum error detecting (QED) and
+J(k2+ 2)(k 1+ 2), k 2k1,4Ktwo-level concatenated iceberg QEC codes, using the 98-qubit Quantin-
+uum Helios trapped-ion quantum processor. Utilizing new gadgets for encoded operations, we
+realize this “beyond break-even” performance with reasonable postselection rates across a range of
+fault-tolerant (FT) and partially-fault-tolerant (pFT) component and application benchmarks with
+between 48 and 94 logical qubits. These benchmarks include FT state preparation and measurement,
+QEC cycle benchmarking, logical gate benchmarking, GHZ state preparation, and a pFT quantum
+simulation of the three-dimensionalXYmodel of quantum magnetism. Additionally, we illustrate
+that postselection rates can be suppressed by increasing the code distance via concatenation. Our
+results represent state-of-the-art logical component and state fidelities and provide evidence that
+high-rate QED/QEC codes are viable on contemporary quantum computers for near-term beyond-
+classical-scale computation.
+Achieving high fidelity in lengthy quantum computa-
+tions necessary for most practical applications requires
+encoding logical qubits into a larger number of physical
+qubits in a quantum code to suppress errors. Computa-
+tion and error correction with encoded logical qubits adds
+space (memory) and time (circuit complexity) overheads,
+that, so far, have limited experimental implementations
+on existing quantum hardware to modest numbers of log-
+ical qubits that do not yet challenge the limits of classical
+computation.
+The arbitrary qubit connectivity available in trapped-
+ion and neutral atom devices enables a variety of geomet-
+rically non-local codes with substantially reduced over-
+heads [1–3]. As an extreme example, iceberg quantum
+error-detection (QED) codes [4–6] require only two addi-
+tional physical qubits to encode an arbitrary number of
+logical qubits capable of detecting any single-qubit error.
+In this work, we introduce a family of concatenated ice-
+berg codes that generalize many-hypercubes codes [7] to
+variable code block sizes to achieve asymptotically high
+∗These authors contributed equally.encoding rates and code distances [2]. Using the 98-qubit
+Quantinuum Helios trapped-ion quantum processor [8]
+(see Methods A for hardware details), we implement ice-
+berg codes at the first and second levels of concatenation,
+respectively forming QED and quantum error correction
+(QEC) codes of distancesd= 2 and 4.
+While arbitrary error suppression ultimately requires
+fully fault-tolerant (FT) operation, there is a significant
+leap in complexity and scale of computation before FT al-
+gorithms can outperform unencoded ones. To bridge this
+gap, partially fault-tolerant (pFT) techniques [9, 10] that
+can immediately improve upon unencoded performance
+and extend the practical reach of quantum computers can
+be useful, even if these techniques do not scale efficiently
+to asymptotically large circuits. In Quantinuum trapped-
+ion quantum processors, a practical pFT scheme consists
+in implementing arbitrary-angle logical Pauli rotations
+via continuously-parameterized native two-qubit Pauli
+rotations to avoid the sizable cost of FT non-Clifford gate
+synthesis [11, 12].
+This work reports encoded (“logical”) vs. unencoded
+(“physical”) performance results across a range of FT
+and pFT techniques, including experiments with up to
+94 logical qubits in iceberg QED codes, and up to 48arXiv:2602.22211v1  [quant-ph]  25 Feb 2026
+
+2
+logical qubits in concatenated iceberg QEC codes.
+For iceberg QED codes, we introduce improved FT
+initialization, syndrome extraction, and readout gadgets,
+as well as new FT and pFT gates, that develop iceberg
+codes as a practical tool for beyond-classical-scale quan-
+tum computation. We show that encoded algorithms
+can outperform their unencoded counterparts, that is,
+demonstratebeyond break-evenperformance, on a variety
+of logical benchmarks including state preparation-and-
+measurement (SPAM) experiments, cycle benchmarking
+of logical gates, preparation of GHZ states, and the dy-
+namics of the three-dimensionalXYmodel relevant to
+simulation of magnetic materials.
+For concatenated iceberg QEC codes, we similarly in-
+troduce improvements to initialization, QEC, and en-
+tangling gadgets, demonstrating beyond break-even per-
+formance on SPAM experiments and the preparation of
+GHZ states. We benchmark the performance of the
+newly introduced QEC cycle and find below pseudo-
+threshold performance for theJ80,48,4Kcode. Addi-
+tionally, we find improved QEC acceptance rates for the
+J16,4,4Kcode compared to analogous QED acceptance
+rates for theJ4,2,2Kcode at comparable fidelity, allow-
+ing for longer FT computations to be performed at higher
+levels of concatenation. Postselecting out detectable, but
+not correctable, weight-d/2 faults in even-distance codes
+should not be misconstrued as a non-scalable technique,
+since, below threshold, both the error rate and the posts-
+election overheads are exponentially suppressed with in-
+creasing code distance.
+Concatenated Iceberg Codes:Iceberg codes,I k, are
+low-overhead quantum error-detecting (QED) codes that
+encode an even number,k, of logical qubits at code dis-
+tanced= 2 using only two additional qubits for a total
+ofn=k+ 2 physical qubits [4–6]. The stabilizer gen-
+eratorsS XandS Zof an iceberg code are global Pauli
+products:S X/Z =Qn−1
+j=0(X/Z) j. Any Pauli operator
+containing an even number ofX’s andZ’s is a logical
+operator. These can be generated by Xj=X 0Xjand
+Zj=ZjZk+1for 1≤j≤k. Here we index physical qubit
+operators by subscripts with range [n]≡ {0,1, . . . n−1},
+and logical operators with an overline and superscripts
+with range{1,2, . . . k}, and use index-raising to denote
+encoding qubits into the logical qubits of a code.
+Iceberg QED codes can be promoted to QEC codes
+using concatenation (see, e.g. Ref. [7]), which takes as
+input two iceberg codes,I k2andI k1, and outputs a code,
+Ik2◦ Ik1, with parametersJn 2n1, k2k1, d2d1K. This pro-
+cedure can be visualized as in Fig. 1a by arranging the
+physical qubits into ann 1×n2grid with Pauli-XandZ
+operators labeledX i,jandZ i,j(i∈[n 1], j∈[n 2]) respec-
+tively. The qubits in each row are encoded intoI k1codes
+and thenI k2codes are encoded on each of thek 1logical
+qubit columns. TheXandZstabilizers of the concate-
+nated code consist of PauliXorZproducts along rows
+(the stabilizers of theI k1codes) and pairs of columns
+(the stabilizers of the encodedI k2codes), and the Xand
+Zlogical operators are rectangles of physicalXorZop-erators (see Fig. 1a). This concatenation procedure can
+be straightforwardly iterated to higher levels to achieve
+larger distances. In the following, we implement only the
+first two concatenation levels for iceberg codes, explor-
+ing a variety of iceberg QED codes with up to 94 logical
+qubits and concatenated iceberg QEC codes with up to
+48 logical qubits (the largest for which a full QEC cycle
+can be executed on Helios).
+Encoding and readout:Encoding physical qubits into
+logical qubits is an essential first step for FT computa-
+tion. To this end, we introduce and benchmark improved
+encoding circuits and logical readout protocols for iceberg
+codes with and without concatenation.
+The logical zero state of the iceberg codeI k,|0⟩⊗k, is
+a GHZ state|GHZ n⟩on all physical qubits [6]. In the
+d= 4 concatenated iceberg code, the logical zero state
+|0⟩⊗k1k2is the tensor product of the logical GHZ states
+over eachI k2logical qubit column:| GHZ k2⟩⊗k1.To pre-
+pare thed= 2 logical zero state, a physical GHZ state
+preparation circuit can be used, which starts with a|+⟩
+state and subsequently incorporates more qubits via a
+tree of CX gates. To prepare thed= 4 logical zero state,
+we follow a similar procedure replacing physical qubits
+with iceberg codes. Starting with a| ¯+⟩⊗k1Ik1block,
+other blocks are incorporated via a tree of transversal
+logical CX gates. In both cases,Xerrors during the cir-
+cuit can cascade through the CX gates, causing a high-
+weight error on the output. To ensure fault-tolerance,
+we catch these errors by measuringZZoperators at the
+ends of certain pairs of tree branches [7]. In thed= 2
+case, we introduce a FT state preparation and measure-
+ment (SPAM) circuit using a log-depth tree, which uses
+up ton/4 ancilla qubits and up ton/2 additional CX
+gates. In thed= 4 case, we introduce a two-branch cir-
+cuit, with a modified tree structure and additional error-
+checking to catch additional errors which cannot occur in
+thed= 2 case. We use repeat-until-success (RUS), deco-
+herence free subspace (DFS) techniques, and dynamical
+decoupling (DD) to increase acceptance rates and sup-
+press errors in somed= 2 encoding and QED gadgets
+throughout this work (the third only forXYmodel simu-
+lations as well as SPAM experiments extractingS X); for
+additional details, see Supplementary Information (SI)
+Sec. I. In some SPAM experiments, we only extract one
+syndrome destructively (S Z), in contrast to the final syn-
+drome measurement proposed in Refs. [6, 11].
+We benchmark the performance of fault-tolerantly
+preparing 48 logical qubits in thed= 2 andd= 4 cases
+in theI 48andI 8◦ I6codes, respectively (see Fig. 1b,
+c, SI. Sec. II). Both thed= 2 case andd= 4 case
+achieve beyond-break-even performance compared to the
+physical SPAM error on Helios [8] by at least an order
+of magnitude, withd= 4 exhibiting improved fidelities
+and acceptance rates compared tod= 2, demonstrat-
+ing the additional error-correction power of the concate-
+nated QEC codes compared to their QED counterparts.
+In some experiments, we use the leakage-heralded mea-
+surement available on Helios (Methods A) and compare
+
+3
+FIG. 1.Iceberg codes and their concatenation (a)Grid layout depicting stabilizers and logical operators of the
+I8◦ I6code.(b)SPAM infidelity per logical qubit across experiments, some using leakage-heralded measurement and/or
+non-destructive extraction ofS X. Note that theI 8◦I6SPAM experiment recorded no logical errors, bounding the infidelity as
+indicated in the rightmost column.(c)Acceptance rates across each SPAM experiment. When leakage-heralded measurement
+is used, the leakage acceptance rate is outlined (black, dashed).(d)The QEC cycle for theI 8◦ I6code; Z stabilizer syndrome
+extraction is shown, and is followed by extraction of theXstabilizers. EDZ denotesd= 2 Bell-pair syndrome extraction.(e)
+Fidelity and acceptance rate (AR) as a function of number of QEC/SE cycles for (concatenated) iceberg codes for different
+logical basis input states. All uncertainties reported through this work denote 68% Wilson confidence intervals unless otherwise
+noted, with point estimates corresponding to empirical observations. Acceptance and fidelity curves are obtained from fitting
+the data to exponential decays using maximum likelihood estimation. Fit values are given in Methods B.
+to the physical leakage-heralded measurement error cor-
+respondingly.
+Syndrome Extraction and QEC:Once encoded,
+quantum error detection and/or correction are required
+to prevent physical errors from spreading into logical
+ones. Here, we introduce new methods for performing
+(QEC) QED on (concatenated) iceberg codes, which are
+optimized to Helios. For thed= 2 case, both mid-circuit
+syndrome extraction (SE) and readout of the logical state
+are performed by extending the protocol [11] to use GHZ
+states in theXorZbasis to improve parallelization of
+gates (shown later in Fig. 3b; see also SI Sec. III). We
+use four-qubit GHZ states that allow syndrome extrac-
+tion gates to be parallelized in groups of 8, matching the
+number of gate zones in Helios [8].
+For concatenated iceberg codes, previous work on
+closely-related many-hypercubes codes [7, 13] proposed
+using Knill-style QEC that involves preparing two ancil-
+lary logical code blocks per QEC cycle, incurring signifi-
+cant spacetime overhead to the QEC cycle. Here, we in-
+stead introduce a lower-overhead scheme that generalizesthed= 2 QEC protocol (with a Bell pair of ancilla) by
+replacing the physical ancilla qubits in that scheme with
+lower-concatenation-leveld= 2 iceberg code blocks, fol-
+lowed by regulard= 2 syndrome extraction on each of
+the lower-levelI 6blocks. For theI 8◦I6code, the result-
+ing circuit, shown in Fig. 1d, uses only 18 physical an-
+cilla qubits, and has depth 18, representing a substantial
+reduction in the spacetime overhead compared to Knill-
+Style QEC. The QEC cycle in this work is similar to the
+improvement proposed in Ref. [14], a follow-up to Ref. [7]
+which appeared during the writing of this manuscript for
+a subsystem version of concatenated iceberg codes. The
+physical qubit overhead in Ref. [14] for the subsystem
+code would be the same, with the additional advantage
+of not requiring the lower-level ancilla to be encoded for
+the extraction of either high- or low- level stabilizers.
+Conversely, the QEC cycle and decoder introduced here
+is fault-tolerant for circuit-level noise as discussed in SI
+Sec. IV, whereas the QEC cycle in Ref. [14] was intro-
+duced only for phenomenological noise.
+Implementing this procedure for theI 8◦ I6concate-
+
+4
+nated iceberg code with 48 logical qubits, we observe an
+average QEC-cycle infidelity per logical qubit (see Meth-
+ods B) upper-bounded by 4×10−5with no logical errors
+recorded in five thousand shots in each basis, and an
+acceptance rate (AR) of 0.62(2) when postselecting out
+uncorrectable errors. Because leakage-heralded measure
+as well as DD were used in all logical memory experi-
+ments, a natural point of comparison for this encoded
+logical memory experiment is the (non-leakage compo-
+nent of the) physical linear memory error accrued over
+a depth-1 time: 1.1(3)×10−4([8], Methods B). By this
+comparison, QEC improves the memory error over that
+for unencoded physical qubits, indicating that the hard-
+ware is below the pseudo-threshold for thisd= 4 con-
+catenated iceberg code.
+Next, we examine the effect of increasing the code dis-
+tance on the logical memory performance. To this end,
+we shift our focus to smaller (concatenated) iceberg codes
+with 4 logical qubits:I 2◦ I2or two copies ofI 2. The
+higher AR per QEC cycle of these smaller codes allow
+us to explore sequences with many repeated rounds of
+QEC (Fig. 1e) without a prohibitively high shot over-
+head. We observe that increasing the distance from 2 to
+4 by concatenation significantly boosts the AR (averaged
+over both initial states) from 0.945(2) to 0.972+1
+−2. The
+infidelities,<4×10−5and 2+8
+−2×10−5for distances 2 and
+4 respectively, are indistinguishable up to statistical un-
+certainty. As the discard rate is several orders of magni-
+tude higher than the logical error rate, this demonstrates
+that the length of a FT computation can be scaled up by
+increasing the code distance through concatenation.
+Benchmarking a universal logical gate set:Un-
+like physical benchmarking, logical gate benchmarking
+must incorporate the effects of syndrome extraction,
+state preparation, and readout at the encoded level.
+Here, we perform logical gate benchmarking to esti-
+mate the average fidelity of a universal logical gate
+set that entangles logical qubits within or betweenI 4
+code block(s), demonstrating break-even performance
+over physical gates. We employ a logical version of
+cycle benchmarking (CB) [15, 16] (see Methods C, SI
+Sec. V), which involves interleaving repeated layers of
+a chosen multi-qubit Clifford operation (“cycle”) with
+random Pauli gates. Fitting the (exponential) decay of
+the expectation value of a randomly sampled Pauli ob-
+servable vs. depth—after postselecting via syndrome ex-
+traction rounds interspersed every 8 logical gates (chosen
+to roughly optimize gate performance)—extracts an esti-
+mate of the Pauli fidelity, which can be used to compute
+the fidelity of the logical gate.
+Using this approach, we benchmark the following uni-
+versal pFT gate set (Fig. 2a, see also SI Sec. VI) con-
+sisting of: non-FT intra- and inter-code blockU ZZ(θ) =
+e−iθ
+2ZZ[17], as well as a FT logical FANOUT gate. The
+latter implements a global logical parity flipQ
+iXion all
+logical qubits in one code block, controlled by a logical
+qubit in another code block. The resulting average log-ical gate infidelities, all between (1.0−1.2)×10−4, are
+summarized in Fig. 2b. Crucially, these logical fidelities
+significantly outperform the bare physical two-qubit gate
+errors of∼8×10−4on Helios [8], not to mention the im-
+plied two-qubit gate fidelities ˜ϵ 2Q∼2×10−3obtained
+from full-circuit benchmarks that include other substan-
+tial overheads.
+Preparing large logical entangled states:We now
+benchmark the high-fidelity preparation of entangled re-
+source states of many logical qubits, specifically, GHZ
+states, in various sizes and combinations of iceberg codes.
+Details of the unencoded GHZ state fidelity protocol can
+be found in SI Sec. VII. The logical GHZ state for a sin-
+gleI kcode block factorizes into a physical GHZ state on
+physical qubits 1, . . . kand a Bell pair on qubits 0, k+ 1,
+which can be directly prepared by a small modification of
+the usual encoding circuit (SI Sec. VIII). To prepare logi-
+cal GHZ states spanning multiple iceberg code blocks, we
+initialize a single code block in a logical GHZ state, and
+apply a log-depth tree of logical FANOUT gates (Fig. 2c)
+to extend the GHZ state across other code blocks that
+were initialized to| ¯0⟩⊗k. This approach saves many phys-
+ical 2Q gates compared to the standard implementation
+using transversal CX gates. To benchmark the resulting
+GHZ state fidelity in both cases, we perform simultane-
+ous (single-shot) FT measurements of the logical GHZ
+stabilizers ( ¯Zi¯Zi+1andQ
+i¯Xi) (see Methods D).
+To explore the effects of code concatenation, we de-
+velop a FT GHZ state preparation protocol on a concate-
+nated iceberg code block that generalizes more straight-
+forwardly to higher concatenation levels. The protocol
+(Fig. 2d) uses level-1I k1ancilla prepared in a logical
+GHZ state as described above, to fault-tolerantly mea-
+sure the level-2 logical GHZ stabilizerQ
+i,jXi,j(defined
+in Methods D). To ensure robustness to up to two mea-
+surement errors the logical GHZ stabilizer measurement
+is performed twice. Additionally, theX, Zstabilizers and
+Zobservables of the level-1 GHZ state are extracted,
+which allows us to correct one error occurring anywhere
+in the fulld= 4 protocol (see Methods D for further de-
+tails). SI Sec. IX contains simulations of fault tolerance
+and a more detailed analysis.
+Results for logical GHZ state (in)fidelity and accep-
+tance rates are displayed in Fig. 2e and reported in SI
+Sec. VIII forI 48,I60, andI 94codes, theI 8◦I6code, and
+fork= 48,60 logical qubits distributed amongI 4code
+blocks. Across the board, encoding yields large improve-
+ments to logical GHZ state fidelity with greater gains
+coming from the improved fault-tolerance of theI 4code
+blocks and theI 8◦ I6code. In particular, we measure
+∼95% fidelity in theI 94code and recorded no logical er-
+rors in theI 8◦ I6and leakage-heraldedk= 60,I 4codes
+over several thousand shots.
+Computing:Finally, we put these ingredients together
+for an application-level benchmark of the pFT operation
+of an iceberg code, inspired by magnetic materials sim-
+ulation. The iceberg code is particularly well-tailored to
+the simulation of quantum magnetism with Hamiltonians
+
+5
+FIG. 2.Logical gate benchmarking and GHZ state preparation (a)Circuit gadgets for an inter-blockU ZZgate and the
+FANOUT gate. Heret=q 0is the “top” qubit andb=q n−1is the “bottom” qubit on each code block with indices labeling the
+code block.(b)Infidelity per logical gate for each gate considered in the main text, reported alongside the physicalU ZZ(π/2)
+fidelity from [8], both including (˜ϵ 2Q) and excluding (2QRB) transport overheads.(c)Preparing a GHZ state distributed over
+manyI 4code blocks using the log-depth FANOUT tree, represented in shorthand by controlled gates with stars, followed by
+extraction of theQ
+iXiGHZ stabilizer where red (purple) gates couple to qubitq 0(q5) alone on each block.(d)GHZ state
+preparation in theI 8◦ I6code as described in the text.(e)GHZ infidelity and acceptances across the various experiments.
+Note that theI 8◦ I6(k= 48) and leakage-heralded 15× I 4(k= 60) experiments both recorded no errors.
+of the formH=P
+α∈x,y,zP
+i,jJα
+i,jσα
+iσα
+j, whose terms
+are each logical operators that are simple to implement in
+a pFT manner. Trotterized evolution under such Hamil-
+tonians can be implemented with no extra overhead in an
+Ikcode using Helios’ native physical gate set. This direct
+implementation of logical gates is not FT—a single 2Q
+gate error with Pauli componentsXX,Y Y, orZZleads
+to a logical error. However, due to bias in the native
+2Q gate errors, these dangerous errors occur with prob-
+ability∼10×lower than other detectable errors [18, 19].
+This pFT computation scheme mixing FT state prepara-
+tion, syndrome extraction, and measurement with non-
+FT Hamiltonian simulation gates enables a significant fi-
+delity improvement over unencoded simulations of quan-
+tum computations at a scale that challenges classical sim-
+ulation.
+To benchmark this pFT scheme, we implement a log-
+ical version of the standard mirror-benchmarking (MB)
+protocol [20–22], that measures the survival probability
+P(t) =|⟨ψ 0|U(t
+2)†U(t
+2)|ψ0⟩|2, whereU(t
+2) =e−iHt/2is
+implemented bys/2 Trotter steps with size ∆t=t/s
+approximating the magnetic dynamics, and|ψ 0⟩is a ref-
+erence state. This protocol provides a sample-efficientway to estimate the global fidelity of time evolution for
+timet, without comparing to non-scalable classical sim-
+ulations. Specifically, we implement logical MB for a
+three-dimensional (3D) antiferromagnet with an easy-
+plane anisotropy to the spin-exchange, described by the
+paradigmaticXY-model Hamiltonian:
+Hxz=X
+⟨ij⟩hij=X
+⟨ij⟩J(X iXj+ZiZj).
+where⟨ij⟩denote nearest neighbors on a 3D cubic lattice
+with dimensions 4×4×4, and periodic boundary condi-
+tions. Here, we have chosen the easy-plane anisotropy to
+lie in thexzplane (rather than the conventionalxyplane)
+for convenience of implementation in the iceberg code.
+We choose to study a 3Dmodel to connect to realistic
+bulk materials, showcase the flexible programmability of
+Helios’ QCCD architecture in implementing models of ar-
+bitrary dimension, and because this high-dimensional ge-
+ometry offers a stronger challenge to competing classical
+simulation methods for forward time evolution circuits.
+We encode this system into a singleI 64iceberg code
+block, choosing a ferromagnetically polarized initial state
+
+6
+……
+……… …
+−1
+=
+FIG. 3.Mirror benchmarking of encoded Hamiltonian simulation (a)The natural edge-6-coloring of the 4×4×4
+periodic cubic lattice. Edges connecting the periodic boundaries are omitted for visual clarity, but the corresponding gates are
+included in the circuits executed.(b)Logical mirror benchmarking circuits used to assess the fidelity of Hamiltonian simulation.
+For the purposes of illustration, the circuit shown uses anI 10code with dynamics governed by a 6-regular graph on 10 vertices.
+(c)Logical gates implementing the first-order Trotter circuit depicted in (b). In the “reverse” half of the circuit, the inverse
+gates (dashed) are used in the opposite order.(d)Fidelity estimate and acceptance rate as a function of total Trotter steps
+in the full mirrored circuit. The fidelity estimate inset displays the last three points on a log scale for clarity. Each heuristic
+depolarizing error model (dashed) is labeled with its corresponding effective 2Q error rate ˜ϵ 2Q(see Methods A, SI Sec. XI).
+|ψ0⟩=| ¯0⟩⊗64. The forward dynamics is implemented
+vias/2 first-order Trotter steps:U(s∆t/2)≈U 1(∆t)s/2,
+whereU 1(∆t) =Q
+CQ
+⟨ij⟩∈Ce−ihij∆tandClabels the
+6 different sets of non-overlapping bonds indicated by
+the colorings shown in Fig. 3a. We choose a step size
+J∆t=π/8 that is large enough to rapidly generate en-
+tanglement in a small number of Trotter steps, but small
+enough to be far from the Clifford limit of the system.
+Gates are Pauli-twirled using real-time random number
+generation [23] to avoid coherent cancellation of errors. A
+single SE round is inserted between the forward (U) and
+backward (U†) time evolutions. The MB protocol con-
+cludes withZ-basis measurements of all physical qubits,
+from which we reconstruct both the survival probability
+andZ-stabilizers. The data is postselected on detecting
+no errors in the mid-circuit SE or final measurement.
+The resulting survival probability and acceptance rates
+for MB sequences of up tos= 10 total Trotter steps are
+shown in Fig. 3d for both unencoded and iceberg QED
+encoded, with and without postselection on detecting
+leakage outside of the qubit subspace of any of thek+ 2
+data qubits. From exponential-decay fits to the survivalprobability versus logical gate number, we also extract
+an effective per-gate error ˜ϵ 2Q, which reflects a combina-
+tion of gate errors and memory errors (see Methods A
+for details and SI Sec. X, XI for preliminary experimen-
+tal results and more data). We observe that the effective
+error rate ˜ϵ 2Qis reduced≈30% by encoding in the ice-
+berg code, at the expense of a reasonable increase in shot
+count incurred by postselecting out detected errors. We
+note that obtaining high global state fidelity may be an
+overly conservative standard for quantum simulation ap-
+plications that typically require the less stringent task of
+approximating local correlation functions.
+While the MB protocol itself is trivial to simulate
+classically, for chaotic many-body Hamiltonians such as
+Hxz, it serves as a proxy for the global state fidelity for
+simulating a purely forward-time-evolved initial state:
+U(s∆t)|0⟩. We anticipate that the pure forward time
+evolution may be difficult—if at all possible—to simu-
+late classically, due to the large number of logical qubits
+(which renders direct state-vector simulation infeasible),
+high dimensionality, periodic boundary conditions, and
+rapid entanglement spreading (all of which challenge
+tensor-network methods).
+
+7
+Outlook:We demonstrate computations below break-
+even on many logical qubits encoded in iceberg codes
+and their concatenations on Quantinuum Helios. In
+particular, the favorable performance and overhead of
+the pFT simulation of theXYmodel with 64 logical
+qubits at distance-2 motivates extending this approach to
+more demanding condensed-matter models, such as the
+Fermi–Hubbard or Kitaev models, of both academic and
+industrial relevance. When higher algorithmic fidelity or
+acceptance rates are required, fully FT, below-threshold
+protocols on higher-distance codes become necessary [24].
+We observe in this work that increasing the distance via
+concatenation already enhances acceptance rates without
+degrading fidelity.
+We further present alternative fault-tolerant resource-
+state preparation schemes (SI Sec. XII) based on re-
+peated stabilizer measurements, flag-at-origin [25], and
+an automatically generated flag circuit—the latter out-
+performing the gadgets of [7] in depolarizing simulations.
+Decoding with look-up tables derived from circuit-level
+simulations is explored in SI Sec. XIII. They can pro-
+vide a first layer of a hierarchical decoding pipeline,
+with other layers potentially leveraging the concatenated
+structure of iceberg codes [26]. These codes addition-
+ally offer a low-overhead, naturally global logical gate
+set—including Clifford gates via automorphisms [27] and
+global magic-state preparation [28] (as an alternative to
+distillation [29])—that warrants further investigation.
+These creative developments, together with advances
+in quantum architectures that offer arbitrary connectiv-
+ity, including neutral-atom [30] and trapped-ion [8] plat-
+forms, are rapidly bringing fault-tolerant quantum com-
+putation with many logical qubits within reach.
+ACKNOWLEDGMENTS
+We acknowledge the entire Quantinuum team for innu-
+merable contributions towards the design and operation
+of the Helios quantum computer, and we acknowledge
+Honeywell for fabricating the trap used in this experi-
+ment. We thank Eli Chertkov, Michael Foss-Feig, Reza
+Haghshenas, Tyler LeBlond, Setso Metodi, Ciar´ an Ryan-
+Anderson, Kartik Singhal, and David Stephen for useful
+discussions.
+AUTHOR CONTRIBUTIONS
+S.D., M.D., C.H.B., D.H., B.C., A.C.P., and D.A. de-
+vised the project and the protocol implementations. S.D.
+devised the distance-4 QEC cycle, with improvements
+from B.C., and decoder as well as distance-4 GHZ prepa-
+ration protocol and developed code for and executed all
+distance-4 experiments and distance-2 syndrome extrac-
+tion experiments. M.D. devised the GHZ-based distance-
+2 syndrome extraction as well as the FT FANOUT gate
+and its use in the GHZ experiments, and developed codefor and executed distance-2 SPAM, GHZ state prepa-
+ration, andXYmodel experiments. A.Y.G. developed
+code for and executed the logical gate benchmarking ex-
+periments. Y.-H. C. developed code for and executed the
+unencoded GHZ state preparation experiments. A.L.,
+J.B., A.B., C.N.S., S.S., and B.S. performed additional
+simulations, QEC algorithm design, and circuit code de-
+velopment. A.Y.G., Y.-H. C., K.M., and C.H.B. devel-
+oped the logical gate benchmarking analysis. M.S.A.,
+J.A., J.G.B., N.Q.B., J.P.C. III, A.C., S.F.C., R.D.D.,
+J.M.D., B.E., Car.F., Cam.F., J.P.G., A.H., C.A.H.,
+A.A.H., A.I., C.J.K., Y.K., N.K., N.K.L., I.S.M., M.M.,
+A.R.M., B.N., A.J.P., A.R., A.P.R., and S.J.S. designed,
+optimized, operated, and maintained the Helios hardware
+and software stack. D.A. directed the overall project as
+lead principal investigator. S.D., M.D., A.Y.G., A.L.,
+J.B., A.B., Y.-H. C., S.S., N.Q.B., A.R., C.H.B., D.H.,
+B.C., A.C.P., and D.A. contributed to the writing and
+editing of the manuscript.
+COMPETING INTERESTS
+The authors declare no competing interests.
+ADDITIONAL INFORMATION
+Supplementary Information is available for this paper.
+Correspondence and requests for materials should be ad-
+dressed to David Amaro, david.amaro@quantinuum.com.
+METHODS
+A. Hardware specifications
+Helios is a 98-qubit trapped-ion quantum processor
+with137Ba+hyperfine qubits that implements the quan-
+tum charge-coupled device (QCCD) architecture intro-
+duced in Refs. [31, 32], first realized in Ref. [33] with
+171Yb+qubits. Here we present an abbreviated summary
+of the technical specifications of the processor presented
+in Ref. [8]. Qubit ions, along with their associated sym-
+pathetic coolant ions, are confined by the electromagnetic
+field generated by RF electrodes and physically trans-
+ported around the ion trap by additional DC electrodes.
+The Helios architecture stores qubits in a large ring, sorts
+them by transport around the ring and through an X-
+junction [34] into an intermediate “cache” region, and
+subsequently further transports the qubits into one of two
+“legs” for cooling, quantum logic operations and tempo-
+rary storage (see Ref. [8], Figs. 1 and 2). Enabled by a
+new classical control system and software stack, Helios
+implements real-time compilation of program operations
+(using the Guppy programming language [23]) into phys-
+ical hardware commands on the device. This permits
+
+8
+realization of many new algorithmic primitives, includ-
+ing dynamic allocation of qubits, classical control flow
+such as conditional statements and loops, early condi-
+tional termination of programs, and remote procedure
+calls to an external server that can perform arbitrary
+classical computations and return information needed for
+on-the-fly decisions about quantum logic (“gate stream-
+ing”, demonstrated in Refs. [35], [36]).
+All primitive quantum logic operations (measure-
+ments, resets, and gates) on Helios are performed
+via interactions that are mediated by several lasers
+of different frequencies delivered to the QPU via free
+space; we refer the reader to Sec. IIB of Ref. [8]
+for further details. Qubits on Helios are initialized
+into the|0⟩state. Arbitrary one-qubit (1Q) gat-
+ing operations are decomposed by the compiler into
+U1Q(θ, ϕ) = exp 
+−iθ
+2(cos(ϕ)X+ sin(ϕ)Y)
+physical
+gates andR Z(θ) = exp 
+−iθ
+2Z
+gates that are imple-
+mented fully in software as phase updates. The two-
+qubit (2Q) gate is mediated by the Mølmer-Sørensen in-
+teraction made phase-insensitive via wrapper pulses and
+implementsU ZZ(θ) = exp 
+−iθ
+2ZZ
+[33, 37], whereθis
+a user-specified angle and the gate error scales linearly
+with angle up to the maximal entanglerθ=π/2 [18].
+Several types of measurements are available on Helios;
+in addition to the standard (possibly mid-circuit) mea-
+surement of isolated qubits, requests for simultaneous
+measurement of batches of qubits can trigger compilation
+into a “protected” measurement operation that reduces
+crosstalk. Furthermore, users can request a ternary-
+valued measurement that may return 2 to herald that
+the measured qubit has leaked outside the qubit sub-
+space, at the expense of extra measurement error since
+this scheme requires several additional optical pulses.
+The leakage-heralded measurement may similarly be pro-
+tected if ternary measurements are requested on batches
+of qubits simultaneously.
+The infidelities associated to each of these quantum
+logic operations are reported in Table II of Ref. [8]. For
+self-contained comparisons to the logical benchmarks in
+this work, we note in particular that the SPAM error
+associated to the standard measurement was measured
+atp SPAM = 4.8(6)×10−4per qubit, and the 2Q gate
+error was measured to beϵ 2Q= 8(2)×10−4at the max-
+imum gate angle. In the full-circuit benchmarks stud-
+ied in that work, including random Clifford and mir-
+ror circuits, several heuristic formulas for circuit fidelity
+were used to extract an “effective” 2Q gate infidelity ˜ϵ 2Q
+roughly following a depolarizing-channel model. These
+estimates include additional overheads such as mem-
+ory errors incurred during qubit idling and predict an
+effective 2Q gate infidelity at the maximum angle of
+˜ϵ2Q= 20(2)×10−4. For comparison, in Fig. 3 we re-
+port ˜ϵ 2QforXYmodel simulation experiments usingpar-
+tially-entangling gates ranging from ˜ϵ 2Q= 10.7(5)×10−4
+(unencoded) to ˜ϵ 2Q= 7.1(6)×10−4(encoded inI 64,
+leakage-heralded). Here, and similarly to Ref. [8], these
+values are extracted from a simple depolarizing modelF(N gates) =A(1−5
+4˜ϵ2Q)NgateswithN gates the number
+of two-qubit gates in the circuit, so that ˜ϵ 2Qis an ef-
+fective average fidelity andAis an overall normalization
+capturing SPAM errors.
+B. QEC benchmarking
+For allk >1 QEC/QED experiments, due to the ap-
+plication of one or more rounds of QEC/QED, we assume
+that the logical memory channel on allkcan be written
+as a stochastic logical Pauli channel [38]. Therefore, we
+can write this channel in the form of
+E(ρ) =X
+ipiPiρPi,(1)
+where the sum is over allkqubit Paulis. For theI 8◦ I6
+experiments, in which a single round of QEC was per-
+formed on| 0⟩⊗48and| ¯+⟩⊗48, we apply a union bound to
+the process fidelity. Let us denote byp|0⟩⊗48andp|¯+⟩⊗48
+the probability of any logical error occurring to the| 0⟩⊗48
+and| ¯+⟩⊗48states. The process infidelity isI=Ppi,
+where thep iare the non-identity Pauli error probabili-
+ties in Eq. (1). Since anyP icontaining anXor aYwill
+cause a logical error on| 0⟩⊗48and anyP icontaining aY
+or aZwill cause a logical error on| ¯+⟩⊗48, we have that
+1
+2(p|0⟩⊗48+p|¯+⟩⊗48)≤I≤p|0⟩⊗48+p|¯+⟩⊗48.(2)
+The average infidelity for this 48-qubit process is essen-
+tially identical to the process infidelity in this case, differ-
+ing by a factor of248
+248+1, and we report the upper bound
+on the average infidelity divided by the number of logical
+qubits as the average infidelity of a QEC cycle per logical
+qubit for these experiments.
+For thek= 4 experiments, repeated Pauli errors which
+may occur on a single qubit due to repeated applications
+of QEC/QED will cancel, so the above analysis does not
+apply directly. To deal with these cancellations, we re-
+strict our attention to single-qubit logical memory chan-
+nels by marginalizing over all but one qubit. For logical
+qubitj, the reduced channel for ˜ρ= tr [k]\jρis
+E(˜ρ) = ˜p I˜ρ+ ˜p XX˜ρX+ ˜p YY˜ρY+ ˜p ZZ˜ρZ
+where ˜p Pis the probability of the single qubit PauliP
+being applied to ˜ρ, which can be obtained by summing
+over the termsp iin the full channel which apply aP
+operator to logical qubitj. The process infidelity ˜Ijof
+the reduced channel is ˜p X+ ˜pY+ ˜pZ.
+To estimate the ˜p P, we can make use of a formula
+which takes into account possible cancellations of Pauli
+errors for the survival probability of a single logical qubit
+under repeated rounds of QEC [39] given by
+pψ(c) =1
+2+
+sψ−1
+2
+(1−2q ψ)c.(3)
+
+9
+wherep ψ(c) is the survival probability of an initial state
+|ψ⟩aftercrounds of QEC. The logical SPAM error of
+producing state| ψ⟩iss ψ, andq ψis the probability of in-
+troducing a logical error to| ψ⟩after one round of QEC.
+Since both logicalXandYoperators will flip| 0⟩, we
+have thatp|0⟩= ˜pX+ ˜pYand, similarly,p |¯+⟩= ˜pY+ ˜pZ.
+Therefore, we can estimate ˜Ifrom the survival probabil-
+ities of the input states over repeated rounds of QEC by
+again applying a union bound,
+1
+2(p|0⟩+p|¯+⟩)≤˜I≤p|0⟩+p|¯+⟩.(4)
+We obtain estimates for thep ψby fitting experimen-
+tal data to the curve in Eq. (3) through maximum like-
+lihood estimation to take into account non-normality of
+the sample distributions due to rare events. Uncertainties
+were derived from Markov Chain Monte Carlo sampling
+of the curve-fitting parameters. For bothk= 4 exper-
+iments, we report the average of the upper bounds for
+these single-qubit infidelities as the infidelity of a QEC
+cycle per logical qubit. This quantity is the analog of the
+depth-1 memory error infidelity reported in [8], which
+does not capture correlations in the noise between dif-
+ferent qubits and instead treats the memory error as a
+single-qubit process. We note that when taking the av-
+erage of the infidelity over the reduced channels, we add
+the statistical uncertainties of the infidelities linearly and
+not in quadrature, since the estimators for the different
+logical qubits are not independent. For all experiments,
+confidence intervals were obtained by adding the 1σsta-
+tistical uncertainty (68%) of all estimators to the lower
+and upper bounds in Eq. (2) and Eq. (4).
+The average infidelity 1.1(3)×10−4corresponding to
+non-leakage component of the depth-1 linear memory
+error reported in the main text is obtained from the
+transport-1QRB benchmarking data from [8]. We fit
+the non-leakage-heralded memory error to the quadratic
+curveax2+bx−cwherexis the number of transport
+rounds andbis the depth-1 linear memory error anda
+is the quadratic memory error. For those experiments,
+a= 6(3)×10−5,b= 1.1(3)×10−4, andc= 2(5)×10−5.
+We compare to the linear memory error because a lim-
+ited amount of dynamical decoupling (DD) is used in all
+QEC/QED memory experiments in the second half of
+each cycle when theZsyndromes are extracted, sinceZ-
+type noise on the data qubits commutes with the gates
+therein and can therefore build coherently. In thed= 4
+case, X pulses are inserted before, at the midpoint of,
+and after the high-level syndromes are extracted, while
+in thed= 2 case, X pulses are applied to the qubits that
+are gated in the second half of the Z syndrome extraction
+circuit, then to all the qubits at midpoint of Z syndrome
+extraction, and then to the qubits gated in the first half
+of syndrome extraction at the end of the QED cycle. This
+ensures that X pulses are applied opportunistically in a
+way that does not induce additional transport while com-
+muting with the extracted stabilizers. In the first half ofeach cycle, no DD is used sinceXsyndrome extraction
+should convertZ-type noise into incoherent errors.
+For allk= 4 experiments, the QED/QEC cycle rejec-
+tion rates overc∈ {1,2,4,8}cycles were fitted to the
+exponential (1−r)c, whereris the rejection rate per cy-
+cle. In theXbasis,r=.060+2
+−2andr=.027+2
+−1, ford= 2
+andd= 4 respectively. In theZbasis,r=.070+2
+−3, and
+r=.030+2
+−2, ford= 2,4 respectively.
+For alld= 2 andd= 4 experiments, leakage-heralded
+measurement is used to postselect on any leakage, since
+leakage at certain locations can potentially violate fault-
+tolerance in the absence of gadgets which introduce ad-
+ditional overheads [40]. An alternative solution is leak-
+age repump [41], which converts leakage into depolarizing
+noise that can be fault-tolerantly handled by QEC/QED
+without additional circuit gadgets. All QEC/QED ac-
+ceptance rates reported are conditioned on the absence
+of leakage and successfully preparing the data and an-
+cilla qubit code blocks. Leakage acceptance rates, and
+preacceptance rates for state preparation, are given in SI
+Sec. IV.
+C. Logical gate benchmarking
+To perform logical cycle benchmarking on gates
+in/betweenI 4code blocks, we sample a random logical
+Pauli stringPover all logical qubits and initialize the sys-
+tem in one of its corresponding logical eigenstates. For
+inter-block gates between twoI 4blocks, Pauli strings of
+length 8 are used, reflecting the fact that faults can prop-
+agate across all logical qubits in both code blocks due to
+the nonlocal structure of syndrome-extraction gadgets.
+We repeat the Pauli-twirled logical gate (cycle)Ltimes,
+perform syndrome extraction at a fixed frequency, and
+then measure in thePbasis to obtain an estimate of
+the expectation value ofP. We choose a maximum cy-
+cle depth ofL= 64 for intra-block gates andL= 48
+for inter-block gates. Syndrome-extraction gadgets are
+interleaved at a fixed cadence of one round per eight log-
+ical cycles, enabling detection of single-qubit faults and
+two-qubit Pauli errors not in the set{XX, Y Y, ZZ}that
+occur during gate execution or syndrome extraction. Any
+shot with a detected error is discarded, and the remaining
+shots are used for estimating the logical observable.
+Pauli twirling is implemented using shot-level random-
+ness via the real-time random number generation imple-
+mented in the Guppy programming language. The Pauli
+twirling allows the aggregate error channel on the input
+stateρto be written as a stochastic Pauli channel
+E(ρ) =X
+ipiPiρPi,
+where the sum is over all Pauli operators (modulo an
+overall phase) and the Pauli error probabilitiesp i∈[0,1]
+sum to 1. Taking a Walsh-Hadamard transform of these
+error probabilities, we obtain thePauli fidelities,f j,
+
+10
+which are equivalent to the eigenvalues of the Pauli error
+channel. Specifically,
+fj=X
+i(−1)⟨i,j⟩pi,
+where the symbol⟨i, j⟩is 0 or 1 depending on whether
+the PaulisP iandP jcommute or anti-commute.
+Denoting a noisy circuit of lengthLasC j, the
+output of the Pauli-basis measurement isE L[Pj] =
+Tr(P jCj(Pj)). We estimate the Pauli fidelity by fitting
+the expectation value decay with increasingLto an expo-
+nential model, i.e.E L[Pi] =A jfL
+j. The fit is performed
+using maximum likelihood estimation (see SI Sec. V for
+more details). We then average the Pauli fidelities to ob-
+tain an estimate of the process fidelityF proof the logical
+cycle, which, for the case of a single logical 2Q gate per
+cycle, can be converted to the gate-averaged fidelity via
+Favg= (4F pro+ 1)/5. TheF avgfor each of the three
+experiments are reported in Fig. 2, along with error bars
+representing the 1σ(68%) confidence intervals obtained
+via standard parametric bootstrap. We discuss the de-
+tails of the statistical analysis along with the postselec-
+tion rates from error detection in SI Sec. V.
+D. Logical GHZ state preparation
+We estimate the GHZ state preparation fidelity in the
+d= 2 codes via a single-shot protocol, making use of the
+fact that the GHZ state is uniquely identified by its stabi-
+lizersQ
+iXiandZiZi+1. The former can be measured in
+a quantum non-destructive (QND) fashion while the lat-
+ter can be obtained by destructive readout of all qubits
+in theZbasis. In contrast to other recent large-scale
+GHZ state experiments [42], we do not postselect on any
+of the GHZ stabilizers. The logical GHZ state in a sin-
+gle globalI kcode is particularly simple; as described in
+the main text, it factorizes into a physical GHZ state on
+n−2 qubits and a Bell pair. As such, it can be directly
+prepared fault-tolerantly by a circuit similar to the code
+initialization circuit (see SI Sec. VIII for an illustration).
+The GHZ stabilizerQ
+iXican be measured efficiently
+since it is stabilizer-equivalent toX 0Xn−1. We measure
+X0Xn−1twice to ensure robustness against measurement
+errors by coupling to a single ancilla each time that is dy-
+namically allocated before reading out the parity.
+Break-even is relatively easy to achieve for logical GHZ
+state preparation on a globalI kcode block, since the
+protocol prepares a physical GHZ state of essentially
+comparable size and then enhances the logical fidelity
+via postselection. By contrast, preparing a logical GHZ
+state across many small iceberg code blocks is signifi-
+cantly more general and nontrivial, corresponding to a
+complicated entangled state of all physical qubits. We
+describe here the case of manyI 4iceberg code blocks,
+which uses the same FANOUT gate and code structure
+as in our logical gate benchmarking protocol. However,the preparation for any number and size of code blocks
+follows a similar structure. This protocol is displayed in
+Fig. 2c and begins with preparation of one code block
+in the| GHZ 4⟩state by the procedure described above
+while all other code blocks are initialized in the| 0⟩⊗4
+state. We then extend the logical GHZ state on the first
+code block to the full logical GHZ state using the logi-
+cal FANOUT gate described above. This gate maps the
+state| GHZ k1⟩ ⊗ |0⟩⊗k2to the state| GHZ k1+k2⟩when
+controlled on any logical qubit in theI k1code. One then
+proceeds analogously to the usual GHZ state preparation
+(in which the|+⟩state on one qubit is extended to the
+|GHZ⟩state on all qubits by means of a tree of CX gates),
+by applying the logical FANOUT gate in a log-depth tree
+spanning iceberg code blocks. Each application of the
+logical FANOUT only requires four two-qubit gates com-
+pared tonwhen instead applying transversal CX gates
+between each pair of code blocks, and straightforwardly
+applies to the case that the code blocks are of incommen-
+surate size. Subsequently, the GHZ stabilizerQ
+iXican
+still be measured relatively efficiently using the product
+ofX 0Xn−1across all code blocks. We order the gates so
+that first all top qubitsq 0in each block are coupled to the
+ancilla followed by all bottom qubitsq n−1in the oppo-
+site order, c.f. Fig. 2c, so thatXhook errors are almost
+always detected on at least one code block. We again
+repeat the measurement ofQ
+iXito be FT to measure-
+ment errors on the ancilla. We note that although many
+applications of theI kcodes use the pFT continuously-
+parameterized two-qubit Pauli rotation gates, both GHZ
+state preparation protocols detailed above are actually
+fully FT to single weight-2 faults.
+The logical operators ofI k2◦ Ik1are rectangles and
+we denote them by Xi,j=X 0,0Xi,0X0,jXi,j,Zi,j=
+Zi,jZn1−1,jZi,n2−1Zn1−1,n 2−1. To prepare a global GHZ
+state on the 48 logical qubits of theI 8◦ I6code, we be-
+gin by initializing a code block in the| 0⟩⊗48state. The
+stabilizers of this state already contain the Z-type GHZ
+stabilizers Zi1,j1Zi2,j2for 1≤i 1, i2≤6,1≤j 1, j2,≤8.
+To enforce the condition thatQ6,8
+i=1,j=1Xi,jstabilizes the
+state, we measure this operator using anI 6ancilla. We
+observe that the operatorX 0,0X7,0X0,9X7,9commutes
+with all theI 8◦I6stabilizers and anticommutes with all
+Zi,j. Therefore, this operator is equal toQ6,8
+i=1,j=1Xi,j
+up to stabilizers. We can measure this operator by ini-
+tializing anI 6ancilla with stabilizerX 0X7, performing
+transversal CX gates from this ancilla to the top and
+bottom blocks of theI 8◦ I6code, and then measuring
+this ancilla in the X basis, see Fig. 2d. This will cause
+the state to collapse to a±1 eigenvalue ofQ5,7
+i=0,j=0 Xi,j
+with random sign. We flip the sign of this eigenvalue in
+software to +1 by updating the Pauli frame. Since we
+are preparing the GHZ state in ad= 4 code, we must
+measure the eigenvalue ofQ6,8
+i=1,j=1Xi,ja second time to
+protect against two measurement/gate errors which could
+have caused a logical error in the firstI 6measurement.
+
+11
+If the twoI 6measurements differ by a logical operator,
+we postselect. By postselecting in the presence of two
+faults, we will prepare the state with logical error rate of
+O(p3), and, by correcting a single error anywhere in the
+preparation procedure, the postselection probability will
+beO(p2). See SI Sec. IX for simulations demonstrating
+these scalings with the error rate.
+
+12
+Supplementary Information for:
+Computing with many encoded logical qubits beyond break-even
+I: State preparation and error mitigation techniques
+In theI kcodes, we prepare the logical zero state| 0⟩⊗k=|GHZ k⟩via a tree of CX gates that originate at a|+⟩state
+with target qubits initialized in the|0⟩state. This tree can be extended to contain up ton/2 branches wheren=k+2,
+in which case the state preparation proceeds in log depth. Pairs of branches are coupled to an ancilla qubit that reads
+out theZZoperator of the qubits at the end of each branch; therefore, up ton/4 ancilla qubits andn/2 additional
+CX gates are required, although the ancilla qubits may be reused at the expense of reduced circuit parallelization.
+The simplest such case is the two-branch preparation presented in Ref. [11] and for which the corresponding gate
+connectivity graph is displayed in Fig. S1.
+FIG. S1.Two-branch state preparation gadget in theI kcodes. (a)Two-branch tree specifying preparation of the
+logical zero state of theI 48code. Nodes are labeled with the indexicorresponding to qubitq iin the code. Qubitq 0is
+initialized in the|+⟩state while all other qubits are initialized in the|0⟩state; directed arrows indicate the control and target
+of CX gates between the qubits and all arrows terminating on nodes at the same vertical height are performed in parallel. The
+red bracket connecting the terminal nodes indicates that the corresponding operatorZ 48Z49will be read out by coupling to an
+ancilla.(b)The circuit gadget instantiating the two-branch tree in theI 10code for illustration.
+This gadget is fault-tolerant: all single faults are detectable or do not act on the logical state, as we now explain.
+First, a weight-1Zerror does not propagate down the CX tree at all, so it will be detected by theXstabilizer later.
+A weight-1Xerror does propagate down the tree; however, it either occurs onq 0in which case it applies the code
+stabilizerQ
+iXito the physical state, or it flips the value of theZZoperator measured at the end of the branches,
+since it can only spread down one branch. Gate errors may also cause single weight-2 faults. Any Pauli error on a
+single gate that does not involveq 0either flips theZZoperator at the end of the branches (if it applies anXorYto
+the target), causes a detectable syndrome, or applies aZZoperator that acts as the identity on a physical GHZ state.
+The situation is similar for gates that do involveq 0; although these can cause Pauli errors to potentially propagate
+down both tree branches if they apply anXorYtoq 0, either this results in an overall detectableYerror, or it
+applies theQ
+iXicode stabilizer.
+In Fig. S2 we illustrate the log-depth version of this state preparation protocol. The key observation is that the
+same arguments above for fault-tolerance apply as long as we specify the tree such that theZZoperators measured
+always correspond to two qubits whose only common ancestor is the root of the treeq 0. Conceptually, one builds
+up such a tree iteratively by separating nodes into two sets: those withq 1as an ancestor, and those without. Each
+time a new successive node is added to the tree, it is either added to the descendants ofq 1or to the side of the tree
+that does not descend fromq 1depending on which set is larger, to maintain a balance between the size of the two
+
+13
+sets. Following this procedure, one obtains a log-depth tree in which half of the terminal nodes descend fromq 1and
+half do not; pairing off nodes in each set obtains theZZoperators that should be checked for fault-tolerance. It is
+possible, depending on the desired depth of the state preparation protocol, for the tree generated in this fashion to
+be imbalanced by at most one surplus/deficit qubit descending fromq 1; the leftover qubit may be paired withq 0in
+checkingZZoperators of the pairs of terminal nodes.
+FIG. S2.Log-depth state preparation gadget forI kcodes. (a)The balanced tree structure specifying preparation of
+the logical zero state in theI 48code. As before, red brackets indicate pairs of qubits whoseZZoperator will be read out by
+coupling to an ancilla (note that in this particular case, the qubit with indexmon the left connects to the qubit with index
+m−1 on the right).(b)Circuit instantiation of the log-depth tree in theI 10code, as also depicted in Fig. 3. PauliXgates
+in the circuit implement the DFS-based error mitigation discussed below; note that this flips the noiseless value of the ancilla
+measurements that is checked as part of the repeat-until-success protocol.
+Rather than postselect on errors detected on the ancilla measurements that record the variousZZoperators, we
+instead use a repeat-until-success (RUS) protocol in which any detected errors trigger a reset of all qubits followed
+by a new attempt at initializing the code. In Fig. S3 we report statistics on the number of loop iterations for RUS
+to pass, across all experiments in which it was utilized. Even for the largest code studied,I 94, initialization succeeds
+with exceptionally high probability in only one or two loop iterations, with a maximum of six loop iterations required
+across all experiments of any size in this work. We group the results in Fig. S3 for each experiment type (SPAM, GHZ,
+XYmodel simulation) and aggregate results within each category across experiments using the same-size codes since
+other differences do not affect the state preparation. For GHZ state preparation experiments using manyI 4code
+blocks we report the success with which we can prepare each individualI 4code block and aggregate the statistics
+across allI 4code blocks in a given shot. However, we separate the results reported by total number of code blocks
+since, e.g., the memory error experienced by the qubits may depend on the total number of qubits involved in the
+experiment.
+Although the log-depth initialization gadget substantially reduces the circuit depth of state preparation, qubit idling
+remains a concern due to the potential for the buildup of coherent dephasing errors (for instance, due to spatial and
+temporal variance in magnetic fields) which can grow quadratically at small idle times. Below, we discuss additional
+error mitigation techniques that were employed only in the log-depth gadget to further reduce coherent memory errors.
+To the extent that coherent memory errors arespatiallyuniform across the device, motivated bydecoherence-free
+subspace(DFS) codes [32, 43] we insert a Pauli X operator into the log-depth tree so that after each full layer of
+the tree is applied, the qubits are in a “decoherence-free state” that is a superposition of computational basis states
+with an equal mixture of 0s and 1s. The net effect at the end of state preparation is equivalent to the application
+ofX ioperators on half of the physical qubits, so one can simply flip the relevant bits in postprocessing with the
+understanding that in the case thatn= 2jwithjodd, the code space throughout the circuit is now defined by the
+SZ=−1 subspace. In Fig. S2 we show the inserted PauliXoperator along with two additional PauliXoperators
+that we insert at the end of initialization so thatq 0andq n−1are in opposite states; since these two qubits correspond
+
+14
+FIG. S3.Repeat-until-success statistics for distance-2 experiments.We report the fraction of the time that a code
+block required each number of RUS iterations before no error was detected, corresponding to the fraction of total shots for
+experiments using a singleI kcode block, or fraction of total initializations = (total shots times number of code blocks) for
+experiments using multiple code blocks. Experiments of the same type (i.e., SPAM, GHZ state preparation, orXYmodel
+simulation) are aggregated on the plots above when they only differ in aspects that do not affect state preparation. Shot counts
+for each experiment are reported in the relevant SI sections below.
+to the pivot qubits, they may idle for long periods during computations in a singleI kcode. Consequently, this may
+provide additional protection against coherent dephasing on those two qubits in particular. In deep circuits, we expect
+that the code does not remain in a DFS state; however, at the beginning and end of the circuit, and in particular
+during any terminal syndrome extraction, we might expect the state to remain approximately DFS, so this technique
+provides a low-overhead way to mitigate some coherent error both during the initialization gadget and potentially
+during an encoded circuit.
+To the extent that coherent memory errors may be spatially varying but relativelytemporallyuniform, we insert
+two dynamical decoupling (DD)Xpulses on the qubits idling for the longest period during state preparation. As in
+Ref. [19], we alternate the sign of the DD pulses on each qubit between +Xand−X(which have physically distinct
+implementations on Helios) so as to cancel any potential coherent over-rotation on the single-qubit gate itself in the
+positive vs. negative directions. We do not depict these gates in Fig. S2 but they are arranged to occur during the
+long idle period on half the system qubits on the right-hand side of the gadget, with roughly equal temporal spacing.
+Finally, we introduce a new, FT two-branch|0⟩⊗k1k2state preparation gadget for concatenated iceberg codes
+Ik2◦ Ik1which generalizes thed= 2 circuit in Fig. S1. This circuit is shown for theI 8◦ I6code in Fig. S4. First,
+we initialize the lower-levelI k1blocks using thed= 2 two-branch circuit in Fig. S1. Then, we perform a two-branch
+circuit comprised of transversal CX gates with a logical ancilla which measures the logicalZZoperators of twoI 6
+
+15
+FIG. S4.Two-branch state preparation gadget in theI 8◦ I6code.All wires are logical, representingI 6blocks and
+all CX gates are transversal. The “init L1” gadgets initialize theI 6using thed= 2 two-branch state preparation circuit of
+Fig. S1.
+blocks to catch all cascading logicalXerrors, analogous to thed= 2 case. The main difference is that we arrange the
+CX gates so that they have only two controls, so that any weight-two Z error resulting from a single failure will be
+caught by thed= 2 EDZ gadgets, which extractXsyndromes of theI k1code using a Bell-pair syndrome extraction
+circuit similar to the non-destructive part of Fig. S5b. Similarly, the EDX gadget will extractd= 2 Z syndrome of
+the thirdI k1block to catch high weightXerrors which may result from anXXerror on one of the CX gates in
+the first transversal CX between the top two code blocks. We postselect on any non-trivial measurements in these
+EDZ/EDX gadgets as well as in the bottom transversalZmeasurement of theI k1ancilla. If theI k2◦Ik1code passes
+these checks, a single failure will lead to at most a weight-one error on the code block. Pairs of gate failures can lead
+to columns of errors on the output code block of weight possibly larger than two. However, since these error strings
+intersect the support of any weight-four logical operator on at most two qubits, we shall show in Sec. IV that such
+error are “generalized weight-two,” in the sense that they can be treated as weight-two errors and the usual proofs
+that computations are FT to distance four will still apply.
+II: Data from SPAM experiments
+In Table I we report explicitly all distance-2 data appearing in Fig. 1b and Fig. 1c.
+We report separately the distance-4 data, which does not use RUS in its state preparation protocol, so that we can
+distinguish the pre-acceptance and post-acceptance rates of the experiment, where thepre-acceptance ratecorresponds
+to the fraction of leakage-postselected shots that pass state preparation and thepost-acceptancerate refers to the
+fraction of remaining shots that are not postselected due to a weight-two error. In theI 8◦ I6SPAM experiment
+the leakage acceptance rate was 0.775+7
+−6, the pre-acceptance rate was 0.654(8), and the post-acceptance rate was
+0.987(2). No logical errors were recorded after performing 4000 shots of the experiment, which is consistent with an
+upper bound (Wilson 68% confidence interval) on the SPAM infidelity per logical qubit of 8.3×10−6.
+III: GHZ-state based syndrome extraction and readout inI kcodes
+The standard gadgets ford= 2 syndrome extraction presented in Refs. [6, 11] use two ancilla qubits to extract the
+SZandS Xsyndromes non-destructively in the middle of the circuit. These gadgets are made FT by careful ordering
+of the SE gates so that each ancilla serves as a flag for errors that may occur in extracting the syndrome measured
+by the other ancilla. This assumes that any nontrivial measurement of the corresponding ancilla qubit results in that
+circuit’s results being discarded via postselection, and it is not possible to distinguish errors that occurred during the
+rest of the circuit that resulted in a nontrivial syndrome from flagged errors that occurred during the SE gadget itself.
+More importantly, the gates involved in these gadgets are highly serial, with at most two performed simultaneously
+throughout the gadget. This presents a challenge for efficient qubit transport on Helios, both because it can parallelize
+batches of up to 8 two-qubit gates at a time in its gate zones and because this type of “two-to-all” circuit structure
+requires repeatedly moving the same ancilla qubits back and forth from the ring storage to the quantum logic regions,
+which may result in large time overheads.
+
+16
+Experiment Infidelity (×10−5) Total shots Leakage accept rate Overall accept rate
+Unencoded 48(6) 4000 – –
+I48, two-branch 6+3
+−2 2000 –.942(5)
+I48, log-depth 3+3
+−1 2000 –.943(5)
+I48, two-branch,S Xextraction 31+9
+−7 2000 –.47(1)
+I48, log-depth,S Xextraction 13+6
+−4 2000 –.49(1)
+Unencoded, LH 170(10) 4000.82(3).82(3)
+I48, log-depth, LH 12+3
+−2 4000.916(4).829(6)
+I48, log-depth, LH,S Xextraction 21(4) 4000.907+4
+−5 .695(7)
+TABLE I. Logical distance-2 and unencoded SPAM experiment results. Here, and elsewhere, LH refers to the leakage-heralded
+measurement available on Helios (Methods A). Infidelity is reported per logical qubit as in Fig. 1 as the fraction of total shots
+with no logical error, divided by number of logical qubits, and (leakage) acceptance rate is computed as the probability of
+preparing 48 qubits with no detected (leakage) error in both the encoded and unencoded case. Uncertainties for all encoded
+experiments in this work are obtained from Wilson 68% confidence intervals unless otherwise indicated, and are reported with
+parenthetical notation when symmetric and+
+−notation where asymmetric, with values referring to the trailing significant digits.
+…
+………
+FIG. S5.Syndrome extraction and readout gadgets in theI kcodes (a)GHZ-based syndrome extraction illustrated
+on anI 10code. Both four-qubit ancillary GHZ states read in parities across all qubits; the lower ladder of CX gates wraps
+around to include the top four physical qubits as well.(b)Readout gadget used inI 94GHZ state preparation experiments.
+The information encoding the measured syndromes is described in the text below.
+These standard gadgets are designed with efficiency of qubit number required in mind. However, for nearly all
+d= 2 experiments in this work, there is a surplus of qubits in the device that we may employ for mitigation of errors.
+The parallelization of the standard gadgets can already be improved simply by assigning a flag qubit for each ancilla
+rather than using them as flags for each other. This allows twice as many gates to be implemented in parallel, since
+each ancilla and its corresponding flag are prepared in a Bell pair and syndrome extraction gates can be broadcast
+over both qubits in the Bell pair.
+In this work we take this idea further, noting that we can achieve further parallelization of SE gates by entangling
+ancillas into GHZ states in the appropriate basis; gates can then be broadcast over all qubits in the ancillary GHZ
+states and one qubit detects the syndrome while the remaining qubits flag any potential error that may occur during
+the gadget. In Fig. S5a we illustrate this scheme on anI 10code. Using four-qubit GHZ states takes full advantage
+of the gate-zone parallelization on Helios while introducing minimal delays for encoding and decoding of the ancillary
+states themselves. We expect this is close to the optimal size GHZ state for performing SE on Helios, because larger
+states will introduce larger encoding/decoding delays, will be more sensitive to coherent dephasing errors on the
+
+17
+ancillas, and the gate zones are already being fully utilized in parallel when 8 gates are performed simultaneously
+(larger states will require additional transport rounds to perform more gates). However, one can take the GHZ states
+to be of any intermediate size up to potentiallyn(the Steane-style syndrome extraction limit [44]) which may be
+useful on future devices.
+To be explicit, we use anX-basis GHZ state to detectXerrors (detected byS Z) and vice versa with aZ-basis
+GHZ state as shown in Fig. S5a. We arrange the gates that encode/decode the GHZ states in a careful order as
+shown, so that all errors which can flip the syndrome propagate back to the same ancilla (i.e., the qubit initialized in
+|0⟩for theX-basis GHZ state and vice versa), whose measured value records the relevant syndrome. All other qubits
+flag any hook errors that might occur (i.e., aZerror on theX-basis GHZ state from gates or memory errors that
+could propagate back onto the system), and we correspondingly discard any shot where any qubit in either GHZ state
+records a nontrivial measurement. We note that when the DFS-based error mitigation discussed in Sec. I is used, the
+code space is defined by theS Z=−1 subspace so the expected noiseless value of the relevant ancilla measurement is
+flipped.
+Readout proceeds similarly to syndrome extraction, but theS Zsyndrome does not need to be extracted non-
+destructively; it can be reconstructed by the destructive measurement of each qubit in theZbasis. As a result, we
+only extractS Xnon-destructively during readout, using a four-qubitZ-basis GHZ state. In general, it is not clear
+that extractingS Xat the end of a circuit is always desirable, as the gadget itself can introduce coherent idling errors
+in theZbasis that do not affect the destructive measurements of the qubits but suppress the acceptance rate since
+they are detected byS X(and potentially introduce extra logical errors). For the state preparation and measurement
+(SPAM) experiments that are described in the main text and reported in Fig. 1b and Fig. 1c, we report the fidelity of
+the distance-2 experiments both with and without terminalS Xextraction. It is clear from the results reported there
+that terminalS Xextraction appears to typically increase both discard rates and logical error. For this reason, we do
+not extractS Xat the end of the circuit in ourXYmodel experiments.
+The results reported in Fig. 1b and Fig. 1c also include some experiments that used the leakage-heralded measure-
+ment available on Helios (Methods A). As expected, those experiments also show slightly larger logical error rates and
+discard rates, while the leakage-heralded measurement substantially improves the results presented in Fig. 3. This
+is primarily due to the fact that the leakage-heralded measurement has larger associated physical SPAM error but
+the SPAM experiments, being relatively short circuits, do not result in much qubit leakage. Consequently, we expect
+leakage-heralding not to enhance logical error in these very short circuits.
+During both syndrome extraction and readout, we employ additional dynamical decoupling pulses following the
+same method as discussed for state preparation in Sec. I, applying±Xpulses of alternating sign to idling qubits
+during the gadget, with an even parity of pulses applied on any given qubit before and after SE gates to avoid
+affecting the code stabilizers. In the SPAM experiments of Fig. 1b,c, these pulses are only applied to the experiments
+that extractedS X. The full impact of these DD pulses is not clearly resolved and may require further study to refine
+pulse timing.
+In theI 94GHZ state preparation experiments, there are not sufficiently many qubits on the device to use the
+log-depth initialization gadget and the GHZ-based readout protocol. For this reason, we default to the two-branch
+initialization presented in Fig. S1, and we use the readout gadget shown in Fig. S5b, which further improves on the
+gadget of Ref. [11] and requires only one ancilla qubit. In terms of the physical operators measured at the end of
+this gadget, we still have Zi=Z iZn−1; however, the stabilizers are now encoded into the operatorsS X=Z 0and
+SZ=Qn−1
+i=1Zi=Z 1Z2. . . Z kZn−1. Any nontrivial measurement of the ancilla flags errors that occur during the
+gadget.
+IV: Concatenated iceberg QEC cycle details
+In this section, we give fault-tolerance proofs, decoding algorithms, and experimental data from Helios for the
+QEC cycle ford= 4 concatenated iceberg codes introduced in the main text. Recall that in theI k2◦ Ik1code,
+stabilizers consist of rows and pairs of columns, see Fig. 1a. We call the former low-level stabilizers, denoted by
+SX/Z,i =Qn1
+j=0(Xij/Zij) fori∈ {0, ..., n 2−1}, since they are stabilizers of thed= 2I k1codes and the latter, high-
+level stabilizers, denoted bySi
+X/Z=Qn2
+j=0(X0,jXi,j/Zi,jZn1−1,j) fori∈ {1, ..., n 1−2}since they are the stabilizers
+of the encodedI k2.
+The full QEC cycle forI k2◦ Ik1is given in Fig. S6. To summarize, a| ¯+⟩⊗k1state encoded in anI k1ancilla is
+used to extract the high-levelXstabilizers,Si
+X. The qubits used to flag this ancilla are unencoded, initialized in the
+|0⟩⊗n1state. Then the lower-level stabilizersS X,jare extracted using Bell paird= 2 syndrome extraction (denoted
+as EDZ in Figs. S6 and 1d), the circuit for which is shown in Fig. S5b. The second half of the QEC cycle is conjugate
+to the first via the Hadamard gate and extracts theSi
+ZandS Z,jsyndromes.
+
+18
+Before discussing decoding the QEC cycle under circuit-level noise, we give a decoding algorithm in the case of
+correcting input errors with a noiseless QEC cycle. In this case, we must correct a single input error and halt if
+uncorrectable errors of weight>1 occur. The intuition behind decoding in this case is that the high-level stabilizers,
+corresponding to pairs of columns, will give information about thexcoordinates of errors, and the low-level stabilizers
+will give information about theycoordinates. If a weight-one error occurs, we can deduce thexandycoordinates
+of the error from the stabilizers and correct it. If a detectable error occurs, we can deduce from the stabilizers that
+there will either be multiplexcoordinates, or multipleycoordinates, or both. Pseudocode for correcting Z errors
+given the X stabilizers is shown in Fig. S7. Correcting X errors given the Z stabilizers is analogous.
+We see that strings of vertical and horizontal errors can be differentiated from correctable errors by the presence
+of multipleycoordinates or multiplexcoordinates in Algorithm 1. We will refer to such errors as “generalized
+weight-two,” due to both their detectability as well as to the size of their common support with any of the weight-four
+logical operators being≤2 (because lines intersect rectangles on at most two vertices).
+Definition 1.We callXerror strings of the formQ
+j∈SXx,jandQ
+i∈SXi,ygeneralized weight-two. Similarly, we
+callZerror strings of the formQ
+j∈SZx,jandQ
+i∈SZi,ygeneralized weight-two. A product of a generalized weight-two
+Xerror and a generalized weight-twoZerror is also generalized weight-two, due to independent correction ofXand
+Zerrors.
+Additionally, suppose we know that a vertical or horizontal string of errors has occurred, and, moreover, we know
+the commonxorycoordinate of the string. Algorithm 1 will then compute theyorxlocations of the string
+respectively, and this error can be corrected. Therefore, we call such strings for which the common coordinate is
+known “generalized weight-one” errors. There is one additionalXerror which is “generalized weight-one:” anX
+error on all the qubits of a column. Since pairs of columns are stabilizers, these are all equivalent up to a stabilizer:Q
+j∈[n 2]Xx1,j∼Q
+j∈[n 2]Xx1,j. Therefore, if in Algorithm 1, the length of the array ‘Ycoords’ isn 2, we may applyQ
+j∈[n 2]X0,jand this will correct an error string on any column.
+Definition 2.We call the tuple(Q
+j∈SXx,j, x), representing a vertical error string with a knownxcoordinate
+generalized weight-one. Similarly, we call the tuple(Q
+i∈SXi,y, y), representing a horizontal error string with a known
+ycoordinate generalized weight-one. Finally, we also denote the vertical error stringQ
+j∈[n 2]Xx1,jwithx 1arbitrary
+generalized weight-one. Similarly,(Q
+j∈SZx,j, x),(Q
+i∈SZi,y, y), andQ
+j∈[n 2]Zx1,jare generalized weight-one. A
+product of a generalized weight-oneXerror and a generalized weight-oneZerror is also generalized weight-one, due
+to independent correction ofXandZerrors.
+Z
+...
+X|0⟩
+q0
+q1 S
+qn−1 S
+qn
+|+⟩
+............
+|+⟩⊗k1X/vextendsingle/vextendsingle0/angbracketrightbig⊗k1Z
+|0⟩⊗n1Z |+⟩⊗n1XEDZ EDX
+EDZ EDX
+EDZ EDX
+EDZ EDX
+1
+FIG. S6.The QEC cycle forI k2◦ Ik1.The first half of the QEC cycle extractsXstabilizers and the second half extracts
+Zstabilizers. EDZ refers tod= 2 X syndrome and EDX tod= 2 Z syndrome extraction respectively. All CX gates shown are
+transversal, including the ones between the bottom two ancilla wires. The top ancilla is anI k1code block and the bottom is
+n1physical qubits, so they have the same size, and “transversal” in this case still meansn 1physical CX gates.
+We will prove versions of the fault-tolerance criteria in [45] ford= 4 codes, broadened to take into account the
+notions of generalized weight-1 and -2 errors, as well as the handling of measurement errors, which are natural for this
+QEC cycle. As a consequence, the conditions we prove are weaker in the sense of allowing more general output errors,
+
+19
+but stronger in that the QEC cycle must correct more general input errors. To demonstrate that these conditions are
+sufficient for fault-tolerance, we will show that they imply the desiredd= 3 QEC andd= 4 QED ExRec conditions
+(an ExRec or “extended rectangle” is a region of a circuit containing two adjacent QEC cycles; see Definition 3).
+Namely, ford= 3, we show that an encoded computation using anI k2◦ Ik1code will succeed so long as there is
+at most one fault per ExRec. Furthermore, we show ford= 4, that if there are at most two faults per ExRec, the
+computation will either succeed or halt, but will not result in an undetectable logical error.
+Proposition 1.The QEC cycle for two-level concatenated iceberg codes satisfies the following properties:
+1. If the QEC cycle contains no fault, it will take an input with a generalized weight-1 (or weight-0) error to an
+error-free output, and will halt the computation in the case of a generalized weight-2 input.
+2. Suppose the QEC cycle contains a single internal fault. Then it will take an input with no errors to an output
+with error of generalized weight at most 1. Also, it will take an input with a generalized weight-1 error to a
+generalized weight-1 output, or if it does not do so, it will pass flags to the next QEC cycle which will cause it
+to halt.
+3. If the QEC cycle contains at two internal faults, it will take an error-free input to an output of at most generalized
+weight-2, or it will halt.
+Proof.Let us discuss the correction ofZerrors as correctingXerrors is analogous. The proof of 1. follows from
+Algorithm 1 since, in this case, the extraction of the stabilizers is noiseless. Also, it is clear that, in the absence
+of noise, Algorithm 1 will correct a weight-oneZerror. In order to proceed further, we must analyze and correct
+circuit-level noise in terms of generalized weight-one and weight-two errors.Zhook errors can only occur in the
+second half of the QEC cycle.Zerrors on the iceberg ancilla for extracting theSi
+Zor its flags will lead to verticalZ
+strings. An example is shown in Fig. S8, where an error on the flag for the first qubit of the iceberg ancilla will lead to
+a vertical string ofZerrors withxcoordinate 0. In the absence of further errors, the 0th flag will have a non-trivial
+measurement, and thisxcoordinate is known, making the error generalized weight-one. This information can be
+passed to the next QEC cycle, which can then correct this error (this is the “HighZFlags” measurement register in
+Algorithms 2 and 3, shown in Figs. S9 and S10).
+Any single internal error, for it to be a hook error ofZtype, must affect an ancilla in the second half of the QEC
+cycle and will therefore cause a non-trivial flag measurement, and lead to an error of at most generalized weight-1 if
+the input is error-free, proving the first half of 2. To prove the second half, we must discuss what happens in the case
+of measurement errors in theXstabilizer registers (“HighX” and “LowX”) which, ideally, will correct generalized
+weight-1 input errors. If the error is strictly weight-1, in the absence of measurement errors, Algorithm 2 would deduce
+thexandycoordinate of such an error and be able to correct it. If a single measurement error occurs, then one of
+these two coordinates may be missing. In this case, we allow the error to pass through to the next QEC cycle, but,
+in Algorithm 3, we also pass the flags “CurrInternalFaults”’ and “NextInputErrorAllowed” to the next QEC cycle
+and postselect if there are subsequent internal faults or input errors respectively. If the error is generalized weight-1
+with a flaggedxorycoordinate from the previous QEC cycle, and a single internal-fault in the current QEC cycle
+introduces any uncertainty in any of theyorxcoordinates of the string respectively, we can postselect, as we know
+two errors in this ExRec have occurred (the hook error from the previous QEC cycle and the current internal fault).
+We can tell if such an internal fault has occurred by looking at, in the case of a vertical hook error, the parity of the
+number of detectedycoordinates, which should be accompanied by a detectedxerror coordinate in the case that this
+parity is odd, or no detectedxerror coordinate, in the case that this parity is even (see the comments “Halt if there is
+another error in addition to the hook error” in Algorithm 3). We computationally enumerate all single internal-faults
+and all generalized weight-1 inputs in the case of theI 2◦ I2=J16,4,4KQEC cycle, and verify that, in all cases, if a
+generalized weight-1 input is turned into a higher weight output, the subsequent QEC cycle will halt, completing the
+proof of 2, as the decoding for other sizes of iceberg layers is entirely analogous.
+Finally, if a hook error occurs, a subsequent internal fault, such as a measurement error in the measurement of
+flag 0 in Fig. S8 can turn a generalized weight-1 vertical error, for instance, into an error where thexcoordinate of
+this error string is not detected. In this case, the error becomes generalized weight-two. We can verify 3. through an
+exhaustive enumeration of all twosinternal faults forr+s= 2 in the case of theI 2◦ I2=J16,4,4KQEC cycle.
+Note that Prop. 1 implies that the scaling in Fig. S11 for circuit-level simulations of theI 2◦ I2QEC cycle should
+have anO(p3) infidelity andO(p2) rejection rate, consistent with the numerically fitted slopes.
+Now, we prove that Prop. 1 implies thed= 3 andd= 4 ExRec conditions.
+Definition 3.In a memory experiment with repeated QEC cycles, we define an ExRec to be any pair of consecutive
+cycles. An ExRec is good to distance 3 if it contains≤1errors.
+
+20
+Proposition 2.Suppose| ψ⟩is in the code space ofI k2◦Ik1and is input tomrounds of QEC. If all ExRecs are good
+to distance 3, then the computation will not halt and the output will have an error of generalized weight at most one.
+Proof.First, suppose that all ExRecs are good to distance three. Then the success of the computation follows from
+Prop. 1 since QEC cycles with errors are interleaved with perfect QEC cycles, which will correct any generalized
+weight-one errors produced by the faulty QEC cycles.
+Now, we prove thed= 4 ExRec condition forZerrors (the proof forXerrors is analogous). Again, suppose the
+computation ismrounds of QEC and the input is in the code space ofI k2◦ Ik1.
+Definition 4.An ExRec is good to distance 4 if it contains≤2errors.
+Proposition 3.If all ExRecs are good to distance 4, then the computation will either halt or the output will have an
+Xerror of generalized weight at most two.
+Proof.If all ExRecs are good to distance 4, then we examine the first ExRec where after the first QEC gadget, there
+is an error of generalized weight-two. There are two ways in which this can occur (by Prop. 1). The first is that the
+input to the ExRec was error-free and there were two errors in the first QEC cycle. In this case, the second QEC cycle
+must be error-free for the ExRec to be good, and the computation will halt because this noiseless QEC cycle has a
+weight-two input error. The second possibility is that the input to the ExRec had a generalized weight-one error and
+there was a single internal fault in the first QEC cycle. In this case, since after the first QEC cycle of the ExRec, the
+error is no longer generalized weight≤1, by Prop. 1, the second QEC cycle will halt, completing the proof.
+We note that while we prove the ExRec conditions here for memory experiments, we believe they could be straight-
+forwardly generalized to, for example, a transversal CX gate, by looking at all the flags in both inputs to theCXgate
+and halting if their combined non-trivial measurements are too numerous (for instance, if both had a “CurrFailures”
+value of 1 in Algorithm 3).
+For theI 2◦ I2and 2× I 2codes, we performed memory experiments on Helios whereccycles of QEC/QED were
+performed forc∈ {1,2,4,8}. Leakage heralding was used and the leakage acceptance, preacceptance, and QEC/QED
+acceptance rates are given in Table II. We decode over multiple ExRecs using Algorithm 3 (and analogous decoding
+forXerrors) with the extra postselection condition that correctable hook errors must occur on every otherxory
+coordinate due to the fact that the ancillas in syndrome extraction interact with every other qubit. We note that
+the preacceptance rate, which denotes the fraction of all unleaked shots for which all the state preparations in the
+protocol succeed, could be made arbitrarily close to 1 through repeat-until-success, and leakage postselection could
+be solved through the conversion of leakage noise to depolarizing noise in hardware using the technique of Ref. [41].
+Therefore, it is the QEC acceptance rate, which should scale asO(p2), which is fundamentally the limiting factor and
+must be increased by scaling the code distance, as we demonstrate. For the singleI 8◦ I6QEC cycle experiment, the
+decoding problem over a single ExRec is significantly easier, as we can simply iterate over all possible single failures
+and apply corrections whenever the flags and syndromes are compatible with such failures, and postselect otherwise.
+The results for this experiment are given in Table III.
+Experiment Cycles Leakage acceptance Preacceptance QEC/QED acceptance
+I2◦ I2(X Basis) [1, 2, 4, 8] [.930+8
+−9,.89(1),.81(1),.67+1
+−2] [.88+1
+−2, .83+1
+−2, .88(1), .84+1
+−2] [.989+3
+−4, .970+6
+−7, .90(1), .75(2)]
+I2◦ I2(Z Basis) [1, 2, 4, 8] [.917+8
+−9,.89(1),.77(1),.64+1
+−2] [.87(1), .84(1), .80+1
+−2, .82+2
+−1] [.991+3
+−4, .952+7
+−8, .88+1
+−3, .76(2)]
+2× I 2(X Basis) [1, 2, 4, 8] [.983+4
+−5, .984(4), .967+5
+−6, .937+7
+−8] [.993+2
+−3,.991+2
+−4,.993+2
+−4,.996+1
+−3] [.960+6
+−7, .912+8
+−10, .71+1
+−2, .64(2)]
+2× I 2(Z Basis) [1, 2, 4, 8] [.983+4
+−5, .984(4), .967+5
+−6, .937+7
+−8] [.993+2
+−3, .990+3
+−4, .981+4
+−5, .994+2
+−4] [.960+6
+−7, .917+8
+−9, .74+1
+−2, .50+1
+−2]
+TABLE II. Acceptance rates fork= 4 memory experiments over 1,2,4,and 8 cycles of QEC or QED. 1000 shots were submitted
+for each cycle length, for the| 0⟩⊗4and| ¯+⟩⊗4states for theI 2◦ I2and 2× I 2codes. In all experiments, leakage heralding was
+used and shots with detected leakage events were discarded. Leakage acceptance is the fraction of shots for which no detected
+leakage errors occurred. The preacceptance is the fraction of leakage postselected shots for which all state preparations (both
+for the input states and, in the case of the concatenated code, the lower-level ancilla used in QEC) succeeded. The QEC/QED
+acceptance rates are computed as the fraction of unleaked, preaccepted shots for which the QEC/QED cycles do not halt due
+to uncorrectable configurations ofd/2 circuit failures. In the accepted shots, one error occurred in the 4-cycleI 2◦ I2X basis
+experiment which induced an error on one of the logical qubits. No errors were found in any of the otherk= 4 memory
+experiments.
+
+21
+Experiment Leakage acceptance Preacceptance QEC acceptance Accepted shots Errors
+I8◦ I6(X Basis) .431(7).57(1).58+1
+−2 708 0
+I8◦ I6(Z Basis) .453(7).64(1).66(1) 958 0
+TABLE III. Experimental data for theI 8◦ I6QEC cycle experiments. 5000 shots were submitted in each basis. Leakage,
+preacceptance and QEC acceptance rates are as before. Of the 708 accepted shots in the X basis and 958 accepted shots in the
+Z basis, no errors occurred.
+Algorithm 1 Decode( Si
+X,SX,i)
+Xcoords = []
+Ycoords = []
+fori in [1, ..., n1→2]do
+ifSi
+X=- 1 then
+Append i to Xcoords
+end if
+end for
+iflength of Xcoords >n 1/2then
+Xcoords = [0 ,. . . ,n 1→1]\Xcoords
+end if
+forj in [0,..., n2→1]do
+ifSX,j== -1 then
+Append j to Ycoords
+end if
+end for
+iflength of Xcoords = 1 and length of Ycoords = 1 then
+Apply a Z correction to qubit (Xcoords[0], Ycoords[0])
+end if
+iflength of Xcoords >1 or length of Ycoords >1then
+Halt due to uncorrectable error
+end if
+FIG. S7.Noiseless decoding ofXstabilizer measurements.Given two arrays of noiseless X stabilizer measurements
+Si
+XandS X,i, in the presence of non-trivial syndromes, this algorithm will either return a compatible weight-one Z correction
+or determine that an uncorrectable error has occurred.
+Z0
+............
+Z0
+|+⟩⊗k1X/vextendsingle/vextendsingle0/angbracketrightbig⊗k1Z
+|0⟩⊗n1Z |+⟩⊗n1Z0 XEDZ EDX
+EDZ EDX
+EDZ EDX
+EDZ EDX
+1
+FIG. S8.Error propagation during high-levelZsyndrome extraction.An example of aZ 0error on the ancilla during
+high-levelZsyndrome extraction spreading to a vertical string ofZ 0errors on the data iceberg code blocks.
+
+22
+Algorithm 2 ComputeHookAndErrorCoords(HighX, LowX, HighZFlags, LowZFlags)
+Xcoords = []
+Ycoords = []
+Hooks Xlocs = []
+Hooks Ylocs = []
+ZCorrs = []
+fori in [0, ..., n1→1]do
+ifHighX[i] = 1 then
+Append i to Xcoords
+end if
+ifHighZFlags[i] = 1 then
+Append i to Hooks Xlocs
+end if
+end for
+iflength of Xcoords >n 1/2then
+Xcoords = [0 ,. . . ,n 1→1]\Xcoords
+end if
+forj in [0,..., n2→1]do
+ifLowX[j] = 1 then
+Append j to Ycoords
+end if
+ifLowZFlags[j] = 1 then
+Append j to Hooks Ylocs
+end if
+end for
+return (Hooks Xlocs, Hooks Ylocs, Xcoords, Ycoords)
+FIG. S9.Helper Function for decoding circuit-levelZerrors from QEC Cycle Measurements.Given the four
+relevant (possibly faulty) measurement registers from the current and previous QEC cycle, this algorithm computes the possible
+hook error locations as well as non-trivialxandycoordinates of Z errors. The HighX and LowX measurement registers are
+from the transversalXmeasurement of| ¯+⟩⊗k1and the stabilizer measurements of the EDZ gadgets in the first half of the QEC
+cycle respectively. The HighZFlags and LowZFlags are the flags for the| ¯0⟩⊗k1ancilla and the flags from the EDX gadgets in
+the second half of the previous QEC cycle, which record the locations of the vertical and horizontalZhook errors that the
+current QEC cycle must correct.
+
+23
+Algorithm 3 Decode(HighX, LowX, HighZFlags, LowZFlags, PrevFailures, InputErrorAllowed)
+Xcoords, Ycoords, Hooks Xlocs, Hooks Ylocs = ComputeHookAndErrorCoords(HighX, LowX,
+HighZFlags, LowZFlags)
+iflength(Hooks Xlocs) + length(Hooks Ylocs) >1then
+Halt due to multiple failures
+end if
+iflength(Hooks Ylocs) = 1 then
+if(length(Xcoords) mod 2 != length(Ycoords)) or (length(Ycoords) >1)then
+Halt ωHalt if there is another error in addition to the hook error
+end if
+if((length(Ycoords) >0) and (Ycoords[0] != Hooks Ylocs)) then
+Halt ωHalt if error string is not at the expected coordinate
+end if
+forx in Xcoords do
+append (x, Hooks Ylocs[0]) to ZCorrs
+end for
+end if
+iflength(Hooks Xlocs) = 1 then
+if(length(Ycoords) mod 2 != length(Xcoords)) or (length(Ycoords) >1)then
+Halt ωHalt if there is another error in addition to the hook error
+end if
+if((length(Xcoords) >0) and (Xcoords[0] != Hooks Xlocs)) then
+Halt ωHalt if error string is not at the expected coordinate
+end if
+fory in Ycoords do
+append (Hooks Xlocs[0], y) to ZCorrs
+end for
+end if
+ifHooks Xlocs = 0 and Hooks Ylocs = 0 then
+iflength(Ycoords) = n2then
+iflength(Xcoords) = 0 then
+forj in [0,..., n2→1]do
+Append (0,j) to ZCorrs ωThe unﬂagged generalized weight 1 hook error
+end for
+end if
+iflength(Xcoords) >0then
+Halt due to uncorrectable error
+end if
+end if
+iflength(Xcoords) = 1 and length(Ycoords) = 1 then
+ZCorrs = (Xcoords[0], Ycoords[0])
+end if
+if(length(Xcoords) >1) or (4 >length(Ycoords) >1)then
+Halt due to uncorrectable error
+end if
+end if
+NextInputErrorAllowed = True
+CurrFailures = 0
+iflength(Xcoords) = 1 and length(YCoords) = 0 and length(Hooks Ylocs) = 0 then
+NextInputErrorAllowed = False
+CurrFailures = 1
+end if
+iflength(Ycoords) = 1 and length(XCoords) = 0 and length(Hooks Xlocs) = 0 then
+CurrFailures = 1
+end if
+ifPrevFailures + CurrFailures >1then
+Halt due to multiple failures
+end if
+if(CurrInputErrorAllowed = False) and (length(ZCorrs) >0)then
+Halt due to multiple failures
+end if
+return (ZCorrs, NextInputErrorAllowed, CurrFailures)
+FIG. S10.Circuit-level decoding for thed= 4concatenated iceberg QEC cycle.The decoder forZerrors which
+satisfies Prop. 1. ‘PrevFailures’ and ‘InputErrorAllowed’ are passed from the previous QEC cycle, and the current QEC cycle
+will return the analogous quantities ‘NextInputErrorAllowed’ and ‘Curr Failures’ to pass to the next QEC cycle, as well as
+‘Zcorr’, the Z corrections for this QEC cycle.
+
+24
+FIG. S11.Simulated QEC infidelity and reject rate as a function of physical noise ratep.Circuit-levelStim
+[46] simulations with two-qubit gate errors and measurement errors of a single round of QEC on the|+⟩⊗4input state. The
+properties in Prop. 1 imply that the QEC rejection rate should scale asO(p2) and the infidelity asO(p3). Also shown are the
+rejection rates and infidelities for two copies of theI 2code. We can see that for an effective two-qubit infidelity of≤4×10−3,
+the fidelity and acceptance rate ford= 4 are improved relative tod= 2.
+V: Logical gate benchmarking analysis and statistical procedure
+Here, we provide more details about the logical cycle-benchmarking protocol described in the main text and in
+Methods C and discuss the methods used for fitting and statistical analysis.
+FIG. S12.Circuit diagrams for logical cycle-benchmarking experiments ofI 4code blocks.Both(a)intra-block
+and(b)inter-block experiments are displayed with cycles consisting of Pauli-twirled 2Q-gate layers and syndrome extraction
+rounds inserted every 8 cycles.
+The general protocol operates as follows: suppose we haveklogical qubits distributed among one or more code
+blocks on which the logical gates act (i.e.,k= 8 for twoI 4code blocks, even if the gates only couple one logical
+
+25
+qubit in each block). First, sample a set of logical Pauli observablesP samp from the uniform distribution overk-qubit
+Paulis, and choose a set of cycle depthsL cycwith which to perform the experiment. For each corresponding fixed
+cycle depthL∈ L cyc, initialize in a random eigenstate|ψ⟩PofP∈ P samp and applyLPauli-twirled gates along
+with periodic syndrome extraction before measuring in the eigenbasis ofP. From the parity of the resulting bitstring,
+extract an estimate of the expectation value of the output state with respect to the basis ofP. We view the constituent
+logical cycle of this experiment as being the Pauli-twirled logical gates, with the syndrome extraction essentially just
+a mechanism for detecting errors that occur during the cycle. However, note that the syndrome extraction can cause
+up tok-qubit logical errors, which is why we sample over Pauli observables of sizekcorrespondingly.
+The circuit diagrams for the experiments are displayed in Fig. S12. For the inter-block experiments, we use twoI 4
+iceberg code blocks with a single 2Q gate across the blocks (U ZZ(π/2) or FANOUT) as the cycle. For the intra-block
+experiments, we used a singleI 4code block and perform twoU ZZ(π/2) on both pairs of logical qubits per cycle.
+For each set of experiments, we randomly sample 20 Pauli observables across all 4 or 8 logical qubits (for intra-block
+or inter-block respectively). Each shot includes mid-circuit syndrome extraction round after every eight gate cycles
+and concludes with a terminal SE round. This frequency of syndrome extraction was chosen as a rough optimization
+for logical gate fidelity considering the competing factors of (a) very-frequent syndrome extraction introducing extra
+memory and gate errors versus (b) infrequent syndrome extraction leading to combinatorially more opportunities for
+faults to occur per detector region.
+In order to obtain an estimate of the Pauli fidelityf Pfrom the measured Pauli expectation values, we employ a
+maximum-likelihood based approach. For each depthL∈ L cycand Pauli observableP, we performNrepetitions of
+the corresponding logical CB circuit with Pauli layers randomized per shot. After postselecting on outcomes without
+detected errors, we acceptN Lshots. For each accepted shot, we record the parity of the final measured bits to obtain
+the Pauli eigenvalue outcome
+XP,s(L)∈ {+1,−1}, s= 1, . . . , N L.
+In order to extract the Pauli fidelity, we fit the distribution ofX P,sto a Bernoulli model. First, define a “match” event
+as whenX P,s(L) is equal to the eigenvalue of the initial Pauli eigenstate,λ |ψ⟩, and letK P(L) be the total number
+of such events across theN Lretained shots. For fixedPandL, we model the observed outcomes as i.i.d. Bernoulli
+trials with probability
+qP(L) = Pr 
+XP,s(L) =λ |ψ⟩
+.
+Equivalently,K P(L) is a binomial random variable with meanN Land varianceq P(L). We then relate the Pauli
+expectation valueµ P(L) to the “match” probability by
+µP(L) =E[X P,s(L)] = (+1)·q P(L) + (−1)·[1−q P(L)] = 2q P(L)−1.
+In cycle benchmarking, the expectation value of each Pauli decays exponentially with the number of cyclesL
+(assuming the probability of each cycle introducing an error is approximately i.i.d.) [16], that is,
+µP(L) =A PfL
+P,
+wheref P∈[0,1] represents the Pauli fidelity associated with the effective logical Pauli channel of one cycle, and
+AP∈[0,1] is the amplitude parameter that captures the SPAM error for preparing an eigenstate ofP. Since
+qP(L) = (1 +µ P(L))/2, this gives the binomial success probability
+qP(L) =1 +A PfL
+P
+2.
+We fit each Pauli individually with its own amplitude parameterA Pand Pauli fidelityf P.
+Given observed match counts{K P(L)} L∈L cycand accepted shot counts{N L}L∈L cyc, define the likelihood function
+for parameters (A P, fP) by
+L(A P, fP) =Y
+L∈L cycNL
+KL(P)1 +A PfL
+P
+2KP(L)1−A PfL
+P
+2NL−KP(L)
+.
+Dropping binomial coefficient terms that do not depend on the fit parameters, the negative log-likelihood is
+−logL(A P, fP) =−X
+L∈L cyc"
+KP(L) log1 +A PfL
+P
+2
++ (N L−K P(L)) log1−A PfL
+P
+2#
+.
+
+26
+We obtain the maximum-likelihood estimates
+(ˆAP,ˆfP) = argminAP,fP
+−logL(A P, fP)
+,
+subject to constraints that ensure that 0< q P(L)<1 for all fitted cycle depthsL. This yields the fitted Pauli fidelities
+ˆfPthat we plot in Fig. S13.
+The average of all fitted Pauli fidelities ˆfPreconstructs the estimated process fidelity of the cycle:
+Fpro=1
+|Psamp|X
+P∈P sampˆfP.
+From the (cycle) process fidelity, we compute the process fidelity of the two-qubit sub-cycle by takingF pro, 2Q =
+(Fpro)1/n, wherenis the number of 2Q gates in the cycle (n= 1 for inter-block gates andn= 2 for intra-block
+UZZ(π/2)). We estimate the gate average fidelity from the two-qubit process fidelity through the formulaF avg=
+(4Fpro, 2Q + 1)/5 [47] and report the results for each experiment in Table IV. Corresponding results for acceptance
+rates are reported in Fig. S14 and Table V.
+In order to obtain uncertainties on the estimate of the gate-average fidelities, we resample from the binomial
+distribution for each sequence depth and Pauli and fit the bootstrapped expectation-value decays using the MLE
+method. From the fitted Pauli fidelities across 500 resamples, we obtain a bootstrap distribution of the gate average
+fidelity and quantify uncertainty on the empirical estimate using the 1σ(68%) quantile around the bootstrap mean.
+We report the results in Table IV.
+FIG. S13. Fitted exponential decays of logical Pauli expectation values as a function of sequence depth for the intra-block
+UZZ(π
+2), inter-blockU ZZ(π/2), and inter-block FANOUT cycle-benchmarking experiments. Measured expectation values and
+fitted exponential decays are shown for each sampled 4-qubit Pauli string (for intra-block tests) and 8-qubit Pauli string (for
+inter-block tests). Each cycle consists of Pauli-twirled logical two-qubit gate layers followed by a round of syndrome extraction
+every 8 layers. Error bars indicate the 68% Wilson confidence intervals.
+Experiment Gate average infidelity
+Intra-blockU ZZ(π
+2) 1.0+2
+−4×10−4
+Inter-blockU ZZ(π
+2) 1.2+5
+−4×10−4
+Inter-block FANOUT 1.1+4
+−4×10−4
+TABLE IV. Estimated gate average infidelity for various logical cycle-benchmarking tests with 1σconfidence intervals obtained
+through bootstrap resampling.
+VI: Partially fault-tolerant gates betweenI kcode blocks
+A convenient feature of the iceberg code is that logicalU ZZ(θ) andU XX(θ) gates can be implemented with single
+physical two-qubit gates within an iceberg code block. However, the same cannot be said for logical two-qubit
+
+27
+FIG. S14.Acceptance rates of logical gate benchmarking experiments.Acceptance rate as function of cycle depth for
+the intra-blockU ZZ(π/2), inter-blockU ZZ(π/2), and inter-block FANOUT logical cycle-benchmarking tests. Numerical results
+are tabulated in Table V. Pink dashed curves indicate the average acceptance rate at each depth.
+Experiment Cycle depths Total shots (each depth) Overall accept rate
+Intra-blockU ZZ(π
+2) [8, 16, 32, 64] 4000 [.87(6),.83(4),.71(5),.45(9)]
+Inter-blockU ZZ(π
+2) [8, 16, 32, 48] 6000 [.80(3),.70(4),.58(5),.44(3)]
+Inter-block FANOUT [8, 16, 32, 48] 6000 [.80(5),.66(7),.50(5),.41(3)]
+TABLE V. Acceptance rates across various logical cycle-benchmarking (CB) tests showing depths, total shots per depth, and
+acceptance rates.
+rotations between two disjoint code blocks. The underlying reason is that, if one thinks of the two-qubit Pauli
+operators appearing in each rotation as being composed of the product of two one-qubit Pauli operators, one has
+ZiZj=ZiZn−1ZjZn−1=ZiZjwithin a single code block; whereas the correspondingZ n−1operators do not cancel
+when the logical qubitsq iandq jare in different code blocks and therefore the logical rotation is four-body.
+One method to execute this four-body rotation with some amount of fault-tolerance is to use the well-known
+decomposition of theU ZZ(θ) gate in terms of CX gates and the operatorU Z(θ) = exp 
+−iθ
+2Z
+, that is,U ZZ(θ) =
+CX12UZ(θ)2CX12(indexing the two qubits involved as 1 and 2). Treating all operators in this expression as logical
+and using the fact that fact that logical CX gates can be applied transversally in the iceberg code (that is, the logical
+CX operator can be implemented by broadcasting the physical CX operator between the respective physical qubits
+in each code block), this decomposition can be implemented by the circuit gadget shown on the left-hand side of
+Fig. S15a.
+This gadget is pFT: any single Pauli error on the CX gates is detected in one of the two code blocks. However,
+it fails to be fully FT for the same reason that theU ZZ(θ) gate alone fails to be FT in the iceberg code; namely,
+weight-2XX,Y Y, orZZerrors on theU ZZ(θ) are undetectable. The fault-tolerance can be improved by rewriting
+the circuit in a logically equivalent way by using SWAP gates to move the location of theU ZZ(θ) gate so that it is
+supported on both code blocks, as in Fig. S15. The resulting circuit gadgets on the right-hand side forU ZZ(θ) and
+UXX(θ) have the desirable property that the non-FT rotation gate now spans between code blocks, with the effect
+that only theZZerrors remain undetectable on the physicalU ZZ(θ) gate. Note thatU ZZ(θ) is the only physically
+implemented two-qubit gate in the QCCD architecture, so the corresponding undetectedXXerror on theU XX(θ)
+gate is physically aZZerror on the underlyingU ZZ(θ) gate as well.
+The Pauli error model measured for the two-qubit gates on Helios [8] has negligible contribution from theXXand
+Y Ychannels, with essentially all weight-2 errors being ofZZtype. Therefore, this construction does not necessarily
+substantially improve the fault-tolerance of a practical implementation of these gates on Helios. However, we expect
+that they may be useful for iceberg code implementations on other devices that may have a different Pauli error
+model.
+In Fig. 2a in the main text we also present the circuit decomposition of the inter-block FANOUT gate, which enacts
+a global logical parity flipQ
+iXion one code block controlled by a logical qubit in another code block. The intuition
+underlying this circuit gadget is that the global logical parity flip can be enacted by applyingX 0Xn−1on the second
+code block, and that controlling on logical qubitcis equivalent to physically controlling on bothcandq n−1. It is
+straightforward to verify that this circuit gadget appliesX 0Xn−1=Q
+iXiif and only if qubitcis in the logical| 1⟩
+
+28
+FIG. S15.Partially fault-tolerant gates between code blocks. (a)Starting on the left-hand-side with the circuit gadget
+corresponding to the CX-U Z(θ)-CX decomposition of theU ZZ, one can insert SWAP gates to move theU ZZ(θ) operator so
+that it spans between blocks. With a judicious choice of decomposition of the SWAP into CX gates, and using the fact that
+PauliZoperators on the control qubit commute with the CX gate, one arrives at the decomposition on the right-hand side.
+(b)The analogous series of steps for the circuit gadget implementing the logicalU XX(θ) between code blocks, noting that
+PauliXoperators on the target qubit also commute with the CX gate. In all circuits above,t=q 0is the iceberg top qubit
+andb=q n−1is the iceberg bottom qubit on each code block, with brackets indicating qubits that are in the same code block
+and indices labeling the first or second code block.
+state.
+The FANOUT gate is interesting for several reasons: first, that it is FT even to all single weight-2 gate errors,
+unlike the pFTU ZZgates. Second, it allows distribution of entanglement between code blocks with a number of gates
+(four) that does not scale with the size of the code blocks, unlike a transversal CX construction. A convenient aspect
+of the construction is that the precise way in which it distributes entanglement among code blocks aligns exactly
+with efficient logical GHZ state preparation among manyI kcode blocks as described in the main text and explained
+further in Sec. VIII.
+Although we do not provide constructions here, there are clear extensions of the FANOUT gate to other interesting
+FT gates that have constant overhead (i.e., with number of gates not scaling with code block size): namely, one can
+control on, or target, a specific subset of qubits with simple modifications of the choices of CX gates applied.
+VII: Unencoded GHZ state fidelity estimation
+To measure the fidelity of the physical GHZ state, we use a state verification scheme introduced in Ref. [48]. A
+state verification involves constructing an ensemble of pass/fail tests such that the average passing probability reveals
+information of the closeness to the ideal state. Specifically, one constructs a verification operator Ω =P
+lplΠlwherep l
+is the probability of performing a pass/fail test{Π l,I−Π l}, which is a two-outcome Positive Operator-Valued Measure
+(POVM). As shown in Ref. [48], when the verification operator is homogeneous, i.e., Ω =|Ψ⟩⟨Ψ|+β(I−|Ψ⟩⟨Ψ|) where
+|Ψ⟩is the target state andβis the second largest eigenvalue of Ω, the fidelityF:=⟨Ψ|ρ|Ψ⟩between the prepared
+stateρand the target state|Ψ⟩is related to the average passing probability as
+F=Tr [Ωρ]−β
+1−β.(S1)
+Therefore, measuring the fidelity amounts to measuring the average passing probability of the ensemble of tests
+Tr [Ωρ].
+
+29
+For the GHZ state|GHZ⟩= (1/√
+2)(|0···0⟩+|1···1⟩), Ref. [48] found that
+Ω =|GHZ⟩⟨GHZ|+1
+3(I− |GHZ⟩⟨GHZ|)
+=1
+3PZ+2
+3 
+1
+2N−1X
+XYPXY!
+,
+whereP Z=|0···0⟩⟨0···0|+|1···1⟩⟨1···1|andP XYis a projector onto the +1 eigenspace of an XY-Pauli stabilizer
+of|GHZ⟩as defined in Eq. (12) of Ref. [48]. Passing aP Ztest means the outcome is either|0⟩⊗Nor|1⟩⊗Nwhile
+passing aP XYtest means the corresponding Pauli expectation value is +1. Operationally, Tr [Ωρ] is obtained by
+performing theP Ztest with probability 1/3 and with probability 2/3, uniformly sampling aP XYtest to perform
+(there are 2N−1of them). Sinceβ= 1/3 in this case, we can obtain the fidelity asF= (3/2)Tr [Ωρ]−(1/2).
+It is worth noting that the sampling cost of this procedure is slightly lower than that of Direct Fidelity Estimation
+(DFE) [49]. Recall that DFE samples a stabilizer uniformly at random and measures the expectation value of that
+stabilizer.Fis obtained by averaging over all measurements. Since each observable is a Pauli operator that takes
+value±1 for every shot, sampling and measuring a stabilizer for each shot corresponds to an i.i.d. Bernoulli trial with
+outcomes±1. Hence, the variance of the estimate is (1−F)(F+ 1). However, as shown in Ref. [48], the variance of
+the fidelity obtained via Eq. (S1) is (1−F)
+F+β
+1−β
+. In this case whereβ= 1/3, the variance is (1−F)(F+ 0.5),
+marginally lower than that of DFE.
+In the experiment, we used a total of 1000 shots for each fidelity estimation, where 1/3 of the shots were allocated
+toP Ztests and the rest forP XYtests. For each shot allocated to theP XYtest, we sampled and measured a different
+XY-Pauli stabilizer of|GHZ⟩. The average passing probabilities of theP ZandP XYtests are weighted by 1/3 and
+2/3 correspondingly to obtain Tr [Ωρ], which is then used to deduce fidelity via Eq. (S1).
+VIII: Logical GHZ state preparation ind= 2iceberg codes
+In a single globalI kcode, the physical state on thenqubits encoding the logical| GHZ k⟩state takes a particularly
+simple form| GHZ k⟩=|Φ⟩ tb⊗|GHZ n−2⟩where|Φ⟩ tb=1√
+2(|00⟩ tb+|11⟩ tb) is a Bell pair of the top and bottom qubits
+t=q 0andb=q n−1respectively. As a result, the logical GHZ state can be directly prepared fault-tolerantly by
+preparing the physical GHZ state on the system qubits (via the same log-depth initialization gadget that would be
+applied to prepare the| 0⟩⊗kstate) and the Bell pair onq 0, qn−1independently. We demonstrate the state preparation
+gadget in Fig. S16. We note that the Bell pair state preparation is FT since the undetectable weight-2 errors on the
+CX gate stabilize the Bell state.
+As discussed, we perform single-shot fidelity estimation by reading out the GHZ stabilizerQ
+iXinon-destructively
+simultaneously with obtaining all other stabilizers ZiZi+1from destructive readout in theZbasis, using the fact
+thatQ
+iXicommutes withS X. We measureQ
+iXiby noting that it is stabilizer-equivalent toX 0Xn−1, which we
+measure directly by coupling to a single ancilla qubit. To make the implementation FT against state preparation and
+measurement (SPAM) errors, we repeat the non-destructive measurement ofQ
+iXitwice and discard shots in which
+the parity does not agree between the two measurements. Subsequently measuringS Xnon-destructively and reading
+out each qubit in theZbasis obtainsS Zand all ZiZi+1. Shots withS X=−1 orS Z=−1 are postselected out and
+the logical GHZ state fidelity is then estimated as the fraction of accepted shots that prepared +1 eigenstates of bothQ
+iXiand all ZiZi+1. This procedure is demonstrated in the general case of possibly multiple code blocks in Fig. 2c.
+In Table VI we report the values that appear in Fig. 1e, excluding results from GHZ state preparation in concate-
+nated iceberg codes, to be discussed in Sec. IX.
+IX: Logical GHZ state preparation in theI 8◦ I6code
+The stabilizers of the 48-logical-qubit GHZ state| GHZ 48⟩encoded inI 8◦I6are generated by theI 8◦I6stabilizers,
+the pairwise product of all logical Z operators Zi1,j1Zi2,j2, and the product of all logicalXoperatorsQi=6
+i=1Qj=8
+j=1Xi,j.
+This last stabilizer can be rewritten asQi=6
+i=1Qj=8
+j=1Xi,j=X 0,0X7,0X0,9X7,9.To see this, observe that the product
+of X operators forming a rectangle on the four corners of the 8×10 grid will anti-commute with all the Zi,j.To
+prepare the global GHZ state, we begin by fault-tolerantly preparing the| 0⟩⊗48state via the “Many Hypercubes”
+
+30
+FIG. S16.Logical GHZ state preparation in a globalI kcode.The state preparation separately prepares a Bell pair
+betweenq 0,qn−1and a physical GHZ state on the remaining qubits in log-depth following the same construction as Fig. S2.
+Experiment Fidelity Total shots Leakage accept rate Overall accept rate
+N= 48 unencoded.79(2) 1000 – –
+N= 48 unencoded, LH.74(2) 1000.966+5
+−6 .966+5
+−6
+I48 .983+4
+−5 2000 –.42(1)
+I48, LH.986+3
+−4 3000.908(5).392(9)
+12×I 4 .992(3) 3000 –.288(8)
+12×I 4, LH.998+1
+−3 3000.683+8
+−9 .210+8
+−7
+N= 60 unencoded.78(2) 1000 – –
+N= 60 unencoded, LH.76(2) 1000.956+6
+−7 .956+6
+−7
+I60 .976+5
+−6 2000 –.42(1)
+I60, LH.980(4) 3000.650(6).389(9)
+15×I 4 .997+2
+−3 3000 –.198(7)
+15×I 4, LH 1.000+0
+−2 3000.540(9).146+7
+−6
+N= 94 unencoded.64(2) 1000 – –
+N= 94 unencoded, LH.61(2) 1000.89(1).89(1)
+I94 .87(1) 2000 –.36(1)
+I94, LH.949+7
+−9 3000.650(9).25(1)
+TABLE VI. Logical distance-two and unencoded GHZ experiment results. As before, LH refers to leakage-heralded measurement
+and the corresponding leakage accept rate is reported in the third column.
+state preparation circuit [7]. This state possesses all theZstabilizers of| GHZ 48⟩and allXI 8◦ I6stabilizers. To
+transform the state into one stabilized byQi=6
+i=1Qj=8
+j=1Xi,jas well, we fault-tolerantly measure this operator, which
+will return±1 eigenvalue. If the eigenvalue is−1, we virtually apply a Pauli correction to flip it to +1 by updating
+the Pauli frame, completing the GHZ preparation procedure.
+We now describe how to fault-tolerantly measure the global logicalXoperator. For anI 8code, the logicalX
+operatorQ6
+i=1Xi=X 0X7is the stabilizer of a GHZ state on all six logical qubits. Therefore, we can use anI 8
+ancilla encoding a GHZ state to measure theI 8◦ I6operatorQi=6
+i=1Qj=8
+j=1Xi,j=X 0,0X7,0X0,9X7,9by performing
+transversal CX gates between theI 6GHZ state and the top and bottom data qubit iceberg blocks ofI 8◦ I6, shown
+in Fig. S17. However, this is not FT becauseXerrors on the lower-level GHZ state can undetectably propagate
+
+31
+to weight-two errors on the data qubits. To fix this, we extract theZstabilizers of| GHZ 6⟩, which allows us to
+locate single-qubitXerrors. For instance,X 1will flip the stabilizersZ 1Zifor 2≤i≤6. This will allow us to turn
+generalized weight-two errors into generalized weight-one errors (see Defs. 1 and 2). The only single-qubitXerrors
+that are indistinguishable areX 0andX 7, but these are equivalent up to a stabilizer of the GHZ state. We extract
+these stabilizers by measuring transversally in theZbasis and extract theXGHZ stabilizer via physical ancillae and
+theI 6stabilizer via the EDZ gadget to get the circuit in Fig. S5b. Altogether, we get the FT measurement circuit in
+Fig. S18, which must be repeated once to detect a logical measurement error in the lower-levelI 6block. If the two
+measurements disagree by a logical operator ofI 6, we postselect.
+After preparing the GHZ state, we measure in either theZandXbases and use the expectation values of the
+logical observables to estimate the fidelity of this logical GHZ state via a union bound as in Ref. [50]. The entire
+circuit consisting of the state preparation of zero, the measurement of the global logicalXoperator, and a transversal
+X- orZ-basis measurement has a fault-distance of four, so we perform correlated decoding over the entire circuit
+volume, correcting a single error occurring anywhere in the circuit and postselecting if two or more errors occur. This
+implies that this procedure should have an infidelity ofO(p3) and a discard rate ofO(p2) with respect to the physical
+error rate. This is illustrated in circuit-level simulations of this protocol in Stim, shown in Fig. S19 in the case of the
+Zbasis. The scaling in theXbasis is similar.
+On Helios, we prepared the 48 logical qubit GHZ state and then either measured in theXbasis and theZbasis.
+We ran 4000 shots in either basis and used eq. (4) from [50] to upper bound the infidelity of the state. Since we
+correct any single error including during state preparations (as opposed to preselecting on these preparations) there
+are only two acceptance rates: leakage acceptance and total acceptace. These are given in Table VII.
+X1
+X1
+X1 X/vextendsingle/vextendsingleGHZ 6/angbracketrightbig
+1
+FIG. S17.Non-fault-tolerantly measuring the global logicalXstabilizer of| GHZ 48⟩.A GHZ state encoded inI 6
+can be used to measure the global logicalXstabilizer of| GHZ 48⟩. We show an example of non-fault-tolerance where a single
+X1error on the lower-level GHZ state can undetectably spread to a weight-2 error on the data code block.
+ZX|+→X/vextendsingle/vextendsingleGHZ6/angbracketrightbigX0X7 X0X7 EDZ
+|+→
+1
+FIG. S18.Fault-tolerantly measuring the global logicalXstabilizer of| GHZ 48⟩.The transversalZmeasurement of
+the lower-level GHZ state will allow for the correction of anXhook error from the ancilla. To be robust to two errors, this
+circuit must be repeated again since two measurement errors could cause a logical measurement error of theX 0X7operator of
+the lower-levelI 6block.
+
+32
+FIG. S19.Simulated GHZ Z basis infidelity and reject rate as a function of physical noise ratep.This data is
+derived from circuit-level simulations performed in Stim [46]. A two-qubit depolarizing error and bit flip error are inserted after
+every two-qubit gate and measurement respectively with strengthp. Because one error anywhere in the circuit is corrected,
+the total rejection rate should scale asO(p2). Fault tolerance to distance 4 further implies that the infidelity should scale as
+O(p3). Performing linear regression on the simulated rejection rate and infidelity to estimate these exponents demonstrates
+this scaling.
+Experiment Leakage acceptance Overall accept rate Accepted shots Errors
+I8◦ I6(X Basis).372+8
+−6 .53(1) 790 0
+I8◦ I6(Z Basis).462+7
+−8 .67+2
+−1 1233 0
+TABLE VII. Experimental data ford= 4 48 logical qubit GHZ state experiments in theI 8◦I6code. 4000 shots were submitted
+in each basis. Leakage and overall acceptance rates are given. Of the 790 accepted shots in the X basis and 1233 accepted
+shots in the Z basis, no errors occurred.
+X: Data from preliminary XY model experiments in theI 50code
+Prior to executing theI 64codeXYmodel experiments in the main text, we performed several preliminary experi-
+ments using theI 50code for theXYmodel on a 2×5×5 lattice with periodic boundary conditions (Fig. S20a). These
+experiments were aimed at assessing the optimal configuration (in terms of achievable circuit fidelity) of a relatively
+sparse number of syndrome extraction rounds. Three different configurations were studied. In the first, we extracted
+both syndromesS XandS Zat both the midpoint of the circuit as well as at the end of the circuit (S Xextraction
++ midpoint SE). In the second, both syndromes were extracted at the midpoint, but onlyS Zwas extracted at the
+end of the circuit (midpoint SE). In the third and final, no midcircuit syndrome extraction was performed but both
+syndromes were extracted at the end of the circuit (S Xextraction). We did not use leakage-heralded measurement
+in any of theI 50experiments.
+We report the results of these experiments in terms of the obtained estimates of fidelity and acceptance rates in
+Fig. S20b, Fig. S20c and Tables VIII,IX,X. The first two configurations demonstrated break-even performance across
+the range of Trotter steps studied, with the third performing similarly ats= 2 tos= 6 but failing to demonstrate
+any clear improvement in fidelity ats= 8 ands= 10. For this reason, we chose the second configuration (midpoint
+SE) for theI 64experiments in the main text, which performed similarly to the first configuration (S Xextraction +
+midpoint SE) but with approximately a factor of two improvement in acceptance rate (implying that terminalS X
+extraction tends to typically detect many PauliZ-type memory errors induced by the gadget itself that do not affect
+terminal measurement in theZbasis).
+
+33
+FIG. S20.Mirror benchmarking of encoded Hamiltonian simulation in theI 50code. (a)The natural edge-5-coloring
+of the 2×5×5 periodic lattice. Edges connecting the periodic boundaries in the latter two directions are not shown to reduce
+visual clutter, but the corresponding gates are included in the circuits executed, as in the main text.(b)Fidelity estimate as
+a function of total Trotter steps in the full mirrored circuit.(c)Acceptance rate as a function of total Trotter steps in the full
+mirrored circuit.
+Experiment Total Trotter steps ,sFidelity estimate Total shots (×102)
+I50,SXextraction + midpoint SE [2, 4, 6, 8, 10] [.77(4),.42(6),.26+7
+−6,.21+5
+−4,.07+4
+−3] [5, 5, 5, 7, 8]
+I50, midpoint SE [2, 4, 6, 8, 10] [.73+3
+−4,.59(5),.29(5),.15+5
+−4,.08+4
+−3] [4, 4, 4, 4, 5]
+I50,SXextraction [2, 4, 6, 8, 10] [.74(4),.48(5),.24(5),.07+3
+−2,.03+2
+−1] [2.5, 2.5, 2.5, 3, 4]
+Unencoded [2, 4, 6, 8, 10] [.50(2),.22(1),.11(1),.066+9
+−8,.021+6
+−5] [8, 8, 8, 8, 8]
+TABLE VIII. Fidelity and shot counts across 50 logical qubitXYmodel quantum simulation experiments at different numbers
+of total Trotter stepss. The five values reported for fidelity estimate and total shots correspond to the five different total
+Trotter steps respectively.
+Experiment Overall accept rate
+I50,SXextraction + midpoint SE [.25(2),.12+2
+−1,.09(1),.10(1),.07(1)]
+I50, midpoint SE [.39(2),.25(2),.21(2),.17(2),.13+2
+−1]
+I50,SXextraction [.43(3),.38(3),.28(3),.29(3),.30(2)]
+Unencoded –
+TABLE IX. Overall acceptance rates across 50 logical qubitXYmodel quantum simulation experiments. The five values
+reported for acceptance rate again correspond to the five different total Trotter steps.
+Experiment SPAM parameterAEffective average 2Q infidelity ˜ϵ 2Q
+I50,SXextraction + midpoint SE 1.32(9) 8.6(7)×10−4
+I50, midpoint SE 1.2(2) 8(1)×10−4
+I50,SXextraction 1.5(2) 11(1)×10−4
+Unencoded 1.05(7) 11.9(6)×10−4
+TABLE X. Fit parametersA, ˜ϵ 2Qobtained from fitting the modelF(N gates) =A(1−5
+4˜ϵ2Q)Ngatesto the survival probability as
+a function of number of logical gates in 50 logical qubitXYmodel quantum simulation experiments. The SPAM parametersA
+all exceed 1, which we take as an general indication of minor deviations from the exponential-decay model. (discussed further
+below).
+XI: Data fromI 64XY model experiments
+We report here the explicit values appearing in Fig. 3d in Tables XI, XII along with additional information about
+shot counts and leakage acceptance rates. As explained in Methods A and plotted in Fig. 3d, we calculate effective
+
+34
+average two-qubit gate fidelities for each experiment by fitting the simple modelF(N gates) =A(1−5
+4˜ϵ2Q)Ngatesto
+the survival probability as a function of number of logical 2Q gates. In Table XIII we report both fit parameters
+obtained by this method. We note that in general we do not expect logical survival probability to decay exponentially
+on theoretical grounds since logical errors are in general not caused by i.i.d. gate errors but can result from multiple
+faults aggregated across the physical gates. However, empirically the survival probability appears to be well-modeled
+by exponential decay and we find the ˜ϵ 2Qthus extracted to be an informative metric for the effective gate error. One
+explanation is simply that at shallow circuit depth, the leading contribution to logical errors are i.i.d.ZZerrors on
+individual physical gates. For deep circuits, considering the coarse resolution of total number of Trotter steps, there
+is a rapid transition to the regime where multiple errors typically occur and syndromes appear effectively random, in
+which case acceptance is not strongly correlated to particular patterns of errors. This is consistent with the acceptance
+rate reported for the deepest circuits in theI 64experiments which approach a plateau around 12.5% acceptance rate,
+which would be expected for three random syndrome values. We emphasize that the effective two-qubit gate error
+obtained by this procedure is not directly comparable to the bare component infidelity of the two-qubit gate, as it
+also includes additional overheads such as memory errors (see also Methods A). Rather, it should be compared to
+the effective 2Q gate infidelity calculated from full-circuit benchmarks such as mirror benchmarking as in [8], which
+yielded ˜ϵ 2Q= 20(2)×10−4. We note also that the full-circuit metric in Ref. [8] used maximally entanglingU ZZ(π/2)
+gates and arbitrary connectivity; in this work, we use half-maximally entangling gates and a circuit with more local
+three-dimensional connectivity, so the fairer comparison point is the ˜ϵ 2Q= 10.7(5)×10−4obtained in our unencoded
+experiment.
+For all encoded experiments in this section, we terminate shots early if an error is detected during midcircuit
+syndrome extraction. It is possible that errors can be detected midcircuit due to leakage of data qubits leading
+to nontrivial syndromes. However, we did not obtain leakage information for the data qubits in shots that termi-
+nated early. Therefore, leakage acceptance rates are computed only with respect to shots that survived midcircuit
+postselection and reached terminal measurement.
+Experiment Total Trotter steps ,sFidelity estimate Total shots (×103)
+I64, LH [2, 4, 6, 8, 10] [.69(2),.40(3),.22+4
+−3,.08(2),.03+2
+−1] [2, 2, 2.2, 4.4, 4.8]
+I64 [2, 4, 6, 8, 10] [.55(2),.27+3
+−2,.08(2),.034+8
+−7,.005+4
+−2] [1.6, 1.6, 1.8, 4, 4.4]
+Unencoded, LH [2, 4, 6, 8, 10] [.43(2),.14(1),.057+9
+−8,.026+6
+−5,.009+5
+−3] [1.2, 1.2, 1.5, 1.8, 2]
+Unencoded [2, 4, 6, 8, 10] [.24+2
+−1,.10(1),.029+7
+−5,.010+4
+−3,.005+3
+−2] [0.8, 0.8, 0.8, 0.8, 0.8]
+TABLE XI. Fidelity and shot counts across 64 logical qubitXYmodel quantum simulation experiments at different numbers
+of total Trotter stepss. LH refers to the use of leakage-heralded measurement on Helios. The five values reported for fidelity
+estimate and total shots correspond to the five different total Trotter steps respectively.
+Experiment Leakage accept rate Overall accept rate
+I64, LH [.72+1
+−2,.59(2),.42(2),.33(1),.26(1)] [.232+10
+−9,.125+8
+−7,.061(5),.049(3),.032+3
+−2]
+I64 – [.25(1),.20(1),.137(8), .142+6
+−5,.125(5)]
+Unencoded, LH [.80(1),.64(1),.50(1),.42(1),.32(1)] [.80(1),.64(1),.50(1),.42(1),.32(1)]
+Unencoded – –
+TABLE XII. Leakage and overall acceptance rates across 64 logical qubitXYmodel quantum simulation experiments. LH
+refers to the use of leakage-heralded measurement on Helios and the five values reported for acceptance rates again correspond
+to the five different total Trotter steps.
+XII: Alternative fault-tolerant preparation of resource states
+The FT preparation of diverse resource states is fundamental for QEC: they can be consumed to perform Steane-
+or Knill-style QEC, to enable long-range interactions between logical qubit blocks via teleportation, to perform non-
+Clifford gates, or to achieve addressability in high-rate codes. We present three FT preparation techniques alternative
+to Goto’s FT preparation (Goto) of concatenated hypercubes code [7]: a projective method (Projective) analogous
+to the typical initialization of surface codes, flag at origin (F@O) [25], and the verification of a non-FT state with a
+
+35
+Experiment SPAM parameterAEffective average 2Q infidelity ˜ϵ 2Q
+I64, LH 1.4(1) 7.1(6)×10−4
+I64 1.5(2) 10.2(8)×10−4
+Unencoded, LH 1.16(9) 10.5(5)×10−4
+Unencoded.69(5) 10.7(4)×10−4
+TABLE XIII. Fit parametersA, ˜ϵ 2Qobtained from fitting the modelF(N gates) =A(1−5
+4˜ϵ2Q)Ngatesto the survival probability
+as a function of number of logical gates in 64 logical qubitXYmodel quantum simulation experiments.
+flag circuit optimized with integer linear programming (ILP). We then compare the logical error rates and acceptance
+rates of the resulting circuits for theI 8◦ I6under a simple circuit-level noise model.
+We analyze the preparation of three logical resource states: a logical| ¯0⟩⊗48state for initializing an algorithm or
+performing Steane-style QEC in Fig. S21, a tensor product of 48 randomly chosen logical| ¯0⟩and| ¯+⟩states for
+injecting addressable logical Hadamard gates as in [7] in Fig. S22, and random CSS state preparation on all logical
+qubits in Fig. S23. The noise model inserts bit-flip (phase-flip) channels after the initialization of every qubit in
+|0⟩(|+⟩) and before the measurement of every ancillary and flag qubit in theZ(X) basis, and inserts a two-qubit
+depolarizing channel after every two-qubit gate. All noise channels have the same error ratep.
+For the three states we report the logical error rateP L(left plots), the post-discard rate (middle plot), and the
+pre-discard rate (right plot). Thepre-discard rateis the probability of discarding the state during preparation,
+upon detection of one or more faults. This should happen with probabilityO(p), because all state preparation
+protocols considered in this work are designed to abort on any fault. Thepost-discard rateis the probability of
+discarding a pre-accepted state when performing ideal noiseless decoding on the shots obtained when the state is
+measured destructively. Such a discard would occur if, for example, the prepared state is used to perform Steane error
+correction and an uncorrectable error is detected. A post-discard is expected to occur with probabilityO(p2), because
+at least two faults are required to produce a detectable but not correctable error when ideally decoding a distance-4
+code. Finally, thelogical error ratehere is the probability of an error which would result in a large-scale computation
+continuing with an unintentionally altered state. Such errors are equivalent to a logical operator anticommuting with
+one that stabilizes the prepared state, or differ from such an operator on one qubit. For a distance-4 code, this is
+expected to require three faults to occur, and therefore happen with probabilityO(p3). The relevant logical operators
+are: ¯Zifor the| ¯0⟩⊗48state, ¯Zifor the logical qubitsiprepared in| ¯0⟩and ¯Xjfor the logical qubitsjprepared in| ¯+⟩
+in the random tensor product of these states, and ¯Zi¯Zi+1and ¯X⊗48for the logical GHZ state.
+Looking at the three figures, we first confirm the expected asymptotic scalings for all preparation methods and
+states. For the preparation of| ¯0⟩⊗48in Fig. S21 we find that the ILP method provides the best logical error rate and
+post-discard rates, followed by Goto’s method. F@O performs comparably to the Projective method in logical error
+rate and pre-discard rate, but presents better post-discard rate. It is worth noting that Goto and ILP methods are
+specific to this state while F@O and the Projective methods are general constructions for every logical CSS state. We
+can then use them to produce FT state preparation circuits for the random tensor product of| ¯0⟩and| ¯+⟩and the GHZ
+state. Since these states are stabilized by logical operators in theZas well as theXbases, we destructively measure
+in these two bases, obtaining one logical error rate and post-discard rate for each basis (note that the pre-discard rate
+is independent of this measurement basis). For both states in Figs. S22 and S23 we observe that the natural bias in
+the Projective method reflects in better results in theZbasis. The F@O method performs worse in logical error rate
+and post-discard rate, but provides a significantly better pre-discard rate.
+These results showcase the great diversity of QEC strategies that can be implemented on an all-to-all connectivity
+device, each one being beneficial in some situations over others. For example, the ILP method performs well but
+requires a large computational problem to be solved for each logical state to be prepared; Goto state preparation
+performs well for the specific state| ¯0⟩⊗kand for higher-distance concatenated codes where ILP cannot yet be used;
+F@O and Projective methods can be implemented in polynomial time for arbitrary CSS logical states with F@O being
+more useful when good pre-discard rate is preferable over a good logical error rate. This is the case when, for example,
+at some point in the computation the resource state is needed but the available qubit resources on the hardware are
+so scarce than the entire computation needs to wait until the state preparation attempt is accepted.
+
+36
+10−410−310−2
+p10−810−710−610−510−410−310−210−1PL
+F@O,Z,β= 2.85±0.02
+Projective, Z,β= 3.11±0.02
+ILP,Z,β= 3.06±0.05
+Goto,Z,β= 2.75±0.17
+10−410−310−2
+p10−1100Ppre−discard
+F@O,Z,β= 0.95±0.01
+Projective, Z,β= 0.92±0.02
+ILP,Z,β= 0.97±0.01
+Goto,Z,β= 0.97±0.01
+10−410−310−2
+p10−410−310−210−1100Ppost−discard
+F@O,Z,β= 1.87±0.03
+Projective, Z,β= 1.89±0.03
+ILP,Z,β= 1.96±0.01
+Goto,Z,β= 1.96±0.01
+FIG. S21.Performance of logical state preparation for the encoded all-zero state| ¯0⟩⊗48.We compare the flag-
+at-origin (Sec. XII 2), projective preparation (Sec. XII 1), ILP-based (Sec. XII 3) methods, and the circuit obtained using the
+method described in Ref. [7]. The left panel shows the logical error rate conditioned on acceptance, while the middle and right
+panels respectively show the pre- and post-discard probabilities arising from flag-based and syndrome-based postselection.
+Data are plotted against physical error ratep. Dashed lines indicate power-law fits in the low error-rate regime, and the fitted
+exponentβcharacterizes the effective scaling of the logical error rate, as pre-(post-) discard rates, and shaded areas indicate
+95% Wilson confidence intervals.
+10−410−310−2
+p10−810−710−610−510−410−310−210−1PL
+F@O,X,β= 2.87±0.05
+F@O,Z,β= 2.95±0.03
+Projective, X,β= 3.27±0.02
+Projective, Z,β= 2.94±0.06
+10−410−310−2
+p10−1100Ppre−discard
+F@O,X,β= 0.95±0.01
+F@O,Z,β= 0.95±0.01
+Projective, X,β= 0.88±0.02
+Projective, Z,β= 0.88±0.02
+10−410−310−2
+p10−410−310−210−1100Ppost−discard
+F@O,X,β= 1.89±0.03
+F@O,Z,β= 1.88±0.03
+Projective, X,β= 1.94±0.01
+Projective, Z,β= 1.86±0.03
+FIG. S22.Performance of logical state preparation of a random CSS product state benchmarked inXandZ
+basis.We compare the flag-at-origin (Sec. XII 2) and projective state preparation (Sec. XII 1) methods. The left panel shows
+the logical error rate conditioned on acceptance, while the middle and right panels respectively show the pre- and post-discard
+probabilities arising from flag-based and syndrome-based postselection. Data are plotted against physical error ratep. Dashed
+lines indicate power-law fits in the low-error-rate regime, and the fitted exponentβcharacterizes the effective scaling of the
+logical error rate, as pre-(post-) discard rates, and shaded areas indicate 95% Wilson confidence intervals.
+1. Projective preparation
+We fault-tolerantly prepare encoded CSS states using a postselected projective measurement scheme. This method
+consists of initializing the data qubits of the code in a product state of a chosen basis, and projecting the system onto
+the desired logical state by repeated measurement of an appropriate set of commuting parity checks. In our setting,
+we apply this method by measuring stabilizers of the concatenated iceberg code in the basis opposite to the initial
+product state, as well as additional commuting Pauli operators, referred to as state stabilizers, which fix the logical
+sector and uniquely define the target logical state. The concatenated iceberg stabilizer generators separate into two
+sets,S inner andS outer, which, respectively, have support at lower and higher levels of concatenation. The former
+each have support on a single lower-level iceberg code, while the outer stabilizers have larger support on multiple
+lower-level blocks, as shown in Fig. 1a in the main text.
+Stabilizer measurements are implemented using minimal one-flag gadgets. Each check inS inner andS outer is mea-
+sured using a dedicated syndrome ancilla and a single flag ancilla, where two additional CX gates couple the syndrome
+ancilla to the flag ancilla at the beginning and end of the syndrome extraction circuit, with the control (target) de-
+pending on the CSS stabilizer basis. The purpose of this construction is to ensure that the probability of an accepted
+
+37
+10−410−310−2
+p10−710−610−510−410−310−210−1PL
+F@O,X,β= 2.73±0.03
+F@O,Z,β= 2.89±0.04
+Projective, X,β= 2.82±0.02
+Projective, Z,β= 2.76±0.06
+10−410−310−2
+p10−1100Ppre−discard
+F@O,X,β= 0.93±0.01
+F@O,Z,β= 0.93±0.01
+Projective, X,β= 0.80±0.04
+Projective, Z,β= 0.80±0.04
+10−410−310−2
+p10−410−310−210−1100Ppost−discard
+F@O,X,β= 1.87±0.03
+F@O,Z,β= 1.87±0.03
+Projective, X,β= 1.94±0.01
+Projective, Z,β= 1.85±0.03
+FIG. S23.Performance of logical state preparation of an exotic CSS state benchmarked in bothXandZbases.
+We compare the flag-at-origin (Sec. XII 2) and projective state preparation (Sec. XII 1) methods. The left panel shows the
+logical error rate conditioned on acceptance, while the middle and right panels respectively show the pre- and post-discard
+probabilities arising from flag-based and syndrome-based postselection. Data are plotted against physical error ratep. Dashed
+lines indicate power-law fits in the low-error-rate regime, and the fitted exponentβcharacterizes the effective scaling of the
+logical error rate, as pre-(post-) discard rates, and shaded areas indicate 95% Wilson confidence intervals.
+123456789101112131415161718192012345678
+SouterSinner
+FIG. S24.Schematic stabilizer measurement schedule for the concatenated iceberg code in Sec. XII 1.We
+show one representative outer stabilizer (left) and one inner stabilizer (right). Numbers label discrete CX time steps between
+stabilizer ancilla and data qubits, which are executed in parallel across all inner (respectively, outer) stabilizers. The zigzag
+measurement ordering of the outer stabilizer enables FT syndrome extraction using a single flag ancilla to detect hook errors.
+logical failure is suppressed to second order in the physical error rate, i.e. scales asO(p2). Indeed, any single fault
+either triggers a flag, leading to immediate rejection of the shot, or results in an error that remains within the cor-
+rectable regime of the preparation protocol, such that accepted logical errors have noO(p) contribution. Moreover,
+it is not necessary to individually detect all two-fault events in this postselected scheme, since for distance-4 FT
+preparation it suffices that two-fault events do not cause accepted atO(p2). Equivalently, a shot is accepted only
+if its syndrome is compatible with the desired logical state, within a decoding radius of one physical error. Any
+undetected two-fault event producing a syndrome outside of this radius is considered non-correctable and the shot
+is rejected. This prevents the failure mechanism where a two-fault event produces a syndrome that an ideal decoder
+would interpret as a low-weight correctable error in the wrong logical coset.
+The validity of the flagged circuit for the inner stabilizers follows from the fact that any of these is a global weight-
+nincheck of an iceberg block, and different blocks are disjoint. Hence, all inner stabilizers can be measured in parallel.
+A logical operator of the concatenated iceberg code can have support on only two qubits per inner block, and a single
+syndrome ancilla error can cause a hook error within the block. The flag ancilla detects any hook that produces a
+weight≥1 error, such that accepted outcomes are at worst weight-one within each block. The outer (higher-level)
+stabilizers have support that spans multiple inner (lower-level) blocks, and a naive schedule can lead to malignant
+hook errors. To avoid this, we choose an interleaved syndrome ancilla-data qubit CX ordering, in a zigzag pattern
+
+38
+across the support of each stabilizer, as shown in Fig. S24. This ordering spreads potential hook endpoints across
+blocks and ensures that any unflagged two-fault events cannot be creating an error that is indistinguishable from a
+single-qubit error up to a logical operator.
+To prepare a desired logical state after fixing the codespace, we additionally perform projective measurements of
+a chosen set of mutually commuting Pauli operators, referred to as the state stabilizers. Such operators commute
+with all stabilizers of the code, and their joint eigenvalues uniquely define the target logical sector. Operationally,
+each of these logical operators is measured using a FT flagged Pauli-product measurement circuit, implemented after
+stabilizer extraction, where each flagged measurement schedule is taken from the library of flag gadgets generated
+in [25], where the number of flag ancillae per operator is parametrized by the target code distance. In order to
+simplify benchmarking for comparison with other state preparation methods, we do not consider idling noise, and
+assume that these (gauged) logical operator measurements are realized sequentially. This choice isolates the intrinsic
+fault tolerance of the measurement gadgets themselves. We emphasize that more efficient FT schedules can be
+constructed by interleaving commuting logical operator measurements, both within this set and potentially with the
+stabilizer measurements, in order to reduce circuit depth, flag-ancillary overhead, and the impact of idling noise. In
+particular, the flagged syndrome extraction circuits considered here possess a constrained interaction structure, in
+which the roles of certain qubit types, i.e. which qubits act exclusively as controls or targets in multi-qubit gates, are
+fixed by construction. This structure could be exploited to enable greater parallelization in the schedule. We leave a
+systematic exploration of such schedule optimizations for future work.
+We simulate this logical state preparation protocol usingStimfor two-qubit depolarizing noise of strengthp.
+We start by initializing the data qubits in the computational basis product state|0⟩⊗80. FT state preparation is
+simulated using repeated flagged stabilizer measurements in theZbasis and, when applicable, flagged logical-operator
+measurements, followed by postselection onto the desired syndrome outcomes. Three rounds of measurements are
+performed. To benchmark logical performance in both Pauli bases, we use projective Pauli-product measurements
+(PPM) at the end of the circuit. When the benchmarking basis coincides with the preparation basis, stabilizers
+and logical observables can be measured directly. Since we benchmark bothXandZbases in a single numerical
+experiment, the stabilizers and logical observables of the conjugate basis are measured via PPM projections, which
+naturally commute with the stabilizer group. This approach enables the extraction of logical error rates in bothX
+andZbases from a single preparation experiment. In Figures S21, S22, and S23, we report the logical error rate for
+the preparation of (i) the encoded zero state, (ii) a random CSS state drawn from an arbitrary| ¯0⟩/|¯+⟩distribution,
+and (iii) an exotic CSS state comprising a mixture of single-qubit CSS states and Bell pairs. The pre-discard and
+post-discard rates, shown in panels (b) and (c), are defined as the discard probabilities after flag detection, and after
+both flag- and syndrome-based postselection.
+2. Flag-at-origin preparation
+We use the flag-at-origin (F@O) method introduced in [25] as an alternative method for preparing the logical states
+of the concatenated iceberg code. In this subsection, we will give a brief overview of the F@O method, and describe
+the modifications made to the original protocol to optimize the resulting circuit further to use the number of qubits
+available in the Helios trapped-ion quantum processor.
+For a CSS state withn X(nZ) number ofX-type (Z-type) independent stabilizer generators, one can find a non-
+fault-tolerant bipartite unitary preparation circuitCwhich acts on|0⟩⊗nZ|+⟩⊗nXand composed of only CX gates.
+LetQ XandQ Zdenote the set of qubits initialized in|+⟩and|0⟩states respectively. The preparation circuitC
+is bipartite in the sense that for all CX gates, the control qubits are inQ Xand the target qubits areQ Z. This
+bipartite structure is closely related to the fact that any CSS states can be represented by a graph state|G⟩withG
+bipartite [25]. The bipartite structure ofCensures that errors will not propagate withinQ X(or withinQ Z), and any
+Xerror can only propagate once fromQ Xto a qubit inQ Z(and will not propagate further), and similarly anyZerror
+can only propagate once from a qubit inQ Zto a qubit inQ X. Importantly, this straightforward error propagation
+structure allows one to inspect the fault tolerance of the sub-circuit connected to each qubitseparatelyand therefore
+attach a flag gadget to that qubit (i.e. to use flag qubits to prevent harmful errors from propagating undetected),
+making the corresponding sub-circuit fault-tolerant (see Ref. [25] for further details). We useC FTto denote the FT
+circuit that results from attaching flag gadgets to each qubit inQ X∪QZ.
+Since the concatenated iceberg codeI 8◦I6is CSS we may use F@O to prepare any CSS logical state fault-tolerantly.
+We use the following additional optimization techniques to ensureC FTcan be executed on the Helios trapped-ion
+quantum processor:
+•In the original F@O technique in Ref. [25], the same gadgets are used ford= 4 andd= 5 codes. This ensures
+any fault pairs in the preparation circuit that result in weightw >2 errors on the data qubits are flagged and
+discarded. This is sub-optimal since an ideal decoder for theI 8◦ I6code discards any shot withw≥2 errors
+
+39
+on data qubits anyway. Therefore we only flag a fault pair if it propagates to an error that the ideal decoder
+mistakenly corrects instead of discards, i.e. if it propagates to an error with the same syndrome as a single-qubit
+error.
+•Ideally, one would apply the gates inC FTin parallel. However, doing so requires more qubits than what is
+available on the Helios trapped-ion quantum processor. Therefore we have to run flag gadgets serially. Different
+choices of which flag gadgets to run first may then result in different total number of simultaneously allocated
+qubits. In [25], it was suggested to start by running the gadgets attached to qubits inQ Xand run the gadgets
+inQ Zaccordingly. However, for states with|Q Z| ≫ |Q X|, such as the logical all-zero state| ¯0⟩⊗48, it is better
+to start with gadgets attached to qubits inQ Zand build the gadgets for qubits inQ Xaccordingly. Moreover,
+within the qubits inQ Z, we begin with the flag gadget of the qubit with the largest number of CX gates attached
+to it inC, followed by the one with the second-to-largest, and so on. This ensures that we are done with flag
+gadgets which potentially need more flag qubits first, when we have more qubits available, before we entangle
+more data qubits to the state we are building.
+•The circuits in Ref. [25] were found by first finding a circuitCwhich has the lowest number of CX gates (among
+some fixed number of randomly builtC) and then, using the fact that all CX gates inCcommute with each
+other, finding the CX ordering which results in aC FTwith the lowest number of required qubits. Since the
+required number of qubits inC FTis not simply a function of the number of CX gates inC, we combine these
+two steps together; we find a large number ofC(of the order of 103) with relatively small number of CX gates,
+and buildC FTfor each of them and choose the one with the smallest number of required simultaneous qubits.
+3. Flag-based| 0⟩⊗48state preparation
+Using the insight that all operations required for| 0⟩48state preparation in the iceberg code are themselves transver-
+sal in the iceberg code, a non-FT state preparation circuit for the two-layer concatenated iceberg code can easily be
+created, see Figure S25.
+Given the limited error propagation in this circuit, flag-based fault tolerance [5] is an effective method for deriving
+an equivalent FT circuit. We produce a preparation circuit using an automated method for producing flag FT circuits
+for CSS codes [51], see Figure S26.
+
+40
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+X
+X
+X
+Z
+X
+X
+X
+X
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+FIG. S25.Depth-9non-FT circuit preparing| 0⟩⊗48in theI 8◦ I6code.The circuit contains 142 CX gates.
+
+411
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98X
+XZ
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+X
+X
+X
+Z
+X
+X
+X
+X
+XZ
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+X
+Z
+Z
+Z
+Z
+Z
+XZ
+ZX
+Z
+X
+X
+X
+Z
+X
+Z
+X
+Z
+XX
+XX
+XX
+ZZ
+Z
+Z
+XZXZZX
+ZZ
+Z
+ZXZZX
+ZZ
+Z
+ZXZZX
+ZZ
+Z
+ZXZZX
+ZZ
+Z
+ZZZ
+XX
+ZX
+Z
+XX
+X
+XZ
+XX
+X
+XZX ZX
+XX
+XZ
+X
+X
+ZXX
+X
+XZ
+ZZ
+XZ
+X
+Z
+XX XX
+Z
+XZZ
+X
+Z
+XZ
+X
+Z
+XZ
+X
+Z
+XZ
+X
+Z
+XZ
+X
+Z
+X
+FIG. S26.Flag FT circuit preparing| 0⟩⊗48in theI 8◦ I6code.The circuit contains 344 CX gates and 67 measurements.
+
+42
+FIG. S27.Sampled syndrome probabilities for different error ratesp.The syndrome may be caused by errors of different
+weights; the vertical dashed lines separate regimes whose lowest-weight errors are of weight zero to four. The syndromes are
+ordered byP(s) in descending order. For eachp, we take 1010samples.
+XIII: Decoding Goto’s state preparation
+Here we discuss more details on the decoding of the state preparation circuit for theI 8◦I6concatenated code that
+was introduced in Ref. [7]. First note that products of four operatorsX i,jXk,jXk,lXi,l(andZ i,jZk,jZk,lZi,l) that are,
+using the conventions from Fig. 1a, arranged in a rectangle, commute with all stabilizers, thus, they must be products
+of logical operators and stabilizers. Since all minimum-weight stabilizers have at least weight min(n 1,2n2) = 8, the
+productsX i,jXk,jXk,lXi,l(andZ i,jZk,jZk,lZi,l) must contain at least one logical operator. Hence, each two-qubit
+Xerror is connected to at least one other two-qubit error by some combination of logical operators, i.e., for each
+syndrome corresponding to a two-qubit error there are at least two same-weight errors in different equivalence classes.
+We thus do not attempt to correct any two-qubit errors. Similar arguments hold for three-qubit errors: for each three-
+qubit error, we can find at least another three-qubit error with the same syndrome, but in a different equivalence
+class; additionally, some three-qubit errors share the same syndrome with one-qubit errors in a different equivalence
+class. Hence, we do not attempt to correct any syndrome corresponding to weight-two-or-higher errors.
+We simulate the quantum circuit usingStim[46] for two-qubit depolarizing noise of strengthpafter each two-qubit
+gate. The error rates for qubit initialization and measurement (bit flip or phase flip errors) also equalp. We measure
+each final state in itsZbasis to reconstruct itsSZsyndromesand logical equivalence classq. Since the code has 16
+SZstabilizers and 48 logical qubits, we consider 216different syndromessand 248equivalence classesq.
+We show the distribution of syndromes in Fig. S27. For eachp, we sample 1010different circuits and use the results
+to estimate the syndrome probabilityP(s). We categorize all syndromes by their minimum-weight error; note that
+higher-weight errors (connected via logicals and stabilizers) may cause the same syndrome. The gray dashed lines in
+Fig. S27 separate syndromes with minimum-weight zero-, one-, two-, and higher-qubit errors.P(s) is not constant in
+each regime since (i) errors are not caused by code capacity noise, but circuit-level noise, and (ii) some two-weight
+error syndromes can be caused by two inequivalent weight-two errors, while others can be caused by eight or ten
+inequivalent weight-two errors (and the latter thus occur with higher probability).
+As argued before, we do not attempt to correct any syndrome caused by weight-two errors. In Fig. S28, we
+provide numerical evidence that supports our arguments. We show the ratio of the (numerically sampled) maximum-
+likelihood equivalence classP qmax,sand the total syndrome probabilityP(s) =P
+qPq,s. This ratio is a measure for
+the confidence in the chosen correction: when the ratio approaches one, we have a high confidence that the syndrome
+swas caused by an error in classq; if another equivalence class is more likely, the ratio will drop below 1/2. We show
+1−P qmax,s/P(s) in Fig. S28, which for the trivial syndrome grows asp4, and for syndromes caused by weight-one
+
+43
+FIG. S28.ProbabilityP q,sthat an error is characterized by an equivalence classqand syndromes, divided by
+probability of the syndromeP(s) =P
+qPq,s.Dots denote data points, and the red shaded area the 95 % Wilson confidence
+interval. For most two-qubit errors,P qmax,s/P(s)≲1/2 (black dashed line denotes 1/2).
+errors increases asp2. For syndromes caused by two-qubit errors, as argued before, there are at least two same-weight
+errors in different equivalence classes, hence, assuming that for circuit-level noise both errors have similar probabilities,
+Pqmax,s/P(s)≲1/2, as evident from Fig. S28, where the black dashed line denotesP qmax,s/P(s) = 1/2.
+In Fig. S29, we show three different resulting error rates: in Fig. S29a, we showP flag, the sampled rate of flagged
+circuit runs that are discarded. Only the postselected fraction 1−P flagof runs will be used for state preparation. Since
+single-qubit errors can cause flags to fire, we expect thatP flaggrows linearly withpfor small error rates. We show a
+gray dashed line∝pas a guide for the eye. We then discard all syndromes compatible with weight-two-and-higher
+errors. We show the discard rateP postin panel (b), and include∝p2as a guide for the eye since two-qubit errors are
+the dominant contribution toP post, which occur with probability∝p2. Finally, we show the resulting logical error
+rateP Lin panel (c): logical errors occur with probabilityp3as they correspond to three-qubit errors causing the same
+syndrome as one-qubit errors in a different equivalence class.
+
+44
+FIG. S29.Error rates for the state preparation protocol described in Sec. XIII.The error rates are obtained via
+Stim [46] simulations, wherepis the strength of the depolarizing noise. (a) Rate of flagged circuit runs,P flag, (b) discard rate
+of syndromes that are not compatible with weight-zero or weight-one errors,P post, and (c) final logical error rateP L. The black
+dots represent the data, the red shaded region the 95 % Wilson confidence interval, and the gray dashed line a power law as a
+guide for the eyes.
+
+45
+[1] T. J. Yoderet al., Tour de gross: A modular quantum computer based on bivariate bicycle codes (2025), arXiv:2506.03094
+[quant-ph].
+[2] S. Yoshida, S. Tamiya, and H. Yamasaki, Concatenate codes, save qubits, npj Quantum Information11, 88 (2025).
+[3] N. Berthusen and E. Durso-Sabina, Simple logical quantum computation with concatenated symplectic double codes (2025),
+arXiv:2510.18753 [quant-ph].
+[4] D. Gottesman,Stabilizer Codes and Quantum Error Correction, Ph.D. thesis, California Institute of Technology (1997),
+arXiv:quant-ph/9705052.
+[5] R. Chao and B. W. Reichardt, Quantum error correction with only two extra qubits, Physical review letters121, 050502
+(2018).
+[6] C. N. Self, M. Benedetti, and D. Amaro, Protecting expressive circuits with a quantum error detection code, Nature Physics
+20, 219 (2024).
+[7] H. Goto, High-performance fault-tolerant quantum computing with many-hypercube codes, Science Advances10,
+10.1126/sciadv.adp6388 (2024).
+[8] A. Ransfordet al., Helios: A 98-qubit trapped-ion quantum computer (2025), arXiv:2511.05465.
+[9] Y. Akahoshi, K. Maruyama, H. Oshima, S. Sato, and K. Fujii, Partially fault-tolerant quantum computing architecture
+with error-corrected clifford gates and space-time efficient analog rotations, PRX Quantum5, 010337 (2024).
+[10] Y. Ibe, Y. Hirano, Y. Ozu, T. Kawakubo, and K. Fujii, Measurement-based fault-tolerant quantum computation on high-
+connectivity devices: A resource-efficient approach toward early ftqc (2025), arXiv:2510.18652 [quant-ph].
+[11] Y. Jinet al., Iceberg Beyond the Tip: Co-Compilation of a Quantum Error Detection Code and a Quantum Algorithm,
+arXiv:2504.21172.
+[12] K. Yamamotoet al., Quantum error-corrected computation of molecular energies (2025), arXiv:2505.09133 [quant-ph].
+[13] H. Goto, Optimized many-hypercube codes toward lower logical error rates and earlier realization (2025), arXiv:2512.00561
+[quant-ph].
+[14] R. Nakai and H. Goto, Subsystem many-hypercube codes: High-rate concatenated codes with low-weight syndrome mea-
+surements, Physical Review Applied25, 10.1103/xbzn-vn37 (2026).
+[15] J. Combes, C. Granade, C. Ferrie, and S. T. Flammia, Logical randomized benchmarking (2017), arXiv:1702.03688 [quant-
+ph].
+[16] A. Erhardet al., Characterizing large-scale quantum computers via cycle benchmarking, Nature Communications10, 5347
+(2019).
+[17] We benchmark the gate atθ=π/2; in general Helios can implement either gate with arbitraryθand we expect that
+logical error decreases withθsimilar to the physical gate, since the probability of a single fault causing a logical error is
+correspondingly scaled down.
+[18] S. A. Moseset al., A race-track trapped-ion quantum processor, Phys. Rev. X13, 041052 (2023).
+[19] R. Haghshenas, E. Chertkov,et al., Digital quantum magnetism at the frontier of classical simulations (2025),
+arXiv:2503.20870.
+[20] T. Proctoret al., Establishing trust in quantum computations (2022), arXiv:2204.07568 [quant-ph].
+[21] T. Proctor, K. Rudinger, K. Young, E. Nielsen, and R. Blume-Kohout, Measuring the capabilities of quantum computers,
+Nature Physics18, 75 (2022).
+[22] K. Mayeret al., Theory of mirror benchmarking and demonstration on a quantum computer (2023), arXiv:2108.10431
+[quant-ph].
+[23] M. Koch, A. Lawrence, K. Singhal, S. Sivarajah, and R. Duncan, Guppy: Pythonic quantum-classical programming,
+arXiv:2510.12582.
+[24] R. Acharya, D. A. Abanin,et al., Quantum error correction below the surface code threshold, Nature638, 920 (2025).
+[25] D. Forlivesi and D. Amaro, Flag at origin: a modular fault-tolerant preparation for css codes (2025), arXiv:2508.14200
+[quant-ph].
+[26] T. Kakizaki, Approximate level-by-level maximum-likelihood decoding based on the chase algorithm for high-rate concate-
+nated stabilizer codes (2026), arXiv:2601.18743 [quant-ph].
+[27] P. Liuet al., Coniq: Enabling concatenated quantum error correction on neutral atom arrays (2025), arXiv:2508.05779
+[cs.AR].
+[28] S. Dasuet al., Breaking even with magic: demonstration of a high-fidelity logical non-clifford gate (2025), arXiv:2506.14688
+[quant-ph].
+[29] P. Sales Rodriguez, J. M. Robinson,et al., Experimental demonstration of logical magic state distillation, Nature645, 620
+(2025).
+[30] D. Bluvstein, S. J. Evered,et al., Logical quantum processor based on reconfigurable atom arrays, Nature626, 58 (2024).
+[31] D. J. Winelandet al., Experimental issues in coherent quantum-state manipulation of trapped atomic ions, J Res Natl
+Inst Stand Technol103, 259 (1998).
+[32] D. Kielpinski, C. Monroe, and D. J. Wineland, Architecture for a large-scale ion-trap quantum computer, Nature417, 709
+(2002).
+[33] J. M. Pinoet al., Demonstration of the trapped-ion quantum ccd computer architecture, Nature592, 209 (2021).
+[34] W. C. Burtonet al., Transport of multispecies ion crystals through a junction in a radio-frequency paul trap, Phys. Rev.
+Lett.130, 173202 (2023).
+
+46
+[35] P. Niroulaet al., Realization of a quantum streaming algorithm on long-lived trapped-ion qubits (2025), arXiv:2511.03689
+[quant-ph].
+[36] M. Liuet al., Certified randomness amplification by dynamically probing remote random quantum states (2025),
+arXiv:2511.03686 [quant-ph].
+[37] P. J. Leeet al., Phase control of trapped ion quantum gates, Journal of Optics B: Quantum and Semiclassical Optics7,
+S371 (2005).
+[38] S. J. Beale, J. J. Wallman, M. Guti´ errez, K. R. Brown, and R. Laflamme, Quantum error correction decoheres noise, Phys.
+Rev. Lett.121, 190501 (2018).
+[39] C. Ryan-Andersonet al., Realization of real-time fault-tolerant quantum error correction (2021), arXiv:2107.07505 [quant-
+ph].
+[40] N. C. Brown, A. W. Cross, and K. R. Brown, Critical faults of leakage errors on the surface code (2020), arXiv:2003.05843
+[quant-ph].
+[41] D. Hayeset al., Eliminating leakage errors in hyperfine qubits, Physical Review Letters124, 10.1103/physrevlett.124.170501
+(2020).
+[42] A. Javadi-Abhari, S. Martiel, A. Seif, M. Takita, and K. X. Wei, Big cats: entanglement in 120 qubits and beyond (2025),
+arXiv:2510.09520 [quant-ph].
+[43] D. A. Lidar, I. L. Chuang, and K. B. Whaley, Decoherence-free subspaces for quantum computation, Phys. Rev. Lett.81,
+2594 (1998).
+[44] A. M. Steane, Active stabilization, quantum computation, and quantum state synthesis, Physical Review Letters78,
+2252–2255 (1997).
+[45] P. Prabhu and B. W. Reichardt, Distance-four quantum codes with combined postselection and error correction, Physical
+Review A110, 10.1103/physreva.110.012419 (2024).
+[46] C. Gidney, Stim: a fast stabilizer circuit simulator, Quantum5, 497 (2021).
+[47] M. A. Nielsen, A simple formula for the average gate fidelity of a quantum dynamical operation, Physics Letters A303,
+249 (2002).
+[48] Z. Li, Y.-G. Han, and H. Zhu, Optimal verification of greenberger-horne-zeilinger states, Phys. Rev. Appl.13, 054002
+(2020).
+[49] S. T. Flammia and Y.-K. Liu, Direct fidelity estimation from few pauli measurements, Phys. Rev. Lett.106, 230501 (2011).
+[50] Y. Hong, E. Durso-Sabina, D. Hayes, and A. Lucas, Entangling four logical qubits beyond break-even in a nonlocal code,
+Physical Review Letters133, 10.1103/physrevlett.133.180601 (2024).
+[51] B. Crigeret al., Automated flag-based fault-tolerant state preparation using integer linear programming (2026), in prepa-
+ration.

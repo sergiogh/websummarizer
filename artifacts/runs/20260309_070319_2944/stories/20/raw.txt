@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="WASHINGTON, D.C. – This week, Rep. Haley Stevens (D-MI) and Rep. Randy Feenstra (R-Hull) reintroduced the Quantum in Practice Act, legislation that would ensure quantum molecular simulations and modeling are included in the National Quantum Initiative." />
+<link rel="canonical" href="http://stevens.house.gov/media/press-releases/stevens-feenstra-reintroduce-legislation-ensure-cutting-edge-quantum-computing" />
+<meta property="og:site_name" content="Congresswoman Haley Stevens" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://stevens.house.gov/media/press-releases/stevens-feenstra-reintroduce-legislation-ensure-cutting-edge-quantum-computing" />
+<meta property="og:title" content="Stevens, Feenstra Reintroduce Legislation to Ensure Cutting Edge Quantum Computing Research Brings Benefits to Main Street America" />
+<meta property="og:description" content="WASHINGTON, D.C. – This week, Rep. Haley Stevens (D-MI) and Rep. Randy Feenstra (R-Hull) reintroduced the Quantum in Practice Act, legislation that would ensure quantum molecular simulations and modeling are included in the National Quantum Initiative." />
+<meta property="og:updated_time" content="2026-03-06T13:25:36-05:00" />
+<meta property="article:published_time" content="2026-03-06T13:24:15-05:00" />
+<meta property="article:modified_time" content="2026-03-06T13:25:36-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Stevens, Feenstra Reintroduce Legislation to Ensure Cutting Edge Quantum Computing Research Brings Benefits to Main Street America | Congresswoman Haley Stevens" />
+<meta name="twitter:image" content="https://stevens.house.gov/profiles/evo/assets/images/Seal_of_the_United_States_House_of_Representatives.png" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="text/javascript" src="/ruxitagentjs_ICA7NVfqrux_10327251022105625.js" data-dtconfig="rid=RID_-1439255599|rpid=1895309054|domain=house.gov|reportUrl=/rb_84936baa-290a-41c1-8aba-c50589e8f708|app=ea7c4b59f27d43eb|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=amv429yn|mel=100000|expw=1|dpvc=1|lastModification=1772747600569|postfix=amv429yn|tp=500,50,0|srbbv=2|agentUri=/ruxitagentjs_ICA7NVfqrux_10327251022105625.js"></script><link rel="icon" href="/sites/evo-subsites/stevens.house.gov/files/favicon.png" type="image/png" />
+
+    <title>Stevens, Feenstra Reintroduce Legislation to Ensure Cutting Edge Quantum Computing Research Brings Benefits to Main Street America | Congresswoman Haley Stevens</title>
+    <link rel="stylesheet" media="all" href="/libraries/drupal-superfish/css/superfish.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/misc/components/progress.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/misc/components/ajax-progress.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/container-inline.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/clearfix.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/hidden.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/filter/css/filter.caption.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/media/css/filter.caption.css?tbmail" />
+<link rel="stylesheet" media="all" href="/core/modules/views/css/views.module.css?tbmail" />
+<link rel="stylesheet" media="all" href="/modules/contrib/ckeditor_accordion/css/accordion.frontend.css?tbmail" />
+<link rel="stylesheet" media="all" href="/profiles/evo/modules/custom/evo_map/css/evo_addr.css?tbmail" />
+<link rel="stylesheet" media="all" href="/profiles/evo/modules/custom/evo_social_icons/css/evo_social_icons.css?tbmail" />
+<link rel="stylesheet" media="all" href="/profiles/evo/modules/custom/evo_social_icons/css/evo_social_icons_share.css?tbmail" />
+<link rel="stylesheet" media="all" href="/modules/contrib/extlink/css/extlink.css?tbmail" />
+<link rel="stylesheet" media="all" href="/libraries/drupal-superfish/style/white/white.css?tbmail" />
+<link rel="stylesheet" media="all" href="/profiles/evo/themes/custom/radix4/assets/css/radix.style.css?tbmail" />
+<link rel="stylesheet" media="all" href="/profiles/evo/themes/custom/evo_radix/assets/css/evo_radix.style.css?tbmail" />
+<link rel="stylesheet" media="all" href="/profiles/evo/themes/custom/evo_drupaltheme_72/assets/css/evo_drupaltheme_72.style.css?tbmail" />
+<link rel="stylesheet" media="all" href="/sites/evo-subsites/stevens.house.gov/themes/custom/haley_stevens_custom_72/assets/css/haley_stevens_custom_72.style.css?tbmail" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/3221","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJx1kFGOgzAMRC8UEWm10h4nMokBb5M4sg2F2xfQtlIr9mc8fvPjcbxhImMJECNLIq7-5bpBuBrW5HDhUKD5Y0JKcgLlSJADRa7qP4HD1TLVm08yN8jd3-pG5jFjMBj9uMvn3sEvrO-wuAkybkENF6wa4qzGJfx8ebUtoyt7AfADZUPpIjTbL3cCidZv3zObmkB7ggpLD-J0bigD6eRf7oqFiRcUOn5gl7kWyFmjINbr_Lgw3CcyvM4Pp3Ov_6WNlc5Cuu39i-9B0S2Ed_WndoXTnPEBt3W0EA","theme":"haley_stevens_custom_72","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_environment":false},"tagIds":["GTM-TQX94K2"]},"data":{"extlink":{"extTarget":true,"extTargetAppendNewWindowDisplay":true,"extTargetAppendNewWindowLabel":"(opens in a new window)","extTargetNoOverride":true,"extNofollow":true,"extTitleNoOverride":false,"extNoreferrer":true,"extFollowNoOverride":true,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"","extCssInclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","extHideIcons":false,"mailtoClass":"mailto","telClass":"0","mailtoLabel":"(link sends email)","telLabel":"(link is a phone number)","extUseFontAwesome":false,"extIconPlacement":"append","extPreventOrphan":false,"extFaLinkClasses":"fa-solid fa-arrow-up-right-from-square","extFaMailtoClasses":"fa-regular fa-envelope","extAdditionalLinkClasses":"","extAdditionalMailtoClasses":"","extAdditionalTelClasses":"","extFaTelClasses":"fa fa-phone","allowedDomains":["www.house.gov"],"extExcludeNoreferrer":""}},"ckeditorAccordion":{"accordionStyle":{"collapseAll":0,"keepRowsOpen":1,"animateAccordionOpenAndClose":1,"openTabsWithHash":1,"allowHtmlInTitles":0}},"field_group":{"html_element":{"mode":"full","context":"view","settings":{"classes":"row evo-create-type","id":"","element":"div","show_label":false,"label_element":"h3","label_element_classes":"","attributes":"","effect":"none","speed":"fast"}}},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":false,"dropShadows":true},"plugins":{"smallscreen":{"cloneParent":0,"mode":"window_width","accordionButton":0},"supposition":true,"supersubs":true}}},"evo_accessibility_helper":{"EvoAccessibilityHelperJS":{"high_contrast_button_enabled":null,"match_os_settings":null,"high_contrast_logo_url":null,"button_position_y":null,"grayscale_social_feeds":null,"high_contrast_theme":null,"text_zoom_amount":null}},"evo_displayer":{"evo_displayer_drupal_settings":[{"slideup_custom_block_html":"\u003Cdiv id=\u0022custom-slideup\u0022\u003E\r\n\t\u003Csection class=\u0022evo-displayer-slideup-style-1-title-area evo-displayer-slideup-title-area evo-displayer-title-area\u0022\u003E\r\n        \u003Cdiv id=\u0022evo-displayer-title\u0022 class=\u0022h3\u0022 role=\u0022heading\u0022 aria-level=\u00221\u0022\u003ENEWSLETTER SUBSCRIBE\u003C\/div\u003E\r\n        \u003Cp\u003ESubscribe to my newsletter to get the latest news and updates from my office.\u003C\/p\u003E\r\n\t\t\u003Ca href=\u0022\/contact\/newsletter-subscribe\u0022 aria-label=\u0022Subscribe to my Newsletter\u0022 title=\u0022Subscribe to my Newsletter\u0022 class=\u0022btn btn-danger\u0022\u003ESubscribe\u003C\/a\u003E\r\n\t\u003C\/section\u003E\r\n\u003C\/div\u003E","popup_custom_block_html":"\u003Cdiv class=\u0022custom-popup-stevens\u0022\u003E\r\n\u003Cdiv class=\u0022newsletter-custom-area-stevens\u0022\u003E\r\n\u003Cp\u003EGet updates on important issues sent directly to your email address.\u003C\/p\u003E\r\n\u003Cdiv class=\u0022h2\u0022\u003ESign up for my E-Newsletter\u003C\/div\u003E\r\n\u003Cbutton class=\u0022btn popbtn\u0022 onclick=\u0022location.href=\u0027\/contact\/newsletter-subscribe\u0027;\u0022 value=\u0022Go to newsletter signup page\u0022 \u003ESign Up\u003C\/button\u003E\r\n\u003C\/div\u003E\r\n\u003Cdiv class=\u0022connect-custom-area-stevens\u0022\u003E\r\n\u003Cdiv class=\u0022connect-custom-stevens-icons\u0022\u003E\r\n\u003Ca href=\u0022http:\/\/twitter.com\/RepHaleyStevens\u0022 target=\u0022_blank\u0022\u003E\u003Ci class=\u0022fa fab fa-twitter\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\r\n\u003Ca href=\u0022http:\/\/www.facebook.com\/RepHaleyStevens\u0022 target=\u0022_blank\u0022\u003E\u003Ci class=\u0022fa fab fa-facebook\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\r\n\u003Ca href=\u0022http:\/\/www.youtube.com\/housedems\u0022 target=_blank\u0022\u003E\u003Ci class=\u0022fa fab fa-youtube\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\r\n\u003Ca href=\u0022http:\/\/instagram.com\/rephaleystevens\/\u0022 target=\u0022_blank\u0022\u003E\u003Ci class=\u0022fa fab fa-instagram\u0022\u003E\u003C\/i\u003E\u003C\/a\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\r\n\u003Cstyle\u003E\r\ndiv#evo-displayer-custom-popup {\r\n    max-width: 500px;\r\n    padding: 1.5rem !important;\r\n    border: none;\r\n    border-radius: 5px;\r\n    text-align: center;\r\n}\r\n.newsletter-custom-area-stevens .h2 {\r\n    font-weight: bold;\r\n    font-size: 1.75rem;\r\n}\r\nbutton.btn.popbtn {\r\n    background-color: #18335b;\r\n    color: white;\r\n    width: 100px;\r\n    margin-top: 0.25rem;\r\n    margin-bottom: 1.25rem;\r\n    border-radius: 20px;\r\n    text-transform: uppercase;\r\n    font-size: 1rem;\r\n}\r\n.connect-custom-stevens-icons \u003E a \u003E i svg {\r\n    width: 3rem !important;\r\n    height: 3rem !important;\r\n    margin-right: 0.25rem;\r\n    margin-bottom: 0.5rem;\r\n    color: #BC2F2E;\r\n}\r\n#evo-displayer-custom-popup #evo-displayer-popup-close {\r\n    top: 3px;\r\n    left: 10px;\r\n}\r\ndiv#dnda {\r\n   top: auto;\r\n   right: 10px;\r\n}\r\nbutton.btn.popbtn:hover {\r\n    opacity: 0.8;\r\n}\r\nspan#evo-displayer-background-dim {\r\n    opacity: 0.9;\r\n}\r\n\u003C\/style\u003E","slideup_block_selection":"3","popup_block_selection":"0","slideup_style":"evo-displayer-slideup-style-1","popup_style":"","add_block_id":"","add_block_id_slideup":"","media_slideup_url":"","media_popup_url":"","slideup_bg_color":"#f5f5f5","slideup_text_color":"#000000","slideup_btn_bg_color":"#007bff","slideup_btn_text_color":"#ffffff","popup_bg_color":"#f5f5f5","popup_text_color":"#000000","popup_btn_bg_color":"#007bff","popup_btn_text_color":"#ffffff","popup_dim_bg_color":"#000000","popup_dim_bg_opacity":"20","add_custom_title":"","add_custom_description":""}]},"evo_map":{"evoMapJS":{"drupal_variables":[{"map_style":"http:\/\/{s}.basemaps.cartocdn.com\/light_all\/{z}\/{x}\/{y}.png","map_line_color":null,"map_line_weight":null,"map_height":"250px","map_width":null,"shape_override":null,"map_image_override":null,"ie_only_static_img":null,"map_only":null,"ssdd":"MI11","siteURL":"http:\/\/stevens.house.gov\/"}],"office_nids":{"3565":"2117"},"office_nodes":{"2117":{"in_preview":null}}},"all_office_locations":[{"title":"Farmington Hills District Office","phone":"(734) 853-3040","fax":"","lat":"42.511195557953","lon":"-83.326611688667","addr":[{"langcode":null,"country_code":"US","administrative_area":"MI","locality":"Farmington Hills","dependent_locality":null,"postal_code":"48334","sorting_code":null,"address_line1":"30500 Northwestern Hwy","address_line2":"Suite 525","address_line3":"","organization":"","given_name":null,"additional_name":null,"family_name":null}]}]},"evo_social_icons":{"EvoSocialIconsJS":{"social_icon_family":"tc_standard_fill","social_icon_color":"#fff","social_icon_size":"2rem","social_icon_spacing":"","social_icon_alignment":"flex-end","facebook_checkbox":null,"instagram_checkbox":null,"x_checkbox":null,"youtube_checkbox":null,"bluesky_checkbox":null,"behance_checkbox":null,"flickr_checkbox":null,"threads_checkbox":null,"reddit_checkbox":null,"snapchat_checkbox":null,"tumblr_checkbox":null,"linkedin_checkbox":null,"medium_checkbox":null,"mail_checkbox":null,"parler_checkbox":null,"truthsocial_checkbox":null,"gettr_checkbox":null,"rumble_checkbox":null,"tiktok_checkbox":null,"custom1_checkbox":null,"custom2_checkbox":null,"icon_pos_1":null,"icon_pos_2":null,"icon_pos_3":null,"icon_pos_4":null,"icon_pos_5":null,"icon_pos_6":null,"icon_pos_7":null,"icon_pos_8":null,"icon_pos_9":null,"icon_pos_10":null,"icon_pos_11":null,"icon_pos_12":null,"icon_pos_13":null,"icon_pos_14":null,"icon_pos_15":null,"icon_pos_16":null,"icon_pos_17":null,"icon_pos_18":null,"icon_pos_19":null,"icon_pos_20":null,"facebook_url":null,"instagram_url":null,"x_url":null,"youtube_url":null,"bluesky_url":null,"behance_url":null,"flickr_url":null,"threads_url":null,"reddit_url":null,"snapchat_url":null,"tumblr_url":null,"linkedin_url":null,"medium_url":null,"mail_url":null,"parler_url":null,"truthsocial_url":null,"gettr_url":null,"rumble_url":null,"tiktok_url":null,"custom1_url":null,"custom2_url":null,"custom1_image":null,"custom2_image":null,"custom1_alt":null,"custom2_alt":null,"custom1_title":null,"custom2_title":null,"evo_social_icons":null,"order":{"-10":{"X":{"checkbox":"1","url":"http:\/\/x.com\/RepHaleyStevens","weight":"-10"}},"-9":{"Facebook":{"checkbox":"1","url":"http:\/\/www.facebook.com\/RepHaleyStevens","weight":"-9"}},"-8":{"YouTube":{"checkbox":"1","url":"http:\/\/www.youtube.com\/housedems","weight":"-8"}},"-7":{"Instagram":{"checkbox":"1","url":"http:\/\/instagram.com\/rephaleystevens\/","weight":"-7"}},"-6":{"Behance":{"weight":"-6","checkbox":0,"url":""}},"-5":{"Flickr":{"weight":"-5","checkbox":0,"url":""}},"-4":{"Threads":{"weight":"-4","checkbox":0,"url":"https:\/\/www.threads.net"}},"-3":{"Reddit":{"weight":"-3","checkbox":0,"url":""}},"-2":{"Snapchat":{"weight":"-2","checkbox":0,"url":""}},"-1":{"Tumblr":{"weight":"-1","checkbox":0,"url":""}},"0":{"LinkedIn":{"weight":"0","checkbox":0,"url":""}},"1":{"Medium":{"weight":"1","checkbox":0,"url":""}},"2":{"Mail":{"weight":"2","checkbox":0,"url":""}},"3":{"Bluesky":{"weight":"3","checkbox":0,"url":"https:\/\/bsky.app"}}}}},"user":{"uid":0,"permissionsHash":"0d0830afa1fb923ae5ca591abebf50378ab8004bd2b62e955818bda7398ea8ca"}}</script>
+<script src="/core/misc/drupalSettingsLoader.js?v=10.5.8"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?tbmail"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?tbmail"></script>
+
+  </head>
+  <body class="node-3221 path-media-press-releases-stevens-feenstra-reintroduce-legislation-ensure-cutting-edge-quantum-computing path-node page-node-type-evo-press-release">
+        <section role="complementary" aria-label="Skip to main content">
+        <a href="#main-content" class="visually-hidden focusable">
+          Skip to main content
+        </a>
+    </section>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQX94K2"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="page evo-page">
+  <!-- BANNER -->
+          <!-- BANNER END -->
+
+  <!-- HEADER -->
+                        <section role="complementary" aria-label="Header Section" class="container-xxl d-flex evo-header">
+                                    <div class="flex-fill mr-auto evo-header-first">
+                          
+  <div class="block block--evo-default-content block--haley-stevens-custom-72-headercontactinfo">
+
+  
+    
+
+      
+            <div class="evo-default-content__body"><div class="row m-0 d-none d-sm-flex"><div class="col-lg-3 phone"><i class="fa-solid fa-phone"></i><strong> Phone:&nbsp;</strong><a href="tel:2022258171">(202)225-8171</a></div><div class="col email"><a href="//stevens.house.gov/contact/email-me"><i class="fa-solid fa-envelope"></i><strong> Email Me</strong></a></div><div class="col address"><i class="fa-solid fa-location-dot"></i><strong> Address:&nbsp;</strong> 2411 Rayburn House Office Building, Washington, DC 20515</div></div></div>
+      
+  
+  </div>
+
+
+                    </div>
+                                                    <div class="flex-fill evo-header-second">
+                          
+  <div class="block block--haley-stevens-custom-72-evosocialicons">
+
+  
+    
+
+      <div class="evo-social-icons-block-content"></div>
+  
+  </div>
+
+  <div class="views-exposed-form block block--haley-stevens-custom-72-solr-search-2" role="search" data-drupal-selector="views-exposed-form-evo-search-api-solr-index-page-1-edit-views-exposed-form">
+
+  
+    
+
+      <form block="haley_stevens_custom_72_solr_search_2" action="/search" method="get" id="views-exposed-form-evo-search-api-solr-index-page-1-edit-views-exposed-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext form-no-label form-group">
+          
+<input placeholder="Enter keywords" aria-label="Enter keywords to search content." data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-control" />
+
+        </div>
+<div data-drupal-selector="edit-actions-edit-views-exposed-form" class="form-actions js-form-wrapper form-wrapper" id="edit-actions-edit-views-exposed-form">  <input data-drupal-selector="edit-submit-evo-search-api-solr-index" type="submit" id="edit-submit-evo-search-api-solr-index" value="Search" class="button js-form-submit form-submit btn btn-danger" />
+
+
+</div>
+
+
+</form>
+
+  
+  </div>
+
+
+                    </div>
+                            </section>
+              <!-- HEADER END -->
+
+  <!-- NAVBAR -->
+  
+
+
+<nav aria-label="main-nav" class="navbar navbar-expand justify-content-between navbar-light sticky-top bg-light">
+      <div class="container">
+  
+                <div class="evo-navbar-branding">
+            
+  <div class="block block--haley-stevens-custom-72-branding">
+
+  
+    
+
+    
+  <a href="/" class="navbar-brand d-flex align-items-center rounded-sm">
+            <img src="/sites/evo-subsites/stevens.house.gov/files/logo_main.png" width="auto" height="70" alt="Congresswoman Haley Stevens logo" class="site-logo border-sm" />
+
+        
+  </a>
+
+
+  </div>
+
+
+        </div>
+          
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="main-nav-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div id="main-nav-navbar-collapse" class="collapse navbar-collapse">
+                 <div class="mr-auto evo-navbar-left  font-weight-bold">
+            
+  <div class="block block--haley-stevens-custom-72-main-menu">
+
+  
+    
+
+      
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-white" role="menu" aria-label="Menu">
+  
+
+            
+  <li id="main-menu-link-content4bfa8474-eedb-44b4-ae47-10dd8dd21cbd" class="sf-depth-1 menuparent sf-first" role="none">
+    
+          <a href="/haleys-bio" title="Learn about your Member of Congress." class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Get to Know Haley</a>
+    
+    
+    
+              <ul role="menu">
+      
+      
+
+  
+  <li id="main-menu-link-contentbe49bd0a-8e42-48f1-bdde-3890eee52fc9" class="sf-depth-2 sf-no-children sf-first" role="none">
+    
+          <a href="/haleys-bio" class="sf-depth-2" role="menuitem">Haley&#039;s Bio</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content3e64513e-fa56-4228-8623-65d93f5fdf24" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-know-haley/haleys-record" title="Learn about votes and legislation your Member of Congress supports." class="sf-depth-2" role="menuitem">Haley&#039;s Record</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content401dc59a-5e45-4dad-98c3-b7e6b4bc90e4" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-know-haley/about-michigans-11th-district" title="Learn about the district your Member of Congress represents." class="sf-depth-2" role="menuitem">About Michigan&#039;s 11th District</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content80c11b83-47c0-4909-b81a-6dcf84ae3896" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/issues/how-were-responding-trump-administration" class="sf-depth-2" role="menuitem">How We’re Responding to the Trump Administration</a>
+    
+    
+    
+    
+      </li>
+
+
+
+              </ul>
+      
+    
+    
+      </li>
+
+
+            
+  <li id="main-menu-link-contentd10b3e20-ac1a-4046-934c-a2ae3eef658e" class="sf-depth-1 menuparent" role="none">
+    
+          <a href="/connect-rep-haley-stevens" title="Send a message to your Member of Congress." class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Connect with Haley</a>
+    
+    
+    
+              <ul role="menu">
+      
+      
+
+  
+  <li id="main-menu-link-contentdfc6134a-3130-467c-a240-bc50fc6a9483" class="sf-depth-2 sf-no-children sf-first" role="none">
+    
+          <a href="/connect-rep-stevens/email-haley" class="sf-depth-2" role="menuitem">Email Haley</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contentce559a2a-d256-47c5-bb27-23c562519afd" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/connect-rep-stevens/subscribe-newsletter" title="Sign up to receive newsletters from your Member of Congress" class="sf-depth-2" role="menuitem">Subscribe to Newsletter</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-views-viewviewsevo-office-locationspage-list" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/connect-rep-stevens/offices" title="View locations, phone numbers, and hours of District offices. " class="sf-depth-2" role="menuitem">Office Locations</a>
+    
+    
+    
+    
+      </li>
+
+
+
+              </ul>
+      
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contentb6d875ac-24f0-4d25-95d6-8790dccc8082" class="sf-depth-1 sf-no-children" role="none">
+    
+          <a href="/share-your-health-care-story" class="sf-depth-1" role="menuitem">Share Your Health Care Story</a>
+    
+    
+    
+    
+      </li>
+
+
+            
+  <li id="main-menu-link-content6dea4acf-d9fd-4e14-9307-4a70908c7293" class="sf-depth-1 menuparent" role="none">
+    
+          <a href="/connect-rep-haley-stevens/results-michigan" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Results for Michigan</a>
+    
+    
+    
+              <ul role="menu">
+      
+      
+
+  
+  <li id="main-menu-link-content7b0bffc1-fd33-43e2-bd38-44a2b4deb488" class="sf-depth-2 sf-no-children sf-first" role="none">
+    
+          <a href="/media/manufacturing-mondays" class="sf-depth-2" role="menuitem">Manufacturing Mondays</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contentdec47493-fb52-4761-b76e-70c579dd52f5" class="sf-depth-2 sf-no-children sf-last" role="none">
+    
+          <a href="/casework-success-stories" class="sf-depth-2" role="menuitem">Casework Success Stories</a>
+    
+    
+    
+    
+      </li>
+
+
+
+              </ul>
+      
+    
+    
+      </li>
+
+
+            
+  <li id="main-views-viewviewsevo-newsevo-media-page" class="sf-depth-1 menuparent" role="none">
+    
+          <a href="/media" title="View media posts like press releases and related items. " class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Media</a>
+    
+    
+    
+              <ul role="menu">
+      
+      
+
+  
+  <li id="main-views-viewviewsevo-in-the-news-contentevo-in-the-news" class="sf-depth-2 sf-no-children sf-first" role="none">
+    
+          <a href="/media/in-the-news" title="View news articles featuring your Member of Congress. " class="sf-depth-2" role="menuitem">In the News</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-views-viewviewsevo-press-releasesevo-media-press-releases" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/media/press-releases" title="View press releases posted by your Member of Congress. " class="sf-depth-2" role="menuitem">Press Releases</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content2f63ab49-b142-434a-87a9-b248da847fd5" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/media/media-inquiries" class="sf-depth-2" role="menuitem">Media Inquiries</a>
+    
+    
+    
+    
+      </li>
+
+
+
+              </ul>
+      
+    
+    
+      </li>
+
+
+            
+  <li id="main-menu-link-contentc847099c-8765-4045-bca8-a9e462df71cb" class="sf-depth-1 menuparent" role="none">
+    
+          <a href="/get-help" title="Learn about services your Member of Congress and staff can provide. " class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Get Help</a>
+    
+    
+    
+              <ul role="menu">
+      
+      
+
+  
+  <li id="main-menu-link-contentcfad399e-3840-4bf0-ae2f-87835552f5cd" class="sf-depth-2 sf-no-children sf-first" role="none">
+    
+          <a href="/get-help/appropriations-request" class="sf-depth-2" role="menuitem">Appropriations Request</a>
+    
+    
+    
+    
+      </li>
+
+
+            
+  <li id="main-menu-link-content7e1ee776-b0a0-4a1f-8eac-97810cad195f" class="sf-depth-2 menuparent" role="none">
+    
+          <a href="/get-help/student-services" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Student Services</a>
+    
+    
+    
+              <ul role="menu">
+      
+      
+
+  
+  <li id="main-menu-link-contentf2376859-b9fa-479c-8e29-520e198b47b8" class="sf-depth-3 sf-no-children sf-first" role="none">
+    
+          <a href="/services/art-competition" title="Learn about this artistic discovery competition held each spring." class="sf-depth-3" role="menuitem">Art Competition</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content6ece6feb-e730-4615-b880-4df3c1e3e6a6" class="sf-depth-3 sf-no-children" role="none">
+    
+          <a href="/get-help/student-services/congressional-app-challenge" class="sf-depth-3" role="menuitem">Congressional App Challenge</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contentf69f30af-3487-4434-aa29-fb3a6e9577c8" class="sf-depth-3 sf-no-children" role="none">
+    
+          <a href="/services/internships" title="Learn about internship opportunities available in Washington D.C. or District offices." class="sf-depth-3" role="menuitem">Internships</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content3fd6c4c6-7160-427e-b0ca-9a1105d8c8e7" class="sf-depth-3 sf-no-children sf-last" role="none">
+    
+          <a href="/services/military-academy-nominations" title="Learn about applying for a Military Academy nomination." class="sf-depth-3" role="menuitem">Military Academy Nominations</a>
+    
+    
+    
+    
+      </li>
+
+
+
+              </ul>
+      
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contentde3f3287-53dc-419d-8f7e-c86154b68462" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-help/washington-dc-visitor-services" title="Learn about tours and tickets your Member of Congress can provide or assist with." class="sf-depth-2" role="menuitem">Washington, D.C. Visitor Services</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contenteacdf586-6873-4a08-b769-e0e471505c9a" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-help/commendations-and-greetings" title="Learn about requesting a Congressional Commendation or Presidential Greeting for a district resident." class="sf-depth-2" role="menuitem">Commendations and Greetings</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-contentf2056c61-76a4-42f9-b65e-49d36abc5a9f" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-help/capitol-flag-requests" title="Learn about purchasing a flag with an option for it to be flown over the U.S. Capitol." class="sf-depth-2" role="menuitem">Capitol Flag Requests</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content46fdd444-a967-420e-b4d0-64a514620519" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-help/federal-grant-applicants" title="Learn about Federal Grants and how to apply." class="sf-depth-2" role="menuitem">Federal Grant Applications</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content1804db7e-03b1-4b88-9e92-416bfc10f373" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-help/federal-agency-services" title="Learn about ways your Member of Congress can help resolve issues with federal agencies." class="sf-depth-2" role="menuitem">Federal Agency Services</a>
+    
+    
+    
+    
+      </li>
+
+
+  
+  <li id="main-menu-link-content3ce0fade-29db-4c9b-982f-52749f7e394b" class="sf-depth-2 sf-no-children" role="none">
+    
+          <a href="/get-help/community-projects-funding-disclosures" class="sf-depth-2" role="menuitem">Community Projects Funding Disclosures</a>
+    
+    
+    
+    
+      </li>
+
+
+
+              </ul>
+      
+    
+    
+      </li>
+
+
+</ul>
+
+  
+  </div>
+
+
+        </div>
+          
+                  <div class="evo-navbar-right">
+            
+  <div class="block block--evo-default-content block--haley-stevens-custom-72-googletranslate">
+
+  
+    
+
+      
+            <div class="evo-default-content__body"><div id="google_translate_element">&nbsp;</div><script>
+ function googleTranslateElementInit() {
+ new google.translate.TranslateElement({
+ pageLanguage: 'en',
+ autoDisplay: 'true',
+ layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+ }, 'google_translate_element');
+ }
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+      
+  
+  </div>
+
+
+        </div>
+            </div>
+
+      </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <main class="evo-main pb-5">
+    <!--  USERBAR -->
+        <!--  USERBAR END -->
+
+    <!--  PREFACE -->
+          <section role="complementary" aria-label="Preface" class="container  evo-preface">
+                  <div class="flex-fill mr-auto evo-preface-first">
+              
+  <div class="block block--evo-default-content block--haley-stevens-custom-72-interiorbanner">
+
+  
+    
+
+      
+  
+  </div>
+
+
+          </div>
+                                      </section>
+        <!--  PREFACE END -->
+
+    <!-- POPUP -->
+              <section class="container notification_popup evo-notification-popup">
+          <div data-drupal-messages-fallback class="hidden"></div>
+
+
+      </section>
+        <!-- POPUP END -->
+
+    <!-- CONTENT -->
+    <div class="page__content evo-page-content">
+      <div class="container">
+                          <section class="page__breadcrumb evo-breadcrumb">
+              
+  <div class="block block--haley-stevens-custom-72-breadcrumbs">
+
+  
+    
+
+        <nav aria-label="breadcrumb" class="">
+    <ol class="breadcrumb">
+              <li class="breadcrumb-item ">
+                      <a href="/">Home</a>
+                  </li>
+              <li class="breadcrumb-item ">
+                      <a href="/media">Media</a>
+                  </li>
+              <li class="breadcrumb-item ">
+                      <a href="/media/press-releases">Press Releases</a>
+                  </li>
+          </ol>
+  </nav>
+
+  
+  </div>
+
+
+          </section>
+                <div class="row">
+                                <div class="col evo-content">
+              <a id="main-content"></a>                
+  <div class="block block--haley-stevens-custom-72-page-title">
+
+  
+    
+
+      
+  <h1 class="display-4">
+<span>Stevens, Feenstra Reintroduce Legislation to Ensure Cutting Edge Quantum Computing Research Brings Benefits to Main Street America</span>
+</h1>
+
+
+  
+  </div>
+
+  <div class="block block--haley-stevens-custom-72-content">
+
+  
+    
+
+      <article class="node evo-press-release evo-press-release--full">
+  
+  
+
+      
+    
+    <div>
+      
+<div  class="row evo-create-type">
+    <div class="col-auto">March 6, 2026 </div><div class="col-auto"><a href="/media/press-releases" alt="View Press Release listings">Press Release</a></div>
+  </div>
+            <div class="evo-press-release__body"><p><strong>WASHINGTON, D.C.</strong><span> – This week, Rep. Haley Stevens (D-MI) and Rep. Randy Feenstra (R-Hull) reintroduced the Quantum in Practice Act, legislation that would ensure quantum molecular simulations and modeling are included in the National Quantum Initiative.</span></p><p><span>Quantum molecular simulations and modeling will enable scientists to study chemical elements and reactions with unprecedented precision. By harnessing the power of quantum computing, researchers can better understand molecular behavior, including nitrogen fixation, a key process in producing fertilizer for our agriculture industry.</span></p><p><span>“Michigan is where advanced manufacturing and cutting-edge research drive innovation,”&nbsp;</span><strong>said Rep. Haley Stevens.&nbsp;</strong><span>“By expanding federal research on quantum simulations and modeling, we can power breakthroughs in automotive technology, battery development, and advanced materials. The Quantum in Practice Act is about making sure Michigan’s workers, manufacturers, and researchers lead the way and turning scientific discovery into economic growth.”</span></p><p><span>“Representing one of the largest agricultural districts in the nation, it is my priority to ensure that our farmers have access to the tools and technologies they need to succeed,” </span><strong>said Rep. Feenstra</strong><span>. “Breakthrough research in quantum computing has the potential to lower input costs for farmers, improve energy storage capabilities, and produce safer, more effective medications. I am proud to reintroduce this important legislation to ensure that our Main Streets, farmers, and small businesses can benefit from these cutting-edge advancements. By investing in quantum research, we can strengthen our agricultural sector, streamline fertilizer production, and enhance quality of life across Iowa’s Fourth District.”</span></p><p><span>This legislation is supported by IBM, Infleqtion, D-Wave, Quantinuum, the NSF Institute for Robust Quantum Simulation, and the NSF IUCRC Center for Quantum Technologies.</span></p><p><span>“The passage of the Quantum in Practice Act would mark a pivotal moment for U.S. leadership in quantum science and its translation into real-world impact,” </span><strong>said Gretchen Campbell, Associate Vice President for Quantum Research and Education at the University of Maryland.</strong><span> “At the University of Maryland, we are committed to advancing quantum research and preparing the next generation of scientists, engineers and practitioners. This legislation will accelerate that mission and help ensure that quantum innovations conceived in our labs can become the technologies that power tomorrow’s economy.”</span></p><p><span>“By including the Quantum in Practice Act in the National Quantum Initiative (NQI) reauthorization, we believe that the U.S. government will strengthen the emphasis on applied sciences across its quantum efforts,” </span><strong>said Allison Schwartz, D-Wave’s Senior Vice President, Global Government Relations and Public Affairs.</strong><span> “It’s critical that government collaborate with industry to identify the most complex public-sector challenges and leverage the strengths of each approach to quantum computing —&nbsp;annealing and gate-model quantum computing. Annealing quantum systems can provide solutions to challenging optimization&nbsp;problems today, while gate-model systems will be able to tackle other problems sets like quantum chemistry in the future.&nbsp;We strongly support efforts&nbsp;to reauthorize, expand, and advance the NQI to accelerate modernization and support holistic U.S. quantum programs.”</span></p><p><span>“Indiana University is grateful to Representative Feenstra for continuing to champion this important legislation,” </span><strong>said Russ Mumper, Vice President for Research at Indiana University.</strong><span> “The Quantum in Practice Act helps ensure that federal research policy supports tools that IU researchers are already using today to better understand how molecules and materials behave at the smallest scales. That means scientists can more accurately predict how chemicals will react, how new materials might perform, or how to design better technologies before ever stepping into a lab. This legislation helps accelerate that progress and keeps the United States competitive in a rapidly advancing field."</span></p><p><span>“We strongly support&nbsp;the Quantum in Practice Act, which would allow experts to leverage&nbsp;quantum computing to study chemical reactions with increased accuracy and strengthen our nation's research leadership,” </span><strong>said Dr. Rajeeb Hazra, President &amp; CEO of Quantinuum. </strong><span>“This legislation, and the larger Reauthorization of the NQIA, is an important step for U.S. leadership in quantum science and comes at a moment of growing geopolitical urgency.&nbsp;We applaud Representative Feenstra for his leadership in this area."</span></p><p><span>“As quantum technologies mature, the focus is increasingly shifting from research to real-world deployment,” </span><strong>said Dr. Pranav Gokhale, CTO, Infleqtion. </strong><span>"Efforts that explore how quantum computing can be applied to practical industrial challenges, including areas like advanced materials, energy systems, and agricultural inputs, reflect an important step in understanding where these technologies can deliver meaningful impact. Continued collaboration between government, industry, and research institutions will be essential to translating quantum innovation into measurable economic and societal value.”</span></p><p><span>By ensuring federal quantum research efforts to include quantum molecular simulations, the legislation supports scientific breakthroughs across multiple industries, including:</span></p><ul><li><span>Next-Generation Fertilizers – Modeling the nitrogen fixation process used by bacteria to develop synthetic fertilizers with significantly lower energy and material costs than current production methods.</span></li><li><span>Safer, More Effective Medicines – Designing medications with improved efficacy while minimizing harmful interactions and side effects.</span></li><li><span>Advanced Energy Storage – Developing new materials that increase battery capacity and enable more powerful, efficient energy storage technologies.</span></li><li><span>Stronger, Lighter Metals – Engineering advanced metals with improved strength-to-weight ratios for industrial and commercial applications.</span></li><li><span>Enhanced Protective Gear – Creating more durable and resilient materials for law enforcement and military personnel.</span></li><li><span>Next-Generation Conductors – Accelerating the discovery of new superconducting materials to improve energy transmission and advanced technologies.</span></li></ul><p><span>The full bill text is available </span><a href="https://feenstra.house.gov/sites/evo-subsites/feenstra.house.gov/files/evo-media-document/119th-text-feenst_068_xml_0.pdf" target="_blank"><strong><u>HERE</u></strong></a></p></div>
+      
+    </div>
+  </article>
+
+  
+  </div>
+
+
+            </div>
+                            </div>
+      </div>
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- POSTSCRIPT -->
+        <!-- POSTSCRIPT END -->
+  </main>
+
+  <!-- FOOTER -->
+                    <footer class="page__footer evo-footer pt-5">
+                <div class="container-fluid p-0">
+                                            <div class="d-flex container-fluid justify-content-center p-5 ">
+                                                            <div class=" evo-footer-left">
+                                      
+  <div class="block block--evo-default-content block--haley-stevens-custom-72-footerlogo">
+
+  
+    
+
+      
+            <div class="evo-default-content__body"><a href="//stevens.house.gov/">
+<div class="media-item media-image default">
+  
+  
+  <div class="image__field-media-image">
+    <div class="field__label font-weight-bold visually-hidden">
+      Image    </div>
+                  <div class="field__item">  
+<img loading="lazy" src="/sites/evo-subsites/stevens.house.gov/files/styles/large/public/evo-media-image/logo_secondary.png?itok=BQ8Wbh38" width="480" height="290" alt="Rep. Haley Stevens (logo)" class="img-fluid">
+
+
+</div>
+              </div>
+
+</div>
+</a></div>
+      
+  
+  </div>
+
+  <div class="block block--haley-stevens-custom-72-evosocialicons-2">
+
+  
+    
+
+      <div class="evo-social-icons-block-content"></div>
+  
+  </div>
+
+
+                                </div>
+                                                                                        <div class="evo-footer-right">
+                                      
+  <div class="views-element-container block block--haley-stevens-custom-72-evo-office-locations-block-list">
+
+  
+            <h2>Office Locations</h2>
+        
+
+      <div block="haley_stevens_custom_72_evo_office_locations_block_list"><div class="office-locations js-view-dom-id-5ebe7d8e7852cd2ee40a78b4cb45ba0a4249ec60a92c232227c565d95ae92edf">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="evo-view-evo-office-locations evo-view-wrapper">
+  <div class="evo-views-row-container">
+          <div class="views-row evo-views-row views-row-0 views-row-first"><div class="views-field views-field-title"><span class="field-content"><a href="/contact/offices/washington-dc-office" hreflang="en">Washington DC Office</a></span></div><div class="views-field views-field-field-evo-address-address-line1"><span class="field-content">2411 Rayburn House Office Building</span></div><span><span>Washington, </span></span><span>DC&nbsp;&nbsp;</span><span class="views-field views-field-field-evo-address-postal-code"><span class="field-content">20515</span></span><div class="views-field views-field-field-evo-phone"><span class="views-label views-label-field-evo-phone">Phone: </span><span class="field-content">(202) 225-8171</span></div></div>
+          <div class="views-row evo-views-row views-row-1 views-row-last"><div class="views-field views-field-title"><span class="field-content"><a href="/contact/offices/farmington-hills-district-office-0" hreflang="en">Farmington Hills District Office</a></span></div><div class="views-field views-field-field-evo-address-address-line1"><span class="field-content">30500 Northwestern Hwy</span></div><div class="views-field views-field-field-evo-address-address-line2"><span class="field-content">Suite 525</span></div><span><span>Farmington Hills, </span></span><span>MI&nbsp;&nbsp;</span><span class="views-field views-field-field-evo-address-postal-code"><span class="field-content">48334</span></span><div class="views-field views-field-field-evo-phone"><span class="views-label views-label-field-evo-phone">Phone: </span><span class="field-content">(734) 853-3040</span></div></div>
+    </div>
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  
+  </div>
+
+
+                                </div>
+                                                    </div>
+                    
+                                            <div class="d-flex evo-footer-bottom justify-content-center align-items-md-center">
+                              
+  <div class="block block--haley-stevens-custom-72-footer">
+
+  
+    
+
+      
+  
+
+
+  <ul block="haley_stevens_custom_72_footer" class="nav">
+                                          <li class="nav-item dropdown">
+                      <a href="/copyright" title="Learn about the Copyright of this website. " class="nav-link" data-drupal-link-system-path="node/21">Copyright</a>
+                              </li>
+                                      <li class="nav-item dropdown">
+                      <a href="/privacy" title="Learn about information collected, security, and Cookies related to this website. " class="nav-link" data-drupal-link-system-path="node/20">Privacy</a>
+                              </li>
+                                      <li class="nav-item dropdown">
+                      <a href="https://www.house.gov" title="Visit the House of Representatives website. " class="nav-link">House.gov</a>
+                              </li>
+                                      <li class="nav-item dropdown">
+                      <a href="/accessibility" title="Learn about the accessibility standards this site was designed to meet. " class="nav-link" data-drupal-link-system-path="node/22">Accessibility</a>
+                              </li>
+                                      <li class="nav-item dropdown">
+                      <a href="/rss.xml" title="Read content in your favorite RSS aggregator" class="nav-link" data-drupal-link-system-path="rss.xml">RSS</a>
+                              </li>
+            </ul>
+
+  
+  </div>
+
+  <div class="block block--evo-default-content block--haley-stevens-custom-72-csstemp">
+
+  
+    
+
+      
+            <div class="evo-default-content__body"><style>
+body:not(.path-frontpage) .evo-press-release__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+body:not(.path-frontpage)  .align-center.media-item.media-image.default {
+    text-align: center;
+    margin: auto;
+}
+.text-align-center {
+    
+    display: flex;  
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: .8rem !important;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+.form-required {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: .8rem !important;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+</style></div>
+      
+  
+  </div>
+
+
+                        </div>
+                                    </div>
+            </footer>
+                <!-- FOOTER END -->
+</div>
+
+  </div>
+
+    
+    <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.7.1"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/misc/drupal.js?v=10.5.8"></script>
+<script src="/core/misc/drupal.init.js?v=10.5.8"></script>
+<script src="/core/assets/vendor/tabbable/index.umd.min.js?v=6.2.0"></script>
+<script src="/modules/contrib/ckeditor_accordion/js/accordion.frontend.min.js?tbmail"></script>
+<script src="/core/misc/progress.js?v=10.5.8"></script>
+<script src="/core/assets/vendor/loadjs/loadjs.min.js?v=4.3.0"></script>
+<script src="/core/misc/debounce.js?v=10.5.8"></script>
+<script src="/core/misc/announce.js?v=10.5.8"></script>
+<script src="/core/misc/message.js?v=10.5.8"></script>
+<script src="/core/misc/ajax.js?v=10.5.8"></script>
+<script src="/profiles/evo/modules/custom/evo_map/js/dist/evo_addr.js?v=1.x"></script>
+<script src="/profiles/evo/modules/custom/evo_social_icons/assets/icon_svg_code.js?v=1.x"></script>
+<script src="/profiles/evo/modules/custom/evo_social_icons/js/evo_social_icons.js?v=1.x"></script>
+<script src="/modules/contrib/extlink/js/extlink.js?tbmail"></script>
+<script src="/modules/contrib/google_tag/js/gtag.ajax.js?tbmail"></script>
+<script src="/profiles/evo/themes/custom/evo_radix/assets/js/evo_radix.script.js?v=10.5.8"></script>
+<script src="/profiles/evo/themes/custom/evo_radix/assets/js/sorttable.js?v=10.5.8"></script>
+<script src="/profiles/evo/themes/custom/evo_radix/fontawesome.js?v=10.5.8"></script>
+<script src="/profiles/evo/themes/custom/evo_radix/fontawesome-shims.js?v=10.5.8"></script>
+<script src="/profiles/evo/themes/custom/evo_drupaltheme_72/assets/js/evo_drupaltheme_72.script.js?v=10.5.8"></script>
+<script src="/sites/evo-subsites/stevens.house.gov/themes/custom/haley_stevens_custom_72/assets/js/haley_stevens_custom_72.script.js?v=10.5.8"></script>
+<script src="/modules/contrib/superfish/js/superfish.js?v=2.0"></script>
+<script src="/libraries/drupal-superfish/superfish.js?tbmail"></script>
+<script src="/libraries/drupal-superfish/jquery.hoverIntent.minified.js?tbmail"></script>
+<script src="/libraries/drupal-superfish/sfsmallscreen.js?tbmail"></script>
+<script src="/libraries/drupal-superfish/supersubs.js?tbmail"></script>
+<script src="/libraries/drupal-superfish/supposition.js?tbmail"></script>
+
+  </body>
+</html>

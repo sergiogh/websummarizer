@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/WCAesrmD6Fb3jeIWc",
+  "title": "SEEQC Reports First Quantum Computer with Integrated Qubit Control on a Chip at Millikelvin Temperatures",
+  "why": "- SEEQC has demonstrated the first full-stack quantum computing system with digital superconducting qubit control operating at millikelvin temperatures in the same cryogenic environment as the qubits.\n- Their architecture integrates superconducting digital qubit control electronics directly with the quantum chip, reducing wiring density, thermal load, and system complexity compared to conventional designs.\n- The system was experimentally validated on a five-qubit processor, achieving single-qubit gate fidelities exceeding 99.5% and ultra-low power dissipation measured in nanowatts per qubit.\n- On-chip digital multiplexing enables control of multiple qubits through shared pathways, addressing previous scalability limits caused by one-control-line-per-qubit architectures.\n- The peer-reviewed results published in Nature Electronics establish foundational experimental evidence for scalable, energy-efficient, chip-based quantum computing systems."
+}

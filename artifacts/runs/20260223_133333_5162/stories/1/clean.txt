@@ -1,0 +1,341 @@
+Download PDF
+Subjects
+Mathematics and computing
+Physics
+Abstract
+MaxCut is a key NP-hard combinatorial optimization problem. Quantum computing offers methods to solve such problems potentially better than classical counterparts, with the Quantum Approximate Optimization Algorithm (QAOA) being a state-of-the-art example. However, the performance of quantum methods is currently hindered by hardware noise and limited qubit volumes. We present a variational Qubit-Efficient MaxCut (QEMC) algorithm that requires only
+\(O(\log N)\)
+qubits to tackle graphs of size
+N
+, an exponential reduction compared to QAOA. We demonstrate cutting-edge performance for 32-node graph instances (5 qubits) on real superconducting hardware, and for graphs with up to 2048 nodes (11 qubits) via classical simulations. The QEMC algorithm is based on an innovative encoding scheme, with potentially broad applicability, that empowers it with strong noise resilience, but also enables its efficient classical simulation. As such, the QEMC algorithm provides a challenging benchmark for QAOA on noisy devices and offers a novel quantum-inspired approach.
+Similar content being viewed by others
+Variational quantum non-orthogonal optimization
+Article
+Open access
+17 June 2023
+Sampling frequency thresholds for the quantum advantage of the quantum approximate optimization algorithm
+Article
+Open access
+25 July 2023
+Analyzing the performance of variational quantum factoring on a superconducting quantum processor
+Article
+Open access
+28 October 2021
+Data availability
+All data generated, used, and presented in this paper are available at
+https://github.com/qemc-algorithm/data
+.
+Code availability
+All code generated, used, and presented in this paper are available at
+https://github.com/orgs/qemc-algorithm/repositories
+.
+References
+Nielsen, M. A. & Chuang, I. L.
+Quantum Computation and Quantum Information
+(Cambridge University Press, New York, NY, USA, 2011), 10th edn.
+Preskill, J. Quantum computing in the NISQ era and beyond.
+Quantum
+2
+, 79 (2018).
+Google Scholar
+Peruzzo, A. et al. A variational eigenvalue solver on a photonic quantum processor.
+Na. Commun.
+5
+, 4213 (2014).
+Google Scholar
+Tilly, J. et al. The variational quantum eigensolver: a review of methods and best practices.
+Phys. Rep.
+986
+, 1–128 (2022).
+Google Scholar
+Mangini, S. Variational quantum algorithms for machine learning: theory and applications. arXiv:2306.09984 (2023).
+Bravo-Prieto, C. et al. Variational quantum linear solver.
+Quantum
+7
+, 1188 (2023).
+Google Scholar
+Farhi, E., Goldstone, J. & Gutmann, S. A quantum approximate optimization algorithm. arXiv:1411.4028 (2014).
+Crooks, G. E. Performance of the quantum approximate optimization algorithm on the maximum cut problem. arXiv:1811.08419 (2018).
+Zhou, L., Wang, S.-T., Choi, S., Pichler, H. & Lukin, M. D. Quantum approximate optimization algorithm: performance, mechanism, and implementation on near-term devices.
+Phys. Rev. X
+10
+, 021067 (2020).
+Google Scholar
+Wurtz, J. & Lykov, D. Fixed-angle conjectures for the quantum approximate optimization algorithm on regular MaxCut graphs.
+Phys. Rev. A
+104
+, 052419 (2021).
+Google Scholar
+Harrigan, M. P. et al. Quantum approximate optimization of non-planar graph problems on a planar superconducting processor.
+Nat. Phys.
+17
+, 332–336 (2021).
+Google Scholar
+Weidenfeller, J. et al. Scaling of the quantum approximate optimization algorithm on superconducting qubit based hardware.
+Quantum
+6
+, 870 (2022).
+Google Scholar
+Karp, R. M.
+Reducibility among combinatorial problems
+, 85–103 (Springer US, Boston, MA, 1972).
+https://doi.org/10.1007/978-1-4684-2001-2_9
+.
+Barahona, F., Grötschel, M., Jünger, M. & Reinelt, G. An application of combinatorial optimization to statistical physics and circuit layout design.
+Oper. Res.
+36
+, 493–513 (1988).
+Google Scholar
+Goemans, M. X. & Williamson, D. P. Improved approximation algorithms for maximum cut and satisfiability problems using semidefinite programming.
+J. ACM (JACM)
+42
+, 1115–1145 (1995).
+Google Scholar
+Guerrero, N. J.
+Solving combinatorial optimization problems using the quantum approximation optimization algorithm
+. Theses and dissertations, Air Force Institute of Technology (2020).
+https://scholar.afit.edu/etd/3263
+.
+Guerreschi, G. G. & Matsuura, A. Y. QAOA for Max-Cut requires hundreds of qubits for quantum speed-up.
+Sci. Rep.
+9
+, 6903 (2019).
+Google Scholar
+Dunjko, V., Ge, Y. & Cirac, J. I. Computational speedups using small quantum devices.
+Phys. Rev. Lett.
+121
+, 250501 (2018).
+Google Scholar
+Ge, Y. & Dunjko, V. A hybrid algorithm framework for small quantum computers with application to finding Hamiltonian cycles.
+J. Math. Phys.
+61
+, 012201 (2020).
+Google Scholar
+Guerreschi, G. G. Solving quadratic unconstrained binary optimization with divide-and-conquer and quantum algorithms. arXiv:2101.07813 (2021).
+Li, J., Alam, M. & Ghosh, S. Large-scale quantum approximate optimization via divide-and-conquer.
+IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.
+42
+, 1852–1860 (2023).
+Google Scholar
+Zhou, Z., Du, Y., Tian, X. & Tao, D. QAOA-in-QAOA: Solving large-scale MaxCut problems on small quantum machines.
+Phys. Rev. Appl.
+19
+, 024027 (2023).
+Google Scholar
+Glos, A., Krawiec, A. & Zimborás, Z. Space-efficient binary optimization for variational quantum computing.
+npj Quantum Inf.
+8
+, 39 (2022).
+Google Scholar
+Tan, B., Lemonde, M.-A., Thanasilp, S., Tangpanitanon, J. & Angelakis, D. G. Qubit-efficient encoding schemes for binary optimisation problems.
+Quantum
+5
+, 454 (2021).
+Google Scholar
+Tabi, Z. et al. Quantum optimization for the graph coloring problem with space-efficient embedding. In
+2020 IEEE International Conference on Quantum Computing and Engineering (QCE)
+, 56–62 (2020).
+Fuchs, F. G., Kolden, H. Ø, Aase, N. H. & Sartor, G. Efficient encoding of the weighted max k-cut on a quantum computer using qaoa.
+SN Comput. Sci.
+2
+, 89 (2021).
+Google Scholar
+Patti, T. L., Kossaifi, J., Anandkumar, A. & Yelin, S. F. Variational quantum optimization with multibasis encodings.
+Phys. Rev. Res.
+4
+, 033142 (2022).
+Google Scholar
+Rančić, M. J. Noisy intermediate-scale quantum computing algorithm for solving an
+n
+-vertex MaxCut problem with log(
+n
+) qubits.
+Phys. Rev. Res.
+5
+, L012021 (2023).
+Google Scholar
+Chatterjee, Y., Bourreau, E. & Rančić, M. J. Solving various NP-hard problems using exponentially fewer qubits on a quantum computer.
+Phys. Rev. A
+109
+, 052441 (2024).
+Google Scholar
+Sciorilli, M. et al. Towards large-scale quantum optimization solvers with few qubits.
+Nat. Commun.
+16
+, 476 (2025).
+Google Scholar
+Mariella, N. & Simonetto, A. A quantum algorithm for the sub-graph isomorphism problem.
+ACM Trans. Quant. Comput.
+4
+, 1–34 (2023).
+Aaronson, S. Read the fine print.
+Nat. Phys.
+11
+, 291–293 (2015).
+Google Scholar
+Hagberg, A. A., Schult, D. A. & Swart, P. J. NetworkX.
+https://networkx.github.io
+(2008). Accessed: 2023-04-17.
+Halperin, E., Livnat, D. & Zwick, U. MAX CUT in cubic graphs.
+J. Algorithms
+53
+, 169–185 (2004).
+Google Scholar
+Aaronson, S. & Chen, L. Complexity-theoretic foundations of quantum supremacy experiments. arXiv:1612.05903 (2016).
+Pednault, E. et al. Breaking the 49-qubit barrier in the simulation of quantum circuits. arXiv:1710.05867v1 (2017).
+Fatima, A. & Markov, I. L. Faster schrödinger-style simulation of quantum circuits. In
+2021 IEEE International Symposium on High-Performance Computer Architecture (HPCA)
+, 194–207 (IEEE, 2021).
+Haribara, Y., Utsunomiya, S. & Yamamoto, Y. A coherent Ising machine for MAX-CUT problems: performance evaluation against semidefinite programming and simulated annealing.
+Principles and Methods of Quantum Information Technologies
+251–262 (2016).
+Khot, S., Kindler, G., Mossel, E. & O’Donnell, R. Optimal inapproximability results for MAX-CUT and Other 2-Variable CSPs?.
+SIAM J. Comput.
+37
+, 319–357 (2007).
+Google Scholar
+Mohseni, N., McMahon, P. L. & Byrnes, T. Ising machines as hardware solvers of combinatorial optimization problems.
+Nat. Rev. Phys.
+4
+, 363–379 (2022).
+Google Scholar
+Burer, S., Monteiro, R. D. & Zhang, Y. Rank-two relaxation heuristics for max-cut and other binary quadratic programs.
+SIAM J. Optim.
+12
+, 503–521 (2002).
+Google Scholar
+Kirkpatrick, S., Gelatt, C. D. & Vecchi, M. P. Optimization by Simulated Annealing.
+Science
+220
+, 671 (1983).
+Google Scholar
+Honjo, T. et al. 100,000-spin coherent Ising machine.
+Sci. Adv.
+7
+, eabh0952 (2021).
+Google Scholar
+Kandala, A. et al. Hardware-efficient variational quantum eigensolver for small molecules and quantum magnets.
+nature
+549
+, 242–246 (2017).
+Google Scholar
+Meitei, O. R. et al. Gate-free state preparation for fast variational quantum eigensolver simulations.
+npj Quantum Inf.
+7
+, 155 (2021).
+Google Scholar
+Liang, Z. et al. Napa: intermediate-level variational native-pulse ansatz for variational quantum algorithms.
+IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.
+43
+, 1834–1847 (2024).
+Google Scholar
+Meirom, D. & Frankel, S. H. Pansatz: Pulse-based ansatz for variational quantum algorithms.
+Front. Quantum Sci. Technol.
+2
+, 1273581 (2023).
+Google Scholar
+De Keijzer, R., Tse, O. & Kokkelmans, S. Pulse based variational quantum optimal control for hybrid quantum computing.
+Quantum
+7
+, 908 (2023).
+Google Scholar
+Schuld, M., Bocharov, A., Svore, K. M. & Wiebe, N. Circuit-centric quantum classifiers.
+Phys. Rev. A
+101
+, 032308 (2020).
+Google Scholar
+Bergholm, V. et al. Pennylane: Automatic differentiation of hybrid quantum-classical computations. arXiv:1811.04968 (2020).
+Sack, S. H. & Serbyn, M. Quantum annealing initialization of the quantum approximate optimization algorithm.
+Quantum
+5
+, 491 (2021).
+Google Scholar
+Amosy, O. et al. Iteration-free quantum approximate optimization algorithm using neural networks.
+Quantum Mach. Intell.
+6
+, 38 (2024).
+Google Scholar
+Gorb, R. An implementation of the Goemans-Williamson algorithm.
+https://github.com/rvg77/max-cut/blob/master/src/models/maxcut.py
+.
+Kingma, D. P. & Ba, J. Adam: A method for stochastic optimization. In
+International conference on learning representations (ICLR),
+vol. 5, no. 6 (2015).
+Powell, M. J. A direct search optimization method that models the objective and constraint functions by linear interpolation. In
+Advances in optimization and numerical analysis
+, 51–67 (Springer, Dordrecht, 1994).
+Javadi-Abhari, A. et al. Quantum computing with Qiskit. arXiv: 2405.08810 (2024).
+Download references
+Acknowledgements
+We acknowledge the use of IBM Quantum services for this work. The views expressed are those of the authors, and do not reflect the official policy or position of IBM or the IBM Quantum team. All authors declare no financial or non-financial competing interests.
+Author information
+Author notes
+These authors contributed equally: Yovav Tene-Cohen, Tomer Kelman.
+Authors and Affiliations
+The Alexander Kofkin Faculty of Engineering, Bar-Ilan University, Ramat-Gan, Israel
+Yovav Tene-Cohen, Tomer Kelman, Ohad Lev & Adi Makmal
+Authors
+Yovav Tene-Cohen
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Tomer Kelman
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Ohad Lev
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Adi Makmal
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Contributions
+A.M. conceived the idea and supervised the study. Y.T.C. and T.K. implemented and performed the classical simulations and the real-hardware experiments of regular graphs, analyzed the results numerically, and wrote the first draft of the manuscript. O.L. performed the benchmarking of Erdős–Rényi graphs with varying densities, conducted computational complexity analysis, and wrote the corresponding sections. All authors provided critical feedback, discussed the results, and revised the manuscript.
+Corresponding author
+Correspondence to
+Adi Makmal
+.
+Ethics declarations
+Competing interests
+The authors declare no competing interests.
+Additional information
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Rights and permissions
+Open Access
+This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by/4.0/
+.
+Reprints and permissions
+About this article
+Cite this article
+Tene-Cohen, Y., Kelman, T., Lev, O.
+et al.
+A Variational Qubit-Efficient MaxCut Heuristic Algorithm.
+npj Quantum Inf
+(2026). https://doi.org/10.1038/s41534-026-01186-2
+Download citation
+Received
+:
+22 July 2025
+Accepted
+:
+15 January 2026
+Published
+:
+16 February 2026
+DOI
+:
+https://doi.org/10.1038/s41534-026-01186-2
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative

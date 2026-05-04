@@ -1,0 +1,470 @@
+Download PDF
+Subjects
+Information theory and computation
+Quantum information
+Abstract
+The reliability of artificial intelligence hinges on the integrity of its training data, a foundation often compromised by noise and corruption. Here, through a comparative study of classical and quantum neural networks on both classical and quantum data, we reveal a fundamental difference in their response to data corruption. We find that classical models exhibit brittle memorization, leading to a failure in generalization. In contrast, quantum models demonstrate superior resilience, underscored by a phase transition-like response to increasing noise, revealing a critical point beyond which the model’s performance changes qualitatively. We further introduce a framework of quantum machine unlearning, the process of efficiently forcing a trained model to forget bad influences. We show that classical models form rigid, stubborn memories of erroneous data, while the quantum model is significantly more amenable to efficient forgetting with approximate unlearning methods. Our findings establish that quantum machine learning possesses the dual advantage of intrinsic resilience and efficient adaptability, providing a promising paradigm for the trustworthy and reliable artificial intelligence of the future.
+Similar content being viewed by others
+The power of quantum neural networks
+Article
+24 June 2021
+A comparative analysis of classical machine learning models with quantum-inspired models for predicting world surface temperature
+Article
+Open access
+04 August 2025
+Quantum machine learning beyond kernel methods
+Article
+Open access
+31 January 2023
+Data availability
+The data generated in this study have been deposited in the Zenodo database under accession link
+https://doi.org/10.5281/zenodo.18641024
+81
+. The MNIST dataset is publicly available at
+http://yann.lecun.com/exdb/mnist/
+.
+Code availability
+The custom code and scripts used to generate the results and analyze the data in this study are publicly available on GitHub at
+https://github.com/yutuer21/quantum-machine-unlearning
+and have been permanently archived on Zenodo under the
+https://doi.org/10.5281/zenodo.18641024
+81
+. The quantum neural network implementations are based on the open-source quantum software framework TensorCircuit-NG, which is available at
+https://github.com/tensorcircuit/tensorcircuit-ng
+.
+References
+LeCun, Y., Bengio, Y. & Hinton, G. Deep learning.
+Nature
+521
+, 436 (2015).
+Google Scholar
+Jordan, M. I. & Mitchell, T. M. Machine learning: trends, perspectives, and prospects.
+Science
+349
+, 255 (2015).
+Google Scholar
+Vaswani, A. et al. Attention is all you need. In
+NeurIPS
+(NIPS, 2017).
+Barreno, M., Nelson, B., Sears, R., Joseph, A. D. & Tygar, J. D. Can machine learning be secure? In
+Proceedings of the 2006 ACM Symposium on Information, Computer and Communications Security
+, 16 (ACM, 2006).
+Goldblum, M. et al. Dataset security for machine learning: data poisoning, backdoor attacks, and defenses.
+IEEE Trans. Pattern Anal. Mach. Intell.
+45
+, 1563 (2022).
+Google Scholar
+Schwarzschild, A., Goldblum, M., Gupta, A., Dickerson, J. P. & Goldstein, T. Just how toxic is data poisoning? A unified benchmark for backdoor and data poisoning attacks. In
+Proc. 38 th International Conference on Machine Learning
+(PMLR, 2021).
+Tian, Z., Cui, L., Liang, J. & Yu, S. A comprehensive survey on poisoning attacks and countermeasures in machine learning.
+ACM Comput. Surv.
+55
+, 1 (2023).
+Google Scholar
+Zhao, P., Zhu, W., Jiao, P., Gao, D. & Wu, O. Data poisoning in deep learning: a survey. Preprint at
+https://arxiv.org/abs/2503.22759
+(2025).
+Cao, Y. & Yang, J. in
+2015 IEEE Symposium on Security and Privacy
+, 463–480 (IEEE, 2015).
+Ginart, A., Guan, M. Y., Valiant, G. & Zou, J. Making AI forget you: data deletion in machine learning. In
+NeurIPS
+(NIPS, 2019).
+Bourtoule, L. et al. Machine unlearning. In
+2021 IEEE Symposium on Security and Privacy (SP)
+141 (IEEE, 2021).
+Wang, W., Tian, Z., Zhang, C. & Yu, S. Machine unlearning: a comprehensive survey. Preprint at
+https://arxiv.org/abs/2405.07406
+(2024).
+Goel, S., Prabhu, A., Torr, P., Kumaraguru, P. & Sanyal, A. Corrective machine unlearning. Preprint at
+https://arxiv.org/abs/2402.14015
+(2024).
+Liu, S. et al. Rethinking machine unlearning for large language models.
+Nat. Mach. Intell.
+7
+, 181 (2025).
+Google Scholar
+Qu, Y. et al. The frontier of data erasure: a survey on machine unlearning for large language models.
+Computer
+58
+, 45 (2025).
+Google Scholar
+Preskill, J. Quantum computing in the nisq era and beyond.
+Quantum
+2
+, 79 (2018).
+Google Scholar
+Bharti, K. et al. Noisy intermediate-scale quantum algorithms.
+Rev. Mod. Phys.
+94
+, 015004 (2022).
+Google Scholar
+Cerezo, M. et al. Variational quantum algorithms.
+Nat. Rev. Phys.
+3
+, 625 (2021).
+Google Scholar
+Biamonte, J. et al. Quantum machine learning.
+Nature
+549
+, 195 (2017).
+Google Scholar
+Lloyd, S., Mohseni, M. & Rebentrost, P. Quantum algorithms for supervised and unsupervised machine learning. Preprint at
+https://arxiv.org/abs/1307.0411
+(2013).
+Cai, X.-D. et al. Entanglement-based machine learning on a quantum computer.
+Phys. Rev. Lett.
+114
+, 110504 (2015).
+Google Scholar
+Havlíček, V. et al. Supervised learning with quantum-enhanced feature spaces.
+Nature
+567
+, 209 (2019).
+Google Scholar
+Gao, X., Zhang, Z.-Y. & Duan, L.-M. A quantum machine learning algorithm based on generative models.
+Sci. Adv.
+4
+, aat9004 (2018).
+Google Scholar
+Li, J., Yang, X., Peng, X. & Sun, C.-P. Hybrid quantum-classical approach to quantum optimal control.
+Phys. Rev. Lett.
+118
+, 150503 (2017).
+Google Scholar
+Huang, H.-Y. et al. Power of data in quantum machine learning.
+Nat. Commun.
+12
+, 2631 (2021).
+Google Scholar
+Huang, H.-Y. et al. Quantum advantage in learning from experiments.
+Science
+376
+, 1182 (2022).
+Google Scholar
+Zhang, S.-X. et al. Variational quantum-neural hybrid eigensolver.
+Phys. Rev. Lett.
+128
+, 120502 (2022).
+Google Scholar
+Chen, Y.-Q., Chen, Y., Lee, C.-K., Zhang, S. & Hsieh, C.-Y. Optimizing quantum annealing schedules with monte carlo tree search enhanced with neural networks.
+Nat. Mach. Intell.
+4
+, 269 (2022).
+Google Scholar
+Cerezo, M., Verdon, G., Huang, H.-Y., Cincio, L. & Coles, P. J. Challenges and opportunities in quantum machine learning.
+Nat. Comput. Sci.
+2
+, 567 (2022).
+Google Scholar
+Wang, Y. & Liu, J. A comprehensive review of quantum machine learning: from nisq to fault tolerance.
+Rep. Prog. Phys.
+87
+, 116402 (2024).
+Google Scholar
+Schuld, M., Sinayskiy, I. & Petruccione, F. The quest for a quantum neural network.
+Quantum Inf. Process.
+13
+, 2567 (2014).
+Google Scholar
+Romero, J., Olson, J. P. & Aspuru-Guzik, A. Quantum autoencoders for efficient compression of quantum data.
+Quantum Sci. Technol.
+2
+, 045001 (2017).
+Google Scholar
+Liu, J.-G. & Wang, L. Differentiable learning of quantum circuit born machines.
+Phys. Rev. A
+98
+, 062324 (2018).
+Google Scholar
+Benedetti, M., Lloyd, E., Sack, S. & Fiorentini, M. Parameterized quantum circuits as machine learning models.
+Quantum Sci. Technol.
+4
+, 043001 (2019).
+Google Scholar
+Beer, K. et al. Training deep quantum neural networks.
+Nat. Commun.
+11
+, 808 (2020).
+Google Scholar
+Shen, H., Zhang, P., You, Y.-Z. & Zhai, H. Information scrambling in quantum neural networks.
+Phys. Rev. Lett.
+124
+, 200504 (2020).
+Google Scholar
+Dallaire-Demers, P.-L. & Killoran, N. Quantum generative adversarial networks.
+Phys. Rev. A
+98
+, 012324 (2018).
+Google Scholar
+Cong, I., Choi, S. & Lukin, M. D. Quantum convolutional neural networks.
+Nat. Phys.
+15
+, 1273 (2019).
+Google Scholar
+Pérez-Salinas, A., Cervera-Lierta, A., Gil-Fuster, E. & Latorre, J. I. Data re-uploading for a universal quantum classifier.
+Quantum
+4
+, 226 (2020).
+Google Scholar
+Banchi, L., Pereira, J. & Pirandola, S. Generalization in quantum machine learning: a quantum information standpoint.
+PRX Quantum
+2
+, 040321 (2021).
+Google Scholar
+Zhang, S.-X., Hsieh, C.-Y., Zhang, S. & Yao, H. Neural predictor based quantum architecture search.
+Mach. Learn. Sci. Technol.
+2
+, 045027 (2021a).
+Google Scholar
+Li, W. & Deng, D.-L. Recent advances for quantum classifiers.
+Sci. China Phys. Mech. Astron.
+65
+, 220301 (2022).
+Google Scholar
+Zheng, P.-L., Wang, J.-B. & Zhang, Y. Efficient and quantum-adaptive machine learning with fermion neural networks.
+Phys. Rev. Appl.
+20
+, 044002 (2023).
+Google Scholar
+Jäger, J. & Krems, R. V. Universal expressiveness of variational quantum classifiers and quantum kernels for support vector machines.
+Nat. Commun.
+14
+, 576 (2023).
+Google Scholar
+Miao, J., Hsieh, C.-Y. & Zhang, S.-X. Neural-network-encoded variational quantum algorithms.
+Phys. Rev. Appl.
+21
+, 014053 (2024).
+Google Scholar
+Zhang, B., Xu, P., Chen, X. & Zhuang, Q. Generative quantum machine learning via denoising diffusion probabilistic models.
+Phys. Rev. Lett.
+132
+, 100602 (2024a).
+Google Scholar
+Sein, P. S. S., Cañizo, M. & Orús, R. Image classification with rotation-invariant variational quantum circuits.
+Phys. Rev. Res.
+7
+, 013082 (2025).
+Google Scholar
+Zhang, P. Correcting a noisy quantum computer using a quantum computer. Preprint at
+https://arxiv.org/abs/2506.08331
+(2025).
+Huang, L., Joseph, A. D., Nelson, B., Rubinstein, B. I. & Tygar, J. D. Adversarial machine learning. In
+Proceedings of the 4th ACM Workshop on Security and Artificial Intelligence
+, 43 (ACM, 2011).
+Biggio, B. et al. Evasion attacks against machine learning at test time. In
+Machine Learning and Knowledge Discovery in Databases. ECML PKDD 2013. Lecture Notes in Computer Science
+. (eds Blockeel, H., Kersting, K., Nijssen, S. & Železný, F.) Vol. 8190, 387–402 (Springer, Berlin, Heidelberg, 2013).
+Szegedy, C. et al. Intriguing properties of neural networks. In
+2nd International Conference on Learning Representations
+(ICLR, 2014).
+Goodfellow, I. J., Shlens, J. & Szegedy, C. Explaining and Harnessing Adversarial Examples. In
+3rd International Conference on Learning Representations
+(ICLR, 2015).
+Kurakin, A., Brain, G., J, G. I. & Bengio, S. Adversarial machine learning at scale. In
+ICLR
+(ICLR, 2017).
+Lu, S., Duan, L.-M. & Deng, D.-L. Quantum adversarial machine learning.
+Phys. Rev. Res.
+2
+, 033212 (2020).
+Google Scholar
+Liu, N. & Wittek, P. Vulnerability of quantum classification to adversarial perturbations.
+Phys. Rev. A
+101
+, 062331 (2020).
+Google Scholar
+Du, Y., Hsieh, M.-H., Liu, T., Tao, D. & Liu, N. Quantum noise protects quantum classifiers against adversaries.
+Phys. Rev. Res.
+3
+, 023153 (2021).
+Google Scholar
+Weber, M., Liu, N., Li, B., Zhang, C. & Zhao, Z. Optimal provable robustness of quantum classification via quantum hypothesis testing.
+npj Quantum Inf.
+7
+, 76 (2021).
+Google Scholar
+Liao, H., Convy, I., Huggins, W. J. & Whaley, K. B. Robust in practice: adversarial attacks on quantum machine learning.
+Phys. Rev. A
+103
+, 042427 (2021).
+Google Scholar
+Ren, W. et al. Experimental quantum adversarial learning with programmable superconducting qubits.
+Nat. Comput. Sci.
+2
+, 711 (2022).
+Google Scholar
+Gong, W. & Deng, D.-L. Universal adversarial examples and perturbations for quantum classifiers.
+Natl. Sci. Rev.
+9
+, nwab130 (2021).
+West, M. T. et al. Benchmarking adversarially robust quantum machine learning at scale.
+Phys. Rev. Res.
+5
+, 023186 (2023a).
+Google Scholar
+West, M. T. et al. Towards quantum enhanced adversarial robustness in machine learning.
+Nat. Mach. Intell.
+5
+, 581 (2023b).
+Google Scholar
+Yang, J., Zhou, K., Li, Y. & Liu, Z. Generalized out-of-distribution detection: a survey.
+Int. J. Comput. Vis.
+132
+, 5635 (2024).
+Google Scholar
+Caro, M. C. et al. Generalization in quantum machine learning from few training data.
+Nat. Commun.
+13
+, 4919 (2022).
+Google Scholar
+French, R. Catastrophic forgetting in connectionist networks.
+Trends Cogn. Sci.
+3
+, 128 (1999).
+Google Scholar
+Goel, S. et al. Towards adversarial evaluations for inexact machine unlearning. Preprint at
+https://arxiv.org/abs/2201.06640
+(2023).
+Kurmanji, M., Triantafillou, P., Hayes, J. & Triantafillou, E.
+Towards Unbounded Machine Unlearning
+(NeuIPS, 2023).
+Trippa, D., Campagnano, C., Bucarelli, M. S., Tolomei, G. & Silvestri, F.
+∇
+τ
+: Gradient-based and task-agnostic machine unlearning. Preprint at
+https://arxiv.org/abs/2403.14339
+(2024).
+Hochreiter, S. & Schmidhuber, J. Flat minima.
+Neural Comput.
+9
+, 1 (1997).
+Google Scholar
+Keskar, N. S., Mudigere, D., Nocedal, J., Smelyanskiy, M. & Tang, P. T. P. On large-batch training for deep learning: generalization gap and sharp minima. In
+ICLR
+(ICLR, 2017).
+Li, H., Xu, Z., Taylor, G., Studer, C. & Goldstein, T. In
+Proceedings of the 32nd International Conference on Neural Information Processing Systems, NIPS’18
+, 6391–6401 (Curran Associates Inc., 2018).
+McClean, J. R., Boixo, S., Smelyanskiy, V. N., Babbush, R. & Neven, H. Barren plateaus in quantum neural network training landscapes.
+Nat. Commun.
+9
+, 4812 (2018).
+Google Scholar
+Wang, S. et al. Noise-induced barren plateaus in variational quantum algorithms.
+Nat. Commun.
+12
+, 6961 (2021).
+Google Scholar
+Cerezo, M. & Coles, P. J. Higher order derivatives of quantum neural networks with barren plateaus.
+Quantum Sci. Technol.
+6
+, 035006 (2021).
+Google Scholar
+Zhang, H.-K., Liu, S. & Zhang, S.-X. Absence of barren plateaus in finite local-depth circuits with long-range entanglement.
+Phys. Rev. Lett.
+132
+, 150603 (2024b).
+Google Scholar
+Zhang, H.-K., Zhu, C. & Wang, X. Predicting quantum learnability from landscape fluctuation. Preprint at
+https://arxiv.org/abs/2406.11805
+(2024c).
+Larocca, M. et al. Barren plateaus in variational quantum computing.
+Nat. Rev. Phys.
+7
+, 174 (2025).
+Google Scholar
+Gil-Fuster, E., Eisert, J. & Bravo-Prieto, C. Understanding quantum machine learning also requires rethinking generalization.
+Nat. Commun.
+15
+, 2277 (2024).
+Google Scholar
+Zhang, C., Bengio, S., Hardt, M., Recht, B. & Vinyals, O. Understanding deep learning (still) requires rethinking generalization.
+Commun. ACM
+64
+, 107 (2021b).
+Google Scholar
+Zhang, S.-X. et al. Tensorcircuit: a quantum software framework for the nisq era.
+Quantum
+7
+, 912 (2023).
+Google Scholar
+Chen, Y.-Q. & Zhang, S.-X. Superior resilience to poisoning and amenability to unlearning in quantum machine learning. Zenodo repository,
+https://doi.org/10.5281/zenodo.18641024
+(2026).
+Download references
+Acknowledgements
+This work was supported by Science Challenge Project (No.TZ2025017 [Y.Q.C.]), Quantum Science and Technology-National Science and Technology Major Project (No. 2024ZD0301700 [S.X.Z.]), the National Natural Science Foundation of China (Nos. 12504599 [Y.Q.C.] and 12574546 [S.X.Z.]), and NSAF (No. U2330401 [Y.Q.C.]).
+Author information
+Authors and Affiliations
+Graduate School of China Academy of Engineering Physics, Beijing, China
+Yu-Qin Chen
+Institute of Physics, Chinese Academy of Sciences, Beijing, China
+Shi-Xin Zhang
+Authors
+Yu-Qin Chen
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Shi-Xin Zhang
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Contributions
+Y.Q.C. and S.X.Z. conceived the project, designed and performed the research, analyzed the data, and wrote the manuscript.
+Corresponding authors
+Correspondence to
+Yu-Qin Chen
+or
+Shi-Xin Zhang
+.
+Ethics declarations
+Competing interests
+The authors declare no competing interests.
+Peer review
+Peer review information
+:
+Nature Communications
+thanks Tongyang Li and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. A peer review file is available.
+Additional information
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+Supplementary Information (download PDF
+)
+Transparent Peer Review file (download PDF
+)
+Rights and permissions
+Open Access
+This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+.
+Reprints and permissions
+About this article
+Cite this article
+Chen, YQ., Zhang, SX. Superior resilience to poisoning and amenability to unlearning in quantum machine learning.
+Nat Commun
+(2026). https://doi.org/10.1038/s41467-026-70420-4
+Download citation
+Received
+:
+16 September 2025
+Accepted
+:
+26 February 2026
+Published
+:
+09 March 2026
+DOI
+:
+https://doi.org/10.1038/s41467-026-70420-4
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative

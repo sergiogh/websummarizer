@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script data-document-language="true"
+            src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+            data-domain-script="93ab55d0-5227-4b5f-9baa-7c0805ac9eec"
+            id="cookie-consent-script"
+            charset="UTF-8"
+            type="text/javascript">
+    </script>
+
+
+            <!-- Google Tag Manager -->
+                    <script>
+                    (function (w, d, s, l, i) {
+                        w[l] = w[l] || []; w[l].push({
+                            'gtm.start':
+                                new Date().getTime(), event: 'gtm.js'
+                        }); var f = d.getElementsByTagName(s)[0],
+                            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-KTB664ZR');
+                    </script>
+                    <script>
+                    (function (w, d, s, l, i) {
+                        w[l] = w[l] || []; w[l].push({
+                            'gtm.start':
+                                new Date().getTime(), event: 'gtm.js'
+                        }); var f = d.getElementsByTagName(s)[0],
+                            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-KMH7P3LL');
+                    </script>
+ 
+
+
+    <title>Iceberg Quantum unveils breakthrough in fault-tolerant</title>
+    
+
+
+<!-- Search Engine Friendly Metadata  -->
+<meta name="author" content="ICEBERG QUANTUM PTY LTD" />
+<meta name="keywords" content="ICEBERG QUANTUM PTY LTD, quantum computing, quantum error correction, RSA-2048, LDPC codes, quantum architecture, fault tolerance" />
+<meta name="description" content="Iceberg Quantum unveils a new fault-tolerant quantum architecture showing RSA-2048 could be broken with under 100,000 qubits, alongside a $6m seed round...." />
+<meta name="title" content="Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing" />
+<meta name="ticker" content="" />
+<meta name="DC.date.issued" content="2026-02-13" />
+<!-- Google site verification meta tag -->
+<meta name="google-site-verification" content="TPh-fYpDjXZUz98ciWasVb52qbvctqomC6zZc8vuUPU" />
+<!-- Google Syndication source  -->
+<link name="syndication-source" href="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" />
+<meta name="original-source" content="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" />
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="globenewswire" />
+<meta name="twitter:title" content="Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing" />
+<meta name="twitter:description" content="Iceberg Quantum unveils a new fault-tolerant quantum architecture showing RSA-2048 could be broken with under 100,000 qubits, alongside a $6m seed round...." />
+<!-- <meta name="twitter:creator" content="??????" />  -->
+<!-- Open Graph-->
+<meta property="og:title" content="Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing" />
+<meta property="og:type" content="article" />
+
+        <meta name="twitter:image" content="https://ml.globenewswire.com/Resource/Download/c5c53b16-be46-4fe0-9692-671e1711a280"/>
+        <meta property="og:image" content="https://ml.globenewswire.com/Resource/Download/c5c53b16-be46-4fe0-9692-671e1711a280"/>
+
+<meta property="og:url" content="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" />
+<meta property="og:description" content="Iceberg Quantum unveils a new fault-tolerant quantum architecture showing RSA-2048 could be broken with under 100,000 qubits, alongside a $6m seed round...." />
+<meta property="og:article:published_time" content="2026-02-13T03:07:01Z" />
+<meta property="og:article:author " content="ICEBERG QUANTUM PTY LTD" />
+<meta property="og:article:tag" content="ICEBERG QUANTUM PTY LTD, quantum computing, quantum error correction, RSA-2048, LDPC codes, quantum architecture, fault tolerance" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="GlobeNewswire News Room" />
+        <meta property="og:image" content="https://ml.globenewswire.com/Resource/Download/3323f5ff-0ef0-4b9e-a4e3-796750d4a3ce" />
+        <meta property="og:image" content="https://ml.globenewswire.com/Resource/Download/67fcd668-43da-4772-990d-0735dbc6d908" />
+
+
+    <meta http-equiv="content-language" content="en-us">
+    <link rel="shortcut icon" href="/Content/logo/favicon.ico" type="image/x-icon" />
+    
+    <style>
+*,::after,::before{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.container,.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.attachment-row{margin-left:0;margin-right:0}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.d-flex{display:-ms-flexbox!important;display:flex!important}.justify-content-start{-ms-flex-pack:start!important;justify-content:flex-start!important}.justify-content-end{-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-center{-ms-flex-pack:center!important;justify-content:center!important}.justify-content-between{-ms-flex-pack:justify!important;justify-content:space-between!important}.align-items-center{-ms-flex-align:center!important;align-items:center!important}.align-items-start{-ms-flex-align:start!important;align-items:flex-start!important}.align-items-end{-ms-flex-align:end!important;align-items:flex-end!important}.text-center{text-align:center!important}.text-left{text-align:left!important}.text-right{text-align:right!important}
+</style>
+
+
+    <link rel="preload" as="style" href="/Content/css/bootstrap.min.css" onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="/bundles/pnr-global-styles-v2?v=Ic-0mD2DjpFigLys2MO1obIfZpE7xdVUB71NodRy2Jg1" onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="/bundles/react-styles?v=SnfQQ7kyJM7UMGsfrVHHauZjAab4-G1fqs_hL1eghFI1" onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="/home/assests/styles/global-override.css" onload="this.rel='stylesheet'" />
+    <link href="/bundles/react-styles?v=SnfQQ7kyJM7UMGsfrVHHauZjAab4-G1fqs_hL1eghFI1" rel="stylesheet"/>
+
+
+    <script src="/Scripts/stickyfill.min.js" defer async></script>
+
+        <link rel="canonical" href="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" />
+                <link rel="alternate" href="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" hreflang="en" />
+                <link rel="alternate" href="https://www.globenewswire.com/fr/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" hreflang="fr" />
+                <link rel="alternate" href="https://www.globenewswire.com/de/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" hreflang="de" />
+                <link rel="alternate" href="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" hreflang="x-default" />
+<script type="text/javascript" defer src="/bundles/layout-jquery-scripts?v=TXkXsX7p7r9-AnnjDqFdUGhnEN2-r8TpYAaGbshNq4s1"></script>
+        <link rel="preload" href="/bundles/react-scripts?v=tIKvvsZpN3-U9UHrwoXGYa1fNdrjyxZM2Z7JXlu0XKM1" as="script">
+
+    <script type="text/javascript">
+        window.enableInlineImageZoom = false;
+        var fsEnableInlineImageZoom = 'True';
+        if (fsEnableInlineImageZoom && fsEnableInlineImageZoom.trim().toLowerCase() === 'true')
+        {
+            window.enableInlineImageZoom = true;
+        }
+
+        window.quoteCarouselSettings = {
+            isEnabled: 'True' === 'True' ? true : false,
+            documentQuotes: '[{\"Quote\":\"“Iceberg’s advances in qLDPC-based architectures will bring forward utility-scale applications on our devices by years,”\",\"DisplayOrder\":0},{\"Quote\":\"“This is a deeply challenging area, and Iceberg has assembled the rare expertise required to make real progress.”\",\"DisplayOrder\":1},{\"Quote\":\"“Our ambition is to help accelerate the transition to, and ultimately power, the fault-tolerant era of quantum computing,”\",\"DisplayOrder\":2},{\"Quote\":\"“Our approach is to build the world’s best fault-tolerance research lab and partner closely with the leading quantum hardware companies. Pinnacle is an…”\",\"DisplayOrder\":3},{\"Quote\":\"“The Iceberg team has made rapid technical progress, established new partnerships with leading quantum hardware companies, and demonstrated that they can…”\",\"DisplayOrder\":4},{\"Quote\":\"“We’re excited to double down on our conviction in this exceptional team as they build out the ARM for quantum computing.”\",\"DisplayOrder\":5},{\"Quote\":\"“The path to FTQC needs exactly the type of innovations we’ve seen from the Iceberg team. DCVC is psyched to join the round and back them!”\",\"DisplayOrder\":6}]',
+            releaseYear: '2026',
+        };
+
+
+
+    </script>
+    <script src="/bundles/article-details-scripts?v=DM2Op24RNVbTtfyvon-ZXBjei7tO7rovUbTNYEJTQIQ1"></script>
+
+
+<input name="__RequestVerificationToken" type="hidden" value="jSYJ8EruxRQQZpXA1npehb8KD02HK1jOO59T89uinTj7EViwzjDsy2XgOI4FXX1_04SWWbnHP5OmflG0T0O7-b0woLc1" />
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"NewsArticle","@id":"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html","url":"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html","headline":"Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing","alternativeHeadline":"Iceberg Quantum unveils breakthrough in fault-tolerant quantum","description":"Iceberg Quantum unveils a new fault-tolerant quantum architecture showing RSA-2048 could be broken with under 100,000 qubits, alongside a $6m seed round....","dateline":"NEW SOUTH WALES, AUSTRALIA","datePublished":"2026-02-13T03:07:01Z","dateModified":"2026-02-13T03:07:01Z","inLanguage":"en","isAccessibleForFree":true,"keywords":["ICEBERG QUANTUM PTY LTD","quantum computing","quantum error correction","RSA-2048","LDPC codes","quantum architecture","fault tolerance"],"articleSection":["Management statements"],"image":[{"@type":"ImageObject","url":"https://ml.globenewswire.com/Resource/Download/3323f5ff-0ef0-4b9e-a4e3-796750d4a3ce?size=2","width":374,"height":800,"caption":"Iceberg Quantum founders (left to right): Sam Smith (CTO), Felix Thomsen (CEO), Larry Cohen (CSO)"},{"@type":"ImageObject","url":"https://ml.globenewswire.com/Resource/Download/67fcd668-43da-4772-990d-0735dbc6d908?size=2","width":374,"height":800,"caption":"The Iceberg Quantum team."}],"author":{"@type":"Organization","@id":"https://iceberg-quantum.com/","name":"ICEBERG QUANTUM PTY LTD","url":"https://iceberg-quantum.com/","logo":{"@type":"ImageObject","url":"http://www.globenewswire.com/Attachment/LogoDisplay/1440749?filename=1440749.jpg&size=1","width":374,"height":800,"caption":"ICEBERG QUANTUM PTY LTD"}},"publisher":{"@type":"Organization","@id":"https://www.globenewswire.com/","name":"GlobeNewswire","url":"https://www.globenewswire.com","description":"GlobeNewswire is a leading press release distribution service for financial and corporate communications.","logo":{"@type":"ImageObject","url":"https://www.globenewswire.com/Home/assests/images/eq-notified-dark.svg","width":300,"height":64}},"sourceOrganization":[{"@type":"Organization","@id":"https://iceberg-quantum.com/","name":"ICEBERG QUANTUM PTY LTD","url":"https://iceberg-quantum.com/"}],"locationCreated":{"@type":"Place","name":"NEW SOUTH WALES, AUSTRALIA"}}
+    </script>
+
+
+
+    
+    <link href="/bundles/article-details-styles?v=4wr0seRDRf-Zm2LPF8-8pSRMjBVU7XxCC_HHIUyyQps1" rel="stylesheet"/>
+
+    <link href="/bundles/page/topic-section?v=-13lECftHsE2MxSLhiG9KUdpSpXTPE0wMIPgD5QNHS41" rel="stylesheet"/>
+
+
+
+    <script src="/bundles/global-shared-scripts?v=judktJnKKFTlTNQ_2dcLwzh7zTItc3AhwgQaeqAriwU1"></script>
+
+<script >bazadebezolkohpepadr="2123512984"</script><script type="text/javascript" src="https://www.globenewswire.com/akam/13/7e923c76"  defer></script></head>
+<body id="app-body-container" style="margin:0;" data-context="">
+        <!-- Google Tag Manager (noscript) -->
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTB664ZR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMH7P3LL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+    <div role="main">
+        <a href="#maincontainer" class="skip-link btn btn-primary text-uppercase">Accessibility: Skip TopNav</a>
+        <!--Start header -->
+        <div id="pnr-global-site-header-section" style="min-height: 85px">
+        </div>
+        <!--End header-->
+        <!-- Start Body -->
+        <div class="pnr-body-container" id="maincontainer" tabindex="-1">
+                <script type="text/javascript">
+
+            // used in ui component
+        window.pnrApplicationSettings = {
+                Application:"pnr",
+                SelectedLocale: 'en-US',
+                PnrHostUrl: 'https://www.globenewswire.com',
+                IsAuthenticated: 'False' === "True" ? true : false,
+                ContextUser: '',
+                ApplicationUrl: 'https://www.globenewswire.com',
+                PageContext: '',
+                SubscriptionId: 0,
+                SubscriptionName: '',
+                ArticleLogoUrl: '',
+                ArticleHeadline: '',
+                IsMobileVersion: 'True' === "True" ? true : false,
+                HideLanguageSelection : false,
+                NewsSearchHeading: '',
+                ArticleMediaAttachments: [],
+                AuthSessionExpirationMinutes: '0',
+                AppLogoUrl: 'https://www.globenewswire.com/content/logo/color.svg',
+                ReaderForgotPasswordUrl: 'https://pnrlogin.globenewswire.com/en/reset/confirmresetpassword',
+                ReaderRegisterUrl: 'https://pnrlogin.globenewswire.com/en/register',
+                IsQuickSignInEnabled: true,
+                ReaderAccountBaseUrl: 'https://pnrlogin.globenewswire.com',
+                articleSideBarSettings:{},
+                SiteSupportedLanguages: 'en,fr,de',
+                HideOrganizationSearch: false,
+                SearchBasePath: '/search/',
+                GoogleClientId: '747241285181-l5skhv8icjefl651ehg7ps4eif8kpqgi.apps.googleusercontent.com',
+                GoogleSsoEnabled: true,
+                ArticleLanguage: "",
+                LinkedInSsoEnabled: false,
+                LinkedInVersion: '',
+				ClaimStatus: null,
+				HideQuickSignInLogin:false,
+                SessionId: '',
+                ContextWidgetPublicId: "",
+                EnableDynamicPagesSectionInNewsroom: false,
+                HideGlobalSearch: false,
+                IsMicrositePage:false
+            };
+    </script>
+
+
+
+
+
+
+<script type="text/javascript">
+       var articleSideBarEnabled = false;
+       var fsArticleSideBarEnabled = 'True';
+       if (fsArticleSideBarEnabled && fsArticleSideBarEnabled.trim().toLowerCase() === 'true')
+       {
+          articleSideBarEnabled = true;
+    }
+</script>
+
+
+<script src="/Scripts/Views/Home/navigation-mvc-interactions.js"></script>
+
+<nav class="mvc-navigation">
+    <ul class="mvc-nav-list">
+            <li class="mvc-nav-item" id="newsroom-trending-topics-links">
+                <div class="mvc-nav-topic-wrapper" data-id="/news/consumer-products-services">
+                    <a href="/news/consumer-products-services" class="mvc-nav-topic-link" title="Consumer Products and Services News">
+                        Consumer Products and Services News
+                    </a>
+                        <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Consumer Products and Services News submenu">
+                            <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                            </svg>
+                        </button>
+                </div>
+
+                    <div class="mvc-nav-dropdown">
+                        <ul class="mvc-nav-dropdown-list">
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/automobiles-parts" class="mvc-nav-dropdown-link" title="Automobiles and Parts News">
+                                        Automobiles and Parts News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/food-beverage" class="mvc-nav-dropdown-link" title="Food &amp; Beverage News">
+                                        Food &amp; Beverage News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/home-goods-construction" class="mvc-nav-dropdown-link" title="Home Goods &amp; Construction News">
+                                        Home Goods &amp; Construction News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/leisure-goods" class="mvc-nav-dropdown-link" title="Leisure Goods News">
+                                        Leisure Goods News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/entertainment" class="mvc-nav-dropdown-link" title="Media &amp; Entertainment News">
+                                        Media &amp; Entertainment News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/personal-care" class="mvc-nav-dropdown-link" title="Personal Care  News">
+                                        Personal Care  News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/retail" class="mvc-nav-dropdown-link" title="Retail News">
+                                        Retail News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/consumer-products-services">
+                                    <a href="/news/consumer-products-services/travel-leisure" class="mvc-nav-dropdown-link" title="Travel and Leisure News">
+                                        Travel and Leisure News
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="mvc-nav-item" id="newsroom-trending-topics-links">
+                <div class="mvc-nav-topic-wrapper" data-id="/news/energy">
+                    <a href="/news/energy" class="mvc-nav-topic-link" title="Energy News">
+                        Energy News
+                    </a>
+                        <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Energy News submenu">
+                            <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                            </svg>
+                        </button>
+                </div>
+
+                    <div class="mvc-nav-dropdown">
+                        <ul class="mvc-nav-dropdown-list">
+                                <li class="mvc-nav-dropdown-item" data-id="/news/energy">
+                                    <a href="/news/energy/alternative-energy" class="mvc-nav-dropdown-link" title="Alternative Energy News">
+                                        Alternative Energy News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/energy">
+                                    <a href="/news/energy/oil-gas-coal" class="mvc-nav-dropdown-link" title="Oil Gas and Coal News">
+                                        Oil Gas and Coal News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/energy">
+                                    <a href="/news/energy/chemicals" class="mvc-nav-dropdown-link" title="Chemicals News">
+                                        Chemicals News
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="mvc-nav-item" id="newsroom-trending-topics-links">
+                <div class="mvc-nav-topic-wrapper" data-id="/news/banks-financial-services">
+                    <a href="/news/banks-financial-services" class="mvc-nav-topic-link" title="Banks &amp; Financial Services News">
+                        Banks &amp; Financial Services News
+                    </a>
+                        <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Banks &amp; Financial Services News submenu">
+                            <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                            </svg>
+                        </button>
+                </div>
+
+                    <div class="mvc-nav-dropdown">
+                        <ul class="mvc-nav-dropdown-list">
+                                <li class="mvc-nav-dropdown-item" data-id="/news/banks-financial-services">
+                                    <a href="/news/banks-financial-services/banks" class="mvc-nav-dropdown-link" title="Banking News">
+                                        Banking News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/banks-financial-services">
+                                    <a href="/news/banks-financial-services/closed-end-investments" class="mvc-nav-dropdown-link" title="Closed-End Investments News">
+                                        Closed-End Investments News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/banks-financial-services">
+                                    <a href="/news/banks-financial-services/finance-credit-services" class="mvc-nav-dropdown-link" title="Finance and Credit Services News">
+                                        Finance and Credit Services News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/banks-financial-services">
+                                    <a href="/news/banks-financial-services/investment-banking-brokerage-services" class="mvc-nav-dropdown-link" title="Investment Banking and Brokerage Services News">
+                                        Investment Banking and Brokerage Services News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/banks-financial-services">
+                                    <a href="/news/banks-financial-services/insurance" class="mvc-nav-dropdown-link" title="Insurance News">
+                                        Insurance News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/banks-financial-services">
+                                    <a href="/news/banks-financial-services/reit" class="mvc-nav-dropdown-link" title="Real Estate &amp; REITs News">
+                                        Real Estate &amp; REITs News
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="mvc-nav-item" id="newsroom-trending-topics-links">
+                <div class="mvc-nav-topic-wrapper" data-id="/news/heathcare">
+                    <a href="/news/heathcare" class="mvc-nav-topic-link" title="Healthcare News">
+                        Healthcare News
+                    </a>
+                        <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Healthcare News submenu">
+                            <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                            </svg>
+                        </button>
+                </div>
+
+                    <div class="mvc-nav-dropdown">
+                        <ul class="mvc-nav-dropdown-list">
+                                <li class="mvc-nav-dropdown-item" data-id="/news/heathcare">
+                                    <a href="/news/heathcare/providers" class="mvc-nav-dropdown-link" title="Healthcare Providers News">
+                                        Healthcare Providers News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/heathcare">
+                                    <a href="/news/heathcare/medical-equipment" class="mvc-nav-dropdown-link" title="Medical Equipment News">
+                                        Medical Equipment News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/heathcare">
+                                    <a href="/news/heathcare/medical-supplies-services" class="mvc-nav-dropdown-link" title="Medical Supplies and Services News">
+                                        Medical Supplies and Services News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/heathcare">
+                                    <a href="/news/heathcare/biotechnology" class="mvc-nav-dropdown-link" title="Biotechnology News">
+                                        Biotechnology News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/heathcare">
+                                    <a href="/news/heathcare/pharmaceuticals" class="mvc-nav-dropdown-link" title="Pharmaceuticals News">
+                                        Pharmaceuticals News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/heathcare">
+                                    <a href="/news/heathcare/cannabis-producers" class="mvc-nav-dropdown-link" title="Cannabis Producers News">
+                                        Cannabis Producers News
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="mvc-nav-item" id="newsroom-trending-topics-links">
+                <div class="mvc-nav-topic-wrapper" data-id="/news/industrials-utilities">
+                    <a href="/news/industrials-utilities" class="mvc-nav-topic-link" title="Industrials and Utilities News">
+                        Industrials and Utilities News
+                    </a>
+                        <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Industrials and Utilities News submenu">
+                            <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                            </svg>
+                        </button>
+                </div>
+
+                    <div class="mvc-nav-dropdown">
+                        <ul class="mvc-nav-dropdown-list">
+                                <li class="mvc-nav-dropdown-item" data-id="/news/industrials-utilities">
+                                    <a href="/news/industrials-utilities/aerospace-defense" class="mvc-nav-dropdown-link" title="Aerospace and Defense News">
+                                        Aerospace and Defense News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/industrials-utilities">
+                                    <a href="/news/industrials-utilities/construction-materials" class="mvc-nav-dropdown-link" title="Construction and Materials News">
+                                        Construction and Materials News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/industrials-utilities">
+                                    <a href="/news/industrials-utilities/utilities" class="mvc-nav-dropdown-link" title="Utilities News">
+                                        Utilities News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/industrials-utilities">
+                                    <a href="/news/industrials-utilities/industrials" class="mvc-nav-dropdown-link" title="Industrials News">
+                                        Industrials News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/industrials-utilities">
+                                    <a href="/news/industrials-utilities/metals-mining" class="mvc-nav-dropdown-link" title="Metals &amp; Mining News">
+                                        Metals &amp; Mining News
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="mvc-nav-item" id="newsroom-trending-topics-links">
+                <div class="mvc-nav-topic-wrapper" data-id="/news/technology-telecom">
+                    <a href="/news/technology-telecom" class="mvc-nav-topic-link" title="Technology and Telecom News">
+                        Technology and Telecom News
+                    </a>
+                        <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Technology and Telecom News submenu">
+                            <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                            </svg>
+                        </button>
+                </div>
+
+                    <div class="mvc-nav-dropdown">
+                        <ul class="mvc-nav-dropdown-list">
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/software" class="mvc-nav-dropdown-link" title="Software News">
+                                        Software News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/it-services" class="mvc-nav-dropdown-link" title="IT Services News">
+                                        IT Services News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/semiconductors" class="mvc-nav-dropdown-link" title="Semiconductors News">
+                                        Semiconductors News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/electronic-components-equipment" class="mvc-nav-dropdown-link" title="Electronic Components &amp; Equipment News">
+                                        Electronic Components &amp; Equipment News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/computer-hardware" class="mvc-nav-dropdown-link" title="Computer Hardware News">
+                                        Computer Hardware News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/telecom-services" class="mvc-nav-dropdown-link" title="Telecom Equipment News">
+                                        Telecom Equipment News
+                                    </a>
+                                </li>
+                                <li class="mvc-nav-dropdown-item" data-id="/news/technology-telecom">
+                                    <a href="/news/technology-telecom/telecom-equipment" class="mvc-nav-dropdown-link" title="Telecom Services News">
+                                        Telecom Services News
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+            </li>
+        
+        <li class="mvc-nav-item mvc-nav-more" data-topic-id="more" style="display: none;">
+            <div class="mvc-nav-topic-wrapper">
+                <div class="mvc-nav-more-button">
+                    <span class="mvc-nav-more-text-desktop">More <span class="mvc-nav-more-count"></span></span>
+                    <span class="mvc-nav-more-text-mobile">Browse the Latest News <span class="mvc-nav-more-count"></span></span>
+                </div>
+                <button class="mvc-nav-chevron-button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Browse menu">
+                    <svg class="mvc-nav-chevron" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mvc-nav-dropdown mvc-nav-more-dropdown">
+                <ul class="mvc-nav-dropdown-list">
+                    
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="main-container container-overwrite p-0 d-flex" id="container-article" itemscope itemtype="http://schema.org/NewsArticle">
+
+    <div class="main-container-content ">
+        <meta itemprop="wordCount" content="0" />
+        <meta itemprop="inLanguage" content="en" />
+        <meta itemprop="description" name="description" content="Iceberg Quantum unveils a new fault-tolerant quantum architecture showing RSA-2048 could be broken with under 100,000 qubits, alongside a $6m seed round...." />
+        <meta itemprop="dateModified" content="2026-02-13T03:07:01Z" />
+        <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html" />
+
+        <div class="main-header-container ">
+
+
+
+
+
+
+    <div class="carousel-container" id="article-logo-carousel">
+    </div>
+<script type="text/javascript">
+
+    window.pnrApplicationSettings.PageContext = 'article-page';
+    window.articlesSecondaryLogos = null;
+        window.articlesSecondaryLogos = JSON.parse('[{\"Title\":\"logomark-black-2000px.jpg\",\"Caption\":null,\"altText\":\"logomark-black-2000px.jpg\",\"LogoUrl\":\"https://ml.globenewswire.com/Resource/Download/c5c53b16-be46-4fe0-9692-671e1711a280\",\"SourceAlias\":null,\"IsPrimaryLogo\":true,\"ShowDownloadLink\":false}]');
+
+
+    try {
+        window.pnrApplicationSettings.ArticleLogoUrl = 'https://ml.globenewswire.com/Resource/Download/c5c53b16-be46-4fe0-9692-671e1711a280?size=2';
+    } catch (ex) {
+        console.log(e);
+    }
+</script>
+
+
+            <h1 class="article-headline" itemprop="headline" >Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing</h1>
+
+
+
+
+<p class="article-published-source" style="min-height: 46px; min-width: 700px;">
+
+
+    <span class="justify-content-start">
+        <span class="article-published" itemprop="datePublished">
+            <time datetime="2026-02-13T03:07:01Z">February 12, 2026 22:07 ET</time>
+        </span>
+
+        <span class="article-source" style="min-width: 260px;" itemprop="sourceOrganization" itemscope itemtype="http://schema.org/Organization">
+            <span>&nbsp;</span>| Source:
+            <span>
+
+                <a href="/en/search/organization/ICEBERG%2520QUANTUM%2520PTY%2520LTD" itemprop="name">ICEBERG QUANTUM PTY LTD</a>
+            </span>
+                <meta itemprop="logo" url="https://ml.globenewswire.com/Resource/Download/c5c53b16-be46-4fe0-9692-671e1711a280?size=2" alt="Company Name Logo" />
+
+        </span>
+    </span>
+
+    <span id="pnr-global-follow-button" class="pnr-follow-button-width-height"></span>
+
+    <span itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Organization" style="display: none;">
+        <span itemprop="name">ICEBERG QUANTUM PTY LTD</span>
+    </span>
+
+    
+
+</p>
+
+<script type="text/javascript">
+    window.pnrApplicationSettings.articleSideBarSettings.orgDetails = {
+            location : '',
+            name : "ICEBERG QUANTUM PTY LTD",
+            website : '',
+            industryName: 'Technology',
+            boilerplate: '',
+            isCompanyProfileSectionVisible: 'False' === 'True' ? true : false,
+            ceo: '',
+            numberOfEmployees: '',
+            revenue: '',
+            netIncome: '',
+    }
+
+    window.pnrApplicationSettings.articleSideBarSettings.socialSettings = {
+        facebookHandle: '',
+        twitterHandle: '',
+        linkedInHandle: '',
+        youtubeHandle: '',
+        vimeoHandle: '',
+        tiktokHandle: '',
+        instagramHandle: '',
+        isSocialHandlersSectionVisible: 'False' === 'True' ? true : false,
+        isSocialTimeLineSectionStatus: {
+            twitterTimeLineSectionVisible : false,
+        },
+        isTwitterTimeLineEnabled:'False' === 'True' ? true : false,
+    }
+</script>
+
+        </div>
+        <hr />
+        <div class="main-scroll-container">
+            <div id="pnr-global-social-media-sidebar-section" style="display: block; position: absolute; height: 100%;"></div>
+            <div class="main-body-container article-body "  id="main-body-container" itemprop="articleBody">
+<p><em>Its architecture solves the ‘overhead problem,’ reducing the physical qubits required for breaking RSA-2048 from millions to under 100,000</em></p>  <p><em>Already working with the world’s leading quantum hardware companies, Iceberg closes $6m seed round led by LocalGlobe with Blackbird and DCVC.</em></p>  <p>SYDNEY, Feb.  12, 2026  (GLOBE NEWSWIRE) -- For years, the promise of quantum computing has been held back by the cost of fault tolerance. Qubits are fragile and noisy, and preventing errors from overwhelming a computation has required so much redundancy that truly useful machines have been pushed far into the future.</p>  <p>Today, the team at Iceberg Quantum says that assumption is wrong.</p>  <p>The quantum architecture company has unveiled Pinnacle, its first full fault-tolerant quantum computing architecture, alongside a $6m seed round led by LocalGlobe, with participation from Blackbird and DCVC.</p>  <p>Pinnacle is based on a new and far more efficient class of error-correcting codes, known as quantum LDPC (low-density parity-check) codes, and demonstrates how fault-tolerant architectures can be designed with an order-of-magnitude lower overhead.</p>  <p>As a concrete demonstration, Pinnacle shows how breaking RSA-2048 — long considered to require millions of physical qubits — could be achieved with fewer than one hundred thousand. Based on standard hardware assumptions and validated in the accompanying preprint using established numerical simulation methods, these results reset expectations around when quantum computers of cryptographic relevance can be built.</p>  <p>Iceberg Quantum’s approach is applicable across physical qubit modalities, and the company is already working with leading quantum hardware companies including PsiQuantum (photonics), Diraq (spin qubits), and IonQ (trapped ions), all of which have publicly projected timelines to build systems of this scale within the next three to five years.</p>  <p><em>“Iceberg’s advances in qLDPC-based architectures will bring forward utility-scale applications on our devices by years,” said Andre Saraiva, Head of Theory at Diraq. “This is a deeply challenging area, and Iceberg has assembled the rare expertise required to make real progress.”</em></p>  <p>The new funding will enable Iceberg Quantum to expand its team to accelerate research at the frontier of fault-tolerant quantum architectures, build out its architectural IP and software, and deepen design partnerships with leading quantum hardware companies. As part of this expansion, Iceberg Quantum is establishing its first overseas office in Berlin, and has also begun building its presence in the United States.</p>  <p><em>“Our ambition is to help accelerate the transition to, and ultimately power, the fault-tolerant era of quantum computing,” said Felix Thomsen, co-founder and CEO of Iceberg Quantum. “Our approach is to build the world’s best fault-tolerance research lab and partner closely with the leading quantum hardware companies. Pinnacle is an important step for us on that journey, and we’re excited to accelerate progress and grow the team, including in Berlin and the US.”</em></p>  <p>Iceberg Quantum was founded by Felix Thomsen, Larry Cohen, and Sam Smith, who met during their PhDs at the University of Sydney. The company is backed by Blackbird and LocalGlobe, with DCVC joining the $6m seed round led by LocalGlobe’s Mish Mashkautsan.</p>  <p><em>“The Iceberg team has made rapid technical progress, established new partnerships with leading quantum hardware companies, and demonstrated that they can concentrate the world-class talent required to deliver this crucial catalyst towards quantum utility,” said Mish Mashkautsan. “We’re excited to double down on our conviction in this exceptional team as they build out the ARM for quantum computing.”</em></p>  <p><em>“The path to FTQC needs exactly the type of innovations we’ve seen from the Iceberg team. DCVC is psyched to join the round and back them!”, said Prineha Narang at DCVC.</em></p>  <p><strong>About Iceberg Quantum:</strong><br />Iceberg Quantum is designing the next generation of fault-tolerant quantum architectures to accelerate the advent of useful quantum computing. With LDPC codes, we're reducing the hardware overhead required for fault tolerance by more than an order of magnitude, enabling quantum hardware companies to achieve practical fault tolerance faster, reduce the cost to build and operate useful quantum computers, and unlock more valuable applications by increasing computational power.</p>  <p>Photos accompanying this announcement are available at: </p>  <p><a href="https://www.globenewswire.com/Tracker?data=ISlLsA9i5C67tApbDXOL7uiL6_fMG55aDfTeOB6o4oWzTWKH7DiH2JNw8QexY90ipBjXLN0KRgaLpL6QrSO47guDEeCX18R0FyIgVW9_OgcnGE9CqpU3O3Mu14BPqlv69N3EinUfB7tRpyJa_saQGndle4J78pw4DAoOHauNp6GFITCp8FkILHdw5cLW000SXzuczwenyTlrqGhYAj62Un5P-hmfID0fvO_P77A19OWu9mC3BbjZ5tz2bBu8FcbTDg3GXuiJQMbyKsuC6CGUnA==" rel="nofollow" target="_blank" title="">https://www.globenewswire.com/NewsRoom/AttachmentNg/3323f5ff-0ef0-4b9e-a4e3-796750d4a3ce</a></p>  <p><a href="https://www.globenewswire.com/Tracker?data=ISlLsA9i5C67tApbDXOL7uiL6_fMG55aDfTeOB6o4oWzTWKH7DiH2JNw8QexY90ipJ3nyRSeVy87aPlNukWUy7I-XQUMQkQExJJHx2hE__onp7mRxeKV0JogrjPTY_SJ_aM4E0rcWaR1VvEpNocXOE--tW9JjzqmBJL36I35y6gMWyhKFZbE0hPl_StsRJmtPd-HBz46ZBx3OhEJFjHjojIqHrkNOS4uwBziQFGY0MBEH9S64BBEe_FsLHG3RcPBRIGClvLhVsWP6p-_OaUqnw==" rel="nofollow" target="_blank" title="">https://www.globenewswire.com/NewsRoom/AttachmentNg/67fcd668-43da-4772-990d-0735dbc6d908</a></p> <pre></pre> <br /><img alt="" src='https://ml.globenewswire.com/media/OGVhMzA2YzQtOWY2Yi00ZDMwLTg0NzAtOTU0ZmYzNjcxMWE2LTEzMjA4MTUtMjAyNi0wMi0xMy1lbg==/tiny/ICEBERG-QUANTUM-PTY-LTD.png' referrerpolicy='no-referrer-when-downgrade' />
+            </div>
+
+
+
+    <div id="article-resource-container" class="main-images-container">
+        <div class="row images-row " id="article_image-box">
+            <span class="col-md-6  col-xl-4 article-media-attachment" data-media='1440751'>
+                <a href="#"><img id="media-image-1" loading="lazy" src='https://ml.globenewswire.com/Resource/Download/3323f5ff-0ef0-4b9e-a4e3-796750d4a3ce?size=3' alt="Iceberg_Quantum_Founders" /><div class="zoom-out-map"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="M144-144v-192h72v69l117-117 51 51-117 117h69v72H144Zm480 0v-72h69L576-333l51-51 117 117v-69h72v192H624ZM333-576 216-693v69h-72v-192h192v72h-69l117 117-51 51Zm294 0-51-51 117-117h-69v-72h192v192h-72v-69L627-576Z"/></svg></div></a>
+                        <label id="media-image-title-1" class="article-image-title " title="Iceberg Quantum Founders">Iceberg Quantum Founders</label>
+
+                <label id="media-image-caption-1" class="article-image-caption " title="Iceberg Quantum founders (left to right): Sam Smith (CTO), Felix Thomsen (CEO), Larry Cohen (CSO)">Iceberg Quantum founders (left to right): Sam Smith (CTO), Felix Thomsen (CEO), Larry Cohen (CSO)</label>
+            </span>
+            <span class="col-md-6  col-xl-4 article-media-attachment" data-media='1440752'>
+                <a href="#"><img id="media-image-2" loading="lazy" src='https://ml.globenewswire.com/Resource/Download/67fcd668-43da-4772-990d-0735dbc6d908?size=3' alt="Iceberg_Quantum_Team" /><div class="zoom-out-map"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="M144-144v-192h72v69l117-117 51 51-117 117h69v72H144Zm480 0v-72h69L576-333l51-51 117 117v-69h72v192H624ZM333-576 216-693v69h-72v-192h192v72h-69l117 117-51 51Zm294 0-51-51 117-117h-69v-72h192v192h-72v-69L627-576Z"/></svg></div></a>
+                        <label id="media-image-title-2" class="article-image-title " title="Iceberg Quantum Team">Iceberg Quantum Team</label>
+
+                <label id="media-image-caption-2" class="article-image-caption " title="The Iceberg Quantum team.">The Iceberg Quantum team.</label>
+            </span>
+
+        </div>
+    </div>
+
+
+
+<script type="text/javascript">
+             pnrApplicationSettings.ArticleMediaAttachments = '[{\"Id\":1440751,\"Format\":\"JPEG\",\"Source\":\"ICEBERG QUANTUM PTY LTD\",\"Title\":\"Iceberg Quantum Founders\",\"Caption\":\"Iceberg Quantum founders (left to right): Sam Smith (CTO), Felix Thomsen (CEO), Larry Cohen (CSO)\",\"MediaUrl\":\"https://ml.globenewswire.com/Resource/Download/3323f5ff-0ef0-4b9e-a4e3-796750d4a3ce\",\"IsMediaLibraryVersion\":true,\"IsVideo\":false,\"FileGuid\":null},{\"Id\":1440752,\"Format\":\"JPEG\",\"Source\":\"ICEBERG QUANTUM PTY LTD\",\"Title\":\"Iceberg Quantum Team\",\"Caption\":\"The Iceberg Quantum team.\",\"MediaUrl\":\"https://ml.globenewswire.com/Resource/Download/67fcd668-43da-4772-990d-0735dbc6d908\",\"IsMediaLibraryVersion\":true,\"IsVideo\":false,\"FileGuid\":null}]';  
+
+
+</script>
+        <div class="main-tags-attachments-container">
+            <hr/>
+                <div class="tags-container">
+                    <h2 class="tags-title">Tags</h2>
+                            <span itemprop="keywords">
+                                <a class="article_tag" id="search-tag-1" href="/en/search/tag/quantum%2520computing" title="quantum computing">quantum computing</a>
+                            </span>
+                            <span itemprop="keywords">
+                                <a class="article_tag" id="search-tag-2" href="/en/search/tag/quantum%2520error%2520correction" title="quantum error correction">quantum error correction</a>
+                            </span>
+                            <span itemprop="keywords">
+                                <a class="article_tag" id="search-tag-3" href="/en/search/tag/rsa-2048" title="RSA-2048">RSA-2048</a>
+                            </span>
+                            <span itemprop="keywords">
+                                <a class="article_tag" id="search-tag-4" href="/en/search/tag/ldpc%2520codes" title="LDPC codes">LDPC codes</a>
+                            </span>
+                            <span itemprop="keywords">
+                                <a class="article_tag" id="search-tag-5" href="/en/search/tag/quantum%2520architecture" title="quantum architecture">quantum architecture</a>
+                            </span>
+                            <span itemprop="keywords">
+                                <a class="article_tag" id="search-tag-6" href="/en/search/tag/fault%2520tolerance" title="fault tolerance">fault tolerance</a>
+                            </span>
+
+                </div>
+
+
+        </div>
+
+    <div class="main-related-links-container">
+        <h3 class="related-links-title clear-both">Related Links</h3>
+        <ul class="clear-both">
+                        <li>
+                            <a id="related-link-1" href="https://arxiv.org/pdf/2602.11457" target="_blank" rel="noreferrer noopener" aria-label="https://arxiv.org/pdf/2602.11457 opens in a new tab">https://arxiv.org/pdf/2602.11457</a>
+                        </li>
+                        <li>
+                            <a id="related-link-2" href="https://www.iceberg-quantum.com/blog/pinnacle-and-series-seed" target="_blank" rel="noreferrer noopener" aria-label="https://www.iceberg-quantum.com/blog/pinnacle-and-series-seed opens in a new tab">https://www.iceberg-quantum.com/blog/pinnacle-and-series-seed</a>
+                        </li>
+
+        </ul>
+    </div>
+
+<!-- Contact -->
+
+
+        </div>
+        <span itemprop="provider" itemscope itemtype="http://schema.org/Organization" style="display:none">
+            <span itemprop="name">GlobeNewswire</span>
+        </span>
+        <meta itemprop="isFamilyFriendly" content="true" />
+        <meta itemprop="copyrightYear" content="2026" />
+    </div>
+        <div class="company-profile-content" id="article-side-bar" style="position: relative; width: 20%; padding: 50px 32px; min-width: 300px; "></div>
+</div>
+
+
+<script type="text/javascript">
+    window.setTimeout(() => {
+        try {
+            autoFitImages('.featuredNewsH', { debug: false });
+        } catch (error) {
+            console.error('Error in autoFitImages:', error);
+        }
+    }, 100); 
+</script>
+
+
+
+<div class="container-fluid">
+    <div id="pnr-global-card-explore-view" class="custom-container" style="min-height: 500px;"></div>
+</div>
+<div id="attachment-render-section"></div>
+<div id="large-table-viewer"></div>
+    <div id="quote-carousel-container"></div>
+
+        <input type="hidden" value="13-02-2026 03:07:55 UTC" data-format="DD-MM-YYYY HH:MM:SS" data-context="article" data-type="index" />
+        <input type="hidden" value="13-02-2026 03:07:55 UTC" data-format="DD-MM-YYYY HH:MM:SS" data-context="body" data-type="index" />
+    <input type="hidden" name="data-source" value="OS" />
+
+
+<script type="text/javascript">
+
+    window.pnrApplicationSettings.PageContext = 'article-page';
+
+    try {
+        window.pnrApplicationSettings.ArticleHeadline = 'Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing';
+    } catch (ex) {
+        console.log(ex);
+    }
+    window.pnrApplicationSettings.IsAuthenticated = false;
+    window.analyticsTrackingId = '8ea306c4-9f6b-4d30-8470-954ff36711a6';
+
+    window.cardExplore = {
+        id:"pnr-global-card-explore-view",
+        ExploreView:{
+            ApiUrl: "/api/article/explore/en/True",
+            IsHorizontalView : true
+        }
+    };
+
+
+
+    window.ZoomOutTitle = 'Expand';
+    window.combinedMediaPortal = {
+        followButtonElementId:"pnr-global-follow-button",
+        socialMediaSideBarElementId:"pnr-global-social-media-sidebar-section",
+        followFormModel: {
+            ApiUrl:'/api/subscribe/follow-organization',
+            ContextOrgId:120648,
+            OrgName:'ICEBERG QUANTUM PTY LTD'
+        },
+        socialShareModel: JSON.parse('{\"SocialItemData\":{\"Url\":\"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html\",\"Title\":\"Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing\",\"Body\":\"Its architecture solves the ‘overhead problem,’ reducing the physical qubits required for breaking RSA-2048 from millions to under 100,000  Already working with the world’s leading quantum hardware...\"},\"AdditionalItems\":[{\"Key\":\"printedcopy\",\"Label\":\"Print\",\"Url\":\"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html?print=1\",\"Track\":true},{\"Key\":\"downloadPdf\",\"Label\":\"Download PDF\",\"Url\":\"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html?pdf=1\",\"Track\":true},{\"Key\":\"rss\",\"Label\":\"Subscribe via RSS\",\"Url\":\"/rssfeed/organization/7goWW_y0w07E2h2C713Qjg==\",\"Track\":true},{\"Key\":\"atom\",\"Label\":\"Subscribe via ATOM\",\"Url\":\"/atomfeed/organization/7goWW_y0w07E2h2C713Qjg==\",\"Track\":true},{\"Key\":\"js-widget\",\"Label\":\"Javascript\",\"Url\":\"https://www.globenewswire.com/JSWidget/organization/Z8dhTJ4X1-Gi8PM4FtJ6Tw%3d%3d\",\"Track\":false}],\"BasicModel\":false,\"ShowPintrest\":false}')
+    }
+
+    window.pnrApplicationSettings.NavBarScrollHeight = 300;
+    window.pnrApplicationSettings.Version = 'dark';
+    window.pnrApplicationSettings.articleSideBarSettings.pressReleaseActions = JSON.parse('{\"SocialItemData\":{\"Url\":\"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html\",\"Title\":\"Iceberg Quantum unveils breakthrough in fault-tolerant quantum computing\",\"Body\":\"Its architecture solves the ‘overhead problem,’ reducing the physical qubits required for breaking RSA-2048 from millions to under 100,000  Already working with the world’s leading quantum hardware...\"},\"AdditionalItems\":[{\"Key\":\"printedcopy\",\"Label\":\"Print\",\"Url\":\"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html?print=1\",\"Track\":true},{\"Key\":\"downloadPdf\",\"Label\":\"Download PDF\",\"Url\":\"https://www.globenewswire.com/news-release/2026/02/13/3237814/0/en/Iceberg-Quantum-unveils-breakthrough-in-fault-tolerant-quantum-computing.html?pdf=1\",\"Track\":true},{\"Key\":\"rss\",\"Label\":\"Subscribe via RSS\",\"Url\":\"/rssfeed/organization/7goWW_y0w07E2h2C713Qjg==\",\"Track\":true},{\"Key\":\"atom\",\"Label\":\"Subscribe via ATOM\",\"Url\":\"/atomfeed/organization/7goWW_y0w07E2h2C713Qjg==\",\"Track\":true},{\"Key\":\"js-widget\",\"Label\":\"Javascript\",\"Url\":\"https://www.globenewswire.com/JSWidget/organization/Z8dhTJ4X1-Gi8PM4FtJ6Tw%3d%3d\",\"Track\":false}],\"BasicModel\":false,\"ShowPintrest\":false}');
+    window.pnrApplicationSettings.articleSideBarSettings.isEnabled = true;
+    window.pnrApplicationSettings.articleSideBarSettings.releaseSummary = 'Iceberg Quantum unveils a new fault-tolerant quantum architecture showing RSA-2048 could be broken with under 100,000 qubits, alongside a $6m seed round.';
+    window.pnrApplicationSettings.articleSideBarSettings.isPreviewOnlyMode = false;
+    window.pnrApplicationSettings.ArticleLanguage = "en";
+
+</script>
+
+        </div>
+        <!-- End Body -->
+        <!--Start footer -->
+        <div id="pnr-global-site-footer-section" class="home-page-footer" style="min-height: 300px"></div>
+        <!--End footer-->
+
+
+
+        <script>
+            var preloadedScript = document.createElement("script");
+            preloadedScript.src = "/bundles/react-scripts?v=tIKvvsZpN3-U9UHrwoXGYa1fNdrjyxZM2Z7JXlu0XKM1";
+            document.head.appendChild(preloadedScript);
+        </script>
+        <noscript>
+            <script src="/bundles/react-scripts?v=tIKvvsZpN3-U9UHrwoXGYa1fNdrjyxZM2Z7JXlu0XKM1"></script>
+
+        </noscript>
+    </div>
+    <div id="quick-reader-sign-container"></div>
+<noscript><img src="https://www.globenewswire.com/akam/13/pixel_7e923c76?a=dD00NDJjZmIzNmY5NDJjYWEyMGE4NDM1ODFhOWFlYzMxNjRjZDJlZjU3JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>

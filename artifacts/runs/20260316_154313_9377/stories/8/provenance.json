@@ -1,0 +1,5 @@
+{
+  "url": "https://arxiv.org/abs/2603.09901",
+  "title": "[PAPER] [2603.09901] Has quantum advantage been achieved?",
+  "why": "- Despite initial excitement after Google's 2019 quantum supremacy experiment, less than half of surveyed quantum computing experts now believe quantum advantage has been achieved, revealing skepticism in the field.\n- The main criticism of previous \"quantum advantage\" experiments centers on the fact that their results were soon simulated by classical computers, undermining claims of advantage.\n- Recent demonstrations of quantum advantage focus on random circuit sampling (RCS), a task considered classically hard, and involve programmable quantum devices executing specific input circuits.\n- Formal criteria for quantum advantage include programmability, a scaling (ideally exponential) time gap between quantum and classical solutions, and a task not solvable by any classical computer at the time.\n- Experimental milestones include Google's first quantum supremacy experiment with 53 superconducting qubits and similar follow-ups by other teams, progressively improving in size and fidelity."
+}

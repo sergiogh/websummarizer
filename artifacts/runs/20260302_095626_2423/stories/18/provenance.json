@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/oWeyy29qfchZQUgWh",
+  "title": "What is next in quantum advantage? | Quantum Frontiers",
+  "why": "- Quantum computers have demonstrated the ability to outperform classical computers and shown that quantum fault-tolerance is possible for at least a few logical qubits.\n- Devices with 100 well-functioning logical qubits, capable of running around 100,000 gates, represent a new regime that requires thousands of physical qubits—beyond current proof-of-principle experiments.\n- A key next milestone is achieving \"classically verifiable quantum advantage,\" where a classical verifier can be convinced beyond reasonable doubt that a computation was performed by a quantum computer.\n- Current resource-efficient quantum advantage experiments (like random circuit sampling) are not easily verifiable, while schemes that are verifiable (proofs of quantumness) require significantly more resources.\n- IQP (Instantaneous Quantum Polynomial) circuits are highlighted as a promising candidate because they are well understood, can be implemented fault-tolerantly, and their computations are more accessible for classical analysis."
+}

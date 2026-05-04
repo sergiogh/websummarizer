@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>
+Scott Aaronson&#8217;s View of my View About Quantum Computing | Combinatorics and more</title>
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="https://s2.wp.com/wp-content/themes/pub/twentyten/style.css?m=1659017451i&amp;ver=20190507" />
+<link rel="pingback" href="https://gilkalai.wordpress.com/xmlrpc.php">
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Combinatorics and more &raquo; Feed" href="https://gilkalai.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Combinatorics and more &raquo; Comments Feed" href="https://gilkalai.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Combinatorics and more &raquo; Scott Aaronson&#8217;s View of my View About Quantum&nbsp;Computing Comments Feed" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1' href='/_static/??-eJxtjEsKgDAMBS9kjbqwuBDPUtog9o9J8fpaEQSRBw8GhoEjC50iY2QIRWRf1i0SWOSstHsYQkr1TPFIsKNXjEbkRPyhVhM18J/0m8M3fFPVlzD3UnbTtWG0J2CTNNk=&cssminify=yes' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='/wp-content/plugins/gutenberg-core/v22.7.0/build/styles/block-library/style.min.css?m=1773253927i&cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://s0.wp.com/wp-content/plugins/gutenberg-core/v22.7.0/build/styles/block-library/paragraph/style.min.css */
+</style>
+
+<style id='classic-theme-styles-inline-css'>
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v22.7.0/build/styles/block-library/classic.min.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #0066cc;--wp--preset--color--medium-gray: #666;--wp--preset--color--light-gray: #f1f1f1;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-blue-color{color: var(--wp--preset--color--blue) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-blue-background-color{background-color: var(--wp--preset--color--blue) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-blue-border-color{border-color: var(--wp--preset--color--blue) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' href='/_static/??-eJx9jlmOAjEMRC+E2zTDsHwgjoKStAWBOIlip9HcftJCLAKJH0uuqlc2XjO4FJWiYg716KOgSzYkdxFcdP2m60E850BQaOyWOHjRRwJE/wJ1TmSGL0Vc4dlVqOmcjU4JpsEbCsQt9g275saAtbmQCLTJvjLoqYHyjTuTZuMu0KRbxc1ATinezcNIcUgFTdXERtW7DwylOLTVhwFHKradbuL0s7zv0zN73vXr1eZnvvzdLs7/kHh+KQ==&cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='verbum-gutenberg-css-css' href='https://widgets.wp.com/verbum-block-editor/block-editor.css?ver=1771405207' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-6-1' href='/_static/??-eJyFjsEOwjAMQ3+IECaxiR0Q37JVoRTaplpSVfv7hRsTEtxsy88ytgKOs1JW1AclEix1Rm0WrJbiHNm95OhEDvivK7pGglYcpy8gVSix+pAFF7JRb9KjtT7sL8gTg12ZNHDeGbjHKSxv9Jau3dCdzv3YX8bnBqh7UWU=&cssminify=yes' type='text/css' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-8-1' href='/_static/??-eJyNjcEKAjEMRH/Iml2UXS/ip0hNQ9s1TYppEf9eV7yIFy/DPBjewL06VGkkDUp3lXvMYrBQqx6vH4aiukboTAaW/I2CD+HxrlniFs028L/pnAXBFLNnxxrVvuDH1hKV12/aQ2S9eF4Hp3Ic53mchml3GJYnUTJJJQ==&cssminify=yes' type='text/css' media='all' />
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+//# sourceURL=jetpack_related-posts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="wpcom-actionbar-placeholder-js-extra">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"3214111","postID":"31412","siteURL":"https://gilkalai.wordpress.com","xhrURL":"https://gilkalai.wordpress.com/wp-admin/admin-ajax.php","nonce":"0430568c0c","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","shortlink":"https://wp.me/pdu8v-8aE","i18n":{"followedText":"New posts from this site will now appear in your \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","shortLinkCopied":"Shortlink copied to clipboard."}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="jetpack-mu-wpcom-settings-js-before">
+/* <![CDATA[ */
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s1.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/moon/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??/wp-content/mu-plugins/jetpack-plugin/moon/_inc/build/related-posts/related-posts.min.js,/wp-content/js/rlt-proxy.js?m=1755006225j'></script>
+<script type="text/javascript" id="rlt-proxy-js-after">
+/* <![CDATA[ */
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+/* ]]> */
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gilkalai.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" />
+<link rel='shortlink' href='https://wp.me/pdu8v-8aE' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fgilkalai.wordpress.com%2F2026%2F03%2F10%2Fscott-aaronsons-view-of-my-view-about-quantum-computing%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fgilkalai.wordpress.com%2F2026%2F03%2F10%2Fscott-aaronsons-view-of-my-view-about-quantum-computing%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Scott Aaronson&#8217;s View of my View About Quantum Computing" />
+<meta property="og:url" content="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" />
+<meta property="og:description" content="This post presents a very good interview of Scott Aaronson with Yuval Boger of QuEra, in which Scott gives a detailed and thoughtful account of his view of my position. Scott nicely characterizes t…" />
+<meta property="article:published_time" content="2026-03-10T18:17:49+00:00" />
+<meta property="article:modified_time" content="2026-03-11T12:36:19+00:00" />
+<meta property="og:site_name" content="Combinatorics and more" />
+<meta property="og:image" content="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=640" />
+<meta property="og:image:width" content="353" />
+<meta property="og:image:height" content="235" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:text:title" content="Scott Aaronson&#8217;s View of my View About Quantum&nbsp;Computing" />
+<meta name="twitter:image" content="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico?m=1713425267i" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico?m=1713425267i" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon" href="https://s2.wp.com/i/webclip.png?m=1713868326i" />
+<link rel='openid.server' href='https://gilkalai.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://gilkalai.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://gilkalai.wordpress.com/osd.xml" title="Combinatorics and more" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="description" content="This post presents a very good interview of Scott Aaronson with Yuval Boger of QuEra, in which Scott gives a detailed and thoughtful account of his view of my position. Scott nicely characterizes the position I put forward early on as follows: &quot;There has to be some principle of correlated noise that comes on top&hellip;" />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-5' href='/_static/??-eJydzNEKwjAMBdAfsoaCWHwQP0VmFka3NglLSvHvVXB7Ft/uvVwOdA0o7MQOtQUtbcpsMJPrgMu3QxVhuGdGeBTBxcB6VlqPaHaA34UqYytkgMMqzajsp234F+x5nMgNXDSo2DuZPwt9uFu9xpTiOabLKc4vztJZ2w==&cssminify=yes' type='text/css' media='all' />
+
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-31412 single-format-standard wp-theme-pubtwentyten customizer-styles-applied single-author jetpack-reblog-enabled">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="https://gilkalai.wordpress.com/" title="Combinatorics and more" rel="home">Combinatorics and more</a>
+					</span>
+				</div>
+				<div id="site-description">Gil Kalai&#8217;s blog</div>
+
+									<a class="home-link" href="https://gilkalai.wordpress.com/" title="Combinatorics and more" rel="home">
+						<img src="https://gilkalai.wordpress.com/wp-content/uploads/2015/11/cropped-gil-jirka.jpg" width="940" height="198" alt="" />
+					</a>
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+								<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+				<div class="menu"><ul>
+<li ><a href="https://gilkalai.wordpress.com/">Home</a></li><li class="page_item page-item-3983"><a href="https://gilkalai.wordpress.com/gina-says/">&#8216;Gina Says&#8217;</a></li>
+<li class="page_item page-item-2 page_item_has_children"><a href="https://gilkalai.wordpress.com/about/">About</a>
+<ul class='children'>
+	<li class="page_item page-item-11403"><a href="https://gilkalai.wordpress.com/about/pages/">Pages</a></li>
+</ul>
+</li>
+<li class="page_item page-item-27741 page_item_has_children"><a href="https://gilkalai.wordpress.com/ai/">AI</a>
+<ul class='children'>
+	<li class="page_item page-item-27710"><a href="https://gilkalai.wordpress.com/ai/chatgpt-mobius-randomness/">ChatGPT: Möbius Randomness</a></li>
+	<li class="page_item page-item-22573"><a href="https://gilkalai.wordpress.com/ai/conversation-with-the-ai-program-gpt3/">Conversation with the AI program&nbsp;GPT3</a></li>
+	<li class="page_item page-item-27876"><a href="https://gilkalai.wordpress.com/ai/will-ai-take-over-mathematics/">Will AI take over&nbsp;mathematics?</a></li>
+</ul>
+</li>
+<li class="page_item page-item-19059 page_item_has_children"><a href="https://gilkalai.wordpress.com/classes/">Classes</a>
+<ul class='children'>
+	<li class="page_item page-item-10812"><a href="https://gilkalai.wordpress.com/classes/analysis-of-boolean-functions/">Analysis of Boolean Functions (2013,&nbsp;Berkeley)</a></li>
+	<li class="page_item page-item-19526"><a href="https://gilkalai.wordpress.com/classes/game-theory-2020/">Game Theory, spring&nbsp;2026</a></li>
+</ul>
+</li>
+<li class="page_item page-item-21208"><a href="https://gilkalai.wordpress.com/sensitivity-stability-and-computation/">ERC</a></li>
+<li class="page_item page-item-25734 page_item_has_children"><a href="https://gilkalai.wordpress.com/greatest-hits-2/">Greatest Hits</a>
+<ul class='children'>
+	<li class="page_item page-item-12661"><a href="https://gilkalai.wordpress.com/greatest-hits-2/greatest-hits/">Greatest Hits  2008-2015</a></li>
+	<li class="page_item page-item-25737"><a href="https://gilkalai.wordpress.com/greatest-hits-2/greatest-hits-2016-2019/">Greatest Hits 2016-2018</a></li>
+	<li class="page_item page-item-25743"><a href="https://gilkalai.wordpress.com/greatest-hits-2/greatest-hits-2019-2022/">Greatest Hits 2019-2022</a></li>
+</ul>
+</li>
+<li class="page_item page-item-27744 page_item_has_children"><a href="https://gilkalai.wordpress.com/quantum/">Quantum</a>
+<ul class='children'>
+	<li class="page_item page-item-28667"><a href="https://gilkalai.wordpress.com/quantum/roadmap-for-the-debate-on-quantum-computing/">Roadmap for the Debate on Quantum&nbsp;Computing</a></li>
+</ul>
+</li>
+<li class="page_item page-item-5175"><a href="https://gilkalai.wordpress.com/%d7%99%d7%95%d7%a4%d7%99%d7%94-%d7%a9%d7%9c-%d7%94%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%a7%d7%94/">יופיה של המתמטיקה</a></li>
+</ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/" rel="prev"><span class="meta-nav">&larr;</span> The Fully Depolarizing Noise Conjecture for Physical Cat States is Twenty Years&nbsp;Old!</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-31412" class="post-31412 post type-post status-publish format-standard hentry category-controversies-and-debates category-quantum tag-noise tag-quantum-computers tag-scott-aaronson">
+											<h2 class="entry-title"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="bookmark">Scott Aaronson&#8217;s View of my View About Quantum&nbsp;Computing</a></h2>					
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" title="9:17 pm" rel="bookmark"><span class="entry-date">March 10, 2026</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="https://gilkalai.wordpress.com/author/gilkalai/" title="View all posts by Gil Kalai">Gil Kalai</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>This post presents a <a href="https://podcast.yboger.com/2026/03/02/scott-aaronson-professor-of-computer-science-ut-austin/">very good interview of Scott Aaronson with Yuval Boger</a> of QuEra, in which Scott gives a detailed and thoughtful account of his view of my position. Scott nicely characterizes the position I put forward early on as follows:</p>
+<blockquote>
+<p>&#8220;There has to be some principle of correlated noise that comes on top of quantum mechanics and somehow screens off quantum computation&#8221;</p>
+</blockquote>
+<p>Indeed, my <strong><a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/">previous post</a></strong> described, with the benefit of time perspective, conjectures I made about correlated noise twenty years ago. If correct, they would pose major obstacles to quantum computers. The fact that these conjectures remain undecided after twenty years may give us some indication of the time scale required both for progress in building quantum computers and for understanding whether quantum computation is possible at all.</p>
+<p>Today, in the first part of the post I quote Scott&#8217;s view of my position, and in the second part I offer my responses. </p>
+<p>Let me mention two points I made that are relevant in broader scientific contexts. </p>
+<ul>
+<li>In my view, carefully checking experimental claims—especially major ones—is an important part of scientific work. </li>
+<li>As a general rule, raw data for such experiments should be publicly available.</li>
+</ul>
+<p>While I do not always agree with Scott on the technical level, I find Scott&#8217;s answer perfectly reasonable. Over the decades—and especially in the past seven years—some of Scott’s references to my position were hostile, mocking or offensive, so I am glad that he chose a different path in this interview.</p>
+<p><a href="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png"><img data-attachment-id="31402" data-permalink="https://gilkalai.wordpress.com/?attachment_id=31402" data-orig-file="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ABK" data-image-description="" data-image-caption="" data-medium-file="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=300" data-large-file="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=640" class="alignnone  wp-image-31402" src="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=640" alt="" width="353" height="235" srcset="https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=353 353w, https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=706 706w, https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=150 150w, https://gilkalai.wordpress.com/wp-content/uploads/2026/03/abk.png?w=300 300w" sizes="(max-width: 353px) 100vw, 353px" /></a></p>
+<p>A fictitious scene generated by AI of Yuval, Scott, and me having a friendly discussion about quantum computing. <em>In reality, I have not yet met Yuval, and I have not met Scott for many years. (Scott and Yuval approved the use of the picture.)</em></p>
+<h2>Scott Aaronson&#8217;s View of my View</h2>
+<p><strong>Yuval:</strong> I’ve heard you refer many times in your talks to an argument with Gil Kalai about whether large-scale quantum computing is even possible. Do you think he still has a path to being vindicated, or is it over?</p>
+<p><strong>Scott:</strong> I feel like his path has been getting narrower and narrower. Gil Kalai is a brilliant mathematician and one of the leading skeptics of quantum computing. What he was postulating was that he believes quantum mechanics—quantum mechanics is fine—but there has to be some principle of correlated noise that comes on top of quantum mechanics and somehow screens off quantum computation.</p>
+<p>I’ve never entirely understood why he’s so certain of that. Maybe it’s more accurate to say he starts with quantum computation being impossible as his axiom, then works backwards to find what kinds of correlated noise would kill the schemes for quantum error correction and therefore vindicate his axiom.</p>
+<p>He’s come up with various models. I never found them physically plausible, but at least he was sticking his neck out, which is more than a lot of quantum computing skeptics were doing. He was proposing models and making predictions. His prediction was that at the scale of 50 to 100 qubits and hundreds or thousands of gates, you’d see correlations in the errors. If you apply a thousand gates, each 99.9% accurate, the total accuracy wouldn’t just be 0.999 to the thousandth power—it would be much worse because all the different errors would interact with each other.</p>
+<p>Now those experiments have been done—famously by Google, Quantinuum, USTC, and I believe QuEra has done relevant demos too. And again and again, this is not what we’ve seen. The total accuracy does go down exponentially with the number of gates, but it merely goes down exponentially—exactly the way the theory of quantum fault tolerance presupposed 30 years ago. If this is all that’s going on—simple uncorrelated noise—then quantum error correction is going to work. It’s merely a staggeringly hard engineering problem to build this at the scale where it works.</p>
+<p>Over the last five years, Gil Kalai has been driven in a really weird direction where he’s basically saying these experiments have to be wrong. He keeps writing to the Google people requesting more of their raw data—he CCs me on the emails—then does his own analyses, posts about it on the archive. He keeps saying their 2019 experiment must have been fallacious. But in the meantime, there’s been a dozen other experiments by other companies all getting the same conclusion. He’s fighting a losing battle at this point.</p>
+<p>The fact that someone of his capability tried so hard to prove quantum computing impossible and failed makes me more confident. If there is a fundamental roadblock, it has to be something totally new and shocking, something we haven’t foreseen and Gil hasn’t foreseen either—some change to the laws of physics that somehow wouldn’t have reared its head with thousands of gates but will do so at millions of gates.</p>
+<p>The scientist in me hopes we’ll make that discovery. I hope quantum computing will be impossible for some reason that revolutionizes physics—how exciting would that be? But that’s not my prediction. My prediction is that the more boring, conservative thing will happen: quantum computing will merely be possible, just like the theory said.</p>
+<h2>Some responses</h2>
+<h3>Motivation</h3>
+<blockquote>
+<p>Maybe it’s more accurate to say he starts with quantum computation being impossible as his axiom, then works backwards to find what kinds of correlated noise would kill the schemes for quantum error correction and therefore vindicate his axiom.</p>
+</blockquote>
+<p><strong>Yes,</strong> this characterization of my work on correlated errors is essentially accurate, and it is often how I describe it myself. (See section &#8220;Motivation&#8221; of my <a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/">previous post</a>.)</p>
+<p>My later works on quantum supremacy for NISQ computers analyzed the computational complexity and noise sensitivity of NISQ devices based on standard noise models.  <em>Both</em> directions lead to predictions at the scale of hundreds or thousands of gates.</p>
+<h3>Correlated errors</h3>
+<blockquote>
+<p>His prediction was that at the scale of 50 to 100 qubits and hundreds or thousands of gates, you’d see correlations in the errors.</p>
+</blockquote>
+<p><strong>Yes.</strong> For the precise predictions look at the <a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/">previous post</a>.</p>
+<blockquote>
+<p> If you apply a thousand gates, each 99.9% accurate, the total accuracy wouldn’t just be 0.999 to the thousandth power—it would be much worse because all the different errors would interact with each other.</p>
+</blockquote>
+<p><strong>No,</strong> this <em>was not</em> part of my predictions.</p>
+<blockquote>
+<p>And again and again, this is not what we’ve seen. The total accuracy does go down exponentially with the number of gates, but it merely goes down exponentially—exactly the way the theory of quantum fault tolerance presupposed 30 years ago.</p>
+</blockquote>
+<p>As I explained in item 8 of my <a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/">previous post</a>, this behavior <strong><em>does not</em></strong> contradict my conjectures regarding correlated errors. (I agree that such a behavior,<strong><em> if confirmed</em></strong>, is overall encouraging.)</p>
+<h3>Scrutinizing the Google 2019 experiment and other experiments</h3>
+<blockquote>
+<p>Over the last five years, Gil Kalai has been driven in a really weird direction where he’s basically saying these experiments have to be wrong. He keeps writing to the Google people requesting more of their raw data—he CCs me on the emails—then does his own analyses, posts about it on the archive.</p>
+</blockquote>
+<p>Since I regard this issue as important in broader scientific contexts let me highlight my response.</p>
+<p><strong>In my view</strong>, <strong>carefully checking experimental claims—especially major ones—is an important part of scientific work. </strong></p>
+<p><strong>I also think that, as a general rule,</strong> <strong>raw data for such experiments should be publicly available.</strong></p>
+<p>(Scott was CC-ed to the correspondence because Scott initiated it; we would love to have a similar discussion with the relevant Google team about the 2024 distance-3,-5,-7 surface code paper and if Scott can make the connection this would be helpful.)</p>
+<blockquote>
+<p>He keeps saying their 2019 experiment must have been fallacious.</p>
+</blockquote>
+<p>Our findings indicate that the experiment may indeed<strong><em> have been flawed.</em></strong></p>
+<p><a href="https://gilkalai.wordpress.com/2026/02/03/updates-and-plans-v-from-boise-to-tel-aviv-ceasefire-my-70th-birthday-nostalgia-problems-outrageous-conjectures-quantum-and-ai/">As I wrote elsewhere</a> &#8220;I believe more can be done to clarify and explain the findings of our papers.&#8221; So far, the concerns raised in our papers were directed mainly to the Google team itself (and to interested specialists), and non-specialists may have found them difficult to follow. My 2024 <a href="https://gilkalai.wordpress.com/2024/12/09/the-case-against-googles-claims-of-quantum-supremacy-a-very-short-introduction/">post provides a short introduction</a> of our work. </p>
+<blockquote>
+<p>But in the meantime, there’s been a dozen other experiments by other companies all getting the same conclusion. He’s fighting a losing battle at this point.</p>
+</blockquote>
+<p>We examined the Google 2019 experiment carefully and looked less carefully at several other experiments. (I would personally be interested to extend our statistical study to the Google 2024 surface code paper.) If people find our efforts valuable, they may go on to scrutinize additional experiments. We would be happy to share our experience and computer programs.</p>
+<p>For comparison, there have also been many experiments claiming the observation of <a href="https://gilkalai.wordpress.com/2025/02/21/majorana-zero-modes-and-topological-qubits/">Majorana zero modes</a> (MZM), yet it remains an open question whether they have actually been demonstrated. (There are reasons to think that MZM were not conclusively demonstrated and to doubt the methodology of some of the experimental efforts. ) </p>
+<h3>Conclusion</h3>
+<blockquote>
+<p>The fact that someone of his capability tried so hard to prove quantum computing impossible and failed makes me more confident.</p>
+</blockquote>
+<p>This is perfectly OK! My goal is to advance understanding—even if the conclusions eventually go against my own views. </p>
+<blockquote>
+<p>If there is a fundamental roadblock, it has to be something totally new and shocking, something we haven’t foreseen and Gil hasn’t foreseen either—some change to the laws of physics that somehow wouldn’t have reared its head with thousands of gates but will do so at millions of gates.</p>
+</blockquote>
+<p>Contrary to what Scott says, my conjectures and explicit predictions would already manifest themselves at the scales of hundreds of gates and of thousands of gates (perhaps even tens of gates), rather than only at the scale of millions.</p>
+<h3>__________</h3>
+<h3><em>So what’s wrong with a little bit of hype?</em></h3>
+<p>There are various other interesting issues raised in Scott&#8217;s answer about my argument and in the entire interview. An interesting question raised by Yuval Boger in the interview was about hype in commercialization:</p>
+<blockquote>
+<p><em><strong>Yuval:</strong> It takes a lot of money to build a quantum computer and even more to develop one. This money comes from investors, and investors need to believe in a vision and a future. So what’s wrong with a little bit of hype to get the money you need to execute on the plan?</em></p>
+</blockquote>
+<p>Yuval Boger graduated from the Hebrew University of Jerusalem. He is now the chief commercial officer for <a href="https://www.quera.com/">QuEra Computing.</a></p>
+
+
+<p class="wp-block-paragraph"></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-facebook-31412"
+				class="share-facebook sd-button share-icon"
+				href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-31412"
+				>
+				<span id="sharing-facebook-31412" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-reddit-31412"
+				class="share-reddit sd-button share-icon"
+				href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?share=reddit"
+				target="_blank"
+				aria-labelledby="sharing-reddit-31412"
+				>
+				<span id="sharing-reddit-31412" hidden>Share on Reddit (Opens in new window)</span>
+				<span>Reddit</span>
+			</a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-twitter-31412"
+				class="share-twitter sd-button share-icon"
+				href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?share=twitter"
+				target="_blank"
+				aria-labelledby="sharing-twitter-31412"
+				>
+				<span id="sharing-twitter-31412" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3214111-31412-69b8166b11696' data-src='//widgets.wp.com/likes/index.html?ver=20260316#blog_id=3214111&amp;post_id=31412&amp;origin=gilkalai.wordpress.com&amp;obj_id=3214111-31412-69b8166b11696' data-name='like-post-frame-3214111-31412-69b8166b11696' data-title='Like or Reblog'><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class='loading'>Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>											</div><!-- .entry-content -->
+
+		
+						<div class="entry-utility">
+							This entry was posted in <a href="https://gilkalai.wordpress.com/category/controversies-and-debates/" rel="category tag">Controversies and debates</a>, <a href="https://gilkalai.wordpress.com/category/quantum/" rel="category tag">Quantum</a> and tagged <a href="https://gilkalai.wordpress.com/tag/noise/" rel="tag">Noise</a>, <a href="https://gilkalai.wordpress.com/tag/quantum-computers/" rel="tag">Quantum computers</a>, <a href="https://gilkalai.wordpress.com/tag/scott-aaronson/" rel="tag">Scott Aaronson</a>. Bookmark the <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" title="Permalink to Scott Aaronson&#8217;s View of my View About Quantum&nbsp;Computing" rel="bookmark">permalink</a>.													</div><!-- .entry-utility -->
+					</div><!-- #post-31412 -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/" rel="prev"><span class="meta-nav">&larr;</span> The Fully Depolarizing Noise Conjecture for Physical Cat States is Twenty Years&nbsp;Old!</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+			<h3 id="comments-title">
+			6 Responses to <em>Scott Aaronson&#8217;s View of my View About Quantum&nbsp;Computing</em>			</h3>
+
+
+			<ol class="commentlist">
+						<li class="comment byuser comment-author-jamesmessig even thread-even depth-1" id="li-comment-99945">
+		<div id="comment-99945">
+			<div class="comment-author vcard">
+				<img referrerpolicy="no-referrer" alt='jamesmessig&#039;s avatar' src='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=40&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=40&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=60&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=80&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=120&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=160&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-40' height='40' width='40' decoding='async' />				<cite class="fn"><a href="http://jimmyjamesmessig.wordpress.com" class="url" rel="ugc external nofollow">jamesmessig</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99945">
+				March 10, 2026 at 10:21 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p class="wp-block-paragraph">I had a simple question for you Gil. In light of the views of <a href="https://podcast.yboger.com/2026/03/02/scott-aaronson-professor-of-computer-science-ut-austin/" rel="nofollow ugc">Scott Aaronson with Yuval Boger</a>, do you still view yourself as a quantum computing skeptic and if so do you foresee possibilities that there might exist other reasons beyond the fault tolerance issues as to why quantum computers might never attain true quantum advantage?</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?replytocom=99945#respond" data-commentid="99945" data-postid="31412" data-belowelement="comment-99945" data-respondelement="respond" data-replyto="Reply to jamesmessig" aria-label="Reply to jamesmessig">Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+				<ul class="children">
+		<li class="comment byuser comment-author-gilkalai bypostauthor odd alt depth-2" id="li-comment-99947">
+		<div id="comment-99947">
+			<div class="comment-author vcard">
+				<img referrerpolicy="no-referrer" alt='Gil Kalai&#039;s avatar' src='https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=40&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=40&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=60&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=80&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=120&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=160&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-40' height='40' width='40' decoding='async' />				<cite class="fn"><a href="http://www.ma.huji.ac.il/~kalai/" class="url" rel="ugc external nofollow">Gil Kalai</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99947">
+				March 11, 2026 at 1:46 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p class="wp-block-paragraph">James, yes, I still view myself as a quantum computing skeptic. There could be various reasons as to why quantum computers never attain true quantum advantage. My own work is roughly divided into two main direction. One direction is the conjectures about correlated noise and the other direction initiated with a paper with Guy Kindler is relating quantum sampling to Fourier-Walsh expansion, noise-sensitivity, and computational complexity (Each direction represents 6-7 years of research.)   </p>
+<p>Of course, there are various other reasons that were offered for why quantum computers might never attain true quantum advantage. It is fair to say that this question lies in the crossroad of many areas of physics, as well as computer science and mathematics. I tried to cover various skeptical attitudes in some earlier posts, and I hope to elaborate on some of them again. </p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?replytocom=99947#respond" data-commentid="99947" data-postid="31412" data-belowelement="comment-99947" data-respondelement="respond" data-replyto="Reply to Gil Kalai" aria-label="Reply to Gil Kalai">Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+				<ul class="children">
+		<li class="comment byuser comment-author-jamesmessig even depth-3" id="li-comment-99949">
+		<div id="comment-99949">
+			<div class="comment-author vcard">
+				<img referrerpolicy="no-referrer" alt='jamesmessig&#039;s avatar' src='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=40&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=40&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=60&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=80&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=120&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=160&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-40' height='40' width='40' loading='lazy' decoding='async' />				<cite class="fn"><a href="http://jimmyjamesmessig.wordpress.com" class="url" rel="ugc external nofollow">jamesmessig</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99949">
+				March 11, 2026 at 4:09 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p class="wp-block-paragraph">Another interesting take on the holographic information theory regarding quantum computing limitations includes the spatial-temporal area of a manifold of Planck Length by Planck Length by Planck Time. Since qubits seem to decohere too quickly to be useful and occupy a small volume, perhaps the holographic principle greatly limits the amount of information that can be processed in any volume.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-jamesmessig odd alt thread-odd thread-alt depth-1" id="li-comment-99948">
+		<div id="comment-99948">
+			<div class="comment-author vcard">
+				<img referrerpolicy="no-referrer" alt='jamesmessig&#039;s avatar' src='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=40&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=40&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=60&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=80&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=120&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=160&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-40' height='40' width='40' loading='lazy' decoding='async' />				<cite class="fn"><a href="http://jimmyjamesmessig.wordpress.com" class="url" rel="ugc external nofollow">jamesmessig</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99948">
+				March 11, 2026 at 3:57 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p class="wp-block-paragraph">Perhaps another reason why quantum computers would be highly limited is borrowed from holographic information theory where the volume inside a closed 2-D manifold is limited in information for which the maximum entropy is equal to the manifold area in square Planck area units divided by 4. I do not know much about holographic information theory but it is an interesting consideration.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?replytocom=99948#respond" data-commentid="99948" data-postid="31412" data-belowelement="comment-99948" data-respondelement="respond" data-replyto="Reply to jamesmessig" aria-label="Reply to jamesmessig">Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-99951">
+		<div id="comment-99951">
+			<div class="comment-author vcard">
+				<img referrerpolicy="no-referrer" alt='Hien Nguyen&#039;s avatar' src='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=40&#038;d=identicon&#038;r=PG' srcset='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=40&#038;d=identicon&#038;r=PG 1x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=60&#038;d=identicon&#038;r=PG 1.5x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=80&#038;d=identicon&#038;r=PG 2x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=120&#038;d=identicon&#038;r=PG 3x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=160&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-40' height='40' width='40' loading='lazy' decoding='async' />				<cite class="fn">Hien Nguyen</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99951">
+				March 13, 2026 at 4:50 am</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p class="wp-block-paragraph">A fault-tolerant silicon Universal Quantum Computer, error-free at room temperature, is achievable! Build your own universe. It’s possible!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?replytocom=99951#respond" data-commentid="99951" data-postid="31412" data-belowelement="comment-99951" data-respondelement="respond" data-replyto="Reply to Hien Nguyen" aria-label="Reply to Hien Nguyen">Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-99952">
+		<div id="comment-99952">
+			<div class="comment-author vcard">
+				<img referrerpolicy="no-referrer" alt='Hien Nguyen&#039;s avatar' src='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=40&#038;d=identicon&#038;r=PG' srcset='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=40&#038;d=identicon&#038;r=PG 1x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=60&#038;d=identicon&#038;r=PG 1.5x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=80&#038;d=identicon&#038;r=PG 2x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=120&#038;d=identicon&#038;r=PG 3x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=160&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-40' height='40' width='40' loading='lazy' decoding='async' />				<cite class="fn">Hien Nguyen</cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+
+				
+				
+			<div class="comment-meta commentmetadata"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99952">
+				March 13, 2026 at 4:51 am</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p class="wp-block-paragraph">It were the case that the natural laws had no longer any secret for us!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/?replytocom=99952#respond" data-commentid="99952" data-postid="31412" data-belowelement="comment-99952" data-respondelement="respond" data-replyto="Reply to Hien Nguyen" aria-label="Reply to Hien Nguyen">Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+				</li><!-- #comment-## -->
+			</ol>
+
+
+	
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://gilkalai.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+
+
+<div class="comment-form__verbum transparent"></div><div class="verbum-form-meta"><input type='hidden' name='comment_post_ID' value='31412' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+			<input type="hidden" name="highlander_comment_nonce" id="highlander_comment_nonce" value="872d6286f4" />
+			<input type="hidden" name="verbum_show_subscription_modal" value="" /></div><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9a23e2ab70" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="56"/><script type="text/javascript">
+/* <![CDATA[ */
+document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+/* ]]> */
+</script>
+</p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+	
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+						<ul class="xoxo">
+
+<li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">Recent Comments</h3>				<table class="recentcommentsavatar" cellspacing="0" cellpadding="0" border="0">
+					<tr><td title="Gil Kalai" class="recentcommentsavatartop" style="height:48px; width:48px;"><a href="http://www.ma.huji.ac.il/~kalai/" rel="nofollow"><img referrerpolicy="no-referrer" alt='Gil Kalai&#039;s avatar' src='https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=48&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=48&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=72&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=96&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=144&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstexttop" style=""><a href="http://www.ma.huji.ac.il/~kalai/" rel="nofollow">Gil Kalai</a> on <a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/#comment-99953">The Fully Depolarizing Noise C&hellip;</a></td></tr><tr><td title="Hien Nguyen" class="recentcommentsavatarend" style="height:48px; width:48px;"><img referrerpolicy="no-referrer" alt='Hien Nguyen&#039;s avatar' src='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=48&#038;d=identicon&#038;r=PG' srcset='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=48&#038;d=identicon&#038;r=PG 1x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=72&#038;d=identicon&#038;r=PG 1.5x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=96&#038;d=identicon&#038;r=PG 2x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=144&#038;d=identicon&#038;r=PG 3x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></td><td class="recentcommentstextend" style="">Hien Nguyen on <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99952">Scott Aaronson&#8217;s View of&hellip;</a></td></tr><tr><td title="Hien Nguyen" class="recentcommentsavatarend" style="height:48px; width:48px;"><img referrerpolicy="no-referrer" alt='Hien Nguyen&#039;s avatar' src='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=48&#038;d=identicon&#038;r=PG' srcset='https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=48&#038;d=identicon&#038;r=PG 1x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=72&#038;d=identicon&#038;r=PG 1.5x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=96&#038;d=identicon&#038;r=PG 2x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=144&#038;d=identicon&#038;r=PG 3x, https://1.gravatar.com/avatar/79b33af0f8ae8e10819209ba592b7ed94d6e1a57078770c51e2781ab8adcf3ed?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></td><td class="recentcommentstextend" style="">Hien Nguyen on <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99951">Scott Aaronson&#8217;s View of&hellip;</a></td></tr><tr><td title="Orr Shalit" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://noncommutativeanalysis.wordpress.com" rel="nofollow"><img referrerpolicy="no-referrer" alt='Orr Shalit&#039;s avatar' src='https://1.gravatar.com/avatar/1d1c8e3f4a1e7351b85a0f8345db14f875b7677809ab308bff50b7596ef4090d?s=48&#038;d=identicon&#038;r=PG' srcset='https://1.gravatar.com/avatar/1d1c8e3f4a1e7351b85a0f8345db14f875b7677809ab308bff50b7596ef4090d?s=48&#038;d=identicon&#038;r=PG 1x, https://1.gravatar.com/avatar/1d1c8e3f4a1e7351b85a0f8345db14f875b7677809ab308bff50b7596ef4090d?s=72&#038;d=identicon&#038;r=PG 1.5x, https://1.gravatar.com/avatar/1d1c8e3f4a1e7351b85a0f8345db14f875b7677809ab308bff50b7596ef4090d?s=96&#038;d=identicon&#038;r=PG 2x, https://1.gravatar.com/avatar/1d1c8e3f4a1e7351b85a0f8345db14f875b7677809ab308bff50b7596ef4090d?s=144&#038;d=identicon&#038;r=PG 3x, https://1.gravatar.com/avatar/1d1c8e3f4a1e7351b85a0f8345db14f875b7677809ab308bff50b7596ef4090d?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstextend" style=""><a href="http://noncommutativeanalysis.wordpress.com" rel="nofollow">Orr Shalit</a> on <a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/#comment-99950">The Fully Depolarizing Noise C&hellip;</a></td></tr><tr><td title="jamesmessig" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://jimmyjamesmessig.wordpress.com" rel="nofollow"><img referrerpolicy="no-referrer" alt='jamesmessig&#039;s avatar' src='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=48&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=48&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=72&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=96&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=144&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstextend" style=""><a href="http://jimmyjamesmessig.wordpress.com" rel="nofollow">jamesmessig</a> on <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99949">Scott Aaronson&#8217;s View of&hellip;</a></td></tr><tr><td title="jamesmessig" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://jimmyjamesmessig.wordpress.com" rel="nofollow"><img referrerpolicy="no-referrer" alt='jamesmessig&#039;s avatar' src='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=48&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=48&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=72&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=96&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=144&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstextend" style=""><a href="http://jimmyjamesmessig.wordpress.com" rel="nofollow">jamesmessig</a> on <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99948">Scott Aaronson&#8217;s View of&hellip;</a></td></tr><tr><td title="Gil Kalai" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://www.ma.huji.ac.il/~kalai/" rel="nofollow"><img referrerpolicy="no-referrer" alt='Gil Kalai&#039;s avatar' src='https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=48&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=48&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=72&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=96&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=144&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0d9c6a8428c1d8ed8ee251805c622200e4efdced7045f3dcd2a487575b1f1179?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstextend" style=""><a href="http://www.ma.huji.ac.il/~kalai/" rel="nofollow">Gil Kalai</a> on <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99947">Scott Aaronson&#8217;s View of&hellip;</a></td></tr><tr><td title="jamesmessig" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://jimmyjamesmessig.wordpress.com" rel="nofollow"><img referrerpolicy="no-referrer" alt='jamesmessig&#039;s avatar' src='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=48&#038;d=identicon&#038;r=PG' srcset='https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=48&#038;d=identicon&#038;r=PG 1x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=72&#038;d=identicon&#038;r=PG 1.5x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=96&#038;d=identicon&#038;r=PG 2x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=144&#038;d=identicon&#038;r=PG 3x, https://0.gravatar.com/avatar/0904192ea636fce22f9f03cb7f13a71c483d691e97d637d2371639613dc20fcd?s=192&#038;d=identicon&#038;r=PG 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstextend" style=""><a href="http://jimmyjamesmessig.wordpress.com" rel="nofollow">jamesmessig</a> on <a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comment-99945">Scott Aaronson&#8217;s View of&hellip;</a></td></tr><tr><td title="Scott Aaronson&#8217;s View of my View About Quantum Computing | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow">Scott Aaronson&hellip;</a> on <a href="https://gilkalai.wordpress.com/2025/02/21/majorana-zero-modes-and-topological-qubits/#comment-99944">Majorana Zero Modes and Topolo&hellip;</a></td></tr><tr><td title="Scott Aaronson&#8217;s View of my View About Quantum Computing | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow">Scott Aaronson&hellip;</a> on <a href="https://gilkalai.wordpress.com/2024/12/09/the-case-against-googles-claims-of-quantum-supremacy-a-very-short-introduction/#comment-99943">The Case Against Google&#8217;&hellip;</a></td></tr><tr><td title="Scott Aaronson&#8217;s View of my View About Quantum Computing | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow">Scott Aaronson&hellip;</a> on <a href="https://gilkalai.wordpress.com/2026/02/03/updates-and-plans-v-from-boise-to-tel-aviv-ceasefire-my-70th-birthday-nostalgia-problems-outrageous-conjectures-quantum-and-ai/#comment-99942">Updates and Plans V: From Bois&hellip;</a></td></tr><tr><td title="Scott Aaronson&#8217;s View of my View About Quantum Computing | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" rel="nofollow">Scott Aaronson&hellip;</a> on <a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/#comment-99941">The Fully Depolarizing Noise C&hellip;</a></td></tr>				</table>
+				</li>
+		<li id="recent-posts-3" class="widget-container widget_recent_entries">
+		<h3 class="widget-title">Recent Posts</h3>
+		<ul>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" aria-current="page">Scott Aaronson&#8217;s View of my View About Quantum&nbsp;Computing</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/">The Fully Depolarizing Noise Conjecture for Physical Cat States is Twenty Years&nbsp;Old!</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/02/25/cosmin-pohoata-the-cayley-bacharach-theorem-and-its-applications/">Cosmin Pohoata: The Cayley-Bacharach theorem and its&nbsp;applications</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/02/03/updates-and-plans-v-from-boise-to-tel-aviv-ceasefire-my-70th-birthday-nostalgia-problems-outrageous-conjectures-quantum-and-ai/">Updates and Plans V:  From Boise to Tel Aviv, Ceasefire, My 70th Birthday, Nostalgia, Problems, Outrageous Conjectures, Quantum, and&nbsp;AI</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/01/18/iceca-2026-august-17-19-2026-an-interview-with-christian-krattenthaler-and-condorcet-revisited/">ICECA 2026 (August 17-19, 2026), an interview with Christian Krattenthaler, and Condorcet&nbsp;revisited.</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/01/15/dominik-hangleiters-view-posts-on-has-quantum-advantage-been-achieved/">Dominik Hangleiter&#8217;s View Posts on: Has Quantum Advantage Been&nbsp;Achieved?</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/01/13/a-ten-year-old-video-about-larry-guth-and-netz-katz/">A Ten-Year-Old Video about Larry Guth and Netz&nbsp;Katz.</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2026/01/01/combinatorics-news/">Combinatorics News</a>
+									</li>
+											<li>
+					<a href="https://gilkalai.wordpress.com/2025/12/26/combinatorial-morning-in-tel-aviv-sunday-28-12-2025/">Combinatorial Morning in Tel Aviv, Sunday&nbsp;28/12/2025</a>
+									</li>
+					</ul>
+
+		</li><li id="top-posts-3" class="widget-container widget_top-posts"><h3 class="widget-title">Top Posts &amp; Pages</h3><ul><li><a href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" class="bump-view" data-bump-view="tp" aria-current="page">Scott Aaronson&#039;s View of my View About Quantum Computing</a></li><li><a href="https://gilkalai.wordpress.com/2024/01/21/on-the-limit-of-the-linear-programming-bound-for-codes-and-packing/" class="bump-view" data-bump-view="tp">On the Limit of the Linear Programming Bound for Codes and Packing</a></li><li><a href="https://gilkalai.wordpress.com/2019/02/02/konstantin-tikhomrov-the-probability-that-a-bernoulli-matrix-is-singular/" class="bump-view" data-bump-view="tp">Konstantin Tikhomirov: The Probability that a Bernoulli Matrix is Singular</a></li><li><a href="https://gilkalai.wordpress.com/2017/09/07/tyi-30-expected-number-of-dice-throws/" class="bump-view" data-bump-view="tp">TYI 30: Expected number of Dice throws</a></li><li><a href="https://gilkalai.wordpress.com/2026/03/06/the-fully-depolarizing-noise-conjecture-for-physical-cat-states-is-twenty-years-old/" class="bump-view" data-bump-view="tp">The Fully Depolarizing Noise Conjecture for Physical Cat States is Twenty Years Old!</a></li><li><a href="https://gilkalai.wordpress.com/2024/12/09/the-case-against-googles-claims-of-quantum-supremacy-a-very-short-introduction/" class="bump-view" data-bump-view="tp">The Case Against Google&#039;s Claims of &quot;Quantum Supremacy&quot;: A Very Short Introduction.</a></li><li><a href="https://gilkalai.wordpress.com/2008/09/28/extremal-combinatorics-iii-some-basic-theorems/" class="bump-view" data-bump-view="tp">Extremal Combinatorics III: Some Basic Theorems</a></li><li><a href="https://gilkalai.wordpress.com/2017/09/08/elchanan-mossels-amazing-dice-paradox-answers-to-tyi-30/" class="bump-view" data-bump-view="tp">Elchanan Mossel&#039;s Amazing Dice Paradox (your answers to TYI 30)</a></li><li><a href="https://gilkalai.wordpress.com/2018/12/25/amazing-karim-adiprasito-proved-the-g-conjecture-for-spheres/" class="bump-view" data-bump-view="tp">Amazing: Karim Adiprasito proved the g-conjecture for spheres!</a></li></ul></li><li id="search-3" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://gilkalai.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li><li id="meta-3" class="widget-container widget_meta"><h3 class="widget-title">RSS</h3>
+		<ul>
+			<li><a class="click-register" href="https://wordpress.com/start?ref=wplogin">Create account</a></li>			<li><a href="https://gilkalai.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://gilkalai.wordpress.com/feed/">Entries feed</a></li>
+			<li><a href="https://gilkalai.wordpress.com/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>
+		</ul>
+
+		</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+				<li id="categories-298474073" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>
+			<ul>
+					<li class="cat-item cat-item-7847"><a href="https://gilkalai.wordpress.com/category/academics/">Academics</a> (17)
+</li>
+	<li class="cat-item cat-item-14067"><a href="https://gilkalai.wordpress.com/category/ai/">AI</a> (9)
+</li>
+	<li class="cat-item cat-item-17236"><a href="https://gilkalai.wordpress.com/category/algebra/">Algebra</a> (38)
+</li>
+	<li class="cat-item cat-item-10544"><a href="https://gilkalai.wordpress.com/category/analysis/">Analysis</a> (25)
+</li>
+	<li class="cat-item cat-item-621201"><a href="https://gilkalai.wordpress.com/category/applied-mathematics/">Applied mathematics</a> (6)
+</li>
+	<li class="cat-item cat-item-177"><a href="https://gilkalai.wordpress.com/category/art/">Art</a> (29)
+</li>
+	<li class="cat-item cat-item-91"><a href="https://gilkalai.wordpress.com/category/blogging/">Blogging</a> (12)
+</li>
+	<li class="cat-item cat-item-7215"><a href="https://gilkalai.wordpress.com/category/book-review/">Book review</a> (4)
+</li>
+	<li class="cat-item cat-item-312353"><a href="https://gilkalai.wordpress.com/category/combinatorics/">Combinatorics</a> (405)
+</li>
+	<li class="cat-item cat-item-49770821"><a href="https://gilkalai.wordpress.com/category/computer-science-and-optimization/">Computer Science and Optimization</a> (182)
+</li>
+	<li class="cat-item cat-item-9204"><a href="https://gilkalai.wordpress.com/category/conferences/">Conferences</a> (86)
+</li>
+	<li class="cat-item cat-item-10273"><a href="https://gilkalai.wordpress.com/category/controversies/">Controversies</a> (1)
+</li>
+	<li class="cat-item cat-item-6955091"><a href="https://gilkalai.wordpress.com/category/controversies-and-debates/">Controversies and debates</a> (32)
+</li>
+	<li class="cat-item cat-item-6455306"><a href="https://gilkalai.wordpress.com/category/convex-polytopes/">Convex polytopes</a> (70)
+</li>
+	<li class="cat-item cat-item-6164885"><a href="https://gilkalai.wordpress.com/category/convexity/">Convexity</a> (61)
+</li>
+	<li class="cat-item cat-item-657"><a href="https://gilkalai.wordpress.com/category/economics/">Economics</a> (31)
+</li>
+	<li class="cat-item cat-item-1342"><a href="https://gilkalai.wordpress.com/category/education/">Education</a> (1)
+</li>
+	<li class="cat-item cat-item-112648458"><a href="https://gilkalai.wordpress.com/category/elections-2015/">Elections 2015</a> (7)
+</li>
+	<li class="cat-item cat-item-21"><a href="https://gilkalai.wordpress.com/category/games/">Games</a> (49)
+</li>
+	<li class="cat-item cat-item-39338"><a href="https://gilkalai.wordpress.com/category/geology/">Geology</a> (2)
+</li>
+	<li class="cat-item cat-item-63411"><a href="https://gilkalai.wordpress.com/category/geometry/">Geometry</a> (113)
+</li>
+	<li class="cat-item cat-item-1152190"><a href="https://gilkalai.wordpress.com/category/gina-says/">Gina Says</a> (8)
+</li>
+	<li class="cat-item cat-item-159637"><a href="https://gilkalai.wordpress.com/category/guest-blogger/">Guest blogger</a> (29)
+</li>
+	<li class="cat-item cat-item-415"><a href="https://gilkalai.wordpress.com/category/guest-post/">Guest post</a> (1)
+</li>
+	<li class="cat-item cat-item-22588"><a href="https://gilkalai.wordpress.com/category/happy-birthday/">Happy birthday</a> (4)
+</li>
+	<li class="cat-item cat-item-599316495"><a href="https://gilkalai.wordpress.com/category/icm2018/">ICM2018</a> (8)
+</li>
+	<li class="cat-item cat-item-648217559"><a href="https://gilkalai.wordpress.com/category/icm2022/">ICM2022</a> (5)
+</li>
+	<li class="cat-item cat-item-12569"><a href="https://gilkalai.wordpress.com/category/information-theory/">Information theory</a> (3)
+</li>
+	<li class="cat-item cat-item-2054"><a href="https://gilkalai.wordpress.com/category/law/">Law</a> (8)
+</li>
+	<li class="cat-item cat-item-45320245"><a href="https://gilkalai.wordpress.com/category/logic-and-set-theory/">Logic and set theory</a> (7)
+</li>
+	<li class="cat-item cat-item-75455794"><a href="https://gilkalai.wordpress.com/category/mathematical-logic-and-set-theory/">Mathematical logic and set theory</a> (3)
+</li>
+	<li class="cat-item cat-item-26939094"><a href="https://gilkalai.wordpress.com/category/mathematics-and-computers/">Mathematics and Computers</a> (1)
+</li>
+	<li class="cat-item cat-item-28447984"><a href="https://gilkalai.wordpress.com/category/mathematics-over-the-internet/">Mathematics over the Internet</a> (23)
+</li>
+	<li class="cat-item cat-item-6218862"><a href="https://gilkalai.wordpress.com/category/mathematics-to-the-rescue/">Mathematics to the rescue</a> (13)
+</li>
+	<li class="cat-item cat-item-190"><a href="https://gilkalai.wordpress.com/category/movies/">Movies</a> (7)
+</li>
+	<li class="cat-item cat-item-18"><a href="https://gilkalai.wordpress.com/category/music/">Music</a> (9)
+</li>
+	<li class="cat-item cat-item-69054"><a href="https://gilkalai.wordpress.com/category/number-theory/">Number theory</a> (37)
+</li>
+	<li class="cat-item cat-item-21091"><a href="https://gilkalai.wordpress.com/category/obituary/">Obituary</a> (14)
+</li>
+	<li class="cat-item cat-item-288915"><a href="https://gilkalai.wordpress.com/category/open-discussion/">Open discussion</a> (18)
+</li>
+	<li class="cat-item cat-item-4416908"><a href="https://gilkalai.wordpress.com/category/open-problems/">Open problems</a> (108)
+</li>
+	<li class="cat-item cat-item-660"><a href="https://gilkalai.wordpress.com/category/people/">People</a> (12)
+</li>
+	<li class="cat-item cat-item-64"><a href="https://gilkalai.wordpress.com/category/personal/">personal</a> (16)
+</li>
+	<li class="cat-item cat-item-1868"><a href="https://gilkalai.wordpress.com/category/philosophy/">Philosophy</a> (25)
+</li>
+	<li class="cat-item cat-item-1211"><a href="https://gilkalai.wordpress.com/category/physics/">Physics</a> (56)
+</li>
+	<li class="cat-item cat-item-422"><a href="https://gilkalai.wordpress.com/category/poetry/">Poetry</a> (12)
+</li>
+	<li class="cat-item cat-item-398"><a href="https://gilkalai.wordpress.com/category/politics/">Politics</a> (2)
+</li>
+	<li class="cat-item cat-item-415106962"><a href="https://gilkalai.wordpress.com/category/polymath10/">Polymath10</a> (8)
+</li>
+	<li class="cat-item cat-item-22983878"><a href="https://gilkalai.wordpress.com/category/polymath3/">Polymath3</a> (12)
+</li>
+	<li class="cat-item cat-item-10451"><a href="https://gilkalai.wordpress.com/category/probability/">Probability</a> (100)
+</li>
+	<li class="cat-item cat-item-4909"><a href="https://gilkalai.wordpress.com/category/psychology/">Psychology</a> (1)
+</li>
+	<li class="cat-item cat-item-2956"><a href="https://gilkalai.wordpress.com/category/quantum/">Quantum</a> (77)
+</li>
+	<li class="cat-item cat-item-15394"><a href="https://gilkalai.wordpress.com/category/rationality/">Rationality</a> (34)
+</li>
+	<li class="cat-item cat-item-5124"><a href="https://gilkalai.wordpress.com/category/riddles/">Riddles</a> (14)
+</li>
+	<li class="cat-item cat-item-825"><a href="https://gilkalai.wordpress.com/category/sport/">Sport</a> (10)
+</li>
+	<li class="cat-item cat-item-5849"><a href="https://gilkalai.wordpress.com/category/statistics/">Statistics</a> (13)
+</li>
+	<li class="cat-item cat-item-5587864"><a href="https://gilkalai.wordpress.com/category/taxi-and-other-stories/">Taxi-and-other-stories</a> (24)
+</li>
+	<li class="cat-item cat-item-1591"><a href="https://gilkalai.wordpress.com/category/teaching/">Teaching</a> (20)
+</li>
+	<li class="cat-item cat-item-62090407"><a href="https://gilkalai.wordpress.com/category/test-your-intuition/">Test your intuition</a> (81)
+</li>
+	<li class="cat-item cat-item-1"><a href="https://gilkalai.wordpress.com/category/uncategorized/">Uncategorized</a> (23)
+</li>
+	<li class="cat-item cat-item-1171"><a href="https://gilkalai.wordpress.com/category/updates/">Updates</a> (165)
+</li>
+	<li class="cat-item cat-item-1787542"><a href="https://gilkalai.wordpress.com/category/what-is-mathematics/">What is Mathematics</a> (51)
+</li>
+	<li class="cat-item cat-item-232772"><a href="https://gilkalai.wordpress.com/category/women-in-science/">Women in science</a> (15)
+</li>
+			</ul>
+
+			</li><li id="linkcat-1356" class="widget-container widget_links"><h3 class="widget-title">Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="https://4gravitons.wordpress.com/">4 Gravitons (Matt von Hippel)</a></li>
+<li><a href="https://deaneyang.github.io/blog/?fbclid=IwAR09dmkhd2nzwgBN3yITc1Dbg86D1UcT8i7pCoahtAu8bfdsoW4t3LIkKx8">A cluttered mind (Deane Yang)</a></li>
+<li><a href="http://ilaba.wordpress.com/" title="Izabella Laba">Accidental Mathematician</a></li>
+<li><a href="https://affinemess.quora.com/">Affine mess (Alon Amit)</a></li>
+<li><a href="http://agtb.wordpress.com/" title="Noam Nisan&#8217;s blog">Algorithmic Game Theory</a></li>
+<li><a href="https://www.ams.org/open-math-notes">AMS open math notes</a></li>
+<li><a href="https://andrescaicedo.wordpress.com/">Andreas Caicedo’s teaching pages</a></li>
+<li><a href="http://qchu.wordpress.com/" title="Qiaochu Yuan&#8217;s blog">Annoying Precision</a></li>
+<li><a href="https://anuragbishnoi.wordpress.com/">Anurag&#039;s math blog</a></li>
+<li><a href="http://karagila.org/blog.html">Asaf Karagila</a></li>
+<li><a href="http://asymptotia.com/" title="Clifford Johnson&#8217;s Blog">Asymptotia</a></li>
+<li><a href="https://johncarlosbaez.wordpress.com/about/">Azimuth (John Baez)</a></li>
+<li><a href="http://backreaction.blogspot.co.il/">Backreaction (Sabine Hossenfelder)</a></li>
+<li><a href="https://liorpachter.wordpress.com/">Bits of DNA</a></li>
+<li><a href="http://blog.qutech.nl/">Bits of quantum</a></li>
+<li><a href="http://weblog.fortnow.com/" title="Computational complexity">Computational complexity</a></li>
+<li><a href="http://condensedconcepts.blogspot.co.il/">Condenced concepts</a></li>
+<li><a href="http://pohoatza.wordpress.com/">Cosmin Pohoata</a></li>
+<li><a href="http://www.dam.brown.edu/people/mumford/">David Mumford</a></li>
+<li><a href="https://discreteanalysisjournal.com/posts">Discrete analysis (the blog)</a></li>
+<li><a href="http://www.math.ucsd.edu/~erdosproblems/">Erdos problems on graphs</a></li>
+<li><a href="https://liorbarysoroker.wordpress.com/">Field arithmetician&#039;s blog</a></li>
+<li><a href="https://mathematicalgemstones.com/">Finding Gemstones</a></li>
+<li><a href="http://freedommathdance.blogspot.fr/">Freedom Math Dance</a></li>
+<li><a href="http://geomblog.blogspot.com/" title="computational geometry, computational complexity">Geomblog</a></li>
+<li><a href="http://lamington.wordpress.com/">Geometry and the Imagination</a></li>
+<li><a href="https://blog.spp2026.de/">Geometry at infinity</a></li>
+<li><a href="http://rjlipton.wordpress.com/" title="Lipton’s blog">Godel&#039;s lost letter and P=NP</a></li>
+<li><a href="http://gowers.wordpress.com/">Gowers&#8217;s blog</a></li>
+<li><a href="https://blogs.princeton.edu/imabandit/">I am a Bandit (Sébastien Bubeck)</a></li>
+<li><a href="https://igorpak.wordpress.com/">Igor Pak&#039;s blog</a></li>
+<li><a href="http://lucatrevisan.wordpress.com/" title="Luca Trevisan&#8217;s blog">In theory</a></li>
+<li><a href="http://math.ucr.edu/home/baez/">John Baez</a></li>
+<li><a href="https://adiprasito.wordpress.com/">Karim Adiprasito&#039;s blog</a></li>
+<li><a href="http://konradswanepoel.wordpress.com" title="Combinatorics and Geometry">Konard Swanepoel&#039;s Blog</a></li>
+<li><a href="http://blogs.ethz.ch/kowalski/">Kowalski&#8217;s Blog</a></li>
+<li><a href="http://krystalguo.com/">Krystal Guo</a></li>
+<li><a href="http://ldtopology.wordpress.com/">Low dimensional topology</a></li>
+<li><a href="http://hunch.net/" title="John Langford&#8217;d blog">Machine learning (theory)</a></li>
+<li><a href="http://mathoverflow.net/">Math Overflow</a></li>
+<li><a href="https://mathwithbaddrawings.com/">Math with bad drawings</a></li>
+<li><a href="http://mathbabe.org/">Mathbabe</a></li>
+<li><a href="http://dorais.wordpress.com/about/" title=" François Dorais musings">Mathemata</a></li>
+<li><a href="http://faculty.uml.edu/jpropp/mathenchant/">Mathematical Enchantments</a></li>
+<li><a href="http://www.mathematicalgemstones.com/">Mathematical Gemstones</a></li>
+<li><a href="http://matthewkahle.wordpress.com/">Mathematical Musing</a></li>
+<li><a href="https://micromath.wordpress.com/">Mathematics under the microscope</a></li>
+<li><a href="https://mathematicswithoutapologies.wordpress.com/">Mathematics without apologies by Michael Harris</a></li>
+<li><a href="https://mattbakerblog.wordpress.com/">Matt Baker Math Blog</a></li>
+<li><a href="http://michaelnielsen.org/blog/" title="New ways for doing science; quantum computation">Michael Nielsen</a></li>
+<li><a href="https://www.ihes.fr/~gromov/">Misha Gromov home page</a></li>
+<li><a href="https://mulisafrablog.wordpress.com/">MUSA The Gospel According to Math</a></li>
+<li><a href="http://mybiasedcoin.blogspot.com/">My Biased Coin</a></li>
+<li><a href="http://mycqstate.wordpress.com/">My Qstate</a></li>
+<li><a href="http://golem.ph.utexas.edu/category/">n-category cafe</a></li>
+<li><a href="http://www.neverendingbooks.org/">NeverEndingBooks</a></li>
+<li><a href="https://njwildberger.com/">njwildberger: tangential thoughts</a></li>
+<li><a href="http://noncommutativeanalysis.wordpress.com/">Noncommutative analysis</a></li>
+<li><a href="http://noncommutativegeometry.blogspot.com/index.html">Noncommutative geometry</a></li>
+<li><a href="https://www.youtube.com/user/numberphile" title="Numberphile (You Tube)">Numberphile</a></li>
+<li><a href="http://www.wisdom.weizmann.ac.il/~oded/my-choice.html">Oded Goldreich&#039;s choices</a></li>
+<li><a href="https://yakovenko.wordpress.com/">On math and teaching: Sergei Yakovenko&#039;s blog</a></li>
+<li><a href="http://garden.irmacs.sfu.ca/" title="Goemans&#8217; garden of open problems">Open Problems Garden</a></li>
+<li><a href="http://11011110.livejournal.com/">OXdE</a></li>
+<li><a href="https://galoisrepresentations.wordpress.com/">Persiflage &#8211; Galois representations and more</a></li>
+<li><a href="http://cameroncounts.wordpress.com/" title="Counting the things that need to be counting">Peter Cameron&#039;s Blog</a></li>
+<li><a href="http://www.math.princeton.edu/sarnak/">Peter Sarnak&#8217;s letters (and more)</a></li>
+<li><a href="http://nghoussoub.com/">Piece of mind</a></li>
+<li><a href="https://sammattheus.wordpress.com/">Points and Lines</a></li>
+<li><a href="https://www.quantumcalculus.org/">Quantum calculus</a></li>
+<li><a href="http://quantumfrontiers.com/">Quantum Frontiers</a></li>
+<li><a href="http://quomodocumque.wordpress.com/">Quomodocumque</a></li>
+<li><a href="https://ratiobound.wordpress.com/">Ratio Bound (Ferdinand Ihringer)</a></li>
+<li><a href="http://rigtriv.wordpress.com/">Rigorous Trivialities</a></li>
+<li><a href="https://blogs.scientificamerican.com/roots-of-unity/">Roots of unity</a></li>
+<li><a href="https://sarcasticresonance.wordpress.com/">Sarcastic resonance (Renan Gross)</a></li>
+<li><a href="http://www.preposterousuniverse.com/blog/">Sean Carroll</a></li>
+<li><a href="http://sbseminar.wordpress.com/">Secret blogging seminar</a></li>
+<li><a href="https://tcjpn.wordpress.com/">Shadows of Simplicity</a></li>
+<li><a href="https://dustingmixon.wordpress.com/">Short, fat matrices</a></li>
+<li><a href="http://www.scottaaronson.com/blog/" title="Scott Aaronson&#8217;s blog">Shtetl Optimized</a></li>
+<li><a href="https://adamsheffer.wordpress.com/">Some plane truths (Adam Sheffer)</a></li>
+<li><a href="http://www.stat.columbia.edu/~cook/movabletype/mlm/" title="Statistical Modeling, Causal Inference, and Social Science">Statistical Modeling</a></li>
+<li><a href="http://blog.tanyakhovanova.com/">Tanya Khovanova Math Blog</a></li>
+<li><a href="http://tcsmath.wordpress.com/" title="Mathematics of theoretical computer science">TCS Math</a></li>
+<li><a href="http://cstheory.stackexchange.com/">TCS stackexchange</a></li>
+<li><a href="http://aperiodical.com/">The Aperiodical</a></li>
+<li><a href="http://www.ics.uci.edu/~eppstein/junkyard/">The Geometry Junkyard</a></li>
+<li><a href="https://thehighergeometer.wordpress.com/">The higher geometer</a></li>
+<li><a href="https://anthonybonato.com/">The Intrepid mathematician (Anthony Bonato)</a></li>
+<li><a href="http://polymathprojects.org/">The Polymath Blog</a></li>
+<li><a href="http://dabacon.org/pontiff/" title="Dave Bacon’s blog">The Quantum Pontiff</a></li>
+<li><a href="https://www.theoremoftheday.org/Theorems.html">Theorem of the day- complete listing</a></li>
+<li><a href="https://ahilado.wordpress.com/">Theory and theorems</a></li>
+<li><a href="http://feedworld.net/toc/">Theory of computing blog aggregator</a></li>
+<li><a href="https://emanueleviola.wordpress.com/">Thoughts by Emanuele Viola</a></li>
+<li><a href="https://tjoresearchnotes.wordpress.com/">Tobias J. Osborne&#039;s research notes</a></li>
+<li><a href="http://www.tricki.org/">Tricky wiki</a></li>
+<li><a href="http://terrytao.wordpress.com/" title="Terry Tao’s blog">What’s new (Terry Tao)</a></li>
+<li><a href="https://wildonblog.wordpress.com/">Wildon&#039;s Weblog</a></li>
+<li><a href="http://windowsontheory.org/">Windows on Theory</a></li>
+<li><a href="http://www.xkcd.com/" title="amazing">xkcd</a></li>
+<li><a href="https://yufeizhao.wordpress.com/">Yufei Zhao</a></li>
+<li><a href="https://extremal010101.wordpress.com/">Zeros and Ones by Paata Ivanishvili</a></li>
+<li><a href="http://onegshabbat.blogspot.co.il/">דוד אסף על עניני מדינה ספרות ומדע &#8211; עונג שבת</a></li>
+<li><a href="https://gadial.net/">לא מדויק</a></li>
+<li><a href="https://lbscience.org/">מדע גדול בקטנה</a></li>
+<li><a href="http://www.sci-princess.info/" title="הבלוג של יוסי לוי">נסיכת המדעים</a></li>
+
+	</ul>
+</li>
+<li id="archives-3" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>
+			<ul>
+					<li><a href='https://gilkalai.wordpress.com/2026/03/'>March 2026</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2026/02/'>February 2026</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2026/01/'>January 2026</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/12/'>December 2025</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/11/'>November 2025</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/10/'>October 2025</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/09/'>September 2025</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/08/'>August 2025</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/07/'>July 2025</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/06/'>June 2025</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/05/'>May 2025</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/04/'>April 2025</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/02/'>February 2025</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2025/01/'>January 2025</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/12/'>December 2024</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/11/'>November 2024</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/10/'>October 2024</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/09/'>September 2024</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/08/'>August 2024</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/07/'>July 2024</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/06/'>June 2024</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/05/'>May 2024</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/04/'>April 2024</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/03/'>March 2024</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/02/'>February 2024</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2024/01/'>January 2024</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/12/'>December 2023</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/11/'>November 2023</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/10/'>October 2023</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/09/'>September 2023</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/08/'>August 2023</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/07/'>July 2023</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/06/'>June 2023</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/05/'>May 2023</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/04/'>April 2023</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/03/'>March 2023</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/02/'>February 2023</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2023/01/'>January 2023</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/12/'>December 2022</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/11/'>November 2022</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/10/'>October 2022</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/08/'>August 2022</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/07/'>July 2022</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/06/'>June 2022</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/05/'>May 2022</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/04/'>April 2022</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/03/'>March 2022</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/02/'>February 2022</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2022/01/'>January 2022</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/12/'>December 2021</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/11/'>November 2021</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/10/'>October 2021</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/09/'>September 2021</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/08/'>August 2021</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/07/'>July 2021</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/06/'>June 2021</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/05/'>May 2021</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/04/'>April 2021</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/03/'>March 2021</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/02/'>February 2021</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2021/01/'>January 2021</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/12/'>December 2020</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/11/'>November 2020</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/10/'>October 2020</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/09/'>September 2020</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/08/'>August 2020</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/07/'>July 2020</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/06/'>June 2020</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/05/'>May 2020</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/04/'>April 2020</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/03/'>March 2020</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/02/'>February 2020</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2020/01/'>January 2020</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/12/'>December 2019</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/11/'>November 2019</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/10/'>October 2019</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/09/'>September 2019</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/08/'>August 2019</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/07/'>July 2019</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/06/'>June 2019</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/05/'>May 2019</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/04/'>April 2019</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/03/'>March 2019</a>&nbsp;(9)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/02/'>February 2019</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2019/01/'>January 2019</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/12/'>December 2018</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/11/'>November 2018</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/10/'>October 2018</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/09/'>September 2018</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/08/'>August 2018</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/07/'>July 2018</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/06/'>June 2018</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/05/'>May 2018</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/04/'>April 2018</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/03/'>March 2018</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/02/'>February 2018</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2018/01/'>January 2018</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/12/'>December 2017</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/11/'>November 2017</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/10/'>October 2017</a>&nbsp;(11)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/09/'>September 2017</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/08/'>August 2017</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/06/'>June 2017</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/05/'>May 2017</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/04/'>April 2017</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/03/'>March 2017</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/02/'>February 2017</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2017/01/'>January 2017</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/12/'>December 2016</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/11/'>November 2016</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/10/'>October 2016</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/09/'>September 2016</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/08/'>August 2016</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/07/'>July 2016</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/05/'>May 2016</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/04/'>April 2016</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/03/'>March 2016</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2016/01/'>January 2016</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/12/'>December 2015</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/11/'>November 2015</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/10/'>October 2015</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/09/'>September 2015</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/08/'>August 2015</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/05/'>May 2015</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/04/'>April 2015</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/03/'>March 2015</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/02/'>February 2015</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2015/01/'>January 2015</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/12/'>December 2014</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/11/'>November 2014</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/10/'>October 2014</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/09/'>September 2014</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/08/'>August 2014</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/07/'>July 2014</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/06/'>June 2014</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/05/'>May 2014</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/03/'>March 2014</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/02/'>February 2014</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2014/01/'>January 2014</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/11/'>November 2013</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/10/'>October 2013</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/09/'>September 2013</a>&nbsp;(9)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/08/'>August 2013</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/07/'>July 2013</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/06/'>June 2013</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/05/'>May 2013</a>&nbsp;(10)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/04/'>April 2013</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/03/'>March 2013</a>&nbsp;(9)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/02/'>February 2013</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2013/01/'>January 2013</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/12/'>December 2012</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/11/'>November 2012</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/10/'>October 2012</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/08/'>August 2012</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/07/'>July 2012</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/06/'>June 2012</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/05/'>May 2012</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/04/'>April 2012</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/03/'>March 2012</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/02/'>February 2012</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2012/01/'>January 2012</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/12/'>December 2011</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/11/'>November 2011</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/10/'>October 2011</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/09/'>September 2011</a>&nbsp;(2)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/08/'>August 2011</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/07/'>July 2011</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/06/'>June 2011</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/04/'>April 2011</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/02/'>February 2011</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2011/01/'>January 2011</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/11/'>November 2010</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/10/'>October 2010</a>&nbsp;(9)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/09/'>September 2010</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/08/'>August 2010</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/07/'>July 2010</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/06/'>June 2010</a>&nbsp;(4)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/05/'>May 2010</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/04/'>April 2010</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/03/'>March 2010</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/02/'>February 2010</a>&nbsp;(10)</li>
+	<li><a href='https://gilkalai.wordpress.com/2010/01/'>January 2010</a>&nbsp;(9)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/12/'>December 2009</a>&nbsp;(7)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/11/'>November 2009</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/10/'>October 2009</a>&nbsp;(1)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/09/'>September 2009</a>&nbsp;(3)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/08/'>August 2009</a>&nbsp;(9)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/07/'>July 2009</a>&nbsp;(12)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/06/'>June 2009</a>&nbsp;(11)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/05/'>May 2009</a>&nbsp;(12)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/04/'>April 2009</a>&nbsp;(12)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/03/'>March 2009</a>&nbsp;(10)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/02/'>February 2009</a>&nbsp;(10)</li>
+	<li><a href='https://gilkalai.wordpress.com/2009/01/'>January 2009</a>&nbsp;(11)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/12/'>December 2008</a>&nbsp;(13)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/11/'>November 2008</a>&nbsp;(12)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/10/'>October 2008</a>&nbsp;(5)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/09/'>September 2008</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/08/'>August 2008</a>&nbsp;(6)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/07/'>July 2008</a>&nbsp;(8)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/06/'>June 2008</a>&nbsp;(13)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/05/'>May 2008</a>&nbsp;(11)</li>
+	<li><a href='https://gilkalai.wordpress.com/2008/04/'>April 2008</a>&nbsp;(1)</li>
+			</ul>
+
+			</li>			</ul>
+		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="footer-widget-area" role="complementary">
+
+
+				<div id="second" class="widget-area">
+					<ul class="xoxo">
+						<li id="tag_cloud-2" class="widget-container widget_tag_cloud"><h3 class="widget-title"></h3><div style="overflow: hidden;"><a href="https://gilkalai.wordpress.com/category/academics/" style="font-size: 100.4498714653%; padding: 1px; margin: 1px;"  title="Academics (17)">Academics</a> <a href="https://gilkalai.wordpress.com/category/algebra/" style="font-size: 109.8971722365%; padding: 1px; margin: 1px;"  title="Algebra (38)">Algebra</a> <a href="https://gilkalai.wordpress.com/category/analysis/" style="font-size: 104.04884318766%; padding: 1px; margin: 1px;"  title="Analysis (25)">Analysis</a> <a href="https://gilkalai.wordpress.com/category/art/" style="font-size: 105.84832904884%; padding: 1px; margin: 1px;"  title="Art (29)">Art</a> <a href="https://gilkalai.wordpress.com/category/combinatorics/" style="font-size: 275%; padding: 1px; margin: 1px;"  title="Combinatorics (405)">Combinatorics</a> <a href="https://gilkalai.wordpress.com/category/computer-science-and-optimization/" style="font-size: 174.67866323907%; padding: 1px; margin: 1px;"  title="Computer Science and Optimization (182)">Computer Science and Optimization</a> <a href="https://gilkalai.wordpress.com/category/conferences/" style="font-size: 131.49100257069%; padding: 1px; margin: 1px;"  title="Conferences (86)">Conferences</a> <a href="https://gilkalai.wordpress.com/category/controversies-and-debates/" style="font-size: 107.19794344473%; padding: 1px; margin: 1px;"  title="Controversies and debates (32)">Controversies and debates</a> <a href="https://gilkalai.wordpress.com/category/convexity/" style="font-size: 120.2442159383%; padding: 1px; margin: 1px;"  title="Convexity (61)">Convexity</a> <a href="https://gilkalai.wordpress.com/category/convex-polytopes/" style="font-size: 124.29305912596%; padding: 1px; margin: 1px;"  title="Convex polytopes (70)">Convex polytopes</a> <a href="https://gilkalai.wordpress.com/category/economics/" style="font-size: 106.74807197943%; padding: 1px; margin: 1px;"  title="Economics (31)">Economics</a> <a href="https://gilkalai.wordpress.com/category/games/" style="font-size: 114.84575835476%; padding: 1px; margin: 1px;"  title="Games (49)">Games</a> <a href="https://gilkalai.wordpress.com/category/geometry/" style="font-size: 143.63753213368%; padding: 1px; margin: 1px;"  title="Geometry (113)">Geometry</a> <a href="https://gilkalai.wordpress.com/category/guest-blogger/" style="font-size: 105.84832904884%; padding: 1px; margin: 1px;"  title="Guest blogger (29)">Guest blogger</a> <a href="https://gilkalai.wordpress.com/category/mathematics-over-the-internet/" style="font-size: 103.14910025707%; padding: 1px; margin: 1px;"  title="Mathematics over the Internet (23)">Mathematics over the Internet</a> <a href="https://gilkalai.wordpress.com/category/number-theory/" style="font-size: 109.44730077121%; padding: 1px; margin: 1px;"  title="Number theory (37)">Number theory</a> <a href="https://gilkalai.wordpress.com/category/open-discussion/" style="font-size: 100.89974293059%; padding: 1px; margin: 1px;"  title="Open discussion (18)">Open discussion</a> <a href="https://gilkalai.wordpress.com/category/open-problems/" style="font-size: 141.3881748072%; padding: 1px; margin: 1px;"  title="Open problems (108)">Open problems</a> <a href="https://gilkalai.wordpress.com/category/personal/" style="font-size: 100%; padding: 1px; margin: 1px;"  title="personal (16)">personal</a> <a href="https://gilkalai.wordpress.com/category/philosophy/" style="font-size: 104.04884318766%; padding: 1px; margin: 1px;"  title="Philosophy (25)">Philosophy</a> <a href="https://gilkalai.wordpress.com/category/physics/" style="font-size: 117.99485861183%; padding: 1px; margin: 1px;"  title="Physics (56)">Physics</a> <a href="https://gilkalai.wordpress.com/category/probability/" style="font-size: 137.78920308483%; padding: 1px; margin: 1px;"  title="Probability (100)">Probability</a> <a href="https://gilkalai.wordpress.com/category/quantum/" style="font-size: 127.44215938303%; padding: 1px; margin: 1px;"  title="Quantum (77)">Quantum</a> <a href="https://gilkalai.wordpress.com/category/rationality/" style="font-size: 108.09768637532%; padding: 1px; margin: 1px;"  title="Rationality (34)">Rationality</a> <a href="https://gilkalai.wordpress.com/category/taxi-and-other-stories/" style="font-size: 103.59897172237%; padding: 1px; margin: 1px;"  title="Taxi-and-other-stories (24)">Taxi-and-other-stories</a> <a href="https://gilkalai.wordpress.com/category/teaching/" style="font-size: 101.79948586118%; padding: 1px; margin: 1px;"  title="Teaching (20)">Teaching</a> <a href="https://gilkalai.wordpress.com/category/test-your-intuition/" style="font-size: 129.24164524422%; padding: 1px; margin: 1px;"  title="Test your intuition (81)">Test your intuition</a> <a href="https://gilkalai.wordpress.com/category/uncategorized/" style="font-size: 103.14910025707%; padding: 1px; margin: 1px;"  title="Uncategorized (23)">Uncategorized</a> <a href="https://gilkalai.wordpress.com/category/updates/" style="font-size: 167.03084832905%; padding: 1px; margin: 1px;"  title="Updates (165)">Updates</a> <a href="https://gilkalai.wordpress.com/category/what-is-mathematics/" style="font-size: 115.74550128535%; padding: 1px; margin: 1px;"  title="What is Mathematics (51)">What is Mathematics</a> </div></li>					</ul>
+				</div><!-- #second .widget-area -->
+
+				<div id="third" class="widget-area">
+					<ul class="xoxo">
+						<li id="wp_tag_cloud-2" class="widget-container wp_widget_tag_cloud"><h3 class="widget-title"></h3><ul class='wp-tag-cloud' role='list'>
+	<li><a href="https://gilkalai.wordpress.com/tag/alefs-corner/" class="tag-cloud-link tag-link-648686804 tag-link-position-1" style="font-size: 15.485148514851pt;" aria-label="Alef&#039;s corner (20 items)">Alef&#039;s corner</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/alex-lubotzky/" class="tag-cloud-link tag-link-215897327 tag-link-position-2" style="font-size: 10.356435643564pt;" aria-label="Alex Lubotzky (8 items)">Alex Lubotzky</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/aram-harrow/" class="tag-cloud-link tag-link-38325121 tag-link-position-3" style="font-size: 9.6633663366337pt;" aria-label="Aram Harrow (7 items)">Aram Harrow</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/avi-wigderson/" class="tag-cloud-link tag-link-4053474 tag-link-position-4" style="font-size: 12.158415841584pt;" aria-label="Avi Wigderson (11 items)">Avi Wigderson</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/boolean-functions/" class="tag-cloud-link tag-link-1831010 tag-link-position-5" style="font-size: 8.970297029703pt;" aria-label="Boolean functions (6 items)">Boolean functions</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/borsuks-conjecture/" class="tag-cloud-link tag-link-21899165 tag-link-position-6" style="font-size: 11.049504950495pt;" aria-label="Borsuk&#039;s conjecture (9 items)">Borsuk&#039;s conjecture</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/branko-grunbaum/" class="tag-cloud-link tag-link-44285779 tag-link-position-7" style="font-size: 8.970297029703pt;" aria-label="Branko Grunbaum (6 items)">Branko Grunbaum</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/cap-sets/" class="tag-cloud-link tag-link-1831488 tag-link-position-8" style="font-size: 8.970297029703pt;" aria-label="Cap sets (6 items)">Cap sets</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/combinatorics/" class="tag-cloud-link tag-link-312353 tag-link-position-9" style="font-size: 8.970297029703pt;" aria-label="Combinatorics (6 items)">Combinatorics</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/conferences/" class="tag-cloud-link tag-link-9204 tag-link-position-10" style="font-size: 8.970297029703pt;" aria-label="Conferences (6 items)">Conferences</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/convex-polytopes/" class="tag-cloud-link tag-link-6455306 tag-link-position-11" style="font-size: 9.6633663366337pt;" aria-label="Convex polytopes (7 items)">Convex polytopes</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/david-ellis/" class="tag-cloud-link tag-link-1383999 tag-link-position-12" style="font-size: 8pt;" aria-label="David Ellis (5 items)">David Ellis</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/debates/" class="tag-cloud-link tag-link-6992 tag-link-position-13" style="font-size: 8.970297029703pt;" aria-label="Debates (6 items)">Debates</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/dorit-aharonov/" class="tag-cloud-link tag-link-156316452 tag-link-position-14" style="font-size: 8pt;" aria-label="Dorit Aharonov (5 items)">Dorit Aharonov</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/dor-minzer/" class="tag-cloud-link tag-link-602168787 tag-link-position-15" style="font-size: 10.356435643564pt;" aria-label="Dor Minzer (8 items)">Dor Minzer</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/ehud-friedgut/" class="tag-cloud-link tag-link-156328600 tag-link-position-16" style="font-size: 11.049504950495pt;" aria-label="Ehud Friedgut (9 items)">Ehud Friedgut</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/elchanan-mossel/" class="tag-cloud-link tag-link-589289734 tag-link-position-17" style="font-size: 8pt;" aria-label="Elchanan Mossel (5 items)">Elchanan Mossel</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/eran-nevo/" class="tag-cloud-link tag-link-83867527 tag-link-position-18" style="font-size: 10.356435643564pt;" aria-label="Eran Nevo (8 items)">Eran Nevo</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/extremal-combinatorics/" class="tag-cloud-link tag-link-5587814 tag-link-position-19" style="font-size: 12.158415841584pt;" aria-label="Extremal combinatorics (11 items)">Extremal combinatorics</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/g-conjecture/" class="tag-cloud-link tag-link-7737509 tag-link-position-20" style="font-size: 12.158415841584pt;" aria-label="g-conjecture (11 items)">g-conjecture</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/game-theory/" class="tag-cloud-link tag-link-14852 tag-link-position-21" style="font-size: 8.970297029703pt;" aria-label="Game theory (6 items)">Game theory</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/greg-kuperberg/" class="tag-cloud-link tag-link-18804804 tag-link-position-22" style="font-size: 8.970297029703pt;" aria-label="Greg Kuperberg (6 items)">Greg Kuperberg</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/guy-kindler/" class="tag-cloud-link tag-link-241984547 tag-link-position-23" style="font-size: 11.60396039604pt;" aria-label="Guy Kindler (10 items)">Guy Kindler</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/helly-type-theorems/" class="tag-cloud-link tag-link-7918893 tag-link-position-24" style="font-size: 9.6633663366337pt;" aria-label="Helly type theorems (7 items)">Helly type theorems</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/hirsch-conjecture/" class="tag-cloud-link tag-link-10667809 tag-link-position-25" style="font-size: 15.207920792079pt;" aria-label="Hirsch conjecture (19 items)">Hirsch conjecture</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/icm2018/" class="tag-cloud-link tag-link-599316495 tag-link-position-26" style="font-size: 8.970297029703pt;" aria-label="ICM2018 (6 items)">ICM2018</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/icm2022/" class="tag-cloud-link tag-link-648217559 tag-link-position-27" style="font-size: 8pt;" aria-label="ICM2022 (5 items)">ICM2022</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/igor-pak/" class="tag-cloud-link tag-link-24476571 tag-link-position-28" style="font-size: 11.049504950495pt;" aria-label="Igor Pak (9 items)">Igor Pak</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/irit-dinur/" class="tag-cloud-link tag-link-97233912 tag-link-position-29" style="font-size: 8pt;" aria-label="Irit Dinur (5 items)">Irit Dinur</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/itai-benjamini/" class="tag-cloud-link tag-link-10758210 tag-link-position-30" style="font-size: 10.356435643564pt;" aria-label="Itai Benjamini (8 items)">Itai Benjamini</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/jean-bourgain/" class="tag-cloud-link tag-link-13730580 tag-link-position-31" style="font-size: 10.356435643564pt;" aria-label="Jean Bourgain (8 items)">Jean Bourgain</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/jeff-kahn/" class="tag-cloud-link tag-link-10322657 tag-link-position-32" style="font-size: 9.6633663366337pt;" aria-label="Jeff Kahn (7 items)">Jeff Kahn</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/karim-adiprasito/" class="tag-cloud-link tag-link-124037911 tag-link-position-33" style="font-size: 10.356435643564pt;" aria-label="Karim Adiprasito (8 items)">Karim Adiprasito</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/laci-lovasz/" class="tag-cloud-link tag-link-11131222 tag-link-position-34" style="font-size: 8.970297029703pt;" aria-label="Laci Lovasz (6 items)">Laci Lovasz</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/linear-programming/" class="tag-cloud-link tag-link-321935 tag-link-position-35" style="font-size: 10.356435643564pt;" aria-label="Linear programming (8 items)">Linear programming</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/lou-billera/" class="tag-cloud-link tag-link-7737506 tag-link-position-36" style="font-size: 8pt;" aria-label="Lou Billera (5 items)">Lou Billera</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/mathoverflow/" class="tag-cloud-link tag-link-26602339 tag-link-position-37" style="font-size: 10.356435643564pt;" aria-label="Mathoverflow (8 items)">Mathoverflow</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/michal-linial/" class="tag-cloud-link tag-link-7617551 tag-link-position-38" style="font-size: 8.970297029703pt;" aria-label="Michal Linial (6 items)">Michal Linial</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/muli-safra/" class="tag-cloud-link tag-link-156352183 tag-link-position-39" style="font-size: 9.6633663366337pt;" aria-label="Muli Safra (7 items)">Muli Safra</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/nati-linial/" class="tag-cloud-link tag-link-183608763 tag-link-position-40" style="font-size: 12.158415841584pt;" aria-label="Nati Linial (11 items)">Nati Linial</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/noam-lifshitz/" class="tag-cloud-link tag-link-596172756 tag-link-position-41" style="font-size: 9.6633663366337pt;" aria-label="Noam Lifshitz (7 items)">Noam Lifshitz</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/noga-alon/" class="tag-cloud-link tag-link-49504781 tag-link-position-42" style="font-size: 12.158415841584pt;" aria-label="Noga Alon (11 items)">Noga Alon</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/noise/" class="tag-cloud-link tag-link-1398 tag-link-position-43" style="font-size: 12.574257425743pt;" aria-label="Noise (12 items)">Noise</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/noise-sensitivity/" class="tag-cloud-link tag-link-8195440 tag-link-position-44" style="font-size: 11.049504950495pt;" aria-label="Noise-sensitivity (9 items)">Noise-sensitivity</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/oberwolfach/" class="tag-cloud-link tag-link-9627464 tag-link-position-45" style="font-size: 8.970297029703pt;" aria-label="Oberwolfach (6 items)">Oberwolfach</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/oded-schramm/" class="tag-cloud-link tag-link-10717064 tag-link-position-46" style="font-size: 11.60396039604pt;" aria-label="Oded Schramm (10 items)">Oded Schramm</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/paul-erdos/" class="tag-cloud-link tag-link-280018 tag-link-position-47" style="font-size: 13.821782178218pt;" aria-label="Paul Erdos (15 items)">Paul Erdos</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/percolation/" class="tag-cloud-link tag-link-872238 tag-link-position-48" style="font-size: 8.970297029703pt;" aria-label="Percolation (6 items)">Percolation</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/peter-frankl/" class="tag-cloud-link tag-link-18804801 tag-link-position-49" style="font-size: 12.574257425743pt;" aria-label="Peter Frankl (12 items)">Peter Frankl</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/peter-keevash/" class="tag-cloud-link tag-link-208572381 tag-link-position-50" style="font-size: 11.049504950495pt;" aria-label="Peter Keevash (9 items)">Peter Keevash</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/polymath1/" class="tag-cloud-link tag-link-16273585 tag-link-position-51" style="font-size: 8.970297029703pt;" aria-label="polymath1 (6 items)">polymath1</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/polymath3/" class="tag-cloud-link tag-link-22983878 tag-link-position-52" style="font-size: 10.356435643564pt;" aria-label="Polymath3 (8 items)">Polymath3</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/polytopes/" class="tag-cloud-link tag-link-18716619 tag-link-position-53" style="font-size: 8pt;" aria-label="Polytopes (5 items)">Polytopes</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/probability/" class="tag-cloud-link tag-link-10451 tag-link-position-54" style="font-size: 9.6633663366337pt;" aria-label="Probability (7 items)">Probability</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/quantum-computation/" class="tag-cloud-link tag-link-147933 tag-link-position-55" style="font-size: 14.930693069307pt;" aria-label="Quantum computation (18 items)">Quantum computation</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/quantum-computers/" class="tag-cloud-link tag-link-738227 tag-link-position-56" style="font-size: 18.534653465347pt;" aria-label="Quantum computers (34 items)">Quantum computers</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/quantum-error-correction/" class="tag-cloud-link tag-link-13247683 tag-link-position-57" style="font-size: 13.128712871287pt;" aria-label="Quantum error-correction (13 items)">Quantum error-correction</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/quantum-supremacy/" class="tag-cloud-link tag-link-553813863 tag-link-position-58" style="font-size: 13.821782178218pt;" aria-label="quantum supremacy (15 items)">quantum supremacy</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/richard-stanley/" class="tag-cloud-link tag-link-4959766 tag-link-position-59" style="font-size: 9.6633663366337pt;" aria-label="Richard Stanley (7 items)">Richard Stanley</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/riddles/" class="tag-cloud-link tag-link-5124 tag-link-position-60" style="font-size: 8pt;" aria-label="Riddles (5 items)">Riddles</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/robert-aumann/" class="tag-cloud-link tag-link-8442702 tag-link-position-61" style="font-size: 8.970297029703pt;" aria-label="Robert Aumann (6 items)">Robert Aumann</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/roths-theorem/" class="tag-cloud-link tag-link-1831489 tag-link-position-62" style="font-size: 10.356435643564pt;" aria-label="Roth&#039;s theorem (8 items)">Roth&#039;s theorem</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/scott-aaronson/" class="tag-cloud-link tag-link-10846075 tag-link-position-63" style="font-size: 10.356435643564pt;" aria-label="Scott Aaronson (8 items)">Scott Aaronson</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/subhash-khot/" class="tag-cloud-link tag-link-46148802 tag-link-position-64" style="font-size: 8pt;" aria-label="Subhash Khot (5 items)">Subhash Khot</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/sunflower-conjecture/" class="tag-cloud-link tag-link-111951203 tag-link-position-65" style="font-size: 8.970297029703pt;" aria-label="sunflower conjecture (6 items)">sunflower conjecture</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/taxi-and-other-stories/" class="tag-cloud-link tag-link-5587864 tag-link-position-66" style="font-size: 14.930693069307pt;" aria-label="Taxi-and-other-stories (18 items)">Taxi-and-other-stories</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/terry-tao/" class="tag-cloud-link tag-link-3893109 tag-link-position-67" style="font-size: 11.049504950495pt;" aria-label="Terry Tao (9 items)">Terry Tao</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/test-your-intuition/" class="tag-cloud-link tag-link-62090407 tag-link-position-68" style="font-size: 22pt;" aria-label="Test your intuition (60 items)">Test your intuition</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/tim-gowers/" class="tag-cloud-link tag-link-4840219 tag-link-position-69" style="font-size: 13.544554455446pt;" aria-label="Tim Gowers (14 items)">Tim Gowers</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/topological-combinatorics/" class="tag-cloud-link tag-link-7616377 tag-link-position-70" style="font-size: 8.970297029703pt;" aria-label="Topological combinatorics (6 items)">Topological combinatorics</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/turans-problem/" class="tag-cloud-link tag-link-7058413 tag-link-position-71" style="font-size: 8pt;" aria-label="Turan&#039;s problem (5 items)">Turan&#039;s problem</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/tverbergs-theorem/" class="tag-cloud-link tag-link-13827669 tag-link-position-72" style="font-size: 10.356435643564pt;" aria-label="Tverberg&#039;s theorem (8 items)">Tverberg&#039;s theorem</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/updates/" class="tag-cloud-link tag-link-1171 tag-link-position-73" style="font-size: 12.574257425743pt;" aria-label="Updates (12 items)">Updates</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/what-is-mathematics/" class="tag-cloud-link tag-link-1787542 tag-link-position-74" style="font-size: 8pt;" aria-label="What is Mathematics (5 items)">What is Mathematics</a></li>
+	<li><a href="https://gilkalai.wordpress.com/tag/yosi-rinott/" class="tag-cloud-link tag-link-703947980 tag-link-position-75" style="font-size: 8pt;" aria-label="Yosi Rinott (5 items)">Yosi Rinott</a></li>
+</ul>
+</li>					</ul>
+				</div><!-- #third .widget-area -->
+
+
+			</div><!-- #footer-widget-area -->
+
+			<div id="site-info">
+				<a href="https://gilkalai.wordpress.com/" title="Combinatorics and more" rel="home">
+					Combinatorics and more				</a>
+							</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/pub/twentyten/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202612924dcd77a86c6f1d3698ec27fc5da92b28585ddad3ee636c0397cf312193b2a1" id="grofiles-cards-js"></script>
+<script type="text/javascript" id="wpgroho-js-extra">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'Edit your profile →',
+							'View profile →': 'View profile →',
+							'Contact': 'Contact',
+							'Send money': 'Send money',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Gravatar not found.': 'Gravatar not found.',
+							'Too Many Requests.': 'Too Many Requests.',
+							'Internal Server Error.': 'Internal Server Error.',
+							'Is this you?': 'Is this you?',
+							'Claim your free profile.': 'Claim your free profile.',
+							'Email': 'Email',
+							'Home Phone': 'Home Phone',
+							'Work Phone': 'Work Phone',
+							'Cell Phone': 'Cell Phone',
+							'Contact Form': 'Contact Form',
+							'Calendar': 'Calendar',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-5f54c386292d685755c651d0bb2f5d8e">
+	</div>
+	<div class="grofile-hash-map-a23b9df554f5ee2e60fdc13645e4c50d">
+	</div>
+	<div class="grofile-hash-map-e4bab24088ecb5b1a4999e054878a617">
+	</div>
+	<div class="grofile-hash-map-612c848b78014de8fbd31d677f7d0a5d">
+	</div>
+	</div>
+		<div id="actionbar" dir="ltr" style="display: none;"
+			class="actnbr-pub-twentyten actnbr-has-follow actnbr-has-actions">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+						<a class="actnbr-action actnbr-actn-comment" href="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/#comments">
+							<svg class="gridicon gridicons-comment" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M12 16l-5 5v-5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2h-7z"/></g></svg>							<span>Comment						</span>
+						</a>
+					</li>
+									<li class="actnbr-btn actnbr-hidden">
+						<a class="actnbr-action actnbr-actn-reblog" href="">
+							<svg class="gridicon gridicons-reblog" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M22.086 9.914L20 7.828V18c0 1.105-.895 2-2 2h-7v-2h7V7.828l-2.086 2.086L14.5 8.5 19 4l4.5 4.5-1.414 1.414zM6 16.172V6h7V4H6c-1.105 0-2 .895-2 2v10.172l-2.086-2.086L.5 15.5 5 20l4.5-4.5-1.414-1.414L6 16.172z"/></g></svg><span>Reblog</span>
+						</a>
+					</li>
+									<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+			<span>Subscribed</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="https://gilkalai.wordpress.com">
+				<img loading='lazy' alt='' src='https://s2.wp.com/i/logo/wpcom-gray-white.png?m=1479929237i' srcset='https://s2.wp.com/i/logo/wpcom-gray-white.png 1x' class='avatar avatar-50' height='50' width='50' />				Combinatorics and more			</a>
+		</li>
+										<div class="actnbr-message no-display"></div>
+									<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																						<div class="actnbr-follow-count">Join 1,040 other subscribers</div>
+																					<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="3214111" />
+										<input type="hidden" name="source" value="https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="c428f97f55" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fgilkalai.wordpress.com%2F2026%2F03%2F10%2Fscott-aaronsons-view-of-my-view-about-quantum-computing%2F&#038;signup_flow=account">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+									<li class="actnbr-btn actnbr-hidden no-display" onclick="javascript:__tcfapi( 'showUi' );">
+						<a class="actnbr-action actnbr-actn-privacy" href="#">
+							<svg class="gridicon gridicons-info-outline" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M13 9h-2V7h2v2zm0 2h-2v6h2v-6zm-1-7c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8m0-2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/></g></svg>							<span>Privacy						</span>
+						</a>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+								<li class="actnbr-sitename">
+			<a href="https://gilkalai.wordpress.com">
+				<img loading='lazy' alt='' src='https://s2.wp.com/i/logo/wpcom-gray-white.png?m=1479929237i' srcset='https://s2.wp.com/i/logo/wpcom-gray-white.png 1x' class='avatar avatar-50' height='50' width='50' />				Combinatorics and more			</a>
+		</li>
+								<li class="actnbr-folded-follow">
+										<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+			<span>Subscribed</span>
+		</a>
+								</li>
+														<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+							<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fgilkalai.wordpress.com%2F2026%2F03%2F10%2Fscott-aaronsons-view-of-my-view-about-quantum-computing%2F&#038;signup_flow=account">Log in</a></li>
+																<li class="actnbr-shortlink">
+										<a href="https://wp.me/pdu8v-8aE">
+											<span class="actnbr-shortlink__text">Copy shortlink</span>
+											<span class="actnbr-shortlink__icon"><svg class="gridicon gridicons-checkmark" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M9 19.414l-6.707-6.707 1.414-1.414L9 16.586 20.293 5.293l1.414 1.414"/></g></svg></span>
+										</a>
+									</li>
+																<li class="flb-report">
+									<a href="https://wordpress.com/abuse/?report_url=https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/" target="_blank" rel="noopener noreferrer">
+										Report this content									</a>
+								</li>
+															<li class="actnbr-reader">
+									<a href="https://wordpress.com/reader/blogs/3214111/posts/31412">
+										View post in Reader									</a>
+								</li>
+															<li class="actnbr-subs">
+									<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+								</li>
+																<li class="actnbr-fold"><a href="">Collapse this bar</a></li>
+														</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "DOMContentLoaded", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "/wp-content/mu-plugins/actionbar/actionbar.css?v=20250116";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "/wp-content/mu-plugins/actionbar/actionbar.js?v=20250204";
+	document.body.appendChild( script );
+} );
+</script>
+
+			<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" href="#" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https://gilkalai.wordpress.com/2026/03/10/scott-aaronsons-view-of-my-view-about-quantum-computing/":31412};
+	</script>
+				
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??/wp-content/mu-plugins/likes/queuehandler.js,/wp-includes/js/comment-reply.min.js?m=1743165756j'></script>
+<script type="text/javascript" src="https://s1.wp.com/wp-content/plugins/gutenberg-core/v22.7.0/build/scripts/hooks/index.min.js?m=1773253927i&amp;ver=7496969728ca0f95732d" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://s1.wp.com/wp-content/plugins/gutenberg-core/v22.7.0/build/scripts/i18n/index.min.js?m=1773253927i&amp;ver=781d11515ad3d91786ec" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="verbum-settings-js-before">
+/* <![CDATA[ */
+window.VerbumComments = {"Log in or provide your name and email to leave a reply.":"Log in or provide your name and email to leave a reply.","Log in or provide your name and email to leave a comment.":"Log in or provide your name and email to leave a comment.","Receive web and mobile notifications for posts on this site.":"Receive web and mobile notifications for posts on this site.","Name":"Name","Email (address never made public)":"Email (address never made public)","Website (optional)":"Website (optional)","Leave a reply. (log in optional)":"Leave a reply. (log in optional)","Leave a comment. (log in optional)":"Leave a comment. (log in optional)","Log in to leave a reply.":"Log in to leave a reply.","Log in to leave a comment.":"Log in to leave a comment.","Logged in via %s":"Logged in via %s","Log out":"Log out","Email":"Email","(Address never made public)":"(Address never made public)","Instantly":"Instantly","Daily":"Daily","Reply":"Reply","Comment":"Comment","WordPress":"WordPress","Weekly":"Weekly","Notify me of new posts":"Notify me of new posts","Email me new posts":"Email me new posts","Email me new comments":"Email me new comments","Cancel":"Cancel","Write a comment...":"Write a comment...","Write a reply...":"Write a reply...","Website":"Website","Optional":"Optional","We'll keep you in the loop!":"We'll keep you in the loop!","Loading your comment...":"Loading your comment...","Discover more from":"Discover more from Combinatorics and more","Subscribe now to keep reading and get access to the full archive.":"Subscribe now to keep reading and get access to the full archive.","Continue reading":"Continue reading","Never miss a beat!":"Never miss a beat!","Interested in getting blog post updates? Simply click the button below to stay in the loop!":"Interested in getting blog post updates? Simply click the button below to stay in the loop!","Enter your email address":"Enter your email address","Subscribe":"Subscribe","Comment sent successfully":"Comment sent successfully","Save my name, email, and website in this browser for the next time I comment.":"Save my name, email, and website in this browser for the next time I comment.","hovercardi18n":{"Edit your profile \u2192":"Edit your profile \u2192","View profile \u2192":"View profile \u2192","Contact":"Contact","Send money":"Send money","Profile not found.":"Profile not found.","Too Many Requests.":"Too Many Requests.","Internal Server Error.":"Internal Server Error.","Sorry, we are unable to load this Gravatar profile.":"Sorry, we are unable to load this Gravatar profile."},"siteId":3214111,"postId":31412,"mustLogIn":false,"requireNameEmail":true,"commentRegistration":false,"connectURL":"https://gilkalai.wordpress.com/public.api/connect/?action=request\u0026from_comments=yes","logoutURL":"https://gilkalai.wordpress.com/wp-login.php?action=logout\u0026_wpnonce=df5d20fb6f","homeURL":"https://gilkalai.wordpress.com/","subscribeToBlog":true,"subscribeToComment":true,"isJetpackCommentsLoggedIn":false,"jetpackUsername":"","jetpackUserId":0,"jetpackSignature":"","jetpackAvatar":"https://0.gravatar.com/avatar/?s=96\u0026amp;d=identicon\u0026amp;r=PG","enableBlocks":true,"enableSubscriptionModal":true,"currentLocale":"en","isJetpackComments":false,"allowedBlocks":["core/paragraph","core/list","core/code","core/list-item","core/quote","core/image","core/embed","core/quote","core/code"],"embedNonce":"e58e1643a7","verbumBundleUrl":"/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/moon/jetpack_vendor/automattic/jetpack-mu-wpcom/src/features/verbum-comments/dist/index.js","isRTL":false,"vbeCacheBuster":1771405207,"iframeUniqueId":0,"colorScheme":false}
+//# sourceURL=verbum-settings-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/moon/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/verbum-comments/assets/dynamic-loader.js?m=1772518873i&amp;minify=false&amp;ver=8b5296f9195db92c42e4" id="verbum-dynamic-loader-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"/wp-content/mu-plugins/jetpack-plugin/moon/_inc/blocks/swiper.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https://gilkalai.wordpress.com/wp-admin/admin-ajax.php","nonce":"96a5af7a49","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","image_label":"Open image in full-screen.","download_original":"View full size \u003Cspan class=\"photo-size\"\u003E{0}\u003Cspan class=\"photo-size-times\"\u003E\u00d7\u003C/span\u003E{1}\u003C/span\u003E","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https://gilkalai.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fgilkalai.wordpress.com%2F2026%2F03%2F10%2Fscott-aaronsons-view-of-my-view-about-quantum-computing%2F","blog_id":"3214111","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=3214111&v=wpcom&tz=3&user_id=0&subd=gilkalai","is_public":"1"};
+//# sourceURL=jetpack-carousel-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+//# sourceURL=sharing-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="jetpack-script-data-js-before">
+/* <![CDATA[ */
+window.JetpackScriptData = {"site":{"host":"wpcom","is_wpcom_platform":true}};
+//# sourceURL=jetpack-script-data-js-before
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJydUM0KwjAMfiG7TkXGDuKjSGzrzLampUkdvr2yP8TDDt6S75dED1GZQOJItM8q9rlBYt06iWA69YGGaIKfCe1DoIW8Ph3ZkDRkCR5E0Kw2YHbC+paxtyvIJmEUZUGgaHmnt5u/C69IZg4zkEJm16+6BSg80kYsdMjeiToW5RS3APc0iu2Gd6mYXvGz/n8KPyA5C9a+xhGpmW+4+PO+qg5lXdfVqX0DR9Cc5w=='></script>
+<script type="text/javascript" id="sharing-js-js-after">
+/* <![CDATA[ */
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+//# sourceURL=sharing-js-js-after
+/* ]]> */
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1764078722i&ver=7.0-alpha-61616"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20260316#ver=20260316' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	<script src="//stats.wp.com/w.js?68" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'3214111','blog_tz':'3','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'3214111','v':'wpcom','tz':'3','user_id':'0','post':'31412','subd':'gilkalai'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGQ/JUs1UEpSZlVhejB0d25DRnx2OFhsPXhjZXlCL3FyPUJXeUguSlt1TT9fbk0uK3ZtREFddVItb2wuPyUwcm5rREs3RD9GOWN5SC1nUWYla1ZLd3NtQkpocHJOK28maXI2bDAralJwd1pxSHVSX24sM3RqWzddenU0JlY0NltYfHJ8M35uL0czfCZ5aFdTQjI4LyUmNjA4TH4zTkY9RiY4RExLblBfJSxzd1YzRkZXU08/TnZYMS9JdTRBOSUrQVZsW05KSUpuYz1ybExLQS13c0ovQUlFfkwrclA3X09icmIuY0YlPT9tOT12SUxFTUVdRD9MdS03djNWVmlMSg=='}]);
+_stq.push([ 'clickTrackerInit', '3214111', '31412' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="Etc/GMT-3" data-custom-props="{&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;pub\/twentyten&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"  >
+		<script defer src="/wp-content/js/bilmur.min.js?i=17&amp;m=202612"></script> 	
+<script>
+(function() {
+	'use strict';
+
+	const fetches = {};
+	const promises = {};
+	const urls = {
+		'wp-polyfill': '/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1764669441i&ver=3.15.0',
+		'verbum': '/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/moon/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/verbum-comments/verbum-comments.js?m=1772518873i&minify=false&ver=eff0582f6f6d831e93ef'
+	};
+	const loaders = {
+		'verbum': () => {
+			fetchExternalScript('wp-polyfill');
+			fetchExternalScript('verbum');
+			promises['wp-polyfill'] = promises['wp-polyfill'] || loadWPScript('wp-polyfill');
+			promises['verbum'] = promises['verbum'] || promises['wp-polyfill'].then( () => loadWPScript('verbum') );
+			return promises['verbum'];
+		},
+		
+	};
+	const scriptExtras = {
+		
+	};
+
+	window.WP_Enqueue_Dynamic_Script = {
+		loadScript: (handle) => {
+			if (!loaders[handle]) {
+				console.error('WP_Enqueue_Dynamic_Script: unregistered script `' + handle + '`.');
+			}
+			return loaders[handle]();
+		}
+	};
+
+	function fetchExternalScript(handle) {
+		if (!urls[handle]) {
+			return Promise.resolve();
+		}
+
+		fetches[handle] = fetches[handle] || fetch(urls[handle], { mode: 'no-cors' });
+		return fetches[handle];
+	}
+
+	function runExtraScript(handle, type, index) {
+		const id = 'wp-enqueue-dynamic-script:' + handle + ':' + type + ':' + (index + 1);
+		const template = document.getElementById(id);
+		if (!template) {
+			return Promise.reject();
+		}
+
+		const script = document.createElement( 'script' );
+		script.innerHTML = template.innerHTML;
+		document.body.appendChild( script );
+		return Promise.resolve();
+	}
+
+	function loadExternalScript(handle) {
+		if (!urls[handle]) {
+			return Promise.resolve();
+		}
+
+		return fetches[handle].then(() => {
+			return new Promise((resolve, reject) => {
+				const script = document.createElement('script');
+				script.onload = () => resolve();
+				script.onerror = (e) => reject(e);
+				script.src = urls[handle];
+				document.body.appendChild(script);
+			});
+		});
+	}
+
+	function loadExtra(handle, pos) {
+		const count = (scriptExtras[handle] && scriptExtras[handle][pos]) || 0;
+		let promise = Promise.resolve();
+
+		for (let i = 0; i < count; i++) {
+			promise = promise.then(() => runExtraScript(handle, pos, i));
+		}
+
+		return promise;
+	}
+
+	function loadWPScript(handle) {
+		// Core loads scripts in this order. See: https://github.com/WordPress/WordPress/blob/a59eb9d39c4fcba834b70c9e8dfd64feeec10ba6/wp-includes/class-wp-scripts.php#L428.
+		return loadExtra(handle, 'translations')
+			.then(() => loadExtra(handle, 'before'))
+			.then(() => loadExternalScript(handle))
+			.then(() => loadExtra(handle, 'after'));
+	}
+} )();
+</script>
+</body>
+</html>

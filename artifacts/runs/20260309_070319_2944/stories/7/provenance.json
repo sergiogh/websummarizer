@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/yUdoVBlKVUXgMPsT5",
+  "title": "Demonstration of high-fidelity entangled logical qubits using transmons | Nature Communications",
+  "why": "- The study proposes and implements a method that uses dynamical decoupling (DD) with quantum error correction (QEC) codes to drastically suppress logical errors.\n- This hybrid QEC-NDD (Normalizer Dynamical Decoupling) strategy is capable of handling arbitrary weight errors.\n- Experiments using IBM transmon devices and the [[4, 2, 2]] code showed performance that significantly exceeds the capabilities of using either QEC code or DD alone.\n- The method enables detection of logical errors affecting logically encoded Bell states, with demonstrated high-fidelity entangled logical qubits.\n- The achieved fidelities are beyond-breakeven, significantly exceeding those of unprotected entangled qubits in the same setting."
+}

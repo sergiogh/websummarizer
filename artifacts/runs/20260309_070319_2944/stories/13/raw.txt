@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="no-js">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+
+<title>New Danish quantum software could accelerate future medicines</title>
+<script>
+  var cookieScriptVersion = "202105251325";
+  var cookieScriptId = "a8ca7e688df75cd8a6a03fcab6d18143";
+</script>
+<meta name="DC.Language" scheme="NISOZ39.50" content="en">
+<meta name="DC.Title" content="New Danish quantum software could accelerate future medicines">
+<meta name="DC.Description" content="Innovation Fund Denmark has awarded a Grand Solutions grant to a new research and innovation project led by Aarhus University. The project aims to efficiently reap the potency of quantum computers and make it easily deployable in drug discovery and pharmaceutical research.">
+<meta name="DC.Keywords" content="Computer Science, Quamtum Computing, drug discovery">
+<meta http-equiv="Last-Modified" content="2026-02-23T10:01:42+01:00">
+<meta name="DC.Date" scheme="ISO8601" content="2026-02-23T10:01:42+01:00">
+<meta name="DC.Contributor" content="">
+<meta name="DC.Creator" content="240278@au.dk">
+<meta name="DC.Publisher" content="Aarhus University">
+<meta name="DC.Type" content="text/html">
+<meta name="generator" content="TYPO3 CMS">
+<meta name="description" content="Innovation Fund Denmark has awarded a Grand Solutions grant to a new research and innovation project led by Aarhus University. The project aims to efficiently reap the potency of quantum computers and make it easily deployable in drug discovery and pharmaceutical research.">
+<meta http-equiv="content-language" content="en">
+<meta name="author" content="240278@au.dk">
+<meta property="og:title" content="New Danish quantum software could accelerate future medicines">
+<meta property="og:description" content="Innovation Fund Denmark has awarded a Grand Solutions grant to a new research and innovation project led by Aarhus University. The project aims to efficiently reap the potency of quantum computers and make it easily deployable in drug discovery and pharmaceutical research.">
+<meta name="twitter:card" content="summary">
+<meta name="rating" content="GENERAL">
+
+
+<link rel="stylesheet" href="/typo3temp/assets/css/4adea90c81bdd79ac4f5be3b55a7851c.css?1758625441" media="all">
+<link rel="stylesheet" href="https://cdn.au.dk/2016/assets/css/app.css" media="all">
+<link rel="stylesheet" href="https://cdn.au.dk/components/umd/all.css" media="all">
+<link rel="stylesheet" href="/_assets/bba0af3e32dafabe31c0da8e169fa8c4/Css/fluid_styled_content.css?1765963645" media="all">
+<link rel="stylesheet" href="/_assets/56b797f8bb08f87b2b0a4b7706a3f2d6/Css/Powermail/CssDemo.css?1765963641" media="all">
+<link rel="stylesheet" href="/_assets/56b797f8bb08f87b2b0a4b7706a3f2d6/Css/powermail-overrides.css?1765963641" media="all">
+<link rel="stylesheet" href="/_assets/d336a48cc75b0ce72905efb565ce5df1/Css/news-basic.css?1765963646" media="all">
+<link rel="stylesheet" href="https://customer.cludo.com/css/511/2151/cludo-search.min.css" media="all">
+
+
+<script src="https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dom4@2.1.5/build/dom4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-shim@0.35.5/es6-shim.min.js"></script>
+<script src="https://cdn.au.dk/2016/assets/js/vendor.js"></script>
+<script src="https://cdn.au.dk/2016/assets/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@aarhus-university/au-designsystem-delphinus@latest/public/projects/typo3/js/app.js"></script>
+<script src="/_assets/d336a48cc75b0ce72905efb565ce5df1/JavaScript/Infobox.js?1765963646"></script>
+
+
+<base href="//cs.au.dk/"><link href="https://cdn.au.dk/favicon.ico" rel="shortcut icon" /><meta content="AU normal contrast" http-equiv="Default-Style" /><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="si_pid" content="9845" />
+<script>
+  var universeGlobalContentPath = 'https://auinstallation28.cs.au.dk/en/global-content/universe-menu/raw-staff-burger-2016/';
+  var userContextApiUri = 'https://mit.medarbejdere.au.dk/v1/proxyusercontext/getcontext';
+  var profileApiUri = 'https://mit.medarbejdere.au.dk';
+  AU.alphabox.boxes.push(DEFAULT_util_staffservice_en);
+</script>
+<script>
+   var topWarning = false;
+   var topWarningTextDa = '';
+   var topWarningTextEn = '';
+   var primaryDanish = false;
+</script><script>
+    var cludoDanishPath = '/da/soegning';
+    var cludoEnglishPath = '/site-search';
+    var cludoEngineId = 10358;
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W4C9BZC');</script>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '241320966410608');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=241320966410608&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- DO NOT MODIFY --><link rel="image_src" href="//www.au.dk/fileadmin/res/facebookapps/au_standard_logo.jpg" />
+<script>
+  var _prum = [['id', '5a1ea01c2e1d7cd6ea850cdb'],
+               ['mark', 'firstbyte', (new Date()).getTime()]];
+  (function()
+    { var s = document.getElementsByTagName('script')[0] , p = document.createElement('script'); p.async = 'async'; p.src = '//rum-static.pingdom.net/prum.min.js'; s.parentNode.insertBefore(p, s); }
+  )();
+</script>
+<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" /><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@aarhus-university/au-designsystem-delphinus@latest/public/projects/typo3/style.css" media="all">
+<link rel="canonical" href="https://cs.au.dk/news-events/new-quantum-software-could-accelerate-future-medicines"/>
+
+<link rel="alternate" hreflang="en" href="https://cs.au.dk/news-events/new-quantum-software-could-accelerate-future-medicines"/>
+<link rel="alternate" hreflang="da" href="https://cs.au.dk/da/news-events/ny-dansk-kvantesoftware-kan-accelerere-fremtidens-laegemidler"/>
+<link rel="alternate" hreflang="x-default" href="https://cs.au.dk/news-events/new-quantum-software-could-accelerate-future-medicines"/>
+<!-- This site is optimized with the Yoast SEO for TYPO3 plugin - https://yoast.com/typo3-extensions-seo/ -->
+<script type="application/ld+json">[{"@context":"https:\/\/www.schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/auinstallation36.cs.au.dk\/","name":"TYPO3"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/cs.au.dk\/","name":"Department of Computer Science"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/cs.au.dk\/news-events","name":"News & Events"}},{"@type":"ListItem","position":4,"item":{"@id":"https:\/\/cs.au.dk\/news-events\/2026","name":"2026"}},{"@type":"ListItem","position":5,"item":{"@id":"https:\/\/cs.au.dk\/news-events\/new-quantum-software-could-accelerate-future-medicines","name":"New quantum software could accelerate future medicines"}}]}]</script>
+</head>
+<body class="department layout15 level4">
+
+
+    
+
+
+
+
+
+
+
+        
+    
+
+
+
+
+    
+
+<header>
+    <div class="row section-header">
+        <div class="large-12 medium-12 small-12 columns logo">
+            <a class="main-logo" href="//www.international.au.dk/" itemprop="url">
+                <object data="https://cdn.au.dk/2016/assets/img/logos.svg#au-en" type="image/svg+xml" alt="Aarhus University logo" aria-labelledby="section-header-logo">
+                    <p id="section-header-logo">Aarhus University logo</p>
+                </object>
+            </a>
+            <div class="hide-for-small-only find">
+                <a class="button find-button float-right" type="button" data-toggle="find-dropdown">Find</a>
+                <div class="dropdown-pane bottom " id="find-dropdown" data-dropdown data-hover="false"
+                    data-hover-pane="false" data-close-on-click="true">
+                    <div id="find-container" class="find-container"></div>
+                </div>
+            </div>
+            <div class="search">
+                
+<div class="au_searchbox" id="cludo-search-form" role="search">
+    <form class="au_searchform">
+        <fieldset>
+            <input class="au_searchquery" type="search" value="" name="searchrequest" id="cludo-search-form-input" aria-autocomplete="list"
+                   aria-haspopup="true" aria-label="Type search criteria" title="Type search criteria" />
+            <input class="au_searchbox_button" type="submit" title="Search" value="Search" />
+        </fieldset>
+    </form>
+</div>
+
+            </div>
+            <div class="language-selector">
+                
+
+    
+        
+    
+        
+                <p>
+                    <a href="/da/news-events/ny-dansk-kvantesoftware-kan-accelerere-fremtidens-laegemidler" hreflang="da" title="Dansk">
+                        <span>Dansk</span>
+                    </a>
+                </p>
+            
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+            </div>
+            <nav class="utility-links">
+
+        
+
+        <div id="c26626" class="csc-default csc-frame frame frame-default frame-type-html frame-layout-0 ">
+            
+            
+                
+
+
+
+            
+            
+            
+
+    <script>
+// Default alphabox med medarbejderservice til utility-box
+AU.alphabox.boxes.push(DEFAULT_util_staffservice_en);
+</script>
+                <ul class="utility resetlist">
+                    <li><a href="javascript:void(0)" data-toggle="utility-pane-student">For students</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="utility-pane-phd">For PhDs</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="utility-pane-staff">For employees</a></li>
+
+
+                    
+                  <!-- STUDENT -->
+                  <div class="dropdown-pane phd" id="utility-pane-student" data-dropdown data-close-on-click="true">
+                    <h2>Local study portal</h2>
+                    <a href="https://studerende.au.dk/en/studies/subject-portals/computer-science" target="_self" class="button expanded text-left bg-dark-student margin">Computer Science</a>
+                    <a href="https://studerende.au.dk/en/studies/subject-portals/computer-science" target="_self" class="button expanded text-left bg-dark-student margin">IT Product Development</a>
+                    <div id="au_alphabox_student_utility"></div>                       
+                  </div>
+                  <!-- STUDENT END -->
+                  <!-- PHD -->
+                  <div class="dropdown-pane phd" id="utility-pane-phd" data-dropdown data-close-on-click="true">
+                    <h2>Local PhD portal</h2>
+                    <a href="https://phd.nat.au.dk/for-applicants/application-guide/" target="_self" class="button expanded text-left bg-dark-phd margin">Application Guide</a>
+                    <a href="https://phd.nat.au.dk/programmes/computer-science/" target="_self" class="button expanded text-left bg-dark-phd margin">Computer Science</a>
+                    <div id="au_alphabox_phd_utility"></div>
+                    <h2>Pages for all PhD students</h2>
+                    <a href="//phd.au.dk/" target="_self" class="button expanded text-left bg-dark-phd margin">phd.au.dk</a>                        
+                  </div>
+                  <!-- PHD END -->
+                  
+                  <div class="dropdown-pane bottom" id="utility-pane-staff" data-dropdown data-close-on-click="true">
+                    <h2>Local staff information</h2>
+                    <a href="//cs.staff.au.dk/" target="_self" class="button expanded text-left bg-dark-staff margin">Department of Computer Science</a>
+                    <div id="au_alphabox_staff_utility"></div>
+                    <h2>Pages for staff members at AU</h2>
+                    <a href="//medarbejdere.au.dk/en/" target="_self" class="button expanded text-left bg-dark-staff margin">medarbejdere.au.dk/en/</a>                        
+                  </div>              
+                </ul>
+
+
+            
+                
+
+
+
+            
+            
+                
+
+
+
+            
+        </div>
+
+    
+
+</nav>
+        </div>
+    </div>
+    
+    <div class="row section-title">
+        <div class=" large-10 medium-10 columns">
+            <h1>
+                <a href="/">Department of <strong>Computer Science</strong></a>
+            </h1>
+        </div>
+        <div class="large-2 medium-2 small-2 columns seal text-right">
+            
+                <img class="seal show-for-medium" src="https://cdn.au.dk/2016/assets/img/au_segl-inv.svg" alt="Aarhus University Seal" />
+            
+        </div>
+    </div>
+    <div class="row header-menu">
+        <div class="columns medium-12 large-12 small-12 small-order-2">
+            <div class="title-bar align-right" data-responsive-toggle="menu" data-hide-for="medium">
+                <div class="mobile-nav">
+                    <button class="menu-icon" data-toggle></button>
+                </div>
+            </div>
+            <nav class="top-bar" id="menu"><div class="top-bar-left"><ul class="vertical medium-horizontal menu resetlist" data-responsive-menu="accordion medium-dropdown" data-hover-delay="300" data-closing-time="60" data-options="autoclose:false; closeOnClick:true; forceFollow:true;" ><li class="has-submenu"><a href="/research" target="_top">Research</a><ul  class="vertical menu"><li><a href="/research/crypto-and-cybersecurity" target="_top">Cryptography and Cybersecurity</a></li><li><a href="/research/section-on-human-centered-computing" target="_top">Human-Centered Computing</a></li><li><a href="/research/programming-languages-logic-and-software-security" target="_top">Programming Languages, Logic, and Software Security</a></li><li><a href="/research/algorithms-data-and-artificial-intelligence" target="_top">Algorithms, Data and Artificial Intelligence</a></li><li><a href="/research/publications" target="_top">Publications</a></li><li><a href="/education/phd" target="_top">PhD Studies</a></li></ul></li><li class="has-submenu"><a href="/education" target="_top">Education</a><ul  class="vertical menu"><li><a href="/education/bachelor" target="_top">Bachelor</a></li><li><a href="/education/master" target="_top">Master</a></li><li><a href="/education/phd" target="_top">PhD</a></li><li><a href="/business-collaboration/cs-alumni" target="_top">CS Alumni</a></li><li><a href="/education/international-study-programmes" target="_top">Information for international students</a></li><li><a href="/education/continuing-education" target="_top">Continuing education</a></li><li><a href="/education/study-environment" target="_top">Study environment</a></li><li><a href="/education/meet-our-graduates" target="_top">Meet our graduates</a></li><li><a href="/education/graduation" target="_top">Graduation at Department of Computer Science</a></li><li><a href="/education/chomskylab" target="_top">ChomskyLab</a></li></ul></li><li class="has-submenu"><a href="/business-collaboration" target="_top">Collaboration</a><ul  class="vertical menu"><li><a href="/business-collaboration/research-collaboration" target="_top">Research Collaboration</a></li><li><a href="/business-collaboration/stud-col" target="_top">Student Collaboration</a></li><li><a href="/business-collaboration/cs-business-club" target="_top">CS Business Club</a></li><li><a href="//cs.staff.au.dk/boards-and-committees/business-committee/">Business Committee</a></li></ul></li><li class="has-submenu active"><a href="/news-events/news" target="_top">News &amp; Events</a><ul  class="vertical menu"><li><a href="/news-events/news" target="_top">News</a></li><li><a href="/news-events/events" target="_top">Events</a></li><li><a href="/news-events/cs-colloquium" target="_top">CS Colloquium</a></li><li><a href="/news-events/camps-and-competitions" target="_top">Camps and Competitions</a></li></ul></li><li class="has-submenu"><a href="/about-us" target="_top">About Us</a><ul  class="vertical menu"><li><a href="/about-us/code-of-conduct" target="_top">Code of Conduct</a></li><li><a href="/about-us/strategy-towards-2030" target="_top">Strategy towards 2030</a></li><li><a href="/about-us/organisation/department-management" target="_top">Organisation</a></li><li><a href="/about-us/new-colleague-at-cs" target="_top">Welcome to new colleagues at CS</a></li><li><a href="/about-us/aniversary" target="_top">Anniversary</a></li><li><a href="/contact/people" target="_top">Employees</a></li><li><a href="/about-us/honorary-doctor-and-professors" target="_top">Honorary doctor and professors</a></li><li><a href="/about-us/vacancies" target="_top">Vacancies</a></li></ul></li><li class="has-submenu"><a href="/contact/management-and-heads-of-research" target="_top">Contact</a><ul  class="vertical menu"><li><a href="/contact/management-and-heads-of-research" target="_top">Management and Heads of Sections</a></li><li><a href="/contact/researchers" target="_top">Researchers</a></li><li><a href="/contact/people" target="_top">All employees</a></li><li><a href="/contact/for-the-press" target="_top">Press contacts</a></li><li><a href="/contact/gymnasiesamarbejde" target="_top">Gymnasiesamarbejde</a></li></ul></li></ul></div></nav>
+        </div>
+    </div>
+    <div id="fade"></div>
+</header>
+
+
+
+
+
+    <div class="row breadcrumb align-right hide-for-small-only">
+        <div class="columns medium-12">
+            &#160;<a href="//cs.au.dk">Department of Computer Science</a><span class="icon-bullet_rounded">&#160;</span><a href="/news-events/news">News & Events</a><span class="icon-bullet_rounded">&#160;</span><strong>New quantum software could accelerate future medicines</strong></div>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="small-12 large-3 medium-4 columns medium-only-portrait-4 pagenav left-menu align-top">
+            <h3 class="menu-title"><a href="/news-events/news">News & Events</a></h3><ul id="au_section_nav_inner_list"><li class="au_branch"><a href="/news-events/news">News</a></li><li><a href="/news-events/events">Events</a></li><li class="au_branch"><a href="/news-events/cs-colloquium">CS Colloquium</a></li><li class="au_branch"><a href="/news-events/camps-and-competitions">Camps and Competitions</a></li></ul>
+        </nav>
+        <div class="small-12 large-9 medium-8 columns medium-only-portrait-8 content main" id="au_content">
+            <div class="row">
+                <div class="large-12 medium-12 medium-only-portrait-12 small-12 columns">
+                    <h1 class="pagetitle">New quantum software could accelerate future medicines</h1>
+                    
+
+        
+
+        <div id="c62216" class="csc-default csc-frame frame frame-default frame-type-textpic frame-layout-0 ">
+            
+            
+                
+
+
+
+            
+            
+
+    
+        
+
+
+
+    
+
+
+            
+
+    <div class="ce-textpic ce-right ce-intext">
+        
+            
+
+    <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+        
+        
+            <div class="ce-row">
+                
+                    
+                        <div class="ce-column">
+                            
+
+        
+<figure class="image csc-textpic">
+    
+            
+                    
+<div class="csc-textpic-imagewrap csc-textpic-single-image">
+    <img class="image-embed-item" alt="Project lead professor Jaco van de Pol" src="/fileadmin/ingen_mappe_valgt/Jaco-Van-De-Pol-AU-CS-web_20pct.jpg" width="378" height="473" loading="lazy" />
+</div>
+
+
+                
+        
+    
+        <figcaption class="image-caption">
+            Professor Jaco van de Pol will lead the ODAQS project. Photo by Søren Kjeldgaard.
+        </figcaption>
+    
+</figure>
+
+
+    
+
+
+                        </div>
+                    
+                
+            </div>
+        
+        
+    </div>
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p><strong>Innovation Fund Denmark has awarded a Grand Solutions grant to a new research and innovation project led by Aarhus University. The project aims to efficiently reap the potency of quantum computers and make it easily deployable in drug discovery and pharmaceutical research.</strong></p>
+<p>Quantum computers hold enormous potential to revolutionise drug discovery, but today this potential is limited by the fact that the technology is difficult to work with in practice. With a new Grand Solutions grant from Innovation Fund Denmark, researchers from Aarhus University and Aalborg University, together with the Danish quantum technology company Kvantify, will now develop a software stack that makes quantum computers easier to use – bringing the technology closer to practical application in the healthcare sector.</p>
+<p>The project, <em><strong>ODAQS</strong></em> – <em><strong>Optimal Design Automation towards a Performant Quantum Software Stack</strong></em>, is led by Professor Jaco van de Pol from the Department of Computer Science at Aarhus University. The project will develop new methods and tools that make it possible to work with quantum computers in a simpler and more reliable way – without researchers and companies having to consider the technical limitations of each individual machine.</p><blockquote><p><em>“Quantum computers have enormous potential, but today they are very difficult to use in practice. Our goal is to develop software that makes quantum technology far more accessible and usable – so it can be applied to concrete societal challenges such as the development of new medicines,”</em> says Jaco van de Pol, project lead and Professor at the Department of Computer Science, Aarhus University.</p></blockquote><p>A key part of the project focuses on using advanced learning methods to automate and optimise the development of quantum software.</p><blockquote><p><em>“One of the major challenges in quantum software is finding good solutions without using enormous amounts of computational resources. In ODAQS, we will use reinforcement learning to let software learn how to produce more efficient quantum programs. This makes it possible to make better use of quantum computers – even with the hardware available today,”</em> says Kim Guldstrand Larsen, Professor at Aalborg University.</p></blockquote><h2>Saving time and costs in drug development</h2>
+<p>A large share of the costs associated with drug development arises in the early stages, where researchers test and eliminate potential drug candidates. In the long term, quantum computers could enable far more accurate calculations of chemical processes than classical computers.</p>
+<p>ODAQS combines research in programming languages, algorithms, optimized compilation, simulation and software verification to automate the path from ideas and calculations to finished quantum programs. The project has a particular focus on quantum chemistry and drug discovery, where improved computational methods can reduce both time and costs in the early stages of developing new medicines.</p>
+<p>Kvantify will use the project’s results to demonstrate how improved software building blocks can be exploited and translated into reliable and practically applicable technologies for &nbsp;quantum-based calculations.</p><blockquote><p><em>“If we can use quantum computers more efficiently, we can reduce both time and costs in the early stages of drug development. ODAQS provides us with an important technological foundation for bringing quantum computing closer to industrial application,”</em> says Allan Grønlund, co-founder and CTO of Kvantify.</p></blockquote><h2><strong>A strong Danish collaboration</strong></h2>
+<p>The project brings together research environments from Aarhus University and Aalborg University, as well as the company Kvantify. Together, they will develop crucial building blocks for software tools that can be used in research, education and industry, and which in the long term can help strengthen Denmark’s position in quantum technology.</p>
+<p>ODAQS runs from 2026 to 2029 and is supported under Innovation Fund Denmark’s Grand Solutions programme, which invests in ambitious projects with significant potential for society and industry.</p>
+<h2><strong>Facts</strong></h2><ul><li><span>Project title: </span><i><span>Optimal Design Automation towards a Performant Quantum Software Stack (ODAQS)</span></i></li><li><span>Investment from Innovation Fund Denmark: DKK 17.4 million</span></li><li><span>Duration: 3 years (2026–2029)</span></li></ul><h3><strong>Further information</strong></h3>
+<p>Jaco van de Pol, Professor, Department of Computer Science, Aarhus University<br>Tel.: +45 22 38 71 02, Email: <a href="mailto:jaco@cs.au.dk">jaco@cs.au.dk</a></p>
+<p>Kim Guldstrand Larsen, Professor, Department of Computer Science, Aalborg University<br>Email: <a href="mailto:kgl@cs.aau.dk">kgl@cs.aau.dk</a>&nbsp;</p>
+<p>Allan Grønlund, co-founder and CTO, Kvantify<br>Email:<a href="mailto:ag@kvantify.dk">ag@kvantify.dk</a></p>
+<p>Line Præstekjær Skouboe, Communications Officer, Innovation Fund Denmark<br>Tel.: +45 6190 5039 Email:<a href="mailto:line.skouboe@innofond.dk">line.skouboe@innofond.dk</a></p>
+                </div>
+            
+
+        
+    </div>
+
+
+            
+                
+
+
+
+            
+            
+                
+
+
+
+            
+        </div>
+
+    
+
+
+                </div>
+                <div class="column medium-12 small-12">
+                    <div class="au_contentauthor">
+                        
+<div class="au_contentauthor-revised">
+    Revised
+    23.02.2026
+</div>
+
+    -
+    <div class="tx-lfcontactauthor-pi1">
+        <a href="mailto:sofia@cs.au.dk?subject=t3Pageid:9845_t3PageUrl:http://cs.au.dk/news-events/new-quantum-software-could-accelerate-future-medicines" >Sofia Hedegaard Rasmussen</a>
+    </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+        
+        
+
+        
+
+        <div id="c26627" class="csc-default csc-frame frame frame-default frame-type-html frame-layout-0 ">
+            
+            
+                
+
+
+
+            
+            
+            
+
+    <footer class="row global">
+    <div class="large-6 medium-6 columns small-12">
+        <div class="row">
+            <div class="large-6 medium-6 small-6 columns small-order-2 medium-order-1">
+                <img class="seal" alt="" src="https://cdn.au.dk/2016/assets/img/au_segl.svg"/>
+            </div>
+            <div class="large-6 medium-6 columns small-order-1">
+                <h3>Department of Computer Science</h3>
+                <p>Aarhus University<br>
+        Åbogade 34<br>
+      8200 Aarhus N
+                </p>
+                <p>E-mail:  cs@au.dk<br>
+                    Tel: +45 8715 0000<br>
+                    </p>
+                <p><br>CVR no: 31119103<br>
+                      EAN no: 5798000419841<br>
+      Budget code: 7281</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-12 large-6 medium-6 columns">
+        <div class="row">
+            <div class="small-6 large-4 medium-6 columns">
+                <h3>About us</h3>
+                <ul class="resetlist">
+                    <li><a href="https://cs.au.dk/about-us/" target="_self">Profile</a></li>
+                    <li><a href="https://cs.au.dk/contact/people/" target="_self">Employees</a></li>
+                    <li><a href="https://cs.au.dk/contact/management-and-heads-of-research/" target="_self">Contact</a></li>
+                    <li><a href="https://cs.au.dk/about-us/vacancies/" target="_self">Vacancies</a></li>
+                </ul>
+            </div>
+            <div class="small-6 large-4 medium-6 columns">
+                <h3>AU degree programmes</h3>
+                <ul class="resetlist">
+                    <li><a href="//bachelor.au.dk/en/" target="_blank" rel="noreferrer">Bachelor</a></li>
+                    <li><a href="https://masters.au.dk/" target="_blank" rel="noreferrer">Master</a></li>
+                    <li><a href="//talent.au.dk/" target="_blank" rel="noreferrer">PhD</a></li>
+                </ul>
+
+            </div>
+            <div class="small-12 large-4 medium-6 columns">
+               <h3>Follow us</h3>
+<ul class="resetlist">
+    <li><a href="https://www.facebook.com/datalogi/" target="_blank" rel="noreferrer">Facebook</a></li>
+    <li><a href="https://www.instagram.com/csaudk/" target="_blank" rel="noreferrer">Instagram</a></li>
+    <li><a href="https://www.linkedin.com/company/cs-au-dk" target="_blank" rel="noreferrer">LinkedIn</a></li>
+    <li><a href="https://www.youtube.com/@cs-au-dk" target="_blank" rel="noreferrer">YouTube</a></li>
+    <li><a href="https://x.com/csaudk" target="_blank" rel="noreferrer">X</a></li>
+</ul>
+                <p class="muted">
+                     <br><br>
+ <a href="https://international.au.dk/about/profile/thisweb/copyright/" target="_blank" rel="noreferrer">©</a> &mdash;
+                     <a href="https://international.au.dk/cookie-policy/" target="_self">Cookies at au.dk</a><br>
+                    <a href="https://international.au.dk/about/profile/privacy-policy/" target="_blank" rel="noreferrer">Privacy policy</a>
+                  <br><a href="https://www.was.digst.dk/au-dk" target="_blank" rel="noreferrer">Web Accessibility Statement </a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+            
+                
+
+
+
+            
+            
+                
+
+
+
+            
+        </div>
+
+    
+
+
+        <div class="page-id row">9845&nbsp;/ i36</div>
+    </footer>
+
+<script src="https://cdn.au.dk/apps/react/findwidget/latest/app.js"></script>
+<script src="/_assets/948410ace0dfa9ad00627133d9ca8a23/JavaScript/Powermail/Form.min.js?1760518844" defer="defer"></script>
+<script src="/_assets/56b797f8bb08f87b2b0a4b7706a3f2d6/JavaScript/Powermail/Tabs.min.js?1765963641"></script>
+<script>
+/*<![CDATA[*/
+/*TS_inlineFooter*/
+
+var alertCookies = false;
+
+
+/*]]>*/
+</script>
+<script type="text/javascript">
+    var topWarning = false;
+    var topWarningTextDa = '<style type="text/css">@media (max-width: 640px) {.ie-warning a {font-size:0.8em;} .ie-warning h3 {line-height: 1;} } .ie-warning h3 {text-align:center;} .ie-warning a {padding: 0;} .ie-warning a:hover {text-decoration:underline;}</style><h3><a href="https://medarbejdere.au.dk/corona/">Coronavirus: Information til studerende og medarbejdere</a></h3>';
+    var topWarningTextEn = '<style type="text/css">@media (max-width: 640px) {.ie-warning a {font-size:0.8em;} .ie-warning h3 {line-height: 1;} } .ie-warning h3 {text-align:center;} .ie-warning a:hover {text-decoration:underline;}</style><h3><a href="https://medarbejdere.au.dk/en/corona/">Coronavirus: Information for students and staff</a></h3>';
+</script>
+</body>
+</html>

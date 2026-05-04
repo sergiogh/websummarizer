@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://qcentroid.xyz/xmlrpc.php">
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v21.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption - QCentroid</title>
+	<meta name="description" content="QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption" />
+	<link rel="canonical" href="https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption - QCentroid" />
+	<meta property="og:description" content="QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption" />
+	<meta property="og:url" content="https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/" />
+	<meta property="og:site_name" content="QCentroid" />
+	<meta property="article:published_time" content="2026-03-16T20:29:57+00:00" />
+	<meta property="article:modified_time" content="2026-03-17T09:49:25+00:00" />
+	<meta property="og:image" content="https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-1024x576.png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="576" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="QCentroid" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="QCentroid" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#article","isPartOf":{"@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/"},"author":{"name":"QCentroid","@id":"https://qcentroid.xyz/#/schema/person/1b58fb4779a5d3a3687efe3df22c17e4"},"headline":"QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption","datePublished":"2026-03-16T20:29:57+00:00","dateModified":"2026-03-17T09:49:25+00:00","mainEntityOfPage":{"@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/"},"wordCount":530,"publisher":{"@id":"https://qcentroid.xyz/#organization"},"image":{"@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#primaryimage"},"thumbnailUrl":"https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform.png","articleSection":["News"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/","url":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/","name":"QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption - QCentroid","isPartOf":{"@id":"https://qcentroid.xyz/#website"},"primaryImageOfPage":{"@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#primaryimage"},"image":{"@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#primaryimage"},"thumbnailUrl":"https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform.png","datePublished":"2026-03-16T20:29:57+00:00","dateModified":"2026-03-17T09:49:25+00:00","description":"QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption","breadcrumb":{"@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#primaryimage","url":"https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform.png","contentUrl":"https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform.png","width":1920,"height":1080},{"@type":"BreadcrumbList","@id":"https://qcentroid.xyz/news/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://qcentroid.xyz/"},{"@type":"ListItem","position":2,"name":"QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption"}]},{"@type":"WebSite","@id":"https://qcentroid.xyz/#website","url":"https://qcentroid.xyz/","name":"QCentroid - Quantum as a Service Platform","description":"Quantum-as-a-Service Platform","publisher":{"@id":"https://qcentroid.xyz/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://qcentroid.xyz/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://qcentroid.xyz/#organization","name":"QCentroid - Quantum as a Service Platform","url":"https://qcentroid.xyz/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://qcentroid.xyz/#/schema/logo/image/","url":"https://qcentroid.xyz/wp-content/uploads/2022/12/qcentroid_logo_white.png","contentUrl":"https://qcentroid.xyz/wp-content/uploads/2022/12/qcentroid_logo_white.png","width":621,"height":105,"caption":"QCentroid - Quantum as a Service Platform"},"image":{"@id":"https://qcentroid.xyz/#/schema/logo/image/"},"sameAs":["https://linkedin.com/company/qcentroidlab"]},{"@type":"Person","@id":"https://qcentroid.xyz/#/schema/person/1b58fb4779a5d3a3687efe3df22c17e4","name":"QCentroid","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://qcentroid.xyz/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/94ff7626b37f44f61776647e53e838eb12cf0d28aea6709330ef4f11f158a0fa?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/94ff7626b37f44f61776647e53e838eb12cf0d28aea6709330ef4f11f158a0fa?s=96&d=mm&r=g","caption":"QCentroid"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="QCentroid &raquo; Feed" href="https://qcentroid.xyz/feed/" />
+<link rel="alternate" type="application/rss+xml" title="QCentroid &raquo; Comments Feed" href="https://qcentroid.xyz/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/qcentroid.xyz\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.5"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='gs-swiper-css' href='https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/libs/swiper-js/swiper.min.css?ver=3.6.4' media='all' />
+<link rel='stylesheet' id='gs-tippyjs-css' href='https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/libs/tippyjs/tippy.css?ver=3.6.4' media='all' />
+<link rel='stylesheet' id='gs-logo-public-css' href='https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/css/gs-logo.min.css?ver=3.6.4' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://qcentroid.xyz/wp-includes/css/dist/block-library/style.min.css?ver=6.8.5' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel='stylesheet' id='storefront-gutenberg-blocks-css' href='https://qcentroid.xyz/wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css?ver=4.1.0' media='all' />
+<style id='storefront-gutenberg-blocks-inline-css'>
+
+				.wp-block-button__link:not(.has-text-color) {
+					color: #333333;
+				}
+
+				.wp-block-button__link:not(.has-text-color):hover,
+				.wp-block-button__link:not(.has-text-color):focus,
+				.wp-block-button__link:not(.has-text-color):active {
+					color: #333333;
+				}
+
+				.wp-block-button__link:not(.has-background) {
+					background-color: #eeeeee;
+				}
+
+				.wp-block-button__link:not(.has-background):hover,
+				.wp-block-button__link:not(.has-background):focus,
+				.wp-block-button__link:not(.has-background):active {
+					border-color: #d5d5d5;
+					background-color: #d5d5d5;
+				}
+
+				.wp-block-quote footer,
+				.wp-block-quote cite,
+				.wp-block-quote__citation {
+					color: #6d6d6d;
+				}
+
+				.wp-block-pullquote cite,
+				.wp-block-pullquote footer,
+				.wp-block-pullquote__citation {
+					color: #6d6d6d;
+				}
+
+				.wp-block-image figcaption {
+					color: #6d6d6d;
+				}
+
+				.wp-block-separator.is-style-dots::before {
+					color: #333333;
+				}
+
+				.wp-block-file a.wp-block-file__button {
+					color: #333333;
+					background-color: #eeeeee;
+					border-color: #eeeeee;
+				}
+
+				.wp-block-file a.wp-block-file__button:hover,
+				.wp-block-file a.wp-block-file__button:focus,
+				.wp-block-file a.wp-block-file__button:active {
+					color: #333333;
+					background-color: #d5d5d5;
+				}
+
+				.wp-block-code,
+				.wp-block-preformatted pre {
+					color: #6d6d6d;
+				}
+
+				.wp-block-table:not( .has-background ):not( .is-style-stripes ) tbody tr:nth-child(2n) td {
+					background-color: #fdfdfd;
+				}
+
+				.wp-block-cover .wp-block-cover__inner-container h1:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h2:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h3:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h4:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h5:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h6:not(.has-text-color) {
+					color: #000000;
+				}
+
+				.wc-block-components-price-slider__range-input-progress,
+				.rtl .wc-block-components-price-slider__range-input-progress {
+					--range-color: #7f54b3;
+				}
+
+				/* Target only IE11 */
+				@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+					.wc-block-components-price-slider__range-input-progress {
+						background: #7f54b3;
+					}
+				}
+
+				.wc-block-components-button:not(.is-link) {
+					background-color: #45a29e;
+					color: #ffffff;
+				}
+
+				.wc-block-components-button:not(.is-link):hover,
+				.wc-block-components-button:not(.is-link):focus,
+				.wc-block-components-button:not(.is-link):active {
+					background-color: #2c8985;
+					color: #ffffff;
+				}
+
+				.wc-block-components-button:not(.is-link):disabled {
+					background-color: #45a29e;
+					color: #ffffff;
+				}
+
+				.wc-block-cart__submit-container {
+					background-color: #ffffff;
+				}
+
+				.wc-block-cart__submit-container::before {
+					color: rgba(220,220,220,0.5);
+				}
+
+				.wc-block-components-order-summary-item__quantity {
+					background-color: #ffffff;
+					border-color: #6d6d6d;
+					box-shadow: 0 0 0 2px #ffffff;
+					color: #6d6d6d;
+				}
+			
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 14px;--wp--preset--font-size--medium: 23px;--wp--preset--font-size--large: 26px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 16px;--wp--preset--font-size--huge: 37px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://qcentroid.xyz/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.5' media='all' />
+<link rel='stylesheet' id='th-editor-front-css' href='https://qcentroid.xyz/wp-content/plugins/thumbnail-editor/css/editor-front.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='woof-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/css/front.css?ver=1.3.4.5' media='all' />
+<style id='woof-inline-css'>
+
+.woof_products_top_panel li span, .woof_products_top_panel2 li span{background: url(https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/img/delete.png);background-size: 14px 14px;background-repeat: no-repeat;background-position: right;}
+.woof_edit_view{
+                    display: none;
+                }
+
+</style>
+<link rel='stylesheet' id='chosen-drop-down-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.min.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='icheck-jquery-color-flat-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/_all.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='icheck-jquery-color-square-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/_all.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='icheck-jquery-color-minimal-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/_all.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_by_author_html_items-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_author/css/by_author.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_by_instock_html_items-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_instock/css/by_instock.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_by_onsales_html_items-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_onsales/css/by_onsales.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_by_text_html_items-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_text/assets/css/front.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_label_html_items-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/label/css/html_types/label.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_select_radio_check_html_items-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/select_radio_check/css/html_types/select_radio_check.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_sd_html_items_checkbox-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/css/elements/checkbox.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_sd_html_items_radio-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/css/elements/radio.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_sd_html_items_switcher-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/css/elements/switcher.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_sd_html_items_color-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/css/elements/color.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_sd_html_items_tooltip-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/css/tooltip.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_sd_html_items_front-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/css/front.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof-switcher23-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/css/switcher.css?ver=1.3.4.5' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='storefront-style-css' href='https://qcentroid.xyz/wp-content/themes/storefront/style.css?ver=4.1.0' media='all' />
+<style id='storefront-style-inline-css'>
+
+			.main-navigation ul li a,
+			.site-title a,
+			ul.menu li a,
+			.site-branding h1 a,
+			button.menu-toggle,
+			button.menu-toggle:hover,
+			.handheld-navigation .dropdown-toggle {
+				color: #333333;
+			}
+
+			button.menu-toggle,
+			button.menu-toggle:hover {
+				border-color: #333333;
+			}
+
+			.main-navigation ul li a:hover,
+			.main-navigation ul li:hover > a,
+			.site-title a:hover,
+			.site-header ul.menu li.current-menu-item > a {
+				color: #747474;
+			}
+
+			table:not( .has-background ) th {
+				background-color: #f8f8f8;
+			}
+
+			table:not( .has-background ) tbody td {
+				background-color: #fdfdfd;
+			}
+
+			table:not( .has-background ) tbody tr:nth-child(2n) td,
+			fieldset,
+			fieldset legend {
+				background-color: #fbfbfb;
+			}
+
+			.site-header,
+			.secondary-navigation ul ul,
+			.main-navigation ul.menu > li.menu-item-has-children:after,
+			.secondary-navigation ul.menu ul,
+			.storefront-handheld-footer-bar,
+			.storefront-handheld-footer-bar ul li > a,
+			.storefront-handheld-footer-bar ul li.search .site-search,
+			button.menu-toggle,
+			button.menu-toggle:hover {
+				background-color: #ffffff;
+			}
+
+			p.site-description,
+			.site-header,
+			.storefront-handheld-footer-bar {
+				color: #404040;
+			}
+
+			button.menu-toggle:after,
+			button.menu-toggle:before,
+			button.menu-toggle span:before {
+				background-color: #333333;
+			}
+
+			h1, h2, h3, h4, h5, h6, .wc-block-grid__product-title {
+				color: #333333;
+			}
+
+			.widget h1 {
+				border-bottom-color: #333333;
+			}
+
+			body,
+			.secondary-navigation a {
+				color: #6d6d6d;
+			}
+
+			.widget-area .widget a,
+			.hentry .entry-header .posted-on a,
+			.hentry .entry-header .post-author a,
+			.hentry .entry-header .post-comments a,
+			.hentry .entry-header .byline a {
+				color: #727272;
+			}
+
+			a {
+				color: #7f54b3;
+			}
+
+			a:focus,
+			button:focus,
+			.button.alt:focus,
+			input:focus,
+			textarea:focus,
+			input[type="button"]:focus,
+			input[type="reset"]:focus,
+			input[type="submit"]:focus,
+			input[type="email"]:focus,
+			input[type="tel"]:focus,
+			input[type="url"]:focus,
+			input[type="password"]:focus,
+			input[type="search"]:focus {
+				outline-color: #7f54b3;
+			}
+
+			button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button {
+				background-color: #eeeeee;
+				border-color: #eeeeee;
+				color: #333333;
+			}
+
+			button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .widget a.button:hover {
+				background-color: #d5d5d5;
+				border-color: #d5d5d5;
+				color: #333333;
+			}
+
+			button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+				background-color: #45a29e;
+				border-color: #45a29e;
+				color: #ffffff;
+			}
+
+			button.alt:hover, input[type="button"].alt:hover, input[type="reset"].alt:hover, input[type="submit"].alt:hover, .button.alt:hover, .widget-area .widget a.button.alt:hover {
+				background-color: #2c8985;
+				border-color: #2c8985;
+				color: #ffffff;
+			}
+
+			.pagination .page-numbers li .page-numbers.current {
+				background-color: #e6e6e6;
+				color: #636363;
+			}
+
+			#comments .comment-list .comment-content .comment-text {
+				background-color: #f8f8f8;
+			}
+
+			.site-footer {
+				background-color: #f0f0f0;
+				color: #6d6d6d;
+			}
+
+			.site-footer a:not(.button):not(.components-button) {
+				color: #333333;
+			}
+
+			.site-footer .storefront-handheld-footer-bar a:not(.button):not(.components-button) {
+				color: #333333;
+			}
+
+			.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6, .site-footer .widget .widget-title, .site-footer .widget .widgettitle {
+				color: #333333;
+			}
+
+			.page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-title {
+				color: #000000;
+			}
+
+			.page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-content {
+				color: #000000;
+			}
+
+			@media screen and ( min-width: 768px ) {
+				.secondary-navigation ul.menu a:hover {
+					color: #595959;
+				}
+
+				.secondary-navigation ul.menu a {
+					color: #404040;
+				}
+
+				.main-navigation ul.menu ul.sub-menu,
+				.main-navigation ul.nav-menu ul.children {
+					background-color: #f0f0f0;
+				}
+
+				.site-header {
+					border-bottom-color: #f0f0f0;
+				}
+			}
+</style>
+<link rel='stylesheet' id='storefront-icons-css' href='https://qcentroid.xyz/wp-content/themes/storefront/assets/css/base/icons.css?ver=4.1.0' media='all' />
+<link rel='stylesheet' id='storefront-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C300%2C300italic%2C400italic%2C600%2C700%2C900&#038;subset=latin%2Clatin-ext&#038;ver=4.1.0' media='all' />
+<link rel='stylesheet' id='storefront-woocommerce-style-css' href='https://qcentroid.xyz/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css?ver=4.1.0' media='all' />
+<style id='storefront-woocommerce-style-inline-css'>
+@font-face {
+				font-family: star;
+				src: url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/star.eot);
+				src:
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/star.eot?#iefix) format("embedded-opentype"),
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/star.woff) format("woff"),
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/star.ttf) format("truetype"),
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/star.svg#star) format("svg");
+				font-weight: 400;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: WooCommerce;
+				src: url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot);
+				src:
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?#iefix) format("embedded-opentype"),
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff) format("woff"),
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf) format("truetype"),
+					url(https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg#WooCommerce) format("svg");
+				font-weight: 400;
+				font-style: normal;
+			}
+
+			a.cart-contents,
+			.site-header-cart .widget_shopping_cart a {
+				color: #333333;
+			}
+
+			a.cart-contents:hover,
+			.site-header-cart .widget_shopping_cart a:hover,
+			.site-header-cart:hover > li > a {
+				color: #747474;
+			}
+
+			table.cart td.product-remove,
+			table.cart td.actions {
+				border-top-color: #ffffff;
+			}
+
+			.storefront-handheld-footer-bar ul li.cart .count {
+				background-color: #333333;
+				color: #ffffff;
+				border-color: #ffffff;
+			}
+
+			.woocommerce-tabs ul.tabs li.active a,
+			ul.products li.product .price,
+			.onsale,
+			.wc-block-grid__product-onsale,
+			.widget_search form:before,
+			.widget_product_search form:before {
+				color: #6d6d6d;
+			}
+
+			.woocommerce-breadcrumb a,
+			a.woocommerce-review-link,
+			.product_meta a {
+				color: #727272;
+			}
+
+			.wc-block-grid__product-onsale,
+			.onsale {
+				border-color: #6d6d6d;
+			}
+
+			.star-rating span:before,
+			.quantity .plus, .quantity .minus,
+			p.stars a:hover:after,
+			p.stars a:after,
+			.star-rating span:before,
+			#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+				color: #7f54b3;
+			}
+
+			.widget_price_filter .ui-slider .ui-slider-range,
+			.widget_price_filter .ui-slider .ui-slider-handle {
+				background-color: #7f54b3;
+			}
+
+			.order_details {
+				background-color: #f8f8f8;
+			}
+
+			.order_details > li {
+				border-bottom: 1px dotted #e3e3e3;
+			}
+
+			.order_details:before,
+			.order_details:after {
+				background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#f8f8f8 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#f8f8f8 33.33%,transparent 33.33%)
+			}
+
+			#order_review {
+				background-color: #ffffff;
+			}
+
+			#payment .payment_methods > li .payment_box,
+			#payment .place-order {
+				background-color: #fafafa;
+			}
+
+			#payment .payment_methods > li:not(.woocommerce-notice) {
+				background-color: #f5f5f5;
+			}
+
+			#payment .payment_methods > li:not(.woocommerce-notice):hover {
+				background-color: #f0f0f0;
+			}
+
+			.woocommerce-pagination .page-numbers li .page-numbers.current {
+				background-color: #e6e6e6;
+				color: #636363;
+			}
+
+			.wc-block-grid__product-onsale,
+			.onsale,
+			.woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+				color: #6d6d6d;
+			}
+
+			p.stars a:before,
+			p.stars a:hover~a:before,
+			p.stars.selected a.active~a:before {
+				color: #6d6d6d;
+			}
+
+			p.stars.selected a.active:before,
+			p.stars:hover a:before,
+			p.stars.selected a:not(.active):before,
+			p.stars.selected a.active:before {
+				color: #7f54b3;
+			}
+
+			.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+				background-color: #eeeeee;
+				color: #333333;
+			}
+
+			.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+				background-color: #d5d5d5;
+				border-color: #d5d5d5;
+				color: #333333;
+			}
+
+			.button.added_to_cart:focus,
+			.button.wc-forward:focus {
+				outline-color: #7f54b3;
+			}
+
+			.added_to_cart,
+			.site-header-cart .widget_shopping_cart a.button,
+			.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
+				background-color: #eeeeee;
+				border-color: #eeeeee;
+				color: #333333;
+			}
+
+			.added_to_cart:hover,
+			.site-header-cart .widget_shopping_cart a.button:hover,
+			.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover {
+				background-color: #d5d5d5;
+				border-color: #d5d5d5;
+				color: #333333;
+			}
+
+			.added_to_cart.alt, .added_to_cart, .widget a.button.checkout {
+				background-color: #45a29e;
+				border-color: #45a29e;
+				color: #ffffff;
+			}
+
+			.added_to_cart.alt:hover, .added_to_cart:hover, .widget a.button.checkout:hover {
+				background-color: #2c8985;
+				border-color: #2c8985;
+				color: #ffffff;
+			}
+
+			.button.loading {
+				color: #eeeeee;
+			}
+
+			.button.loading:hover {
+				background-color: #eeeeee;
+			}
+
+			.button.loading:after {
+				color: #333333;
+			}
+
+			@media screen and ( min-width: 768px ) {
+				.site-header-cart .widget_shopping_cart,
+				.site-header .product_list_widget li .quantity {
+					color: #404040;
+				}
+
+				.site-header-cart .widget_shopping_cart .buttons,
+				.site-header-cart .widget_shopping_cart .total {
+					background-color: #f5f5f5;
+				}
+
+				.site-header-cart .widget_shopping_cart {
+					background-color: #f0f0f0;
+				}
+			}
+				.storefront-product-pagination a {
+					color: #6d6d6d;
+					background-color: #ffffff;
+				}
+				.storefront-sticky-add-to-cart {
+					color: #6d6d6d;
+					background-color: #ffffff;
+				}
+
+				.storefront-sticky-add-to-cart a:not(.button) {
+					color: #333333;
+				}
+</style>
+<link rel='stylesheet' id='storefront-child-style-css' href='https://qcentroid.xyz/wp-content/themes/storefront-child/style.css?ver=4.1.0.1653559641' media='all' />
+<script src="https://qcentroid.xyz/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://qcentroid.xyz/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="cookie-law-info-js-extra">
+var _ckyConfig = {"_ipData":[],"_assetsURL":"https:\/\/qcentroid.xyz\/wp-content\/plugins\/cookie-law-info\/lite\/frontend\/images\/","_publicURL":"https:\/\/qcentroid.xyz","_expiry":"365","_categories":[{"name":"Necessary","slug":"necessary","isNecessary":true,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":true,"ccpa":true}},{"name":"Functional","slug":"functional","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Analytics","slug":"analytics","isNecessary":false,"ccpaDoNotSell":true,"cookies":[{"cookieID":"_ga_Y07CRBLW8Q","domain":"qcentroid.xyz","provider":""},{"cookieID":"_ga","domain":"qcentroid.xyz","provider":""}],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Performance","slug":"performance","isNecessary":false,"ccpaDoNotSell":true,"cookies":[{"cookieID":"tk_lr","domain":"qcentroid.xyz","provider":""},{"cookieID":"tk_or","domain":"qcentroid.xyz","provider":""},{"cookieID":"tk_r3d","domain":"qcentroid.xyz","provider":""}],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Advertisement","slug":"advertisement","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}}],"_activeLaw":"gdpr","_rootDomain":"","_block":"1","_showBanner":"1","_bannerConfig":{"settings":{"type":"box","position":"bottom-left","applicableLaw":"gdpr"},"behaviours":{"reloadBannerOnAccept":false,"loadAnalyticsByDefault":false,"animations":{"onLoad":"animate","onHide":"sticky"}},"config":{"revisitConsent":{"status":true,"tag":"revisit-consent","position":"bottom-left","meta":{"url":"#"},"styles":{"background-color":"#45A29E"},"elements":{"title":{"type":"text","tag":"revisit-consent-title","status":true,"styles":{"color":"#0056a7"}}}},"preferenceCenter":{"toggle":{"status":true,"tag":"detail-category-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"categoryPreview":{"status":false,"toggle":{"status":true,"tag":"detail-category-preview-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"videoPlaceholder":{"status":true,"styles":{"background-color":"#000000","border-color":"#000000","color":"#ffffff"}},"readMore":{"status":false,"tag":"readmore-button","type":"link","meta":{"noFollow":true,"newTab":true},"styles":{"color":"#45A29E","background-color":"transparent","border-color":"transparent"}},"auditTable":{"status":false},"optOption":{"status":true,"toggle":{"status":true,"tag":"optout-option-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863dc"}},"inactive":{"styles":{"background-color":"#FFFFFF"}}}}}}},"_version":"3.1.7","_logConsent":"1","_tags":[{"tag":"accept-button","styles":{"color":"#FFFFFF","background-color":"#45A29E","border-color":"#45A29E"}},{"tag":"reject-button","styles":{"color":"#45A29E","background-color":"transparent","border-color":"#45A29E"}},{"tag":"settings-button","styles":{"color":"#45A29E","background-color":"transparent","border-color":"#45A29E"}},{"tag":"readmore-button","styles":{"color":"#45A29E","background-color":"transparent","border-color":"transparent"}},{"tag":"donotsell-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},{"tag":"accept-button","styles":{"color":"#FFFFFF","background-color":"#45A29E","border-color":"#45A29E"}},{"tag":"revisit-consent","styles":{"background-color":"#45A29E"}}],"_shortCodes":[{"key":"cky_readmore","content":"<a href=\"#\" class=\"cky-policy\" aria-label=\"Cookie Policy\" target=\"_blank\" rel=\"noopener\" data-cky-tag=\"readmore-button\">Cookie Policy<\/a>","tag":"readmore-button","status":false,"attributes":{"rel":"nofollow","target":"_blank"}},{"key":"cky_show_desc","content":"<button class=\"cky-show-desc-btn\" data-cky-tag=\"show-desc-button\" aria-label=\"Show more\">Show more<\/button>","tag":"show-desc-button","status":true,"attributes":[]},{"key":"cky_hide_desc","content":"<button class=\"cky-show-desc-btn\" data-cky-tag=\"hide-desc-button\" aria-label=\"Show less\">Show less<\/button>","tag":"hide-desc-button","status":true,"attributes":[]},{"key":"cky_category_toggle_label","content":"[cky_{{status}}_category_label] [cky_preference_{{category_slug}}_title]","tag":"","status":true,"attributes":[]},{"key":"cky_enable_category_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_category_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_video_placeholder","content":"<div class=\"video-placeholder-normal\" data-cky-tag=\"video-placeholder\" id=\"[UNIQUEID]\"><p class=\"video-placeholder-text-normal\" data-cky-tag=\"placeholder-title\">Please accept cookies to access this content<\/p><\/div>","tag":"","status":true,"attributes":[]},{"key":"cky_enable_optout_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_optout_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_optout_toggle_label","content":"[cky_{{status}}_optout_label] [cky_optout_option_title]","tag":"","status":true,"attributes":[]},{"key":"cky_optout_option_title","content":"Do Not Sell or Share My Personal Information","tag":"","status":true,"attributes":[]},{"key":"cky_optout_close_label","content":"Close","tag":"","status":true,"attributes":[]}],"_rtl":"","_providersToBlock":[]};
+var _ckyStyles = {"css":".cky-overlay{background: #000000; opacity: 0.4; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999999;}.cky-hide{display: none;}.cky-btn-revisit-wrapper{display: flex; align-items: center; justify-content: center; background: #0056a7; width: 45px; height: 45px; border-radius: 50%; position: fixed; z-index: 999999; cursor: pointer;}.cky-revisit-bottom-left{bottom: 15px; left: 15px;}.cky-revisit-bottom-right{bottom: 15px; right: 15px;}.cky-btn-revisit-wrapper .cky-btn-revisit{display: flex; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; position: relative; margin: 0; padding: 0;}.cky-btn-revisit-wrapper .cky-btn-revisit img{max-width: fit-content; margin: 0; height: 30px; width: 30px;}.cky-revisit-bottom-left:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; left: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-left:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; left: calc(100% + 2px); border-left-width: 0; border-right-color: #4e4b66;}.cky-revisit-bottom-right:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; right: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-right:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; right: calc(100% + 2px); border-right-width: 0; border-left-color: #4e4b66;}.cky-revisit-hide{display: none;}.cky-consent-container{position: fixed; width: 440px; box-sizing: border-box; z-index: 9999999; border-radius: 6px;}.cky-consent-container .cky-consent-bar{background: #ffffff; border: 1px solid; padding: 20px 26px; box-shadow: 0 -1px 10px 0 #acabab4d; border-radius: 6px;}.cky-box-bottom-left{bottom: 40px; left: 40px;}.cky-box-bottom-right{bottom: 40px; right: 40px;}.cky-box-top-left{top: 40px; left: 40px;}.cky-box-top-right{top: 40px; right: 40px;}.cky-custom-brand-logo-wrapper .cky-custom-brand-logo{width: 100px; height: auto; margin: 0 0 12px 0;}.cky-notice .cky-title{color: #212121; font-weight: 700; font-size: 18px; line-height: 24px; margin: 0 0 12px 0;}.cky-notice-des *,.cky-preference-content-wrapper *,.cky-accordion-header-des *,.cky-gpc-wrapper .cky-gpc-desc *{font-size: 14px;}.cky-notice-des{color: #212121; font-size: 14px; line-height: 24px; font-weight: 400;}.cky-notice-des img{height: 25px; width: 25px;}.cky-consent-bar .cky-notice-des p,.cky-gpc-wrapper .cky-gpc-desc p,.cky-preference-body-wrapper .cky-preference-content-wrapper p,.cky-accordion-header-wrapper .cky-accordion-header-des p,.cky-cookie-des-table li div:last-child p{color: inherit; margin-top: 0; overflow-wrap: break-word;}.cky-notice-des P:last-child,.cky-preference-content-wrapper p:last-child,.cky-cookie-des-table li div:last-child p:last-child,.cky-gpc-wrapper .cky-gpc-desc p:last-child{margin-bottom: 0;}.cky-notice-des a.cky-policy,.cky-notice-des button.cky-policy{font-size: 14px; color: #1863dc; white-space: nowrap; cursor: pointer; background: transparent; border: 1px solid; text-decoration: underline;}.cky-notice-des button.cky-policy{padding: 0;}.cky-notice-des a.cky-policy:focus-visible,.cky-notice-des button.cky-policy:focus-visible,.cky-preference-content-wrapper .cky-show-desc-btn:focus-visible,.cky-accordion-header .cky-accordion-btn:focus-visible,.cky-preference-header .cky-btn-close:focus-visible,.cky-switch input[type=\"checkbox\"]:focus-visible,.cky-footer-wrapper a:focus-visible,.cky-btn:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}.cky-btn:focus:not(:focus-visible),.cky-accordion-header .cky-accordion-btn:focus:not(:focus-visible),.cky-preference-content-wrapper .cky-show-desc-btn:focus:not(:focus-visible),.cky-btn-revisit-wrapper .cky-btn-revisit:focus:not(:focus-visible),.cky-preference-header .cky-btn-close:focus:not(:focus-visible),.cky-consent-bar .cky-banner-btn-close:focus:not(:focus-visible){outline: 0;}button.cky-show-desc-btn:not(:hover):not(:active){color: #1863dc; background: transparent;}button.cky-accordion-btn:not(:hover):not(:active),button.cky-banner-btn-close:not(:hover):not(:active),button.cky-btn-revisit:not(:hover):not(:active),button.cky-btn-close:not(:hover):not(:active){background: transparent;}.cky-consent-bar button:hover,.cky-modal.cky-modal-open button:hover,.cky-consent-bar button:focus,.cky-modal.cky-modal-open button:focus{text-decoration: none;}.cky-notice-btn-wrapper{display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; margin-top: 16px;}.cky-notice-btn-wrapper .cky-btn{text-shadow: none; box-shadow: none;}.cky-btn{flex: auto; max-width: 100%; font-size: 14px; font-family: inherit; line-height: 24px; padding: 8px; font-weight: 500; margin: 0 8px 0 0; border-radius: 2px; cursor: pointer; text-align: center; text-transform: none; min-height: 0;}.cky-btn:hover{opacity: 0.8;}.cky-btn-customize{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-reject{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-accept{background: #1863dc; color: #ffffff; border: 2px solid #1863dc;}.cky-btn:last-child{margin-right: 0;}@media (max-width: 576px){.cky-box-bottom-left{bottom: 0; left: 0;}.cky-box-bottom-right{bottom: 0; right: 0;}.cky-box-top-left{top: 0; left: 0;}.cky-box-top-right{top: 0; right: 0;}}@media (max-width: 440px){.cky-box-bottom-left, .cky-box-bottom-right, .cky-box-top-left, .cky-box-top-right{width: 100%; max-width: 100%;}.cky-consent-container .cky-consent-bar{padding: 20px 0;}.cky-custom-brand-logo-wrapper, .cky-notice .cky-title, .cky-notice-des, .cky-notice-btn-wrapper{padding: 0 24px;}.cky-notice-des{max-height: 40vh; overflow-y: scroll;}.cky-notice-btn-wrapper{flex-direction: column; margin-top: 0;}.cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-notice-btn-wrapper .cky-btn-customize{order: 2;}.cky-notice-btn-wrapper .cky-btn-reject{order: 3;}.cky-notice-btn-wrapper .cky-btn-accept{order: 1; margin-top: 16px;}}@media (max-width: 352px){.cky-notice .cky-title{font-size: 16px;}.cky-notice-des *{font-size: 12px;}.cky-notice-des, .cky-btn{font-size: 12px;}}.cky-modal.cky-modal-open{display: flex; visibility: visible; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 50%; left: 50%; transition: all 1s ease;}.cky-modal{box-shadow: 0 32px 68px rgba(0, 0, 0, 0.3); margin: 0 auto; position: fixed; max-width: 100%; background: #ffffff; top: 50%; box-sizing: border-box; border-radius: 6px; z-index: 999999999; color: #212121; -webkit-transform: translate(-50%, 100%); -moz-transform: translate(-50%, 100%); -ms-transform: translate(-50%, 100%); -o-transform: translate(-50%, 100%); transform: translate(-50%, 100%); visibility: hidden; transition: all 0s ease;}.cky-preference-center{max-height: 79vh; overflow: hidden; width: 845px; overflow: hidden; flex: 1 1 0; display: flex; flex-direction: column; border-radius: 6px;}.cky-preference-header{display: flex; align-items: center; justify-content: space-between; padding: 22px 24px; border-bottom: 1px solid;}.cky-preference-header .cky-preference-title{font-size: 18px; font-weight: 700; line-height: 24px;}.cky-preference-header .cky-btn-close{margin: 0; cursor: pointer; vertical-align: middle; padding: 0; background: none; border: none; width: auto; height: auto; min-height: 0; line-height: 0; text-shadow: none; box-shadow: none;}.cky-preference-header .cky-btn-close img{margin: 0; height: 10px; width: 10px;}.cky-preference-body-wrapper{padding: 0 24px; flex: 1; overflow: auto; box-sizing: border-box;}.cky-preference-content-wrapper,.cky-gpc-wrapper .cky-gpc-desc{font-size: 14px; line-height: 24px; font-weight: 400; padding: 12px 0;}.cky-preference-content-wrapper{border-bottom: 1px solid;}.cky-preference-content-wrapper img{height: 25px; width: 25px;}.cky-preference-content-wrapper .cky-show-desc-btn{font-size: 14px; font-family: inherit; color: #1863dc; text-decoration: none; line-height: 24px; padding: 0; margin: 0; white-space: nowrap; cursor: pointer; background: transparent; border-color: transparent; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-wrapper{margin-bottom: 10px;}.cky-accordion{border-bottom: 1px solid;}.cky-accordion:last-child{border-bottom: none;}.cky-accordion .cky-accordion-item{display: flex; margin-top: 10px;}.cky-accordion .cky-accordion-body{display: none;}.cky-accordion.cky-accordion-active .cky-accordion-body{display: block; padding: 0 22px; margin-bottom: 16px;}.cky-accordion-header-wrapper{cursor: pointer; width: 100%;}.cky-accordion-item .cky-accordion-header{display: flex; justify-content: space-between; align-items: center;}.cky-accordion-header .cky-accordion-btn{font-size: 16px; font-family: inherit; color: #212121; line-height: 24px; background: none; border: none; font-weight: 700; padding: 0; margin: 0; cursor: pointer; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-header .cky-always-active{color: #008000; font-weight: 600; line-height: 24px; font-size: 14px;}.cky-accordion-header-des{font-size: 14px; line-height: 24px; margin: 10px 0 16px 0;}.cky-accordion-chevron{margin-right: 22px; position: relative; cursor: pointer;}.cky-accordion-chevron-hide{display: none;}.cky-accordion .cky-accordion-chevron i::before{content: \"\"; position: absolute; border-right: 1.4px solid; border-bottom: 1.4px solid; border-color: inherit; height: 6px; width: 6px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); transition: all 0.2s ease-in-out; top: 8px;}.cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}.cky-audit-table{background: #f4f4f4; border-radius: 6px;}.cky-audit-table .cky-empty-cookies-text{color: inherit; font-size: 12px; line-height: 24px; margin: 0; padding: 10px;}.cky-audit-table .cky-cookie-des-table{font-size: 12px; line-height: 24px; font-weight: normal; padding: 15px 10px; border-bottom: 1px solid; border-bottom-color: inherit; margin: 0;}.cky-audit-table .cky-cookie-des-table:last-child{border-bottom: none;}.cky-audit-table .cky-cookie-des-table li{list-style-type: none; display: flex; padding: 3px 0;}.cky-audit-table .cky-cookie-des-table li:first-child{padding-top: 0;}.cky-cookie-des-table li div:first-child{width: 100px; font-weight: 600; word-break: break-word; word-wrap: break-word;}.cky-cookie-des-table li div:last-child{flex: 1; word-break: break-word; word-wrap: break-word; margin-left: 8px;}.cky-footer-shadow{display: block; width: 100%; height: 40px; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%); position: absolute; bottom: calc(100% - 1px);}.cky-footer-wrapper{position: relative;}.cky-prefrence-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px; border-top: 1px solid;}.cky-prefrence-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-btn-preferences{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-preference-header,.cky-preference-body-wrapper,.cky-preference-content-wrapper,.cky-accordion-wrapper,.cky-accordion,.cky-accordion-wrapper,.cky-footer-wrapper,.cky-prefrence-btn-wrapper{border-color: inherit;}@media (max-width: 845px){.cky-modal{max-width: calc(100% - 16px);}}@media (max-width: 576px){.cky-modal{max-width: 100%;}.cky-preference-center{max-height: 100vh;}.cky-prefrence-btn-wrapper{flex-direction: column;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding-right: 0;}.cky-prefrence-btn-wrapper .cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-prefrence-btn-wrapper .cky-btn-reject{order: 3;}.cky-prefrence-btn-wrapper .cky-btn-accept{order: 1; margin-top: 0;}.cky-prefrence-btn-wrapper .cky-btn-preferences{order: 2;}}@media (max-width: 425px){.cky-accordion-chevron{margin-right: 15px;}.cky-notice-btn-wrapper{margin-top: 0;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px;}}@media (max-width: 352px){.cky-preference-header .cky-preference-title{font-size: 16px;}.cky-preference-header{padding: 16px 24px;}.cky-preference-content-wrapper *, .cky-accordion-header-des *{font-size: 12px;}.cky-preference-content-wrapper, .cky-preference-content-wrapper .cky-show-more, .cky-accordion-header .cky-always-active, .cky-accordion-header-des, .cky-preference-content-wrapper .cky-show-desc-btn, .cky-notice-des a.cky-policy{font-size: 12px;}.cky-accordion-header .cky-accordion-btn{font-size: 14px;}}.cky-switch{display: flex;}.cky-switch input[type=\"checkbox\"]{position: relative; width: 44px; height: 24px; margin: 0; background: #d0d5d2; -webkit-appearance: none; border-radius: 50px; cursor: pointer; outline: 0; border: none; top: 0;}.cky-switch input[type=\"checkbox\"]:checked{background: #1863dc;}.cky-switch input[type=\"checkbox\"]:before{position: absolute; content: \"\"; height: 20px; width: 20px; left: 2px; bottom: 2px; border-radius: 50%; background-color: white; -webkit-transition: 0.4s; transition: 0.4s; margin: 0;}.cky-switch input[type=\"checkbox\"]:after{display: none;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px);}@media (max-width: 425px){.cky-switch input[type=\"checkbox\"]{width: 38px; height: 21px;}.cky-switch input[type=\"checkbox\"]:before{height: 17px; width: 17px;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(17px); -ms-transform: translateX(17px); transform: translateX(17px);}}.cky-consent-bar .cky-banner-btn-close{position: absolute; right: 9px; top: 5px; background: none; border: none; cursor: pointer; padding: 0; margin: 0; min-height: 0; line-height: 0; height: auto; width: auto; text-shadow: none; box-shadow: none;}.cky-consent-bar .cky-banner-btn-close img{height: 9px; width: 9px; margin: 0;}.cky-notice-group{font-size: 14px; line-height: 24px; font-weight: 400; color: #212121;}.cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 14px; line-height: 24px; padding: 6px 0; margin: 0; font-weight: 500; background: none; border-radius: 2px; border: none; cursor: pointer; text-align: left; color: #1863dc; background: transparent; border-color: transparent; box-shadow: none; text-shadow: none;}.cky-consent-bar .cky-banner-btn-close:focus-visible,.cky-notice-btn-wrapper .cky-btn-do-not-sell:focus-visible,.cky-opt-out-btn-wrapper .cky-btn:focus-visible,.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}@media (max-width: 440px){.cky-consent-container{width: 100%;}}@media (max-width: 352px){.cky-notice-des a.cky-policy, .cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 12px;}}.cky-opt-out-wrapper{padding: 12px 0;}.cky-opt-out-wrapper .cky-opt-out-checkbox-wrapper{display: flex; align-items: center;}.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 16px; font-weight: 700; line-height: 24px; margin: 0 0 0 12px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{background-color: #ffffff; border: 1px solid black; width: 20px; height: 18.5px; margin: 0; -webkit-appearance: none; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 2px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked{background-color: #1863dc; border: none;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 6px; bottom: 4px; width: 7px; height: 13px; border: solid #ffffff; border-width: 0 3px 3px 0; border-radius: 2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); content: \"\"; position: absolute; box-sizing: border-box;}.cky-opt-out-checkbox-wrapper.cky-disabled .cky-opt-out-checkbox-label,.cky-opt-out-checkbox-wrapper.cky-disabled input[type=\"checkbox\"].cky-opt-out-checkbox{cursor: no-drop;}.cky-gpc-wrapper{margin: 0 0 0 32px;}.cky-footer-wrapper .cky-opt-out-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px;}.cky-opt-out-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-opt-out-btn-wrapper .cky-btn-cancel{border: 1px solid #dedfe0; background: transparent; color: #858585;}.cky-opt-out-btn-wrapper .cky-btn-confirm{background: #1863dc; color: #ffffff; border: 1px solid #1863dc;}@media (max-width: 352px){.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 14px;}.cky-gpc-wrapper .cky-gpc-desc, .cky-gpc-wrapper .cky-gpc-desc *{font-size: 12px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{width: 16px; height: 16px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 5px; bottom: 4px; width: 3px; height: 9px;}.cky-gpc-wrapper{margin: 0 0 0 28px;}}.video-placeholder-youtube{background-size: 100% 100%; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: center; justify-content: center; max-width: 100%;}.video-placeholder-text-youtube{text-align: center; align-items: center; padding: 10px 16px; background-color: #000000cc; color: #ffffff; border: 1px solid; border-radius: 2px; cursor: pointer;}.video-placeholder-normal{background-image: url(\"\/wp-content\/plugins\/cookie-law-info\/lite\/frontend\/images\/placeholder.svg\"); background-size: 80px; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: flex-end; justify-content: center; max-width: 100%;}.video-placeholder-text-normal{align-items: center; padding: 10px 16px; text-align: center; border: 1px solid; border-radius: 2px; cursor: pointer;}.cky-rtl{direction: rtl; text-align: right;}.cky-rtl .cky-banner-btn-close{left: 9px; right: auto;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 8px;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-notice-btn-wrapper{margin-left: 0; margin-right: 15px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 8px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-accordion .cky-accordion-chevron i::before{border: none; border-left: 1.4px solid; border-top: 1.4px solid; left: 12px;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}@media (max-width: 768px){.cky-rtl .cky-notice-btn-wrapper{margin-right: 0;}}@media (max-width: 576px){.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 0;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 0;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 22px 0 0;}}@media (max-width: 425px){.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px 0 0;}}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn{margin-right: 12px;}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{margin: 0 12px 0 0;}"};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/cookie-law-info/lite/frontend/js/script.min.js?ver=3.1.7" id="cookie-law-info-js"></script>
+<script id="woof-husky-js-extra">
+var woof_husky_txt = {"ajax_url":"https:\/\/qcentroid.xyz\/wp-admin\/admin-ajax.php","plugin_uri":"https:\/\/qcentroid.xyz\/wp-content\/plugins\/woocommerce-products-filter\/ext\/by_text\/","loader":"https:\/\/qcentroid.xyz\/wp-content\/plugins\/woocommerce-products-filter\/ext\/by_text\/assets\/img\/ajax-loader.gif","not_found":"Nothing found!","prev":"Prev","next":"Next","site_link":"https:\/\/qcentroid.xyz","default_data":{"placeholder":"","behavior":"title","search_by_full_word":0,"autocomplete":1,"how_to_open_links":0,"taxonomy_compatibility":0,"sku_compatibility":0,"custom_fields":"","search_desc_variant":0,"view_text_length":10,"min_symbols":3,"max_posts":10,"image":"","notes_for_customer":"","template":"default","max_open_height":300,"page":0}};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_text/assets/js/husky.js?ver=1.3.4.5" id="woof-husky-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.4.0" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/qcentroid.xyz\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.4.0" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.4.0" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.4.0" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://qcentroid.xyz/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://qcentroid.xyz/wp-json/wp/v2/posts/3256" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://qcentroid.xyz/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.5" />
+<meta name="generator" content="WooCommerce 8.4.0" />
+<link rel='shortlink' href='https://qcentroid.xyz/?p=3256' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://qcentroid.xyz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fqcentroid.xyz%2Fnews%2Fqcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://qcentroid.xyz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fqcentroid.xyz%2Fnews%2Fqcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption%2F&#038;format=xml" />
+<style id="cky-style-inline">[data-cky-tag]{visibility:hidden;}</style>
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y07CRBLW8Q"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-Y07CRBLW8Q');
+		</script>
+
+		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style><style id="uagb-style-frontend-3256">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}
+</style><link rel="icon" href="https://qcentroid.xyz/wp-content/uploads/2022/07/qcentroid-docs-ico-300x300-1-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://qcentroid.xyz/wp-content/uploads/2022/07/qcentroid-docs-ico-300x300-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://qcentroid.xyz/wp-content/uploads/2022/07/qcentroid-docs-ico-300x300-1.png" />
+<meta name="msapplication-TileImage" content="https://qcentroid.xyz/wp-content/uploads/2022/07/qcentroid-docs-ico-300x300-1.png" />
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-3256 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-storefront wp-child-theme-storefront-child theme-storefront stk--is-storefront-theme woocommerce-no-js group-blog storefront-full-width-content storefront-secondary-navigation storefront-align-wide right-sidebar woocommerce-active">
+
+
+
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner" style="">
+		<div class="col-full">
+			<!--div class="q-login-menu">
+				<a class="q-btn q-btn-login" href="https://app.qcentroid.xyz/login" target="_blank">Log in</a>
+				<a class="q-btn q-btn-signup" href="/register">Sign up</a>
+			</div -->
+			<div class="q-login-menu">
+				<a class="q-btn q-btn-signup" href="/request-access">Get started</a>
+			</div>
+		</div>
+		<div class="col-full">		<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+				<div class="site-branding">
+			<a href="https://qcentroid.xyz/" class="custom-logo-link" rel="home"><img width="621" height="105" src="https://qcentroid.xyz/wp-content/uploads/2022/12/qcentroid_logo_white.png" class="custom-logo" alt="QCentroid" decoding="async" fetchpriority="high" srcset="https://qcentroid.xyz/wp-content/uploads/2022/12/qcentroid_logo_white.png 621w, https://qcentroid.xyz/wp-content/uploads/2022/12/qcentroid_logo_white-300x51.png 300w, https://qcentroid.xyz/wp-content/uploads/2022/12/qcentroid_logo_white-416x70.png 416w" sizes="(max-width: 621px) 100vw, 621px" /></a>		</div>
+					<nav class="secondary-navigation" role="navigation" aria-label="Secondary Navigation">
+				<div class="menu-top-menu-container"><ul id="menu-top-menu" class="menu"><li id="menu-item-1345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1345"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/">The platform</a>
+<ul class="sub-menu">
+	<li id="menu-item-2783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2783"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/quantum-program-builder/">Quantum Program Builder</a></li>
+	<li id="menu-item-2784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2784"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/">Quantum Computing Ops</a></li>
+	<li id="menu-item-3010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3010"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/platform-for-quantum-hubs/">Platform for Quantum Hubs</a></li>
+</ul>
+</li>
+<li id="menu-item-283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-283"><a href="/#developers">Developers</a></li>
+<li id="menu-item-2575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2575"><a href="/team">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985"><a href="https://qcentroid.xyz/team/">Team</a></li>
+	<li id="menu-item-2574" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2574"><a href="https://qcentroid.xyz/category/blog/">Blog</a></li>
+	<li id="menu-item-2571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571"><a href="https://qcentroid.xyz/news/">News</a></li>
+</ul>
+</li>
+<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="https://qcentroid.xyz/contact-us/">Contact</a></li>
+</ul></div>			</nav><!-- #site-navigation -->
+						<div class="site-search">
+				<div class="widget woocommerce widget_product_search"><form role="search" method="get" class="woocommerce-product-search" action="https://qcentroid.xyz/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products&hellip;" value="" name="s" />
+	<button type="submit" value="Search" class="">Search</button>
+	<input type="hidden" name="post_type" value="product" />
+</form>
+</div>			</div>
+			</div><div class="storefront-primary-navigation"><div class="col-full">		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Navigation">
+		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span>Menu</span></button>
+			<div class="handheld-navigation"><ul id="menu-top-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1345"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/">The platform</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2783"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/quantum-program-builder/">Quantum Program Builder</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2784"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/">Quantum Computing Ops</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3010"><a href="https://qcentroid.xyz/quantum-as-a-service-platform/platform-for-quantum-hubs/">Platform for Quantum Hubs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-283"><a href="/#developers">Developers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2575"><a href="/team">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985"><a href="https://qcentroid.xyz/team/">Team</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2574"><a href="https://qcentroid.xyz/category/blog/">Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2571"><a href="https://qcentroid.xyz/news/">News</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="https://qcentroid.xyz/contact-us/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+				<ul id="site-header-cart" class="site-header-cart menu">
+			<li class="">
+							<a class="cart-contents" href="https://qcentroid.xyz/cart/" title="View your shopping cart">
+								<span class="woocommerce-Price-amount amount">0,00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></span> <span class="count">0 items</span>
+			</a>
+					</li>
+			<li>
+				<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div>			</li>
+		</ul>
+			</div></div>
+	</header><!-- #masthead -->
+
+	<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb" aria-label="breadcrumbs"><a href="https://qcentroid.xyz">Home</a><span class="breadcrumb-separator"> / </span><a href="https://qcentroid.xyz/category/news/">News</a><span class="breadcrumb-separator"> / </span>QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption</nav></div></div>
+	<div id="content" class="site-content" tabindex="-1">
+		<div class="col-full">
+
+		<div class="woocommerce"></div>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-3256" class="post-3256 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
+
+			<header class="entry-header">
+		
+		<aside class="entry-taxonomy">
+						<!-- div class="cat-links">
+				Category:				<a href="https://qcentroid.xyz/category/news/" rel="category tag">News</a>			</div -->
+			
+					</aside>
+
+		<h1 class="entry-title">QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption</h1>		</header><!-- .entry-header -->
+				<div class="entry-content">
+		<img thumbnail="" width="1920" height="1080" src="https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform.png" class="attachment- size- wp-post-image" alt="" decoding="async" srcset="https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform.png 1920w, https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-300x169.png 300w, https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-1024x576.png 1024w, https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-768x432.png 768w, https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-1536x864.png 1536w, https://qcentroid.xyz/wp-content/uploads/2026/03/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-416x234.png 416w" sizes="(max-width: 1920px) 100vw, 1920px" />
+<p><em>The integration brings GPU-accelerated quantum workflow development, benchmarking, and experiment lifecycle management into a unified enterprise QuantumOps framework.</em></p>
+
+
+
+<p>BILBAO, SPAIN&nbsp;— 16 March 2026 — QCentroid, the enterprise QuantumOps platform for orchestrating and integrating quantum and hybrid optimization workflows, today announced that <a href="https://developer.nvidia.com/cuda-q"><strong>NVIDIA CUDA-Q</strong></a><strong> is now integrated and available within the QCentroid platform</strong>. The capability enables enterprise teams to develop and evaluate hybrid quantum-classical workflows using NVIDIA accelerated computing alongside quantum backends, with a structured approach to experimentation, benchmarking, and lifecycle management.</p>
+
+
+
+<p>QCentroid has been part of the <a href="https://www.nvidia.com/en-us/startups/"><strong>NVIDIA Inception</strong></a><strong> program since 2024</strong>, and this release extends QCentroid’s mission: helping organizations navigate the “pre-quantum advantage” era through disciplined hybrid experimentation, strong baselines, and reproducible results,&nbsp; while remaining ready to scale adoption as quantum hardware evolves.</p>
+
+
+
+<p>“Enterprise adoption doesn’t happen through one-off demos, it happens through repeatable workflows, governance, and credible benchmarking,” said <strong>Carlos Kuchkovsky, CEO of QCentroid</strong>. “By making CUDA-Q available inside QCentroid QuantumOps, teams can combine GPU-based development and baselining with quantum execution paths in a single operational framework, reducing friction from discovery to experimentation and comparison”.</p>
+
+
+
+<p>“Breakthroughs towards quantum-GPU supercomputers are being made when users work in a truly hybrid environment,” said Sam Stanwyck, Director of Quantum Product at NVIDIA. “Through its integration with the CUDA-Q platform, Qcentroid now gives users the GPU acceleration they need to explore tomorrow’s quantum applications today.”<em></em></p>
+
+
+
+<p></p>
+
+
+
+<p><strong>Enabling hybrid execution and benchmarking with CUDA-Q inside QuantumOps</strong></p>
+
+
+
+<p>By using NVIDIA CUDA-Q within QuantumOps, enterprise teams can leverage GPU-accelerated simulations of quantum computing, streamline execution pipelines and reduce friction when running quantum and hybrid workflows as part of broader experimentation and benchmarking cycles.</p>
+
+
+
+<p>This enables organizations to shorten time-to-learning and accelerate iteration loops, one of the most persistent bottlenecks in real-world quantum adoption, by providing a consistent operational layer for:</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div class="wp-block-advgb-list"><ul class="advgblist-54403f0a-6182-4b15-b719-9d0b06645029">
+<li>Hybrid workflow orchestration</li>
+
+
+
+<li>Benchmark design and execution cycles</li>
+
+
+
+<li>Comparative analysis across approaches and configurations</li>
+
+
+
+<li>Traceability and reporting for enterprise decision-making<a id="_msocom_1"></a></li>
+</ul></div>
+
+
+
+<p></p>
+
+
+
+<p><strong>Agentic vision for quantum adoption: AI-assisted workflow acceleration</strong></p>
+
+
+
+<p>To help enterprises enter the benchmarking loop faster, QCentroid complements CUDA-Q execution enablement with an AI Copilot layer (Quantum expert agents) that converts early exploration into an execution-ready use-case pack: a full use-case definition, initial model formulation, required data schema, recommended solver and backend paths, and starter solver code, to speed up the most resource-intensive steps of the adoption lifecycle.</p>
+
+
+
+<p>By combining CUDA-Q support, orchestration, benchmarking, and agentic workflows, QuantumOps enables organizations to build a structured, evidence-based adoption pathway, from exploration to measurable progress.</p>
+
+
+
+<p><strong>Learn more: </strong>Tech article<strong>: </strong><a href="/blog/how-to-accelerate-enterprise-quantum-computing-adoption-using-nvidia-and-cuda-q-with-a-quantum-ops-framework-approach/">How to accelerate enterprise Quantum computing adoption using Nvidia and CUDA-Q with a Quantum ops framework approach</a>.</p>
+
+
+
+<p></p>
+
+
+
+<p><strong>Media Contact<br></strong>Pilar Troncoso, Chief Relationship Officer,&nbsp; QCentroid<br><a href="mailto:pilar@qcentroid.xyz">pilar@qcentroid.xyz</a></p>
+
+
+
+<p></p>
+
+
+
+<p><strong>About QCentroid</strong></p>
+
+
+
+<p>QCentroid is an enterprise QuantumOps platform for orchestrating, benchmarking, and integrating hybrid quantum-classical optimization workflows across CPUs, GPUs, and multiple quantum backends. Headquartered in Bilbao, Spain, QCentroid provides a structured experimentation loop, workflow orchestration, benchmark design, experiment tracking, traceability, and reporting, so teams can make evidence-based decisions in the pre-quantum-advantage era and scale adoption as hardware evolves. QCentroid also offers an AI Copilot layer that accelerates use cases from definition to execution-ready development.</p>
+<style class="advgb-styles-renderer">.wp-block-advgb-list ul.advgblist-54403f0a-6182-4b15-b719-9d0b06645029 > li{font-size:16px;}</style>		</div><!-- .entry-content -->
+		<nav id="post-navigation" class="navigation post-navigation" role="navigation" aria-label="Post Navigation"><h2 class="screen-reader-text">Post navigation</h2><div class="nav-links"><div class="nav-previous"><a href="https://qcentroid.xyz/blog/how-to-accelerate-enterprise-quantum-computing-adoption-using-nvidia-and-cuda-q-with-a-quantum-ops-framework-approach/" rel="prev"><span class="screen-reader-text">Previous post: </span>How to accelerate enterprise Quantum computing adoption using Nvidia and CUDA-Q with a Quantum ops framework approach</a></div></div></nav>
+</article><!-- #post-## -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+		</div><!-- .col-full -->
+	</div><!-- #content -->
+
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="col-full">
+
+							<div class="footer-widgets row-1 col-4 fix">
+									<div class="block footer-widget-1">
+						<div id="block-4" class="widget widget_block">
+<div class="wp-block-stackable-text stk-block-text stk-block stk-d82e96d" data-block-id="d82e96d"><p class="stk-block-text__text">QCentroid © 2026</p></div>
+</div>					</div>
+											<div class="block footer-widget-4">
+						<div id="block-8" class="widget widget_block">
+<div class="wp-block-stackable-text stk-block-text stk-block stk-b4dfbc6" data-block-id="b4dfbc6"><p class="stk-block-text__text"><a href="/legal-notice">Legal</a> · <a href="/privacy-policy">Privacy</a> · <a href="/terms-and-conditions">Terms and conditions</a></p></div>
+</div>					</div>
+									</div><!-- .footer-widgets.row-1 -->
+						<div class="site-info">
+			&copy; QCentroid 2026
+					</div><!-- .site-info -->
+				<div class="storefront-handheld-footer-bar">
+			<ul class="columns-3">
+									<li class="my-account">
+						<a href="https://qcentroid.xyz/my-account/">My Account</a>					</li>
+									<li class="search">
+						<a href="">Search</a>			<div class="site-search">
+				<div class="widget woocommerce widget_product_search"><form role="search" method="get" class="woocommerce-product-search" action="https://qcentroid.xyz/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-1">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-1" class="search-field" placeholder="Search products&hellip;" value="" name="s" />
+	<button type="submit" value="Search" class="">Search</button>
+	<input type="hidden" name="post_type" value="product" />
+</form>
+</div>			</div>
+								</li>
+									<li class="cart">
+									<a class="footer-cart-contents" href="https://qcentroid.xyz/cart/">Cart				<span class="count">0</span>
+			</a>
+							</li>
+							</ul>
+		</div>
+		
+		</div><!-- .col-full -->
+	</footer><!-- #colophon -->
+
+	
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/storefront-child\/*","\/wp-content\/themes\/storefront\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="ckyBannerTemplate" type="text/template"><div class="cky-overlay cky-hide"></div><div class="cky-btn-revisit-wrapper cky-revisit-hide" data-cky-tag="revisit-consent" data-tooltip="Consent Preferences" style="background-color:#45A29E"> <button class="cky-btn-revisit" aria-label="Consent Preferences"> <img src="https://qcentroid.xyz/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg" alt="Revisit consent button"> </button></div><div class="cky-consent-container cky-hide" tabindex="0"> <div class="cky-consent-bar" data-cky-tag="notice" style="background-color:#FFFFFF;border-color:#f4f4f4">  <div class="cky-notice"> <p class="cky-title" role="heading" aria-level="1" data-cky-tag="title" style="color:#212121">We value your privacy</p><div class="cky-notice-group"> <div class="cky-notice-des" data-cky-tag="description" style="color:#212121"> <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p> </div><div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons"> <button class="cky-btn cky-btn-customize" aria-label="Customize" data-cky-tag="settings-button" style="color:#45A29E;background-color:transparent;border-color:#45A29E">Customize</button> <button class="cky-btn cky-btn-reject" aria-label="Reject All" data-cky-tag="reject-button" style="color:#45A29E;background-color:transparent;border-color:#45A29E">Reject All</button> <button class="cky-btn cky-btn-accept" aria-label="Accept All" data-cky-tag="accept-button" style="color:#FFFFFF;background-color:#45A29E;border-color:#45A29E">Accept All</button>  </div></div></div></div></div><div class="cky-modal" tabindex="0"> <div class="cky-preference-center" data-cky-tag="detail" style="color:#212121;background-color:#FFFFFF;border-color:#f4f4f4"> <div class="cky-preference-header"> <span class="cky-preference-title" role="heading" aria-level="1" data-cky-tag="detail-title" style="color:#212121">Customize Consent Preferences</span> <button class="cky-btn-close" aria-label="[cky_preference_close_label]" data-cky-tag="detail-close"> <img src="https://qcentroid.xyz/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg" alt="Close"> </button> </div><div class="cky-preference-body-wrapper"> <div class="cky-preference-content-wrapper" data-cky-tag="detail-description" style="color:#212121"> <p>We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.</p><p>The cookies that are categorized as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. </p><p>We also use third-party cookies that help us analyze how you use this website, store your preferences, and provide the content and advertisements that are relevant to you. These cookies will only be stored in your browser with your prior consent.</p><p>You can choose to enable or disable some or all of these cookies but disabling some of them may affect your browsing experience.</p> </div><div class="cky-accordion-wrapper" data-cky-tag="detail-categories"> <div class="cky-accordion" id="ckyDetailCategorynecessary"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Necessary" data-cky-tag="detail-category-title" style="color:#212121">Necessary</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchnecessary"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryfunctional"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Functional" data-cky-tag="detail-category-title" style="color:#212121">Functional</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchfunctional"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryanalytics"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Analytics" data-cky-tag="detail-category-title" style="color:#212121">Analytics</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchanalytics"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryperformance"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Performance" data-cky-tag="detail-category-title" style="color:#212121">Performance</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchperformance"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryadvertisement"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Advertisement" data-cky-tag="detail-category-title" style="color:#212121">Advertisement</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchadvertisement"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#212121"> <p>Advertisement cookies are used to provide visitors with customized advertisements based on the pages you visited previously and to analyze the effectiveness of the ad campaigns.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div> </div></div><div class="cky-footer-wrapper"> <span class="cky-footer-shadow"></span> <div class="cky-prefrence-btn-wrapper" data-cky-tag="detail-buttons"> <button class="cky-btn cky-btn-reject" aria-label="Reject All" data-cky-tag="detail-reject-button" style="color:#45A29E;background-color:transparent;border-color:#45A29E"> Reject All </button> <button class="cky-btn cky-btn-preferences" aria-label="Save My Preferences" data-cky-tag="detail-save-button" style="color:#45A29E;background-color:transparent;border-color:#45A29E"> Save My Preferences </button> <button class="cky-btn cky-btn-accept" aria-label="Accept All" data-cky-tag="detail-accept-button" style="color:#FFFFFF;background-color:#45A29E;border-color:#45A29E"> Accept All </button> </div></div></div></div></script><script>requestAnimationFrame(() => document.body.classList.add( "stk--anim-init" ))</script><script>    
+	jQuery( document ).ready(function() {
+	
+		// Show all accordion fields simultaneously in single product page
+		jQuery(".accordion-content").show();
+		// And hide the accordion headers
+		jQuery(".accordion-header").hide();
+	
+});
+</script><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/qcentroid.xyz"}},{"@type":"ListItem","position":2,"item":{"name":"News","@id":"https:\/\/qcentroid.xyz\/category\/news\/"}},{"@type":"ListItem","position":3,"item":{"name":"QCentroid makes NVIDIA CUDA-Q available in its QuantumOps Platform to accelerate enterprise hybrid quantum adoption","@id":"https:\/\/qcentroid.xyz\/news\/qcentroid-makes-nvidia-cuda-q-available-in-its-quantumops-platform-to-accelerate-enterprise-hybrid-quantum-adoption\/"}}]}</script>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='woof_sections_style-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/sections/css/sections.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_tooltip-css-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/tooltip/css/tooltipster.bundle.min.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof_tooltip-css-noir-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='ion.range-slider-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='advgb_blocks_styles-css' href='https://qcentroid.xyz/wp-content/plugins/advanced-gutenberg/assets/css/blocks.css?ver=3.2.1' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://qcentroid.xyz/wp-includes/css/dashicons.min.css?ver=6.8.5' media='all' />
+<link rel='stylesheet' id='ugb-style-css-css' href='https://qcentroid.xyz/wp-content/plugins/stackable-ultimate-gutenberg-blocks/dist/frontend_blocks.css?ver=3.12.8' media='all' />
+<style id='ugb-style-css-inline-css'>
+:root {--stk-block-width-default-detected: 980px;}
+</style>
+<link rel='stylesheet' id='ugb-style-css-responsive-css' href='https://qcentroid.xyz/wp-content/plugins/stackable-ultimate-gutenberg-blocks/dist/frontend_blocks_responsive.css?ver=3.12.8' media='all' />
+<link rel='stylesheet' id='woof-front-builder-css-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/front_builder/css/front-builder.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof-slideout-tab-css-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/slideout/css/jquery.tabSlideOut.css?ver=1.3.4.5' media='all' />
+<link rel='stylesheet' id='woof-slideout-css-css' href='https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/slideout/css/slideout.css?ver=1.3.4.5' media='all' />
+<script src="https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/libs/swiper-js/swiper.min.js?ver=3.6.4" id="gs-swiper-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/libs/tippyjs/tippy-bundle.umd.min.js?ver=3.6.4" id="gs-tippyjs-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/libs/images-loaded/images-loaded.min.js?ver=3.6.4" id="gs-images-loaded-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/gs-logo-slider/assets/js/gs-logo.min.js?ver=3.6.4" id="gs-logo-public-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.5" id="swv-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/qcentroid.xyz\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.5" id="contact-form-7-js"></script>
+<script id="storefront-navigation-js-extra">
+var storefrontScreenReaderText = {"expand":"Expand child menu","collapse":"Collapse child menu"};
+</script>
+<script src="https://qcentroid.xyz/wp-content/themes/storefront/assets/js/navigation.min.js?ver=4.1.0" id="storefront-navigation-js"></script>
+<script src="https://qcentroid.xyz/wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js?ver=4.1.0" id="storefront-header-cart-js"></script>
+<script src="https://qcentroid.xyz/wp-content/themes/storefront/assets/js/footer.min.js?ver=4.1.0" id="storefront-handheld-footer-bar-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/tooltip/js/tooltipster.bundle.min.js?ver=1.3.4.5" id="woof_tooltip-js-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/icheck/icheck.min.js?ver=1.3.4.5" id="icheck-jquery-js"></script>
+<script id="woof_front-js-extra">
+var woof_filter_titles = {"pa_use-case":"Use case","pa_sector":"Sector","pa_sustainability-focus":"Has sustainability focus","pa_un-sdg-supported":"Supported UN SDGs"};
+var woof_ext_filter_titles = {"woof_author":"By author","stock":"In stock","onsales":"On sale","byrating":"By rating","woof_text":"By text"};
+</script>
+<script id="woof_front-js-before">
+var woof_is_permalink =1;
+        var woof_shop_page = "";
+                var woof_m_b_container =".woocommerce-products-header";
+        var woof_really_curr_tax = {};
+        var woof_current_page_link = location.protocol + '//' + location.host + location.pathname;
+        /*lets remove pagination from woof_current_page_link*/
+        woof_current_page_link = woof_current_page_link.replace(/\page\/[0-9]+/, "");
+                        woof_current_page_link = "https://qcentroid.xyz/catalog/";
+                        var woof_link = 'https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/';
+        
+        var woof_ajaxurl = "https://qcentroid.xyz/wp-admin/admin-ajax.php";
+
+        var woof_lang = {
+        'orderby': "orderby",
+        'date': "date",
+        'perpage': "per page",
+        'pricerange': "price range",
+        'menu_order': "menu order",
+        'popularity': "popularity",
+        'rating': "rating",
+        'price': "price low to high",
+        'price-desc': "price high to low",
+        'clear_all': "Clear All",
+        'list_opener': "Сhild list opener",
+        };
+
+        if (typeof woof_lang_custom == 'undefined') {
+        var woof_lang_custom = {};/*!!important*/
+        }
+
+        var woof_is_mobile = 0;
+        
+
+
+        var woof_show_price_search_button = 0;
+        var woof_show_price_search_type = 0;
+        
+        var woof_show_price_search_type = 0;
+        var swoof_search_slug = "swoof";
+
+        
+        var icheck_skin = {};
+                                icheck_skin.skin = "flat";
+            icheck_skin.color = "aero";
+        
+        var woof_select_type = 'chosen';
+
+
+                var woof_current_values = '[]';
+                var woof_lang_loading = "Loading ...";
+
+        
+        var woof_lang_show_products_filter = "show products filter";
+        var woof_lang_hide_products_filter = "hide products filter";
+        var woof_lang_pricerange = "price range";
+
+        var woof_use_beauty_scroll =0;
+
+        var woof_autosubmit =1;
+        var woof_ajaxurl = "https://qcentroid.xyz/wp-admin/admin-ajax.php";
+        /*var woof_submit_link = "";*/
+        var woof_is_ajax = 0;
+        var woof_ajax_redraw = 0;
+        var woof_ajax_page_num =1;
+        var woof_ajax_first_done = false;
+        var woof_checkboxes_slide_flag = 1;
+
+
+        /*toggles*/
+        var woof_toggle_type = "text";
+
+        var woof_toggle_closed_text = "+";
+        var woof_toggle_opened_text = "-";
+
+        var woof_toggle_closed_image = "https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/img/plus.svg";
+        var woof_toggle_opened_image = "https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/img/minus.svg";
+
+
+        /*indexes which can be displayed in red buttons panel*/
+                var woof_accept_array = ["min_price", "orderby", "perpage", "woof_author","stock","onsales","byrating","woof_text","min_rating","product_visibility","product_cat","product_tag","pa_algorithm-type","pa_sector","pa_sustainability-focus","pa_un-sdg-supported","pa_use-case"];
+
+        
+        /*for extensions*/
+
+        var woof_ext_init_functions = null;
+                    woof_ext_init_functions = '{"by_author":"woof_init_author","by_instock":"woof_init_instock","by_onsales":"woof_init_onsales","by_text":"woof_init_text","label":"woof_init_labels","select_radio_check":"woof_init_select_radio_check"}';
+        
+
+        
+        var woof_overlay_skin = "default";
+
+        ;var woof_front_sd_is_a=1;var woof_front_show_notes=1;var woof_lang_front_builder_del="Are you sure you want to delete this filter-section?";var woof_lang_front_builder_options="Options";var woof_lang_front_builder_option="Option";var woof_lang_front_builder_section_options="Section Options";var woof_lang_front_builder_description="Description";var woof_lang_front_builder_close="Close";var woof_lang_front_builder_suggest="Suggest the feature";var woof_lang_front_builder_good_to_use="good to use in content areas";var woof_lang_front_builder_confirm_sd="Smart Designer item will be created and attached to this filter section and will cancel current type, proceed?";var woof_lang_front_builder_creating="Creating";var woof_lang_front_builder_shortcode="Shortcode";var woof_lang_front_builder_layout="Layout";var woof_lang_front_builder_filter_section="Section options";var woof_lang_front_builder_filter_redrawing="filter redrawing";var woof_lang_front_builder_filter_redrawn="redrawn";var woof_lang_front_builder_filter_redrawn="redrawn";var woof_lang_front_builder_title_top_info="this functionality is only visible for the site administrator";var woof_lang_front_builder_title_top_info_demo="demo mode is activated, and results are visible only to you";;var woof_lang_front_builder_select="+ Add filter section";; function woof_js_after_ajax_done() { jQuery(document).trigger('woof_ajax_done'); }
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/front.js?ver=1.3.4.5" id="woof_front-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/html_types/radio.js?ver=1.3.4.5" id="woof_radio_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/html_types/checkbox.js?ver=1.3.4.5" id="woof_checkbox_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/html_types/select.js?ver=1.3.4.5" id="woof_select_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/html_types/mselect.js?ver=1.3.4.5" id="woof_mselect_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_author/js/by_author.js?ver=1.3.4.5" id="woof_by_author_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_instock/js/by_instock.js?ver=1.3.4.5" id="woof_by_instock_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_onsales/js/by_onsales.js?ver=1.3.4.5" id="woof_by_onsales_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/by_text/assets/js/front.js?ver=1.3.4.5" id="woof_by_text_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/label/js/html_types/label.js?ver=1.3.4.5" id="woof_label_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/sections/js/sections.js?ver=1.3.4.5" id="woof_sections_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/select_radio_check/js/html_types/select_radio_check.js?ver=1.3.4.5" id="woof_select_radio_check_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/smart_designer/js/front.js?ver=1.3.4.5" id="woof_sd_html_items-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.jquery.js?ver=1.3.4.5" id="chosen-drop-down-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/js/ion.rangeSlider.min.js?ver=1.3.4.5" id="ion.range-slider-js"></script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_5fcf0e5500eb922a47e3e7a7d004bbcc","fragment_name":"wc_fragments_5fcf0e5500eb922a47e3e7a7d004bbcc","request_timeout":"5000"};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=8.4.0" id="wc-cart-fragments-js" defer data-wp-strategy="defer"></script>
+<script id="ugb-block-frontend-js-js-extra">
+var stackable = {"restUrl":"https:\/\/qcentroid.xyz\/wp-json\/","i18n":[]};
+</script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/slideout/js/jquery.tabSlideOut.js?ver=1.3.4.5" id="woof-slideout-js-js"></script>
+<script src="https://qcentroid.xyz/wp-content/plugins/woocommerce-products-filter/ext/slideout/js/slideout.js?ver=1.3.4.5" id="woof-slideout-init-js"></script>
+
+</body>
+</html>

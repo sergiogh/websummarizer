@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="nb-NO" dir="ltr" class="resp_fonts">
+
+    <head>
+                
+                <script type="module">
+                    import { ClientAPI } from '/view-resources/baseview/public/common/ClientAPI/index.js?v=1770213802-L4';
+                    window.labClientAPI = new ClientAPI({
+                        pageData: {
+                            url: 'https://www.khrono.no/disse-fire-ble-nye-sentre-for-kvanteteknologi-1/1023736',
+                            pageType: 'article',
+                            pageId: '1023736',
+                            section: 'nyheter',
+                            title: 'Disse fire ble nye sentre for kvanteteknologi',
+                            seotitle: 'Disse fire ble nye sentre for kvanteteknologi',
+                            sometitle: 'Disse fire ble nye sentre for kvanteteknologi',
+                            description: 'Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.',
+                            seodescription: 'Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.',
+                            somedescription: 'Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.',
+                            device: 'desktop',
+                            cmsVersion: '4.2.16',
+                            contentLanguage: 'nb-NO',
+                            published: '2025-12-17T11:08:25.000Z',
+                            tags: ["kvanteteknologi", "sintef", "forskningsrådet", "uio", "sigrun aasland", "nyheter"],
+                            bylines: ["Eva Tønnessen"],
+                            site: {
+                                domain: 'https://www.khrono.no',
+                                id: '1',
+                                alias: 'khrono'
+                            }
+                            // Todo: Add paywall info ...
+                        },
+                        debug: false
+                    });
+                </script>
+
+                <title>Disse fire ble nye sentre for kvanteteknologi</title>
+                <meta name="title" content="Disse fire ble nye sentre for kvanteteknologi">
+                <meta name="description" content="Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.">
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <link rel="canonical" href="https://www.khrono.no/disse-fire-ble-nye-sentre-for-kvanteteknologi-1/1023736">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                
+                <meta property="og:type" content="article">
+                <meta property="og:title" content="Disse fire ble nye sentre for kvanteteknologi">
+                <meta property="og:description" content="Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.">
+                <meta property="article:published_time" content="2025-12-17T11:08:25.000Z">
+                <meta property="article:modified_time" content="2025-12-17T11:14:57.000Z">
+                <meta property="article:author" content="Eva Tønnessen">
+                <meta property="article:tag" content="kvanteteknologi">
+                <meta property="article:tag" content="sintef">
+                <meta property="article:tag" content="forskningsrådet">
+                <meta property="article:tag" content="uio">
+                <meta property="article:tag" content="sigrun aasland">
+                <meta property="article:tag" content="nyheter">
+                <meta property="og:image" content="https://image.khrono.no/1023837.jpg?imageId=1023837&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683">
+                <meta property="og:image:width" content="1200">
+                <meta property="og:image:height" content="684">
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:site" content="@AvisenKhrono">
+                <meta name="twitter:title" content="Disse fire ble nye sentre for kvanteteknologi">
+                <meta name="twitter:description" content="Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.">
+                <meta name="twitter:image" content="https://image.khrono.no/1023837.jpg?imageId=1023837&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683">
+                <link rel="alternate" type="application/json+oembed" href="https://www.khrono.no/disse-fire-ble-nye-sentre-for-kvanteteknologi-1/1023736?lab_viewport=oembed">
+
+                
+                <script src="https://assets.mailmojo.no/sdk.js" data-token="xdgOkH9NZGnaSE7X5Lql0eepOB1Hn4"></script><script async id="ebx" src="//applets.ebxcdn.com/ebx.js"></script>
+                <style >@media (min-width: 1024px) {
+    body.site_khrono .content[class*=" bg-"]:has(.desktop-floatLeft) {
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+    body.site_khrono .content[class*=" bg-"]:has(.desktop-floatRight) {
+        padding-right: 1em;
+        padding-top: 1em;
+    }
+    body.site_khrono .content[class*=" bg-"]
+    :not(:has(.desktop-floatLeft)):not(:has(.desktop-floatRight)) figure {
+        margin-top: -2rem;
+        margin-right: -2rem;
+        margin-left: -2rem;
+    }
+}</style>
+                
+                <meta property="og:url" content="https://www.khrono.no/disse-fire-ble-nye-sentre-for-kvanteteknologi-1/1023736">
+                <link rel="shortcut icon" type="image/png" sizes="64x64" href="/view-resources/dachser2/public/khrono/v2/favicon-small.png">
+                <link rel="icon" type="image/png" sizes="64x64" href="/view-resources/dachser2/public/khrono/v2/favicon-small.png">
+                <link rel="shortcut icon" type="image/png" sizes="256x256" href="/view-resources/dachser2/public/khrono/v2/favicon-large.png">
+                <link rel="icon" type="image/png" sizes="256x256" href="/view-resources/dachser2/public/khrono/v2/favicon-large.png">
+                    
+                <link rel="stylesheet" href="/view-resources/view/css/grid.css?v=1770213802-L4">
+                <link rel="stylesheet" href="/view-resources/view/css/main.css?v=1770213802-L4">
+                <link rel="stylesheet" href="/view-resources/view/css/colors.css?v=1770213802-L4">
+                <link rel="stylesheet" href="/view-resources/view/css/print.css?v=1770213802-L4" media="print">
+                <link rel="stylesheet" href="/view-resources/view/css/foundation-icons/foundation-icons.css?v=1770213802-L4">
+                <link rel="stylesheet" href="/view-resources/view/css/site/khrono.css?v=1770213802-L4">
+                <style data-key="custom_properties">
+                    :root{--primary: rgb(0, 214, 180);--secondary: rgb(0, 255, 204);--tertiary: rgba(242,77,0,1);--quaternary: rgb(20, 20, 20);--quinary: rgb(74, 74, 74);--senary: rgb(155, 155, 155);--septenary: rgb(235, 235, 235);--black: rgba(0,0,0,1);--white: rgb(255, 255, 255);--octonary: rgba(0,0,0,1);--nonary: rgba(0,0,0,1);--custom-1: rgba(153,0,0,1);--bg-primary: rgba(0,214,180,1);--bg-secondary: rgb(0, 255, 204);--bg-tertiary: rgba(242,77,0,1);--bg-quaternary: rgb(20, 20, 20);--bg-quinary: rgb(74, 74, 74);--bg-senary: rgb(155, 155, 155);--bg-septenary: rgb(235, 235, 235);--bg-black: rgb(0, 0, 0);--bg-white: rgb(255, 255, 255);--bg-octonary: rgba(208, 200, 200, 1);--bg-nonary: rgba(208, 200, 200, 1);--bg-custom-1: rgba(208, 200, 200, 1);--bg-custom-2: rgba(153,0,0,1);--bg-custom-4: rgba(55,40,32,1);--bg-custom-5: rgba(5,52,42,1);--bg-custom-6: rgba(228,240,231,1);}
+                </style>
+                <style data-key="background_colors">
+                    .bg-primary {background-color: rgba(0,214,180,1);}.bg-secondary {background-color: rgb(0, 255, 204);}.bg-tertiary {background-color: rgba(242,77,0,1);color: #fff;}.bg-quaternary {background-color: rgb(20, 20, 20);color: #fff;}.bg-quinary {background-color: rgb(74, 74, 74);color: #fff;}.bg-senary {background-color: rgb(155, 155, 155);}.bg-septenary {background-color: rgb(235, 235, 235);}.bg-black {background-color: rgb(0, 0, 0);color: #fff;}.bg-white {background-color: rgb(255, 255, 255);}.bg-octonary {background-color: rgba(208, 200, 200, 1);}.bg-nonary {background-color: rgba(208, 200, 200, 1);}.bg-custom-1 {background-color: rgba(208, 200, 200, 1);}.bg-custom-2 {background-color: rgba(153,0,0,1);color: #fff;}.bg-custom-4 {background-color: rgba(55,40,32,1);color: #fff;}.bg-custom-5 {background-color: rgba(5,52,42,1);color: #fff;}.bg-custom-6 {background-color: rgba(228,240,231,1);}@media (max-width: 1023px) { .color_mobile_bg-primary {background-color: rgba(0,214,180,1);}}@media (max-width: 1023px) { .color_mobile_bg-secondary {background-color: rgb(0, 255, 204);}}@media (max-width: 1023px) { .color_mobile_bg-tertiary {background-color: rgba(242,77,0,1);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quaternary {background-color: rgb(20, 20, 20);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quinary {background-color: rgb(74, 74, 74);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-senary {background-color: rgb(155, 155, 155);}}@media (max-width: 1023px) { .color_mobile_bg-septenary {background-color: rgb(235, 235, 235);}}@media (max-width: 1023px) { .color_mobile_bg-black {background-color: rgb(0, 0, 0);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-white {background-color: rgb(255, 255, 255);}}@media (max-width: 1023px) { .color_mobile_bg-octonary {background-color: rgba(208, 200, 200, 1);}}@media (max-width: 1023px) { .color_mobile_bg-nonary {background-color: rgba(208, 200, 200, 1);}}@media (max-width: 1023px) { .color_mobile_bg-custom-1 {background-color: rgba(208, 200, 200, 1);}}@media (max-width: 1023px) { .color_mobile_bg-custom-2 {background-color: rgba(153,0,0,1);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-4 {background-color: rgba(55,40,32,1);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-5 {background-color: rgba(5,52,42,1);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-6 {background-color: rgba(228,240,231,1);}}
+                </style>
+                <style data-key="background_colors_opacity">
+                    .bg-primary.op-bg_20 {background-color: rgba(0, 214, 180, 0.2);}.bg-primary.op-bg_40 {background-color: rgba(0, 214, 180, 0.4);}.bg-primary.op-bg_60 {background-color: rgba(0, 214, 180, 0.6);}.bg-primary.op-bg_80 {background-color: rgba(0, 214, 180, 0.8);}.bg-secondary.op-bg_20 {background-color: rgba(0, 255, 204, 0.2);}.bg-secondary.op-bg_40 {background-color: rgba(0, 255, 204, 0.4);}.bg-secondary.op-bg_60 {background-color: rgba(0, 255, 204, 0.6);}.bg-secondary.op-bg_80 {background-color: rgba(0, 255, 204, 0.8);}.bg-tertiary.op-bg_20 {background-color: rgba(242, 77, 0, 0.2);color: #fff;}.bg-tertiary.op-bg_40 {background-color: rgba(242, 77, 0, 0.4);color: #fff;}.bg-tertiary.op-bg_60 {background-color: rgba(242, 77, 0, 0.6);color: #fff;}.bg-tertiary.op-bg_80 {background-color: rgba(242, 77, 0, 0.8);color: #fff;}.bg-quaternary.op-bg_20 {background-color: rgba(20, 20, 20, 0.2);color: #fff;}.bg-quaternary.op-bg_40 {background-color: rgba(20, 20, 20, 0.4);color: #fff;}.bg-quaternary.op-bg_60 {background-color: rgba(20, 20, 20, 0.6);color: #fff;}.bg-quaternary.op-bg_80 {background-color: rgba(20, 20, 20, 0.8);color: #fff;}.bg-quinary.op-bg_20 {background-color: rgba(74, 74, 74, 0.2);color: #fff;}.bg-quinary.op-bg_40 {background-color: rgba(74, 74, 74, 0.4);color: #fff;}.bg-quinary.op-bg_60 {background-color: rgba(74, 74, 74, 0.6);color: #fff;}.bg-quinary.op-bg_80 {background-color: rgba(74, 74, 74, 0.8);color: #fff;}.bg-senary.op-bg_20 {background-color: rgba(155, 155, 155, 0.2);}.bg-senary.op-bg_40 {background-color: rgba(155, 155, 155, 0.4);}.bg-senary.op-bg_60 {background-color: rgba(155, 155, 155, 0.6);}.bg-senary.op-bg_80 {background-color: rgba(155, 155, 155, 0.8);}.bg-septenary.op-bg_20 {background-color: rgba(235, 235, 235, 0.2);}.bg-septenary.op-bg_40 {background-color: rgba(235, 235, 235, 0.4);}.bg-septenary.op-bg_60 {background-color: rgba(235, 235, 235, 0.6);}.bg-septenary.op-bg_80 {background-color: rgba(235, 235, 235, 0.8);}.bg-black.op-bg_20 {background-color: rgba(0, 0, 0, 0.2);color: #fff;}.bg-black.op-bg_40 {background-color: rgba(0, 0, 0, 0.4);color: #fff;}.bg-black.op-bg_60 {background-color: rgba(0, 0, 0, 0.6);color: #fff;}.bg-black.op-bg_80 {background-color: rgba(0, 0, 0, 0.8);color: #fff;}.bg-white.op-bg_20 {background-color: rgba(255, 255, 255, 0.2);}.bg-white.op-bg_40 {background-color: rgba(255, 255, 255, 0.4);}.bg-white.op-bg_60 {background-color: rgba(255, 255, 255, 0.6);}.bg-white.op-bg_80 {background-color: rgba(255, 255, 255, 0.8);}.bg-octonary.op-bg_20 {background-color: rgba(208, 200, 200, 0.2);}.bg-octonary.op-bg_40 {background-color: rgba(208, 200, 200, 0.4);}.bg-octonary.op-bg_60 {background-color: rgba(208, 200, 200, 0.6);}.bg-octonary.op-bg_80 {background-color: rgba(208, 200, 200, 0.8);}.bg-nonary.op-bg_20 {background-color: rgba(208, 200, 200, 0.2);}.bg-nonary.op-bg_40 {background-color: rgba(208, 200, 200, 0.4);}.bg-nonary.op-bg_60 {background-color: rgba(208, 200, 200, 0.6);}.bg-nonary.op-bg_80 {background-color: rgba(208, 200, 200, 0.8);}.bg-custom-1.op-bg_20 {background-color: rgba(208, 200, 200, 0.2);}.bg-custom-1.op-bg_40 {background-color: rgba(208, 200, 200, 0.4);}.bg-custom-1.op-bg_60 {background-color: rgba(208, 200, 200, 0.6);}.bg-custom-1.op-bg_80 {background-color: rgba(208, 200, 200, 0.8);}.bg-custom-2.op-bg_20 {background-color: rgba(153, 0, 0, 0.2);color: #fff;}.bg-custom-2.op-bg_40 {background-color: rgba(153, 0, 0, 0.4);color: #fff;}.bg-custom-2.op-bg_60 {background-color: rgba(153, 0, 0, 0.6);color: #fff;}.bg-custom-2.op-bg_80 {background-color: rgba(153, 0, 0, 0.8);color: #fff;}.bg-custom-4.op-bg_20 {background-color: rgba(55, 40, 32, 0.2);color: #fff;}.bg-custom-4.op-bg_40 {background-color: rgba(55, 40, 32, 0.4);color: #fff;}.bg-custom-4.op-bg_60 {background-color: rgba(55, 40, 32, 0.6);color: #fff;}.bg-custom-4.op-bg_80 {background-color: rgba(55, 40, 32, 0.8);color: #fff;}.bg-custom-5.op-bg_20 {background-color: rgba(5, 52, 42, 0.2);color: #fff;}.bg-custom-5.op-bg_40 {background-color: rgba(5, 52, 42, 0.4);color: #fff;}.bg-custom-5.op-bg_60 {background-color: rgba(5, 52, 42, 0.6);color: #fff;}.bg-custom-5.op-bg_80 {background-color: rgba(5, 52, 42, 0.8);color: #fff;}.bg-custom-6.op-bg_20 {background-color: rgba(228, 240, 231, 0.2);}.bg-custom-6.op-bg_40 {background-color: rgba(228, 240, 231, 0.4);}.bg-custom-6.op-bg_60 {background-color: rgba(228, 240, 231, 0.6);}.bg-custom-6.op-bg_80 {background-color: rgba(228, 240, 231, 0.8);}@media (max-width: 1023px) { .color_mobile_bg-primary.op-bg_20 {background-color: rgba(0, 214, 180, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-primary.op-bg_40 {background-color: rgba(0, 214, 180, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-primary.op-bg_60 {background-color: rgba(0, 214, 180, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-primary.op-bg_80 {background-color: rgba(0, 214, 180, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-secondary.op-bg_20 {background-color: rgba(0, 255, 204, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-secondary.op-bg_40 {background-color: rgba(0, 255, 204, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-secondary.op-bg_60 {background-color: rgba(0, 255, 204, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-secondary.op-bg_80 {background-color: rgba(0, 255, 204, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-tertiary.op-bg_20 {background-color: rgba(242, 77, 0, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-tertiary.op-bg_40 {background-color: rgba(242, 77, 0, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-tertiary.op-bg_60 {background-color: rgba(242, 77, 0, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-tertiary.op-bg_80 {background-color: rgba(242, 77, 0, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quaternary.op-bg_20 {background-color: rgba(20, 20, 20, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quaternary.op-bg_40 {background-color: rgba(20, 20, 20, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quaternary.op-bg_60 {background-color: rgba(20, 20, 20, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quaternary.op-bg_80 {background-color: rgba(20, 20, 20, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quinary.op-bg_20 {background-color: rgba(74, 74, 74, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quinary.op-bg_40 {background-color: rgba(74, 74, 74, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quinary.op-bg_60 {background-color: rgba(74, 74, 74, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-quinary.op-bg_80 {background-color: rgba(74, 74, 74, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-senary.op-bg_20 {background-color: rgba(155, 155, 155, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-senary.op-bg_40 {background-color: rgba(155, 155, 155, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-senary.op-bg_60 {background-color: rgba(155, 155, 155, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-senary.op-bg_80 {background-color: rgba(155, 155, 155, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-septenary.op-bg_20 {background-color: rgba(235, 235, 235, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-septenary.op-bg_40 {background-color: rgba(235, 235, 235, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-septenary.op-bg_60 {background-color: rgba(235, 235, 235, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-septenary.op-bg_80 {background-color: rgba(235, 235, 235, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-black.op-bg_20 {background-color: rgba(0, 0, 0, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-black.op-bg_40 {background-color: rgba(0, 0, 0, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-black.op-bg_60 {background-color: rgba(0, 0, 0, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-black.op-bg_80 {background-color: rgba(0, 0, 0, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-white.op-bg_20 {background-color: rgba(255, 255, 255, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-white.op-bg_40 {background-color: rgba(255, 255, 255, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-white.op-bg_60 {background-color: rgba(255, 255, 255, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-white.op-bg_80 {background-color: rgba(255, 255, 255, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-octonary.op-bg_20 {background-color: rgba(208, 200, 200, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-octonary.op-bg_40 {background-color: rgba(208, 200, 200, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-octonary.op-bg_60 {background-color: rgba(208, 200, 200, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-octonary.op-bg_80 {background-color: rgba(208, 200, 200, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-nonary.op-bg_20 {background-color: rgba(208, 200, 200, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-nonary.op-bg_40 {background-color: rgba(208, 200, 200, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-nonary.op-bg_60 {background-color: rgba(208, 200, 200, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-nonary.op-bg_80 {background-color: rgba(208, 200, 200, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-custom-1.op-bg_20 {background-color: rgba(208, 200, 200, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-custom-1.op-bg_40 {background-color: rgba(208, 200, 200, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-custom-1.op-bg_60 {background-color: rgba(208, 200, 200, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-custom-1.op-bg_80 {background-color: rgba(208, 200, 200, 0.8);}}@media (max-width: 1023px) { .color_mobile_bg-custom-2.op-bg_20 {background-color: rgba(153, 0, 0, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-2.op-bg_40 {background-color: rgba(153, 0, 0, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-2.op-bg_60 {background-color: rgba(153, 0, 0, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-2.op-bg_80 {background-color: rgba(153, 0, 0, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-4.op-bg_20 {background-color: rgba(55, 40, 32, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-4.op-bg_40 {background-color: rgba(55, 40, 32, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-4.op-bg_60 {background-color: rgba(55, 40, 32, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-4.op-bg_80 {background-color: rgba(55, 40, 32, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-5.op-bg_20 {background-color: rgba(5, 52, 42, 0.2);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-5.op-bg_40 {background-color: rgba(5, 52, 42, 0.4);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-5.op-bg_60 {background-color: rgba(5, 52, 42, 0.6);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-5.op-bg_80 {background-color: rgba(5, 52, 42, 0.8);color: #fff;}}@media (max-width: 1023px) { .color_mobile_bg-custom-6.op-bg_20 {background-color: rgba(228, 240, 231, 0.2);}}@media (max-width: 1023px) { .color_mobile_bg-custom-6.op-bg_40 {background-color: rgba(228, 240, 231, 0.4);}}@media (max-width: 1023px) { .color_mobile_bg-custom-6.op-bg_60 {background-color: rgba(228, 240, 231, 0.6);}}@media (max-width: 1023px) { .color_mobile_bg-custom-6.op-bg_80 {background-color: rgba(228, 240, 231, 0.8);}}
+                </style>
+                <style data-key="border_colors">
+                    .border-bg-primary{--border-color: var(--bg-primary);}.mobile_border-bg-primary{--mobile-border-color: var(--bg-primary);}.border-bg-secondary{--border-color: var(--bg-secondary);}.mobile_border-bg-secondary{--mobile-border-color: var(--bg-secondary);}.border-bg-tertiary{--border-color: var(--bg-tertiary);}.mobile_border-bg-tertiary{--mobile-border-color: var(--bg-tertiary);}.border-bg-quaternary{--border-color: var(--bg-quaternary);}.mobile_border-bg-quaternary{--mobile-border-color: var(--bg-quaternary);}.border-bg-quinary{--border-color: var(--bg-quinary);}.mobile_border-bg-quinary{--mobile-border-color: var(--bg-quinary);}.border-bg-senary{--border-color: var(--bg-senary);}.mobile_border-bg-senary{--mobile-border-color: var(--bg-senary);}.border-bg-septenary{--border-color: var(--bg-septenary);}.mobile_border-bg-septenary{--mobile-border-color: var(--bg-septenary);}.border-bg-black{--border-color: var(--bg-black);}.mobile_border-bg-black{--mobile-border-color: var(--bg-black);}.border-bg-white{--border-color: var(--bg-white);}.mobile_border-bg-white{--mobile-border-color: var(--bg-white);}.border-bg-octonary{--border-color: var(--bg-octonary);}.mobile_border-bg-octonary{--mobile-border-color: var(--bg-octonary);}.border-bg-nonary{--border-color: var(--bg-nonary);}.mobile_border-bg-nonary{--mobile-border-color: var(--bg-nonary);}.border-bg-custom-1{--border-color: var(--bg-custom-1);}.mobile_border-bg-custom-1{--mobile-border-color: var(--bg-custom-1);}.border-bg-custom-2{--border-color: var(--bg-custom-2);}.mobile_border-bg-custom-2{--mobile-border-color: var(--bg-custom-2);}.border-bg-custom-4{--border-color: var(--bg-custom-4);}.mobile_border-bg-custom-4{--mobile-border-color: var(--bg-custom-4);}.border-bg-custom-5{--border-color: var(--bg-custom-5);}.mobile_border-bg-custom-5{--mobile-border-color: var(--bg-custom-5);}.border-bg-custom-6{--border-color: var(--bg-custom-6);}.mobile_border-bg-custom-6{--mobile-border-color: var(--bg-custom-6);}
+                </style>
+                <style data-key="font_colors">
+                    .primary {color: rgb(0, 214, 180) !important;}.secondary {color: rgb(0, 255, 204) !important;}.tertiary {color: rgba(242,77,0,1) !important;}.quaternary {color: rgb(20, 20, 20) !important;}.quinary {color: rgb(74, 74, 74) !important;}.senary {color: rgb(155, 155, 155) !important;}.septenary {color: rgb(235, 235, 235) !important;}.black {color: rgba(0,0,0,1) !important;}.white {color: rgb(255, 255, 255) !important;}.octonary {color: rgba(0,0,0,1) !important;}.nonary {color: rgba(0,0,0,1) !important;}.custom-1 {color: rgba(153,0,0,1) !important;}@media (max-width: 1023px) { .color_mobile_primary {color: rgb(0, 214, 180) !important;}}@media (max-width: 1023px) { .color_mobile_secondary {color: rgb(0, 255, 204) !important;}}@media (max-width: 1023px) { .color_mobile_tertiary {color: rgba(242,77,0,1) !important;}}@media (max-width: 1023px) { .color_mobile_quaternary {color: rgb(20, 20, 20) !important;}}@media (max-width: 1023px) { .color_mobile_quinary {color: rgb(74, 74, 74) !important;}}@media (max-width: 1023px) { .color_mobile_senary {color: rgb(155, 155, 155) !important;}}@media (max-width: 1023px) { .color_mobile_septenary {color: rgb(235, 235, 235) !important;}}@media (max-width: 1023px) { .color_mobile_black {color: rgba(0,0,0,1) !important;}}@media (max-width: 1023px) { .color_mobile_white {color: rgb(255, 255, 255) !important;}}@media (max-width: 1023px) { .color_mobile_octonary {color: rgba(0,0,0,1) !important;}}@media (max-width: 1023px) { .color_mobile_nonary {color: rgba(0,0,0,1) !important;}}@media (max-width: 1023px) { .color_mobile_custom-1 {color: rgba(153,0,0,1) !important;}}
+                </style>
+                <style data-key="image_gradient">
+                    .image-gradient-bg-primary{--background-color: var(--bg-primary);}.color_mobile_image-gradient-bg-primary{--mobile-background-color: var(--bg-primary);}.image-gradient-bg-secondary{--background-color: var(--bg-secondary);}.color_mobile_image-gradient-bg-secondary{--mobile-background-color: var(--bg-secondary);}.image-gradient-bg-tertiary{--background-color: var(--bg-tertiary);}.color_mobile_image-gradient-bg-tertiary{--mobile-background-color: var(--bg-tertiary);}.image-gradient-bg-quaternary{--background-color: var(--bg-quaternary);}.color_mobile_image-gradient-bg-quaternary{--mobile-background-color: var(--bg-quaternary);}.image-gradient-bg-quinary{--background-color: var(--bg-quinary);}.color_mobile_image-gradient-bg-quinary{--mobile-background-color: var(--bg-quinary);}.image-gradient-bg-senary{--background-color: var(--bg-senary);}.color_mobile_image-gradient-bg-senary{--mobile-background-color: var(--bg-senary);}.image-gradient-bg-septenary{--background-color: var(--bg-septenary);}.color_mobile_image-gradient-bg-septenary{--mobile-background-color: var(--bg-septenary);}.image-gradient-bg-black{--background-color: var(--bg-black);}.color_mobile_image-gradient-bg-black{--mobile-background-color: var(--bg-black);}.image-gradient-bg-white{--background-color: var(--bg-white);}.color_mobile_image-gradient-bg-white{--mobile-background-color: var(--bg-white);}.image-gradient-bg-octonary{--background-color: var(--bg-octonary);}.color_mobile_image-gradient-bg-octonary{--mobile-background-color: var(--bg-octonary);}.image-gradient-bg-nonary{--background-color: var(--bg-nonary);}.color_mobile_image-gradient-bg-nonary{--mobile-background-color: var(--bg-nonary);}.image-gradient-bg-custom-1{--background-color: var(--bg-custom-1);}.color_mobile_image-gradient-bg-custom-1{--mobile-background-color: var(--bg-custom-1);}.image-gradient-bg-custom-2{--background-color: var(--bg-custom-2);}.color_mobile_image-gradient-bg-custom-2{--mobile-background-color: var(--bg-custom-2);}.image-gradient-bg-custom-4{--background-color: var(--bg-custom-4);}.color_mobile_image-gradient-bg-custom-4{--mobile-background-color: var(--bg-custom-4);}.image-gradient-bg-custom-5{--background-color: var(--bg-custom-5);}.color_mobile_image-gradient-bg-custom-5{--mobile-background-color: var(--bg-custom-5);}.image-gradient-bg-custom-6{--background-color: var(--bg-custom-6);}.color_mobile_image-gradient-bg-custom-6{--mobile-background-color: var(--bg-custom-6);}
+                </style>
+                <style data-key="custom_css_variables">
+                :root {
+                    --lab_page_width: 1088px;
+                    --lab_columns_gutter: 11px;
+                    --space-top: ;
+                    --space-top-adnuntiusAd: ;
+                }
+
+                @media(max-width: 767px) {
+                    :root {
+                        --lab_columns_gutter: 10px;
+                    }
+                }
+
+                @media(min-width: 767px) {
+                    :root {
+                    }
+                }
+                </style>
+<script src="/view-resources/public/common/JWTCookie.js?v=1770213802-L4"></script>
+<script src="/view-resources/public/common/Paywall.js?v=1770213802-L4"></script>
+                <script>
+                window.Dac = window.Dac || {};
+                (function () {
+                    if (navigator) {
+                        window.Dac.clientData = {
+                            language: navigator.language,
+                            userAgent: navigator.userAgent,
+                            innerWidth: window.innerWidth,
+                            innerHeight: window.innerHeight,
+                            deviceByMediaQuery: getDeviceByMediaQuery(),
+                            labDevice: 'desktop', // Device from labrador
+                            device: 'desktop', // Device from varnish
+                            paywall: {
+                                isAuthenticated: isPaywallAuthenticated(),
+                                toggleAuthenticatedContent: toggleAuthenticatedContent,
+                                requiredProducts: [],
+                            },
+                            page: {
+                                id: '1023736',
+                                extId: ''
+                            },
+                            siteAlias: 'khrono',
+                            debug: window.location.href.includes('debug=1')
+                        };
+                        function getDeviceByMediaQuery() {
+                            if (window.matchMedia('(max-width: 767px)').matches) return 'mobile';
+                            if (window.matchMedia('(max-width: 1023px)').matches) return 'tablet';
+                            return 'desktop';
+                        }
+
+                        function isPaywallAuthenticated() {
+                            if (window.Dac && window.Dac.JWTCookie) {
+                                var JWTCookie = new Dac.JWTCookie({ debug: false });
+                                return JWTCookie.isAuthenticated();
+                            }
+                            return false;
+                        }
+
+                        function toggleAuthenticatedContent(settings) {
+                            if (!window.Dac || !window.Dac.Paywall) {
+                                return;
+                            }
+                            var Paywall = new Dac.Paywall();
+                            var updateDOM = Paywall.updateDOM;
+
+                            if(settings && settings.displayUserName) {
+                                var userName = Paywall.getUserName().then((userName) => {
+                                    updateDOM(userName !== false, userName, settings.optionalGreetingText);
+                                });
+                            } else {
+                                updateDOM(window.Dac.clientData.paywall.isAuthenticated);
+                            }
+                        }
+                    }
+                }());
+                </script>
+
+                    <script type="module" src="/view-resources/baseview/public/common/baseview/moduleHandlers.js?v=1770213802-L4" data-cookieconsent="ignore"></script>
+<!-- Google Tag Manager -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5X3SG3');</script>
+<script src="https://t.atmng.io/fag_pressen/G--lmiGp1.prod.js" async></script>
+
+                <style id="dachser-vieweditor-styles">
+                    article.column .content .headline { font-family: "TiemposHeadline"; font-weight: 600; font-style: normal; font-size: 2.25rem; }@media (max-width: 767px) { .resp_fonts article.column .content .headline {font-size: calc(0.262vw * 20); } }
+                    .font-GuardianEgyptianWeb { font-family: "Guardian Egyptian Web" !important; }
+                    .font-GuardianEgyptianWeb.font-weight-light { font-weight: 200 !important; }
+                    .font-GuardianEgyptianWeb.font-weight-normal { font-weight: 500 !important; }
+                    .font-GuardianEgyptianWeb.font-weight-bold { font-weight: 600 !important; }
+                    .font-GuardianSans { font-family: "Guardian Sans" !important; }
+                    .font-GuardianSans.font-weight-normal { font-weight: 500 !important; }
+                    .font-GuardianSans.font-weight-bold { font-weight: 600 !important; }
+                    .font-Acto { font-family: "Acto" !important; }
+                    .font-Acto.font-weight-normal { font-weight: 500 !important; }
+                    .font-Acto.font-weight-bold { font-weight: 600 !important; }
+                    .font-Tungsten { font-family: "Tungsten" !important; }
+                    .font-Tungsten.font-weight-light { font-weight: 200 !important; }
+                    .font-Tungsten.font-weight-normal { font-weight: 500 !important; }
+                    .font-Tungsten.font-weight-bold { font-weight: 600 !important; }
+                    .font-Tungsten.font-weight-black { font-weight: 800 !important; }
+                    .font-TiemposHeadline { font-family: "TiemposHeadline" !important; }
+                    .font-TiemposHeadline.font-weight-light { font-weight: 200 !important; }
+                    .font-TiemposHeadline.font-weight-normal { font-weight: 400 !important; }
+                    .font-TiemposHeadline.font-weight-bold { font-weight: 600 !important; }
+                </style>
+                <style id="css_variables"></style>
+                <script>
+                    window.dachserData = {
+                        _data: {},
+                        _instances: {},
+                        get: function(key) {
+                            return dachserData._data[key] || null;
+                        },
+                        set: function(key, value) {
+                            dachserData._data[key] = value;
+                        },
+                        push: function(key, value) {
+                            if (!dachserData._data[key]) {
+                                dachserData._data[key] = [];
+                            }
+                            dachserData._data[key].push(value);
+                        },
+                        setInstance: function(key, identifier, instance) {
+                            if (!dachserData._instances[key]) {
+                                dachserData._instances[key] = {};
+                            }
+                            dachserData._instances[key][identifier] = instance;
+                        },
+                        getInstance: function(key, identifier) {
+                            return dachserData._instances[key] ? dachserData._instances[key][identifier] || null : null;
+                        },
+                        reflow: () => {}
+                    };
+                </script>
+<script src="https://assets.mailmojo.no/sdk.js?v=1770213802-L4" data-token="xdgOkH9NZGnaSE7X5Lql0eepOB1Hn4" async></script>
+<script src="/view-resources/public/common/SlideIn/SlideIn.js?v=1770213802-L4"></script>
+                
+
+                <script type="application/ld+json">
+                [{"@context":"http://schema.org","@type":"WebSite","name":"Khrono.no","url":"https://www.khrono.no"},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Disse fire ble nye sentre for kvanteteknologi","description":"Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.","mainEntityOfPage":{"@id":"https://www.khrono.no/disse-fire-ble-nye-sentre-for-kvanteteknologi-1/1023736"},"inLanguage":[{"@type":"Language","alternateName":"nb-NO"}],"image":["https://preview.sdl.no/v2/dam/FJxwdryt8iH_0IlCebJXqw/kmQElYKXPQg?v=1765965431349&width=1200","https://image.khrono.no/?imageId=116258&width=1200","https://preview.sdl.no/v2/dam/vX1RSNPVVMnmZDYusU0COA/_5B0lwVtNKw?v=1765965932569&width=1200","https://preview.sdl.no/v2/dam/3mzKVVXxLBAL2Nb9hp3w9g/0_fKRoXwPkA?v=1765965397679&width=1200","https://image.khrono.no/?imageId=993564&width=1200","https://image.khrono.no/?imageId=1022401&width=1200","https://preview.sdl.no/v2/dam/iBohV7TGqY_a3sdu4-Qc4w/aalatBA9nzg?v=1765965868566&width=1200","https://preview.sdl.no/v2/dam/Oc2pCnCkdWW6NQwbE7AqtQ/C6L-YC0Y4Xw?v=1765965892972&width=1200"],"keywords":"kvanteteknologi, sintef, forskningsrådet, uio, sigrun aasland, nyheter","author":[{"@type":"Person","name":"Eva Tønnessen","email":"eva.tonnessen@khrono.no"}],"publisher":{"@type":"Organization","name":"Khrono.no","logo":{"@type":"ImageObject","url":"/view-resources/dachser2/public/khrono/v2/logo.svg"}},"datePublished":"2025-12-17T11:08:25.000Z","dateModified":"2025-12-17T11:14:57.000Z"}]
+                </script>                <meta name="google-site-verification" content="8hys3n-GSRZF_KT20XTbIGvB1i01vqb01sFJTawcVvs">
+                <script charset="UTF-8" src="https://s-eu-1.pushpushgo.com/js/6282743b86f3e2e8e4bf8711.js" async="async"></script>
+                
+                
+
+
+
+
+        <meta property="article:section" content="nyheter">
+<script>
+var k5aMeta = { "paid": 0, "wordCount": "806", "lix": "58", "author": ["Eva Tønnessen"], "tag": ["kvanteteknologi", "sintef", "forskningsrådet", "uio", "sigrun aasland", "nyheter"], "title": "Disse fire ble nye sentre for kvanteteknologi", "teasertitle": "Disse fire ble nye sentre for kvanteteknologi", "kicker": "forskning", "url": "https://www.khrono.no/a/1023736", "login": (Dac.clientData.paywall.isAuthenticated ? 1 : 0), "subscriber": (Dac.clientData.paywall.isAuthenticated ? 1 : 0), "subscriberId": (Dac.clientData.subscriberId ? `"${ Dac.clientData.subscriberId }"` : "") };
+</script>
+                <script src="//cl.k5a.io/6156b8c81b4d741e051f44c2.js" async></script>
+
+
+        <style>
+            :root {
+                
+                
+            }
+        </style>
+        
+        
+    </head>
+
+    <body class="l4 article site_khrono section_nyheter"
+        
+        
+        >
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5X3SG3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->        
+        <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            setScrollbarWidth();
+            window.addEventListener('resize', setScrollbarWidth);
+        });
+        function setScrollbarWidth() {
+            const root = document.querySelector(':root');
+            const width = (window.innerWidth - document.body.offsetWidth < 21) ? window.innerWidth - document.body.offsetWidth : 15;
+            root.style.setProperty('--lab-scrollbar-width', `${ width }px`);
+        }
+        </script>
+
+        
+        <a href="#main" class="skip-link">Jump to main content</a>
+
+        <header id="nav" class="customHeader">
+    <div class="content"> 
+        <div class="row grid">
+            <div class="column large-4 small-6 logo">
+                <a href="//khrono.no" alt="Khrono">
+                    <img src="/view-resources/dachser2/public/khrono/v2/logo-sircle.svg?v=1" alt="Khrono" class="logo-spinner"/>
+                    <img src="/view-resources/dachser2/public/khrono/v2/logo-text.svg?v=2" class="logo-text" alt="Khrono"/>
+                </a>
+            </div>
+            <div class="column small-2 spacer"></div>
+
+            <ul class="column large-7 small-4 menu">
+<nav class="navigation mainMenu">
+	<ul>
+		<li class="debatt dac-hidden-desktop-up dac-hidden-desktop-down">
+			<a href="/meninger" target="_self" >Gå til debatt</a>
+		</li>
+		<li class="selected dac-hidden-desktop-down">
+			<a href="/emne/nyheter" target="_self" >Nyheter</a>
+		</li>
+		<li class="dac-hidden-desktop-down">
+			<a href="/meninger" target="_self" >Debatt</a>
+		</li>
+		<li class="dac-hidden-desktop-down">
+			<a href="/student" target="_self" >Student</a>
+		</li>
+		<li class="dac-hidden-desktop-down">
+			<a href="/folk" target="_self" >Nytt om folk</a>
+		</li>
+	</ul>
+</nav>            </ul>
+            <div class="column large-1 small-12 expand" id="expand-btn"><span class="icon"></span></div>
+
+            <div class="expanded-content">
+
+                <div class="column small-12 large-5 search">
+                    <form action="/cse" method="GET">
+                        <label for="khrono-search">Søk:</label>
+                        <input type="text" name="q" id="khrono-search" placeholder="Søk i Khrono ...">
+                    </form>
+                </div>
+
+                <div class="row grid buttons">
+                    <div class="column small-6">
+                        <a class="button" href="/">Nyheter</a>
+                    </div>
+                    <div class="column small-6">
+                        <a class="button" href="/meninger">Debatt</a>
+                    </div>
+                </div>
+
+                <div class="esi-content small-12 large-5">
+                    
+                </div>
+        
+                <ul class="column large-5 small-12 menu">
+                </ul>
+
+                <div class="column small-12 large-5 about">
+                    <h3>Om Khrono</h3>
+                    <p>
+                        Khrono er en uavhengig nyhetsavis for høyere utdanning og forskning.
+                        Les mer om avisens <a href="https://khrono.no/debattregler">retningslinjer</a> og <a href="https://khrono.no/om">redaksjon</a>.
+                    </p>
+                    <p>
+                        Ansvarlig redaktør: Tove Lie
+                    </p>
+                    <p>
+                        Alt innhold ©Khrono.
+                    </p>
+                    <form method="POST" action="https://khrono.mailmojo.no/20986/s">
+                        <label for="khrono-email">Gratis nyhetsbrev:</label>
+                        <input type="email" name="email" id="khrono-email" placeholder="Din epost-adresse ...">
+                        <input type="submit" value="Meld meg på!">
+                    </form>
+                    <h3>Kontakt</h3>
+                    <p>
+                        Postboks 4, St.Olavsplass, 0130 Oslo<br>
+                        Tel. +47 913 22 012 / +47 402 10 008<br>
+                        E-post: <a href="mailto:redaksjonen@khrono.no">redaksjonen@khrono.no</a>
+                    </p>
+                    <p>
+                        Design: <a href="http://www.nordstromdesign.se">Nordström Design</a><br>
+                        Avisløsning: <a href="https://labradorcms.com">Labrador CMS</a>
+                    </p>
+                    <figure>
+                        <img src="/view-resources/dachser2/public/khrono/img/fagpressen-2f.png" alt="Fagpressen" style="width: 150px; height: 43px; margin-bottom: 15px;">
+                        <img src="/view-resources/dachser2/public/khrono/img/ansvarsmerke-r.png" alt="Redaktøransvar" style="width: 75px; height: 75px; margin-left: 1rem;">
+                    </figure>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var expandBtn = document.getElementById('expand-btn');
+            if (expandBtn) {
+                expandBtn.addEventListener('click', function(event) {
+                    document.body.classList.toggle('expanded');
+                    document.body.classList.add('scrolling-active');
+                    setTimeout(() => {
+                        document.body.classList.remove('scrolling-active');
+                    }, 500);
+                }, false);
+            }
+        }());
+    </script>
+</header>
+        
+
+        
+                
+
+
+        <section id="mainArticleSection" class="main article">
+            
+            <main class="pageWidth">
+                <article class=" "
+                    
+                >
+
+                    <section class="main article k5a-article" id="main">
+
+                            <div></div>
+<script>
+(function() {
+    let windowUrl = window.location.href;
+    windowUrl = windowUrl.substring(windowUrl.indexOf('?') + 1);
+    let messageElement = document.querySelector('.shareableMessage');
+    if (windowUrl && windowUrl.includes('code') && windowUrl.includes('expires')) {
+        messageElement.style.display = 'block';
+    } 
+})();
+</script>
+
+
+                        <div data-element-guid="e65ada12-3371-436e-dc44-da4a6c657d62" class="articleHeader column hasCaption">
+
+    
+
+
+    <p class="kicker t14 tm15 align-left mobile_text_align_align-left" style="">forskning</p>
+    <h1 class="headline mainTitle t80 tm36 align-left mobile_text_align_align-left" style="">Disse fire ble nye sentre for kvanteteknologi</h1>
+    <h2 class="subtitle t30 align-left mobile_text_align_align-left" style="">Fire sentre for kvanteteknologi får til sammen 244 millioner kroner gjennom Forskningsrådet. I dag ble det kjent hvilke sentre som er valgt ut.</h2>
+
+
+
+    <div class="media">
+            
+            <figure data-element-guid="779889ab-5da3-4a6a-a082-6331b2e8c218" class="headerImage">
+    <div class="img fullwidthTarget">
+        <picture>
+            <source srcset="https://image.khrono.no/1023837.webp?imageId=1023837&width=2116&height=1208&format=webp" 
+                width="1058"
+                height="604"
+                media="(min-width: 768px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1023837.webp?imageId=1023837&width=2116&height=1208&format=jpg" 
+                width="1058"
+                height="604"
+                media="(min-width: 768px)"
+                type="image/jpeg">    
+            <source srcset="https://image.khrono.no/1023837.webp?imageId=1023837&width=960&height=548&format=webp" 
+                width="480"
+                height="274"
+                media="(max-width: 767px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1023837.webp?imageId=1023837&width=960&height=548&format=jpg" 
+                width="480"
+                height="274"
+                media="(max-width: 767px)"
+                type="image/jpeg">    
+            <img src="https://image.khrono.no/1023837.webp?imageId=1023837&width=960&height=548&format=jpg"
+                width="480"
+                height="274"
+                title="Inne i selve kvantelaboratoriet ved Universitetet i Oslo. Senterleder Lasse Vines forklarer statsråd Sigrun Aasland hva de forsker på og hvordan i dette laboratoriet."
+                alt="" 
+                
+                style=""    
+                >
+        </picture>        
+        
+    </div>
+    
+</figure>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        <div class="floatingText"></div>
+    </div>
+
+
+    <div class="caption " data-showmore="Vis mer">
+        <figcaption itemprop="caption" class="">Inne i selve kvantelaboratoriet ved Universitetet i Oslo. Senterleder Lasse Vines forklarer statsråd Sigrun Aasland hva de forsker på og hvordan i dette laboratoriet.</figcaption>
+        <figcaption itemprop="author" class="" data-byline-prefix="">Foto: Eva Tønnessen</figcaption>
+    </div>
+
+
+
+
+
+        <div data-element-guid="44a8ce60-c66d-4570-de3a-9b390b3ea307" class="meta">
+    
+
+    <div class="bylines">
+        <div data-element-guid="9ac7261d-233d-442e-8a3e-43c81180e78e" class="byline column" itemscope itemtype="http://schema.org/Person">
+    
+    <div class="content">
+            <figure data-element-guid="fc554ab8-0041-48ee-9656-d4b6259af600">
+    <picture>
+        <img
+            itemprop="image"
+            src="https://image.khrono.no/116258.webp?imageId=116258&x=0.00&y=19.62&cropw=100.00&croph=66.99&width=360&height=360"
+            width="180"
+            height="180"
+            alt="Eva Tønnessen">
+    </picture>
+</figure>
+        <address class="name">
+
+                <span class="lab-hidden-byline-name" itemprop="name">Eva Tønnessen</span>
+                    <span class="description ">Tekst:</span>
+
+                <span class="lab-hidden-byline-name" itemprop="name">Eva Tønnessen</span>
+                    <span class="firstname ">Eva</span>
+                    <span class="lastname ">Tønnessen</span>
+                <a rel="author" itemprop="url" href="mailto:eva.tonnessen@khrono.no">
+                <span class="lab-hidden-byline-name" itemprop="name">Eva Tønnessen</span>
+                    <span class="public_email ">eva.tonnessen@khrono.no</span>
+                </a>
+        </address>
+    </div>
+</div>
+
+        
+    </div>
+    
+    <div class="dates">
+    
+        <span class="dateGroup datePublished">
+            <span class="dateLabel">Publisert</span>
+            <time datetime="2025-12-17T11:08:25.000Z" title="Publisert 17.12.2025 - 12:08">17.12.2025 - 12:08</time>
+        </span>
+            <span class="dateGroup dateModified">
+                <span class="dateLabel">Sist oppdatert</span>
+                <time datetime="2025-12-17T11:14:57.000Z" title="Sist oppdatert 17.12.2025 - 12:14">17.12.2025 - 12:14</time>
+            </span>
+    </div>
+
+
+    <div class="social">
+            <a target="_blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.khrono.no%2Fdisse-fire-ble-nye-sentre-for-kvanteteknologi-1%2F1023736" class="fi-social-facebook" aria-label="Del på Facebook"></a>
+            <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.khrono.no%2Fdisse-fire-ble-nye-sentre-for-kvanteteknologi-1%2F1023736" class="fi-social-twitter" aria-label="Del på X (Twitter)"></a>
+            <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.khrono.no%2Fdisse-fire-ble-nye-sentre-for-kvanteteknologi-1%2F1023736" class="fi-social-linkedin" aria-label="Del på LinkedIn"></a>
+            <a target="_blank" href="mailto:?subject=Disse%20fire%20ble%20nye%20sentre%20for%20kvanteteknologi&body=Fire%20sentre%20for%20kvanteteknologi%20f%C3%A5r%20til%20sammen%20244%20millioner%20kroner%20gjennom%20Forskningsr%C3%A5det.%20I%20dag%20ble%20det%20kjent%20hvilke%20sentre%20som%20er%20valgt%20ut.%0Dhttps%3A%2F%2Fwww.khrono.no%2Fdisse-fire-ble-nye-sentre-for-kvanteteknologi-1%2F1023736" class="fi-mail" aria-label="Del via e-mail"></a>
+    </div>
+
+
+
+</div>
+
+</div>
+
+
+                        
+
+                        
+                        
+
+
+                        
+
+                        <div data-element-guid="44a8ce60-c66d-4570-de3a-9b390b3ea307" class="bodytext large-12 small-12 medium-12">
+    
+    
+
+    <p>Simula-gruppen, Universitetet i Oslo og Sintef får til sammen 244 millioner kroner til etablering av fire nye sentre for kvanteteknologi.</p><div data-element-guid="ebf4d02d-197f-4aa0-95b2-4aecc5e7a741" id="factbox-1023787" class="column factbox desktop-floatRight mobile-floatRight state-expanded-desktop small-12 large-4 small-abs-12 large-abs-4 style-hide expandable-mobile expandable-desktop collapsable-mobile collapsable-desktop">
+    
+    <div class="content " style="">
+        <p class="kicker ">FAKTA</p>
+        
+        <h2 class="" style="">Regjeringens satsing på kvanteteknologi</h2>
+        <div class="fact collapsableContent "><ul><li class="lab-bodytext-line">Regjeringen skal de neste fem årene bruke til sammen minst 1,1 milliarder kroner på forskning på kvanteteknologi.</li><li class="lab-bodytext-line">Regjeringen har finansiert 100 nye studieplasser i kvanteteknologi.</li><li class="lab-bodytext-line">Neste år kommer regjeringens strategi for kvanteteknologi.</li><li class="lab-bodytext-line">I regjeringens plan for Norge sies det at Norge skal investere i kvanteteknologi, forsvarsteknologi og undervannsteknologi, og samtidig styrke eksportkontrollen for å beskytte sikkerhetssensitiv kunnskap.</li></ul><p class="italic m-italic" data-lab-italic="italic">Kilde: Kunnskapsdepartementet</p></div>
+        <div class="toggle"></div>
+    </div>
+
+    <script>
+    (function () {
+        var box = document.getElementById('factbox-1023787');
+        if (box) {
+            var toggleEl = box.querySelector('.toggle');
+            if (toggleEl) {
+                var isExpanded = box.classList.contains(`state-expanded-${window.Dac.clientData.labDevice}`);
+                toggleEl.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    isExpanded = !isExpanded;
+                    if (!isExpanded) {
+                        box.classList.remove('state-expanded-mobile', 'state-expanded-desktop');
+                        const rect = box.getBoundingClientRect();
+                        const inViewport = rect.top >= 0 && rect.top <= window.innerHeight;
+                        if (!inViewport) {
+                            box.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    } else {
+                        box.classList.add('state-expanded-mobile', 'state-expanded-desktop');
+                    }
+                }, false);
+            }
+        }
+    }());
+    </script>
+</div>
+<p>— Dette er en merkedag for norsk kvantesatsing. Disse sentrene skal gi oss kunnskap og kapasitet, og de skal samarbeide tett med næringslivet, internasjonale partnere og offentlig sektor. Nå melder Norge seg på i det internasjonale kvantekappløpet, sier forsknings- og høyere utdanningsminister Sigrun Aasland (Ap).<br></p><div data-element-guid="8f32b3b5-5495-4890-9fd0-bfa7d6d2514e" class="column youtube desktop-floatLeft mobile-floatLeft small-12 large-8 small-abs-12 large-abs-8">
+    
+
+        <div class="content " style="">
+            <div >
+                <div class="youtube-container">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="//www.youtube-nocookie.com/embed/VC-S3RwYRdU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+                <p itemprop="caption" class="caption">Ett av sentrene som har fått penger som kvantesentre er knyttet til Universitetet i Oslo. Senterleder Lasse Vines forklarer behov for støvfritt miljø for forsknings- og høyere utdanningsminister Sigrun Aasland, da tildelingen ble offentlig i dag.</p>
+        </div>
+</div><h2>Kvantespranget</h2><p>Regjeringens satsing Kvantespranget,&nbsp;<a href="https://www.khrono.no/regjeringen-oker-kvantesatsingen-med-750-millioner-kroner/993507"><span data-lab-font_weight="font-weight-bold" class="font-weight-bold m-font-weight-bold">som ble lansert i august,</span></a> skal gå over minst fem år, og innebærer en økonomisk satsing på totalt 750 millioner kroner. </p><p>Sammen med den pågående forskningssatsingen på 70 millioner kroner årlig fra 2025 betyr det 1,1 milliarder kroner til kvanteteknologi de neste fem årene.</p><p>I tillegg vil regjeringen opprette til sammen 100 nye studieplasser i kvanteteknologi ved NTNU og UiO. Regjeringen jobber også med en egen strategi for kvanteteknologi som de skal lansere i 2026.</p><article data-element-guid="f38a14c3-49e9-4d0c-b4db-2b69e0ab4618" class="column desktop-floatLeft mobile-floatLeft small-12 large-8 small-abs-12 large-abs-8 " data-site-alias="khrono" data-section="nyheter" data-instance="993507" data-image-float="floatLeft" itemscope>
+    
+    <div class="content color_mobile_no_bg_color image-gradient-bottom" style="">
+        
+        <a itemprop="url" class="" href="/regjeringen-oker-kvantesatsingen-med-750-millioner-kroner/993507" data-k5a-url="https://www.khrono.no/a/993507" rel="">
+
+
+        <div class="media desktop-floatLeft mobile-floatLeft">
+                
+
+                <figure data-element-guid="7bedcb71-da93-4d67-9eb7-343e13a8e645" class="small-vw-17 desktop-floatLeft mobile-floatLeft" style="width:121px;">
+    <div class="img fullwidthTarget">
+        <picture>
+            <source srcset="https://image.khrono.no/993564.webp?imageId=993564&x=0.00&y=0.00&cropw=100.00&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=242&height=134&format=webp" 
+                width="121"
+                height="67"
+                media="(min-width: 768px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/993564.webp?imageId=993564&x=0.00&y=0.00&cropw=100.00&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=242&height=134&format=jpg" 
+                width="121"
+                height="67"
+                media="(min-width: 768px)"
+                type="image/jpeg">    
+            <source srcset="https://image.khrono.no/993564.webp?imageId=993564&x=34.15&y=0.00&cropw=38.41&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=126&height=218&format=webp" 
+                width="63"
+                height="109"
+                media="(max-width: 767px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/993564.webp?imageId=993564&x=34.15&y=0.00&cropw=38.41&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=126&height=218&format=jpg" 
+                width="63"
+                height="109"
+                media="(max-width: 767px)"
+                type="image/jpeg">    
+            <img src="https://image.khrono.no/993564.webp?imageId=993564&x=34.15&y=0.00&cropw=38.41&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=126&height=218&format=jpg"
+                width="63"
+                height="109"
+                title="Regjeringen øker kvante­satsingen med 750 millioner kroner"
+                alt="" 
+                loading="lazy"
+                style=""    
+                >
+        </picture>        
+            </div>
+    
+</figure>
+
+                
+                
+                
+                
+                
+                
+                
+            
+            <div class="floatingText">
+
+                <div class="labels">
+                </div>
+            </div>
+            
+
+        </div>
+
+
+        
+            <div 
+style=""
+class="kicker below bg-septenary color_mobile_bg-septenary hasTextPadding mobile-hasTextPadding">
+
+
+Forskning
+
+
+</div>
+            <h2 itemprop="headline" 
+    class="headline t18 tm17 bg-septenary color_mobile_bg-septenary hasTextPadding mobile-hasTextPadding"
+    style=""
+    >Regjeringen øker kvante­satsingen med 750 millioner kroner
+
+
+</h2>
+
+        
+
+
+
+
+        </a>
+
+        <time itemprop="datePublished" datetime="2025-08-27T11:00:00+02:00"></time>
+    </div>
+</article>
+<h2>Girer opp i det globale kvantekappløpet</h2><p>De fire forskningssentrene skal drive forskning på kvanteberegninger, kvantekommunikasjon og kvantesensorer, og utdanne neste generasjon eksperter.</p><p>Flere land investerer nå massivt i kvanteteknologi, og USA og Kina kniver om å ligge i front. De nordiske landene samarbeider tett for å bli en verdensledende destinasjon for selskaper, investeringer og talenter innen kvanteteknologi.</p><div data-element-guid="60303cba-3ffa-40b6-a016-1d6d431b9053" id="factbox-1023748" class="column factbox desktop-floatRight mobile-floatRight state-expanded-desktop small-12 large-4 small-abs-12 large-abs-4 style-hide expandable-mobile expandable-desktop collapsable-mobile collapsable-desktop">
+    
+    <div class="content " style="">
+        <p class="kicker ">FAKTA</p>
+        
+        <h2 class="" style="">De fire nye sentrene</h2>
+        <div class="fact collapsableContent "><figure data-element-guid="fb9f36fe-c3f8-4de8-b33a-640379fd454b" class="" >
+    <div class="img fullwidthTarget ">
+        <picture>
+            <source srcset="https://image.khrono.no/1023833.webp?imageId=1023833&width=706&height=318&format=webp" 
+                width="353"
+                height="159"
+                media="(min-width: 768px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1023833.webp?imageId=1023833&width=706&height=318&format=jpg" 
+                width="353"
+                height="159"
+                media="(min-width: 768px)"
+                type="image/jpeg">    
+            <source srcset="https://image.khrono.no/1023833.webp?imageId=1023833&width=960&height=432&format=webp" 
+                width="480"
+                height="216"
+                media="(max-width: 767px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1023833.webp?imageId=1023833&width=960&height=432&format=jpg" 
+                width="480"
+                height="216"
+                media="(max-width: 767px)"
+                type="image/jpeg">    
+            <img src="https://image.khrono.no/1023833.webp?imageId=1023833&width=960&height=432&format=jpg"
+                width="480"
+                height="216"
+                title="De fire nye sentrene"
+                alt="" 
+                loading="lazy"
+                style=""    
+                >
+        </picture>        
+            </div>
+</figure>
+<p class="font-weight-bold m-font-weight-bold" data-lab-font_weight="font-weight-bold">Senter for defekter i halvledere for kvantesensorikk</p><ul><li class="lab-bodytext-line">Senteret skal utforske hvordan små defekter i halvledere kan brukes til å lage avanserte kvantesensorer - teknologi som kan gi helt nye muligheter for presis måling, navigasjon og situasjonsforståelse.</li><li class="lab-bodytext-line">Prosjektleder: - Universitetet i Oslo, sentereleder Lasse Vines. Samarbeider internasjonalt med ledende internasjonale partnere som Niels Bohr-instituttet i København og Linköping universitet.</li></ul><figure data-element-guid="0e771a29-cddb-4e2f-840a-d787ea6c51e7" class="" >
+    <div class="img fullwidthTarget ">
+        <picture>
+            <source srcset="https://image.khrono.no/1023835.webp?imageId=1023835&width=706&height=318&format=webp" 
+                width="353"
+                height="159"
+                media="(min-width: 768px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1023835.webp?imageId=1023835&width=706&height=318&format=jpg" 
+                width="353"
+                height="159"
+                media="(min-width: 768px)"
+                type="image/jpeg">    
+            <source srcset="https://image.khrono.no/1023835.webp?imageId=1023835&width=960&height=432&format=webp" 
+                width="480"
+                height="216"
+                media="(max-width: 767px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1023835.webp?imageId=1023835&width=960&height=432&format=jpg" 
+                width="480"
+                height="216"
+                media="(max-width: 767px)"
+                type="image/jpeg">    
+            <img src="https://image.khrono.no/1023835.webp?imageId=1023835&width=960&height=432&format=jpg"
+                width="480"
+                height="216"
+                title="De fire nye sentrene"
+                alt="" 
+                loading="lazy"
+                style=""    
+                >
+        </picture>        
+            </div>
+</figure>
+<p class="font-weight-bold m-font-weight-bold" data-lab-font_weight="font-weight-bold">Centre for for Quantum Computing and Applications</p><ul><li class="lab-bodytext-line">Senteret QSTAR skal utvikle nye metoder for feilkorreksjon, algoritmer og programvare som gjør kvantedatamaskiner pålitelige og nyttige for krevende oppgaver innen forskning og industri – særlig innen kvantekjemi og optimalisering.&nbsp;</li><li class="lab-bodytext-line">Prosjektleder: Sintef, senterleder Franz Fuchs . Samarbeider med UiO, NTNU, OsloMet og Simula.&nbsp;</li></ul><p class="font-weight-bold m-font-weight-bold" data-lab-font_weight="font-weight-bold">Norwegian Quantum Software Center</p><ul><li class="lab-bodytext-line">Senteret NorQSoft fokuserer på kvante­programvare og skal utvikle metoder og verktøy for kvanteprogrammering, kunstig intelligens og optimalisering, og teste dem i samarbeid med industri og forskningsmiljøer.</li><li class="lab-bodytext-line">Prosjektleder: Shaukat Ali - Simula Research Laboratory. NorQSoft samler sterke norske partnere som OsloMet og SINTEF, og internasjonale toppmiljøer fra Sverige, Danmark og Japan.&nbsp;</li></ul><p class="font-weight-bold m-font-weight-bold" data-lab-font_weight="font-weight-bold">Centre for Quantum Communication Networks and Applications</p><ul><li class="lab-bodytext-line">Senteret QNAC skal bygge Norges første eksperimentelle testnettverk for kvantekommunikasjon, integrert med Telenors 5G-plattform og utstyr fra Toshiba.&nbsp;</li><li class="lab-bodytext-line">Prosjektleder: Carlos Cid – Simula UiB. Senteret ledes av Simula UiB i samarbeid med SimulaMet, SINTEF Digital, NTNU, Aalborg University i Danmark, Okinawa Institute of Science and Technology i Japan, Telenor og Toshiba Europe</li></ul><p class="italic m-italic" data-lab-italic="italic">Kilde: Kunnskapsdepartementet</p></div>
+        <div class="toggle"></div>
+    </div>
+
+    <script>
+    (function () {
+        var box = document.getElementById('factbox-1023748');
+        if (box) {
+            var toggleEl = box.querySelector('.toggle');
+            if (toggleEl) {
+                var isExpanded = box.classList.contains(`state-expanded-${window.Dac.clientData.labDevice}`);
+                toggleEl.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    isExpanded = !isExpanded;
+                    if (!isExpanded) {
+                        box.classList.remove('state-expanded-mobile', 'state-expanded-desktop');
+                        const rect = box.getBoundingClientRect();
+                        const inViewport = rect.top >= 0 && rect.top <= window.innerHeight;
+                        if (!inViewport) {
+                            box.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    } else {
+                        box.classList.add('state-expanded-mobile', 'state-expanded-desktop');
+                    }
+                }, false);
+            }
+        }
+    }());
+    </script>
+</div>
+<p>— Dette er en strategisk investering i Norges sikkerhet. Kvanteteknologi vil endre grunnlaget for digital kommunikasjon og kan på sikt utfordre dagens forsvarssystemer. Med disse sentrene bygger vi kompetanse og teknologi som gjør oss i stand til å møte nye trusler og styrke totalberedskapen. Dette handler om å sikre Norge i en tid der teknologisk overlegenhet blir avgjørende for nasjonal sikkerhet, sier forsvarsminister Tore O. Sandvik, i en pressemelding.</p><p>De nye sentrene skal særlig jobbe med grunnleggende forskningsaktiviteter innenfor matematisk, naturvitenskapelig og teknologisk forskning.</p><p>— Norge trenge sterke fagmiljøer som driver banebrytende forskning innenfor kvanteteknologi, og i dag har vi fått fire forskningssentre som vil gi oss verdifull kunnskap og bringe dette arbeidet videre sier administrerende direktør Mari Sundli Tveit i Norges forskningsråd.</p><figure data-element-guid="58aa0af4-2dc0-4ea4-bce8-e3fa640da340" class="column desktop-floatLeft mobile-floatLeft small-12 large-8 small-abs-12 large-abs-8">
+    
+    <div class="content " style="">
+
+        <div class="img fullwidthTarget">
+            <picture>
+                <source srcset="https://image.khrono.no/1023843.webp?imageId=1023843&width=1412&height=806&format=webp" 
+                    width="706"
+                    height="403"
+                    media="(min-width: 768px)"
+                    type="image/webp">    
+                <source srcset="https://image.khrono.no/1023843.webp?imageId=1023843&width=1412&height=806&format=jpg" 
+                    width="706"
+                    height="403"
+                    media="(min-width: 768px)"
+                    type="image/jpeg">    
+                <source srcset="https://image.khrono.no/1023843.webp?imageId=1023843&width=960&height=548&format=webp" 
+                    width="480"
+                    height="274"
+                    media="(max-width: 767px)"
+                    type="image/webp">    
+                <source srcset="https://image.khrono.no/1023843.webp?imageId=1023843&width=960&height=548&format=jpg" 
+                    width="480"
+                    height="274"
+                    media="(max-width: 767px)"
+                    type="image/jpeg">    
+                <img src="https://image.khrono.no/1023843.webp?imageId=1023843&width=960&height=548&format=jpg"
+                    width="480"
+                    height="274"
+                    title="Stolt dag for mange ved Universitetet Oslo, Sintef, og Forskningsrådet. Senterledere Lasse Vines og Franz Fuchs med blomster."
+                    alt="" 
+                    loading="lazy"
+                    style=""    
+                    >
+            </picture>            
+                    </div>
+        <div class="caption " data-showmore="Vis mer">
+            <figcaption itemprop="caption" class="">Stolt dag for mange ved Universitetet Oslo, Sintef, og Forskningsrådet. Senterledere Lasse Vines og Franz Fuchs med blomster.</figcaption>
+            <figcaption itemprop="author" class="" data-byline-prefix="">Eva Tønnessen</figcaption>
+        </div>    </div>
+</figure>
+<h2>Mange land satser</h2><p>Kvanteteknologi er viktig for forsvar, kryptering og digital sikkerhet. Flere land investerer nå massivt i kvanteteknologi, og USA og Kina kniver om å ligge i front.</p><p>Nå får Norge fire nye kvanteteknologisentre med sterke internasjonale koblinger gjennom samarbeid med Niels Bohr-instituttet, Linköping universitet og store industripartnere som Kongsberg, IBM, DNB og Statkraft.</p><p>De nordiske landene samarbeider om bli en verdensledende destinasjon for selskaper, investeringer og talenter innen kvanteteknologi. Novo Nordisk-fonden&nbsp;<a href="https://novonordiskfonden.dk/en/projects/novo-nordisk-foundation-quantum-computing-programme/" target="_blank"><span data-lab-font_weight="font-weight-bold" class="font-weight-bold m-font-weight-bold">satser nå stort på kvanteteknologi i Norden.</span></a></p><article data-element-guid="53affe95-83f8-47e1-84e7-a1a62aa805f6" class="column desktop-floatLeft mobile-floatLeft small-12 large-8 small-abs-12 large-abs-8 " data-site-alias="khrono" data-section="nyheter" data-instance="1022377" data-image-float="floatLeft" itemscope>
+    
+    <div class="content color_mobile_no_bg_color image-gradient-bottom" style="">
+        
+        <a itemprop="url" class="" href="/ny-regjeringsplan-vil-bruke-universiteter-for-a-fa-30000-unge-i-jobb/1022377" data-k5a-url="https://www.khrono.no/a/1022377" rel="">
+
+
+        <div class="media desktop-floatLeft mobile-floatLeft">
+                
+
+                <figure data-element-guid="b4947a18-dc9f-4649-8877-a655167636a4" class="small-vw-17 desktop-floatLeft mobile-floatLeft" style="width:121px;">
+    <div class="img fullwidthTarget">
+        <picture>
+            <source srcset="https://image.khrono.no/1022401.webp?imageId=1022401&x=0.00&y=0.00&cropw=72.12&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=242&height=190&format=webp" 
+                width="121"
+                height="95"
+                media="(min-width: 768px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1022401.webp?imageId=1022401&x=0.00&y=0.00&cropw=72.12&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=242&height=190&format=jpg" 
+                width="121"
+                height="95"
+                media="(min-width: 768px)"
+                type="image/jpeg">    
+            <source srcset="https://image.khrono.no/1022401.webp?imageId=1022401&x=41.71&y=0.00&cropw=31.69&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=126&height=226&format=webp" 
+                width="63"
+                height="113"
+                media="(max-width: 767px)"
+                type="image/webp">    
+            <source srcset="https://image.khrono.no/1022401.webp?imageId=1022401&x=41.71&y=0.00&cropw=31.69&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=126&height=226&format=jpg" 
+                width="63"
+                height="113"
+                media="(max-width: 767px)"
+                type="image/jpeg">    
+            <img src="https://image.khrono.no/1022401.webp?imageId=1022401&x=41.71&y=0.00&cropw=31.69&croph=100.00&heightx=0.00&heighty=0.00&heightw=100.00&heighth=100.00&width=126&height=226&format=jpg"
+                width="63"
+                height="113"
+                title="Ny regjeringsplan: Vil bruke universiteter for å få 30.000 unge i jobb"
+                alt="" 
+                loading="lazy"
+                style=""    
+                >
+        </picture>        
+            </div>
+    
+</figure>
+
+                
+                
+                
+                
+                
+                
+                
+            
+            <div class="floatingText">
+
+                <div class="labels">
+                </div>
+            </div>
+            
+
+        </div>
+
+
+        
+            <div 
+style=""
+class="kicker below bg-septenary color_mobile_bg-septenary hasTextPadding mobile-hasTextPadding">
+
+
+Ny plan
+
+
+</div>
+            <h2 itemprop="headline" 
+    class="headline t18 tm17 bg-septenary color_mobile_bg-septenary hasTextPadding mobile-hasTextPadding"
+    style=""
+    >Ny regjeringsplan: Vil bruke universiteter for å få 30.000 unge i jobb
+
+
+</h2>
+
+        
+
+
+
+
+        </a>
+
+        <time itemprop="datePublished" datetime="2025-12-15T10:00:00+01:00"></time>
+    </div>
+</article>
+<p>I regjeringens&nbsp;<a href="https://www.regjeringen.no/no/om-regjeringa/noverande/regjeringen-store/regjeringens-plan-for-norge/id3142802/" target="_blank"><span data-lab-font_weight="font-weight-bold" class="font-weight-bold m-font-weight-bold">Plan for Norge</span></a>, som ble lansert tidligere denne uken, står det at Norge skal investere i kvanteteknologi, forsvarsteknologi og undervannsteknologi, og samtidig styrke eksportkontrollen for å beskytte sikkerhetssensitiv kunnskap.</p><p>Kvanteteknologien handler om hvordan de minste bestanddelene i verden kan utnyttes til for eksempel kvantekryptografi for sikkerhet, nye medisinske oppdagelser og sensorteknologi for GPS-fri navigasjon.</p><figure data-element-guid="b3d6c862-808a-48fa-8616-8a0d1e6a83c7" class="column desktop-floatLeft mobile-floatLeft small-12 large-8 small-abs-12 large-abs-8">
+    
+    <div class="content " style="">
+
+        <div class="img fullwidthTarget">
+            <picture>
+                <source srcset="https://image.khrono.no/1023847.webp?imageId=1023847&width=1412&height=806&format=webp" 
+                    width="706"
+                    height="403"
+                    media="(min-width: 768px)"
+                    type="image/webp">    
+                <source srcset="https://image.khrono.no/1023847.webp?imageId=1023847&width=1412&height=806&format=jpg" 
+                    width="706"
+                    height="403"
+                    media="(min-width: 768px)"
+                    type="image/jpeg">    
+                <source srcset="https://image.khrono.no/1023847.webp?imageId=1023847&width=960&height=548&format=webp" 
+                    width="480"
+                    height="274"
+                    media="(max-width: 767px)"
+                    type="image/webp">    
+                <source srcset="https://image.khrono.no/1023847.webp?imageId=1023847&width=960&height=548&format=jpg" 
+                    width="480"
+                    height="274"
+                    media="(max-width: 767px)"
+                    type="image/jpeg">    
+                <img src="https://image.khrono.no/1023847.webp?imageId=1023847&width=960&height=548&format=jpg"
+                    width="480"
+                    height="274"
+                    title="Støvfritt miljø krever strenge restriksjoner for påkledning, også for en statsråd. Lasse Vines tegner og forklarer for forsknings- og høyere utdanningsminister Sigrun Aasland."
+                    alt="" 
+                    loading="lazy"
+                    style=""    
+                    >
+            </picture>            
+                    </div>
+        <div class="caption " data-showmore="Vis mer">
+            <figcaption itemprop="caption" class="">Støvfritt miljø krever strenge restriksjoner for påkledning, også for en statsråd. Lasse Vines tegner og forklarer for forsknings- og høyere utdanningsminister Sigrun Aasland.</figcaption>
+            <figcaption itemprop="author" class="" data-byline-prefix="">Eva Tønnessen</figcaption>
+        </div>    </div>
+</figure>
+
+
+    
+
+    
+</div>
+
+
+                        
+
+
+                        
+<div data-element-guid="44a8ce60-c66d-4570-de3a-9b390b3ea307" class="column articleFooter">
+    <span class="tags">
+        <a href="/emne/kvanteteknologi">kvanteteknologi</a>
+        <a href="/emne/sintef">sintef</a>
+        <a href="/emne/forskningsr%C3%A5det">forskningsrådet</a>
+        <a href="/emne/uio">uio</a>
+        <a href="/emne/sigrun%20aasland">sigrun aasland</a>
+        <a href="/emne/nyheter">nyheter</a>
+    </span>
+    
+</div>
+
+
+
+                    </section>
+                    
+                </article>
+                <section class="related desktop-fullWidth mobile-fullWidth fullwidthTarget">
+                <div data-element-guid="8d2d3919-078f-4f32-8a1a-018b270bc5f4" class="page-content"><div data-element-guid="77bb5abd-27b2-4438-cad4-0b1ac0de3492" class="row small-12 large-12 color_mobile_no_bg_color" style="">
+<!-- placeholder(#1) -->
+<div data-element-guid="d6728922-370a-4492-a4ef-ca3190b7c2b6" class="front_rows small-12 large-12 small-abs-12 large-abs-12">
+    
+    <div class="content fullwidthTarget" style="">
+            
+            <div data-element-guid="4a0e0ea3-dea0-4135-ea9f-0ed8d4fe1311" class="row small-12 large-12" style=""><div data-element-guid="c8e5398a-c0d1-4b16-8e2b-0ad04c4e6790" id="markup_516849" class="markupbox column small-12 large-12 small-abs-12 large-abs-12">
+    
+    <div class="content fullwidthTarget" style="">
+
+        
+
+        
+
+            <div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 1920;
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: false
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+<style>
+#hyvor-talk-view {
+    width:100%;
+    max-width:100%;
+    margin:auto; /* center the content */
+}</style>
+
+        
+        
+    </div>
+</div>
+</div>
+<div data-element-guid="78bd6fb5-15a4-44a9-db09-cbe0bdc8ecd6" class="row small-12 large-12 desktop-space-outsideBottom-medium mobile-space-outsideBottom-medium bg-septenary color_mobile_bg-septenary hasContentPadding mobile-hasContentPadding" style=""><div data-element-guid="7567b026-d32c-43f8-e267-d8f4a4b0d528" class="column newsletter_submit small-12 large-12 small-abs-12 large-abs-12">
+    
+    <form method="POST" action="https://khrono.mailmojo.no/20986/s" class="content grid " style="">
+        <div class="text description grid-vas-center large-12 small-12">
+            <h4 class="">Meld deg på Khronos nyhetsbrev</h4>
+            <p class="description ">Få siste nyheter fra Khrono på e-post</p>
+        </div>
+        <fieldset class="text grid-vas-center large-12 small-12">
+            <input type="hidden" name="tagsadditional" placeholder="" class="" value="Påmelding fra nettsiden">
+            <input type="email" name="email" placeholder="Din e-postadresse" class="" value="">
+            <input type="submit" name="submit" placeholder="" class="bg-secondary" value="Abonner på nyhetsbrevet">
+        </fieldset>
+        <div class="text lab-newsletter-footer lab-hide-newsletter-footer grid-vas-center large-12 small-12">
+            <p class="lab-newsletter-footer-text "></p>
+        </div>
+    </form>
+</div>
+<div data-element-guid="cc7801a4-8e4f-4918-ab18-6278bba9fd1e" id="markup_873512" class="markupbox column small-12 large-12 small-abs-12 large-abs-12">
+    
+    <div class="content fullwidthTarget" style="">
+
+        
+
+        
+
+            <script src="https://assets.mailmojo.no/sdk.js" data-token="xdgOkH9NZGnaSE7X5Lql0eepOB1Hn4" async></script>
+
+        
+        
+    </div>
+</div>
+</div>
+
+    </div>
+</div>
+
+</div>
+<div data-element-guid="e5a4e8da-5e34-4592-f774-5c70535e642f" class="row small-12 large-12" style=""><article data-element-guid="36a452f9-d269-405f-eafd-2b11af453be0" class="column desktop-floatRight pullOut mobile-floatRight small-12 large-12 small-abs-12 large-abs-12 " data-site-alias="" data-section="" data-instance="1023744" itemscope>
+    
+    <div class="content bg-primary color_mobile_bg-primary hasContentPadding mobile-hasContentPadding" style="">
+        
+        
+
+        <div 
+style=""
+class="kicker above font-weight-light m-font-weight-light quinary color_mobile_quinary align-center mobile_text_align_align-center">
+LES VIDERE ETTER ANNONSEN
+</div>
+        <h2 itemprop="headline" 
+    class="headline t23 align-center mobile_text_align_align-center font-Acto"
+    style=""
+    ><span class=" t39" data-lab-text_size_desktop="39">FÅ NYHETER PÅ MOBILEN</span><br class="">Last ned Khrono-appen!
+</h2>
+
+        <div class="media ">
+                
+
+                
+                
+                
+                
+                
+                <div data-element-guid="052b91d9-5ae7-4194-bf3a-802d49782cd9" id="markup_1023745" class="markupbox column small-12 large-12 small-abs-12 large-abs-12">
+    
+    <div class="content fullwidthTarget" style="">
+
+        
+
+        
+
+            <div style="text-align:center;"><a href="https://apps.apple.com/us/app/khrono/id1512644292?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px;  height: 83px;"><img src="https://khrono.eu/grafikk/apple.svg" alt="Download on the App Store" style="text-align:center;border-radius: 13px; width: 210px; height: 83px;"></a>
+<a href='https://play.google.com/store/apps/details?id=com.automagi.khrono&hl=no&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Tilgjengelig på Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/no_badge_web_generic.png' style="max-width:230px;"/></a></div>
+
+
+        
+        
+    </div>
+</div>
+
+                
+                
+            
+            <div class="floatingText">
+
+                <div class="labels">
+                </div>
+            </div>
+            
+
+        </div>
+
+
+        
+
+        
+
+
+
+
+        
+
+        <time itemprop="datePublished" datetime=""></time>
+    </div>
+</article>
+</div>
+<div data-element-guid="2711fa65-57a0-404e-8106-715a3ee97250" class="row small-12 large-12" style=""><div data-element-guid="dcaa3d1b-0677-46dc-f1f6-454f7c161332" id="markup_1023739" class="markupbox column small-12 large-12 small-abs-12 large-abs-12">
+    
+    <div class="content fullwidthTarget" style="">
+
+        
+
+        
+
+            <style>
+.quotebox img{border-radius:50%;}
+</style>
+
+
+        
+        
+    </div>
+</div>
+</div>
+</div>
+
+                </section>
+            </main>
+            
+            
+        </section>
+
+            <template class="definitionTemplate">
+                <div class="definitionPopup">
+                    <div class="definitionInfo">
+                        <p></p>
+                        <span></span>
+                        <button class="definitionClose">&#10005;</button>
+                    </div>
+                </div>
+            </template>
+
+
+        <script>
+                (function(){
+                    const audioPlayers = document.querySelectorAll('.dacInlineAudio');
+                    for (const audioPlayer of audioPlayers) {
+                        window.dachserData.push('audioInline', audioPlayer);
+                    }
+
+                    window.onload = function() {
+                        if (window.Dac && window.Dac.Definition) {
+                            const definition = new Dac.Definition();
+                            definition.setup();   
+                        }
+                    };
+                })();
+        </script>
+            <script>
+                window.lab_article_data = window.lab_article_data || {};
+                if (lab_article_data[1023736]) {
+                    lab_article_data[1023736].tagsString = 'kvanteteknologi,sintef,forskningsrådet,uio,sigrun aasland,nyheter';
+                    lab_article_data[1023736].section = 'nyheter';
+                    lab_article_data[1023736].pageType = 'article';
+                } else {
+                    lab_article_data[1023736] = {
+                        tagsString: 'kvanteteknologi,sintef,forskningsrådet,uio,sigrun aasland,nyheter'
+                        , section: 'nyheter'
+                        , pageType: 'article'
+                    };
+                    
+                }
+            </script>
+
+        <footer class="page-footer">
+    <script stye="text/javascript">
+        (function () {
+            if ('IntersectionObserver' in window) {
+                const options = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.35
+                };
+                const intersectingClass = 'scrolled-position';
+                const markAnimation = () => {
+                    document.body.classList.add('scrolling-active');
+                    setTimeout(() => {
+                        document.body.classList.remove('scrolling-active');
+                    }, 500);
+                };
+                const callback = function(entries, observer) {
+                    if (!entries[0] || !document.body) { return; }
+                    if (entries[0].isIntersecting) {
+                        markAnimation();
+                        document.body.classList.remove(intersectingClass);
+                    } else {
+                        document.body.classList.add(intersectingClass);
+                        markAnimation();
+                    }
+                };
+                const observer = new IntersectionObserver(callback, options);
+                const target = document.querySelector('#nav');
+                observer.observe(target);
+            }
+        }());
+    </script>
+
+    <div data-element-guid="63019ead-0c11-4b38-cbeb-40da1455f2a9" class="row small-12 large-12 desktop-space-outsideTop-none mobile-space-outsideTop-none bg-black color_mobile_bg-black hasContentPadding mobile-hasContentPadding" style=""><div data-element-guid="23dee2b2-bd8d-4b22-cded-37257024fb64" class="columns small-12 large-4 small-abs-12 large-abs-4"><div data-element-guid="8352d110-1ed5-4640-94fd-fdaeb5917fb5" class="row small-12 large-12" style=""><div data-element-guid="3ca5aa75-99f9-4afb-fc8c-b2bfbabcac5d" id="markup_468200" class="markupbox column small-12 large-12 small-abs-12 large-abs-4">
+    
+    <div class="content fullwidthTarget" style="">
+
+        
+
+        
+
+            <div class="" style="text-align:center;">
+                <a href="/" alt="Khrono">
+                    <img src="/view-resources/dachser2/public/khrono/v2/logo-full.svg" alt="Khrono">
+                </a>
+            </div>
+
+        
+        
+    </div>
+</div>
+<div data-element-guid="9bebbfbf-6571-4824-9934-6ae89c2a0c1b" class="column text_multiline small-12 large-12 small-abs-12 large-abs-4">
+    
+    <div class="content multiline bodytext align-center mobile_text_align_align-center"
+        style="">
+        <p><br><br></p><p><a href="https://khrono.no/personvern" aria-label="Personvernerklæring for Khrono">Personvernerklæring</a></p>
+    </div>
+</div></div>
+</div><div data-element-guid="73b3b82b-ec69-4941-9274-b6533a381f72" class="columns small-12 large-4 small-abs-12 large-abs-4"><div data-element-guid="698a8898-6c6d-463f-aaec-c683eabd90d5" class="row small-12 large-12" style=""><div data-element-guid="83b1533e-71ab-4314-835b-87481fff14ec" class="column text_multiline small-12 large-12 small-abs-12 large-abs-4">
+    
+    <div class="content multiline bodytext"
+        style="">
+        <h3>Om Khrono</h3><p>Kunnskapsavisen Khrono er en uavhengig nyhetsavis for høyere utdanning og forskning.</p><p>Les mer om avisens <span class="font-weight-bold" data-lab-font_weight_desktop="font-weight-bold"><a href="https://khrono.no/om" aria-label="">redaksjon.</a></span> Se også <span class="font-weight-bold" data-lab-font_weight_desktop="font-weight-bold"><a href="https://khrono.no/debattregler" aria-label="">debattregler.</a></span></p><p class="p1">Ansv. redaktør / daglig leder: <br><b>Christine Gulbrandsen</b></p><p class="p1">Alt innhold ©Khrono.</p>
+    </div>
+</div><div data-element-guid="9fdcfddd-a1ad-446b-c237-0c9f6c3fb909" class="column newsletter_submit small-12 large-12 small-abs-12 large-abs-4">
+    
+    <form method="POST" action="https://khrono.mailmojo.no/20986/s" class="content grid " style="">
+        <div class="text description grid-vas-center large-12 small-12">
+            <h4 class="">Meld meg på nyhetsbrev</h4>
+            <p class="description "></p>
+        </div>
+        <fieldset class="text grid-vas-center large-12 small-12">
+            <input type="hidden" name="tagsadditional" placeholder="" class="" value="Påmelding fra nettsiden">
+            <input type="email" name="email" placeholder="Din e-postadresse" class="" value="">
+            <input type="submit" name="submit" placeholder="" class="bg-secondary" value="Abonner på nyhetsbrevet">
+        </fieldset>
+        <div class="text lab-newsletter-footer lab-hide-newsletter-footer grid-vas-center large-12 small-12">
+            <p class="lab-newsletter-footer-text "></p>
+        </div>
+    </form>
+</div>
+</div>
+</div><div data-element-guid="3e984b1b-b1d9-432a-8f48-f2b65cff62fd" class="column text_multiline small-12 large-4 small-abs-12 large-abs-4">
+    
+    <div class="content multiline bodytext"
+        style="">
+        <h3>Kontakt:</h3><p><span class="bold" data-lab-bold_desktop="bold"><a href="mailto:redaksjonen@khrono.no" class="">redaksjonen@khrono.no</a> / <a href="mailto:debatt@khrono.no" aria-label="">debatt@khrono.no</a> <span class="font-weight-bold" data-lab-font_weight_desktop="font-weight-bold">(debattinnlegg)</span></span></p><p><span class=" bold" data-lab-bold_desktop="bold">Besøksadresser: </span></p><p><span class=" bold" data-lab-bold_desktop="bold">Oslo: </span>Stensberggata 29 // <span class=" bold" data-lab-bold_desktop="bold">Bergen: </span>Lars Hillesgate 30 // <span class=" bold" data-lab-bold_desktop="bold">Brussel: </span> Rue de la Loi 155</p><p class="p1"><br>Design: <a href="http://www.nordstromdesign.se/" target="_blank">Nordström Design</a>.</p><p class="p1">CMS: <a href="https://labradorcms.com/" target="_blank">Labrador CMS</a> ved Publish Lab</p>
+    </div>
+</div></div>
+<div data-element-guid="da203af5-8958-43ff-9c1a-3c19dac0789c" class="row small-12 large-12 desktop-space-outsideTop-none mobile-space-outsideTop-none" style=""><div data-element-guid="34fe7b27-089f-4622-ab37-edfe19326a70" class="column  small-12 large-3 small-abs-12 large-abs-3 ">
+    
+    <div class="content " style="">
+        <figure data-element-guid="34fe7b27-089f-4622-ab37-edfe19326a70" class="" >
+            <div class="img fullwidthTarget ">
+                <picture>
+                    <source srcset="https://image.khrono.no/963140.webp?imageId=963140&x=12.03&y=10.09&cropw=77.10&croph=83.33&width=484&height=190&format=webp" 
+                        width="242"
+                        height="95"
+                        media="(min-width: 768px)"
+                        type="image/webp">    
+                    <source srcset="https://image.khrono.no/963140.webp?imageId=963140&x=12.03&y=10.09&cropw=77.10&croph=83.33&width=484&height=190&format=jpg" 
+                        width="242"
+                        height="95"
+                        media="(min-width: 768px)"
+                        type="image/jpeg">    
+                    <source srcset="https://image.khrono.no/963140.webp?imageId=963140&x=5.59&y=30.64&cropw=91.35&croph=43.36&width=720&height=124&format=webp" 
+                        width="360"
+                        height="62"
+                        media="(max-width: 767px)"
+                        type="image/webp">    
+                    <source srcset="https://image.khrono.no/963140.webp?imageId=963140&x=5.59&y=30.64&cropw=91.35&croph=43.36&width=720&height=124&format=jpg" 
+                        width="360"
+                        height="62"
+                        media="(max-width: 767px)"
+                        type="image/jpeg">    
+                    <img src="https://image.khrono.no/963140.webp?imageId=963140&x=5.59&y=30.64&cropw=91.35&croph=43.36&width=720&height=124&format=jpg"
+                        width="360"
+                        height="62"
+                        title=""
+                        alt="" 
+                        loading="lazy"
+                        style=""    
+                        >
+                </picture>                
+                            </div>
+        </figure>
+    </div>
+</div><div data-element-guid="af5a4f06-9398-4824-b5b6-dd6532a0c8f4" class="column  small-12 large-4 small-abs-12 large-abs-4 ">
+    
+    <div class="content " style="">
+        <figure data-element-guid="af5a4f06-9398-4824-b5b6-dd6532a0c8f4" class="" >
+            <div class="img fullwidthTarget ">
+                <picture>
+                    <source srcset="https://image.khrono.no/963139.webp?imageId=963139&x=0.00&y=0.00&cropw=80.88&croph=51.83&width=678&height=156&format=webp" 
+                        width="339"
+                        height="78"
+                        media="(min-width: 768px)"
+                        type="image/webp">    
+                    <source srcset="https://image.khrono.no/963139.webp?imageId=963139&x=0.00&y=0.00&cropw=80.88&croph=51.83&width=678&height=156&format=jpg" 
+                        width="339"
+                        height="78"
+                        media="(min-width: 768px)"
+                        type="image/jpeg">    
+                    <source srcset="https://image.khrono.no/963139.webp?imageId=963139&x=0.00&y=0.00&cropw=80.88&croph=24.84&width=720&height=80&format=webp" 
+                        width="360"
+                        height="40"
+                        media="(max-width: 767px)"
+                        type="image/webp">    
+                    <source srcset="https://image.khrono.no/963139.webp?imageId=963139&x=0.00&y=0.00&cropw=80.88&croph=24.84&width=720&height=80&format=jpg" 
+                        width="360"
+                        height="40"
+                        media="(max-width: 767px)"
+                        type="image/jpeg">    
+                    <img src="https://image.khrono.no/963139.webp?imageId=963139&x=0.00&y=0.00&cropw=80.88&croph=24.84&width=720&height=80&format=jpg"
+                        width="360"
+                        height="40"
+                        title=""
+                        alt="" 
+                        loading="lazy"
+                        style=""    
+                        >
+                </picture>                
+                            </div>
+        </figure>
+    </div>
+</div><div data-element-guid="23bbe953-d1cb-4b97-8558-d56afeeee924" class="column  small-12 large-5 small-abs-12 large-abs-5 ">
+    
+    <div class="content " style="">
+        <figure data-element-guid="23bbe953-d1cb-4b97-8558-d56afeeee924" class="" >
+            <div class="img fullwidthTarget ">
+                <picture>
+                    <source srcset="https://image.khrono.no/963138.webp?imageId=963138&x=17.71&y=17.67&cropw=82.29&croph=65.54&width=848&height=196&format=webp" 
+                        width="424"
+                        height="98"
+                        media="(min-width: 768px)"
+                        type="image/webp">    
+                    <source srcset="https://image.khrono.no/963138.webp?imageId=963138&x=17.71&y=17.67&cropw=82.29&croph=65.54&width=848&height=196&format=jpg" 
+                        width="424"
+                        height="98"
+                        media="(min-width: 768px)"
+                        type="image/jpeg">    
+                    <source srcset="https://image.khrono.no/963138.webp?imageId=963138&x=8.97&y=19.51&cropw=82.29&croph=62.89&width=720&height=80&format=webp" 
+                        width="360"
+                        height="40"
+                        media="(max-width: 767px)"
+                        type="image/webp">    
+                    <source srcset="https://image.khrono.no/963138.webp?imageId=963138&x=8.97&y=19.51&cropw=82.29&croph=62.89&width=720&height=80&format=jpg" 
+                        width="360"
+                        height="40"
+                        media="(max-width: 767px)"
+                        type="image/jpeg">    
+                    <img src="https://image.khrono.no/963138.webp?imageId=963138&x=8.97&y=19.51&cropw=82.29&croph=62.89&width=720&height=80&format=jpg"
+                        width="360"
+                        height="40"
+                        title=""
+                        alt="" 
+                        loading="lazy"
+                        style=""    
+                        >
+                </picture>                
+                            </div>
+        </figure>
+    </div>
+</div></div>
+
+</footer>
+
+
+<script src="/view-resources/baseview/public/common/build/baseview_dependencies_dom.js?v=1770213802-L4" data-cookieconsent="ignore"></script>
+        <script>
+            const elements = document.querySelectorAll('.bodytext .column.desktop-floatRight.large-4');
+            const slider = new SlideIn(elements);
+        </script>
+        <script>
+            window.dachserData.handlers = {
+                parallax: function(item) {
+                    if (window.Dac && window.Dac.Parallax) {
+                        new Dac.Parallax(item);
+                    } else {
+                        console.warn('parallax: Missing required class Dac.Parallax. Content will not animate.');
+                    }
+                },
+                swipehelper: function(item) {
+                    if (window.Dac && window.Dac.SwipeHelper) {
+                        var element = document.querySelector(item.selector);
+                        if (!element) {
+                            console.warn('SwipeHelper: Missing element for selector: "' + item.selector + '".');
+                            return null;
+                        }
+                        return new Dac.SwipeHelper(element, item);
+                    } else {
+                        console.warn('SwipeHelper: Missing required function Dac.SwipeHelper.');
+                        return null;
+                    } 
+                },
+                readprogress: function(item) {
+                    if (window.Dac && window.Dac.ReadProgress) {
+                        var element = document.querySelector(item.selector);
+                        if (!element) {
+                            console.warn('ReadProgress: Missing element for selector: "' + item.selector + '".');
+                            return;
+                        }
+                        new Dac.ReadProgress(element, item);
+                    } else {
+                        console.warn('ReadProgress: Missing required function Dac.ReadProgress.');
+                    } 
+                },
+                tabnavigation: function(item) {
+                    if (window.Dac && window.Dac.TabNavigation) {
+                        new Dac.TabNavigation(item);
+                    } else {
+                        console.warn('TabNavigation: Missing required function Dac.Tabnavigation.');
+                    } 
+                },
+                elementattributetoggler: function(item) {
+                    if (window.Dac && window.Dac.ElementAttributeToggler) {
+                        new Dac.ElementAttributeToggler(item);
+                    } else {
+                        console.warn('ElementAttributeToggler: Missing required class Dac.ElementAttributeToggler.');
+                    } 
+                },
+                articlelists: (item) => {
+                    if (window.Dac && window.Dac.ArticleLists) {
+                        new Dac.ArticleLists(item);
+                    } else {
+                        console.warn('ElementAttributeToggler: Missing required class Dac.ArticleLists.');
+                    }
+                }
+            };
+
+            window.dachserData.execute = () => {
+            
+                // Parallax
+                // Register each element requiering js-animations
+                const parallaxQueue = window.dachserData.get('parallax') || [];
+                parallaxQueue.forEach(item => {
+                    window.dachserData.handlers.parallax(item);
+                });
+            
+                // SwipeHelper, used by several components like ArticleScroller etc.
+                // Register each element using SwipeHelper:
+                const swipehelperQueue = window.dachserData.get('swipehelper') || [];
+                swipehelperQueue.forEach(item => {
+                    window.dachserData.setInstance(
+                        'swipehelper',
+                        item.selector,
+                        window.dachserData.handlers.swipehelper(item)
+                    );
+                });
+
+                // ReadProgress
+                const readprogressQueue = window.dachserData.get('readprogress') || [];
+                readprogressQueue.forEach(item => {
+                    window.dachserData.handlers.readprogress(item);
+                });
+            
+                // Tab-navigation
+                const tabnavigationQueue = window.dachserData.get('tabnavigation') || [];
+                tabnavigationQueue.forEach(item => {
+                    window.dachserData.handlers.tabnavigation(item);
+                });
+
+                // ElementAttributeToggler
+                const elementAttributeTogglerQueue = window.dachserData.get('elementattributetoggler') || [];
+                elementAttributeTogglerQueue.forEach(item => {
+                    window.dachserData.handlers.elementattributetoggler(item);
+                });
+
+                const articlelistsQueue = window.dachserData.get('articlelists') || [];
+                articlelistsQueue.forEach(item => {
+                    window.dachserData.handlers.articlelists(item);
+                });
+            };
+
+            (function () {
+
+                window.dachserData.execute();
+            
+            }());
+        </script>
+
+            <div class="powered-by "><a href="https:&#x2F;&#x2F;labradorcms.com&#x2F;" target="_blank">Powered by Labrador CMS</a></div>
+
+
+        <script >(function() {
+  const logo = document.querySelector('.logo-spinner');
+  
+  let lastScroll = 0;
+  let rotation = 0;
+
+  function onScroll() {
+    const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollMax = document.documentElement.scrollHeight - window.innerHeight;
+
+    let scrollPercent = 0;
+    if (scrollMax > 0) {
+      scrollPercent = scrollPos / scrollMax;
+    }
+
+    const rotationDeg = scrollPercent * 360 * 4;
+
+    logo.style.transform = `rotate(${rotationDeg}deg)`;
+  }
+
+  function enableDesktopRotation() {
+    rotation = 0;
+    lastScroll = window.scrollY || 0;
+    logo.style.transform = `rotate(0deg)`;
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  function disableDesktopRotation() {
+    window.removeEventListener('scroll', onScroll);
+  }
+
+  function checkWidthAndToggle() {
+    if (window.innerWidth >= 1024) {
+      enableDesktopRotation();
+    } else {
+      disableDesktopRotation();
+    }
+  }
+
+  // Check on load
+  checkWidthAndToggle();
+
+  // Re-check on resize
+  window.addEventListener('resize', () => {
+    checkWidthAndToggle();
+  });
+})();</script>
+    </body>
+</html>

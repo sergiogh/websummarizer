@@ -1,0 +1,2943 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TKM5HKB');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00000000"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-00000000", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});gtag('config', 'G-0XT7NFV9ZS', {'name': 'govcms'}); gtag('govcms.send', 'pageview', {'anonymizeIp': true})</script>
+<meta name="description" content="Round 1 stage 2 of the Critical Technologies Challenge Program will fund cutting-edge projects including mine site sensors, data centre cooling and optical imaging projects." />
+<meta name="keywords" content="Science, technology and innovation,Technology" />
+<link rel="canonical" href="https://www.industry.gov.au/news/127-million-support-innovative-quantum-technology-projects" />
+<link rel="shortlink" href="https://www.industry.gov.au/node/96216" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.industry.gov.au/news/127-million-support-innovative-quantum-technology-projects" />
+<meta property="og:title" content="$12.7 million to support innovative quantum technology projects" />
+<meta property="og:image" content="https://www.industry.gov.au/sites/default/files/2026-02/ctcp-iga-news-default.jpg" />
+<meta property="og:updated_time" content="2026-02-20T10:34:12+1100" />
+<meta name="dcterms.title" content="$12.7 million to support innovative quantum technology projects | Department of Industry Science and Resources" />
+<meta name="dcterms.creator" content="Department of Industry Science and Resources" />
+<meta name="dcterms.subject" content="Science, technology and innovation,Technology" />
+<meta name="dcterms.description" content="Round 1 stage 2 of the Critical Technologies Challenge Program will fund cutting-edge projects including mine site sensors, data centre cooling and optical imaging projects." />
+<meta name="dcterms.date" content="2026-02-20T10:34:12+1100" />
+<meta name="dcterms.type" content="News" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://www.industry.gov.au/news/127-million-support-innovative-quantum-technology-projects" />
+<meta name="dcterms.source" content="https://www.industry.gov.au/node/96216" />
+<meta name="dcterms.language" content="en-AU" />
+<meta name="dcterms.available" content="2026" />
+<meta name="dcterms.created" content="2026-02-20T10:33:00+1100" />
+<meta name="Generator" content="Drupal 10 (http://drupal.org) + GovCMS (http://govcms.gov.au)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" href="/themes/custom/industry_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.industry.gov.au/news/127-million-support-innovative-quantum-technology-projects" />
+
+    <title>$12.7 million to support innovative quantum technology projects | Department of Industry Science and Resources</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_O3xxys8oX8wP1KQnWk48Stwtyo3B1rz901IZQZ4jsY8.css?delta=0&amp;language=en&amp;theme=industry_theme&amp;include=eJxli0sKQyEMAC9k9UiSPIMK8UM-Ld6-j24K7WYWMwyuZWoCOyOI9JVQCMolPjDgbxukCpU0c6_N_vtchUKfxW97sjUalCovBH6oHe6zhg0C9V6apiK-gePXRJ_bkbs2KkGPGo2EoBSenV6aPoxjFWd6A1xrSNc" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__OfHaLhqAiGbFnHDLGNU8JRj9tLctDAu57m6WtaszYk.css?delta=1&amp;language=en&amp;theme=industry_theme&amp;include=eJxli0sKQyEMAC9k9UiSPIMK8UM-Ld6-j24K7WYWMwyuZWoCOyOI9JVQCMolPjDgbxukCpU0c6_N_vtchUKfxW97sjUalCovBH6oHe6zhg0C9V6apiK-gePXRJ_bkbs2KkGPGo2EoBSenV6aPoxjFWd6A1xrSNc" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_eKaC8lwFzSJrbQslN4KvBlzjRe1bnMk-TfHUWIT42vU.css?delta=2&amp;language=en&amp;theme=industry_theme&amp;include=eJxli0sKQyEMAC9k9UiSPIMK8UM-Ld6-j24K7WYWMwyuZWoCOyOI9JVQCMolPjDgbxukCpU0c6_N_vtchUKfxW97sjUalCovBH6oHe6zhg0C9V6apiK-gePXRJ_bkbs2KkGPGo2EoBSenV6aPoxjFWd6A1xrSNc" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_EhNnsw7Tq6rN29w6kk-QonxCl-QcN7w92q8d9fGye8k.css?delta=3&amp;language=en&amp;theme=industry_theme&amp;include=eJxli0sKQyEMAC9k9UiSPIMK8UM-Ld6-j24K7WYWMwyuZWoCOyOI9JVQCMolPjDgbxukCpU0c6_N_vtchUKfxW97sjUalCovBH6oHe6zhg0C9V6apiK-gePXRJ_bkbs2KkGPGo2EoBSenV6aPoxjFWd6A1xrSNc" />
+
+    
+    
+  <script >bazadebezolkohpepadr="1832215019"</script><script type="text/javascript" src="https://www.industry.gov.au/akam/13/6d356166"  defer></script></head>
+  <body class="layout-no-sidebars page-node-96216 path-node node--type-news-article">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKM5HKB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <noscript>
+  <p>You have Javascript disabled and your user experience may not be as intended without enabling it. Please consider enabling Javascript or email us at digital [at] industry.gov.au for further assistance.
+  </p>
+  </noscript>
+  <nav id="skip-links" aria-label="Skip to links" class="visually-hidden-focusable">
+  <ul>
+    <li>
+      <a href="#heading-1" class="visually-hidden-focusable">
+        Skip to main content
+      </a>
+    </li>
+    <li>
+      <a href="#search-website-link" class="visually-hidden-focusable">
+        Skip to search
+      </a>
+    </li>
+    <li>
+      <a href="#website-navigation" class="visually-hidden-focusable">
+        Skip to main website navigation
+      </a>
+    </li>
+  </ul>
+  </nav>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-wrapper">
+  <div id="page">
+    <!-- noindex -->
+    <!-- If website alert present -->
+                <div class="website-alert-background">
+        <div class="container-fluid">
+             <div class="row region region-top-header">
+    <div id="block-industry-theme-websitealerttext" class="block block-block-content block-block-contentb3ca6b5d-4864-473e-88d4-a9d9a593960d">
+  
+    
+      <div class="content">
+      
+            <div class="field field--name-field-website-alert field--type-entity-reference-revisions field--label-hidden field__item">  <div class="paragraph paragraph--type--website-alert paragraph-id-18667 paragraph--view-mode--default" id="container-18667" component-name="website-alert">
+          
+      </div>
+</div>
+      
+    </div>
+  </div>
+
+  </div>
+
+        </div>
+        </div>
+        
+    <header id="website-header" class="header" aria-label="Site header">
+              <div class="container-fluid">
+      
+        <div class="navbar navbar-dark bg-white navbar-expand-lg" id="navbar-main">
+                    
+              <div id="government-crest">
+  <a href="/" title="Home" rel="home" class="navbar-brand">
+          <img src="/themes/custom/industry_theme/logo.png" alt="Australian Government, Department of Industry Science and Resources" class="img-fluid d-inline-block align-top" />
+        <span class="ml-2 d-none d-md-inline"></span>
+  </a>
+  </div>
+
+
+                          <nav id="website-navigation" aria-label="Main website menu" data-location="mega menu container"  id="block-megamenu" class="block block-menu navigation menu--mega-menu">
+  <a class="mobile-nav-open" href="javascript:void(0)" role="button" aria-expanded="false" aria-label="Open menu" class="mobile-nav-trigger"><i class="icon icon-menu"></i></a>
+            
+  <h2 class="visually-hidden" id="block-megamenu-menu">Mega menu</h2>
+  
+
+      <div class="mega-menu">
+  <div class="menu-block-1">
+           
+          <ul class="nav-menu">
+        								<li class="nav-item menu-item menu-item--expanded">        		
+		              			  <a href="/" class="level-0" role="button" aria-expanded="false" data-drupal-link-system-path="&lt;front&gt;">        Who we are<i aria-hidden="true" class="icon-caret-down"></i>
+        </a>           		        
+		
+		
+                       
+          <div class="inner-wrap sub-nav">
+      <ul class="menu level-1">
+        					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<span class="level-1">        Entities<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </span>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/anti-dumping-commission" class="level-2" data-drupal-link-system-path="node/76208">        Anti-Dumping Commission<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/anti-dumping-review-panel" class="level-2" data-drupal-link-system-path="node/76120">        Anti-Dumping Review Panel<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/industry-innovation/ausindustry" class="level-2" data-drupal-link-system-path="node/93059">        AusIndustry<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/australian-industry-participation" class="level-2" data-drupal-link-system-path="node/75884">        Australian Industry Participation Authority<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/australian-radioactive-waste-agency" class="level-2" data-drupal-link-system-path="node/75643">        Australian Radioactive Waste Agency<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/space-and-astronomy/ska-project-australia/australian-ska-office" class="level-2" data-drupal-link-system-path="node/75792">        Australian SKA Office<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.space.gov.au/" class="level-2">        Australian Space Agency<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.space.gov.au/australian-space-discovery-centre" class="level-2">        Australian Space Discovery Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/mining-oil-and-gas/minerals/critical-minerals/critical-minerals-office" class="level-2" data-drupal-link-system-path="node/76172">        Critical Minerals Office<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/industry-innovation/industry-innovation-and-science-australia" class="level-2" data-drupal-link-system-path="node/75399">        Industry Innovation and Science Australia<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/major-projects-facilitation-agency" class="level-2" data-drupal-link-system-path="node/76262">        Major Projects Facilitation Agency <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-artificial-intelligence-centre" class="level-2" data-drupal-link-system-path="node/93610">        National Artificial Intelligence Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute" class="level-2" data-drupal-link-system-path="node/75937">        National Measurement Institute<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.nopta.gov.au/" class="level-2">        National Offshore Petroleum Titles Administrator<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/office-national-rail-industry-coordination" class="level-2" data-drupal-link-system-path="node/92625">        Office of National Rail Industry Coordination<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/office-supply-chain-resilience" class="level-2" data-drupal-link-system-path="node/75917">        Office of Supply Chain Resilience <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/office-chief-economist" class="level-2" data-drupal-link-system-path="node/76103">        Office of the Chief Economist<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.chiefscientist.gov.au/" class="level-2">        Office of the Chief Scientist<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/mining-oil-and-gas/oil-and-gas/offshore-decommissioning-directorate" class="level-2" data-drupal-link-system-path="node/93689">        Offshore Decommissioning Directorate<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.questacon.edu.au/" class="level-2">        Questacon<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="https://www.minister.industry.gov.au/" class="level-1">        Ministers<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/people" class="level-1" data-drupal-link-system-path="node/76244">        People<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/people/organisation-chart" class="level-2" data-drupal-link-system-path="node/76265">        Organisation chart<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/people/overseas-counsellors" class="level-2" data-drupal-link-system-path="node/76266">        Overseas counsellors<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="https://www.directory.gov.au/portfolios/industry-science-and-resources" class="level-1">        Portfolio agencies and boards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="https://consult.industry.gov.au/" class="level-1">        Public consultation<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/accessing-information" class="level-1" data-drupal-link-system-path="node/75453">        Accessing information<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/information-and-advertising-campaigns" class="level-2" data-drupal-link-system-path="node/75514">        Campaigns<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/freedom-information-disclosure" class="level-2" data-drupal-link-system-path="node/75513">        Freedom of information <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/gifts-and-benefits" class="level-2" data-drupal-link-system-path="node/75852">        Gifts and benefits <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/grants-administration" class="level-2">        Grants reporting<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/indexed-list-files" class="level-2" data-drupal-link-system-path="node/75410">        Indexed list of files <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/portfolio-appointments-and-vacancies" class="level-2" data-drupal-link-system-path="node/75788">        Portfolio appointments and vacancies<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/privacy-impact-assessments" class="level-2" data-drupal-link-system-path="node/75454">        Privacy impact assessments <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/careers" class="level-1" data-drupal-link-system-path="node/76152">        Careers<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="https://industrycareers.nga.net.au/" class="level-2">        Current vacancies<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/work-us/careers-graduates" class="level-2">        Graduates<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/corporate-governance" class="level-1" data-drupal-link-system-path="node/75608">        Corporate governance <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/annual-reports" class="level-2" data-drupal-link-system-path="node/75607">        Annual report<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/budget-statements" class="level-2" data-drupal-link-system-path="node/75609">        Budget statements <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/corporate-plans" class="level-2" data-drupal-link-system-path="node/75610">        Corporate plans <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/fraud-and-corruption-control" class="level-2" data-drupal-link-system-path="node/75612">        Fraud and corruption control <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/public-interest-disclosure" class="level-2" data-drupal-link-system-path="node/75613">        Public interest disclosure <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/regulatory-performance" class="level-2" data-drupal-link-system-path="node/75611">        Regulatory performance <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/government-government" class="level-1" data-drupal-link-system-path="node/75886">        Government to government <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/government-government/australian-business-licensing-and-information-service" class="level-2" data-drupal-link-system-path="node/75889">        Australian Business Licensing and Information Service<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/businessgovau" class="level-2" data-drupal-link-system-path="node/75896">        business.gov.au<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/business-grants-hub" class="level-2" data-drupal-link-system-path="node/94626">        Business Grants Hub<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/business-registration-service" class="level-2" data-drupal-link-system-path="node/75898">        Business Registration Service<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/shared-services-hub" class="level-2" data-drupal-link-system-path="node/93531">        Shared Services Hub<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/vanguard" class="level-2" data-drupal-link-system-path="node/76158">        VANguard<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                                  </ul>
+        </div>
+        
+                          </li>
+            								<li class="nav-item menu-item menu-item--expanded">        		
+		              			  <a href="/" class="level-0" role="button" aria-expanded="false" data-drupal-link-system-path="&lt;front&gt;">        Topics<i aria-hidden="true" class="icon-caret-down"></i>
+        </a>           		        
+		
+		
+                       
+          <div class="inner-wrap sub-nav">
+      <ul class="menu level-1">
+        					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<a href="/major-projects-and-procurement" class="level-1" data-drupal-link-system-path="node/75882">        Major projects and procurement <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/australian-industry-participation" class="level-2" data-drupal-link-system-path="node/75884">        Australian industry participation <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/major-projects-facilitation-agency" class="level-2" data-drupal-link-system-path="node/76262">        Major projects facilitation <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<a href="/manufacturing" class="level-1" data-drupal-link-system-path="node/92182">        Manufacturing<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/batteries" class="level-2" data-drupal-link-system-path="node/93621">        Batteries<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/green-metals" class="level-2" data-drupal-link-system-path="node/93803">        Green metals<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/office-national-rail-industry-coordination" class="level-2" data-drupal-link-system-path="node/92625">        Rail manufacturing <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<a href="/national-measurement-institute" class="level-1" data-drupal-link-system-path="node/75937">        Measurement<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/national-measurement-institute/australias-measurement-system" class="level-2-expanded" data-drupal-link-system-path="node/75941">        Australia&#039;s measurement system<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/australias-measurement-system/measurement-standards" data-drupal-link-system-path="node/75947">        Measurement standards <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/nmi-services/pattern-approval" data-drupal-link-system-path="node/75987">        Pattern approval<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/trade-and-industry" data-drupal-link-system-path="node/75954">        Trade measurement <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/about-us/annual-measurement-awards" class="level-2" data-drupal-link-system-path="node/75971">        Awards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/chemical-and-biological-measurement-services" class="level-2">        Chemical and biological measurement services<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/physical-measurement-services" class="level-2">        Physical measurement services<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/testing-and-analytical-services" class="level-2">        Testing and analytical services<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/measurement-training-and-assessment" class="level-2">        Training and assessment<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/mining-oil-and-gas" class="level-1" data-drupal-link-system-path="node/76169">        Mining, oil and gas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/minerals" class="level-2-expanded" data-drupal-link-system-path="node/76170">        Minerals<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/critical-minerals" data-drupal-link-system-path="node/76171">        Critical minerals <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/critical-minerals/critical-minerals-office" data-drupal-link-system-path="node/76172">        Critical Minerals Office<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/regulating-offshore-mineral-exploration-and-mining" data-drupal-link-system-path="node/76175">        Offshore minerals<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/regulating-ranger-uranium-mine" data-drupal-link-system-path="node/76176">        Ranger Uranium Mine<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/oil-and-gas" class="level-2-expanded" data-drupal-link-system-path="node/76177">        Oil and gas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/securing-australian-domestic-gas-supply" data-drupal-link-system-path="node/76183">        Domestic gas supply <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/offshore-oil-and-gas" data-drupal-link-system-path="node/76178">        Offshore oil and gas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/funding-and-investment-opportunities-offshore-decommissioning-australia" data-drupal-link-system-path="node/95290">        Offshore decommissioning<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/offshore-decommissioning-directorate" data-drupal-link-system-path="node/93689">        Offshore Decommissioning Directorate<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/offshore-oil-and-gas/decommissioning-northern-endeavour" data-drupal-link-system-path="node/91820">        Decommissioning the Northern Endeavour<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/offshore-greenhouse-gas-storage" class="level-2-expanded" data-drupal-link-system-path="node/76195">        Greenhouse gas storage<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/offshore-greenhouse-gas-storage/offshore-greenhouse-gas-storage-acreage-release-process" data-drupal-link-system-path="node/76196">        Acreage release process<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/taxes-royalties-and-export-controls-minerals-and-petroleum" class="level-2-expanded" data-drupal-link-system-path="node/76184">        Taxes, royalties and export controls <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/taxes-and-royalties-minerals-and-petroleum/applying-combination-certificates-petroleum-projects">        Combination certificates <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/taxes-and-royalties-minerals-and-petroleum/applying-export-rough-diamonds">        Rough diamonds  <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/taxes-and-royalties-minerals-and-petroleum/applying-export-uranium-and-controlled-ores">        Uranium and controlled ores <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/australian-radioactive-waste-agency" class="level-1" data-drupal-link-system-path="node/75643">        Radioactive waste management<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/science-technology-and-innovation" class="level-1" data-drupal-link-system-path="node/75697">        Science, technology and innovation<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/diversity-in-stem" class="level-2">        Diversity in STEM<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/industry-innovation" class="level-2-expanded" data-drupal-link-system-path="node/75653">        Industry innovation<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/ausindustry" data-drupal-link-system-path="node/93059">        AusIndustry<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/business-research-and-innovation-initiative" data-drupal-link-system-path="node/92200">        Business Research and Innovation Initiative<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/critical-technologies-challenge-program" data-drupal-link-system-path="node/93527">        Critical Technologies Challenge Program<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/industry-growth-program" data-drupal-link-system-path="node/93082">        Industry Growth Program<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/research-and-development-tax-incentive" data-drupal-link-system-path="node/76162">        Research and Development Tax Incentive<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/industry-innovation-and-science-australia" class="level-2">        Industry Innovation and Science Australia<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/international-collaboration-science-and-research" class="level-2-expanded">        International collaboration <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/international-collaboration/international-collaboration-advice">        Advice<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/international-collaboration/collaborating-china-science-and-research">        China<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/international-collaboration/collaborating-india-science-and-research">        India<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/science-engagement" class="level-2-expanded" data-drupal-link-system-path="node/75704">        Science engagement <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="https://www.space.gov.au/australian-space-discovery-centre">        Australian Space Discovery Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/about-us/annual-measurement-awards" data-drupal-link-system-path="node/75971">        Measurement awards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/science-engagement/prime-ministers-prizes-science" data-drupal-link-system-path="node/75705">        Prime Minister&#039;s Prizes for Science<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/space-and-astronomy" class="level-2-expanded" data-drupal-link-system-path="node/75742">        Space and astronomy<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="https://www.space.gov.au/">        Australian Space Agency<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/space-and-astronomy/co-hosting-ska-telescope">        SKA<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/space-and-astronomy/optical-astronomy-australia" data-drupal-link-system-path="node/75800">        Optical astronomy<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/technology" class="level-2-expanded" data-drupal-link-system-path="node/75664">        Technology<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/artificial-intelligence" data-drupal-link-system-path="node/76015">        Artificial intelligence<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-artificial-intelligence-centre" data-drupal-link-system-path="node/93610">        National Artificial Intelligence Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/quantum" data-drupal-link-system-path="node/75794">        Quantum<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/robotics" data-drupal-link-system-path="node/92144">        Robotics<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/critical-technology-standards" data-drupal-link-system-path="node/92856">        Critical technology standards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/trade" class="level-1" data-drupal-link-system-path="node/76115">        Trade<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/anti-dumping-commission" class="level-2" data-drupal-link-system-path="node/76208">        Anti-dumping<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/anti-dumping-review-panel" class="level-2" data-drupal-link-system-path="node/76120">        Anti-dumping reviews <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/country-origin-labelling" class="level-2" data-drupal-link-system-path="node/75387">        Country of origin labelling<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/mining-oil-and-gas/taxes-royalties-and-export-controls-minerals-and-petroleum#container-7529" class="level-2" data-drupal-link-system-path="node/76184">        Exporting resources <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/growing-australian-industries-through-trade" class="level-2">        Free trade agreements<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/reducing-technical-barriers-trade" class="level-2" data-drupal-link-system-path="node/76157">        Reducing technical barriers<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/australias-standards-and-conformance-infrastructure" class="level-2" data-drupal-link-system-path="node/76116">        Standards and conformance<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/indonesia-steel-tariff-rate-quota-certificates" class="level-2" data-drupal-link-system-path="node/76118">        Steel tariff rate quotas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/office-supply-chain-resilience" class="level-2" data-drupal-link-system-path="node/75917">        Supply chain resilience <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                                  </ul>
+        </div>
+        
+                          </li>
+            								<li class="nav-item menu-item">  					
+		            <a href="/publications" data-drupal-link-system-path="node/75083">Publications</a> 
+      		        
+		
+		
+                          </li>
+            								<li class="nav-item menu-item">  					
+		            <a href="/news" data-drupal-link-system-path="node/75105">News</a> 
+      		        
+		
+		
+                          </li>
+            								<li class="nav-item menu-item">  					
+		            <a href="/contact-us" data-drupal-link-system-path="node/76313">Contact us</a> 
+      		        
+		
+		
+                          </li>
+                          </ul>
+        
+
+
+
+    </div>
+  </div>
+  
+
+      <div class="mobile-menu">
+  <div class="mobile-close">
+    <a class="btn mobile-nav-close" href="javascript:void(0)" role="button" aria-expanded="false"><i class="icon-circle-cross"></i> close menu</a>
+    </div>
+  <div class="menu-block-1">
+    
+
+       
+          <ul class="nav-menu">
+        								<li class="nav-item menu-item menu-item--expanded">        		
+		              			  <a href="/" class="level-0" role="button" aria-expanded="false" data-drupal-link-system-path="&lt;front&gt;">        Who we are<i aria-hidden="true" class="icon-caret-down"></i>
+        </a>           		        
+		
+		
+                       
+          <div class="inner-wrap sub-nav">
+      <a class="btn mobile-back" href="javascript:void(0)" role="button"><i aria-hidden="true" class="icon icon-arrow-left"></i> BACK TO MAIN MENU</a>
+      <ul class="menu level-1">
+        					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<span class="level-1">        Entities<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </span>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/anti-dumping-commission" class="level-2" data-drupal-link-system-path="node/76208">        Anti-Dumping Commission<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/anti-dumping-review-panel" class="level-2" data-drupal-link-system-path="node/76120">        Anti-Dumping Review Panel<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/industry-innovation/ausindustry" class="level-2" data-drupal-link-system-path="node/93059">        AusIndustry<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/australian-industry-participation" class="level-2" data-drupal-link-system-path="node/75884">        Australian Industry Participation Authority<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/australian-radioactive-waste-agency" class="level-2" data-drupal-link-system-path="node/75643">        Australian Radioactive Waste Agency<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/space-and-astronomy/ska-project-australia/australian-ska-office" class="level-2" data-drupal-link-system-path="node/75792">        Australian SKA Office<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.space.gov.au/" class="level-2">        Australian Space Agency<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.space.gov.au/australian-space-discovery-centre" class="level-2">        Australian Space Discovery Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/mining-oil-and-gas/minerals/critical-minerals/critical-minerals-office" class="level-2" data-drupal-link-system-path="node/76172">        Critical Minerals Office<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/industry-innovation/industry-innovation-and-science-australia" class="level-2" data-drupal-link-system-path="node/75399">        Industry Innovation and Science Australia<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/major-projects-facilitation-agency" class="level-2" data-drupal-link-system-path="node/76262">        Major Projects Facilitation Agency <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-artificial-intelligence-centre" class="level-2" data-drupal-link-system-path="node/93610">        National Artificial Intelligence Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute" class="level-2" data-drupal-link-system-path="node/75937">        National Measurement Institute<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.nopta.gov.au/" class="level-2">        National Offshore Petroleum Titles Administrator<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/office-national-rail-industry-coordination" class="level-2" data-drupal-link-system-path="node/92625">        Office of National Rail Industry Coordination<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/office-supply-chain-resilience" class="level-2" data-drupal-link-system-path="node/75917">        Office of Supply Chain Resilience <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/office-chief-economist" class="level-2" data-drupal-link-system-path="node/76103">        Office of the Chief Economist<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.chiefscientist.gov.au/" class="level-2">        Office of the Chief Scientist<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/mining-oil-and-gas/oil-and-gas/offshore-decommissioning-directorate" class="level-2" data-drupal-link-system-path="node/93689">        Offshore Decommissioning Directorate<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="https://www.questacon.edu.au/" class="level-2">        Questacon<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="https://www.minister.industry.gov.au/" class="level-1">        Ministers<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/people" class="level-1" data-drupal-link-system-path="node/76244">        People<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/people/organisation-chart" class="level-2" data-drupal-link-system-path="node/76265">        Organisation chart<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/people/overseas-counsellors" class="level-2" data-drupal-link-system-path="node/76266">        Overseas counsellors<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="https://www.directory.gov.au/portfolios/industry-science-and-resources" class="level-1">        Portfolio agencies and boards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="https://consult.industry.gov.au/" class="level-1">        Public consultation<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/accessing-information" class="level-1" data-drupal-link-system-path="node/75453">        Accessing information<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/information-and-advertising-campaigns" class="level-2" data-drupal-link-system-path="node/75514">        Campaigns<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/freedom-information-disclosure" class="level-2" data-drupal-link-system-path="node/75513">        Freedom of information <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/gifts-and-benefits" class="level-2" data-drupal-link-system-path="node/75852">        Gifts and benefits <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/grants-administration" class="level-2">        Grants reporting<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/indexed-list-files" class="level-2" data-drupal-link-system-path="node/75410">        Indexed list of files <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/portfolio-appointments-and-vacancies" class="level-2" data-drupal-link-system-path="node/75788">        Portfolio appointments and vacancies<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/accessing-information/privacy-impact-assessments" class="level-2" data-drupal-link-system-path="node/75454">        Privacy impact assessments <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/careers" class="level-1" data-drupal-link-system-path="node/76152">        Careers<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="https://industrycareers.nga.net.au/" class="level-2">        Current vacancies<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/work-us/careers-graduates" class="level-2">        Graduates<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/corporate-governance" class="level-1" data-drupal-link-system-path="node/75608">        Corporate governance <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/annual-reports" class="level-2" data-drupal-link-system-path="node/75607">        Annual report<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/budget-statements" class="level-2" data-drupal-link-system-path="node/75609">        Budget statements <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/corporate-plans" class="level-2" data-drupal-link-system-path="node/75610">        Corporate plans <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/fraud-and-corruption-control" class="level-2" data-drupal-link-system-path="node/75612">        Fraud and corruption control <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/public-interest-disclosure" class="level-2" data-drupal-link-system-path="node/75613">        Public interest disclosure <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/corporate-governance/regulatory-performance" class="level-2" data-drupal-link-system-path="node/75611">        Regulatory performance <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/government-government" class="level-1" data-drupal-link-system-path="node/75886">        Government to government <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/government-government/australian-business-licensing-and-information-service" class="level-2" data-drupal-link-system-path="node/75889">        Australian Business Licensing and Information Service<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/businessgovau" class="level-2" data-drupal-link-system-path="node/75896">        business.gov.au<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/business-grants-hub" class="level-2" data-drupal-link-system-path="node/94626">        Business Grants Hub<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/business-registration-service" class="level-2" data-drupal-link-system-path="node/75898">        Business Registration Service<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/shared-services-hub" class="level-2" data-drupal-link-system-path="node/93531">        Shared Services Hub<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/government-government/vanguard" class="level-2" data-drupal-link-system-path="node/76158">        VANguard<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                                  </ul>
+        </div>
+        
+                          </li>
+            								<li class="nav-item menu-item menu-item--expanded">        		
+		              			  <a href="/" class="level-0" role="button" aria-expanded="false" data-drupal-link-system-path="&lt;front&gt;">        Topics<i aria-hidden="true" class="icon-caret-down"></i>
+        </a>           		        
+		
+		
+                       
+          <div class="inner-wrap sub-nav">
+      <a class="btn mobile-back" href="javascript:void(0)" role="button"><i aria-hidden="true" class="icon icon-arrow-left"></i> BACK TO MAIN MENU</a>
+      <ul class="menu level-1">
+        					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<a href="/major-projects-and-procurement" class="level-1" data-drupal-link-system-path="node/75882">        Major projects and procurement <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/australian-industry-participation" class="level-2" data-drupal-link-system-path="node/75884">        Australian industry participation <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/major-projects-and-procurement/major-projects-facilitation-agency" class="level-2" data-drupal-link-system-path="node/76262">        Major projects facilitation <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<a href="/manufacturing" class="level-1" data-drupal-link-system-path="node/92182">        Manufacturing<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/batteries" class="level-2" data-drupal-link-system-path="node/93621">        Batteries<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/green-metals" class="level-2" data-drupal-link-system-path="node/93803">        Green metals<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/manufacturing/office-national-rail-industry-coordination" class="level-2" data-drupal-link-system-path="node/92625">        Rail manufacturing <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-1">     
+		        			<a href="/national-measurement-institute" class="level-1" data-drupal-link-system-path="node/75937">        Measurement<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/national-measurement-institute/australias-measurement-system" class="level-2-expanded" data-drupal-link-system-path="node/75941">        Australia&#039;s measurement system<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/australias-measurement-system/measurement-standards" data-drupal-link-system-path="node/75947">        Measurement standards <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/nmi-services/pattern-approval" data-drupal-link-system-path="node/75987">        Pattern approval<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/trade-and-industry" data-drupal-link-system-path="node/75954">        Trade measurement <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/about-us/annual-measurement-awards" class="level-2" data-drupal-link-system-path="node/75971">        Awards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/chemical-and-biological-measurement-services" class="level-2">        Chemical and biological measurement services<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/physical-measurement-services" class="level-2">        Physical measurement services<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/testing-and-analytical-services" class="level-2">        Testing and analytical services<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/national-measurement-institute/measurement-training-and-assessment" class="level-2">        Training and assessment<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/mining-oil-and-gas" class="level-1" data-drupal-link-system-path="node/76169">        Mining, oil and gas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/minerals" class="level-2-expanded" data-drupal-link-system-path="node/76170">        Minerals<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/critical-minerals" data-drupal-link-system-path="node/76171">        Critical minerals <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/critical-minerals/critical-minerals-office" data-drupal-link-system-path="node/76172">        Critical Minerals Office<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/regulating-offshore-mineral-exploration-and-mining" data-drupal-link-system-path="node/76175">        Offshore minerals<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/minerals/regulating-ranger-uranium-mine" data-drupal-link-system-path="node/76176">        Ranger Uranium Mine<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/oil-and-gas" class="level-2-expanded" data-drupal-link-system-path="node/76177">        Oil and gas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/securing-australian-domestic-gas-supply" data-drupal-link-system-path="node/76183">        Domestic gas supply <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/offshore-oil-and-gas" data-drupal-link-system-path="node/76178">        Offshore oil and gas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/funding-and-investment-opportunities-offshore-decommissioning-australia" data-drupal-link-system-path="node/95290">        Offshore decommissioning<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/offshore-decommissioning-directorate" data-drupal-link-system-path="node/93689">        Offshore Decommissioning Directorate<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/oil-and-gas/offshore-oil-and-gas/decommissioning-northern-endeavour" data-drupal-link-system-path="node/91820">        Decommissioning the Northern Endeavour<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/offshore-greenhouse-gas-storage" class="level-2-expanded" data-drupal-link-system-path="node/76195">        Greenhouse gas storage<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/offshore-greenhouse-gas-storage/offshore-greenhouse-gas-storage-acreage-release-process" data-drupal-link-system-path="node/76196">        Acreage release process<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/mining-oil-and-gas/taxes-royalties-and-export-controls-minerals-and-petroleum" class="level-2-expanded" data-drupal-link-system-path="node/76184">        Taxes, royalties and export controls <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/taxes-and-royalties-minerals-and-petroleum/applying-combination-certificates-petroleum-projects">        Combination certificates <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/taxes-and-royalties-minerals-and-petroleum/applying-export-rough-diamonds">        Rough diamonds  <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/mining-oil-and-gas/taxes-and-royalties-minerals-and-petroleum/applying-export-uranium-and-controlled-ores">        Uranium and controlled ores <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                          </ul>
+        
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/australian-radioactive-waste-agency" class="level-1" data-drupal-link-system-path="node/75643">        Radioactive waste management<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                          </li>
+            					<li class="menu-item sub-sub-panel-group column-2">     
+		        			<a href="/science-technology-and-innovation" class="level-1" data-drupal-link-system-path="node/75697">        Science, technology and innovation<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/diversity-in-stem" class="level-2">        Diversity in STEM<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/industry-innovation" class="level-2-expanded" data-drupal-link-system-path="node/75653">        Industry innovation<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/ausindustry" data-drupal-link-system-path="node/93059">        AusIndustry<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/business-research-and-innovation-initiative" data-drupal-link-system-path="node/92200">        Business Research and Innovation Initiative<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/critical-technologies-challenge-program" data-drupal-link-system-path="node/93527">        Critical Technologies Challenge Program<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/industry-growth-program" data-drupal-link-system-path="node/93082">        Industry Growth Program<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/industry-innovation/research-and-development-tax-incentive" data-drupal-link-system-path="node/76162">        Research and Development Tax Incentive<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/science-technology-and-innovation/industry-innovation-and-science-australia" class="level-2">        Industry Innovation and Science Australia<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/international-collaboration-science-and-research" class="level-2-expanded">        International collaboration <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/international-collaboration/international-collaboration-advice">        Advice<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/international-collaboration/collaborating-china-science-and-research">        China<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/international-collaboration/collaborating-india-science-and-research">        India<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/science-engagement" class="level-2-expanded" data-drupal-link-system-path="node/75704">        Science engagement <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="https://www.space.gov.au/australian-space-discovery-centre">        Australian Space Discovery Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-measurement-institute/about-us/annual-measurement-awards" data-drupal-link-system-path="node/75971">        Measurement awards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/science-engagement/prime-ministers-prizes-science" data-drupal-link-system-path="node/75705">        Prime Minister&#039;s Prizes for Science<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/space-and-astronomy" class="level-2-expanded" data-drupal-link-system-path="node/75742">        Space and astronomy<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="https://www.space.gov.au/">        Australian Space Agency<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/space-and-astronomy/co-hosting-ska-telescope">        SKA<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/space-and-astronomy/optical-astronomy-australia" data-drupal-link-system-path="node/75800">        Optical astronomy<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+            		            <li class="menu-item menu-item--expanded item-accordion">           
+		                        
+          <a href="/science-technology-and-innovation/technology" class="level-2-expanded" data-drupal-link-system-path="node/75664">        Technology<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>               
+                    
+		
+		
+                       
+          <ul class="menu">
+        		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/artificial-intelligence" data-drupal-link-system-path="node/76015">        Artificial intelligence<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/national-artificial-intelligence-centre" data-drupal-link-system-path="node/93610">        National Artificial Intelligence Centre<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/quantum" data-drupal-link-system-path="node/75794">        Quantum<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/robotics" data-drupal-link-system-path="node/92144">        Robotics<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+            		      <li class="menu-item">
+		
+		                <a href="/science-technology-and-innovation/technology/critical-technology-standards" data-drupal-link-system-path="node/92856">        Critical technology standards<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+		        
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                    					    
+					            
+		
+		
+                       
+                  					<li class="menu-item sub-sub-panel-group column-3">     
+		        			<a href="/trade" class="level-1" data-drupal-link-system-path="node/76115">        Trade<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a>                
+		
+		
+                       
+          <ul class="menu">
+        		            <li class="menu-item">
+          
+		                      <a href="/anti-dumping-commission" class="level-2" data-drupal-link-system-path="node/76208">        Anti-dumping<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/anti-dumping-review-panel" class="level-2" data-drupal-link-system-path="node/76120">        Anti-dumping reviews <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/country-origin-labelling" class="level-2" data-drupal-link-system-path="node/75387">        Country of origin labelling<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/mining-oil-and-gas/taxes-royalties-and-export-controls-minerals-and-petroleum#container-7529" class="level-2" data-drupal-link-system-path="node/76184">        Exporting resources <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/growing-australian-industries-through-trade" class="level-2">        Free trade agreements<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/reducing-technical-barriers-trade" class="level-2" data-drupal-link-system-path="node/76157">        Reducing technical barriers<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/australias-standards-and-conformance-infrastructure" class="level-2" data-drupal-link-system-path="node/76116">        Standards and conformance<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/indonesia-steel-tariff-rate-quota-certificates" class="level-2" data-drupal-link-system-path="node/76118">        Steel tariff rate quotas<i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+            		            <li class="menu-item">
+          
+		                      <a href="/trade/office-supply-chain-resilience" class="level-2" data-drupal-link-system-path="node/75917">        Supply chain resilience <i aria-hidden="true" class="icon-link-arrow-right"></i>
+        </a> 
+                    
+		
+		
+                          </li>
+                          </ul>
+        
+                          </li>
+                  
+        
+                                                  </ul>
+        </div>
+        
+                          </li>
+            								<li class="nav-item menu-item">  					
+		            <a href="/publications" data-drupal-link-system-path="node/75083">Publications</a> 
+      		        
+		
+		
+                          </li>
+            								<li class="nav-item menu-item">  					
+		            <a href="/news" data-drupal-link-system-path="node/75105">News</a> 
+      		        
+		
+		
+                          </li>
+            								<li class="nav-item menu-item">  					
+		            <a href="/contact-us" data-drupal-link-system-path="node/76313">Contact us</a> 
+      		        
+		
+		
+                          </li>
+                          </ul>
+        
+
+
+
+    </div>
+  </div>
+  
+
+  </nav>
+
+
+                                              
+                                                        <div class="row region region-header-form">
+    <div id="block-sitesearch" class="block block-block-content block-block-content57e098ae-ed16-4c40-85d8-134326984102">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-field-html field--type-text-long field--label-hidden field__item"><div role="search" id="site-search-form-wrapper">
+<div class="search-form-full-width">
+<div class="container-fluid">
+<div class="content-container">
+
+<form class="site-search-form">
+<label for="search" class="visually-hidden">Search this website</label>
+<input class="form-control sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
+<button class="sb-search-submit d-inline-block" type="submit" formaction="/search" value="search"><span class="visually-hidden">Search</span><i aria-hidden="true" class="icon-search"></i></button>
+</form>
+</div>
+</div>
+</div>
+
+ <a href="javascript:void(0)" title="search website" class="search-toggle" aria-expanded="false" role="button"><i aria-hidden="true" class="icon-search"></i></a>
+</div>
+
+</div>
+      
+    </div>
+  </div>
+
+  </div>
+
+                                                  	          </div>
+                                            
+        </div>
+        </div>
+          </header>
+      
+    <!-- endnoindex -->
+                <div id="main-wrapper" class="layout-main-wrapper clearfix">
+             
+          <div id="main" class="row-offcanvas row-offcanvas-left clearfix">
+            <main class="main-content" id="main-content" role="main" aria-label="Main content area">
+             
+              
+                  <div data-drupal-messages-fallback class="hidden"></div>
+
+    
+    
+
+<div class="node node--type-news-article node--view-mode-full clearfix">
+  <div class="node__content clearfix">
+  <div class="headline banner-image-below container-fluid">
+     
+      <div class="content-container">
+      
+
+
+<div class="content-container">
+  <nav id="breadcrumb-navigation"  aria-label="Breadcrumbs">
+    <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+
+          <a href="/"><span>Home</span></a>
+                   <span aria-hidden="true">/</span>
+        </li>
+                        <li class="breadcrumb-item">
+
+          <a href="/news"><span>News</span></a>
+                   <span aria-hidden="true">/</span>
+        </li>
+                
+        <li class="breadcrumb-item active" aria-current="page">
+          $12.7 million to support innovative quantum technology projects
+        </li>
+              </ol>
+  </nav>
+  </div>
+ 
+        <div class="row justify-content-start">
+          <div class="col">
+            
+                          <h1 class="title"><span class="field field--name-title field--type-string field--label-hidden">$12.7 million to support innovative quantum technology projects</span>
+</h1>
+             
+            
+                                    
+            <div class="field field--name-field-summary field--type-string-long field--label-hidden field__item">Round 1 stage 2 of the Critical Technologies Challenge Program will fund cutting-edge projects including mine site sensors, data centre cooling and optical imaging projects. </div>
+      
+                        <div class="metadata-container row justify-content-start">
+              <div class="col-auto">
+                
+            <div class="field field--name-field-news-date field--type-datetime field--label-hidden field__item">20 February 2026</div>
+      
+              </div>
+              <div class="col-auto">
+                <div class="field field--name-field-news-category field--type-entity-reference field--label-hidden clearfix">
+    <ul class='links field__items'>
+                              <li>News</li>
+      </ul>
+</div>
+
+              </div>
+              
+              <div class="col-auto">
+                <div class="read-time">
+                <p><span id="time"></span> min read</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="tags-container row justify-content-start">
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <div class="views-element-container"><div class="view view-topic-terms-sensitive-to-content-type view-id-topic_terms_sensitive_to_content_type view-display-id-news js-view-dom-id-ba7480c731effe1595768c6672cc491f2160c6c23beee4178734ae36b7674ee8">
+  
+    
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul class="row gy-2">
+
+          <li class="col-auto"><div class="views-field views-field-nothing"><span class="field-content"><a href="/news?news-topic[2945]=2945#filter-results" class="link-pill">Science, technology and innovation</a>
+</span></div></li>
+          <li class="col-auto"><div class="views-field views-field-nothing"><span class="field-content"><a href="/news?news-topic[2963]=2963#filter-results" class="link-pill">Technology</a>
+</span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+                  </div>
+                  <div class="col-auto">
+                    <div class="views-element-container"><div class="view view-brand-terms-sensitive-to-content-type view-id-brand_terms_sensitive_to_content_type view-display-id-entity js-view-dom-id-a7672b71a721c5ec876de8cbdad2326b12bffea718c72ffce166a5a51573c00e">
+  
+    
+      
+  
+          </div>
+</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+      <div class="container-fluid migrated-news-image">
+      <div class="body-container">
+        <div class="views-element-container"><div class="view view-migrated-news-images view-id-migrated_news_images view-display-id-block_1 js-view-dom-id-d038ecc2d0d27c52c4438c300d5410ebb3b188f33ecb58140c898191d2940ef1">
+  
+    
+      
+  
+          </div>
+</div>
+
+    </div>
+  </div>
+        <div class="container-fluid body-banner-image">
+      <div class="content-container">
+        
+            <div class="field field--name-field-banner-image field--type-entity-reference field--label-hidden field__item">  
+<img loading="lazy" src="/sites/default/files/styles/body_image_banner/public/2026-02/ctcp-iga-news-banner.jpg?h=68aefe93&amp;itok=v0Rp6sE8" width="1320" height="400" alt="Technicians working in a server room" class="image-style-body-image-banner img-fluid" />
+
+
+
+</div>
+      
+        
+      </div>
+    </div>
+    
+        
+      <div class="field field--name-field-components field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">  <div class="paragraph paragraph--type--body paragraph-id-28236 paragraph--view-mode--default" id="container-28236" component-name="body">
+    <div class="container-fluid">
+  <div class="body-container">
+
+    
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p class="text--large">The Australian Government will fund 8 projects through round 1 stage 2 of the Critical Technologies Challenge Program (CTCP).</p>
+<p>CTCP provides up to $36 million in grant funding to test and demonstrate solutions to market-led challenges of national significance using quantum technologies. It works in 2 stages: &nbsp;</p>
+<ul>
+<li>stage 1 offers up to $500,000 to fund feasibility projects</li>
+<li>stage 2 provides up to $5 million in funding to demonstrate proof of concept for projects progressing from stage 1.&nbsp;</li>
+</ul>
+<p>Eight of the round 1 stage 1 projects are progressing for stage 2 funding. They include:</p>
+<ul>
+<li>Loughan Technology Group will receive $2.4 million to develop Australia’s first real-time mine-site sensor to measure recoverable rare-earth elements in clay deposits</li>
+<li>La Trobe University will receive $1.1 million to develop a hybrid quantum–classical optimisation system to significantly improve energy efficiency in data centre cooling</li>
+<li>Miniprobes will receive $1.2 million to scale and develop its quantum optical imaging for fast and efficient assessment of diabetes.&nbsp;</li>
+</ul>
+<p>The CTCP aligns with the National Quantum Strategy. The strategy aims to foster a vibrant and resilient innovation ecosystem that can harness emerging technologies for the benefit of all Australians.&nbsp;</p>
+<p>The CTCP also aligns with the Future Made in Australia plan by backing Australian-led projects that deliver innovations in science and digital capability. By nurturing quantum capabilities, the program strengthens Australia’s high‑tech manufacturing base.&nbsp;</p>
+</div>
+      
+  </div>
+</div>
+  
+  </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--card-container paragraph-id-28241 paragraph--view-mode--default" id="container-28241" component-name="card-container">
+          
+            <div class="field field--name-field-container field--type-entity-reference-revisions field--label-hidden field__item">  <div class="paragraph paragraph--type--shaded-background-card-container paragraph-id-28240 paragraph--view-mode--default" id="container-28240" component-name="shaded-background-card-container">
+     
+<div class="container-fluid">
+  <div class="body-container">
+  
+  <div  class="hide-card-summary hide-card-date hide-card-entity title-only container-rows">
+    
+      <div class="field field--name-field-container-rows field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item"><ul class="row gy-4 paragraph paragraph--type--multi-md-manual paragraph-id-28239 paragraph--view-mode--default card-list" id="container-28239" component-name="multi-md-manual" role="list">
+
+                      <li class='d-flex col-12 col-md-6'>
+                
+
+
+    
+<div class="paragraph paragraph--type--card paragraph-id-28237 iga-card paragraph--view-mode--md-body-shaded-bg-no-img-card shaded-bg-no-img-card" id="container-28237" component-name="card">
+
+        <div class="card-text">
+        
+      <h3 class="card-title"><a class="card-link" href ="/science-technology-and-innovation/industry-innovation/critical-technologies-challenge-program/critical-technologies-challenge-program-round-1-projects">Read more details about the CTCP round 1 projects<i aria-hidden="true" class="icon-arrow-right"></i></a></h3>
+          </div>
+
+
+</div>
+
+
+
+
+        </li>
+            <li class='d-flex col-12 col-md-6'>
+                
+
+
+    
+<div class="paragraph paragraph--type--card paragraph-id-28238 iga-card paragraph--view-mode--md-body-shaded-bg-no-img-card shaded-bg-no-img-card" id="container-28238" component-name="card">
+
+        <div class="card-text">
+        
+      <h3 class="card-title"><a class="card-link" href ="https://business.gov.au/grants-and-programs/critical-technologies-challenge-program/grant-recipients-stage-2">View the full funding details on business.gov.au<i aria-hidden="true" class="icon-arrow-right"></i></a></h3>
+          </div>
+
+
+</div>
+
+
+
+
+        </li>
+                
+  
+</ul>
+</div>
+          </div>
+  
+    </div>
+  </div>
+</div>
+  
+  </div>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--more-information paragraph-id-28242 paragraph--view-mode--default" id="container-28242" component-name="more-information">
+    <div class="container-fluid">
+  <div class="content-container">
+
+    
+
+
+      <div class="field field--name-field-title field--type-string field--label-hidden field__item"> <h2 class="section-title"> More information</h2></div>
+  
+
+      <div class="field field--name-field-links field--type-link field--label-hidden field__items">
+              <div class="field__item"><a href="https://www.minister.industry.gov.au/ministers/timayres/media-releases/127-million-support-life-changing-quantum-technology-projects">The minister announced the funding on 20 February 2026<i aria-hidden="true" class="icon-link-arrow-right"></i></a></div>
+              <div class="field__item"><a href="/publications/national-quantum-strategy">Read Australia’s National Quantum Strategy<i aria-hidden="true" class="icon-link-arrow-right"></i></a></div>
+          </div>
+  
+  </div>
+</div>
+  
+  </div>
+</div>
+          </div>
+  
+
+  </div>
+                <div class="views-element-container"><div class="site-sub-footer" id="contact-footer" data-location="area contact footer container">
+  <div class="container-fluid">
+    <div class="content-container">
+<div class="view view-sub-footer-contact-information view-id-sub_footer_contact_information view-display-id-block_1 js-view-dom-id-f77252551f784042bc6f91d34d5bd4c3bef3a42997fa7e85b5ea0982e70f79c3">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+    <div><div>  <div class="paragraph paragraph--type--contact-sub-footer-automatic paragraph-id-28235 paragraph--view-mode--default" id="container-28235" component-name="contact-sub-footer-automatic">
+          
+      </div>
+</div></div>
+  </div>
+
+    </div>
+  
+
+
+    
+
+        
+
+  </div>
+</div>
+</div>
+</div></div>
+
+    </div>
+
+
+            </main>
+          </div>
+        
+          </div>
+            <!-- noindex -->
+    <footer aria-label="Website links and acknowledgement of country" class="site-footer" data-location="master footer container">
+            <div class="container-fluid footer-strip">
+        <div class="content-container">
+
+                      <div class="row gy-5 footer-row site-footer__top clearfix">
+                <div class="col-xl-5 col-md-4 col-sm-6 region region-footer-left">
+    <section  id="block-footer" class="block block-menu navigation menu--footer">
+      
+  <h2 id="block-footer-menu">Explore</h2>
+  
+
+    
+    
+              <ul class="clearfix nav navbar-nav">
+                    <li class="nav-item">
+                <a href="/careers" class="nav-link nav-link--careers" data-drupal-link-system-path="node/76152">Careers </a>
+              </li>
+                <li class="nav-item">
+                <a href="/people" class="nav-link nav-link--people" data-drupal-link-system-path="node/76244">People</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://minister.industry.gov.au" class="nav-link nav-link-https--ministerindustrygovau">Ministers</a>
+              </li>
+                <li class="nav-item">
+                <a href="/publications" class="nav-link nav-link--publications" data-drupal-link-system-path="node/75083">Publications </a>
+              </li>
+                <li class="nav-item active">
+                <a href="/news" class="nav-link active nav-link--news" data-drupal-link-system-path="node/75105">News</a>
+              </li>
+                <li class="nav-item">
+                <a href="/site-notices/accessibility" class="nav-link nav-link--site-notices-accessibility" data-drupal-link-system-path="node/75904">Accessibility</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://consult.industry.gov.au" class="nav-link nav-link-https--consultindustrygovau">Public consultation</a>
+              </li>
+                <li class="nav-item">
+                <a href="/corporate-governance" class="nav-link nav-link--corporate-governance" data-drupal-link-system-path="node/75608">Corporate governance </a>
+              </li>
+                <li class="nav-item">
+                <a href="/accessing-information" class="nav-link nav-link--accessing-information" data-drupal-link-system-path="node/75453">Accessing information </a>
+              </li>
+                <li class="nav-item">
+                <a href="/contact-us/feedback-and-complaints" class="nav-link nav-link--contact-us-feedback-and-complaints" data-drupal-link-system-path="node/76317">Feedback and complaints </a>
+              </li>
+                <li class="nav-item">
+                <a href="/site-notices" class="nav-link nav-link--site-notices" data-drupal-link-system-path="node/75522">Site notices </a>
+              </li>
+                <li class="nav-item">
+                <a href="/sitemap" class="nav-link nav-link--sitemap" data-drupal-link-system-path="node/91790">Sitemap</a>
+              </li>
+        </ul>
+  
+
+
+
+  </section>
+
+  </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 region region-footer-center">
+    <div id="block-contactus" class="block block-block-content block-block-content563f8057-a479-45c3-b4f1-d07a23d04664">
+<section id="contact-us-at-the-department">
+  
+      <h2>Contact us<span class="visually-hidden"> at the department</span></h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-field-html field--type-text-long field--label-hidden field__item"><p>Department of Industry, Science and Resources</p>
+<p><i aria-hidden="true" class="icon-email"></i><a href="/contact-us/general-enquiries-form">General Enquiries</a></p>
+<p><i aria-hidden="true" class="icon-phone"></i><a href="tel:+61262136000" aria-label="+ 6 1 2. 6 2 1 3. 6 0 0 0.">+61 2 6213 6000</a></p>
+<div class="footer-address"><i aria-hidden="true" class="icon-location"></i><address>Industry House,<br/>10 Binara Street,<br/>Canberra</address></div>
+<p>Department of Industry<br/>ABN: 74 599 608 295</p></div>
+      
+    </div>
+    </section>
+</div>
+
+  </div>
+
+                <div class="col-md-4 region region-footer-right">
+    <div id="block-subscribewithus" class="block block-block-content block-block-content13e95d87-f21a-48c3-bbff-a7a487415439">
+<section id="subscribe-for-updates-at-the-department">
+  
+      <h2>Subscribe for updates<span class="visually-hidden"> at the department</span></h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-field-html field--type-text-long field--label-hidden field__item"><p>Sign up for one or more of our email lists to receive the latest news, announcements and opportunities from our department.</p>
+<a href="/contact-us/newsletters" role="button" class="btn btn-primary">Subscribe</a></div>
+      
+    </div>
+    </section>
+</div>
+<div id="block-connectwithus" class="block block-block-content block-block-content1eebd0b6-4e1e-400f-b3d3-35b63e25aa1b">
+<section id="connect-with-us-at-the-department">
+  
+      <h2>Connect with us<span class="visually-hidden"> at the department</span></h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-field-html field--type-text-long field--label-hidden field__item"><ul>
+<li><a href="https://www.linkedin.com/company/department-of-industry" title="Follow us on LinkedIn" aria-label="Follow us on LinkedIn"><span class="visually-hidden">Follow us on LinkedIn</span><i aria-hidden="true" class="icon-linkedin"></i></a></li>
+<li><a href="https://www.facebook.com/IndustryGovAu/" title="Follow us on Facebook" aria-label="Follow us on Facebook"><span class="visually-hidden">Follow us on Facebook</span>
+<i aria-hidden="true" class="icon-facebook1"></i></a></li>
+<li><a href="https://x.com/IndustryGovAu" title="Follow us on X" aria-label="Follow us on X"><span class="visually-hidden">Follow us on X</span><i aria-hidden="true" class="icon-x"></i></a></li>
+<li><a href="https://www.youtube.com/c/IndustryGovAu" title="Follow us on YouTube" aria-label="Follow us on YouTube"><span class="visually-hidden">Follow us on Youtube</span><i aria-hidden="true" class="icon-youtube1"></i></a></li>
+<li><a href="/contact-us/rss-feeds" title="Subscribe to our RSS feeds" aria-label="Subscribe to our RSS feeds"><span class="visually-hidden">Subscribe to our RSS feeds</span><i aria-hidden="true" class="icon-iconmonstr-rss-feed-5"></i></a></li>
+
+
+</ul></div>
+      
+    </div>
+    </section>
+</div>
+
+  </div>
+
+            </div>
+                  </div>
+        </div>
+        <div class="container-fluid footer-acknowledgment">
+        <div class="content-container ">
+                      <div class="site-footer__bottom clearfix">
+                <div class="row justify-content-center region region-footer-bottom">
+  <div class="col col-sm-11 col-lg-9">
+    <div id="block-acknowledgementofcountry" class="block block-block-content block-block-content23825798-dc95-40d7-8df5-cbc1b41eea6f">
+<section id="acknowledgement-of-country">
+
+  <div class="content-wrapper">
+  
+      <h2>Acknowledgement of Country</h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-field-html field--type-text-long field--label-hidden field__item"><p>Our department recognises the First&nbsp;Peoples&nbsp;of&nbsp;this&nbsp;Nation and their ongoing cultural and spiritual connections to the lands, waters, seas, skies, and communities.</p><br/>
+<p>We Acknowledge First&nbsp;Nations&nbsp;Peoples as the Traditional&nbsp;Custodians and Lore&nbsp;Keepers of the oldest living culture and pay respects to their Elders past and present. We extend that respect to all First&nbsp;Nations&nbsp;Peoples.</p><br/>
+<p><em>Artwork credit: DISR Journey</em>, 2024 by Chern’ee Sutton</p></div>
+      
+    </div>
+    </div>
+  <a href="/node/75691">
+  <div class="visually-hidden">
+  Visit the Acknowledgement of Country page</div>
+  <img height="112" width="112" style="height: 112px; width: 112px;" typeof="foaf:Image" src="/themes/custom/industry_theme/images/acknowledgement_image_2024.png" alt="">
+  </a>
+  </section>
+</div>
+
+    </div>
+  </div>
+
+            </div>
+                  </div>
+        </div>
+          </footer>
+    <!-- endnoindex -->
+  </div>
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/96216","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxljsEKAyEMRH_Irp8kyRqiEI0k2uLfd-mlsHuZw3sMM6g6fRqMhGBWNaIR5NNWw4B3x6II8vK5pXZ--kbuwORJKpf59F0zBVZloQQdZM96eryDUHteV2-nWahRPMHyA96uDDDga6l4zLYGyPEnx-pjoVQvlINvn9QiglN4V_p4_OXRNC-hLzu5a5U","theme":"industry_theme","theme_token":null},"ajaxTrustedUrl":[],"google_analytics":{"account":"G-00000000","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"user":{"uid":0,"permissionsHash":"96906d2853c982f519b772e5fecc61bf347d0e084a6aaaca03d0165e2523b68d"}}</script>
+<script src="/sites/default/files/js/js_14YOv7f6mNEzXkgvhbEDg2OR3qLSTf45CpKflUcXEhQ.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=industry_theme&amp;include=eJxLz89Pz0mNT8xLzKksyUwu1k9HE9DJzEspLS4pqowvyUjNTdVPTixKwRBMz8lPSszRLS6pzMnMSwcAocwhyw"></script>
+
+  <noscript><img src="https://www.industry.gov.au/akam/13/pixel_6d356166?a=dD0wZDNhY2MzZmY5MTIxMTdmMzkwYzI1N2IxM2JlMDAxZmM1MDdmZGNkJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>

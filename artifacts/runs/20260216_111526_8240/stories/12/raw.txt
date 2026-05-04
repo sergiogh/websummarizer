@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Firgun backs Photonic in first $250m quantum deal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://cfotech.co.uk/story/firgun-backs-photonic-in-first-250m-quantum-deal">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="gAyA7qPZzXxmKZXOb2CADsjOP3j1LCD2yZrEYxTSHFZmEpnYuSiljg4Zy9uS9nD8LkWvniJTmPu6cvjyfjec6Q" />
+
+<link rel="stylesheet" href="/assets/frontend-3213f89a.css" />
+<link rel="icon" type="image/png" href="/brands/itb-uk-icon-32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/brands/itb-uk-icon-16.png" sizes="16x16" />
+<link rel="shortcut icon" type="image/png" href="/brands/itb-uk-icon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" type="image/png" href="/brands/itb-uk-apple-touch-icon.png" sizes="180x180" />
+<link rel="shortcut icon" type="image/png" href="/brands/itb-uk-shortcut-icon.png" sizes="800x800" />
+	<link rel="alternate" type="application/rss+xml" title="IT Brief UK RSS Feed" href="/feed">
+<meta name="title" content="Firgun backs Photonic in first $250m quantum deal">
+<meta name="description" content="Firgun’s debut quantum fund deal backs Canada’s Photonic from its $250m pot, deepening cross-border UK-North America ties.">
+<meta name="keywords" content="Microsoft, Google, Semiconductors, Canada, Silicon photonics, Optimization, Research and Development (R&D), Government funding, Venture Capital, Quantum Computing, United States (US), Global economy, National Security, Bank of Canada, Massachusetts Institute of Technology (MIT), US Government, Mubadala, Photonics, Startups, United Kingdom (UK), Optimisation, Defence, Scaleup, Institutional investors, TELUS">
+<meta name="publish_date" content="2026-02-15T21:30:00+13:00">
+<meta name="image" content="https://itbrief.co.uk/uploads/story/2026/02/14/compatible_quantum_processor_chip_photonic_circuits_canada_uk_investment.jpg">
+<meta name="author" content="Catherine Knowles">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@techday_uk">
+<meta property="twitter:creator" content="@techday_uk">
+<meta property="twitter:title" content="Firgun backs Photonic in first $250m quantum deal">
+<meta property="twitter:description" content="Firgun’s debut quantum fund deal backs Canada’s Photonic from its $250m pot, deepening cross-border UK-North America ties.">
+<meta property="twitter:image" content="https://itbrief.co.uk/uploads/story/2026/02/14/compatible_quantum_processor_chip_photonic_circuits_canada_uk_investment.jpg">
+<meta property="og:title" content="Firgun backs Photonic in first $250m quantum deal">
+<meta property="og:description" content="Firgun’s debut quantum fund deal backs Canada’s Photonic from its $250m pot, deepening cross-border UK-North America ties.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-GB">
+<meta property="og:url" content="https://itbrief.co.uk/story/firgun-backs-photonic-in-first-250m-quantum-deal">
+<meta property="og:site_name" content="IT Brief UK">
+<meta property="og:author" content="Catherine Knowles">
+<meta property="og:publish_date" content="2026-02-15T21:30:00+13:00">
+<meta property="og:image" content="https://itbrief.co.uk/uploads/story/2026/02/14/compatible_quantum_processor_chip_photonic_circuits_canada_uk_investment.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="677">
+<meta property="og:image:alt" content="Quantum processor chip photonic circuits canada uk investment">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://itbrief.co.uk/story/firgun-backs-photonic-in-first-250m-quantum-deal"
+    },
+    "headline": "Firgun backs Photonic in first $250m quantum deal",
+    "image": [
+      "https://itbrief.co.uk/uploads/story/2026/02/14/compatible_quantum_processor_chip_photonic_circuits_canada_uk_investment.jpg"
+     ],
+    "datePublished": "2026-02-15T21:30:00+13:00",
+    "dateModified": "2026-02-16T12:45:05+13:00",
+    "isAccessibleForFree": "True",
+    "author": {
+      "@type": "Person",
+      "name": "Catherine Knowles",
+      "jobTitle": "News Editor",
+      "url": "https://itbrief.co.uk/author/catherinek"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "IT Brief UK",
+      "url": "https://itbrief.co.uk",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itbrief.co.uk/brands/itb-uk-icon-200.png",
+        "height": "200",
+        "width": "200"
+      }
+    },
+    "description": "Firgun’s debut quantum fund deal backs Canada’s Photonic from its $250m pot, deepening cross-border UK-North America ties."
+  }
+</script>
+		<style>
+			:root {
+				--sitecolour: hsl(353 84% 56%);
+				--logowidth: 270px;
+				--smalllogowidth: 180px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="box-container">
+			<div class="flex flex-col gap-5 lg:gap-10">
+		<div class="w-full px-3 py-2 text-center text-xs xl:text-sm  leading-normal text-gray-600 bg-gray-300">
+			IT Brief UK - Technology news for CIOs &amp; IT decision-makers
+		</div>
+	<div class="w-full flex flex-wrap justify-between">
+		<a href="/" class="px-5 lg:px-10">
+			<img class="logo" src="/brands/itb-uk-new-logo.svg" alt="IT Brief UK logo">
+			<div class="region">
+				United Kingdom
+			</div>
+		</a>
+			<div class="hidden lg:flex px-10">
+				<a href="https://techday.co.uk">
+					<img src="/brands/td-new-logo.svg" alt="TechDay logo" style="width: 307px; height: 67px; ">
+				</a>
+			</div>
+	</div>
+		<div class="flex flex-wrap justify-between px-0 md:px-5 lg:px-10 gap-5 lg:gap-10">
+			<div class="zone">
+				<h2 class="soft-head">
+					Guides
+				</h2>
+				<div class="horizontal-box gap-y-2 md:gap-y-4 gap-x-4">
+						<a href="https://techday.co.uk/tag/artificial-intelligence">
+							<div class="hashbox">
+								<div class="hash">
+									#
+								</div>
+								<div class="hashtag">
+									artificial intelligence
+								</div>
+							</div>
+						</a>
+						<a href="https://techday.co.uk/tag/digital-transformation">
+							<div class="hashbox">
+								<div class="hash">
+									#
+								</div>
+								<div class="hashtag">
+									digital transformation
+								</div>
+							</div>
+						</a>
+						<a href="https://techday.co.uk/tag/disaster-recovery">
+							<div class="hashbox">
+								<div class="hash">
+									#
+								</div>
+								<div class="hashtag">
+									disaster recovery
+								</div>
+							</div>
+						</a>
+						<a href="https://techday.co.uk/tag/hybrid-remote-work">
+							<div class="hashbox">
+								<div class="hash">
+									#
+								</div>
+								<div class="hashtag">
+									hybrid &amp; remote work
+								</div>
+							</div>
+						</a>
+						<a href="https://techday.co.uk/tag/internet-of-things">
+							<div class="hashbox">
+								<div class="hash">
+									#
+								</div>
+								<div class="hashtag">
+									internet of things
+								</div>
+							</div>
+						</a>
+				</div>
+			</div>
+			<div class="zone hide-section pb-8 md:pb-0 ">
+				<h2 class="soft-head w-full text-start lg:text-end">
+					Search
+				</h2>
+				<form action="/results" accept-charset="UTF-8" method="get">
+					<div class="horizontal-box p-2">
+						<input type="text" name="search" id="search" class="flex-auto text-right bg-transparent border-none text-base  leading-normal text-gray-600 placeholder-gray-600 focus:ring-0 focus:ring-offset-0 p-3" placeholder="..." aria-label="Search" />
+						<button type="submit" aria-label="Search" class='p-3 text-gray-400 hover:opacity-75'><svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+							</svg></button>
+					</div>
+</form>			</div>
+		</div>
+</div>
+
+			<main>
+				
+				<div class="zone gap-5">
+	<div class="vertical-box gap-5">
+		<div class="flex lg:ml-10 lg:mt-10">
+			<div class="flex w-full flex-col items-center gap-5 lg:relative lg:flex-row lg:justify-center lg:gap-0 lg:bg-gray-100">
+				<div class="relative h-full w-full sm:min-h-[197px] sm:w-full lg:min-h-[315px] lg:min-w-[560px]">
+						<img alt="Quantum processor chip photonic circuits canada uk investment" fetchpriority="high" loading="eager" class="w-full border-gray-100 sm:min-h-[197px] sm:min-w-[350px] lg:absolute lg:left-[-40px] lg:top-[-40px] lg:border-2 lg:shadow-lg" src="https://itbrief.co.uk/uploads/story/2026/02/14/quantum_processor_chip_photonic_circuits_canada_uk_investment.webp" width="350" height="197">
+				</div>
+				<div class="flex w-full flex-col gap-5 p-0 lg:py-10 lg:pr-10">
+					<div class="flex flex-col-reverse gap-5 lg:flex-col">
+						<div class="flex flex-row flex-wrap gap-x-4 gap-y-2">
+								<a href="https://techday.co.uk/tag/semiconductors" style="min-width: 36px;">
+									<div class="hashbox">
+										<div class="hash">
+											#
+										</div>
+										<div class="hashtag">
+											Semiconductors
+										</div>
+									</div>
+								</a>
+								<a href="https://techday.co.uk/tag/quantum-computing" style="min-width: 36px;">
+									<div class="hashbox">
+										<div class="hash">
+											#
+										</div>
+										<div class="hashtag">
+											Quantum Computing
+										</div>
+									</div>
+								</a>
+								<a href="https://techday.co.uk/tag/microsoft" style="min-width: 36px;">
+									<div class="hashbox">
+										<div class="hash">
+											#
+										</div>
+										<div class="hashtag">
+											Microsoft
+										</div>
+									</div>
+								</a>
+						</div>
+						<h1 class="text-3xl font-bold leading-8 lg:text-4xl lg:leading-10">
+							Firgun backs Photonic in first $250m quantum deal
+						</h1>
+					</div>
+					<div class="border-b-2" style="border-color: var(--sitecolour);"></div>
+					<div class="flex flex-col gap-2">
+						Sun, 15th Feb 2026 (Yesterday)
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex w-full flex-col gap-y-5 lg:flex-row-reverse lg:justify-evenly">
+			<div class="lg:w-2/3">
+				<div class="flex flex-col gap-y-5 pb-4 lg:flex-row lg:items-center">
+					<div class="flex w-full border-y-2 py-3" style="border-color: var(--sitecolour);">
+								<a href="/author/catherinek" class="w-full text-gray-600 hover:opacity-75">
+									<div class="flex items-center gap-2">
+												<div>
+													<img alt="Author image" class="rounded-full" style="width: 48px; height: 48px;" src="https://itbrief.co.uk/uploads/pages/team/ck_cropped.webp">
+												</div>
+											<div class="text-sm md:text-base">
+												By Catherine Knowles, News Editor
+											</div>
+									</div>
+							</a>
+						</div>
+					</div>
+					<div class="first-letter:float-left first-letter:mr-2 first-letter:font-serif first-letter:text-5xl first-letter:leading-none" >
+						<p>Firgun Ventures, a London-based specialist investor in quantum technology, has made the first investment from its $250 million fund, backing Canadian quantum computing company Photonic.</p>
+
+<p>The deal connects a newly formed UK fund with a Vancouver-headquartered business involved in US government research programmes, including projects supported by the Defence Advanced Research Projects Agency (DARPA). Photonic is also among the quantum computing companies DARPA has identified as having a credible route to large-scale systems.</p>
+
+<p>Photonic was co-founded by Dr Stephanie Simmons, who was named to the UNESCO 2025 International Year of Quantum 100. The company has positioned itself around an architectural approach it calls "Entanglement First".</p>
+
+<p><strong>Cross-border focus</strong></p>
+
+<p>The investment builds on Photonic's existing ties to the UK. The company previously announced a GBP &pound;25 million investment in a UK research and development centre.</p>
+
+<p>Firgun described the investment as part of a cross-border strategy spanning the UK and Canada, and expects international partnerships to play a defining role in building leading quantum companies.</p>
+
+<p>Firgun is led by Dr Kris Naudts and Zeynep Koruturk. Both have also been angel investors in Cambridge Quantum Computing, which later became Quantinuum. Firgun has said Quantinuum is estimated to be worth $20 billion.</p>
+
+<p>Naudts previously founded travel and culture media business Culture Trip. Koruturk previously worked at Goldman Sachs and co-founded the bank's Tech Initiative.</p>
+
+<p>Firgun has an advisory council with members drawn from organisations including the universities of Cambridge and Oxford, MIT, Google, the European Investment Bank and the Wellcome Trust.</p>
+
+<p><strong>Technology approach</strong></p>
+
+<p>Photonic is developing fault-tolerant quantum systems. Its "Entanglement First" architecture combines silicon-based qubits with photonic connectivity, which the company says supports modular designs that could scale to larger systems.</p>
+
+<p>It is working on quantum computers and quantum networks, aiming to integrate photonics at the architecture level rather than treating it as a peripheral component.</p>
+
+<p>Quantum computing developers are working to increase the number of usable qubits and reduce errors, but many approaches remain at the research and engineering stage. Investors have continued to back companies that say their roadmaps can move beyond laboratory demonstrations to practical systems.</p>
+
+<p>Photonic has attracted backing from a mix of institutional and corporate investors, including Royal Bank of Canada, Mubadala, Microsoft and Telus.</p>
+
+<p>In quantum technology, corporate investors often take strategic stakes to stay close to emerging hardware and software approaches. Financial investors have tended to focus on companies that can demonstrate repeatable technical milestones and credible manufacturing paths.</p>
+
+<p><strong>Commercial horizon</strong></p>
+
+<p>Photonic has pointed to potential applications in materials discovery, drug development and optimisation, as well as national security. The timing of many use cases remains uncertain, and developers continue to debate what counts as a meaningful advantage over classical computing for specific tasks.</p>
+
+<p>Government interest has been a key feature of the sector, particularly in the US, where agencies have funded multiple hardware approaches. Participation in competitive programmes can provide non-dilutive funding and technical validation, although it does not guarantee commercial outcomes.</p>
+
+<p>Firgun invests at what it calls an "early growth-stage" point in quantum technology-typically between initial research spin-outs and later rounds, when companies scale teams, refine hardware roadmaps and build commercial partnerships.</p>
+
+<p>Naudts linked the investment thesis to the challenge of scaling quantum systems, and the potential performance gains if that challenge is met.</p>
+
+<blockquote>"Photonic Inc represents the kind of company we set out to support," said Dr Kris Naudts, co-founder of Firgun Ventures.</blockquote>
+
+<p>He added: "Scaling quantum computers is critical to unlocking exponential speed-ups that will provide the power to solve some of the world&#39;s biggest problems. Photonic Inc&#39;s architecture tackles the scaling challenge head-on, and the strength of their scientific foundations and team gives us strong confidence in their long-term potential to redefine what is possible in quantum computing. Not to mention our getting a front seat in the Canadian quantum ecosystem."</p>
+
+<p>Zeynep Koruturk, co-founder of Firgun Ventures said Firgun looks for moments when technical progress needs to translate into business execution.</p>
+
+<p>"Firgun backs quantum founders at the point where technical breakthroughs must translate into scalable, commercial businesses," said Koruturk. "Photonic&#39;s architecture has the potential to unlock meaningful applications across sectors, while enabling new approaches to complex problem-solving that could help strengthen and safeguard the global economy."</p>
+
+<p>Firgun will continue to look for early growth-stage quantum investments, and expects international dealmaking to remain central to its pipeline.</p>
+
+					</div>
+					<div>
+							<div class="flex w-full flex-wrap items-center justify-center gap-y-3 border-b border-t border-gray-900 py-3">
+								<a href="https://www.linkedin.com/company/techday-uk" class="flex items-center gap-2 px-4 hover:opacity-75" aria-label="Follow us on LinkedIn" target="_blank" rel="noopener noreferrer">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+									<span class="text-sm font-semibold uppercase">Follow</span>
+								</a>
+								<div class="h-6 w-px bg-gray-900"></div>
+								<a href="https://x.com/techday_uk" class="flex items-center gap-2 px-4 hover:opacity-75" aria-label="Follow us on X" target="_blank" rel="noopener noreferrer">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+									<span class="text-sm font-semibold uppercase">Follow</span>
+								</a>
+								<div class="h-6 w-px bg-gray-900"></div>
+								<a href="https://www.linkedin.com/feed/?shareActive=true&text=Firgun’s debut quantum fund deal backs Canada’s Photonic from its $250m pot, deepening cross-border UK-North America ties.%20https://itbrief.co.uk/story/firgun-backs-photonic-in-first-250m-quantum-deal" class="flex items-center gap-2 px-4 hover:opacity-75" aria-label="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+									<span class="text-sm font-semibold uppercase">Share</span>
+								</a>
+								<div class="h-6 w-px bg-gray-900"></div>
+								<a href="https://x.com/intent/post?text=Firgun’s debut quantum fund deal backs Canada’s Photonic from its $250m pot, deepening cross-border UK-North America ties.+@techday_uk&url=https://itbrief.co.uk/story/firgun-backs-photonic-in-first-250m-quantum-deal" class="flex items-center gap-2 px-4 hover:opacity-75" aria-label="Share on X" target="_blank" rel="noopener noreferrer">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+									<span class="text-sm font-semibold uppercase">Share</span>
+								</a>
+								<div class="h-6 w-px bg-gray-900"></div>
+								<a href="https://google.com/preferences/source?q=https://itbrief.co.uk" class="flex items-center gap-2 px-4 hover:opacity-75" target="_blank" rel="noopener noreferrer">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke_width="1.5" class="h-5 w-5"><circle cx="10.5" cy="10.5" r="6.75"></circle><path stroke_linecap="round" stroke_linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path></svg>
+									<span class="text-sm font-semibold uppercase">Preferred Source</span>
+								</a>
+							</div>
+					</div>
+				</div>
+				<div class="flex w-full flex-col gap-5 lg:max-w-[350px] lg:items-start lg:pr-5">
+					<div class="zone hide-section flex w-full flex-col">
+						<div class="pb-2 text-lg text-gray-600 lg:text-base">
+							Related stories
+						</div>
+						<div class="flex">
+							<div class="flex flex-col gap-3">
+									<a href="/story/apple-opens-2026-swift-student-challenge-to-global-coders" class="flex w-full items-center gap-x-2 border-l-2 border-gray-200 py-2 pl-3 hover:border-gray-600 hover:opacity-75 lg:text-sm">
+										<div>
+											Apple opens 2026 Swift Student Challenge to global coders
+										</div>
+									</a>
+									<a href="/story/ai-drives-shift-to-persistent-low-level-cyber-conflict" class="flex w-full items-center gap-x-2 border-l-2 border-gray-200 py-2 pl-3 hover:border-gray-600 hover:opacity-75 lg:text-sm">
+										<div>
+											AI drives shift to persistent, low‑level cyber conflict
+										</div>
+									</a>
+									<a href="/story/uk-it-departments-most-confident-on-ai-future-readiness" class="flex w-full items-center gap-x-2 border-l-2 border-gray-200 py-2 pl-3 hover:border-gray-600 hover:opacity-75 lg:text-sm">
+										<div>
+											UK IT departments most confident on AI future-readiness
+										</div>
+									</a>
+									<a href="/story/vape-guardian-raises-funds-to-develop-vape-detection-tech" class="flex w-full items-center gap-x-2 border-l-2 border-gray-200 py-2 pl-3 hover:border-gray-600 hover:opacity-75 lg:text-sm">
+										<div>
+											Vape Guardian raises funds to develop vape-detection tech
+										</div>
+									</a>
+									<a href="/story/manchester-galway-hubs-forge-start-up-expansion-pact" class="flex w-full items-center gap-x-2 border-l-2 border-gray-200 py-2 pl-3 hover:border-gray-600 hover:opacity-75 lg:text-sm">
+										<div>
+											Manchester &amp; Galway hubs forge start-up expansion pact
+										</div>
+									</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-wrap justify-between gap-5">
+			<div class="zone hide-section">
+				<h2 class="soft-head">
+					Top stories
+				</h2>
+				<div class="flex">
+					<div class="vertical-box gap-3">
+							<a href="/story/willo-hires-jim-berrisford-to-lead-global-partnerships-push" class="list-object">
+								<div>
+									Willo hires Jim Berrisford to lead global partnerships push
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+							<a href="/story/anthropic-raises-usd-30-billion-hits-usd-380b-value" class="list-object">
+								<div>
+									Anthropic raises USD $30 billion, hits USD $380b value
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+							<a href="/story/active-exploitation-seen-in-beyondtrust-access-flaw" class="list-object">
+								<div>
+									Active exploitation seen in BeyondTrust access flaw
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+							<a href="/story/google-expands-gemini-deep-think-for-research-apis" class="list-object">
+								<div>
+									Google expands Gemini Deep Think for research, APIs
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+							<a href="/story/openai-unveils-gpt-5-3-codex-spark-for-real-time-coding" class="list-object">
+								<div>
+									OpenAI unveils GPT-5.3 Codex Spark for real-time coding
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			</main>
+			<div class="hide-section">
+	<footer>
+		<div class="hide-section flex flex-wrap justify-between xl:flex-nowrap">
+			<div class="hide-section flex w-full flex-col gap-y-5 border-t border-gray-200 p-5 lg:gap-y-10 lg:p-10">
+				<div class="flex">
+					<a href="https://techday.co.uk">
+						<img src="/brands/td-left-new-logo.svg" alt="TechDay logo" style="height: 67px; width: 307px;">
+					</a>
+				</div>
+				<div class="flex">
+					<div>
+						<h2 class="soft-head p-0">
+							Our UK network
+						</h2>
+						<div class="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://cfotech.co.uk">
+											<img src="/brands/cfo-uk-new-logo.svg" alt="CFOtech logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Fintech
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Technology news for CFOs &amp; financial decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://cfotech.co.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://cfotech.co.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://channellife.co.uk">
+											<img src="/brands/cl-uk-new-logo.svg" alt="ChannelLife logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Industry
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Industry insider news for technology resellers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://channellife.co.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://channellife.co.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://cmotech.uk">
+											<img src="/brands/cmo-uk-new-logo.svg" alt="CMOtech logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											MarTech
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Technology news for CMOs &amp; marketing decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://cmotech.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://cmotech.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://datacentrenews.uk">
+											<img src="/brands/dcn-uk-new-logo.svg" alt="DataCentreNews logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Infrastructure
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Specialist news for cloud &amp; data centre decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://datacentrenews.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://datacentrenews.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://ecommercenews.uk">
+											<img src="/brands/ecn-uk-new-logo.svg" alt="eCommerceNews logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Commerce
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Technology news for digital commerce decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://ecommercenews.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://ecommercenews.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2" style="border-color: var(--sitecolour);">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://itbrief.co.uk">
+											<img src="/brands/itb-uk-new-logo.svg" alt="IT Brief logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Enterprise
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Technology news for CIOs &amp; IT decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://itbrief.co.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://itbrief.co.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://securitybrief.co.uk">
+											<img src="/brands/sb-uk-new-logo.svg" alt="SecurityBrief logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Cybersecurity
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Technology news for CISOs &amp; cybersecurity decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://securitybrief.co.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://securitybrief.co.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="pl-4 border-l-2 border-gray-200">
+									<div class="flex flex-col gap-1" style="width: 210px;">
+										<a href="https://telconews.co.uk">
+											<img src="/brands/tn-uk-new-logo.svg" alt="TelcoNews logo" style="height: 30px; width: 210px;">
+										</a>
+										<div class="text-xl font-bold text-gray-700">
+											Telecommunications
+										</div>
+										<div class="pb-1 text-sm text-gray-600">
+											Telecommunications news for ICT decision-makers
+										</div>
+										<div class="flex gap-3">
+											<a href="https://telconews.co.uk">
+												<div class='btn'>
+													<div class="text-xs">
+														Visit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+											<a href="https://telconews.co.uk/media-kit">
+												<div class='btn'>
+													<div class="text-xs">
+														Media Kit
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-gray-600">
+					TechDay operates in other regions, see our <a href='https://techday.asia' class='font-bold'>Asian</a>, <a href='https://techday.com.au' class='font-bold'>Australian</a>, <a href='https://techdayca.com' class='font-bold'>Canadian</a>, <a href='https://techday.in' class='font-bold'>Indian</a>, <a href='https://techday.co.nz' class='font-bold'>Kiwi</a> & <a href='https://techday.com' class='font-bold'>American</a> sites.
+				</div>
+			</div>
+			<div class="flex flex-col justify-between gap-5 border-l border-t border-gray-200 p-5 lg:p-10 xl:items-center">
+				<div>
+					<h2 class="soft-head p-0">
+						About us
+					</h2>
+					<div class="flex flex-row flex-wrap gap-3 xl:flex-col">
+						<a class='btn' href="/contact-us">
+							<div class="whitespace-nowrap">
+								Contact us
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+						<a class='btn' href="/editorial-feature-list">
+							<div class="whitespace-nowrap">
+								Editorial features
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+						<a class='btn' href="/tag/frequently-asked-questions">
+							<div class="whitespace-nowrap">
+								FAQ
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+						<a class='btn' href="/our-ai-policy">
+							<div class="whitespace-nowrap">
+								Our AI Policy
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+							<a class='btn' href="/media-kit">
+								<div class="whitespace-nowrap">
+									Media kit
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+						<a class='btn' href="/our-team">
+							<div class="whitespace-nowrap">
+								Our team
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+						<a class='btn' href="/our-terms">
+							<div class="whitespace-nowrap">
+								Our terms
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+							</svg>
+						</a>
+							<a class='btn' href="/subscribe">
+								<div class="whitespace-nowrap">
+									Subscribe
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+								</svg>
+							</a>
+					</div>
+				</div>
+				<div class="flex items-center gap-5">
+					<a href="https://www.linkedin.com/company/techday-uk" aria-label="Linkedin" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+					</a>
+					<a href="https://x.com/techday_uk" aria-label="X" target="_blank">
+						<svg version="1.1"
+						xmlns="http://www.w3.org/2000/svg" class="btn-icon" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="currentColor" viewBox="0 0 856 856"
+						style="enable-background:new 0 0 856 856;" xml:space="preserve">
+							<style type="text/css">
+								.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
+								.st1{fill:#FFFFFF;}
+							</style>
+							<path class="st0" d="M756.2,856H99.8C44.7,856,0,811.3,0,756.2V99.8C0,44.7,44.7,0,99.8,0h656.4C811.3,0,856,44.7,856,99.8v656.4
+						C856,811.3,811.3,856,756.2,856z"/>
+							<g transform="translate(52.390088,-25.058597)">
+								<path class="st1" d="M79.1,174.2l230.1,307.6L77.7,731.9h52.1l202.7-219l163.8,219h177.3L430.5,407L646,174.2h-52.1
+							L407.3,375.9L256.4,174.2H79.1z M155.7,212.6h81.5l359.7,481h-81.5L155.7,212.6z"/></g>
+						</svg>
+					</a>
+					<a href="https://www.youtube.com/@techdaynetwork" aria-label="YouTube" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M19,0H5C2.2,0,0,2.2,0,5v14c0,2.8,2.2,5,5,5h14c2.8,0,5-2.2,5-5V5C24,2.2,21.8,0,19,0z M18.8,13.4L8.6,18.7
+							c-0.2,0.1-0.5,0.2-0.7,0.2c-0.3,0-0.6-0.1-0.8-0.2c-0.5-0.3-0.8-0.8-0.8-1.3V6.7c0-0.5,0.3-1.1,0.8-1.3C7.5,5.1,8.1,5,8.6,5.3
+							l10.2,5.3c0.5,0.3,0.8,0.8,0.8,1.4C19.6,12.6,19.3,13.1,18.8,13.4z"/>
+						</svg>
+					</a>
+					<a href="https://itbrief.co.uk/feed" aria-label="RSS feed" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-12.832 20c-1.197 0-2.168-.969-2.168-2.165s.971-2.165 2.168-2.165 2.167.969 2.167 2.165-.97 2.165-2.167 2.165zm5.18 0c-.041-4.029-3.314-7.298-7.348-7.339v-3.207c5.814.041 10.518 4.739 10.561 10.546h-3.213zm5.441 0c-.021-7.063-5.736-12.761-12.789-12.792v-3.208c8.83.031 15.98 7.179 16 16h-3.211z"/></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+		</div>
+		<footer>
+			<div class="p-5 text-center text-sm text-gray-900">
+	© 2026 TechDay, All rights reserved. <span class="hide-section">Hosted on <a class="font-bold hover:opacity-75" href="https://www.planb.co.nz/tech-services/cloud-services/?utm_content=techday&utm_source=techday&utm_medium=techday&utm_campaign=techday">Plan B's Cloud Services</a>. DMARC protection by <a class="hide-section font-bold hover:opacity-75" href="https://powerdmarc.com/?utm_content=techday&utm_source=techday&utm_medium=techday&utm_campaign=techday">PowerDMARC</a>.</span>
+</div>
+		</footer>
+	</body>
+</html>

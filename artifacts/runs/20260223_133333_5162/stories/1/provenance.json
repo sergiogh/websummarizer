@@ -1,0 +1,5 @@
+{
+  "url": "https://www.nature.com/articles/s41534-026-01186-2",
+  "title": "[PAPER] A Variational Qubit-Efficient MaxCut Heuristic Algorithm",
+  "why": "- The Qubit-Efficient MaxCut (QEMC) algorithm enables the MaxCut problem to be solved with only \\(O(\\log N)\\) qubits for a graph of size N, representing an exponential reduction in qubit requirements compared to QAOA.  \n- The QEMC algorithm demonstrated performance on 32-node graph instances using just 5 qubits on real superconducting quantum hardware, and simulations on graphs with up to 2048 nodes using 11 qubits.  \n- The algorithm's innovative encoding scheme provides strong noise resilience and allows for efficient classical simulation.  \n- QEMC establishes a challenging benchmark for QAOA on noisy quantum devices and introduces a novel quantum-inspired approach to combinatorial optimization."
+}

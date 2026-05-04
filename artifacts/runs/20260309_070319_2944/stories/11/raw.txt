@@ -1,0 +1,2019 @@
+<!DOCTYPE html><!-- Last Published: Fri Mar 06 2026 21:32:46 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.quantinuum.com" data-wf-page="66b3ae6a5abaa051398dec66" data-wf-site="669960f53cd73aedb80c8eea" data-wf-intellimize-customer-id="117241034" lang="en" data-wf-collection="66b3ae6a5abaa051398dec48" data-wf-item-slug="skinny-logic-quantum-codes-go-on-a-diet"><head><meta charset="utf-8"/><title>Skinny Logic: Quantum Codes Go on a Diet</title><meta content="Quantinuum hits key milestone on its roadmap: an ultra-efficient method for creating logical qubits, extracting a whopping 48 error-corrected and 64 error-detected logical qubits out of just 98 physical qubits." name="description"/><meta content="Skinny Logic: Quantum Codes Go on a Diet" property="og:title"/><meta content="Quantinuum hits key milestone on its roadmap: an ultra-efficient method for creating logical qubits, extracting a whopping 48 error-corrected and 64 error-detected logical qubits out of just 98 physical qubits." property="og:description"/><meta content="https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/69a8640cc81e30abed7122b6_Computing%20with%20many%20%20encoded%20logical%20qubits%20%20beyond%20break-even.png" property="og:image"/><meta content="Skinny Logic: Quantum Codes Go on a Diet" property="twitter:title"/><meta content="Quantinuum hits key milestone on its roadmap: an ultra-efficient method for creating logical qubits, extracting a whopping 48 error-corrected and 64 error-detected logical qubits out of just 98 physical qubits." property="twitter:description"/><meta content="https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/69a8640cc81e30abed7122b6_Computing%20with%20many%20%20encoded%20logical%20qubits%20%20beyond%20break-even.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/css/dev-quantinuum.shared.ed1743bad.min.css" rel="stylesheet" type="text/css" integrity="sha384-7RdDutgfQr5TGa9Qu/nfu4G7GA4Cj2VzdPnAOXAJ5sD6Tj173JVK5vTAz9+zb0NQ" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Figtree:300,400,500,600,700","Figtree:300,400,500,600,700","Rajdhani:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66a27a37f62ba0a84127843e_quantinuum_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66a27a596b380c7df0f12edf_quantinuum_webclip.png" rel="apple-touch-icon"/><link href="https://www.quantinuum.com/blog/skinny-logic-quantum-codes-go-on-a-diet" rel="canonical"/><style>.anti-flicker, .anti-flicker * {visibility: hidden !important; opacity: 0 !important;}</style><style>[data-wf-hidden-variation], [data-wf-hidden-variation] * {
+        display: none !important;
+      }</style><script type="text/javascript">if (localStorage.getItem('intellimize_data_tracking_type') !== 'disabled') { localStorage.setItem('intellimize_opt_out_117241034', 'true'); } if (localStorage.getItem('intellimize_data_tracking_type') !== 'disabled') { localStorage.setItem('intellimize_data_tracking_type', 'disabled'); }</script><script type="text/javascript">(function(e){var s={r:[]};e.wf={r:s.r,ready:t=>{s.r.push(t)}}})(window)</script><script type="text/javascript">(function(e,t,p){var n=document.documentElement,s={p:[],r:[]},u={p:s.p,r:s.r,push:function(e){s.p.push(e)},ready:function(e){s.r.push(e)}};e.intellimize=u,n.className+=" "+p,setTimeout(function(){n.className=n.className.replace(RegExp(" ?"+p),"")},t)})(window, 4000, 'anti-flicker')</script><link href="https://cdn.intellimize.co/snippet/117241034.js" rel="preload" as="script"/><script type="text/javascript">var wfClientScript=document.createElement("script");wfClientScript.src="https://cdn.intellimize.co/snippet/117241034.js",wfClientScript.async=!0,wfClientScript.onerror=function(){document.documentElement.className=document.documentElement.className.replace(RegExp(" ?anti-flicker"),"")},document.head.appendChild(wfClientScript);</script><link href="https://api.intellimize.co" rel="preconnect" crossorigin="true"/><link href="https://log.intellimize.co" rel="preconnect" crossorigin="true"/><link href="https://117241034.intellimizeio.com" rel="preconnect"/><script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TC79FKM');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- [Attributes by Finsweet] CMS Load -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsload@1/cmsload.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10858832061" type="fs-consent" fs-consent-categories="analytics" fs-consent-scripttype="text/javascript">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10858832061');
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"></script><script src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea%2F6544eda5f000985a163a8687%2F69173c9478e93b32d5468dcf%2Ffinsweetcomponentsconfig-1.0.1.js" type="module" async="" siteId="669960f53cd73aedb80c8eea" finsweet="components"></script><script src="https://api.consentpro.com/v1/cdn/runtime/669960f53cd73aedb80c8eea/8111bd571ded1995.js" type="text/javascript" finsweet="consentpro" async=""></script></head><body data-theme="light"><div class="page_wrap"><div class="page_code_wrap"><div class="page_code_base w-embed"><style>
+/* variables */
+:root {
+	/* grid */
+	--column-count: 12;
+	--grid-main: repeat(var(--column-count), minmax(0, 1fr));
+	--grid-1: repeat(1, minmax(0, 1fr));
+	--grid-2: repeat(2, minmax(0, 1fr));
+	--grid-3: repeat(3, minmax(0, 1fr));
+	--grid-4: repeat(4, minmax(0, 1fr));
+	--grid-5: repeat(5, minmax(0, 1fr));
+	--grid-6: repeat(6, minmax(0, 1fr));
+	--grid-7: repeat(7, minmax(0, 1fr));
+	--grid-8: repeat(8, minmax(0, 1fr));
+	--grid-9: repeat(9, minmax(0, 1fr));
+	--grid-10: repeat(10, minmax(0, 1fr));
+	--grid-11: repeat(11, minmax(0, 1fr));
+	--grid-12: repeat(12, minmax(0, 1fr));
+	--grid-gap-total: calc(var(--grid-gap--main) * (var(--column-count) - 1));
+	--column-width: calc((100% - var(--grid-gap-total)) / var(--column-count) + var(--grid-gap--main));
+	--breakout-gutter: minmax(calc(var(--padding-horizontal--main) - var(--grid-gap--main)), 1fr);
+	--breakout-remaining: calc(var(--max-width--main) - (var(--padding-horizontal--main) * 2));
+	--breakout-start: [full-start] var(--breakout-gutter) [content-start];
+	--breakout-end: [content-end] var(--breakout-gutter) [full-end];
+	--grid-breakout-single: var(--breakout-start) minmax(0, var(--breakout-remaining)) var(--breakout-end);
+	--grid-breakout: var(--breakout-start) repeat(var(--column-count), minmax(0, calc((var(--breakout-remaining) - var(--grid-gap-total)) / var(--column-count)))) var(--breakout-end);
+	/* others */
+	--font-weight--inherit: inherit;
+	--font-weight--100: 100;
+	--font-weight--200: 200;
+	--font-weight--300: 300;
+	--font-weight--400: 400;
+	--font-weight--500: 500;
+	--font-weight--600: 600;
+	--font-weight--700: 700;
+	--font-weight--800: 800;
+	--font-weight--900: 900;
+	--text-transform--none: none;
+	--text-transform--uppercase: uppercase;
+	--text-transform--capitalize: capitalize;
+	--text-transform--lowercase: lowercase;
+	--text-transform--inherit: inherit;
+	--max-width--none: none;
+}
+
+/* default styles */
+body {
+	font-weight: var(--text-main--font-weight);
+	text-transform: var(--text-main--text-transform);
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6, blockquote {
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+}
+h1, h2, h3, h4, h5, h6, p, label, blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+button {
+	background-color: unset;
+	padding: unset;
+	text-align: inherit;
+	cursor: pointer;
+}
+img::selection {
+	background: transparent;
+}
+:is(h1, h2, h3, h4, h5, h6, p) a {
+	text-decoration: underline;
+}
+.u-rich-text > *:first-child {
+	margin-top: 0;
+}
+.u-rich-text > *:last-child {
+	margin-bottom: 0;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+}
+video.wf-empty {
+	padding: 0;
+}
+svg {
+	display: block;
+}
+section, header, footer {
+	position: relative;
+}
+
+/* line clamp */
+.u-line-clamp-1, .u-line-clamp-2, .u-line-clamp-3, .u-line-clamp-4 {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.u-line-clamp-2 { -webkit-line-clamp: 2; }
+.u-line-clamp-3 { -webkit-line-clamp: 3; }
+.u-line-clamp-4 { -webkit-line-clamp: 4; }
+
+/* component attributes */
+
+/* section padding */
+[data-padding-top="none"] { padding-top: var(--padding-vertical--none); }
+[data-padding-bottom="none"] { padding-bottom: var(--padding-vertical--none); }
+
+[data-padding-top="small"] { padding-top: var(--padding-vertical--small); }
+[data-padding-bottom="small"] { padding-bottom: var(--padding-vertical--small); }
+
+[data-padding-top="main"] { padding-top: var(--padding-vertical--main); }
+[data-padding-bottom="main"] { padding-bottom: var(--padding-vertical--main); }
+
+[data-padding-top="large"] { padding-top: var(--padding-vertical--large); }
+[data-padding-bottom="large"] { padding-bottom: var(--padding-vertical--large); }
+
+/* hide section if it has no cms items */
+[data-cms-check="true"]:not(:has(.w-dyn-item)) {
+	display: none;
+}
+
+</style></div><div class="page_code_color w-embed"><style>
+/* theme light */
+:root,
+[data-theme="light"],
+[data-theme="dark"] [data-theme="invert"] {
+	--theme--background: var(--swatch--light);
+	--theme--text: var(--swatch--dark);
+	--theme--border: var(--swatch--light-secondary);
+	/* button primary */
+	--button--background: var(--swatch--dark);
+	--button--text: var(--swatch--light);
+	--button--border: var(--swatch--dark);
+	--button--background-hover: var(--swatch--brand);
+	--button--text-hover: var(--swatch--dark);
+	--button--border-hover: var(--swatch--brand);
+	/* button secondary */
+	--button-secondary--background: var(--swatch--light);
+	--button-secondary--text: var(--swatch--dark);
+	--button-secondary--border: var(--swatch--light-secondary);
+	--button-secondary--background-hover: var(--swatch--brand);
+	--button-secondary--text-hover: var(--swatch--dark);
+	--button-secondary--border-hover: var(--swatch--dark);
+}
+/* theme dark */
+[data-theme="dark"],
+[data-theme="invert"],
+[data-theme="light"] [data-theme="invert"] {
+	--theme--background: var(--swatch--brand);
+	--theme--text: var(--swatch--dark);
+	--theme--border: var(--swatch--dark-secondary);
+	/* button primary */
+	--button--background: var(--swatch--brand);
+	--button--text: var(--swatch--brand-text);
+	--button--border: var(--swatch--brand);
+	--button--background-hover: var(--swatch--light);
+	--button--text-hover: var(--swatch--dark);
+	--button--border-hover: var(--swatch--light);
+	/* button secondary */
+	--button-secondary--background: var(--swatch--dark);
+  --button-secondary--text: var(--swatch--light);
+	--button-secondary--border: var(--swatch--dark-secondary);
+	--button-secondary--background-hover: var(--swatch--light);
+	--button-secondary--text-hover: var(--swatch--brand-text);
+	--button-secondary--border-hover: var(--swatch--brand);
+}
+/* button secondary */
+[data-button-style="secondary"] {
+	--button--background: var(--button-secondary--background);
+	--button--text: var(--swatch-light);
+	--button--border: var(--button-secondary--border);
+	--button--background-hover: var(--button-secondary--background-hover);
+	--button--text-hover: var(--button-secondary--text-hover);
+	--button--border-hover: var(--button-secondary--border-hover);
+}
+
+/* apply colors */
+:is(c, :where([data-theme]:not([data-theme="inherit"]))) {
+	background-color: var(--theme--background);
+	color: var(--theme--text);
+}
+</style></div><div class="page_code_responsive w-embed"><style>
+/* desktop */
+:root {
+		/* custom */
+}
+/* tablet */
+@media screen and (max-width: 991px) {
+	:root {
+		/* custom */
+    /*--padding-horizontal--main: 2rem;*/
+    /* adaptive sizes */
+    /*--size--2rem: 1.75rem;*/
+    /*--size--2-5rem: 2.18rem;*/
+    /*--size--3rem: 2.52rem;*/
+    /*--size--3-5rem: 2.73rem;*/
+    /*--size--4rem: 3rem;*/
+    /*--size--4-5rem: 3.375rem;*/
+    /*--size--5rem: 3.75rem;*/
+    /*--size--5-5rem: 4.125rem;*/
+    /*--size--6rem: 4.5rem;*/
+    /*--size--6-5rem: 4.875rem;*/
+    /*--size--7rem: 5.25rem;*/
+    /*--size--7-5rem: 5.625rem;*/
+    /*--size--8rem: 6rem;*/
+    /*--size--8-5rem: 6.375rem;*/
+    /*--size--9rem: 6.75rem;*/
+    /*--size--9-5rem: 7.125rem;*/
+    /*--size--10rem: 7.5rem;*/
+    /*--size--11rem: 8.25rem;*/
+    /*--size--12rem: 9rem;*/
+    /*--size--13rem: 9.75rem;*/
+    /*--size--14rem: 10.5rem;*/
+    /*--size--15rem: 11.25rem;*/
+    /*--size--16rem: 12rem;*/
+	}
+}
+/* landscape */
+@media screen and (max-width: 767px) {
+	:root {
+/* custom */
+    /*--padding-horizontal--main: 1rem;*/
+    /* adaptive sizes */
+    /*--size--2-5rem: 2rem;*/
+    /*--size--3rem: 2.25rem;*/
+    /*--size--3-5rem: 2.375rem;*/
+    /*--size--4rem: 2.5rem;*/
+    /*--size--4-5rem: 2.75rem;*/
+    /*--size--5rem: 3rem;*/
+    /*--size--5-5rem: 3.25rem;*/
+    /*--size--6rem: 3.5rem;*/
+    /*--size--6-5rem: 3.75rem;*/
+    /*--size--7rem: 4rem;*/
+    /*--size--7-5rem: 4.25rem;*/
+    /*--size--8rem: 4.5rem;*/
+    /*--size--8-5rem: 4.75rem;*/
+    /*--size--9rem: 5rem;*/
+    /*--size--9-5rem: 5.25rem;*/
+    /*--size--10rem: 5.5rem;*/
+    /*--size--11rem: 5.75rem;*/
+    /*--size--12rem: 6rem;*/
+    /*--size--13rem: 6.5rem;*/
+    /*--size--14rem: 7rem;*/
+    /*--size--15rem: 7.5rem;*/
+    /*--size--16rem: 8rem;*/
+	}
+}
+/* portrait */
+@media screen and (max-width: 479px) {
+	:root {
+		/* custom */
+	}
+}
+</style></div><div class="page_code_custom w-embed w-script"><style>
+
+  select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+  }
+  
+  
+
+/* headings */
+
+h1 {
+	font-size: 2.625rem;
+  line-height: 2.875rem;
+}
+
+h1 > strong {
+	font-size: 3.5rem;
+  line-height: 3.8125rem;
+  display: block;
+}
+
+h2 {
+	font-size: 2rem;
+  line-height: 2.5rem
+}
+
+h2 > strong {
+	font-size: 3rem;
+  line-height: 3.25rem;
+  display: block;
+}
+
+h3 > strong {
+	font-size: 3rem;
+}
+
+
+h1 > strong,
+h2 > strong,
+h3 > strong,
+h5 > strong {
+  font-weight: 800;
+  color: #30A08E;
+}
+
+[data-theme="dark"] h1 > strong,
+[data-theme="dark"] h2 > strong,
+[data-theme="dark"] h3 > strong {
+  color: #ffffff;
+}
+
+/* Blog Rich Text */
+.blog_content .w-richtext p {
+	margin-top: 1em;
+ 	margin-bottom: 1em;
+}
+.blog_content .w-richtext h3 {
+	font-size: 1.625rem;
+  color: #2b2b2b;
+  font-weight: 800
+}
+
+.blog_content .w-richtext a, .w-rich-text a {
+	text-decoration: underline;
+  font-weight: 800;
+}
+.blog_content .w-richtext a:hover {
+	background-color:6AD3BE;
+}
+
+.tabs_link_wrap.u-hflex-between-center {
+	overflow-x: scroll;
+}
+
+.l_tabs_link_wrap.u-hflex-between-center {
+	overflow-x: scroll;
+}
+
+.cms_tabs_list{
+	overflow-x: scroll; 
+}	
+
+.disable-scrollbars::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+    
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.w-richtext a:hover {
+	color: #6AD3BE;
+}
+.w-richtext a {
+	 font-weight: 800;
+}
+
+.u-rich-text---iconcard.u-text-centered a:hover {
+	color: #ffffff;
+}
+
+/* about modal */
+
+.w-dyn-item {
+	z-index: 1;
+}
+.w-dyn-item.active {
+	z-index: 2;
+}
+.about_bio_modal_wrap {
+	overflow-y: scroll;
+}
+
+/* Publictions comma 
+.cms_publications_item:after {
+  content: ", ";
+  white-space: pre;
+}
+
+.cms_publications_item:last-child:after {
+ content: " ";
+ white-space: pre;
+}
+ */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h1 > strong {
+    font-size: 2.625rem;
+    line-height: 2.875rem;
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+    line-height: normal;
+  }
+
+  h2 > strong {
+    font-size: 2rem;
+    line-height: normal;
+    display: block;
+  }
+    h2 > span {
+    font-size: 2rem;
+    line-height: normal;
+    display: block;
+  }
+  h3 > strong {
+  	font-size: 1.875rem;
+    line-height: normal;
+    display: block;
+  }
+ /* .g_heading_rich strong {
+  
+   font-size: 1.875rem;
+  } */
+}
+
+/* tabs */
+
+.cms_tabs_item:lang(en) {
+  opacity: .25;
+}
+.cms_tabs_item:lang(en):hover {
+  color: #6AD3BE;
+}
+
+.cms_tabs_item:lang(en).cc-selected {
+  opacity: 1;
+}
+
+
+/* two columns section */
+@media screen and (max-width: 991px) {
+  .tct_sec_wrap .u-rich-text {
+  	font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .standard-tab.w--current > .tab_mobile_icon {
+  	height: 12px;
+    width: 12px;
+  { 
+}
+
+
+</style>
+
+<script> 
+
+        
+document.addEventListener('DOMContentLoaded', function() {
+
+  if (window.innerWidth >= 768) {
+    /* Nav Color Change :hover */
+    const navbar = document.querySelector('.navbar_wrap');
+    const logo = document.querySelector('.quantinuum_logo');
+    const search = document.querySelector('.search-icon');
+    const headerButton = document.querySelector('.uui-navbar01_button-wrapper .btn_main_wrap');
+
+    // Handle the menu item link hover state
+    document.querySelectorAll('.navbar_dropdown-toggle').forEach(function(item) {
+      item.addEventListener('mouseover', function() {
+        navbar.style.backgroundColor = 'black';
+        document.querySelectorAll('.navbar_dropdown-toggle').forEach(function(item2) {
+          item2.style.color = '#cacaca';
+        });
+        logo.style.filter = 'invert(100%)';
+        search.style.filter = 'invert(100%)';
+        headerButton.style.backgroundColor = 'white';
+        headerButton.style.color = 'black';
+      });
+
+      item.addEventListener('mouseout', function() {
+        navbar.style.backgroundColor = 'white';
+        document.querySelectorAll('.navbar_dropdown-toggle').forEach(function(item2) {
+          item2.style.color = '#2b2b2b';
+        });
+        logo.style.filter = 'invert(0%)';
+        search.style.filter = 'invert(0%)';
+        headerButton.style.backgroundColor = 'black';
+        headerButton.style.color = 'white';
+      });
+    });
+
+    // Now we handle the submenu hover state
+    document.querySelectorAll('.navbar_dropdown-list').forEach(function(subnavbar) {
+      subnavbar.addEventListener('mouseover', function() {
+        const menuItemActive = document.querySelector('.navbar_dropdown-toggle[aria-expanded="true"]');
+        navbar.style.backgroundColor = 'black';
+        document.querySelectorAll('.navbar_dropdown-toggle').forEach(function(item2) {
+          item2.style.color = '#cacaca';
+        });
+        menuItemActive.style.color = '#6ad3be';
+        logo.style.filter = 'invert(100%)';
+        search.style.filter = 'invert(100%)';
+        headerButton.style.backgroundColor = 'white';
+        headerButton.style.color = 'black';
+      });
+
+      subnavbar.addEventListener('mouseout', function() {
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.75)';
+        document.querySelectorAll('.navbar_dropdown-toggle').forEach(function(item2) {
+          item2.style.color = '#2b2b2b';
+        });
+        logo.style.filter = 'invert(0%)';
+        search.style.filter = 'invert(0%)';
+        headerButton.style.backgroundColor = 'black';
+        headerButton.style.color = 'white';
+      });
+    });
+    
+    // Correct header button inversion
+    headerButton.addEventListener('mouseover', () => {
+        headerButton.style.backgroundColor = '#6ad3be';
+        headerButton.style.color = 'black';
+    });
+
+    headerButton.addEventListener('mouseout', () => {
+      headerButton.style.backgroundColor = 'black';
+      headerButton.style.color = 'white';
+    });
+  }
+  
+  /* Nav developer tools tab function */
+	const fullUrl = window.location.href;
+  if (fullUrl.includes('/products-solutions/developer-tools')) {
+  	if (fullUrl.includes('#')) {
+      // Now we need to get the hash
+      const hash = window.location.hash;
+      
+      setTimeout(function() {
+      
+        if (hash) {
+          document.querySelectorAll('.tabs_link_wrap a').forEach(function(dtLink) {
+        		const linkToCheck = dtLink.href; // Use the href property instead of getAttribute
+            if (linkToCheck) {
+              if (linkToCheck.includes(hash)) {
+                  dtLink.click();
+                  // document.getElementById('developer-tools-tabs').scrollIntoView({behavior: 'smooth'});
+              		const element = document.getElementById('developer-tools-tabs');
+                  const rect = element.getBoundingClientRect();
+                  const isInView = (
+                      rect.top >= 0 && 
+                      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                  );
+
+                  if (!isInView) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                  }
+              }
+          	}
+    			});
+        }
+      }, 100);
+      
+    }
+  }
+  
+}); // Close out onload.
+
+</script></div></div><div data-w-id="70d8ae68-e5f0-4a42-f995-4ec074673a56" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar_wrap w-nav"><div class="u-display-none w-embed w-script"><!-- [Attributes by Finsweet] Disable scrolling -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+<style> 
+.sales_card:hover .btn_main_wrap {
+    background-color: white; /* Changes the button background to white when the card is hovered */
+}
+
+.sales_card:hover .btn_main_text {
+    color: #2b2b2b; /* Changes the button text color to #2b2b2b when the card is hovered */
+}
+
+.sales_card:hover .btn_main_wrap:hover {
+    background-color: #6ad3be; /* Changes the button background to #6ad3be when button itself is hovered */
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropdownToggles = document.querySelectorAll('.navbar_dropdown-toggle');
+    const dropdownLists = document.querySelectorAll('.navbar_dropdown-list');
+    const navBackgrounds = document.querySelectorAll('.nav_background');
+    let lastScrollTop = 0;
+    let paddingChanged = false;
+    let ticking = false;
+
+    if (dropdownToggles.length && dropdownLists.length && navBackgrounds.length) {
+      function adjustOnScroll() {
+        let currentScroll = window.scrollY;
+
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            // Scrolling down - adjust padding and top position
+            if (currentScroll > lastScrollTop + 10 && !paddingChanged) {
+              dropdownToggles.forEach(toggle => {
+                toggle.style.paddingTop = '1.25em';
+                toggle.style.paddingBottom = '1.25em';
+              });
+              dropdownLists.forEach(list => {
+                list.style.top = '4.25rem';
+              });
+              navBackgrounds.forEach(background => {
+                background.style.top = '4.25rem';
+              });
+              paddingChanged = true;
+            }
+            // Scrolling up or back to the top - reset padding and top position
+            else if (currentScroll < lastScrollTop - 10 && paddingChanged) {
+              dropdownToggles.forEach(toggle => {
+                toggle.style.paddingTop = '1.75em';
+                toggle.style.paddingBottom = '1.75em';
+              });
+              dropdownLists.forEach(list => {
+                list.style.top = '5.25rem';
+              });
+              navBackgrounds.forEach(background => {
+                background.style.top = '5.25rem';
+              });
+              paddingChanged = false;
+            }
+
+            ticking = false;
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+          });
+
+          ticking = true;
+        }
+      }
+
+      window.addEventListener('scroll', adjustOnScroll);
+    }
+  });
+</script></div><div class="navbar_contain"><a href="/" data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a58" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a58" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_logo-link w-nav-brand"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 34" class="quantinuum_logo is-footer"><g id="Logo"><path id="Logo_2" fill-rule="evenodd" clip-rule="evenodd" d="M33.0194 16.517C33.0194 18.577 32.6494 20.577 31.9194 22.467H29.5994C30.1994 9.33699 13.1694 3.59699 5.67935 14.357C4.46935 10.287 5.79935 5.69699 8.91935 2.90699C10.0594 1.86699 11.4194 1.06699 12.8694 0.576987C22.8894 -2.34301 33.1793 6.25699 33.0093 16.527L33.0194 16.517ZM33.0192 24.357V33.057H16.4792C16.2692 33.057 16.0792 33.057 15.8892 33.037C11.5992 32.887 7.58916 31.097 4.59916 28.007C-1.89084 21.717 -1.38084 10.097 5.29916 4.33704C2.95916 8.06704 2.70916 12.987 4.64916 16.927C6.79916 21.397 11.4692 24.357 16.4792 24.347H33.0192V24.357ZM117.449 14.037H112.479V12.077H124.379V14.037H119.409V22.537H117.449V14.037ZM98.6395 12.087L106.849 20.167H106.859V12.087H108.819V22.547H106.269L98.3495 14.517V22.547H96.3895V12.087H98.6395ZM79.3995 22.547L84.7395 12.087H87.3695L92.7095 22.547H90.5095L89.7195 20.977H82.3795L81.5894 22.547H79.3995ZM86.0594 13.807L83.3895 19.017H88.7295L86.0594 13.807ZM61.8095 20.977H59.6595V20.947L59.7895 20.697C60.2995 19.687 60.4295 18.547 60.1495 17.417C59.7095 15.637 58.2895 14.247 56.5295 13.867C56.1595 13.797 55.8095 13.757 55.4595 13.757C53.8595 13.757 52.3695 14.557 51.4695 15.887C50.5395 17.247 50.3895 18.937 51.0295 20.527C51.7195 22.247 53.4895 23.407 55.4395 23.407H62.2395V25.367H62.0695H55.6395H55.3395C51.6695 25.297 48.6895 22.267 48.6895 18.597C48.6895 16.777 49.3895 15.077 50.6695 13.797C51.9495 12.517 53.6495 11.817 55.4595 11.817C55.8795 11.817 56.2895 11.857 56.6895 11.927C59.0595 12.347 61.0895 14.097 61.8695 16.397C62.3895 17.897 62.3795 19.397 61.8495 20.857L61.8095 20.977ZM71.5095 20.827C73.5395 20.827 75.1895 19.177 75.1895 17.147H75.1694V12.087H77.1295V17.147C77.1295 20.257 74.5995 22.787 71.4995 22.787C68.3995 22.787 65.8695 20.257 65.8695 17.147V12.087H67.8295V17.147C67.8295 19.177 69.4795 20.827 71.5095 20.827ZM191.599 21.027L196.509 12.087H199.529V22.547H197.569V14.227L192.999 22.547H190.199L185.569 14.187V22.547H183.609V12.087H186.639L191.599 21.027ZM173.699 20.827C175.729 20.827 177.379 19.177 177.379 17.147H177.369V12.087H179.329V17.147C179.329 20.257 176.809 22.787 173.699 22.787C170.589 22.787 168.059 20.257 168.059 17.147V12.087H170.019V17.147C170.019 19.177 171.669 20.827 173.699 20.827ZM137.999 12.087L146.209 20.167H146.219V12.087H148.179V22.547H145.629L137.709 14.517V22.547H135.749V12.087H137.999ZM158.179 20.827C160.209 20.827 161.859 19.177 161.859 17.147H161.849V12.087H163.809V17.147C163.809 20.257 161.269 22.787 158.169 22.787C155.069 22.787 152.539 20.257 152.539 17.147V12.087H154.499V17.147C154.499 19.177 156.149 20.827 158.179 20.827ZM130.559 22.537H128.599V12.077H130.559V22.537Z" fill="currentColor"></path></g></svg></a><nav role="navigation" class="navbar_menu hide_mobile_landscape w-nav-menu"><div class="background_wrap"><div class="nav_background is--products"></div><div class="nav_background is--research"></div><div class="nav_background is--compnay"></div><div class="nav_background is--news"></div></div><div class="navbar_menu-left"><div data-hover="true" data-delay="0" data-w-id="70d8ae68-e5f0-4a42-f995-4ec074673a5c" class="navbar_menu-dropdown hide-mobile-landscape w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a5d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a5d" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle is--products w-dropdown-toggle"><div class="link_text">Products &amp; Solutions</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left"><div class="navbar_dropdown-link-list"><h4 class="uui-navbar01_heading">Quantum Computers</h4><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a67" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a67" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Quantinuum Systems</div><div class="uui-text-size-small hide-mobile-landscape">Discover the world’s highest performing quantum computers </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a6d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a6d" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems/system-model-h1" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">System Model H1</div><div class="uui-text-size-small hide-mobile-landscape">Our first-generation quantum computer with a linear architecture  </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a73" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a73" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems/system-model-h2" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">System Model H2</div><div class="uui-text-size-small hide-mobile-landscape">Our second-generation quantum computer with a racetrack architecture  </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a79" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a79" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems/helios" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Helios</div><div class="uui-text-size-small hide-mobile-landscape">Our Hardware-as-a-Service provides access on-premise, in the cloud, or both</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:f67d6e6c-1801-a3b3-273d-90248eda4879" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="f67d6e6c-1801-a3b3-273d-90248eda4879" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/blog/technical-perspective-by-the-end-of-the-decade-we-will-deliver-universal-fault-tolerant-quantum-computing" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Hardware Roadmap</div><div class="uui-text-size-small hide-mobile-landscape">Explore our accelerated roadmap aimed at advancing commercial quantum computing</div></div></a></div><div class="navbar_dropdown-link-list"><h4 class="uui-navbar01_heading">SOlutions</h4><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a82" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a82" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantum-origin" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Quantum Origin</div><div class="uui-text-size-small hide-mobile-landscape">Our advanced quantum random number generator (QRNG), designed to strengthen encryption and protect data </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a88" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a88" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/inquanto" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">InQuanto</div><div class="uui-text-size-small hide-mobile-landscape">Accelerate quantum computational chemistry for complex molecular &amp; materials simulations </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:2ddb4cbb-8cea-fc5b-3142-8de8a5c49c40" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="2ddb4cbb-8cea-fc5b-3142-8de8a5c49c40" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/nexus" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Nexus</div><div class="uui-text-size-small hide-mobile-landscape">All-in-one quantum computing platform for accessing and managing the highest performance full-stack</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:8f575719-c1af-88ff-9dab-65f86e90efcc" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="8f575719-c1af-88ff-9dab-65f86e90efcc" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="https://www.quantinuum.com/products-solutions/hardware-h-series#access" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Cloud Access</div><div class="uui-text-size-small hide-mobile-landscape">Explore using our world-leading quantum hardware for commercial applications</div></div></a></div><div class="navbar_dropdown-link-list"><h4 class="uui-navbar01_heading">Developer Tools</h4><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a91" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a91" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/developer-tools#tket" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">TKET</div><div class="uui-text-size-small hide-mobile-landscape">Develop and execute gate-level quantum computation</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:27218a98-91bc-78a9-c6f0-5637a12160df" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="27218a98-91bc-78a9-c6f0-5637a12160df" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/developer-tools#guppy" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Guppy</div><div class="uui-text-size-small hide-mobile-landscape">Program the next generation of quantum computers with our purpose-built language hosted in Python</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673a9d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673a9d" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/developer-tools#lambeq" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="uui-navbar01_text-wrapper"><div class="navbar_item-heading margin-bottom-0">Lambeq</div></div><div class="uui-text-size-small hide-mobile-landscape">Experiment with the structural relationships between quantum theory and natural languages</div></div></a></div></div></div></div></nav></div><div data-hover="true" data-delay="0" data-w-id="70d8ae68-e5f0-4a42-f995-4ec074673aa4" class="navbar_menu-dropdown hide-mobile-landscape w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673aa5" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673aa5" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle is--research w-dropdown-toggle"><div class="link_text">Research</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list g-grid-column-2"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673aad" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673aad" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/research/research-areas" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Research Areas</div><div class="uui-text-size-small hide-mobile-landscape">Discover the vast landscape of our scientific expertise</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:72e948b3-f6d9-8464-8edc-56eb42753c49" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="72e948b3-f6d9-8464-8edc-56eb42753c49" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/research/research-areas#technical-blog" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Technical Blog</div><div class="uui-text-size-small hide-mobile-landscape">Get educated on the world of quantum computing</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673ab3" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673ab3" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/research/research-areas#publications" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Publications</div><div class="uui-text-size-small hide-mobile-landscape">Explore research and journal publications from our scientific teams</div></div></a></div></div></div></div></nav></div><div data-hover="true" data-delay="0" data-w-id="70d8ae68-e5f0-4a42-f995-4ec074673ab9" class="navbar_menu-dropdown hide-mobile-landscape w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673aba" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673aba" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle is--company w-dropdown-toggle"><div class="link_text">Company</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673ac2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673ac2" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/company/about" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">About Quantinuum</div><div class="uui-text-size-small hide-mobile-landscape">Learn more about the world’s largest integrated quantum computing company </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673ac8" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673ac8" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/company/careers" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Careers</div><div class="uui-text-size-small hide-mobile-landscape">Join us in the center of gravity for quantum computing </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673ace" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673ace" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/contact" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Contact Us</div><div class="uui-text-size-small hide-mobile-landscape">Get in touch with our team  </div></div></a></div></div></div></div></nav></div><div data-hover="true" data-delay="0" data-w-id="70d8ae68-e5f0-4a42-f995-4ec074673ad4" class="navbar_menu-dropdown hide-mobile-landscape w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673ad5" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673ad5" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle is--news w-dropdown-toggle"><div class="link_text">News</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673add" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673add" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/news/news#press-release" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Press Releases</div><div class="uui-text-size-small hide-mobile-landscape">See how Quantinuum is pushing the boundaries in the world of quantum </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673ae3" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="70d8ae68-e5f0-4a42-f995-4ec074673ae3" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/news/blog" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Blog</div><div class="uui-text-size-small hide-mobile-landscape">Taking steps forward across the quantum computing landscape </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:5a9ea34a-74a1-6bd0-eba1-8bccadf24fc0" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="5a9ea34a-74a1-6bd0-eba1-8bccadf24fc0" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/glossary" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Glossary</div><div class="uui-text-size-small hide-mobile-landscape">Better understand quantum computing with these terms and definitions</div></div></a></div></div></div></div></nav></div><div data-hover="true" data-delay="0" data-w-id="9f82262a-f441-fa68-7ba7-c77010d7d026" class="navbar_menu-dropdown hide-mobile-landscape w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:9f82262a-f441-fa68-7ba7-c77010d7d027" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="9f82262a-f441-fa68-7ba7-c77010d7d027" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle is--community w-dropdown-toggle"><div class="link_text">Community</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:9f82262a-f441-fa68-7ba7-c77010d7d02f" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="9f82262a-f441-fa68-7ba7-c77010d7d02f" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/q-net" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Q-Net</div><div class="uui-text-size-small hide-mobile-landscape">Join our user community aimed at shared learning, support and collaboration for our full-stack technologies</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:2b8eec1a-e8f6-fde5-4edb-098c818ec1ae" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="2b8eec1a-e8f6-fde5-4edb-098c818ec1ae" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/news/events" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Events</div><div class="uui-text-size-small hide-mobile-landscape">Find out where we’ll be next  </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:9f82262a-f441-fa68-7ba7-c77010d7d035" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="9f82262a-f441-fa68-7ba7-c77010d7d035" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/startup-partner-program" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Startup Partner Program</div><div class="uui-text-size-small hide-mobile-landscape">Pioneering startups connect with us to accelerate ecosystem innovation and access our world-leading technologies</div></div></a></div></div></div></div></nav></div></div><div class="navbar_menu-right"><div class="search-icon-wrap is--desktop"><div data-w-id="017e9514-9fc4-7e5b-7a78-b9d890d6e231" class="search-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.9998 18.3773L16.2193 13.0691C18.2802 9.6396 17.7224 5.12399 14.6525 2.30439C12.943 0.734713 10.7209 -0.0808697 8.39099 0.00633443C6.06279 0.0940976 3.90831 1.0757 2.32459 2.76948C0.740874 4.46381 -0.0825679 6.66739 0.00654428 8.97551C0.0950925 11.2831 1.08548 13.4185 2.7944 14.9881C4.41985 16.4812 6.51117 17.2923 8.71529 17.2923C8.82865 17.2923 8.94202 17.2901 9.05538 17.2856C10.7773 17.2208 12.4033 16.6668 13.7744 15.6981L19.5475 21.0002L21.9998 18.3773ZM8.91777 13.7108C7.55232 13.7617 6.24948 13.2837 5.24724 12.3636C4.24558 11.4435 3.66466 10.1919 3.61277 8.83855C3.56088 7.48521 4.04367 6.19392 4.97201 5.20057C5.90036 4.20723 7.16316 3.63202 8.5286 3.58059C8.59516 3.57835 8.66171 3.57668 8.72826 3.57668C10.0204 3.57668 11.246 4.05239 12.1991 4.92722C14.2673 6.82671 14.3908 10.0398 12.4744 12.0897C11.546 13.0825 10.2832 13.6583 8.91777 13.7097V13.7108Z" fill="currentColor"/>
+</svg></div><div data-w-id="68fb2a8c-a4fc-d0e8-dba5-03691663d296" class="close-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 17.4098L12.5902 10L20 2.5902L17.4098 0L10 7.4098L2.5902 0L0 2.5902L7.4098 10L0 17.4098L2.5902 20L10 12.5902L17.4098 20L20 17.4098Z" fill="currentColor"/>
+</svg></div></div><div class="uui-navbar01_button-wrapper"><div data-button-style="Primary" class="btn_main_wrap"><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div class="btn_main_text">Let&#x27;s Talk</div></div><div class="g_clickable_wrap u-cover-absolute"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673afb:0254e612-9509-0757-3332-f6be61ca688a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0254e612-9509-0757-3332-f6be61ca688a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%2C%7B%22componentId%22%3A%220254e612-9509-0757-3332-f6be61ca6889%22%2C%22instanceId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673afb%22%7D%5D" href="/contact" class="g_clickable_link u-cover-absolute w-inline-block"><span class="g_clickable_text u-sr-only">Button Text</span></a></div></div><div data-button-style="Primary" class="btn_main_wrap is-mobile"><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div class="btn_main_text">lets talk</div></div><div class="g_clickable_wrap u-cover-absolute"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:70d8ae68-e5f0-4a42-f995-4ec074673b01:0254e612-9509-0757-3332-f6be61ca688a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0254e612-9509-0757-3332-f6be61ca688a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%2C%7B%22componentId%22%3A%220254e612-9509-0757-3332-f6be61ca6889%22%2C%22instanceId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673b01%22%7D%5D" href="/contact" class="g_clickable_link u-cover-absolute w-inline-block"><span class="g_clickable_text u-sr-only">Get Access</span></a></div></div></div></div></nav><nav role="navigation" class="navbar_menu hide_desktop w-nav-menu"><div fs-scrolldisable-element="preserve" class="navbar_menu-left"><div data-hover="false" data-delay="300" data-w-id="e3a50de6-7a92-eae9-e3df-d1930cc41eca" class="navbar_menu-dropdown w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e3a50de6-7a92-eae9-e3df-d1930cc41ecb" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e3a50de6-7a92-eae9-e3df-d1930cc41ecb" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle w-dropdown-toggle"><div class="dropdown-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="link_text">Products &amp; Solutions</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content-left"><div class="navbar_dropdown-link-list"><h4 class="uui-navbar01_heading">Quantum Computers</h4><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb141" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb141" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Quantinuum Systems</div><div class="uui-text-size-small hide-mobile-landscape">Discover the world’s highest performing quantum computers </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb147" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb147" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems/system-model-h1" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">System Model H1</div><div class="uui-text-size-small hide-mobile-landscape">Our first-generation quantum computer with a linear architecture  </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb14d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb14d" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems/system-model-h2" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">System Model H2</div><div class="uui-text-size-small hide-mobile-landscape">Our latest-generation quantum computer with a racetrack architecture  </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb153" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb153" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantinuum-systems/helios" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Helios</div><div class="uui-text-size-small hide-mobile-landscape">Our Hardware-as-a-Service provides access on-premise, in the cloud, or both</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb159" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb159" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/blog/quantinuum-accelerates-the-path-to-universal-fault-tolerant-quantum-computing-supports-microsofts-ai-and-quantum-powered-compute-platform-and-the-path-to-a-quantum-supercomputer" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Hardware Roadmap</div><div class="uui-text-size-small hide-mobile-landscape">Explore our accelerated roadmap aimed at advancing commercial quantum computing</div></div></a></div><div class="navbar_dropdown-link-list"><h4 class="uui-navbar01_heading">SOlutions</h4><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb162" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb162" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/quantum-origin" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Quantum Origin</div><div class="uui-text-size-small hide-mobile-landscape">Our advanced quantum random number generator (QRNG), designed to strengthen encryption and protect data </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb168" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb168" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/inquanto" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">InQuanto</div><div class="uui-text-size-small hide-mobile-landscape">Accelerate quantum computational chemistry and for complex molecular &amp; materials simulations </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb16e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb16e" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/nexus" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Nexus (Beta)</div><div class="uui-text-size-small hide-mobile-landscape">All-in-one quantum computing platform for accessing and managing the highest performance full-stack</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb174" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb174" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="https://www.quantinuum.com/products-solutions/hardware-h-series#access" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Cloud Access</div><div class="uui-text-size-small hide-mobile-landscape">Explore using our world-leading quantum hardware for commercial applications</div></div></a></div><div class="navbar_dropdown-link-list"><h4 class="uui-navbar01_heading">Developer Tools</h4><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb17d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb17d" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/developer-tools#tket" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">TKET</div><div class="uui-text-size-small hide-mobile-landscape">Develop and execute gate-level quantum computation</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb183" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb183" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/developer-tools#lambeq" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="uui-navbar01_text-wrapper"><div class="navbar_item-heading margin-bottom-0">Lambeq</div></div><div class="uui-text-size-small hide-mobile-landscape">Experiment with the structural relationships between quantum theory and natural languages</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:19b6dd59-bb45-3bbe-750b-4407cb1eb18a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="19b6dd59-bb45-3bbe-750b-4407cb1eb18a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/products-solutions/developer-tools#qermit" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Qermit</div><div class="uui-text-size-small hide-mobile-landscape">Run error-mitigation protocols on quantum processors</div></div></a></div></div></div></nav></div><div data-hover="false" data-delay="300" data-w-id="e3a50de6-7a92-eae9-e3df-d1930cc41f12" class="navbar_menu-dropdown w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e3a50de6-7a92-eae9-e3df-d1930cc41f13" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e3a50de6-7a92-eae9-e3df-d1930cc41f13" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle w-dropdown-toggle"><div class="dropdown-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="link_text">Research</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list g-grid-column-2"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:0278b28c-f51e-3e4b-8f11-536e60191138" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0278b28c-f51e-3e4b-8f11-536e60191138" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/research/research-areas" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Research Areas</div><div class="uui-text-size-small hide-mobile-landscape">Discover the vast landscape of our scientific expertise</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:d34c48d6-96c5-4196-67ce-9a8b6e3f83a0" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d34c48d6-96c5-4196-67ce-9a8b6e3f83a0" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/research/research-areas#technical-blog" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Technical Blog</div><div class="uui-text-size-small hide-mobile-landscape">Get educated on the world of quantum computing</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:0278b28c-f51e-3e4b-8f11-536e6019113e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0278b28c-f51e-3e4b-8f11-536e6019113e" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/research/research-areas#publications" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Publications</div><div class="uui-text-size-small hide-mobile-landscape">Explore research and journal publications from our scientific teams</div></div></a></div></div></div></div></nav></div><div data-hover="false" data-delay="300" data-w-id="e3a50de6-7a92-eae9-e3df-d1930cc41f27" class="navbar_menu-dropdown w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e3a50de6-7a92-eae9-e3df-d1930cc41f28" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e3a50de6-7a92-eae9-e3df-d1930cc41f28" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle-mobile w-dropdown-toggle"><div class="dropdown-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="link_text">Company</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e4ef294a-841b-c654-10a8-677c78bbba8a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e4ef294a-841b-c654-10a8-677c78bbba8a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/company/about" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">About Quantinuum</div><div class="uui-text-size-small hide-mobile-landscape">Learn more about the world’s largest integrated quantum computing company </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e4ef294a-841b-c654-10a8-677c78bbba90" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e4ef294a-841b-c654-10a8-677c78bbba90" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/company/careers" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Careers</div><div class="uui-text-size-small hide-mobile-landscape">Join us in the center of gravity for quantum computing </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e4ef294a-841b-c654-10a8-677c78bbba96" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e4ef294a-841b-c654-10a8-677c78bbba96" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/contact" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Contact Us</div><div class="uui-text-size-small hide-mobile-landscape">Get in touch with our team  </div></div></a></div></div></div></div></nav></div><div data-hover="false" data-delay="300" data-w-id="e3a50de6-7a92-eae9-e3df-d1930cc41f42" class="navbar_menu-dropdown w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e3a50de6-7a92-eae9-e3df-d1930cc41f43" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="e3a50de6-7a92-eae9-e3df-d1930cc41f43" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle w-dropdown-toggle"><div class="dropdown-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="link_text">News</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:885cbcf3-16b0-e242-74a5-60ffb5689b11" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="885cbcf3-16b0-e242-74a5-60ffb5689b11" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/news/news#press-release" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Press Releases</div><div class="uui-text-size-small hide-mobile-landscape">See how Quantinuum is pushing the boundaries in the world of quantum </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:885cbcf3-16b0-e242-74a5-60ffb5689b17" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="885cbcf3-16b0-e242-74a5-60ffb5689b17" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/news/blog" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Blog</div><div class="uui-text-size-small hide-mobile-landscape">Taking steps forward across the quantum computing landscape </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:885cbcf3-16b0-e242-74a5-60ffb5689b23" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="885cbcf3-16b0-e242-74a5-60ffb5689b23" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/news/events" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Events</div><div class="uui-text-size-small hide-mobile-landscape">Find out where we’ll be next  </div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:f9c935ea-7b30-0aeb-f396-73d5dd5f768c" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="f9c935ea-7b30-0aeb-f396-73d5dd5f768c" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/glossary" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Glossary</div><div class="uui-text-size-small hide-mobile-landscape">Better understand quantum computing with these terms and definitions</div></div></a></div></div></div></div></nav></div><div data-hover="true" data-delay="0" class="navbar_menu-dropdown w-dropdown"><div data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:7d85cfe9-7bbf-28e1-e472-e1f05c0b185a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="7d85cfe9-7bbf-28e1-e472-e1f05c0b185a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" class="navbar_dropdown-toggle is--community w-dropdown-toggle"><div class="dropdown-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="link_text">Community</div></div><nav class="navbar_dropdown-list w-dropdown-list"><div class="navbar_contain"><div class="navbar_dropdown-content"><div class="navbar_dropdown-content-left is-single"><div class="navbar_dropdown-link-list"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:7d85cfe9-7bbf-28e1-e472-e1f05c0b1862" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="7d85cfe9-7bbf-28e1-e472-e1f05c0b1862" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/q-net" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Q-Net</div><div class="uui-text-size-small hide-mobile-landscape">Join our user community aimed at shared learning, support and collaboration for our full-stack technologies</div></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:7d85cfe9-7bbf-28e1-e472-e1f05c0b1868" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="7d85cfe9-7bbf-28e1-e472-e1f05c0b1868" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%5D" href="/startup-partner-program" class="navbar_dropdown-link w-inline-block"><div class="navbar_item-right"><div class="navbar_item-heading">Startup Partner Program</div><div class="uui-text-size-small hide-mobile-landscape">Pioneering startups connect with us to accelerate ecosystem innovation and access our world-leading technologies</div></div></a></div></div></div></div></nav></div></div><div class="navbar_menu-right"><div class="uui-navbar01_button-wrapper"><div data-button-style="Primary" class="btn_main_wrap is--desktop"><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div class="btn_main_text">Get Access</div></div><div class="g_clickable_wrap u-cover-absolute"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e3a50de6-7a92-eae9-e3df-d1930cc41f69:0254e612-9509-0757-3332-f6be61ca688a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0254e612-9509-0757-3332-f6be61ca688a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%2C%7B%22componentId%22%3A%220254e612-9509-0757-3332-f6be61ca6889%22%2C%22instanceId%22%3A%22e3a50de6-7a92-eae9-e3df-d1930cc41f69%22%7D%5D" href="#" class="g_clickable_link u-cover-absolute w-inline-block"><span class="g_clickable_text u-sr-only">Get Access</span></a></div></div><div data-button-style="Primary" class="btn_main_wrap is-mobile"><div aria-hidden="true" class="btn_main_layout u-gap-xsmall u-hflex-center-center"><div class="btn_main_text">Let&#x27;s Talk</div></div><div class="g_clickable_wrap u-cover-absolute"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f354187:e3a50de6-7a92-eae9-e3df-d1930cc41f6f:0254e612-9509-0757-3332-f6be61ca688a" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0254e612-9509-0757-3332-f6be61ca688a" data-wf-component-context="%5B%7B%22componentId%22%3A%2270d8ae68-e5f0-4a42-f995-4ec074673a56%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f354187%22%7D%2C%7B%22componentId%22%3A%220254e612-9509-0757-3332-f6be61ca6889%22%2C%22instanceId%22%3A%22e3a50de6-7a92-eae9-e3df-d1930cc41f6f%22%7D%5D" href="/contact" class="g_clickable_link u-cover-absolute w-inline-block"><span class="g_clickable_text u-sr-only">Get Access</span></a></div></div></div></div></nav><div class="mobilebuttons-wrap"><div class="search-icon-wrap"><div data-w-id="507211ee-eeda-ff63-d312-1572316d237d" class="search-icon w-embed"><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.9998 18.3773L16.2193 13.0691C18.2802 9.6396 17.7224 5.12399 14.6525 2.30439C12.943 0.734713 10.7209 -0.0808697 8.39099 0.00633443C6.06279 0.0940976 3.90831 1.0757 2.32459 2.76948C0.740874 4.46381 -0.0825679 6.66739 0.00654428 8.97551C0.0950925 11.2831 1.08548 13.4185 2.7944 14.9881C4.41985 16.4812 6.51117 17.2923 8.71529 17.2923C8.82865 17.2923 8.94202 17.2901 9.05538 17.2856C10.7773 17.2208 12.4033 16.6668 13.7744 15.6981L19.5475 21.0002L21.9998 18.3773ZM8.91777 13.7108C7.55232 13.7617 6.24948 13.2837 5.24724 12.3636C4.24558 11.4435 3.66466 10.1919 3.61277 8.83855C3.56088 7.48521 4.04367 6.19392 4.97201 5.20057C5.90036 4.20723 7.16316 3.63202 8.5286 3.58059C8.59516 3.57835 8.66171 3.57668 8.72826 3.57668C10.0204 3.57668 11.246 4.05239 12.1991 4.92722C14.2673 6.82671 14.3908 10.0398 12.4744 12.0897C11.546 13.0825 10.2832 13.6583 8.91777 13.7097V13.7108Z" fill="currentColor"/>
+</svg></div><div data-w-id="507211ee-eeda-ff63-d312-1572316d237e" class="close-icon w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 17.4098L12.5902 10L20 2.5902L17.4098 0L10 7.4098L2.5902 0L0 2.5902L7.4098 10L0 17.4098L2.5902 20L10 12.5902L17.4098 20L20 17.4098Z" fill="currentColor"/>
+</svg></div></div><div class="uui-navbar01_menu-button w-nav-button"><div class="menu-icon_component"><div class="menu-icon_line-top"></div><div class="menu-icon_line-middle"><div class="menu-icon_line-middle-inner"></div></div><div class="menu-icon_line-bottom"></div></div></div></div></div><div data-w-id="d7065a45-0fb7-7ed2-a98b-34287531f2e8" class="searchbar_wrap"><div data-w-id="43591a52-6350-e6b3-0236-3da2e5befaa0" class="searchbar_contain u-container"><div class="searchbar_layout"><form action="/search" class="search-2 w-form"><input class="form_main_search w-input" maxlength="256" name="query" placeholder="Search…" data-w-id="cb309a15-fc26-1322-3c00-962dce6db6bb" type="search" id="search" required=""/><input type="submit" data-w-id="cb309a15-fc26-1322-3c00-962dce6db6bc" class="btn_main_wrap--search w-button" value="Search"/></form></div></div></div></div><section data-theme="inherit" data-wf--section-hero-blog--variant="bottom-padding-small" class="hero_main_wrap---blog w-variant-23cad9f0-81f8-4a44-a3ac-69bb92c64a53"><div class="hero_bck_image"><img sizes="(max-width: 1440px) 100vw, 1440px" srcset="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66bcd899a2bb5ee7f01887be_hero_events_background-p-500.png 500w, https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66bcd899a2bb5ee7f01887be_hero_events_background-p-800.png 800w, https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66bcd899a2bb5ee7f01887be_hero_events_background-p-1080.png 1080w, https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66bcd899a2bb5ee7f01887be_hero_events_background.png 1440w" alt="" loading="lazy" src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66bcd899a2bb5ee7f01887be_hero_events_background.png" class="hero_image"/><img sizes="(max-width: 780px) 100vw, 780px" srcset="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66cc8388f3049d0c9234d990_hero_mobile_event-p-500.png 500w, https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66cc8388f3049d0c9234d990_hero_mobile_event.png 780w" alt="" loading="lazy" src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/66cc8388f3049d0c9234d990_hero_mobile_event.png" class="hero_image_mobile"/></div><div data-padding-bottom="main" data-padding-top="main" class="hero_main_container---blog u-container w-variant-23cad9f0-81f8-4a44-a3ac-69bb92c64a53"><div class="blog_maincontent_layout"><div class="hero_main_layout"><div class="hero_layout u-grid-desktop"><div class="u-column-12"><div class="hero_content u-vflex-left-top u-gap-medium"><div class="hero_title u-text-h4"><div class="w-richtext"><h1><strong>Skinny Logic: Quantum Codes Go on a Diet </strong></h1></div></div><div class="hero_subtitle u-text-h4"><div class="w-richtext"></div></div></div></div></div></div></div></div></section><section data-theme="inherit" class="blog_maincontent_wrap"><div data-padding-bottom="main" data-padding-top="main" class="blog_maincontent_contain u-container"><div class="blog_maincontent_layout"><div class="blog_date_wrap"><div class="blog_date_text">March 4, 2026</div></div><div class="social_share-wrap"><a fs-socialshare-element="LinkedIn" data-wf-native-id-path="06debb4f-8931-b10e-6a9c-6221c6c4538b:06debb4f-8931-b10e-6a9c-6221c6c4538d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="06debb4f-8931-b10e-6a9c-6221c6c4538d" data-wf-component-context="%5B%7B%22componentId%22%3A%2206debb4f-8931-b10e-6a9c-6221c6c4538c%22%2C%22instanceId%22%3A%2206debb4f-8931-b10e-6a9c-6221c6c4538b%22%7D%5D" href="#" class="social_link-wrap w-inline-block"><div class="icon-embed-small w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" fill="currentColor"></path></svg></div></a><a fs-socialshare-element="Twitter" data-wf-native-id-path="06debb4f-8931-b10e-6a9c-6221c6c4538b:06debb4f-8931-b10e-6a9c-6221c6c45391" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="06debb4f-8931-b10e-6a9c-6221c6c45391" data-wf-component-context="%5B%7B%22componentId%22%3A%2206debb4f-8931-b10e-6a9c-6221c6c4538c%22%2C%22instanceId%22%3A%2206debb4f-8931-b10e-6a9c-6221c6c4538b%22%7D%5D" href="#" class="social_link-wrap is-x w-inline-block"><div class="icon-embed-small is-x w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+     aria-hidden="true"
+     role="img"
+     width="100%"
+     height="100%"
+     preserveAspectRatio="xMidYMid meet"
+     viewBox="0 0 44 40">
+  <path d="M34.6526 0H41.3995L26.6594 16.847L44 39.7719H30.4225L19.7881 25.8681L7.61989 39.7719H0.868864L16.6349 21.7522L0 0H13.9222L23.5348 12.7087L34.6526 0ZM32.2846 35.7336H36.0232L11.8908 3.82626H7.87892L32.2846 35.7336Z"
+        fill="currentColor"/>
+</svg></div></a><a fs-socialshare-element="Facebook" data-wf-native-id-path="06debb4f-8931-b10e-6a9c-6221c6c4538b:06debb4f-8931-b10e-6a9c-6221c6c4538f" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="06debb4f-8931-b10e-6a9c-6221c6c4538f" data-wf-component-context="%5B%7B%22componentId%22%3A%2206debb4f-8931-b10e-6a9c-6221c6c4538c%22%2C%22instanceId%22%3A%2206debb4f-8931-b10e-6a9c-6221c6c4538b%22%7D%5D" href="#" class="social_link-wrap w-inline-block"><div class="icon-embed-small w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592c.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" fill="currentColor"></path></svg></div></a></div><div class="blog_content"><div class="pdf_wrap w-condition-invisible"><div class="pdf_embed-wrap"><div target="_blank" class="u-rich-text w-dyn-bind-empty w-richtext"></div></div><div class="pdf_link-mobile"><a data-w-id="59ef9a1a-4355-fae4-79a4-4f331479867f" data-wf-native-id-path="59ef9a1a-4355-fae4-79a4-4f331479867f" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="59ef9a1a-4355-fae4-79a4-4f331479867f" href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/675865d831ebd66b76bb40a5_Advancements%20in%20Logical%20Quantum%20Computation%20-%20Demonstrations%20and%20Results.pdf" target="_blank" class="textlink underline-trail w-inline-block"><div class="textlink_contain"><div class="text">View the presentation</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 10 10" fill="none" class="textlink_arrow"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" fill="currentColor"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a></div></div><div target="_blank" class="u-rich-text w-richtext"><p><em>In our latest paper, we’ve taken a big step toward large scale fault-tolerant quantum computing, squeezing up to 94 error-detected qubits (and 48 error-corrected qubits) out of just 98 physical qubits, a low-fat encoding that cuts overhead to the bone. With 64 of our logical qubits, we were able to simulate quantum magnetism at a scale that can be exceedingly difficult for classical computers.</em><br/></p><p>The &quot;holy grail&quot; of quantum computing is universal fault-tolerance: the ability to correct errors faster than they occur during any computation. To realize this, we aim to create “logical qubits,” which are groups of entangled physical qubits that share quantum information in a way that protects it. Better protection leads to lower “logical” error rate and greater ability to solve complex problems. </p><p>However, it’s never that easy. An unofficial law of physics is “there’s no such thing as a free lunch”. Creating high quality, low error-rate logical qubits often costs many physical qubits, thus reducing the size of calculations you can run, despite your new, lower-than-ever error rates. </p><p>With our <a href="https://arxiv.org/abs/2602.22211" data-wf-native-id-path="71f58dbb-70a4-1681-11c0-fe4481e0ad38" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="71f58dbb-70a4-1681-11c0-fe4481e0ad38">latest paper</a>, we are thrilled to announce that we have hit a key milestone on the Quantinuum roadmap: an ultra-efficient method for creating logical qubits, extracting a whopping 48 error-corrected and 64 error-detected logical qubits out of just 98 physical qubits. Our logical qubits boasted better than “break-even” fidelity, beating their physical counterparts with lower error rates on several different fronts. And still that isn’t the end of the story: we used our 64 error-detected logical qubits in a large-scale quantum magnetism simulation, laying the groundwork for future studies of exotic interactions in materials.</p><h5><strong>Stacking Wins</strong></h5><p>To get this world-leading result, we employed a neat trick: ‘nesting’ super efficient quantum error-detecting codes together to make a new, ultra-efficient error-correcting code. Dr. DeCross, a primary author on the paper, said this nesting is like “braiding together ropes made out of ropes made out of ropes”.  Physicists call this ‘code concatenation’, and you can think of it as adding layers of protection on top of each other. </p><p>To begin, we took the now-famous ‘<a href="https://www.quantinuum.com/blog/protecting-expressive-circuits-with-a-quantum-error-detection-code" data-wf-native-id-path="98ce0268-b1a9-c2bd-1f1b-6a2991843bf4" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="98ce0268-b1a9-c2bd-1f1b-6a2991843bf4">iceberg code</a>’, a quantum error detection code that gives an almost 1:1 ratio of physical qubits to logical qubits. The iceberg code only detects errors, however, which means that instead of actually correcting errors it lets you throw out bits where errors were detected. To make a code that could both detect and correct errors, we concatenated two iceberg codes together, giving a code that can correct small errors while still boasting a world-record 2:1 physical:logical ratio (physicists call this a “high encoding rate”).</p><p>The team then benchmarked the logical qubits, checking large system-scale operations and comparing them to their physical counterparts. This introduces a crucial hurdle to clear: oftentimes, researchers end up with logical qubits that perform *worse* than their physical counterparts. It’s critical that logical qubits actually beat physical ones, after all – that is the whole point!</p><p>Thanks to some clever circuit design and our natively high fidelities, the new logical qubits outperformed their physical counterparts in every test we performed, sometimes by a factor of 10 to 100.</p><h5><strong>Computing Logically</strong></h5><p>Of course, the whole point is to use our logical qubits for something useful, the ultimate measure of functionality. With 64 error-detected qubits, we performed a simulation of quantum magnetism; a crucial milestone that validates our roadmap.</p><p>The team took extra care to perform their simulation in 3 dimensions to best reflect the real-world (often, studies like this will only be in 1D or 2D to make them easier). Problems like this are both incredibly important for expanding our understanding of materials, but are also incredibly hard, as their complexity scales quickly. To make qubits interact as if they are in a 3D material when they are trapped in 2D inside the computer, we used our all-to-all connectivity, a feature that results from our movable qubits. </p><h5><strong>Maximizing Entanglement</strong></h5><p>Breaking the encoding rate record and performing a world-leading logical simulation wasn’t enough for the team. For their final feat, the team generated 94 error-detected logical qubits, and entangled them all in a special state called a “GHZ” state (also known as a ‘cat’ state, alluding to Schrödinger’s cat). GHZ states are often used by experts as a simple benchmark for showcasing quantum computing’s unique capacity to use entanglement across many qubits. Our best 94-logical qubit GHZ state boasted a fidelity of 94.9%, crushing its un-encoded counterpart.</p><h5><strong>Logical Qubits Are the New Normal</strong></h5><p>Taken together, these results show that we can suppress errors more effectively than ever before, proving that Helios is capable of delivering complex, high-fidelity operations that were previously thought to be years away. While the magnetism simulation was only error-detected, it showcases our ability to protect universal computations with partially fault-tolerant methods. On top of that, the team also demonstrated key error-corrected primitives on Helios at scale.</p><p>All of this has real-world implications for the quantum ecosystem: we are working to package these iceberg codes into QCorrect, an upcoming tool that will help developers automatically improve the performance of their own applications. </p><p>This is just the beginning: we are officially entering the era of large-scale logical computing. The path to fault-tolerance is no longer just theoretical—it is being built, gate by gate, on Helios.</p></div></div><div class="blog_aboutquant w-condition-invisible"><div class="aboutquant_layout"><div class="u-text-large u-weight-extrabold"><h5>About Quantinuum</h5></div><div class="u-text-main"><p>Quantinuum, the world’s largest integrated quantum company, pioneers powerful quantum computers and advanced software solutions. Quantinuum’s technology drives breakthroughs in materials discovery, cybersecurity, and next-gen quantum AI. With over 500 employees, including 370+ scientists and engineers, Quantinuum leads the quantum computing revolution across continents. </p></div></div></div><div class="blog_links"><a data-wf-native-id-path="0c8d5130-a783-2970-bdc2-495fe8ccce01" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="0c8d5130-a783-2970-bdc2-495fe8ccce01" href="https://arxiv.org/abs/2602.22211" class="textlink underline-trail w-inline-block"><div class="textlink_contain"><div class="text">Read the Scientific paper</div><svg viewBox="0 0 10 10" fill="curentColor" width="100%" height="100%" vector-path="non-scaling-stroke" aria-hidden="true" class="svg"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" vector-effect="non-scaling-stroke"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+</style></div></a><a data-wf-native-id-path="2c3ee5d5-08ea-46db-33bc-2b663b2ad975" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="2c3ee5d5-08ea-46db-33bc-2b663b2ad975" href="#" class="textlink underline-trail w-inline-block w-condition-invisible"><div class="textlink_contain"><div class="text w-dyn-bind-empty"></div><svg viewBox="0 0 10 10" fill="curentColor" width="100%" height="100%" vector-path="non-scaling-stroke" aria-hidden="true" class="svg"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" vector-effect="non-scaling-stroke"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+</style></div></a><a data-wf-native-id-path="2665f623-a288-af11-65e8-59d80cb3643d" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="2665f623-a288-af11-65e8-59d80cb3643d" href="#" class="textlink underline-trail w-inline-block w-condition-invisible"><div class="textlink_contain"><div class="text w-dyn-bind-empty"></div><svg viewBox="0 0 10 10" fill="curentColor" width="100%" height="100%" vector-path="non-scaling-stroke" aria-hidden="true" class="svg"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" vector-effect="non-scaling-stroke"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+</style></div></a></div></div></div></section><div data-w-id="d23e7e58-6220-2c58-76c3-7c32b0a5392d" style="opacity:0;-webkit-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="blog_wrap"><div class="blog_contain u-container blogcollectionpage"><div class="border_grid_break cc-top"></div><div class="blog_content_layout u-vflex-left-top u-gap-large"><div class="blog_cms_content"><div class="blog_cms_wrap w-dyn-list"><div fs-cmsfilter-element="list" fs-cmsload-element="list" fs-cmsload-mode="load-under" role="list" class="blog_cms_list blogcollectionpage w-dyn-items"><div role="listitem" class="blog_cms_item w-dyn-item"><div style="opacity:0;-webkit-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="resource_card_wrap"><div class="resource_content u-vflex-left-top"><div class="eyebrow_content_contain"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="flex_horizontal align-left"><div class="blog_eyebrow">Blog</div><div class="blog_eyebrow">|</div><div class="blog_eyebrow">technical</div></div></div></div></div><div class="blog_eyebrow">March 2, 2026</div></div><div class="title_wrap u-text-large u-weight-extrabold"><div fs-cmsfilter-field="heading">Hybrid quantum–HPC computing with trapped ions is here</div><div fs-cmsfilter-field="content" class="blog-content-filter w-richtext"><p>Japan has made bold, strategic investments in both high-performance computing (HPC) and quantum technologies. As these capabilities mature, an important question arises for policymakers and research leaders: how do we move from building advanced machines to demonstrating meaningful, integrated use?</p><p>Last year, Quantinuum installed its Reimei quantum computer at a world-class facility in Japan operated by RIKEN, the country’s largest comprehensive research institution. The system was integrated with Japan’s famed supercomputer Fugaku, one of the most powerful in the world, as part of an ambitious national project commissioned by the New Energy and Industrial Technology Development Organization (NEDO), the national research and development entity under the Ministry of Economy, Trade and Industry.</p><p>Now, for the first time, a full scientific workflow has been executed across Fugaku, one of the world’s most powerful supercomputers, and Reimei, our trapped-ion quantum computer. This marks a transition from infrastructure development to practical deployment.</p><h5><strong>Quantum Biology</strong></h5><p>In this first foray into hybrid HPC-quantum computation, the team explored chemical reactions that occur inside biomolecules such as proteins. Reactions of this type are found throughout biology, from enzyme functions to drug interactions. </p><p>Simulating such reactions accurately is extremely challenging. The region where the chemical reaction occurs—the “active site”—requires very high precision, because subtle electronic effects determine the outcome. At the same time, this active site is embedded within a much larger molecular environment that must also be represented, though typically at a lower level of detail.</p><p>To address this complexity, computational chemistry has long relied on layered approaches, in which different parts of a system are treated with different methods. In our work, we extended this concept into the hybrid computing era by combining classical supercomputing with quantum computing.</p><h5><strong>Shifting the Paradigm</strong></h5><p>While the long-term goal of quantum computing is to outperform classical approaches alone, the purpose of this project was to demonstrate a fully functional hybrid system working as an end-to-end platform for real scientific applications. We believe it is not enough to develop hardware in isolation – we must also build workflows where classical and quantum resources create a whole that is greater than the parts. We believe this is a crucial step for our industry; large-scale national investments in quantum computing must ultimately show how the technology can be embedded within existing research infrastructure. </p><p>In this work, the supercomputer Fugaku handled geometry optimization and baseline electronic structure calculations. The quantum computer Reimei was used to enhance the treatment of the most difficult electronic interactions in the active site, those that are known to challenge conventional approximate methods. The entire process was coordinated through Quantinuum’s workflow system <a href="https://quantinuum.github.io/tierkreis/" target="_blank" data-wf-native-id-path="a892c541-0ef7-a4d5-b65a-4879f8d2499f_instance-0" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="a892c541-0ef7-a4d5-b65a-4879f8d2499f" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%2269a5bddebb1c1c81b4d4c01f%22%7D%5D">Tierkreis</a>, which allows jobs to move efficiently between machines.</p><h5><strong>Hybrid Computation is Now an Operational Reality</strong></h5><p>With this infrastructure in place, we are now poised to truly leverage the power of quantum computing. In this instance, the researchers designed the algorithm to specifically exploit the strengths of both the quantum and the classical hardware. <br/><br/>First, the classical computer constructs an approximate description of the molecular system. Then, the quantum computer is used to model the detailed quantum mechanics that the classical computer can’t handle. Together, this improves accuracy, extending the utility of the classical system.</p><h5><strong>A Path to Hybrid Advantage</strong></h5><p>Accurate simulation of biomolecular reactions remains one of the major challenges in biochemistry. Although the present study uses simplified systems to focus on methodology, it lays the groundwork for future applications in drug design, enzyme engineering, and photoactive biological systems.</p><p>While fully fault-tolerant, large-scale quantum computers are still under development, hybrid approaches allow today’s quantum hardware to augment powerful classical systems, such as Fugaku, to explore meaningful applications. As quantum technology matures, the same workflows can scale accordingly.</p><p>High-performance computing centers worldwide are actively exploring how quantum devices might integrate into their ecosystems. By demonstrating coordinated job scheduling, direct hardware access, and workflow orchestration across heterogeneous architectures, this work offers a concrete example of how such integration can be achieved.</p><p>As quantum hardware matures, we believe the algorithms and workflows developed here can be extended to increasingly realistic and industrially relevant problems. For Japan’s research ecosystem, this first application milestone signals that hybrid quantum–supercomputing is moving from ambition to implementation.</p></div><div class="category-collection is--hidden w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div fs-cmsfilter-field="category">technical</div><div fs-cmsfilter-field="category">All</div></div><div role="listitem" class="w-dyn-item"><div fs-cmsfilter-field="category">partnership</div><div fs-cmsfilter-field="category">All</div></div></div></div></div></div><div class="resource_card_link_wrap"><a data-wf-native-id-path="d23e7e58-6220-2c58-76c3-7c32b0a53966_instance-0" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d23e7e58-6220-2c58-76c3-7c32b0a53966" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%2269a5bddebb1c1c81b4d4c01f%22%7D%5D" href="/blog/hybrid-quantum-hpc-computing-with-trapped-ions-is-here" class="textlink underline-trail w-inline-block"><div class="textlink_contain"><div class="text">Read More</div><svg viewBox="0 0 10 10" fill="curentColor" width="100%" height="100%" vector-path="non-scaling-stroke" aria-hidden="true" class="svg"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" vector-effect="non-scaling-stroke"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+</style></div></a></div></div></div><div role="listitem" class="blog_cms_item w-dyn-item"><div style="opacity:0;-webkit-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="resource_card_wrap"><div class="resource_content u-vflex-left-top"><div class="eyebrow_content_contain"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="flex_horizontal align-left"><div class="blog_eyebrow">Blog</div><div class="blog_eyebrow">|</div><div class="blog_eyebrow">technical</div></div></div></div></div><div class="blog_eyebrow">December 11, 2025</div></div><div class="title_wrap u-text-large u-weight-extrabold"><div fs-cmsfilter-field="heading">Automated Quantum Algorithm Discovery for Quantum Chemistry</div><div fs-cmsfilter-field="content" class="blog-content-filter w-richtext"><p>Authors: <br/><strong>Quantinuum (alphabetical order): </strong><em>Eric Brunner, Steve Clark, Fabian Finger, Gabriel Greene-Diniz, Pranav Kalidindi, Alexander Koziell-Pipe, David Zsolt Manrique, Konstantinos Meichanetzidis, Frederic Rapp</em><br/><strong>Hiverge (alphabetical order):</strong> <em>Alhussein Fawzi, Hamza Fawzi, Kerry He, Bernardino Romera Paredes, Kante Yin</em></p><p>‍</p><p><strong><em>What if every quantum computing researcher had an army of students to help them write efficient quantum algorithms? Large Language Models are starting to serve as such a resource.</em></strong></p><p>Quantinuum’s processors offer world-leading fidelity, and recent experiments show that they have surpassed the limits of classical simulation for certain computational tasks, such as simulating materials. However, access to quantum processors is limited and can be costly. It is therefore of paramount importance to optimise quantum resources and write efficient quantum software. Designing efficient algorithms is a challenging task, especially for quantum algorithms: dealing with superpositions, entanglement, and interference can be counterintuitive.</p><p>To this end, our joint team used <a href="https://www.hiverge.ai/" data-wf-native-id-path="703e84ef-2585-5655-5f3b-d22b68b637d0_instance-1" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="703e84ef-2585-5655-5f3b-d22b68b637d0" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22693b1559a05e0fc52dd89263%22%7D%5D">Hiverge’s</a> AI platform for automated algorithm discovery, the Hive, to probe the limits of what can be done in quantum chemistry. The Hive generates optimised algorithms tailored to a given problem, expressed in a familiar programming language, like Python. Thus, the Hive’s outputs allow for increased interpretability, enabling domain experts to potentially learn novel techniques from the AI-discovered solutions. Such AI-assisted workflows lower the barrier of entry for non-domain experts, as an initial sketch of an algorithmic idea suffices to achieve state-of-the-art solutions.</p><p>In this initial proof-of-concept study, we demonstrate the advantage of AI-driven algorithmic discovery of efficient quantum heuristics in the context of quantum chemistry, in particular the <em>electronic structure problem</em>. Our early explorations show that the Hive can start from a naïve and simple problem statement and evolve a highly optimised quantum algorithm that solves the problem, reaching chemical precision for a collection of molecules. Our high-level workflow is shown in <em>Figure 1.</em> Specifically, the quantum algorithm generated by the Hive achieves a reduction in the quantum resources required by orders of magnitude compared to current state-of-the-art quantum algorithms. This promising result may enable the implementation of quantum algorithms on near-term hardware that was previously thought impossible due to current resource constraints.</p><figure style="max-width:3840pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/693b0e7b0bfd13b839aed1ef_Figure%201.png"/></div><figcaption><em>Figure 1: </em><strong><em>Workflow: </em></strong><em>A scientist prompts Hiverge&#x27;s platform, the Hive, with the molecule of interest and a sketch of a quantum algorithm. The goal of the quantum algorithm is to find the ground state energy of the molecule. The Hive evolves the sketch into an efficient version that solves the problem.</em></figcaption></figure><h5><strong>The Electronic Structure Problem in Quantum Chemistry</strong></h5><p>The electronic structure problem is central to quantum chemistry. The goal is to prepare the ground state (the lowest energy state) of a molecule and compute the corresponding energy of that state to chemical precision or beyond. Classically, this is an exponentially hard problem. In particular, classical treatments tend to fall short when there are strong quantum effects in the molecule, and this is where quantum computers may be advantageous.</p><p>The paradigm of variational quantum algorithms is motivated by near-term quantum hardware. One starts with a relatively easy-to-prepare initial state. Then, the main part of the algorithm consists of a <strong>sequence of parameterised operators</strong> representing chemically meaningful actions, such as manipulating electron occupations in the molecular orbitals. These are implemented in terms of <strong>parameterised quantum gates</strong>. Finally, the energy of the state is measured via the molecule’s energy operator, the “Hamiltonian”, by executing the circuit on a quantum computer and measuring all the qubits on which the circuit is implemented. Taking many measurements, or “shots”, the energy is estimated to the desired precision. The ground state energy is found by iteratively optimising the parameters of the quantum circuit until the energy converges to a minimum value. The general form of such a variational quantum algorithm is illustrated in <em>Figure 2</em>.</p><figure style="max-width:3840pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/693b0e990233f5bc25d7b2ca_Figure%202.png"/></div><figcaption><em>Figure 2: A </em><strong><em>variational quantum algorithm</em></strong><em> is defined by a function select_next_operator that iteratively constructs a parameterised quantum circuit as a sequence of operators [O1(θ1),O2(θ2),O3(θ3), ...], and a function update_parameters that optimises its parameters; these functions update the quantum circuit and refine it to its final form that prepares the ground state. The Hive evolves sophisticated versions of these functions starting from trivial versions, written in a </em><strong><em>familiar programming language</em></strong><em>, producing a novel, efficient variational quantum algorithm that solves the problem.</em></figcaption></figure><p>The main challenge in these frameworks is to design an appropriate quantum circuit architecture, i.e. find an efficient sequence of operators, and an efficient optimisation strategy for its parameters. It is important to minimise the number of quantum operations in any given circuit, as each operation is inherently noisy and the algorithm’s output degrades exponentially. Another important quantum resource to be minimised is the total number of circuits that need to be evaluated to compute the energy values during the optimisation of the circuit parameters, which is time-consuming.</p><p>To meet these challenges, we task the Hive with designing a variational quantum algorithm to solve the ground state problem, following the workflow shown in <em>Figure 1</em>. The Hive is a distributed evolutionary process that evolves programs. It uses Large Language Models to generate mutations in the form of edits to an entire codebase. This genetic process selects the fittest programs according to how well they solve a given problem. In our case, the role of the quantum computer is to compute the fitness, i.e., the ground state energy. Importantly, the Hive operates at the level of a <strong>programming language</strong>; it readily imports and uses all known libraries that a human researcher would use, including Quantinuum’s quantum chemistry platform, <a href="https://www.quantinuum.com/products-solutions/inquanto" data-wf-native-id-path="32af6ebc-fe4c-45c9-4626-072050f42108_instance-1" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="32af6ebc-fe4c-45c9-4626-072050f42108" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22693b1559a05e0fc52dd89263%22%7D%5D">InQuanto</a>. In addition, the Hive can accept instructions and requests in <strong>natural language</strong>, increasing its flexibility. For example, we encouraged it to seek parameter optimisation strategies that avoid estimating gradients, as this incurs significant overhead in terms of circuit evaluations.  Intuitively, the interaction between a human scientist and the Hive is analogous to a supervisor and a group of eager and capable students: the supervisor provides guidance at a high level, and the students collaborate and flesh out the general idea to produce a working solution that the supervisor can then inspect. </p><p>We find that from an extremely basic starting point, consisting of a skeleton for a variational quantum algorithm, the Hive can autonomously assemble a bespoke variational quantum algorithm, which we call Hive-ADAPT. Specifically, the Hive evolves heuristic functions that construct a circuit as a sequence of quantum operators and optimise its parameters. Remarkably, the Hive converged on a structure resembling the current state-of-the-art, ADAPT-VQE. Crucially, however, Hive-ADAPT substantially outperforms this baseline, delivering significant improvements in chemical precision while reducing quantum resource requirements.</p><figure style="max-width:2194pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/693b0f599bf5a7f5cdd5d3b6_Screenshot%202025-12-11%20at%201.36.48%E2%80%AFPM.png"/></div><figcaption><em>Figure 3: (Top): The measured ground state energy of the molecule in Hartree (Ha) as a function of the bond length in Angstrom (Å), i.e. the length of the O-H and Be-H bonds in H2O and BeH2, respectively. Both ADAPT-VQE and Hive-ADAPT recover the energy curve. (Bottom): The difference between the energy estimated by the quantum algorithms and the reference value computed with the exact FCI method. </em><strong><em>Hive-ADAPT achieves chemical precision for more bond lengths </em></strong><em>than ADAPT-VQE (energy below dashed flat lines). </em><strong><em>Hive-ADAPT</em></strong><em> was evolved by the Hive to solve a particular set of bond lengths (red circles), and we observe that the same algorithm can also solve the problem on other bond lengths (green circles), showing </em><strong><em>generalisation </em></strong><em>over bond lengths.</em></figcaption></figure><p>A molecule’s ground state energy varies with the distances between its atoms, called the “bond length”. For example, for the molecule H2O, the bond length refers to the length of the O-H bond. The Hive was tasked with developing an algorithm for a small set of bond lengths and reaching chemical precision, defined as within 1.6e-3 Hartree (Ha) of the ground state energy computed with the exact Full Configuration Interaction (FCI) algorithm. As we show in <em>Figure 3</em>, remarkably, Hive-ADAPT achieves chemical precision for more bond lengths than ADAPT-VQE. Furthermore, Hive-ADAPT also reaches chemical precision for other “unseen” bond lengths, showcasing the <strong>generalisation</strong> ability of the evolved quantum algorithm. Our results were obtained from classical simulations of the quantum algorithms, where we used NVIDIA CUDA-Q to leverage the parallelism enabled by GPUs. Further, relative to ADAPT-VQE, Hive-ADAPT exhibits one to two orders of magnitude reduction in quantum resources, such as the number of circuit evaluations and the number of operators used to construct circuits, which is crucial for practical implementations on actual near-term processors.</p><p>For molecules such as BeH2 at large Be-H bond lengths, a complex initial state is required for the algorithm to be able to reach the ground state using the available operators. Even in these cases, by leveraging an efficient state preparation scheme implemented in <a href="https://www.quantinuum.com/products-solutions/inquanto" data-wf-native-id-path="7e208e54-869d-2911-ed99-e08b4c63bda2_instance-1" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="7e208e54-869d-2911-ed99-e08b4c63bda2" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22693b1559a05e0fc52dd89263%22%7D%5D">InQuanto</a>, the Hive evolved a dedicated strategy for the preparation of such a complex initial state, given a set of basic operators to achieve the desired chemical precision.</p><p>To validate Hive-ADAPT under realistic conditions, we employed Quantinuum’s H2 Emulator, which provides a faithful classical simulator of the H2 quantum computer, characterised by a 1.05e-3 two-qubit gate error rate. Leveraging the Hive&#x27;s inherent flexibility, we adapted the optimisation strategy to explicitly penalise the number of two-qubit gates—the dominant noise source on near-term hardware—by redefining the fitness function. This constraint guided the Hive to discover a noise-aware algorithm capable of constructing hardware-efficient circuits. We subsequently executed the specific circuit generated by this algorithm for the LiH molecule at a bond length of 1.5 Å with the Partition Measurement Symmetry Verification (PMSV) error mitigation procedure. The resulting energy of -7.8767 ± 0.0031 Ha, obtained using 10,000 shots per circuit with a discard rate below 10% in the PMSV error mitigation procedure, is close to the target FCI energy of -7.8824 Ha and demonstrates the Hive&#x27;s ability to successfully tailor algorithms that balance theoretical accuracy with the rigorous constraints of hardware noise and approach chemical precision as much as possible with current quantum technology.</p><p>For illustration purposes, we show an example of an elaborate code snippet evolved by the Hive starting from a trivial version:</p><div class="w-embed"><video autoplay loop muted playsinline poster="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/693b1a1b95e25969151ae7c3_Code%20Evolution_poster.0000000.jpg" style="width:100%; height:auto; object-fit:cover;">
+  <source src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/693b1a1b95e25969151ae7c3_Code%20Evolution_webm.webm" type="video/webm">
+  <source src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/693b1a1b95e25969151ae7c3_Code%20Evolution_mp4.mp4" type="video/mp4">
+</video></div><p>Quantinuum’s in-house quantum chemistry expert, Dr. David Zsolt Manrique, commented, </p><blockquote>“I found it amazing that the Hive converged to a domain-expert level idea. By inspecting the code, we see it has identified the well-known perturbative method, ‘MP2’, as a useful guide; not only for setting the initial circuit parameters, but also for ordering excitations efficiently. Further, it systematically and laboriously fine-tuned those MP2-inspired heuristics over many iterations in a way that would be difficult for a human expert to do by hand. It demonstrated an impressive combination of domain expertise and automated machinery that would be useful in exploring novel quantum chemistry methods.”</blockquote><h5><strong>Looking to the Future</strong></h5><p>In this initial proof-of-concept collaborative study between Quantinuum and Hiverge, we demonstrate that AI-driven algorithm discovery can generate efficient quantum heuristics. Specifically, we found a great reduction in quantum resources, which is impactful for quantum algorithmic primitives that are frequently reused. Importantly, this approach is highly flexible; it can accommodate the optimisation of any desired quantum resource, from circuit evaluations to the number of operations in a given circuit. This work opens a path toward fully automated pipelines capable of developing problem-specific quantum algorithms optimised for NISQ as well as future hardware.</p><p>An important question for further investigation regards transferability and generalisation of a discovered quantum solution to other molecules, going beyond the generalisation over bond lengths of the same molecule that we have already observed. Evidently, this approach can be applied to improving any other near-term quantum algorithm for a range of applications from optimisation to quantum simulation.</p><p>We have already <a href="https://www.quantinuum.com/blog/unlocking-scalable-chemistry-simulations-for-quantum-supercomputing" data-wf-native-id-path="d7b0b06c-cdea-4d32-3698-26a669869667_instance-1" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d7b0b06c-cdea-4d32-3698-26a669869667" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22693b1559a05e0fc52dd89263%22%7D%5D">demonstrated an error-corrected implementation of quantum phase estimation on quantum hardware</a>, and an AI-driven approach promises further hardware-tailored improvements and optimal use of quantum resources. Beyond NISQ, we envision that AI-assisted algorithm discovery will be a fruitful endeavour in the fault-tolerant regime, as well, where high-level quantum algorithmic primitives (quantum fourier transform, amplitude amplification, quantum signal processing, etc.) are to be combined optimally to achieve computational advantage for certain problems.</p><p>Notably, we’ve entered an era where quantum algorithms can be written in high-level programming languages, like Quantinuum’s <a href="https://docs.quantinuum.com/guppy/" data-wf-native-id-path="f8d34f0f-cd2f-e312-68cc-5bccf7dc1862_instance-1" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="f8d34f0f-cd2f-e312-68cc-5bccf7dc1862" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22693b1559a05e0fc52dd89263%22%7D%5D">Guppy</a>, and approaches that integrate Large Language Models directly benefit. Automated algorithm discovery is promising for improving routines relevant to the full quantum stack, for example, in low-level quantum control or in quantum error correction.</p></div><div class="category-collection is--hidden w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div fs-cmsfilter-field="category">technical</div><div fs-cmsfilter-field="category">All</div></div></div></div></div></div><div class="resource_card_link_wrap"><a data-wf-native-id-path="d23e7e58-6220-2c58-76c3-7c32b0a53966_instance-1" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d23e7e58-6220-2c58-76c3-7c32b0a53966" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22693b1559a05e0fc52dd89263%22%7D%5D" href="/blog/automated-quantum-algorithm-discovery-for-quantum-chemistry" class="textlink underline-trail w-inline-block"><div class="textlink_contain"><div class="text">Read More</div><svg viewBox="0 0 10 10" fill="curentColor" width="100%" height="100%" vector-path="non-scaling-stroke" aria-hidden="true" class="svg"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" vector-effect="non-scaling-stroke"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+</style></div></a></div></div></div><div role="listitem" class="blog_cms_item w-dyn-item"><div style="opacity:0;-webkit-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="resource_card_wrap"><div class="resource_content u-vflex-left-top"><div class="eyebrow_content_contain"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="flex_horizontal align-left"><div class="blog_eyebrow">Blog</div><div class="blog_eyebrow">|</div><div class="blog_eyebrow">partnership</div></div></div></div></div><div class="blog_eyebrow">November 17, 2025</div></div><div class="title_wrap u-text-large u-weight-extrabold"><div fs-cmsfilter-field="heading">Quantinuum Powering Hybrid Quantum AI Supercomputing with NVIDIA</div><div fs-cmsfilter-field="content" class="blog-content-filter w-richtext"><p>Quantinuum is focusing on redefining what’s possible in hybrid quantum–classical computing by integrating Quantinuum’s best-in-class systems with high-performance NVIDIA accelerated computing to create powerful new architectures that can solve the world’s most pressing challenges. </p><p>The launch of Helios, Powered by Honeywell, the world’s most accurate quantum computer, marks a major milestone in quantum computing. Helios is now available to all customers through the cloud or on-premise deployment, launched with a go-to-market offering that seamlessly pairs Helios with the <a target="_blank" href="https://www.nvidia.com/en-us/data-center/gb200-nvl72/" data-wf-native-id-path="872dc1e9-55ff-fe51-db1c-c73b5c408ded_instance-2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="872dc1e9-55ff-fe51-db1c-c73b5c408ded" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22691b7253dde91de86ebc3933%22%7D%5D">NVIDIA Grace Blackwell platform</a>, targeting specific end markets such as drug discovery, finance, materials science, and advanced AI research. </p><p>We are also working with NVIDIA to adopt  <a target="_blank" href="https://www.nvidia.com/en-us/solutions/quantum-computing/nvqlink/" data-wf-native-id-path="872dc1e9-55ff-fe51-db1c-c73b5c408df3_instance-2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="872dc1e9-55ff-fe51-db1c-c73b5c408df3" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22691b7253dde91de86ebc3933%22%7D%5D">NVIDIA NVQLink</a>, an open system architecture, as a standard for advancing hybrid quantum-classical supercomputing. Using this technology with Quantinuum Guppy and the <a target="_blank" href="https://developer.nvidia.com/cuda-q" data-wf-native-id-path="872dc1e9-55ff-fe51-db1c-c73b5c408df6_instance-2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="872dc1e9-55ff-fe51-db1c-c73b5c408df6" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22691b7253dde91de86ebc3933%22%7D%5D">NVIDIA CUDA-Q platform</a>, Quantinuum has implemented NVIDIA accelerated computing across Helios and future systems to perform real-time decoding for quantum error correction. </p><p>In an industry-first demonstration, an NVIDIA GPU-based decoder integrated in the Helios control engine improved the logical fidelity of quantum operations by more than 3% — a notable gain given Helios’ already exceptionally low error rate. These results demonstrate how integration with NVIDIA accelerated computing through NVQLink can directly enhance the accuracy and scalability of quantum computation.</p><figure style="max-width:3840pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/691b71e8c01d9ffccc17b112_quantinuum-roadmap_11132025.png"/></div></figure><p>This unique collaboration spans the full Quantinuum technology stack. Quantinuum’s next-generation software development environment allows users to interleave quantum and GPU-accelerated classical computations in a single workflow. Developers can build hybrid applications using tools such as NVIDIA CUDA-Q, <a target="_blank" href="https://developer.nvidia.com/cuda-qx" data-wf-native-id-path="872dc1e9-55ff-fe51-db1c-c73b5c408e05_instance-2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="872dc1e9-55ff-fe51-db1c-c73b5c408e05" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22691b7253dde91de86ebc3933%22%7D%5D">NVIDIA CUDA-QX</a>, and Quantinuum’s Guppy, to make advanced quantum programming accessible to a broad community of innovators.</p><p>The collaboration also reaches into applied research through the <a target="_blank" href="https://www.nvidia.com/en-us/solutions/quantum-computing/accelerated-quantum-center/" data-wf-native-id-path="872dc1e9-55ff-fe51-db1c-c73b5c408e0b_instance-2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="872dc1e9-55ff-fe51-db1c-c73b5c408e0b" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22691b7253dde91de86ebc3933%22%7D%5D">NVIDIA Accelerated Quantum Computing Research Center</a> (NVAQC), where an NVIDIA GB200 NVL72 supercomputer can be paired with Quantinuum’s Helios to further drive hybrid quantum-GPU research, including  the development of breakthrough quantum-enhanced AI applications.</p><p>A recent achievement illustrates this potential: The ADAPT-GQE framework, a transformer-based Generative Quantum AI (GenQAI) approach, uses a Generative AI model to efficiently synthesize circuits to prepare the ground state of a chemical system on a quantum computer. Developed by Quantinuum, NVIDIA, and a pharmaceutical industry leader—and leveraging NVIDIA CUDA-Q with GPU-accelerated methods—ADAPT-GQE achieved a 234x speed-up in generating training data for complex molecules. The team used the framework to explore imipramine, a molecule crucial to pharmaceutical development. The transformer was trained on imipramine conformers to synthesize ground state circuits at orders of magnitude faster than ADAPT-VQE, and the circuit produced by the transformer was run on Helios to prepare the ground state using InQuanto, Quantinuum&#x27;s computational chemistry platform.<br/></p><p>From collaborating on hardware and software integrations to GenQAI applications, the collaboration between Quantinuum and NVIDIA is building the bridge between classical and quantum computing and creating a future where AI becomes more expansive through quantum computing, and quantum computing becomes more powerful through AI.</p></div><div class="category-collection is--hidden w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div fs-cmsfilter-field="category">partnership</div><div fs-cmsfilter-field="category">All</div></div></div></div></div></div><div class="resource_card_link_wrap"><a data-wf-native-id-path="d23e7e58-6220-2c58-76c3-7c32b0a53966_instance-2" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d23e7e58-6220-2c58-76c3-7c32b0a53966" data-wf-cms-context="%5B%7B%22collectionId%22%3A%2266b3ae6a5abaa051398dec48%22%2C%22itemId%22%3A%22691b7253dde91de86ebc3933%22%7D%5D" href="/blog/quantinuum-nvidia-partnership" class="textlink underline-trail w-inline-block"><div class="textlink_contain"><div class="text">Read More</div><svg viewBox="0 0 10 10" fill="curentColor" width="100%" height="100%" vector-path="non-scaling-stroke" aria-hidden="true" class="svg"><path d="M0.639715 0V1.83674H6.86459L0 8.70133L1.29867 10L8.16326 3.13541V9.36H10V0H0.639715Z" vector-effect="non-scaling-stroke"></path></svg></div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+</style></div></a></div></div></div></div></div></div></div><div class="border_grid_break cc-bottom"></div></div></div><section data-theme="inherit" class="footer_wrap"><div data-padding-bottom="main" data-padding-top="main" class="footer_contain u-container"><div class="footer_layout u-grid-desktop"><div class="footer_top u-column-full u-grid-subgrid u-gap-small"><div class="footer_logo_wrap u-column-2"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 200 34" class="quantinuum_logo is-footer"><g id="Logo"><path id="Logo_2" fill-rule="evenodd" clip-rule="evenodd" d="M33.0194 16.517C33.0194 18.577 32.6494 20.577 31.9194 22.467H29.5994C30.1994 9.33699 13.1694 3.59699 5.67935 14.357C4.46935 10.287 5.79935 5.69699 8.91935 2.90699C10.0594 1.86699 11.4194 1.06699 12.8694 0.576987C22.8894 -2.34301 33.1793 6.25699 33.0093 16.527L33.0194 16.517ZM33.0192 24.357V33.057H16.4792C16.2692 33.057 16.0792 33.057 15.8892 33.037C11.5992 32.887 7.58916 31.097 4.59916 28.007C-1.89084 21.717 -1.38084 10.097 5.29916 4.33704C2.95916 8.06704 2.70916 12.987 4.64916 16.927C6.79916 21.397 11.4692 24.357 16.4792 24.347H33.0192V24.357ZM117.449 14.037H112.479V12.077H124.379V14.037H119.409V22.537H117.449V14.037ZM98.6395 12.087L106.849 20.167H106.859V12.087H108.819V22.547H106.269L98.3495 14.517V22.547H96.3895V12.087H98.6395ZM79.3995 22.547L84.7395 12.087H87.3695L92.7095 22.547H90.5095L89.7195 20.977H82.3795L81.5894 22.547H79.3995ZM86.0594 13.807L83.3895 19.017H88.7295L86.0594 13.807ZM61.8095 20.977H59.6595V20.947L59.7895 20.697C60.2995 19.687 60.4295 18.547 60.1495 17.417C59.7095 15.637 58.2895 14.247 56.5295 13.867C56.1595 13.797 55.8095 13.757 55.4595 13.757C53.8595 13.757 52.3695 14.557 51.4695 15.887C50.5395 17.247 50.3895 18.937 51.0295 20.527C51.7195 22.247 53.4895 23.407 55.4395 23.407H62.2395V25.367H62.0695H55.6395H55.3395C51.6695 25.297 48.6895 22.267 48.6895 18.597C48.6895 16.777 49.3895 15.077 50.6695 13.797C51.9495 12.517 53.6495 11.817 55.4595 11.817C55.8795 11.817 56.2895 11.857 56.6895 11.927C59.0595 12.347 61.0895 14.097 61.8695 16.397C62.3895 17.897 62.3795 19.397 61.8495 20.857L61.8095 20.977ZM71.5095 20.827C73.5395 20.827 75.1895 19.177 75.1895 17.147H75.1694V12.087H77.1295V17.147C77.1295 20.257 74.5995 22.787 71.4995 22.787C68.3995 22.787 65.8695 20.257 65.8695 17.147V12.087H67.8295V17.147C67.8295 19.177 69.4795 20.827 71.5095 20.827ZM191.599 21.027L196.509 12.087H199.529V22.547H197.569V14.227L192.999 22.547H190.199L185.569 14.187V22.547H183.609V12.087H186.639L191.599 21.027ZM173.699 20.827C175.729 20.827 177.379 19.177 177.379 17.147H177.369V12.087H179.329V17.147C179.329 20.257 176.809 22.787 173.699 22.787C170.589 22.787 168.059 20.257 168.059 17.147V12.087H170.019V17.147C170.019 19.177 171.669 20.827 173.699 20.827ZM137.999 12.087L146.209 20.167H146.219V12.087H148.179V22.547H145.629L137.709 14.517V22.547H135.749V12.087H137.999ZM158.179 20.827C160.209 20.827 161.859 19.177 161.859 17.147H161.849V12.087H163.809V17.147C163.809 20.257 161.269 22.787 158.169 22.787C155.069 22.787 152.539 20.257 152.539 17.147V12.087H154.499V17.147C154.499 19.177 156.149 20.827 158.179 20.827ZM130.559 22.537H128.599V12.077H130.559V22.537Z" fill="currentColor"></path></g></svg></div><div class="footer_link_contain u-column-2"><h6 class="u-text-h6 is-footer-text-title">Company</h6><div class="footer_link_text_contain u-text-small u-vflex-left-top"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:abac2b3c-79c4-4bb3-acf9-2b72846bdc74:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22abac2b3c-79c4-4bb3-acf9-2b72846bdc74%22%7D%5D" href="/company/about" class="textlink underline-trail footer w-inline-block"><div class="text footer">About Us</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:2ef5eea3-2505-d498-2244-bb911425bde7:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%222ef5eea3-2505-d498-2244-bb911425bde7%22%7D%5D" href="/company/careers" class="textlink underline-trail footer w-inline-block"><div class="text footer">Careers</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:18a7ad60-7a99-fd47-d259-fd489b47f566:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%2218a7ad60-7a99-fd47-d259-fd489b47f566%22%7D%5D" href="/company/about#leadership" class="textlink underline-trail footer w-inline-block"><div class="text footer">Leadership</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:869eab47-dc7c-6538-2763-921a4f9771c1:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22869eab47-dc7c-6538-2763-921a4f9771c1%22%7D%5D" href="/news/news" class="textlink underline-trail footer w-inline-block"><div class="text footer">Newsroom</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:4bc30f44-ce06-d7c1-b710-e7422c53d8b4:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%224bc30f44-ce06-d7c1-b710-e7422c53d8b4%22%7D%5D" href="/research/research-areas#publications" class="textlink underline-trail footer w-inline-block"><div class="text footer">Publications</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:9b2dee3f-4ae6-cb9d-7fea-35f41ed0622d:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%229b2dee3f-4ae6-cb9d-7fea-35f41ed0622d%22%7D%5D" href="/contact" class="textlink underline-trail footer w-inline-block"><div class="text footer">Contact Us</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:2faada62-fbb5-e6c3-b39d-6c8220031de8:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%222faada62-fbb5-e6c3-b39d-6c8220031de8%22%7D%5D" href="https://quantinuum.co.jp/" class="textlink underline-trail footer w-inline-block"><div class="text footer">Quantinuum Japan</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a></div></div><div class="footer_link_contain u-column-2"><h6 class="u-text-h6 is-footer-text-title">Products &amp; Solutions</h6><div class="footer_link_text_contain u-text-small u-vflex-left-top"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:bc8971fd-16f9-3d68-110d-e532ae20ec6f:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22bc8971fd-16f9-3d68-110d-e532ae20ec6f%22%7D%5D" href="/products-solutions/quantinuum-systems" class="textlink underline-trail footer w-inline-block"><div class="text footer">Quantinuum Systems</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:32feaef5-ddbe-ee7b-1885-0005cedae5df:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%2232feaef5-ddbe-ee7b-1885-0005cedae5df%22%7D%5D" href="/products-solutions/quantinuum-systems/helios" class="textlink underline-trail footer w-inline-block"><div class="text footer">Helios</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:7db9ed6b-6585-61bd-bc7b-bbdbaab80286:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%227db9ed6b-6585-61bd-bc7b-bbdbaab80286%22%7D%5D" href="/products-solutions/quantum-origin" class="textlink underline-trail footer w-inline-block"><div class="text footer">Quantum Origin</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:4ef42870-71c6-daf2-93ee-2e6fdfeb12cd:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%224ef42870-71c6-daf2-93ee-2e6fdfeb12cd%22%7D%5D" href="/products-solutions/inquanto" class="textlink underline-trail footer w-inline-block"><div class="text footer">InQuanto</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:6452dab2-1169-c420-f9ef-d6a8e2d722ae:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%226452dab2-1169-c420-f9ef-d6a8e2d722ae%22%7D%5D" href="/products-solutions/nexus" class="textlink underline-trail footer w-inline-block"><div class="text footer">Nexus</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:5712ad34-13e6-707e-4aaf-223f4b57762e:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%225712ad34-13e6-707e-4aaf-223f4b57762e%22%7D%5D" href="/products-solutions/developer-tools" class="textlink underline-trail footer w-inline-block"><div class="text footer">Developer Tools</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a></div></div><div class="footer_link_contain u-column-2"><h6 class="u-text-h6 is-footer-text-title">Get Started</h6><div class="footer_link_text_contain u-text-small u-vflex-left-top"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:28cda3d2-3954-ba15-6106-7e8336b33a7e:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%2228cda3d2-3954-ba15-6106-7e8336b33a7e%22%7D%5D" href="/products-solutions/hardware-h-series#access" class="textlink underline-trail footer w-inline-block"><div class="text footer">Hardware Access</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:c78ab633-01cd-368c-4a8d-4a2605ee08c5:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22c78ab633-01cd-368c-4a8d-4a2605ee08c5%22%7D%5D" href="/products-solutions/hardware-h-series#access" class="textlink underline-trail footer w-inline-block"><div class="text footer">Cloud Access</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:6c2fe332-7a80-cc3c-310a-04c24f95a129:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%226c2fe332-7a80-cc3c-310a-04c24f95a129%22%7D%5D" href="https://docs.quantinuum.com/" target="_blank" class="textlink underline-trail footer w-inline-block"><div class="text footer">Documentation</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a></div></div><div class="footer_link_contain u-column-2"><h6 class="u-text-h6 is-footer-text-title">Stay Connected</h6><div class="footer_link_text_contain u-text-small u-vflex-left-top"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:06b275b4-3ef2-1e8d-258b-520c2d0f1624:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%2206b275b4-3ef2-1e8d-258b-520c2d0f1624%22%7D%5D" href="/q-net" class="textlink underline-trail footer w-inline-block"><div class="text footer">Q-Net</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:c4fe347d-dab8-8a18-1e84-20b2cf064f1a:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22c4fe347d-dab8-8a18-1e84-20b2cf064f1a%22%7D%5D" href="/startup-partner-program" class="textlink underline-trail footer w-inline-block"><div class="text footer">Startup Partner Program</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a></div></div><div class="footer_link_contain u-column-2"><h6 class="u-text-h6 is-footer-text-title">Legal</h6><div class="footer_link_text_contain u-text-small u-vflex-left-top"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:aa94688e-995b-eacd-830b-1625385fe948:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22aa94688e-995b-eacd-830b-1625385fe948%22%7D%5D" href="/privacy" class="textlink underline-trail footer w-inline-block"><div class="text footer">Privacy Statement</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:aa94688e-995b-eacd-830b-1625385fe94a:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22aa94688e-995b-eacd-830b-1625385fe94a%22%7D%5D" href="/cookie-notice" class="textlink underline-trail footer w-inline-block"><div class="text footer">Cookie Notice</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:aa94688e-995b-eacd-830b-1625385fe94c:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22aa94688e-995b-eacd-830b-1625385fe94c%22%7D%5D" href="/terms-conditions" class="textlink underline-trail footer w-inline-block"><div class="text footer">Terms &amp; Conditions</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:aa94688e-995b-eacd-830b-1625385fe94e:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22aa94688e-995b-eacd-830b-1625385fe94e%22%7D%5D" href="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/6733a7ff524a2043654ad9a1_Quantinuum%20Trademark%20Guidelines%20v1.1%20Q4%20Dec%202024.pdf" class="textlink underline-trail footer w-inline-block"><div class="text footer">Trademark Usage Guidelines</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:aa94688e-995b-eacd-830b-1625385fe950:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%22aa94688e-995b-eacd-830b-1625385fe950%22%7D%5D" href="/license-agreements" class="textlink underline-trail footer w-inline-block"><div class="text footer">License Agreements</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a><div fs-consent-element="open-preferences" class="textlink underline-trail footer"><div class="text footer">Cookie Preferences</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></div><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:8240bb74-a452-e8d3-55d1-c577826842c5:d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="d5d4c6ce-330c-60ed-ef46-9de63e34133e" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%2C%7B%22componentId%22%3A%22d5d4c6ce-330c-60ed-ef46-9de63e34133e%22%2C%22instanceId%22%3A%228240bb74-a452-e8d3-55d1-c577826842c5%22%7D%5D" href="/integrity-and-compliance" class="textlink underline-trail footer w-inline-block"><div class="text footer">Integrity &amp; Compliance</div><div class="custom-styles w-embed"><style>
+.textlink {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.textlink .text:hover {
+	color: #30a08e;
+}
+
+.textlink::before,
+.textlink::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.textlink::before {
+    content: '';
+    /* show by default */
+}
+
+
+.underline-trail::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.underline-trail:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    color: #30a08e;
+}
+</style></div></a></div></div></div><div class="footer_bottom u-hflex-left-top u-gap-small u-column-full"><div class="footer_socials_wrap u-hflex-left-center u-gap-xsmall"><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:eea066c7-b3b8-e419-8ca7-38658b1edf30" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="eea066c7-b3b8-e419-8ca7-38658b1edf30" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%5D" href="https://x.com/QuantinuumQC" target="_blank" class="x w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 23 23" fill="none" class="g_socials_link"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.5C0 5.15086 5.15086 0 11.5 0C17.8491 0 23 5.15086 23 11.5C23 17.8491 17.8491 23 11.5 23C5.15086 23 0 17.8491 0 11.5ZM10.6326 12.8682L13.9771 17.6256V17.6166H17.6256L12.6625 10.5521L17.2232 5.36547H16.1411L12.1796 9.87247L9.014 5.36547H5.36547L10.1497 12.1796L5.36547 17.6256H6.44751L10.6326 12.8682ZM8.50467 6.17022L11.6166 10.5252L12.0995 11.2048L16.1505 16.8654H14.4872L11.1874 12.2421L10.7045 11.5625L6.84137 6.17022H8.50467Z" fill="currentColor"></path></svg></a><a data-wf-native-id-path="11e3c2b6-aaf2-62d8-5415-7ba55f3541db:b524c2de-0362-4bd4-83e0-96dc28905fba" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="b524c2de-0362-4bd4-83e0-96dc28905fba" data-wf-component-context="%5B%7B%22componentId%22%3A%2271bd28f4-986d-7e0f-3063-6c2fcfe6ad02%22%2C%22instanceId%22%3A%2211e3c2b6-aaf2-62d8-5415-7ba55f3541db%22%7D%5D" href="https://www.linkedin.com/company/quantinuumqc/" target="_blank" class="linkedin w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 23 23" fill="none" class="g_socials_link"><path d="M11.5 0C5.15086 0 0 5.15086 0 11.5C0 17.8491 5.15086 23 11.5 23C17.8491 23 23 17.8491 23 11.5C23 5.15086 17.8491 0 11.5 0ZM8.236 16.4899H5.67846V8.79938H8.236V16.4899ZM6.95723 7.74417H6.93935C6.08087 7.74417 5.52644 7.15397 5.52644 6.41174C5.52644 5.66952 6.09876 5.07932 6.97512 5.07932C7.85148 5.07932 8.38803 5.65163 8.40591 6.41174C8.40591 7.15397 7.85148 7.74417 6.95723 7.74417ZM17.4646 16.4899H14.9071V12.3764C14.9071 11.339 14.5404 10.6415 13.6104 10.6415C12.904 10.6415 12.4837 11.1155 12.2959 11.5805C12.2243 11.7414 12.2154 11.974 12.2154 12.2065V16.4988H9.65785C9.65785 16.4988 9.69362 9.52372 9.65785 8.80832H12.2154V9.8993C12.5552 9.3717 13.1633 8.62947 14.5226 8.62947C16.2037 8.62947 17.4646 9.72939 17.4646 12.0902V16.4988V16.4899Z" fill="currentColor"></path></svg></a><div class="youtube"><div class="w-embed"><a href="https://www.youtube.com/@QuantinuumQC" target="_blank" class="linkedin w-inline-block">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 23 23" fill="none" class="g_socials_link">
+    <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
+    <path d="M15.72 11.5L9.8 8v7l5.92-3.5z" fill="#fff" />
+  </svg>
+</a></div></div></div><div class="footer_copyright_wrap u-text-small"><p>© 2026 Quantinuum. All rights reserved.</p></div></div></div></div></section></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=669960f53cd73aedb80c8eea" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/js/dev-quantinuum.schunk.e0c428ff9737f919.js" type="text/javascript" integrity="sha384-ar82P9eriV3WGOD8Lkag3kPxxkFE9GSaSPalaC0MRlR/5aACGoFQNfyqt0dNuYvt" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/js/dev-quantinuum.schunk.9f6dc2805600545d.js" type="text/javascript" integrity="sha384-sfJ4R80yRXvB+kiU3yoruJYHxkeWHx3BxdFr1gNXKJgeMCEXVrxtQcv8zjL3Vw+1" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/669960f53cd73aedb80c8eea/js/dev-quantinuum.10bab17e.222999c411647a80.js" type="text/javascript" integrity="sha384-IQ23bTB1kwmq1uImq+/8j4GVSctnJspQbXv3Xb2vNSgQAsg+IDFUlE/6AiN20muj" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+
+<script>
+  var Webflow = Webflow || [];
+  Webflow.push(function () {
+    var tabName = getParam('tab');
+    if (!tabName) return;
+
+    $('.' + tabName).triggerHandler('click');
+
+    function getParam(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+      return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+  });
+  
+  let buttons = document.querySelectorAll('.is--abouttrigger');
+
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          button.closest('.w-dyn-item').classList.add('active');
+          let siblings = button.closest('.w-dyn-item').parentNode.children;
+          Array.from(siblings).forEach(sibling => {
+              if (sibling !== button.closest('.w-dyn-item')) {
+                  sibling.classList.remove('active');
+              }
+          });
+      });
+  });
+</script>
+
+
+</body></html>

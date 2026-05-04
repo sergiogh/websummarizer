@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+
+		<!-- Android Icons -->
+		<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+
+		<!-- Favicon Icons -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+
+		<!-- Manifest File -->
+		<link rel="manifest" href="/favicon/manifest.json">
+
+		<!-- Microsoft Tiles -->
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#ffffff">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="/css/fonts.css" rel="stylesheet" />
+
+		<!-- naver serach advisor-->
+		<meta name="naver-site-verification" content="99ba74d122068a4fb6d2fe97c308f14cf9911f82" />
+		<!-- google search-->
+		<meta name="google-site-verification" content="tu7Y9KkEs4x2XWvWCDKcoGwz5QBuIyB7H-KWdQemmqM" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-F4JRS4Z8LZ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-F4JRS4Z8LZ');
+		</script>
+		
+		<link href="../_app/immutable/assets/0.u0rlVQmL.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/config.Dc089-E8.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Loader.BPuswfn-.css" rel="stylesheet"><title>Qunovaâs HI-VQE Algorithm Now Available on AWS Marketplace </title><!-- HEAD_svelte-awct1s_START --><meta name="description" content="Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket"><meta name="âkeywordsâ" content="qunova, qunova computing, íë¸ë°, íë¸ë° ì»´í¨í, ììì»´í¨, ìì ìë£¨ì, pulsar, milky way, ìì ìë®¬ë ì´ì"><link rel="canonical" href="https://www.qunovacomputing.com/news/136"><meta property="og:title" content="Qunovaâs HI-VQE Algorithm Now Available on AWS Marketplace "><meta property="og:description" content="Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket"><meta property="og:type" content="Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket"><meta property="og:site_name" content="Qunova Computing"><meta property="og:url" content="https://www.qunovacomputing.com/news/136"><meta property="og:image" content="https://d2h21tfyfcidw9.cloudfront.net/news/de89ca3a-06a4-4d87-9986-440217c31ef1-81d730a9-f576-41d6-bd77-4c9ba2eab445-áá³áá³ááµá«áá£áº 2026-01-27 áá©áá¥á« 12.13.16.png"><meta name="twitter:card" content="Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket"><meta name="twitter:title" content="Qunovaâs HI-VQE Algorithm Now Available on AWS Marketplace "><meta name="twitter:description" content="Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket"><meta name="twitter:image" content="https://d2h21tfyfcidw9.cloudfront.net/news/de89ca3a-06a4-4d87-9986-440217c31ef1-81d730a9-f576-41d6-bd77-4c9ba2eab445-áá³áá³ááµá«áá£áº 2026-01-27 áá©áá¥á« 12.13.16.png"><meta name="twitter:url" content="https://www.qunovacomputing.com/news/136"><link rel="alternate" href="https://www.qunovacomputing.com/news/136" hreflang="en"><meta name="robots" content="index, follow"><!-- HEAD_svelte-awct1s_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div class="loader-container svelte-3leapm" style="opacity:1; "><span class="loader svelte-3leapm" style="width: 48px; height: 48px;"></span></div> 
+			
+			<script>
+				{
+					__sveltekit_1y7vfix = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":{isMobile:false,language:"en"},"uses":{}},{"type":"data","data":{info:{postId:136,title:"Qunovaâs HI-VQE Algorithm Now Available on AWS Marketplace",description:"Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket",thumbnail:"https://d2h21tfyfcidw9.cloudfront.net/news/de89ca3a-06a4-4d87-9986-440217c31ef1-81d730a9-f576-41d6-bd77-4c9ba2eab445-áá³áá³ááµá«áá£áº 2026-01-27 áá©áá¥á« 12.13.16.png",content:"\u003Cp>Qunova COmputing, a developer of software applications designed with the goal of bringing quantum advantage to the chemical, pharmaceutical and industrial engineering sectors, today announces its HI-VQE algorithm is now available on \u003Ca href=\"https://aws.amazon.com/marketplace\" rel=\"noopener noreferrer\" target=\"_blank\">AWS Marketplace\u003C/a>. This distribution channel expands HI-VQE's reach to thousands of potential users, and provides convenient access to \u003Ca href=\"https://aws.amazon.com/braket/\" rel=\"noopener noreferrer\" target=\"_blank\">Amazon Braket\u003C/a>, AWS's fully managed quantum computing service that supports multiple quantum processors, inclkuding IonQ, IQM, QuEra, AQT, and Rigetti.\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>HI-VQE is designed to solve complex chemistry problems used in pharma, materials science, petrochemicals and related industries. This includes molecular modeling and materials reaction simulation, among many others. This is done using a hybrid approach which combines classical and quantum computing, leveraging the strengths of each while circumventing the limitations of both. In turn, this allows users to tackle highly complex computations, many of which remain beyond the reach of classical computing alone. By making such computations possible, Qunova is offering a tangible quantum advantage for industrial users.\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>âWe have consistently shown that HI-VQE delivers value for users in the fields of chemistry, materials science and related sectors. AWS has recognized this and elected to make our product available to its large user base, as it continues to enhance its offering in the quantum space,â said Kevin Rhee, the companyâs CEO and Founder. âI can speak for our entire team when I say that this is another proud moment for our company. This vote of confidence from AWS represents further evidence that HI-VQE delivers. We thank the team at AWS for their confidence as we continue our quest to deliver a real quantum advantage to our users.â\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>Qunova's HI-VQE algorithm is hardware agnostic, having demonstrated consistent results across multiple quantum computing modalities. Its availability through AWSâs quantum service allows Qunova to significantly expand both the pool of users which have access to its product, as well as the range of quantum computers users may select to run the algorithm. AWS customers can now discover, purchase, and deploy HI-VQE directly within their AWS account, streamlining integration with existing workflows. Furthermore, the algorithm can be integrated into broader professional service offerings available through this ecosystem. Industrial users, researchers or other stakeholders can also access the Marketplace platform autonomously, making HI-VQE one of the most accessible quantum computing algorithms. It also provides an added degree of functionality and capability for those working on advanced chemistry computations.\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>For additional convenience, Qunova is offering a range of pricing plans to make it easy for new users to adopt this technology. This includes annual subscriptions and pay as you go plans. Custom subscription plans are also available for short-term projects. Over the past year, the company has validated its capabilities across multiple quantum modalities on systems with up to 56 qubits. The company is also introducing a new algorithm designed to solve optimization problems with up to 100,000 combinatorial variables on today's NISQ computers. Both algorithms offer significant value for industries requiring highly complex computational solutions.\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>Qunova expects to demonstrate quantum advantage for advanced chemistry computations using HI-VQE within the coming weeks. Its effectiveness stems from a Hybrid Quantum-Classical computing design that leverages the strengths of both approaches to reduce resource demands while substantially improving processing speed and delivering â\u003Ca href=\"https://news.sustainability-directory.com/news/chemical-accuracy/\" rel=\"noopener noreferrer\" target=\"_blank\">chemical accuracy\u003C/a>â\u003C/p>\u003Cp>.\u003C/p>\u003Cp>\u003Ca href=\"https://www.qunovacomputing.com/resource/139?tab=gallery\" rel=\"noopener noreferrer\" target=\"_blank\">Click here for a brief demonstration of how to use the HI-VQE algorithm through AWS Marketplace\u003C/a>\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Ch3>\u003Cstrong>About Qunova Computing\u003C/strong>\u003C/h3>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>Founded in 2021, Qunova Computing builds algorithms designed to bring quantum advantage to early adopters of quantum computing. These algorithms have been tested with leading quantum hardware companies and research institutes, and results indicate Qunova can deliver a quantum advantage for users, even using Noisy Intermediate Scale Quantum computers (NISQ). By using a hybrid approach and algorithms which provide a high level of accuracy, the company is unlocking the tremendous potential of quantum computing for industrial users, by reducing the large amounts of trials required to develop new materials with specific properties. This allows users to significantly reduce the time and expense related to industrial R&amp;D processes, enabling them to bring new products to market more quickly and at a lower cost. For additional insight into our groundbreaking work, please visit qunovacomputing.com.\u003C/p>\u003Cp>\u003Cbr>\u003C/p>\u003Cp>\u003Cspan style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">Media Contact\u003C/span>\u003C/p>\u003Cp>\u003Cspan style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">Steve La Barbera\u003C/span>\u003C/p>\u003Cp>\u003Cspan style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">FTG Media\u003C/span>\u003C/p>\u003Cp>\u003Cspan style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">steve@ftgdigital.com\u003C/span>\u003C/p>",lang:"en",isActive:"Y",isDeleted:"N",views:184,authorName:"lucas",urlSlug:null,createdAt:"2026-01-26",updatedAt:new Date(1770594024000)},list:[{postId:123,title:"Qunova Computing Makes Hybrid Quantum Algorithm Available in IBMâs Qiskit Catalog",description:" ",thumbnail:"https://d2h21tfyfcidw9.cloudfront.net/news/f72f9cdd-f3a8-4aac-bc04-843789412927-qunova.png"},{postId:130,title:"Qunova Closes $10 Million Series A Funding Round",description:"Quantum Software Company to Deliver Quantum Advantage Using Breakthrough Algorithm, With New Customer in Place",thumbnail:"https://d2h21tfyfcidw9.cloudfront.net/news/c7fb2913-025c-4cc1-a0ad-9bca1708a63d-cc94e62a-9783-42cf-90bf-d4b730d25881-art_17436545390262_0d38c8.jpg"},{postId:132,title:"No-cost Access to Qunovaâs HI-VQE Algorithm Available for a Limited-Time Through IBM Qiskit Functions Catalog",description:"IBM Quantum Premium Plan Clients in Chemistry, Pharmaceuticals and Materials Science Can Test HI-VQE at No Cost for a Year",thumbnail:"https://d2h21tfyfcidw9.cloudfront.net/news/1ea18466-ac14-4583-ac89-f558a34c9c43-f72f9cdd-f3a8-4aac-bc04-843789412927-qunova.png"}],meta:{title:"Qunovaâs HI-VQE Algorithm Now Available on AWS Marketplace",description:"Users Can Run Advanced Chemistry Applications on Multiple Quantum Computers Through Amazon Braket",ogImageUrl:"https://d2h21tfyfcidw9.cloudfront.net/news/de89ca3a-06a4-4d87-9986-440217c31ef1-81d730a9-f576-41d6-bd77-4c9ba2eab445-áá³áá³ááµá«áá£áº 2026-01-27 áá©áá¥á« 12.13.16.png"}},"uses":{"params":["slug"]}}];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.arCA-KjN.js"),
+						import("../_app/immutable/entry/app.CckZQlKD.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 11],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

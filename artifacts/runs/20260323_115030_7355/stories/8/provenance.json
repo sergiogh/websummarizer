@@ -1,0 +1,5 @@
+{
+  "url": "https://arxiv.org/abs/2603.13607",
+  "title": "[PAPER] The Quest for Quantum Advantage in Combinatorial Optimization:...",
+  "why": "- An end-to-end benchmark was performed using a hybrid sequential quantum computing (HSQC) solver for higher-order unconstrained binary optimization (HUBO), running on IBM Heron r3 quantum processors.\n- HSQC achieved high-quality solutions in under one second for 20 benchmark instances, matching the ground-state energy in 14 cases.\n- At equivalent one-second runtimes, CPU-based solvers (including simulated annealing, memetic tabu search, and EasySolve) did not match the solution quality achieved by HSQC, though some GPU-accelerated and advanced classical methods (parallel tempering, ABS3) did.\n- HSQC, executed on a single quantum processing unit, demonstrated performance competitive with strong classical solvers operating on 128 vCPUs or 8 NVIDIA A100 GPUs.\n- Every reported runtime included the full computational pipeline—preprocessing, QPU execution, and postprocessing—providing a rigorous, system-level comparison between quantum and classical workflows for combinatorial optimization."
+}

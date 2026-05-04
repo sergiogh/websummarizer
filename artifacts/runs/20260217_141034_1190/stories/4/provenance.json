@@ -1,0 +1,5 @@
+{
+  "url": "https://share.google/mXTdeqqHjckRO5qzj",
+  "title": "Optical switch protocol verifies entangled quantum states in real time without destroying them",
+  "why": "- Researchers developed a protocol that verifies entangled quantum states in real time without destroying all available states, addressing a key challenge in quantum computing and networks.\n- The method uses active optical switches to randomly direct individual quantum states for verification or use, enabling reliable sampling and non-destructive certification.\n- The new protocol is highly efficient, offers optimal scalability, and significantly reduces resource requirements compared to conventional quantum state verification methods.\n- It overturns the previous need for all quantum states to be identical, increasing robustness for real-world applications.\n- The protocol allows for device-independent certification, remaining valid even if the measurement devices are untrusted.\n- This advancement is cited as crucial for developing reliable quantum communication networks and advanced photonic quantum computers."
+}

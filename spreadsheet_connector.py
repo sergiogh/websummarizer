@@ -1,10 +1,12 @@
-import requests
-from io import StringIO
-from datetime import datetime, timedelta
-from typing import List, Dict
 import csv
-import os
 import logging
+import os
+from datetime import datetime, timedelta
+from io import StringIO
+from typing import Dict, List
+
+import requests
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -24,9 +26,9 @@ class SpreadsheetConnector:
             return None
 
         candidates = [
-            '%B %d, %Y at %I:%M%p',
-            '%Y-%m-%d %H:%M:%S',
-            '%Y-%m-%d',
+            "%B %d, %Y at %I:%M%p",
+            "%Y-%m-%d %H:%M:%S",
+            "%Y-%m-%d",
         ]
         for fmt in candidates:
             try:
@@ -40,7 +42,7 @@ class SpreadsheetConnector:
 
     def get_content(self, delta=7, start_date=None, end_date=None) -> None:
         try:
-            spreadsheet_url = os.getenv('GOOGLE_SHEET')
+            spreadsheet_url = os.getenv("GOOGLE_SHEET")
             if not spreadsheet_url:
                 raise ValueError("GOOGLE_SHEET environment variable is not set")
 
@@ -48,7 +50,9 @@ class SpreadsheetConnector:
             response = requests.get(spreadsheet_url)
 
             if response.status_code == 403:
-                raise Exception("Access denied to Google Sheet. Please check if the sheet is public or if you have the correct permissions.")
+                raise Exception(
+                    "Access denied to Google Sheet. Please check if the sheet is public or if you have the correct permissions."
+                )
 
             response.raise_for_status()
             csv_content = StringIO(response.text)
@@ -63,9 +67,9 @@ class SpreadsheetConnector:
                 if start_date is None or end_date is None:
                     raise ValueError("Both start_date and end_date are required.")
                 if isinstance(start_date, str):
-                    start_date = datetime.strptime(start_date, '%Y-%m-%d')
+                    start_date = datetime.strptime(start_date, "%Y-%m-%d")
                 if isinstance(end_date, str):
-                    end_date = datetime.strptime(end_date, '%Y-%m-%d')
+                    end_date = datetime.strptime(end_date, "%Y-%m-%d")
             else:
                 end_date = datetime.now()
                 start_date = end_date - timedelta(days=delta)
@@ -105,6 +109,3 @@ class SpreadsheetConnector:
         except Exception as e:
             logger.error(f"Unexpected error: {e}")
             raise
-
-   
-

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" prefix="dcterms: http://purl.org/dc/terms/">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Meeting the Needs of the Global Quantum Science Community: A Call to Action</title>
+<!--Generated on Fri Jan 16 18:54:46 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="/static/browse/0.3.4/css/arxiv-html-papers-20250916.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+<script src="/static/browse/0.3.4/js/addons_new.js"></script>
+<script src="/static/browse/0.3.4/js/feedbackOverlay.js"></script>
+<base href="/html/2601.14297v1/"/></head>
+<body>
+<nav class="ltx_page_navbar">
+<nav class="ltx_TOC">
+<ol class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S1" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">I </span>Introduction</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S2" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">II </span>Who We Are</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S3" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">III </span>Research Principles</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV </span>Early Findings From the Global Quantum Needs Assessment</span></a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS1" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.1 </span>Marginalized Respondents Experience Quantum Science Differently</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS2" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.2 </span>Early Career Perceptions</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS3" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.3 </span>View from the Top</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS4" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.4 </span>Mentorship</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS5" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.5 </span>The Ones Who Leave</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS6" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.6 </span>Pathways</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.SS7" title="In IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">IV.7 </span>A Cross Discipline Comparison</span></a></li>
+</ol>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S5" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">V </span>Conclusion: A Call to Action</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S6" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">VI </span>Acknowledgments</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#A1" title="In Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Methodology</span></a>
+<ol class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#A1.SS1" title="In Appendix A Methodology ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A.1 </span><span class="ltx_text ltx_font_bold">Participants and Recruitment</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#A1.SS2" title="In Appendix A Methodology ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A.2 </span><span class="ltx_text ltx_font_bold">Survey Instrument</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#A1.SS3" title="In Appendix A Methodology ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref"><span class="ltx_text ltx_font_medium">A.3</span> </span>Analytic Approach</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#A1.SS4" title="In Appendix A Methodology ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A.4 </span><span class="ltx_text ltx_font_bold">Status of Findings</span></span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#A1.SS5" title="In Appendix A Methodology ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A.5 </span>Limitations</span></a></li>
+</ol>
+</li>
+</ol></nav>
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line" lang="en" style="--ltx-bg-color:#FFFFFF;">
+<h1 class="ltx_title ltx_title_document">Meeting the Needs of the Global Quantum Science Community: A Call to Action</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Tzula B. Propp
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">These authors contributed equally and are corresponding authors: propp@physics.leidenuniv.nl; btodd@spicescience.org
+</span>
+<span class="ltx_contact ltx_role_affiliation">Diversity in Quantum (DiviQ), DiviQ.org
+</span>
+<span class="ltx_contact ltx_role_affiliation">Quantum Flagship Equity, Diversity, and Inclusion Working Group
+</span>
+<span class="ltx_contact ltx_role_affiliation">Leiden Institute of Physics
+<br class="ltx_break"/>Leiden University, 2333 CA Leiden, The Netherlands
+</span>
+<span class="ltx_contact ltx_role_affiliation">SPICE Science, spicescience.org
+<br class="ltx_break"/>1371 East 13th Avenue, Eugene, OR, 97403, United States
+</span>
+<span class="ltx_contact ltx_role_affiliation">We in Quantum Development (WIQD), University of Amsterdam, 
+<br class="ltx_break"/>Sciencepark 904, 1098 XH Amsterdam, The Netherlands
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Brandy Todd
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">These authors contributed equally and are corresponding authors: propp@physics.leidenuniv.nl; btodd@spicescience.org
+</span>
+<span class="ltx_contact ltx_role_affiliation">SPICE Science, spicescience.org
+<br class="ltx_break"/>1371 East 13th Avenue, Eugene, OR, 97403, United States
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Sara A. Metwalli
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">smetwali@ed.ac.uk
+</span>
+<span class="ltx_contact ltx_role_affiliation">Diversity in Quantum (DiviQ), DiviQ.org
+</span>
+<span class="ltx_contact ltx_role_affiliation">Quantum Software Lab, School of Informatics
+<br class="ltx_break"/>University of Edinburgh
+10 Crichton Street, Edinburgh, EH8 9AB, UK
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Alina Helena S. Gallardo
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">alina.sanchez@oulu.fi
+</span>
+<span class="ltx_contact ltx_role_affiliation">Diversity in Quantum (DiviQ), DiviQ.org
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Michael Dascal
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">Diversity in Quantum (DiviQ), DiviQ.org
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Denise Ruffner
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">Diversity in Quantum (DiviQ), DiviQ.org
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Klaus D. Jöns
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">Quantum Flagship Equity, Diversity, and Inclusion Working Group
+</span>
+<span class="ltx_contact ltx_role_affiliation"> Institute for Photonic Quantum Systems (PhoQS), Center for Optoelectronics and Photonics Paderborn (CeOPP) and Department of Physics, Paderborn University, Paderborn, Germany.
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Shaeema Zaman
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">Quantum Flagship Equity, Diversity, and Inclusion Working Group
+</span>
+<span class="ltx_contact ltx_role_affiliation">Science Melting Pot, Universitetsbyen 14, 8000 Aarhus, Denmark
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Judith Kreukels
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">We in Quantum Development (WIQD), University of Amsterdam, 
+<br class="ltx_break"/>Sciencepark 904, 1098 XH Amsterdam, The Netherlands
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Marilù Chiofalo
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">Physics Department,
+University of Pisa 
+<br class="ltx_break"/>Largo Bruno Pontecorvo, 3
+56126 Pisa, Italy
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Lydia Sanmartí-Vila
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation">Quantum Flagship Equity, Diversity, and Inclusion Working Group
+</span>
+<span class="ltx_contact ltx_role_affiliation">ICFO-Institut de Ciències Fotòniques, The Barcelona Institute of Science and Technology, 08860, Castelldefels, Barcelona, Spain
+</span></span></span>
+</div>
+<section class="ltx_section" id="S1">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">I </span>Introduction</h2>
+<div class="ltx_para" id="S1.p1">
+<p class="ltx_p" id="S1.p1.1"><math alttext="2025" class="ltx_Math" display="inline" id="S1.p1.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2025</mn><annotation encoding="application/x-tex">2025</annotation></semantics></math> marks one hundred years since the discovery of quantum mechanics. In the century since then, quantum science has blossomed into a global community composed of academics, engineers, developers, and entrepreneurs. The world is currently in the middle of the so-called second quantum revolution <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">dowling</span></cite>, with increased public awareness of quantum science and technology <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">QuantumFlagship2025</span></cite>, and growing investment <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">McKinseyQuantumInvestment</span></cite> in both quantum hardware and software applications. However, representation remains low among historically marginalized groups: women, LGBTQ+, BIPOC, and people from the global south make up disproportionately few physicists (see e.g. Ref. <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Hennessey2024</span></cite>). There are numerous efforts to improve diversity within quantum science <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Heidt2024</span></cite>, including through workforce development <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Ivory2023</span></cite>. But many of the changes enacted at the highest levels have failed to result in real change, as highlighted and discussed in the recent Women For Quantum Manifesto of Values <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Beige2025</span></cite>. Here, we at Diversity in Quantum and the European Union Quantum Flagship Equity, Diversity, and Inclusion (EDI) Working Group seek to echo and amplify the need for real change in the quantum ecosystem, emphasizing intersectionality and a feminist approach that centers the most vulnerable members of the quantum community: young students and researchers, especially those communities historically marginalized from quantum science.</p>
+</div>
+<div class="ltx_para" id="S1.p2">
+<p class="ltx_p" id="S1.p2.1">This report is our attempt to help quantum communities meet this need; we have conducted a survey of quantum scientists all over the world, and here we include both a preliminary report of our findings and policy suggestions we have built to address them. The primary results of our survey are that, 1) marginalized quantum scientists are experiencing hardships and challenges more than their more privileged peers across all metrics, 2) that this fact is hurting retention of diverse, talented quantum scientists in our field, and 3) quantum EDI is an investment in talent retention and resilience building, which are essential for a thriving, globally competitive quantum ecosystem.</p>
+</div>
+<figure class="ltx_figure" id="S1.F1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="462" id="S1.F1.g1" src="Violin-Leaving.png" width="598"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" id="S1.F1.6.3.1" style="font-size:90%;">Figure 1</span>: </span><span class="ltx_text" id="S1.F1.4.2" style="font-size:90%;"> Mean differences between those who considered leaving quantum science non-marginalized (<math alttext="\textit{M}=2.05,\,\textit{SD}=1.01" class="ltx_Math" display="inline" id="S1.F1.3.1.m1" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2.05</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">1.01</mn></mrow></mrow><annotation encoding="application/x-tex">\textit{M}=2.05,\,\textit{SD}=1.01</annotation></semantics></math>), and marginalized respondents on a scale of 1-5 with 5 being the respondent strongly considered leaving quantum science (<math alttext="\textit{M}=3.12,\,\textit{SD}=1.19,\,\textit{t}[347]=-9.06,\,\textit{p}&lt;.001" class="ltx_Math" display="inline" id="S1.F1.4.2.m2" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.12</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">1.19</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">t</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">[</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">347</mn><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">]</mo></mrow></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">−</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">9.06</mn></mrow></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">p</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">&lt;</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.001</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\textit{M}=3.12,\,\textit{SD}=1.19,\,\textit{t}[347]=-9.06,\,\textit{p}&lt;.001</annotation></semantics></math>). Notably, very few non-marginalized quantum scientists considered leaving the field compared with over half of marginalized quantum scientists surveyed.</span></figcaption>
+</figure>
+</section>
+<section class="ltx_section" id="S2">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">II </span>Who We Are</h2>
+<div class="ltx_para" id="S2.p1">
+<p class="ltx_p" id="S2.p1.1">Diversity in Quantum (DiviQ) is an international consortium of researchers, educators, and industry professionals committed to broadening participation, improving workforce climate, and strengthening equitable pathways in quantum science and technology. In partnership with the Quantum Flagship’s Working Group for Equity, Diversity, and Inclusion, DiviQ works to translate research on diversity and inclusion into evidence-driven action for the quantum ecosystem. The breadth of our membership gives us a unique vantage point: we see how quantum careers begin, how they stall, and what supports are missing. We also see enormous enthusiasm from early-career scientists who want a quantum field that is not only world-leading, but world-welcoming.</p>
+</div>
+<div class="ltx_para" id="S2.p2">
+<p class="ltx_p" id="S2.p2.1">The Quantum Flagship Equity, Diversity, and Inclusion Working Group (EDI-WG) is a collection of individuals from the European quantum community in academia, industry, and governance. Together, we are working to promote a better quantum ecosystem in Europe and beyond with equitable representation and diverse participation through advocacy, surveying, and action. Previous iterations of EDI-WG surveys have resulted in guidelines for diversity-inclusive scientific meetings <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">QuantumFlagship_EDI_2024</span></cite>, which have since become the official policy of Quantum Flagship.</p>
+</div>
+<div class="ltx_para" id="S2.p3">
+<p class="ltx_p" id="S2.p3.1">In 2025 DiviQ and the EDI-WG conducted the largest international surveys to date on diversity, workplace climate, and opportunity in quantum science and technology. Over <math alttext="1000" class="ltx_Math" display="inline" id="S2.p3.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math> participants—from students to senior specialists—contributed their perspectives. Their insights form the backbone of this paper and of our forthcoming full report. This work was supported by our partner organizations around the world, including We in Quantum Development (WiQD): a professional network for quantum industry, academia and policy supporting minoritized quantum scientists.</p>
+</div>
+<div class="ltx_para" id="S2.p4">
+<p class="ltx_p" id="S2.p4.1">Lastly, the two lead authors are associated with SPICE Science: an Oregon-based science camp that teaches middle school girls science, gives grad students first-hand experience with near-peer mentorship and science outreach, and conducts research into science identity formation <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Todd2017</span></cite>.</p>
+</div>
+<figure class="ltx_figure" id="S2.F2"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="462" id="S2.F2.g1" src="Violin-Career.png" width="598"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" id="S2.F2.6.3.1" style="font-size:90%;">Figure 2</span>: </span><span class="ltx_text" id="S2.F2.4.2" style="font-size:90%;">Mean differences in perception of career opportunities between non-marginalized (<math alttext="\textit{M}=3.99,\,\textit{SD}=.85" class="ltx_Math" display="inline" id="S2.F2.3.1.m1" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.99</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.85</mn></mrow></mrow><annotation encoding="application/x-tex">\textit{M}=3.99,\,\textit{SD}=.85</annotation></semantics></math>), and marginalized respondents on a scale of 1-5 with 5 being the highest perception of opportunity (<math alttext="\textit{\rm M}=3.54,\,\textit{SD}=.92\,,\textit{t}[586]=6.06,\,\textit{p}&lt;0.001" class="ltx_Math" display="inline" id="S2.F2.4.2.m2" intent=":literal"><semantics><mrow><mrow><mtext mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.54</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.92</mn></mrow><mo lspace="0.170em" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">t</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">[</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">586</mn><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">]</mo></mrow></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">6.06</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">p</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">&lt;</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">0.001</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\textit{\rm M}=3.54,\,\textit{SD}=.92\,,\textit{t}[586]=6.06,\,\textit{p}&lt;0.001</annotation></semantics></math>).</span></figcaption>
+</figure>
+</section>
+<section class="ltx_section" id="S3">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">III </span>Research Principles</h2>
+<div class="ltx_para" id="S3.p1">
+<p class="ltx_p" id="S3.p1.1">Ethical examinations in quantum science often focus on technological, social, economic, and geopolitical impacts of quantum technology. Much of this discourse looks outward, asking how quantum innovation will transform the world. In this work, we propose and embrace an equally essential inward-facing view grounded in the foundational ethical frameworks of modern science: the Declaration of Helsinki and the Belmont Report <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">DeclarationOfHelsinki1964</span>; <span class="ltx_ref ltx_missing_citation ltx_ref_self">BelmontReport1979</span></cite>. The principles at the heart of these documents offer a powerful guide for shaping the quantum workforce and the policies that govern it. They are part of the motivation for the style of survey we conducted (a community needs assessment) as well as the foundation for the framework through which we interpret our findings.</p>
+</div>
+<div class="ltx_para" id="S3.p2">
+<p class="ltx_p" id="S3.p2.1">Greater attention to the work climate of quantum science and to the composition of its workforce is not only a good unto itself, but also a strategic advantage. Improving the retention of the quantum science workforce increases the size of that workforce. Furthermore, a more diverse community of quantum scientists improves the field’s capacity to anticipate, identify, and mitigate problems at the point of invention rather than after deployment. When researchers with a wide range of lived experiences—across gender, race, disability, culture, language, and identity—shape quantum technologies from the beginning, issues such as privacy, accessibility, bias, and social impact are surfaced earlier and more accurately. This leads to safer systems, stronger innovation pipelines, and more mature technologies. A diverse workforce will align with ethical, social, and economic priorities; a quantum workforce where people feel comfortable staying long-term strengthens both scientific integrity and global competitiveness.</p>
+</div>
+<figure class="ltx_figure" id="S3.F3"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="460" id="S3.F3.g1" src="Violin-CLIMATE.png" width="598"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" id="S3.F3.6.3.1" style="font-size:90%;">Figure 3</span>: </span><span class="ltx_text" id="S3.F3.4.2" style="font-size:90%;">Mean differences in perception of working environment between non-marginalized (<math alttext="\textit{M}=3.99,\,\textit{SD}=.85" class="ltx_Math" display="inline" id="S3.F3.3.1.m1" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.99</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.85</mn></mrow></mrow><annotation encoding="application/x-tex">\textit{M}=3.99,\,\textit{SD}=.85</annotation></semantics></math>), and marginalized respondents on a scale of 1-5 with 5 being the worst working environments (<math alttext="\textit{ M}=3.54,\,\textit{SD}=.92\,,\textit{t}[586]=6.06,\,\textit{p}&lt;0.001" class="ltx_Math" display="inline" id="S3.F3.4.2.m2" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;"> M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.54</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.92</mn></mrow><mo lspace="0.170em" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">t</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">[</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">586</mn><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">]</mo></mrow></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">6.06</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">p</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">&lt;</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">0.001</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\textit{ M}=3.54,\,\textit{SD}=.92\,,\textit{t}[586]=6.06,\,\textit{p}&lt;0.001</annotation></semantics></math>).</span></figcaption>
+</figure>
+<div class="ltx_para" id="S3.p3">
+<p class="ltx_p" id="S3.p3.1"><em class="ltx_emph ltx_font_italic" id="S3.p3.1.1">Respect for persons.—</em>In research with human-subjects, this principle protects the autonomy and dignity of research subjects. Applied to the quantum workforce, it demands that the field recognize and address the barriers that constrain full participation—whether they stem from discrimination, gatekeeping, hostile climates, or structural inequities. Respect means creating environments where researchers can contribute expertise without navigating disproportionate risk or exclusion; in short, valuing each person’s unique way. This is especially important for researchers who are marginalized within their scientific community e.g. because of their race, gender, disability status, sexual orientation, ethnicity, or nationality.</p>
+</div>
+<div class="ltx_para" id="S3.p4">
+<p class="ltx_p" id="S3.p4.1"><em class="ltx_emph ltx_font_italic" id="S3.p4.1.1">Beneficence.—</em> Beneficence requires minimizing harm and maximizing the benefits of research, literally “good doing.” Quantum science <em class="ltx_emph ltx_font_italic" id="S3.p4.1.2">cannot</em> meet this standard if marginalized researchers—–particularly women, LGBTQ+ scientists, people with disabilities, and members of racialized groups—–face higher rates of harassment, bullying, and career obstacles. A field that generates cutting-edge technology must not generate preventable human cost. Investing in inclusive structures is therefore not ancillary; it is an ethical obligation.</p>
+</div>
+<div class="ltx_para" id="S3.p5">
+<p class="ltx_p" id="S3.p5.1"><em class="ltx_emph ltx_font_italic" id="S3.p5.1.1">Justice.—</em> Justice, in ethics, demands fair distribution of burdens and opportunities. In quantum, this translates to ensuring that training pathways, fellowships, internships, and research roles do not systematically privilege those with the most resources, the strongest networks, or the most conventional backgrounds. Justice requires multiple entry points—computer science, engineering, mathematics, chemistry, materials science, and beyond—as well as flexibility for those balancing caregiving, disability, migration, or nontraditional life trajectories.</p>
+</div>
+<div class="ltx_para" id="S3.p6">
+<p class="ltx_p" id="S3.p6.1">Using these principles as a framing shifts diversity from a moral accessory to a scientific responsibility. Here, we endeavor to use the results of the <math alttext="2025" class="ltx_Math" display="inline" id="S3.p6.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2025</mn><annotation encoding="application/x-tex">2025</annotation></semantics></math> global quantum needs assessment survey to guide the construction of pathways towards alignment with these three principles. We believe the global quantum science community has an opportunity to embed these ethical commitments directly into workforce development, funding structures, and institutional expectations.</p>
+</div>
+<figure class="ltx_figure" id="S3.F4"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="461" id="S3.F4.g1" src="Violin-Disc.png" width="598"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" id="S3.F4.6.3.1" style="font-size:90%;">Figure 4</span>: </span><span class="ltx_text" id="S3.F4.4.2" style="font-size:90%;">Mean differences in perception of prevalence of discrimination in quantum between non-marginalized (<math alttext="\textit{M}=2.47,\,\textit{SD}=..91" class="ltx_Math" display="inline" id="S3.F4.3.1.m1" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2.47</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">..91</mn></mrow></mrow><annotation encoding="application/x-tex">\textit{M}=2.47,\,\textit{SD}=..91</annotation></semantics></math>), and marginalized respondents on a scale of 1-5 with 5 being high levels of discrimination (<math alttext="\textit{ M}=3.35,\,\textit{SD}=.1.02\,,\textit{t}[358]=-8.60,\,\textit{p}&lt;0.001" class="ltx_Math" display="inline" id="S3.F4.4.2.m2" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;"> M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.35</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.1.02</mn></mrow><mo lspace="0.170em" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">t</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">[</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">358</mn><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">]</mo></mrow></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">−</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">8.60</mn></mrow></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">p</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">&lt;</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">0.001</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\textit{ M}=3.35,\,\textit{SD}=.1.02\,,\textit{t}[358]=-8.60,\,\textit{p}&lt;0.001</annotation></semantics></math>).</span></figcaption>
+</figure>
+</section>
+<section class="ltx_section" id="S4">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">IV </span>Early Findings From the Global Quantum Needs Assessment</h2>
+<div class="ltx_para" id="S4.p1">
+<p class="ltx_p" id="S4.p1.1">To support the development of an evidence-based understanding of equity and inclusion within the quantum science workforce, we conducted a preliminary climate assessment focused on experiences and perceptions of discrimination, bias, bullying, harassment, and workplace culture. Although quantum science is a rapidly expanding field with growing international investment and strategic importance, no comprehensive EDI-focused workforce assessment currently exists. This project represents an initial step toward filling that gap.</p>
+</div>
+<div class="ltx_para" id="S4.p2">
+<p class="ltx_p" id="S4.p2.9">Across <math alttext="1000+" class="ltx_Math" display="inline" id="S4.p2.1.m1" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">1000</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">+</mo></mrow><annotation encoding="application/x-tex">1000+</annotation></semantics></math> respondents—from undergraduate students to principle investigators (PIs), from academia to industry—a consistent message emerges: diversity, climate, and opportunity in quantum are recognized challenges across the field. The degree of concern, however, varies significantly depending on identity and career stage.
+Four factors informing the state of the quantum workforce experience were examined: career viability, working environments, climate at meetings and events, prevalence of bias/discrimination as well as bullying/harassment. Respondents came from 36 different countries. <math alttext="32\%" class="ltx_Math" display="inline" id="S4.p2.2.m2" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">32</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">32\%</annotation></semantics></math> percent of respondents identify as belonging to a marginalized group; <math alttext="10\%" class="ltx_Math" display="inline" id="S4.p2.3.m3" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">10</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">10\%</annotation></semantics></math> percent identify as possessing a disability. Respondents spanned the career spectrum with <math alttext="34\%" class="ltx_Math" display="inline" id="S4.p2.4.m4" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">34</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">34\%</annotation></semantics></math> identifying as interested, but not engaged in quantum science careers, <math alttext="6.5\%" class="ltx_Math" display="inline" id="S4.p2.5.m5" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">6.5</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">6.5\%</annotation></semantics></math> working in a non-research career in quantum, <math alttext="37.2\%" class="ltx_Math" display="inline" id="S4.p2.6.m6" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">37.2</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">37.2\%</annotation></semantics></math> were junior career scientists, <math alttext="14.6\%" class="ltx_Math" display="inline" id="S4.p2.7.m7" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">14.6</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">14.6\%</annotation></semantics></math> were senior career scientists, and <math alttext="2\%" class="ltx_Math" display="inline" id="S4.p2.8.m8" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">2\%</annotation></semantics></math> left a career in quantum science, and additional <math alttext="6.2\%" class="ltx_Math" display="inline" id="S4.p2.9.m9" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">6.2</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">6.2\%</annotation></semantics></math> of respondents were uninterested in a career in quantum science.</p>
+</div>
+<figure class="ltx_figure" id="S4.F5"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="460" id="S4.F5.g1" src="Violin-MTG.png" width="598"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" id="S4.F5.6.3.1" style="font-size:90%;">Figure 5</span>: </span><span class="ltx_text" id="S4.F5.4.2" style="font-size:90%;">Mean differences in perception of climate at scientific meetings between non-marginalized (<math alttext="\textit{M}=3.00,\,\textit{SD}=.77" class="ltx_Math" display="inline" id="S4.F5.3.1.m1" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.00</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.77</mn></mrow></mrow><annotation encoding="application/x-tex">\textit{M}=3.00,\,\textit{SD}=.77</annotation></semantics></math>), and marginalized respondents on a scale of 1-5 with 5 being the least welcoming climate (<math alttext="\textit{ M}=3.51,\,\textit{SD}=.74\,,\textit{t}[357]=-6.81,\,\textit{p}&lt;0.001" class="ltx_Math" display="inline" id="S4.F5.4.2.m2" intent=":literal"><semantics><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;"> M</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.51</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.74</mn></mrow><mo lspace="0.170em" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">t</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">[</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">357</mn><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">]</mo></mrow></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">−</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">6.81</mn></mrow></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">p</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">&lt;</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">0.001</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\textit{ M}=3.51,\,\textit{SD}=.74\,,\textit{t}[357]=-6.81,\,\textit{p}&lt;0.001</annotation></semantics></math>).</span></figcaption>
+</figure>
+<section class="ltx_subsection" id="S4.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.1 </span>Marginalized Respondents Experience Quantum Science Differently</h3>
+<div class="ltx_para" id="S4.SS1.p1">
+<p class="ltx_p" id="S4.SS1.p1.1">Marginalized respondents consistently rated issues in all four factors more negatively to a statistically significant degree. These differences persist across career levels.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p2">
+<p class="ltx_p" id="S4.SS1.p2.1">Figs. <a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S1.F1" title="Figure 1 ‣ I Introduction ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_tag">1</span></a>-<a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S3.F4" title="Figure 4 ‣ III Research Principles ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_tag">4</span></a> summarize responses to questions related to respondent experiences in and perceptions of quantum science as a discipline. Across the board, marginalized respondents reported poorer treatment, less recognition, and a lower likelihood of recommending their career or workplace to others. Notably, the majority of non-marginalized respondents also agreed that there are problems in all areas, though to a lesser degree among marginalized respondents.</p>
+</div>
+<div class="ltx_para" id="S4.SS1.p3">
+<p class="ltx_p" id="S4.SS1.p3.1">Overall, perceptions of career opportunities in quantum and working environments are positive, but again, members of marginalized groups report a more negative view. Views of climate e.g. in workplaces and at scientific meetings, on the other hand, are consistently viewed as neutral or negative, with marginalized respondents perceiving issues of climate as poor and of more pressing concern.
+Most tellingly, half of respondents from marginalized backgrounds report having considered leaving quantum science while only a small proportion of non-marginalized respondents report the same (Fig. <a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S1.F1" title="Figure 1 ‣ I Introduction ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_tag">1</span></a>). Not only are marginalized quantum scientists experiencing greater hardships; those hardships are influencing their career decisions.
+The picture painted by these results is grim from a workforce perspective. The general view of quantum careers is one of opportunity overbalanced by serious obstacles; obstacles that are perceived as greater by respondents from marginalized backgrounds (Figs. <a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S2.F2" title="Figure 2 ‣ II Who We Are ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_tag">2</span></a>–<a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.F5" title="Figure 5 ‣ IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_tag">5</span></a>).</p>
+</div>
+<figure class="ltx_figure" id="S4.F6"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="461" id="S4.F6.g1" src="Violin-Interest-Issues.png" width="598"/>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" id="S4.F6.6.3.1" style="font-size:90%;">Figure 6</span>: </span><span class="ltx_text" id="S4.F6.4.2" style="font-size:90%;">The mean differences between non-marginalized (<math alttext="M=3.69,\,SD=.77" class="ltx_Math" display="inline" id="S4.F6.3.1.m1" intent=":literal"><semantics><mrow><mrow><mi mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mi><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">3.69</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mi mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">S</mi><mo lspace="0em" rspace="0em">​</mo><mi mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">D</mi></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.77</mn></mrow></mrow><annotation encoding="application/x-tex">M=3.69,\,SD=.77</annotation></semantics></math>) and marginalized respondents in response to the importance of workplace, department, and ecosystem climate in quantum science on a scale of 1-5 with 5 being the most important. (<math alttext="{M}=4.19,\,\textit{SD}=.81,\,\textit{t}[218]=-4.60,\,\textit{p}&lt;.001" class="ltx_Math" display="inline" id="S4.F6.4.2.m2" intent=":literal"><semantics><mrow><mrow><mi mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">M</mi><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">4.19</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">SD</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.81</mn></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mrow><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">t</mtext><mo lspace="0em" rspace="0em">​</mo><mrow><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">[</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">218</mn><mo mathbackground="#FFFFFF" stretchy="false" style="--ltx-bg-color:#FFFFFF;">]</mo></mrow></mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">=</mo><mrow><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">−</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">4.60</mn></mrow></mrow><mo mathbackground="#FFFFFF" rspace="0.337em" style="--ltx-bg-color:#FFFFFF;">,</mo><mrow><mtext class="ltx_mathvariant_italic" mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">p</mtext><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">&lt;</mo><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">.001</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">{M}=4.19,\,\textit{SD}=.81,\,\textit{t}[218]=-4.60,\,\textit{p}&lt;.001</annotation></semantics></math>).</span></figcaption>
+</figure>
+</section>
+<section class="ltx_subsection" id="S4.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.2 </span>Early Career Perceptions</h3>
+<div class="ltx_para" id="S4.SS2.p1">
+<p class="ltx_p" id="S4.SS2.p1.1">Respondents who are not part of the quantum workforce, but expressed an <span class="ltx_text ltx_font_italic" id="S4.SS2.p1.1.1">interest</span> in quantum perceive opportunities for careers in quantum science but also challenges. Respondents identified issues of inclusion, climate, protections from harassment, and preventing bias and discrimination as more pressing in quantum sciences and technology than in other disciplines. Fig. <a class="ltx_ref" href="https://arxiv.org/html/2601.14297v1#S4.F6" title="Figure 6 ‣ IV.1 Marginalized Respondents Experience Quantum Science Differently ‣ IV Early Findings From the Global Quantum Needs Assessment ‣ Meeting the Needs of the Global Quantum Science Community: A Call to Action"><span class="ltx_text ltx_ref_tag">6</span></a> shows that both non-marginalized and marginalized respondents perceived the importance of these issues as high, though marginalized respondents perceive these issues as more pressing than non-marginalized. Overall, respondents perceive quantum science as less diverse and less welcoming, especially for women and gender minorities; this perception itself is a barrier to entering the field.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS3">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.3 </span>View from the Top</h3>
+<div class="ltx_para" id="S4.SS3.p1">
+<p class="ltx_p" id="S4.SS3.p1.1">Respondents at senior levels report that marginalized colleagues encounter more obstacles related to advancement, mentorship access, and workplace culture. Respondents overwhelmingly endorse greater accommodations and commitments to diversity with protections from bias and harassment ranking highest. Other practices viewed positively by respondents include recruitment policies that include diversity considerations, policies that support family commitments, equity and inclusion policies and the provision of facilities that accommodate all employees.
+Senior researchers remain hopeful about the future of diversity in quantum.</p>
+<ul class="ltx_itemize" id="S4.I1">
+<li class="ltx_item" id="S4.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I1.i1.p1">
+<p class="ltx_p" id="S4.I1.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I1.i1.p1.1.1">“I think the changes within the community have been positive, but still have a ways to go. When I began the community was nearly entirely straight, male, and white or asian, and there was little or no discussion of [diversity, equity, and inclusion] being an issue. The demographics of each new cohort seem to be more diverse along nearly all axes, and most (though not all!) of my senior colleagues recognize to some degree that (a) people from underrepresented groups face extra barriers and (b) the field is stronger when more people can contribute to it.”</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S4.SS3.p2">
+<p class="ltx_p" id="S4.SS3.p2.1">While many senior researchers observed that the discipline has changed and diversified since they started out, they also acknowledged that, by and large, the people at the top are much the same in terms of demographics and the pathways they took to achieve their current status as they were decades ago.</p>
+<ul class="ltx_itemize" id="S4.I2">
+<li class="ltx_item" id="S4.I2.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I2.i1.p1">
+<p class="ltx_p" id="S4.I2.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I2.i1.p1.1.1">“The field has really grown in the last few years. With that there have been several initiatives to make the field more diverse and inclusive. While I think it’s very nice overall that there is more awareness I don’t think I’ve seen much change actually happening at higher levels. I hope this is a matter of time.”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I2.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I2.i2.p1">
+<p class="ltx_p" id="S4.I2.i2.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I2.i2.p1.1.1">“Things get names, that [sound] good, but people and structures haven’t changed.”</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S4.SS3.p3">
+<p class="ltx_p" id="S4.SS3.p3.1">Concrete accommodations were praised as aids to advancement for marginalized quantum scientists.</p>
+<ul class="ltx_itemize" id="S4.I3">
+<li class="ltx_item" id="S4.I3.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I3.i1.p1">
+<p class="ltx_p" id="S4.I3.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I3.i1.p1.1.1">“I’ve seen, in a very positive light, how major conferences organized by APS or Optica offer childcare grants. As a mother of three children under the age of five, that has truly been a game changer for me. This kind of support should be promoted much more widely‚ almost to the point of being mandatory.”</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S4.SS3.p4">
+<p class="ltx_p" id="S4.SS3.p4.1">Many senior respondents also cite the punishing nature of careers that are often viewed as intrinsically competitive, requiring 24/7 attention, and not friendly to family life. Several researchers called out work expectations they view as unsustainable and abusive.</p>
+</div>
+<div class="ltx_para" id="S4.SS3.p5">
+<ul class="ltx_itemize" id="S4.I4">
+<li class="ltx_item" id="S4.I4.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I4.i1.p1">
+<p class="ltx_p" id="S4.I4.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I4.i1.p1.1.1">“On the other hand, from a negative perspective, I believe the pressure for scientific productivity has skyrocketed, pushing a publish like there’s no tomorrow, mentality‚ even at the cost of emotional or psychological abuse toward students and research teams.”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I4.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I4.i2.p1">
+<p class="ltx_p" id="S4.I4.i2.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I4.i2.p1.1.1">“This CANNOT continue. Excellence in science cannot come at the expense of abuse. A truly excellent scientific environment must be built on respect, empathy, and care for the people who make science possible.”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I4.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I4.i3.p1">
+<p class="ltx_p" id="S4.I4.i3.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I4.i3.p1.1.1">“I feel that there is more support from ground-up initiatives on this and voices of young scientists are better heard. However, I do still feel quite a lot of resistance coming from some parts of the community, mostly still having the fallacy that diversity (especially when it comes to hiring) and excellence are not attainable together.”</span></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p" id="S4.SS3.p5.1">One senior researcher talked about their journey of understanding.</p>
+<ul class="ltx_itemize" id="S4.I5">
+<li class="ltx_item" id="S4.I5.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I5.i1.p1">
+<p class="ltx_p" id="S4.I5.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I5.i1.p1.1.1">“I had a very positive [experience] personally . . . I wasn’t aware of how challenging it had been for some of my peers until I started discussing [equity and inclusion] more intentionally. It made me understand that these struggles and barriers can be easily missed or overlooked if we don’t make an intentional effort to engage with others and discuss about them.”</span></p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS4">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.4 </span>Mentorship</h3>
+<div class="ltx_para" id="S4.SS4.p1">
+<p class="ltx_p" id="S4.SS4.p1.1">Respondents from all levels express a desire for more structured mentorship, better institutional support for inclusive and nurturing supervision, and improved support networks e.g. formal and informal near-peer mentorship <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Akinla2018</span></cite>. Below are selected quotes from the survey:</p>
+<ul class="ltx_itemize" id="S4.I6">
+<li class="ltx_item" id="S4.I6.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I6.i1.p1">
+<p class="ltx_p" id="S4.I6.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I6.i1.p1.1.1">“More built-up mentoring networks so that trainees can find advice, guidance, and advocacy from senior professionals beyond their supervisor and local lab/workplace”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I6.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I6.i2.p1">
+<p class="ltx_p" id="S4.I6.i2.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I6.i2.p1.1.1">“Near peer mentoring”</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S4.SS4.p2">
+<p class="ltx_p" id="S4.SS4.p2.1">Respondents were not merely suggesting more mentoring for junior quantum scientists, but also resources and training for the senior scientists responsible for guiding them. Awareness is the first step, once aware however, many advisors feel challenged to support students from marginalized backgrounds.</p>
+<ul class="ltx_itemize" id="S4.I7">
+<li class="ltx_item" id="S4.I7.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I7.i1.p1">
+<p class="ltx_p" id="S4.I7.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I7.i1.p1.1.1">“I started my career essentially unaware of the extra barriers faced by people from underrepresented groups. I came to learn about it gradually and through a mix of influences: having a spouse (who works in a different field) describe the challenges she was facing; mentoring students from a wider range of groups and seeing their experiences; and more formal diversity training from the university.”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I7.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I7.i2.p1">
+<p class="ltx_p" id="S4.I7.i2.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I7.i2.p1.1.1">“Physics always had a severe gender imbalance, finding causes and remedies was and is important. I have become more aware of the nuances and complexity of attracting and mentoring diverse students, as well as the barriers they face.”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I7.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I7.i3.p1">
+<p class="ltx_p" id="S4.I7.i3.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I7.i3.p1.1.1">“More built-up mentoring networks so that trainees can find advisors beyond their supervisor and local lab/workplace.”</span></p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS5">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.5 </span>The Ones Who Leave</h3>
+<div class="ltx_para" id="S4.SS5.p1">
+<p class="ltx_p" id="S4.SS5.p1.1">The number of respondents who left careers in quantum science were small (<span class="ltx_text ltx_font_italic" id="S4.SS5.p1.1.1">n=16</span>); however, their experiences are telling. They reported higher levels of bias and harassment. Nearly all cited issues of diversity, equity, and inclusion as parts of their decision to leave. One respondents summed their reasons for leaving succintly:</p>
+<ul class="ltx_itemize" id="S4.I8">
+<li class="ltx_item" id="S4.I8.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I8.i1.p1">
+<p class="ltx_p" id="S4.I8.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I8.i1.p1.1.1">“Bro-y and competitive culture.”</span></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p" id="S4.SS5.p1.2">Another respondent called for institutions to prioritize collegiality and personal support as a means to improving success in quantum sciences.</p>
+<ul class="ltx_itemize" id="S4.I9">
+<li class="ltx_item" id="S4.I9.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I9.i1.p1">
+<p class="ltx_p" id="S4.I9.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I9.i1.p1.1.1">“[A] Broader desire by all professional organizations (academic, industrial, government) to value the contributions of individuals as human beings above all else. Making an impact on colleagues through collegiality for the betterment of team advancement and teaching/training/developing junior scientists/colleagues to be successful in the workplace are just as impactful work for all organizations as meeting profit goals or unfortunately far too often unrealistic/’stretch’ targets promised to external parties”</span></p>
+</div>
+</li>
+</ul>
+</div>
+<figure class="ltx_table" id="S4.T1">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table"><span class="ltx_text" id="S4.T1.2.1.1" style="font-size:90%;">Table 1</span>: </span><span class="ltx_text" id="S4.T1.3.2" style="font-size:90%;">Comparison of our findings to negative interpersonal experiences reported astronomy, solar science, and geophysics reported in the Royal Astronomy Society (RAS) Report <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">RAS2024bullying</span></cite>, both for total sample populations and for marginalized populations.</span><span class="ltx_note ltx_role_footnotetext" id="footnotex1"><sup class="ltx_note_mark">0</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">0</sup><span class="ltx_note_type">footnotetext: </span>While our data required users to self-identify as marginalized/non-marginalized, in interpreting the RAS report we use the term marginalized to include racial/ethnic minorities, LGBTQ+ researchers, disabled researchers, and gender-diverse respondents.</span></span></span></figcaption>
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle" id="S4.T1.4">
+<thead class="ltx_thead">
+<tr class="ltx_tr" id="S4.T1.4.1.1">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column" id="S4.T1.4.1.1.1"><span class="ltx_text ltx_font_bold" id="S4.T1.4.1.1.1.1">Measure</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column" id="S4.T1.4.1.1.2"><span class="ltx_text ltx_font_bold" id="S4.T1.4.1.1.2.1">Quantum Overall</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column" id="S4.T1.4.1.1.3"><span class="ltx_text ltx_font_bold" id="S4.T1.4.1.1.3.1">Quantum: Marginalized</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column" id="S4.T1.4.1.1.4"><span class="ltx_text ltx_font_bold" id="S4.T1.4.1.1.4.1">RAS</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column" id="S4.T1.4.1.1.5"><span class="ltx_text ltx_font_bold" id="S4.T1.4.1.1.5.1">RAS: Marginalized</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr" id="S4.T1.4.2.1">
+<td class="ltx_td ltx_align_left ltx_border_t" id="S4.T1.4.2.1.1">Witnessed bias or discrimination</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S4.T1.4.2.1.2">54%</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S4.T1.4.2.1.3">73%</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S4.T1.4.2.1.4">–</td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="S4.T1.4.2.1.5">–</td>
+</tr>
+<tr class="ltx_tr" id="S4.T1.4.3.2">
+<td class="ltx_td ltx_align_left" id="S4.T1.4.3.2.1">Experienced bias or discrimination</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.3.2.2">39%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.3.2.3">56%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.3.2.4">–</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.3.2.5">–</td>
+</tr>
+<tr class="ltx_tr" id="S4.T1.4.4.3">
+<td class="ltx_td ltx_align_left" id="S4.T1.4.4.3.1">Witnessed bullying or harassment</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.4.3.2">38%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.4.3.3">47%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.4.3.4">57%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.4.3.5">65-75%</td>
+</tr>
+<tr class="ltx_tr" id="S4.T1.4.5.4">
+<td class="ltx_td ltx_align_left" id="S4.T1.4.5.4.1">Experienced bullying or harassment</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.5.4.2">23%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.5.4.3">28%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.5.4.4">44%</td>
+<td class="ltx_td ltx_align_center" id="S4.T1.4.5.4.5">47-62%</td>
+</tr>
+</tbody>
+</table>
+</figure>
+</section>
+<section class="ltx_subsection" id="S4.SS6">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.6 </span>Pathways</h3>
+<div class="ltx_para" id="S4.SS6.p1">
+<p class="ltx_p" id="S4.SS6.p1.1">A common call at multiple levels, but particularly among junior scientists, is the need for more ”on-ramps” into quantum science beyond the typical physics graduate student to professor model. Respondents want diverse entry pathways into quantum careers, including smoother transitions from computer science, engineering, and mathematics. They want to see more support for interdisciplinary mobility.</p>
+<ul class="ltx_itemize" id="S4.I10">
+<li class="ltx_item" id="S4.I10.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I10.i1.p1">
+<p class="ltx_p" id="S4.I10.i1.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I10.i1.p1.1.1">“There needs to be pathways back to quantum for people who have graduated in other areas.”</span></p>
+</div>
+</li>
+<li class="ltx_item" id="S4.I10.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S4.I10.i2.p1">
+<p class="ltx_p" id="S4.I10.i2.p1.1"><span class="ltx_text ltx_font_italic" id="S4.I10.i2.p1.1.1">“Many talented researchers leave the field due to hostile environments or lack of mentorship, which represents a significant loss for the community. Creating structures that value diversity, ensure accountability, and provide clear career pathways would help retain talent and foster innovation in this rapidly evolving field.”</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S4.SS6.p2">
+<p class="ltx_p" id="S4.SS6.p2.1">Taken together, these findings suggest that the quantum ecosystem is losing talent early and creating avoidable friction late. Improving both the <span class="ltx_text ltx_font_bold" id="S4.SS6.p2.1.1">realities</span> and <span class="ltx_text ltx_font_bold" id="S4.SS6.p2.1.2">perceptions</span> of climate and opportunity will be essential if we aim to cultivate a robust, competitive, and ethically grounded quantum workforce.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="S4.SS7">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">IV.7 </span>A Cross Discipline Comparison</h3>
+<div class="ltx_para" id="S4.SS7.p1">
+<p class="ltx_p" id="S4.SS7.p1.1">In <math alttext="2023" class="ltx_Math" display="inline" id="S4.SS7.p1.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2023</mn><annotation encoding="application/x-tex">2023</annotation></semantics></math>, the UK Royal Astronomy Society released the results of their survey on bullying and harassment in the disciplines of astronomy, solar science, and geophysics. A comparison of the two studies show negative interpersonal experiences are prevalent and disproportionately affect researchers with marginalized identities, with the findings summarized in Table 1.</p>
+</div>
+<div class="ltx_para" id="S4.SS7.p2">
+<p class="ltx_p" id="S4.SS7.p2.2">Although the absolute prevalence of direct victimization is higher in the RAS sample than in the present data (<math alttext="44\%" class="ltx_Math" display="inline" id="S4.SS7.p2.1.m1" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">44</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">44\%</annotation></semantics></math> vs. <math alttext="23\%" class="ltx_Math" display="inline" id="S4.SS7.p2.2.m2" intent=":literal"><semantics><mrow><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">23</mn><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">%</mo></mrow><annotation encoding="application/x-tex">23\%</annotation></semantics></math>), both studies show that harmful behavior is widespread and highly visible within research environments. Furthermore, the two studies converge in their findings regarding inequitable impact; the RAS report documented that marginalized groups—including racial and ethnic minorities, LGBTQ+ researchers, disabled individuals, and gender-diverse respondents—experienced bullying and harassment at sharply elevated rates. Our present study reproduced this pattern; both junior and senior researchers who identified as marginalized reported significantly higher levels of witnessing and experiencing bias and bullying than their non-marginalized peers.</p>
+</div>
+<div class="ltx_para" id="S4.SS7.p3">
+<p class="ltx_p" id="S4.SS7.p3.1">Despite differences in discipline, geographic context, sampling, and measurement, the consistency of these patterns suggests that inequitable treatment of marginalized researchers reflects a broader structural problem across scientific cultures rather than isolated institutional issues. Both datasets underscore the need for organizational reforms that address not only individual incidents but the systems that enable biased or harmful behavior to persist.</p>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="S5">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">V </span>Conclusion: A Call to Action</h2>
+<div class="ltx_para" id="S5.p1">
+<p class="ltx_p" id="S5.p1.1">The quantum workforce of the future must be built on and embody the principles of responsible science: respect for persons, beneficence, and justice. Not only will these values ensure a responsible path forward, but in turn, they will help propel the quantum ecosystem through the direct benefits afforded by a diversified quantum community.</p>
+</div>
+<div class="ltx_para" id="S5.p2">
+<p class="ltx_p" id="S5.p2.1">These values are not abstract. They have direct implications for hiring, training, funding, policy, and evaluation. Our survey of over <math alttext="1000" class="ltx_Math" display="inline" id="S5.p2.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math> members of the quantum science community has identified key areas where progress can be made to improve alignment with these principles. Specifically, we call on policymakers, universities, and institutes to prioritize and allocate funding and resources to the following key areas:</p>
+</div>
+<div class="ltx_para" id="S5.p3">
+<ul class="ltx_itemize" id="S5.I1">
+<li class="ltx_item" id="S5.I1.i1" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i1.p1">
+<p class="ltx_p" id="S5.I1.i1.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i1.p1.1.1">Investment in and re-framing of diversity-hires explicitly as talent retention.</span> Improving senior staff representation from underrepresented communities, especially at the tenure track faculty level, will improve resiliency <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Barak2002</span></cite>, combat systemic scholarly devaluation <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">Settles2021</span></cite>, and support new pathways for talent retention in the quantum workforce <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">EC2005TurningDiversity</span>; <span class="ltx_ref ltx_missing_citation ltx_ref_self">EC2008SMEDiversity</span></cite>, in turn stimulating quantum research <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">EC2008DiversityInnovation</span></cite>.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i2" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i2.p1">
+<p class="ltx_p" id="S5.I1.i2.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i2.p1.1.1">Mentorship, especially for junior researchers.</span> Both formal and informal mentorship will improve the quantum science community, especially for marginalized researchers <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">colwell2020</span></cite>.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i3" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i3.p1">
+<p class="ltx_p" id="S5.I1.i3.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i3.p1.1.1">Grants to help cover additional costs</span> associated with caregiving responsibilities (e.g. traveling with children) and disability-related accommodations (e.g. accessible transportation, traveling with a personal aide), expanding on what is already offered <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">IYQGlobalFund2025</span></cite>, as well as childcare at conferences.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i4" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i4.p1">
+<p class="ltx_p" id="S5.I1.i4.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i4.p1.1.1">Workshops, scholarships, and stable financial support to fund junior researchers</span>, especially for those from marginalized communities.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i5" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i5.p1">
+<p class="ltx_p" id="S5.I1.i5.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i5.p1.1.1">Network-forming and community support</span> so that students, especially those from marginalized communities, are able to access opportunities for career advancement across the globe.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i6" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i6.p1">
+<p class="ltx_p" id="S5.I1.i6.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i6.p1.1.1">Requiring the development and enforcement of anti-harassment policies.</span> Improved training for senior staff and managers to both improve systems for monitoring progress and track accountability in implementing EDI measures.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i7" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i7.p1">
+<p class="ltx_p" id="S5.I1.i7.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i7.p1.1.1">Investment in senior staff and managers to improve their EDI-competent mentorship capabilities.</span> This will amplify community-level and grassroots support for quantum diversity, especially by improving support for junior researchers as they overcome obstacles they encounter in their career.</p>
+</div>
+</li>
+<li class="ltx_item" id="S5.I1.i8" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span>
+<div class="ltx_para" id="S5.I1.i8.p1">
+<p class="ltx_p" id="S5.I1.i8.p1.1"><span class="ltx_text ltx_font_bold" id="S5.I1.i8.p1.1.1">Continuing research into the needs of the global quantum science community.</span> This must continue in collaboration with social scientists to continue investigating how we can shift the culture of our field specifically to be actively welcoming to a diverse workforce. There is also a need for research into the economic impacts of diversity in the quantum workforce; a diverse quantum workforce will be more humane, more resilient, and more reflective of the societies it intends to serve, and also more productive.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_para" id="S5.p4">
+<p class="ltx_p" id="S5.p4.1">Acting on this call to action will support building a diverse, quantum-ready workforce. A quantum future that embodies the principles we’ve proposed will not only be stronger and more innovative–—it will be more humane, more resilient, and more reflective of the societies it intends to serve.</p>
+</div>
+<div class="ltx_para" id="S5.p5">
+<p class="ltx_p" id="S5.p5.1">Many of our authors are based in Europe, where the quantum ecosystem is at a crossroads. As the EU Commission shapes the Quantum Act, it has a rare chance to articulate not only a technical vision for the field, but an ethical and humane one that will also align with Europe’s economic priorities. Notably, the European Union still lags behind the United States and China in terms of quantum investment <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">QuIC2025</span></cite>, and much of quantum science’s culture is still dictated by other nations, especially the United States. However, the European Union still has the opportunity to be a frontrunner in quantum science by setting the right example in values. Mandates for quantum EDI directly from the European Commission, complimented by B-Corps <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">BLab</span></cite> style certification and diversity equality plans (similar to gender equality plans <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">GEP</span></cite>) along Horizon grant calls for diversity hires, would directly support the more local, community-specific efforts to improve EDI in quantum. This provides viable paths toward implementation of the key areas highlighted above.</p>
+</div>
+<div class="ltx_para" id="S5.p6">
+<p class="ltx_p" id="S5.p6.1">DiviQ and the Quantum Flagship EDI-WG stand ready to support this—along with similar efforts throughout the global quantum ecosystem—through evidence-based recommendations, community engagement, collaboration with our partner organizations around the world, and the forthcoming full report from our global survey. We also recognize that we, the authors of this report, have the privilege of being able to openly support quantum diversity efforts—not all quantum science researchers are so lucky; DiviQ stands ready to support individuals and grassroots organizations around the world in building quantum resiliency in the face of anti-EDI repression.</p>
+</div>
+<div class="ltx_para" id="S5.p7">
+<p class="ltx_p" id="S5.p7.2">As we finalize our initial data collection, which is available along with printable promotional material online on the DiviQ and Quantum Flagship websites <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">DiviQSurvey</span>; <span class="ltx_ref ltx_missing_citation ltx_ref_self">QuantumFlagshipSurvey</span></cite>, we also emphasize that we are still far from our goal of <math alttext="2000" class="ltx_Math" display="inline" id="S5.p7.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2000</mn><annotation encoding="application/x-tex">2000</annotation></semantics></math> responses to the survey by the end of <math alttext="2026" class="ltx_Math" display="inline" id="S5.p7.2.m2" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">2026</mn><annotation encoding="application/x-tex">2026</annotation></semantics></math>. We hope the open source data we have gathered, available online as well <cite class="ltx_cite ltx_citemacro_cite"><span class="ltx_ref ltx_missing_citation ltx_ref_self">kaggle2025</span></cite>, will continue to grow and be used to support the global quantum science ecosystem.</p>
+</div>
+</section>
+<section class="ltx_section" id="S6">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">VI </span>Acknowledgments</h2>
+<div class="ltx_para" id="S6.p1">
+<p class="ltx_p" id="S6.p1.1">This work was partially funded by CEX2024-001490-S [MICIU/AEI/10.13039/501100011033], Fundació Cellex, Fundació Mir-Puig, and Generalitat de Catalunya through CERCA.
+TzBP gratefully acknowledges support from the Quantum Software Consortium Ada Lovelace Fellowship.</p>
+</div>
+<div class="ltx_para" id="S6.p2">
+<p class="ltx_p" id="S6.p2.1">The survey itself was funded by Quantum Flagship and donations from SandboxAQ.</p>
+</div>
+<div class="ltx_para" id="S6.p3">
+<p class="ltx_p" id="S6.p3.4">We also gratefully acknowledge logistical support in survey distribution from the American Physical Society, We in Quantum Development (WiQD), Women for Quantum (W<math alttext="4" class="ltx_Math" display="inline" id="S6.p3.1.m1" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>Q, Attom*innen, the Quantum Internet Alliance, Quantum Software Consortium, QuCats, International Women<math alttext="+" class="ltx_Math" display="inline" id="S6.p3.2.m2" intent=":literal"><semantics><mo mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">+</mo><annotation encoding="application/x-tex">+</annotation></semantics></math> in Theoretical Physics, the other members of the Quantum Flagship EDI Working Group (EDI-WG), and the individuals who brought our survey posters to their home institutions around the world. We are especially grateful to W<math alttext="4" class="ltx_Math" display="inline" id="S6.p3.3.m3" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>Q member Christiane Koch for feedback on an early versions of the survey, and EDI-WG member Irene D’Amico for feedback on tnis report. We are also grateful to the other members of the Quantum Flagship EDI Working Group, Diversity in Quantum, and our quantum diversity partner organizations for their ongoing support with this project. Lastly, thank you to the over <math alttext="1000" class="ltx_Math" display="inline" id="S6.p3.4.m4" intent=":literal"><semantics><mn mathbackground="#FFFFFF" style="--ltx-bg-color:#FFFFFF;">1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math> survey respondents (so far) who have been put their time into helping us build towards a better quantum future.</p>
+</div>
+</section>
+<section class="ltx_bibliography" id="bib">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+<ul class="ltx_biblist" id="bib.L1">
+</ul>
+</section>
+<section class="ltx_appendix" id="A1">
+<h2 class="ltx_title ltx_title_appendix">
+<span class="ltx_tag ltx_tag_appendix">Appendix A </span>Methodology</h2>
+<section class="ltx_subsection" id="A1.SS1">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">A.1 </span><span class="ltx_text ltx_font_bold" id="A1.SS1.1.1">Participants and Recruitment</span>
+</h3>
+<div class="ltx_para" id="A1.SS1.p1">
+<p class="ltx_p" id="A1.SS1.p1.1">Respondents were recruited through a combination of professional networks, snowball sampling, and—most substantively—direct outreach at major scientific conferences, including the APS March Meeting. Participation was voluntary and open to individuals working or training in quantum-adjacent fields (e.g., physics, engineering, computer science, and industry roles connected to quantum technologies). Because the assessment was exploratory and field-wide sampling frames do not yet exist, the resulting sample should be interpreted as a convenience sample rather than a representative cross-section of the workforce.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="A1.SS2">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">A.2 </span><span class="ltx_text ltx_font_bold" id="A1.SS2.1.1">Survey Instrument</span>
+</h3>
+<div class="ltx_para" id="A1.SS2.p1">
+<p class="ltx_p" id="A1.SS2.p1.1">The survey included a set of Likert-type items (1 = strongly disagree to 5 = strongly agree) designed to measure perceptions of climate, equity, diversity, inclusion, bias/discrimination, and bullying/harassment. Items were organized into thematic clusters reflecting conceptual constructs identified in the EDI literature and through consultation with the research team. Respondents were also invited to provide open-ended comments describing their experiences and recommendations for improving the quantum workforce climate.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="A1.SS3">
+<h3 class="ltx_title ltx_font_bold ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span class="ltx_text ltx_font_medium" id="A1.SS3.1.1.1">A.3</span> </span>Analytic Approach</h3>
+<div class="ltx_para" id="A1.SS3.p1">
+<p class="ltx_p" id="A1.SS3.p1.1"><span class="ltx_text" id="A1.SS3.p1.1.1">Quantitative analyses included confirmatory factor analysis (CFA) to assess whether items grouped within the same construct demonstrated adequate communality and coherence. The CFA supported the proposed factor structure, indicating that the thematic item sets measured underlying shared concepts as intended. Group differences were examined using independent-samples <span class="ltx_text ltx_font_italic" id="A1.SS3.p1.1.1.1">t</span>-tests comparing marginalized and non-marginalized respondents across discrimination, bias, and bullying/harassment measures—an equity-centered framing aligned with the aims of the project. Qualitative responses were reviewed and coded thematically to contextualize quantitative findings and identify recurring patterns not captured by closed-ended items.</span></p>
+</div>
+</section>
+<section class="ltx_subsection" id="A1.SS4">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">A.4 </span><span class="ltx_text ltx_font_bold" id="A1.SS4.1.1">Status of Findings</span>
+</h3>
+<div class="ltx_para" id="A1.SS4.p1">
+<p class="ltx_p" id="A1.SS4.p1.1">Because this is a position paper based on an initial round of data collection, results should be considered preliminary. Additional rounds of recruitment, instrument refinement, and deeper statistical modeling are planned to develop a comprehensive, field-wide assessment of equity and inclusion in the quantum workforce.</p>
+</div>
+</section>
+<section class="ltx_subsection" id="A1.SS5">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">A.5 </span>Limitations</h3>
+<div class="ltx_para" id="A1.SS5.p1">
+<p class="ltx_p" id="A1.SS5.p1.1">These findings should be interpreted within the context of several limitations inherent to this preliminary assessment. First, the sample was not randomly drawn from the quantum science workforce; recruitment relied on convenience sampling, professional networks, and in-person outreach at major conferences, all of which conducted in English. As a result, the dataset may over-represent individuals who are more professionally engaged, more connected to EDI efforts, more motivated to share their experiences, and more comfortable answering a survey in English. Although the statistical tests conducted yielded large <span class="ltx_text ltx_font_italic" id="A1.SS5.p1.1.1">t</span>-values (ranging from approximately 4 to 9), these values reflect differences within this sample; concrete generalization to the full quantum workforce requires replication with a more systematically sampled population.</p>
+</div>
+<div class="ltx_para" id="A1.SS5.p2">
+<p class="ltx_p" id="A1.SS5.p2.1">Second, because standardised workforce demographic baselines do not yet exist for quantum science, it is not possible to evaluate representativeness of this survey across marginalized identities, career stages, or institutional sectors. Relatedly, the use of broad categorical groupings (e.g., “marginalized” and “non-marginalized”) limits the ability to examine intersectional variation across specific identities.</p>
+</div>
+<div class="ltx_para" id="A1.SS5.p3">
+<p class="ltx_p" id="A1.SS5.p3.1">Finally, the survey instrument is still under development. Although confirmatory factor analysis supported the coherence of the thematic constructs, additional validation work, longitudinal data collection, and iterative refinement will be necessary to fully establish the reliability and generalizability of these measures.</p>
+</div>
+<div class="ltx_para" id="A1.SS5.p4">
+<p class="ltx_p" id="A1.SS5.p4.1">Despite these limitations, the consistency and magnitude of observed group differences, combined with qualitative accounts, point to meaningful and actionable concerns warranting both action and further investigation, as emphasised in the maintext.</p>
+</div>
+</section>
+</section><div about="" class="ltx_rdf" content="Overleaf Example" property="dcterms:title"></div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Jan 16 18:54:46 2026 by <a class="ltx_LaTeXML_logo" href="http://dlmf.nist.gov/LaTeXML/"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img alt="Mascot Sammy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg=="/></a>
+</div></footer>
+</div>
+</body>
+</html>
