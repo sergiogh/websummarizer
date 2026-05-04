@@ -65,3 +65,26 @@ def sanitize_story_title(title, is_paper=False):
     if is_paper:
         cleaned = format_paper_title(cleaned)
     return cleaned
+
+
+def sanitize_generated_headline(headline):
+    """Remove assistant chatter from model-generated newsletter headlines."""
+    cleaned = normalize_text(headline) or ""
+    cleaned = re.sub(r"^```(?:text)?\s*|\s*```$", "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+
+    intro_patterns = [
+        r"^(?:certainly|sure|absolutely|of course)[,!.]?\s*",
+        r"^(?:here(?:'s| is)|this is)\s+(?:a|an|the)?\s*(?:snappy\s+)?(?:answer\s+for\s+the\s+)?(?:newsletter\s+)?(?:title|headline|subject(?: line)?)\s*(?:for\s+the\s+newsletter)?\s*[:\-–—.]?\s*",
+        r"^(?:newsletter\s+)?(?:title|headline|subject(?: line)?)\s*[:\-–—]\s*",
+        r"^the\s+(?:newsletter\s+)?(?:title|headline|subject(?: line)?)\s+is\s*[:\-–—]?\s*",
+    ]
+
+    previous = None
+    while cleaned and cleaned != previous:
+        previous = cleaned
+        for pattern in intro_patterns:
+            cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE).strip()
+
+    cleaned = cleaned.strip(" \t\r\n\"'“”‘’")
+    return cleaned

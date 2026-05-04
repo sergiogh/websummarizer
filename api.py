@@ -32,7 +32,7 @@ from story_grounding import (
     generate_grounded_summary,
     generate_grounded_title,
 )
-from title_utils import sanitize_story_title
+from title_utils import sanitize_generated_headline, sanitize_story_title
 
 app = Flask(__name__)
 CORS(app)
@@ -195,7 +195,7 @@ def generate_newsletter_headline(global_summary):
     prompt = get_prompt("newsletter.headline.api")
     micro_summary = SummaryGenerator(global_summary)
     micro_summary.generate_summary(prompt)
-    return micro_summary.summary
+    return sanitize_generated_headline(micro_summary.summary)
 
 def generate_podcast_summary(total_content):
     prompt = get_prompt("podcast.summary.api")
