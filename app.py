@@ -43,8 +43,8 @@ from story_organizer import (
     curate_stories,
     group_stories,
 )
-from story_grounding import failure_summary
-from title_utils import sanitize_story_title
+from story_grounding import failure_summary, filter_passed_stories
+from title_utils import remove_publisher_mentions, sanitize_story_title
 
 load_dotenv()
 
@@ -86,7 +86,7 @@ def require_auth(view_func):
 def render_summary_html(summary: str) -> str:
     rendered = escape(summary or "")
     for label in ("What happened:", "Key detail:", "Why this matters:", "Finding:", "Evidence:"):
-        rendered = rendered.replace(escape(label), "<strong>%s</strong>" % label)
+        rendered = rendered.replace(escape(label), "")
     return rendered.replace("\n", "<br>")
 
 
@@ -528,42 +528,6 @@ def resolve_date_range(start_raw: str = "", end_raw: str = "", days: int = DEFAU
     return start_dt, end_dt
 
 
-def remove_publisher_mentions(title: str, url: str = "") -> str:
-    cleaned = title or ""
-    host = ""
-    if url:
-        host = urlparse(url).netloc.lower().split("@")[-1].split(":")[0]
-        if host.startswith("www."):
-            host = host[4:]
-
-    domain_candidates = []
-    if host:
-        domain_candidates.append(host)
-        if "." in host:
-            domain_candidates.append(host.split(".")[0])
-
-    for domain in domain_candidates:
-        cleaned = re.sub(
-            r"(?i)\b(?:from|via|by)\s+%s\b" % re.escape(domain),
-            "",
-            cleaned,
-        )
-        cleaned = re.sub(r"(?i)\b%s\b" % re.escape(domain), "", cleaned)
-
-    cleaned = re.sub(
-        r"(?i)\s*[-|–—:]\s*[A-Za-z0-9.-]+\.(?:com|io|org|net|co|ai|edu|gov)\b",
-        "",
-        cleaned,
-    )
-    cleaned = re.sub(
-        r"(?i)\b(?:from|via|by)\s+[A-Za-z0-9.-]+\.(?:com|io|org|net|co|ai|edu|gov)\b",
-        "",
-        cleaned,
-    )
-    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip(" -|–—:")
-    return cleaned or (title or "")
-
-
 def extract_quick_text(url: str) -> str:
     try:
         response = requests.get(
@@ -749,14 +713,23 @@ def finalize_newsletter(results, additional_links=None):
     if not results:
         raise RuntimeError("No newsletter stories were generated.")
 
-    curated = curate_stories(results)
+    passed_results = filter_passed_stories(results)
+    if not passed_results:
+        raise RuntimeError("No source-grounded newsletter stories were generated.")
+
+    failed_links = [
+        {"url": story.get("url", ""), "title": story.get("title", "")}
+        for story in results
+        if story not in passed_results
+    ]
+    curated = curate_stories(passed_results)
     primary_results = curated["primary"]
     overflow_results = curated["overflow"]
     manual_additional_links = _normalize_additional_links(additional_links)
     primary_urls = {str(story.get("url") or "").strip().lower() for story in primary_results if story.get("url")}
     merged_overflow = []
     seen_overflow_urls = set(primary_urls)
-    for story in manual_additional_links + overflow_results:
+    for story in manual_additional_links + overflow_results + failed_links:
         story_url = str(story.get("url") or "").strip()
         if not story_url:
             continue

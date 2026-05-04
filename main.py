@@ -333,7 +333,7 @@ def render_comic_section(comic):
 def render_summary_html(summary):
     rendered = html.escape(summary or "")
     for label in ("What happened:", "Key detail:", "Why this matters:", "Finding:", "Evidence:"):
-        rendered = rendered.replace(html.escape(label), f"<strong>{label}</strong>")
+        rendered = rendered.replace(html.escape(label), "")
     return rendered.replace("\n", "<br>")
 
 
@@ -857,9 +857,19 @@ def main() -> None:
         print("Error: No valid content was generated. Exiting.")
         return
 
-    curated = curate_stories(results)
+    passed_results = filter_passed_stories(results)
+    if not passed_results:
+        print("Error: No source-grounded stories were generated. Exiting.")
+        return
+
+    failed_links = [
+        {"url": story.get("url", ""), "title": story.get("title", "")}
+        for story in results
+        if story not in passed_results
+    ]
+    curated = curate_stories(passed_results)
     primary_results = curated["primary"]
-    overflow_results = curated["overflow"]
+    overflow_results = curated["overflow"] + failed_links
     aggregate_outputs = build_aggregate_outputs(primary_results)
 
     global_summary = aggregate_outputs["global_summary"]

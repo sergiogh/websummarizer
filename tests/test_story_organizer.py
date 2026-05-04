@@ -99,7 +99,7 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertNotIn("What happened:", standardized)
         self.assertNotIn("Key detail:", standardized)
         self.assertNotIn("Why this matters:", standardized)
-        self.assertIn("This matters because", standardized)
+        self.assertNotIn("This matters because", standardized)
         self.assertNotIn("Related context:", standardized)
         self.assertNotIn("Recent newsletters", standardized)
 
@@ -119,7 +119,7 @@ class StoryOrganizerTests(unittest.TestCase):
             story_title="IonQ announces system update",
         )
 
-        self.assertIn("This matters because it gives users a larger hardware target.", standardized)
+        self.assertIn("It gives users a larger hardware target.", standardized)
         self.assertNotIn("this matters because this matters because", standardized.lower())
         self.assertNotIn("this matters because it matters because", standardized.lower())
 
@@ -128,8 +128,20 @@ class StoryOrganizerTests(unittest.TestCase):
             "It matters because it matters because customers can test larger circuits.",
             story_title="Quantum startup deployment",
         )
-        self.assertIn("This matters because customers can test larger circuits.", repeated)
+        self.assertIn("Customers can test larger circuits.", repeated)
         self.assertNotIn("it matters because it matters because", repeated.lower())
+
+    def test_standardize_story_summary_does_not_expand_failure_summary(self):
+        standardized = standardize_story_summary(
+            "Unable to generate a source-grounded summary: the downloaded source does not clearly match the selected story title."
+        )
+
+        self.assertEqual(
+            standardized,
+            "Unable to generate a source-grounded summary: the downloaded source does not clearly match the selected story title.",
+        )
+        self.assertNotIn("This matters because", standardized)
+        self.assertNotIn("limited explicit impact context", standardized)
 
     def test_curate_stories_applies_primary_and_overflow_limits(self):
         stories = []

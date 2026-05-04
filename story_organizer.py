@@ -299,6 +299,21 @@ def _strip_matter_prefix(text: str) -> str:
     return cleaned
 
 
+def _is_failure_summary(text: str) -> bool:
+    return _normalize_spaces(text).lower().startswith(
+        "unable to generate a source-grounded summary"
+    )
+
+
+def _sentence_from_clause(text: str) -> str:
+    cleaned = _strip_matter_prefix(text).rstrip(".!?")
+    if not cleaned:
+        return ""
+    if cleaned[0].islower():
+        cleaned = cleaned[0].upper() + cleaned[1:]
+    return _ensure_sentence(cleaned, "")
+
+
 def _extract_labeled(text: str, label: str, next_labels: Sequence[str]) -> str:
     if not text:
         return ""
@@ -381,22 +396,9 @@ def _compose_narrative_summary(what: str, key: str, why: str) -> str:
         if key_sentence != primary[0]:
             primary.append(key_sentence)
 
-    why_text = why
-    if not why_text or why_text == _FALLBACK_WHY:
-        why_text = "The available source text does not provide an explicit impact statement"
-    if "does not provide an explicit impact statement" in why_text:
-        primary.append(_ensure_sentence(why_text, _FALLBACK_WHY + "."))
-    else:
-        why_text = _strip_matter_prefix(why_text)
-        if not why_text:
-            why_text = "The available source text does not provide an explicit impact statement"
-        why_clause = _sentence_to_clause(why_text)
-        primary.append(
-            _ensure_sentence(
-                f"This matters because {why_clause}",
-                "The available source text does not provide an explicit impact statement.",
-            )
-        )
+    why_sentence = _sentence_from_clause(why)
+    if why_sentence and why_sentence not in primary:
+        primary.append(why_sentence)
 
     return " ".join(primary)
 
@@ -411,8 +413,10 @@ def standardize_story_summary(
         return _compose_narrative_summary(
             "No source summary was generated.",
             _FALLBACK_KEY_DETAIL,
-            _FALLBACK_WHY,
+            "",
         )
+    if _is_failure_summary(text):
+        return text
 
     existing_what = _extract_labeled(text, _WHAT_LABEL, (_KEY_LABEL, _WHY_LABEL))
     existing_key = _extract_labeled(text, _KEY_LABEL, (_WHY_LABEL,))
@@ -437,8 +441,6 @@ def standardize_story_summary(
     why = existing_why or _find_impact_sentence(why_candidates)
     if not why and why_candidates:
         why = why_candidates[0]
-    if not why:
-        why = "The source provides a concrete development but limited explicit impact context"
 
     return _compose_narrative_summary(what, key, why)
 

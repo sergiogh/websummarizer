@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urlparse
 
 from summary_generator import normalize_text
 
@@ -65,6 +66,52 @@ def sanitize_story_title(title, is_paper=False):
     if is_paper:
         cleaned = format_paper_title(cleaned)
     return cleaned
+
+
+def remove_publisher_mentions(title: str, url: str = "") -> str:
+    cleaned = title or ""
+    host = ""
+    if url:
+        host = urlparse(url).netloc.lower().split("@")[-1].split(":")[0]
+        if host.startswith("www."):
+            host = host[4:]
+
+    domain_candidates = []
+    if host:
+        domain_candidates.append(host)
+        if "." in host:
+            domain_candidates.append(host.split(".")[0])
+
+    for domain in domain_candidates:
+        escaped = re.escape(domain)
+        cleaned = re.sub(
+            rf"(?i)^\s*(?:from|via|by)\s+{escaped}\s*[:\-–—|]\s*",
+            "",
+            cleaned,
+        )
+        cleaned = re.sub(
+            rf"(?i)\s*[-|–—:]\s*(?:from|via|by)?\s*{escaped}\s*$",
+            "",
+            cleaned,
+        )
+        cleaned = re.sub(
+            rf"(?i)\s*[\(\[]\s*(?:from|via|by)?\s*{escaped}\s*[\)\]]\s*$",
+            "",
+            cleaned,
+        )
+
+    cleaned = re.sub(
+        r"(?i)\s*[-|–—:]\s*[A-Za-z0-9.-]+\.(?:com|io|org|net|co|ai|edu|gov)\b\s*$",
+        "",
+        cleaned,
+    )
+    cleaned = re.sub(
+        r"(?i)^\s*(?:from|via|by)\s+[A-Za-z0-9.-]+\.(?:com|io|org|net|co|ai|edu|gov)\s*[:\-–—|]\s*",
+        "",
+        cleaned,
+    )
+    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip(" -|–—:")
+    return cleaned or (title or "")
 
 
 def sanitize_generated_headline(headline):

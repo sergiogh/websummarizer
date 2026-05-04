@@ -283,8 +283,8 @@ def render_comic_section(comic):
 
 def render_summary_html(summary):
     rendered = _escape(summary)
-    for label in ("Finding:", "Evidence:", "Why it matters:"):
-        rendered = rendered.replace(_escape(label), f"<strong>{label}</strong>")
+    for label in ("What happened:", "Key detail:", "Why this matters:", "Finding:", "Evidence:", "Why it matters:"):
+        rendered = rendered.replace(_escape(label), "")
     return rendered.replace("\n", "<br>")
 
 
@@ -687,7 +687,9 @@ def run_generation(selected_stories, source="api"):
             'grounding': grounding_result
         })
 
-    results = order_stories(results)
+    results = order_stories(filter_passed_stories(results))
+    if not results:
+        raise RuntimeError("No source-grounded stories were generated.")
     aggregate_outputs = build_aggregate_outputs(results)
     global_summary = aggregate_outputs["global_summary"]
     micro_summary = aggregate_outputs["micro_summary"]
