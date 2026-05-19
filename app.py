@@ -41,7 +41,7 @@ from story_organizer import (
     curate_stories,
     order_stories,
 )
-from story_grounding import failure_summary, filter_passed_stories
+from story_grounding import failure_summary
 from title_utils import remove_publisher_mentions, sanitize_story_title
 
 load_dotenv()
@@ -629,11 +629,7 @@ def finalize_newsletter(results, additional_links=None):
     if not results:
         raise RuntimeError("No newsletter stories were generated.")
 
-    passed_results = filter_passed_stories(results)
-    if not passed_results:
-        raise RuntimeError("No source-grounded newsletter stories were generated.")
-
-    curated = curate_stories(passed_results)
+    curated = curate_stories(results)
     primary_results = curated["primary"]
 
     aggregate_outputs = build_aggregate_outputs(primary_results)
@@ -667,6 +663,7 @@ def finalize_newsletter(results, additional_links=None):
         "channel_counts": curated["channel_counts"],
         "aggregate_qa": aggregate_outputs["aggregate_qa"],
         "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],
+        "included_story_ids": [story.get("story_id") for story in primary_results],
         "html": html_content,
         "comic": comic,
         "cover_image_src": cover_image_src,
@@ -1724,24 +1721,6 @@ def home():
           width: 18px;
           height: 18px;
         }}
-        .preview-selection {{
-          margin-top: 8px;
-          display: flex;
-          gap: 12px;
-          flex-wrap: wrap;
-        }}
-        .preview-selection-option {{
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          color: var(--muted);
-          font-size: 0.88rem;
-          font-weight: 700;
-        }}
-        .preview-selection-option input {{
-          width: 16px;
-          height: 16px;
-        }}
       </style>
     </head>
     <body>
@@ -1773,10 +1752,6 @@ def home():
             <div class="archive-header">
               <h2>Story Preview</h2>
               <div class="note" id="preview-meta">Select dates and click preview.</div>
-            </div>
-            <div class="preview-actions">
-              <button type="button" class="tiny-button" id="select-all-button">Select all</button>
-              <button type="button" class="tiny-button" id="unselect-all-button">Unselect all</button>
             </div>
             <div id="preview-list" class="preview-list">
               <div class="empty-state">No preview loaded yet.</div>
@@ -1814,8 +1789,6 @@ def home():
         const form = document.getElementById('generate-form');
         const button = document.getElementById('generate-button');
         const previewButton = document.getElementById('preview-button');
-        const selectAllButton = document.getElementById('select-all-button');
-        const unselectAllButton = document.getElementById('unselect-all-button');
         const browserArchives = document.getElementById('browser-archives');
         const progressPanel = document.getElementById('progress-panel');
         const progressCounter = document.getElementById('progress-counter');
@@ -1936,125 +1909,19 @@ def home():
         window.openBrowserArchiveEditor = openBrowserArchiveEditor;
         renderBrowserArchives();
 
-        function storyKey(story) {{
-          return String(story.index) + '::' + String(story.url || '');
-        }}
-
-        function getSelectionMode(primaryChecked, additionalChecked) {{
-          if (additionalChecked) {{
-            return 'additional';
-          }}
-          if (primaryChecked) {{
-            return 'primary';
-          }}
-          return 'skip';
-        }}
-
-        function getSelectionMap() {{
-          const map = {{}};
-          previewList.querySelectorAll('.preview-selection').forEach((row) => {{
-            const key = String(row.dataset.storyKey || '');
-            const primary = row.querySelector('.preview-story-checkbox-primary');
-            const additional = row.querySelector('.preview-story-checkbox-additional');
-            if (!key || !primary || !additional) {{
-              return;
-            }}
-            map[key] = getSelectionMode(Boolean(primary.checked), Boolean(additional.checked));
-          }});
-          return map;
-        }}
-
         function refreshPreviewMeta() {{
-          const rows = previewList.querySelectorAll('.preview-selection');
-          if (!rows.length) {{
-            return;
-          }}
-          const total = rows.length;
-          let selectedPrimary = 0;
-          let selectedAdditional = 0;
-          rows.forEach((row) => {{
-            const primary = row.querySelector('.preview-story-checkbox-primary');
-            const additional = row.querySelector('.preview-story-checkbox-additional');
-            const mode = getSelectionMode(Boolean(primary && primary.checked), Boolean(additional && additional.checked));
-            if (mode === 'primary') {{
-              selectedPrimary += 1;
-            }} else if (mode === 'additional') {{
-              selectedAdditional += 1;
-            }}
-          }});
-          const skipped = total - selectedPrimary - selectedAdditional;
-          previewMeta.textContent =
-            selectedPrimary + ' in newsletter · ' +
-            selectedAdditional + ' additional links · ' +
-            skipped + ' skipped' +
-            ' between ' + previewStartDate + ' and ' + previewEndDate;
+          previewMeta.textContent = previewStartDate && previewEndDate
+            ? 'All stories between ' + previewStartDate + ' and ' + previewEndDate + ' will be generated as full newsletter items.'
+            : '';
         }}
 
-        function handleSelectionToggle(event) {{
-          const target = event.target;
-          if (!target) {{
-            return;
-          }}
-          const row = target.closest('.preview-selection');
-          if (!row) {{
-            return;
-          }}
-          const primary = row.querySelector('.preview-story-checkbox-primary');
-          const additional = row.querySelector('.preview-story-checkbox-additional');
-          if (!primary || !additional) {{
-            return;
-          }}
-
-          if (target.classList.contains('preview-story-checkbox-additional') && additional.checked) {{
-            primary.checked = false;
-          }}
-          if (target.classList.contains('preview-story-checkbox-primary') && primary.checked) {{
-            additional.checked = false;
-          }}
-          refreshPreviewMeta();
-        }}
-
-        function setAllSelections(checked) {{
-          const rows = previewList.querySelectorAll('.preview-selection');
-          rows.forEach((row) => {{
-            const primary = row.querySelector('.preview-story-checkbox-primary');
-            const additional = row.querySelector('.preview-story-checkbox-additional');
-            if (primary) {{
-              primary.checked = checked;
-            }}
-            if (additional) {{
-              additional.checked = false;
-            }}
-          }});
-          refreshPreviewMeta();
-        }}
-
-        function getStorySelections(stories) {{
-          const selectionMap = getSelectionMap();
-          const selectedStories = [];
-          const additionalStories = [];
-          (Array.isArray(stories) ? stories : []).forEach((story) => {{
-            const mode = String(selectionMap[storyKey(story)] || 'skip');
-            if (mode === 'primary') {{
-              selectedStories.push(story);
-            }} else if (mode === 'additional') {{
-              additionalStories.push(story);
-            }}
-          }});
-          return {{
-            selectedStories: selectedStories,
-            additionalStories: additionalStories,
-          }};
-        }}
-
-        function renderPreview(stories, startDate, endDate, selectionMap) {{
+        function renderPreview(stories, startDate, endDate) {{
           const list = Array.isArray(stories) ? stories : [];
           previewStartDate = startDate || '';
           previewEndDate = endDate || '';
-          const safeSelection = selectionMap || {{}};
-          previewMeta.textContent = list.length + ' stories between ' + previewStartDate + ' and ' + previewEndDate;
           if (!list.length) {{
             previewList.innerHTML = '<div class="empty-state">No stories found for this range.</div>';
+            refreshPreviewMeta();
             return;
           }}
 
@@ -2063,35 +1930,17 @@ def home():
             const url = escapeHtml(story.url || '');
             const tag = escapeHtml(story.tag || 'untagged');
             const published = escapeHtml(story.published_at || 'unknown date');
-            const key = storyKey(story);
-            const savedMode = Object.prototype.hasOwnProperty.call(safeSelection, key) ? safeSelection[key] : 'primary';
-            const mode = savedMode === true ? 'primary' : (savedMode === false ? 'skip' : String(savedMode || 'primary'));
-            const primaryCheckedAttr = mode === 'primary' ? ' checked' : '';
-            const additionalCheckedAttr = mode === 'additional' ? ' checked' : '';
             return '<li class="archive-item">' +
               '<div class="preview-item">' +
                 '<div>' +
                   '<div class="archive-name">' + (idx + 1) + '. ' + title + '</div>' +
                   '<div class="archive-meta">' + published + ' · ' + tag + '</div>' +
                   '<div class="archive-meta">' + url + '</div>' +
-                  '<div class="preview-selection" data-story-key="' + escapeHtml(key) + '">' +
-                    '<label class="preview-selection-option">' +
-                      '<input type="checkbox" class="preview-story-checkbox-primary"' + primaryCheckedAttr + ' />' +
-                      '<span>Add to newsletter</span>' +
-                    '</label>' +
-                    '<label class="preview-selection-option">' +
-                      '<input type="checkbox" class="preview-story-checkbox-additional"' + additionalCheckedAttr + ' />' +
-                      '<span>Additional links</span>' +
-                    '</label>' +
-                  '</div>' +
+                  '<div class="archive-meta">Full summarized story</div>' +
                 '</div>' +
               '</div>' +
             '</li>';
           }}).join('') + '</ul>';
-
-          previewList.querySelectorAll('.preview-story-checkbox-primary, .preview-story-checkbox-additional').forEach((checkbox) => {{
-            checkbox.addEventListener('change', handleSelectionToggle);
-          }});
           refreshPreviewMeta();
         }}
 
@@ -2151,20 +2000,10 @@ def home():
           }}
         }});
 
-        selectAllButton.addEventListener('click', () => {{
-          setAllSelections(true);
-        }});
-
-        unselectAllButton.addEventListener('click', () => {{
-          setAllSelections(false);
-        }});
-
         form.addEventListener('submit', async (event) => {{
           event.preventDefault();
           button.disabled = true;
           previewButton.disabled = true;
-          selectAllButton.disabled = true;
-          unselectAllButton.disabled = true;
           button.textContent = 'Generating...';
           bannerRoot.innerHTML = '';
           resetProgress();
@@ -2172,23 +2011,20 @@ def home():
           try {{
             const formData = new FormData(form);
             const apiKey = String(formData.get('openai_api_key') || '').trim();
-            const previousSelection = getSelectionMap();
             const startPayload = await postForm('/generate/start', formData);
             const stories = Array.isArray(startPayload.stories) ? startPayload.stories : [];
-            renderPreview(stories, startPayload.start_date, startPayload.end_date, previousSelection);
-            const selections = getStorySelections(stories);
-            const selectedStories = selections.selectedStories;
-            const additionalStories = selections.additionalStories;
+            renderPreview(stories, startPayload.start_date, startPayload.end_date);
+            const selectedStories = stories;
             const total = selectedStories.length;
             if (!total) {{
-              throw new Error('Select at least one story with "Add to newsletter" before generating.');
+              throw new Error('No stories were found in this date range.');
             }}
             const parsedStories = [];
             let skippedCount = 0;
             let fallbackCount = 0;
 
             updateProgress({{
-              message: 'Loaded ' + stories.length + ' stories from sheet; selected ' + total + ' for newsletter and ' + additionalStories.length + ' as additional links.',
+              message: 'Loaded ' + stories.length + ' stories from sheet; generating every story as a full newsletter item.',
               total: total,
               scanned: 0,
               parsed: 0,
@@ -2258,7 +2094,7 @@ def home():
 
             const payload = await postJson('/generate/finalize', {{
               stories: parsedStories,
-              additional_links: additionalStories,
+              additional_links: [],
               openai_api_key: apiKey,
             }});
 
@@ -2282,8 +2118,6 @@ def home():
           }} finally {{
             button.disabled = false;
             previewButton.disabled = false;
-            selectAllButton.disabled = false;
-            unselectAllButton.disabled = false;
             button.textContent = 'Generate Latest Newsletter';
           }}
         }});

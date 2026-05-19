@@ -762,12 +762,7 @@ def main() -> None:
         print("Error: No valid content was generated. Exiting.")
         return
 
-    passed_results = filter_passed_stories(results)
-    if not passed_results:
-        print("Error: No source-grounded stories were generated. Exiting.")
-        return
-
-    curated = curate_stories(passed_results)
+    curated = curate_stories(results)
     primary_results = curated["primary"]
     overflow_results = []
     aggregate_outputs = build_aggregate_outputs(primary_results)

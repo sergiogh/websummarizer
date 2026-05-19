@@ -680,9 +680,9 @@ def run_generation(selected_stories, source="api"):
             'grounding': grounding_result
         })
 
-    results = order_stories(filter_passed_stories(results))
+    results = order_stories(results)
     if not results:
-        raise RuntimeError("No source-grounded stories were generated.")
+        raise RuntimeError("No newsletter stories were generated.")
     aggregate_outputs = build_aggregate_outputs(results)
     global_summary = aggregate_outputs["global_summary"]
     micro_summary = aggregate_outputs["micro_summary"]
@@ -699,6 +699,7 @@ def run_generation(selected_stories, source="api"):
             "podcast_summary": podcast_summary,
             "aggregate_qa": aggregate_outputs["aggregate_qa"],
             "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],
+            "included_story_ids": [story.get("story_id") for story in results],
             "comic": comic
         }
     )
