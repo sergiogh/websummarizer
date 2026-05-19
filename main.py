@@ -24,11 +24,9 @@ from qa_checks import (
 )
 from quantum_bits_comic import fetch_latest_quantum_bits_comic, resolve_comic_for_render
 from story_organizer import (
-    STORY_BUCKET_DESCRIPTIONS,
-    STORY_BUCKET_LABELS,
     build_story_digest,
     curate_stories,
-    group_stories,
+    order_stories,
 )
 from story_grounding import (
     failure_summary,
@@ -337,73 +335,29 @@ def render_summary_html(summary):
     return rendered.replace("\n", "<br>")
 
 
-def render_article_groups(results):
+def render_articles(results):
     sections = []
-    for bucket, stories in group_stories(results):
-        bucket_label = html.escape(STORY_BUCKET_LABELS.get(bucket, "Other Developments"))
-        bucket_description = html.escape(STORY_BUCKET_DESCRIPTIONS.get(bucket, ""))
-        anchor_id = f"channel-{bucket}"
+    for result in order_stories(results):
+        if 'url' not in result or 'summary' not in result:
+            continue
+        article_url = html.escape(result.get('url', ''), quote=True)
+        article_title = html.escape(result.get('title', ''))
+        article_summary = render_summary_html(result.get('summary', ''))
         sections.append(f"""
-        <div class="story-group" id="{anchor_id}">
-            <div class="story-group-heading">{bucket_label} ({len(stories)})</div>
-            <p class="story-group-intent">{bucket_description}</p>""")
-        for result in stories:
-            if 'url' not in result or 'summary' not in result:
-                continue
-            article_url = html.escape(result.get('url', ''), quote=True)
-            article_title = html.escape(result.get('title', ''))
-            article_summary = render_summary_html(result.get('summary', ''))
-            sections.append(f"""
         <div class="article">
             <h3><a href="{article_url}">{article_title}</a></h3>""")
-            if result.get('image_url'):
-                image_url = html.escape(result['image_url'], quote=True)
-                sections.append(f"""
-            <img src="{image_url}" alt="Article image" />""")
+        if result.get('image_url'):
+            image_url = html.escape(result['image_url'], quote=True)
             sections.append(f"""
+            <img src="{image_url}" alt="Article image" />""")
+        sections.append(f"""
             <p>{article_summary}</p>
             <p class="source-link"><a href="{article_url}">Read original article</a></p>
         </div>""")
-        sections.append("""
-        </div>""")
     return "".join(sections)
-
-def render_topic_navigation(results):
-    links = []
-    for bucket, stories in group_stories(results):
-        bucket_label = html.escape(STORY_BUCKET_LABELS.get(bucket, "Other Developments"))
-        links.append(
-            f'<a href="#channel-{bucket}">{bucket_label} ({len(stories)})</a>'
-        )
-    if not links:
-        return ""
-    return f"""
-    <div class="topic-navigation">
-        <div class="topic-navigation-title">Topics in this issue</div>
-        <div class="topic-navigation-links">{''.join(links)}</div>
-    </div>"""
-
-
-def render_overflow_links(overflow_results):
-    if not overflow_results:
-        return ""
-    items = []
-    for story in overflow_results:
-        article_url = html.escape(story.get('url', ''), quote=True)
-        article_title = html.escape(story.get('title', ''))
-        items.append(
-            f'<li><a href="{article_url}" target="_blank" rel="noopener noreferrer">{article_title}</a></li>'
-        )
-    return f"""
-    <div class="overflow-section" id="more-links">
-        <h2>More links this week ({len(overflow_results)})</h2>
-        <ul>{''.join(items)}</ul>
-    </div>"""
 
 
 def create_newsletter(results, global_summary, micro_summary, podcast_summary, comic=None, overflow_results=None):
-    overflow_results = overflow_results or []
-    
     # Generate highlight image
     highlight_image = generate_highlight_image(global_summary, micro_summary)
     
@@ -536,57 +490,10 @@ def create_newsletter(results, global_summary, micro_summary, podcast_summary, c
             margin: 10px 0 18px;
             box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
         }}
-        .story-group {{
-            margin-top: 30px;
-        }}
-        .story-group-heading {{
-            color: #0f766e;
-            font-size: 0.82em;
-            font-weight: bold;
-            letter-spacing: 0.08em;
-            margin: 0 0 12px;
-            text-transform: uppercase;
-        }}
-        .story-group-intent {{
-            margin: 0 0 12px;
-            color: #4b5563;
-            font-size: 0.92em;
-            line-height: 1.5;
-        }}
         .issue-stats {{
             margin-top: 12px;
             color: #4b5563;
             font-size: 0.95em;
-        }}
-        .topic-navigation {{
-            margin-top: 20px;
-            border: 1px solid #d6eaf8;
-            border-radius: 10px;
-            padding: 14px 16px;
-            background: #f7fbff;
-        }}
-        .topic-navigation-title {{
-            color: #0f766e;
-            font-size: 0.8em;
-            font-weight: bold;
-            letter-spacing: 0.08em;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }}
-        .topic-navigation-links {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 14px;
-        }}
-        .overflow-section {{
-            margin-top: 30px;
-            padding-top: 18px;
-            border-top: 1px dashed #d6eaf8;
-        }}
-        .overflow-section ul {{
-            margin: 0;
-            padding-left: 20px;
-            line-height: 1.7;
         }}
         .action-links {{
             display: flex;
@@ -634,14 +541,12 @@ def create_newsletter(results, global_summary, micro_summary, podcast_summary, c
     <p>{final_global_summary}</p>"""
 
     newsletter += render_comic_section(comic)
-    newsletter += render_topic_navigation(final_results)
     
     newsletter += f"""
     <h2>The Week in Quantum Computing</h2>
     <div class="articles">"""
 
-    newsletter += render_article_groups(final_results)
-    newsletter += render_overflow_links(overflow_results)
+    newsletter += render_articles(final_results)
 
     newsletter += f"""
     </div>
@@ -862,14 +767,9 @@ def main() -> None:
         print("Error: No source-grounded stories were generated. Exiting.")
         return
 
-    failed_links = [
-        {"url": story.get("url", ""), "title": story.get("title", "")}
-        for story in results
-        if story not in passed_results
-    ]
     curated = curate_stories(passed_results)
     primary_results = curated["primary"]
-    overflow_results = curated["overflow"] + failed_links
+    overflow_results = []
     aggregate_outputs = build_aggregate_outputs(primary_results)
 
     global_summary = aggregate_outputs["global_summary"]

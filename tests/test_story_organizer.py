@@ -143,7 +143,7 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertNotIn("This matters because", standardized)
         self.assertNotIn("limited explicit impact context", standardized)
 
-    def test_curate_stories_applies_primary_and_overflow_limits(self):
+    def test_curate_stories_keeps_all_stories_in_primary(self):
         stories = []
         for idx in range(30):
             stories.append(
@@ -157,13 +157,14 @@ class StoryOrganizerTests(unittest.TestCase):
             )
 
         curated = curate_stories(stories)
-        self.assertLessEqual(len(curated["primary"]), 20)
-        self.assertLessEqual(len(curated["overflow"]), 8)
-        self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_RESEARCH], 3)
-        self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_INDUSTRY_INVESTMENT], 3)
-        self.assertGreaterEqual(curated["channel_counts"][STORY_BUCKET_POLICY_SECURITY], 2)
+        self.assertEqual(len(curated["primary"]), 30)
+        self.assertEqual(curated["overflow"], [])
+        self.assertEqual(
+            sum(curated["channel_counts"].values()),
+            len(curated["primary"]),
+        )
 
-    def test_curate_stories_keeps_less_than_twenty_in_primary(self):
+    def test_curate_stories_keeps_smaller_issues_in_primary(self):
         stories = []
         for idx in range(19):
             stories.append(
@@ -180,7 +181,7 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertEqual(len(curated["primary"]), 19)
         self.assertEqual(len(curated["overflow"]), 0)
 
-    def test_default_overflow_uses_least_relevant_story(self):
+    def test_curate_stories_no_longer_demotes_low_relevance_story_to_overflow(self):
         stories = []
         for idx in range(20):
             stories.append(
@@ -203,9 +204,10 @@ class StoryOrganizerTests(unittest.TestCase):
         )
 
         curated = curate_stories(stories)
-        self.assertEqual([story["story_id"] for story in curated["overflow"]], ["low"])
+        self.assertIn("low", [story["story_id"] for story in curated["primary"]])
+        self.assertEqual(curated["overflow"], [])
 
-    def test_overflow_prefers_lower_relevance_stories(self):
+    def test_curate_stories_ignores_legacy_overflow_limit(self):
         stories = []
         for idx in range(24):
             tag = "research" if idx < 8 else "other"
@@ -224,8 +226,8 @@ class StoryOrganizerTests(unittest.TestCase):
                 }
             )
         curated = curate_stories(stories, primary_limit=8, overflow_limit=4)
-        overflow_ids = {story["story_id"] for story in curated["overflow"]}
-        self.assertTrue(any(int(story_id) >= 8 for story_id in overflow_ids))
+        self.assertEqual(len(curated["primary"]), 24)
+        self.assertEqual(curated["overflow"], [])
 
 
 if __name__ == "__main__":

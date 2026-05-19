@@ -636,36 +636,10 @@ def curate_stories(
         enriched["_score"] = _score_story(enriched, index)
         prepared.append(enriched)
 
-    deduped = _dedupe_stories(prepared)
-
-    ranked = sorted(
-        deduped,
-        key=lambda item: (-int(item.get("_score", 0)), int(item.get("_index", 0))),
-    )
-    selected = ranked[:primary_limit]
-    selected_ids = {
-        str(story.get("story_id", "")) + "::" + str(story.get("url", ""))
-        for story in selected
-    }
-
     primary = sorted(
-        selected,
+        prepared,
         key=lambda item: (_BUCKET_PRIORITY[item["story_bucket"]], int(item.get("_index", 0))),
     )
-
-    # Reflow should prioritize lower relevance stories.
-    overflow_candidates = []
-    low_relevance = sorted(
-        deduped,
-        key=lambda item: (int(item.get("_score", 0)), int(item.get("_index", 0))),
-    )
-    for story in low_relevance:
-        key = str(story.get("story_id", "")) + "::" + str(story.get("url", ""))
-        if key in selected_ids:
-            continue
-        overflow_candidates.append(story)
-
-    overflow = overflow_candidates[:overflow_limit]
 
     channel_counts = {bucket: 0 for bucket in STORY_BUCKET_SEQUENCE}
     for story in primary:
@@ -673,7 +647,7 @@ def curate_stories(
 
     return {
         "primary": primary,
-        "overflow": overflow,
+        "overflow": [],
         "channel_counts": channel_counts,
     }
 

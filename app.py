@@ -37,11 +37,9 @@ from quantum_bits_comic import fetch_latest_quantum_bits_comic, resolve_comic_fo
 from qa_checks import qa_title_summary, validate_story_grounding
 from scientific_paper_processor import ScientificPaperProcessor
 from story_organizer import (
-    STORY_BUCKET_DESCRIPTIONS,
-    STORY_BUCKET_LABELS,
     build_story_digest,
     curate_stories,
-    group_stories,
+    order_stories,
 )
 from story_grounding import failure_summary, filter_passed_stories
 from title_utils import remove_publisher_mentions, sanitize_story_title
@@ -185,72 +183,27 @@ def render_newsletter_html(
     comic: dict = None,
     cover_image_src: str = "",
 ):
-    overflow_results = overflow_results or []
-    story_groups = group_stories(results)
     sections = []
-    toc_items = []
 
-    for bucket, stories in story_groups:
-        bucket_label = escape(STORY_BUCKET_LABELS.get(bucket, "Other Developments"))
-        bucket_description = escape(STORY_BUCKET_DESCRIPTIONS.get(bucket, ""))
-        anchor_id = "channel-%s" % bucket
-        toc_items.append(
-            '<a href="#%s">%s (%d)</a>' % (anchor_id, bucket_label, len(stories))
-        )
+    for story in order_stories(results):
+        story_url = escape(story["url"], quote=True)
+        story_title = escape(story["title"])
+        story_summary = render_summary_html(story["summary"])
+        story_image = escape(story.get("image_url", ""), quote=True)
+        image_html = ""
+        if story_image:
+            image_html = '<img src="%s" alt="%s" class="story-image" />' % (story_image, story_title)
         sections.append(
             """
-            <section class="story-group" id="%s">
-              <div class="story-group-label">%s (%d)</div>
-              <p class="story-group-intent">%s</p>
+            <article class="story-card">
+              <h3><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></h3>
+              %s
+              <p>%s</p>
+              <p class="source-link"><a href="%s" target="_blank" rel="noopener noreferrer">Read source</a></p>
+            </article>
             """
-            % (anchor_id, bucket_label, len(stories), bucket_description)
+            % (story_url, story_title, image_html, story_summary, story_url)
         )
-        for story in stories:
-            story_url = escape(story["url"], quote=True)
-            story_title = escape(story["title"])
-            story_summary = render_summary_html(story["summary"])
-            story_image = escape(story.get("image_url", ""), quote=True)
-            image_html = ""
-            if story_image:
-                image_html = '<img src="%s" alt="%s" class="story-image" />' % (story_image, story_title)
-            sections.append(
-                """
-                <article class="story-card">
-                  <h3><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></h3>
-                  %s
-                  <p>%s</p>
-                  <p class="source-link"><a href="%s" target="_blank" rel="noopener noreferrer">Read source</a></p>
-                </article>
-                """
-                % (story_url, story_title, image_html, story_summary, story_url)
-            )
-        sections.append("</section>")
-
-    overflow_section = ""
-    if overflow_results:
-        links = []
-        for story in overflow_results:
-            story_url = escape(story["url"], quote=True)
-            story_title = escape(story["title"])
-            links.append(
-                '<li><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></li>'
-                % (story_url, story_title)
-            )
-        overflow_section = """
-        <section class="story-group overflow-group" id="more-links">
-          <div class="story-group-label">More links this week (%d)</div>
-          <ul class="overflow-list">%s</ul>
-        </section>
-        """ % (len(overflow_results), "".join(links))
-
-    table_of_contents = ""
-    if toc_items:
-        table_of_contents = """
-        <nav class="toc">
-          <div class="toc-title">Topics in this issue</div>
-          <div class="toc-links">%s</div>
-        </nav>
-        """ % "".join(toc_items)
 
     comic_section = render_comic_section(comic)
     all_grounded = all(not story.get("qa_flags") for story in results)
@@ -342,7 +295,7 @@ def render_newsletter_html(
       object-fit: cover;
       box-shadow: 0 8px 24px rgba(18, 32, 51, 0.08);
     }}
-    .story-group {{
+    .stories {{
       margin-top: 34px;
     }}
     .story-group-intent {{
@@ -417,41 +370,6 @@ def render_newsletter_html(
       color: var(--muted);
       font-size: 0.95rem;
     }}
-    .toc {{
-      margin-top: 18px;
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.75);
-    }}
-    .toc-title {{
-      font-family: Arial, sans-serif;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-      font-weight: 700;
-    }}
-    .toc-links {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-      font-family: Arial, sans-serif;
-      font-size: 0.92rem;
-    }}
-    .overflow-group {{
-      border-top: 1px dashed var(--line);
-      padding-top: 20px;
-    }}
-    .overflow-list {{
-      margin: 0;
-      padding-left: 18px;
-      line-height: 1.75;
-    }}
-    .overflow-list li {{
-      margin-bottom: 4px;
-    }}
     a {{
       color: var(--link);
       text-decoration: none;
@@ -470,12 +388,12 @@ def render_newsletter_html(
       <div class="issue-stats">This week: {primary_count} selected stories</div>
       {verification_badge}
       <div class="recap">{global_summary}</div>
-      {table_of_contents}
       {cover_image_html}
     </header>
     {comic_section}
-    {sections}
-    {overflow_section}
+    <section class="stories">
+      {sections}
+    </section>
   </main>
 </body>
 </html>
@@ -485,11 +403,9 @@ def render_newsletter_html(
         primary_count=len(results),
         global_summary=escape(global_summary),
         verification_badge=verification_badge,
-        table_of_contents=table_of_contents,
         cover_image_html=cover_image_html,
         comic_section=comic_section,
         sections="".join(sections),
-        overflow_section=overflow_section,
     )
 
 
@@ -717,28 +633,8 @@ def finalize_newsletter(results, additional_links=None):
     if not passed_results:
         raise RuntimeError("No source-grounded newsletter stories were generated.")
 
-    failed_links = [
-        {"url": story.get("url", ""), "title": story.get("title", "")}
-        for story in results
-        if story not in passed_results
-    ]
     curated = curate_stories(passed_results)
     primary_results = curated["primary"]
-    overflow_results = curated["overflow"]
-    manual_additional_links = _normalize_additional_links(additional_links)
-    primary_urls = {str(story.get("url") or "").strip().lower() for story in primary_results if story.get("url")}
-    merged_overflow = []
-    seen_overflow_urls = set(primary_urls)
-    for story in manual_additional_links + overflow_results + failed_links:
-        story_url = str(story.get("url") or "").strip()
-        if not story_url:
-            continue
-        url_key = story_url.lower()
-        if url_key in seen_overflow_urls:
-            continue
-        merged_overflow.append(story)
-        seen_overflow_urls.add(url_key)
-    overflow_results = merged_overflow
 
     aggregate_outputs = build_aggregate_outputs(primary_results)
     global_summary = aggregate_outputs["global_summary"] or "Weekly newsletter generated."
@@ -759,7 +655,6 @@ def finalize_newsletter(results, additional_links=None):
         headline,
         global_summary,
         primary_results,
-        overflow_results=overflow_results,
         comic=comic,
         cover_image_src=cover_image_src,
     )
@@ -768,7 +663,7 @@ def finalize_newsletter(results, additional_links=None):
         "headline": headline,
         "global_summary": global_summary,
         "results": primary_results,
-        "overflow_results": overflow_results,
+        "overflow_results": [],
         "channel_counts": curated["channel_counts"],
         "aggregate_qa": aggregate_outputs["aggregate_qa"],
         "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],

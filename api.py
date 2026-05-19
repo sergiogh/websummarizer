@@ -25,7 +25,7 @@ from quantum_bits_comic import (
     fetch_latest_quantum_bits_comic,
     resolve_comic_for_render,
 )
-from story_organizer import STORY_BUCKET_LABELS, build_story_digest, group_stories, order_stories
+from story_organizer import build_story_digest, order_stories
 from story_grounding import (
     failure_summary,
     filter_passed_stories,
@@ -288,26 +288,19 @@ def render_summary_html(summary):
     return rendered.replace("\n", "<br>")
 
 
-def render_article_groups(results):
+def render_articles(results):
     sections = []
-    for bucket, stories in group_stories(results):
-        bucket_label = _escape(STORY_BUCKET_LABELS.get(bucket, "Other Developments"))
+    for result in order_stories(results):
+        if 'url' not in result or 'summary' not in result:
+            continue
+        article_url = _escape(result.get('url', ''))
+        article_title = _escape(result.get('title', ''))
+        article_summary = render_summary_html(result.get('summary', ''))
         sections.append(
-            "<div style='margin-top:24px;'>"
-            f"<div style='font-size:0.8em; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#0f766e; margin-bottom:8px;'>{bucket_label}</div>"
+            f"<div><h3><a href='{article_url}'>{article_title}</a></h3>"
+            f"<p>{article_summary}</p>"
+            f"<p><a href='{article_url}'>{article_url}</a></p></div>"
         )
-        for result in stories:
-            if 'url' not in result or 'summary' not in result:
-                continue
-            article_url = _escape(result.get('url', ''))
-            article_title = _escape(result.get('title', ''))
-            article_summary = render_summary_html(result.get('summary', ''))
-            sections.append(
-                f"<div><h3><a href='{article_url}'>{article_title}</a></h3>"
-                f"<p>{article_summary}</p>"
-                f"<p><a href='{article_url}'>{article_url}</a></p></div>"
-            )
-        sections.append("</div>")
     return "".join(sections)
 
 def create_newsletter(results, global_summary, micro_summary, podcast_summary, comic=None):
@@ -332,7 +325,7 @@ def create_newsletter(results, global_summary, micro_summary, podcast_summary, c
     newsletter += f"<h2>Quick Recap</h2><p>{final_global_summary}</p>"
     newsletter += render_comic_section(comic)
     newsletter += "</br></br><h2>The Week in Quantum Computing</h2>"
-    newsletter += render_article_groups(final_results)
+    newsletter += render_articles(final_results)
     newsletter += f"</br></br><h2>Podcast Research Content</h2><p>{final_podcast_summary}</p>"
     return newsletter
 
