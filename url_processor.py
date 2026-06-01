@@ -257,6 +257,28 @@ def _meta_content(soup: BeautifulSoup, *selectors: str) -> str:
     return ""
 
 
+def _first_datetime_value(soup: BeautifulSoup) -> str:
+    selectors = (
+        "meta[property='article:published_time']",
+        "meta[name='article:published_time']",
+        "meta[property='og:published_time']",
+        "meta[name='publish_date']",
+        "meta[name='publication_date']",
+        "meta[name='date']",
+        "meta[itemprop='datePublished']",
+        "time[datetime]",
+        "time[pubdate]",
+    )
+    for selector in selectors:
+        node = soup.select_one(selector)
+        if not node:
+            continue
+        value = node.get("content") or node.get("datetime") or node.get("pubdate") or node.get_text(" ", strip=True)
+        if value:
+            return _clean_text(value)
+    return ""
+
+
 def _remove_boilerplate(soup: BeautifulSoup) -> None:
     for node in soup(
         [
@@ -395,6 +417,7 @@ def extract_article_payload(html_content: str, url: str = "") -> Dict[str, objec
             "meta[property='og:description']",
             "meta[name='twitter:description']",
         ),
+        "published_time": _first_datetime_value(soup),
         "h1": _clean_text(soup.find("h1").get_text(" ", strip=True)) if soup.find("h1") else "",
     }
 

@@ -41,7 +41,7 @@ from story_organizer import (
     curate_stories,
     order_stories,
 )
-from story_researcher import research_quantum_stories
+from story_researcher import is_date_in_window, parse_candidate_date, research_quantum_stories
 from story_grounding import build_extractive_fallback_summary, build_safe_summary_fallback, failure_summary
 from title_utils import remove_publisher_mentions, sanitize_story_title
 
@@ -519,6 +519,107 @@ def build_fallback_story(index: int, url: str, title_seed: str, tag: str, reason
         "source_metadata": {"source_url": url, "extraction_status": "timeout_fallback"},
         "summary_evidence": [],
     }
+
+
+def _metadata_source_date(metadata: dict) -> str:
+    metadata = metadata or {}
+    for key in ("published_time", "datePublished", "publish_date", "publication_date", "date"):
+        value = str(metadata.get(key, "") or "").strip()
+        if value:
+            return value
+    return ""
+
+
+def verify_research_candidate(candidate: dict, start_dt: datetime, end_dt: datetime) -> dict:
+    title = str(candidate.get("title_seed") or candidate.get("title") or "").strip()
+    url = str(candidate.get("url") or "").strip()
+    published_at = str(candidate.get("published_at") or "").strip()
+
+    result = {
+        "url": url,
+        "title_seed": title,
+        "published_at": published_at,
+        "status": "verified",
+        "label": "Verified",
+        "reason": "",
+        "source_date": "",
+        "final_url": url,
+        "extraction_status": "",
+        "clean_text_length": 0,
+    }
+
+    if not url:
+        result.update({"status": "source_inaccessible", "label": "Source inaccessible", "reason": "Missing URL."})
+        return result
+
+    if not is_date_in_window(published_at, start_dt, end_dt):
+        result.update(
+            {
+                "status": "date_mismatch",
+                "label": "Date mismatch",
+                "reason": "Search result publication date is outside the selected date range or could not be parsed.",
+            }
+        )
+        return result
+
+    try:
+        content_bundle = process_url(url, title, "")
+    except Exception as exc:
+        result.update(
+            {
+                "status": "source_inaccessible",
+                "label": "Source inaccessible",
+                "reason": str(exc)[:220] or "Could not fetch source.",
+            }
+        )
+        return result
+
+    metadata = content_bundle.get("metadata", {}) or {}
+    clean_text = content_bundle.get("clean", "") or ""
+    source_date_raw = _metadata_source_date(metadata)
+    source_date = parse_candidate_date(source_date_raw)
+
+    result.update(
+        {
+            "source_date": source_date.isoformat() if source_date else source_date_raw,
+            "final_url": metadata.get("final_url") or metadata.get("canonical_url") or url,
+            "extraction_status": metadata.get("extraction_status", ""),
+            "clean_text_length": len(clean_text),
+        }
+    )
+
+    if source_date_raw and not is_date_in_window(source_date_raw, start_dt, end_dt):
+        result.update(
+            {
+                "status": "date_mismatch",
+                "label": "Date mismatch",
+                "reason": "Fetched source publication metadata is outside the selected date range.",
+            }
+        )
+        return result
+
+    if not clean_text:
+        result.update(
+            {
+                "status": "source_inaccessible",
+                "label": "Source inaccessible",
+                "reason": "The source could not be downloaded into usable text.",
+            }
+        )
+        return result
+
+    if metadata.get("extraction_status") == "insufficient_content" or len(clean_text) < 500:
+        result.update(
+            {
+                "status": "low_article_text",
+                "label": "Low article text",
+                "reason": "The source was fetched, but the extracted article text is too short for a confident pre-check.",
+            }
+        )
+        return result
+
+    result["reason"] = "Publication date and source text passed the pre-generation check."
+    return result
 
 
 def process_story_with_timeout(index: int, url: str, title_seed: str, tag: str, timeout_seconds: int):
@@ -1818,6 +1919,7 @@ def home():
               <div class="note" id="research-meta">Run research to find extra candidates.</div>
             </div>
             <div class="preview-actions">
+              <button type="button" class="tiny-button" id="verify-research-button">Verify selected</button>
               <button type="button" class="tiny-button" id="select-research-button">Select suggested</button>
               <button type="button" class="tiny-button" id="clear-research-button">Clear suggested</button>
             </div>
@@ -1858,6 +1960,7 @@ def home():
         const button = document.getElementById('generate-button');
         const previewButton = document.getElementById('preview-button');
         const researchButton = document.getElementById('research-button');
+        const verifyResearchButton = document.getElementById('verify-research-button');
         const selectResearchButton = document.getElementById('select-research-button');
         const clearResearchButton = document.getElementById('clear-research-button');
         const browserArchives = document.getElementById('browser-archives');
@@ -2035,19 +2138,42 @@ def home():
             const published = escapeHtml(story.published_at || 'unknown date');
             const publisher = escapeHtml(story.publisher || 'unknown source');
             const rationale = escapeHtml(story.rationale || '');
+            const confidence = Number(story.confidence || 0);
+            const source = escapeHtml(story.source || 'research');
+            const windowInfo = story.research_window || {{}};
+            const windowLabel = escapeHtml((windowInfo.start_date && windowInfo.end_date) ? (windowInfo.start_date + ' to ' + windowInfo.end_date) : (previewStartDate && previewEndDate ? previewStartDate + ' to ' + previewEndDate : 'selected range'));
+            const citations = Array.isArray(story.citation_urls) ? story.citation_urls.filter(Boolean) : [];
+            const verification = story.verification || null;
+            const verificationStatus = verification ? String(verification.status || '') : '';
+            const verificationClass = verificationStatus && verificationStatus !== 'verified' ? ' warning' : '';
+            const verificationLabel = verification ? escapeHtml(verification.label || verification.status || 'Checked') : 'Not verified';
+            const verificationReason = verification && verification.reason ? '<div class="archive-meta">Verification: ' + escapeHtml(verification.reason) + '</div>' : '';
+            const sourceDate = verification && verification.source_date ? '<div class="archive-meta">Source date: ' + escapeHtml(verification.source_date) + '</div>' : '';
+            const cleanLength = verification && verification.clean_text_length ? '<div class="archive-meta">Extracted text: ' + Number(verification.clean_text_length) + ' characters</div>' : '';
             const duplicate = story.duplicate_of ? String(story.duplicate_of) : '';
             const disabled = duplicate ? ' disabled' : '';
-            const checked = duplicate ? '' : '';
+            const checked = story.selected && !duplicate ? ' checked' : '';
             const badges = '<span class="story-badge">' + tag + '</span>' +
               '<span class="story-badge">' + publisher + '</span>' +
+              '<span class="story-badge">Confidence ' + Math.round(confidence * 100) + '%</span>' +
+              '<span class="story-badge' + verificationClass + '">' + verificationLabel + '</span>' +
               (duplicate ? '<span class="story-badge warning">Likely duplicate</span>' : '<span class="story-badge">New lead</span>');
+            const citationHtml = citations.length
+              ? '<div class="archive-meta">Citations: ' + citations.map((citation) => '<a class="archive-link" href="' + escapeHtml(citation) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(citation) + '</a>').join(' · ') + '</div>'
+              : '';
             return '<li class="archive-item">' +
               '<div class="preview-item">' +
                 '<input class="story-checkbox research-checkbox" type="checkbox" data-research-index="' + idx + '"' + checked + disabled + ' />' +
                 '<div>' +
                   '<div class="archive-name">' + title + '</div>' +
-                  '<div class="archive-meta">' + published + ' · ' + url + '</div>' +
+                  '<div class="archive-meta">Publication date: ' + published + ' · Research window: ' + windowLabel + '</div>' +
+                  '<div class="archive-meta">Source URL: <a class="archive-link" href="' + url + '" target="_blank" rel="noopener noreferrer">' + url + '</a></div>' +
+                  '<div class="archive-meta">Found via: ' + source + '</div>' +
                   (rationale ? '<div class="archive-meta">' + rationale + '</div>' : '') +
+                  citationHtml +
+                  sourceDate +
+                  cleanLength +
+                  verificationReason +
                   (duplicate ? '<div class="archive-meta">Already represented by: ' + escapeHtml(duplicate) + '</div>' : '') +
                   '<div>' + badges + '</div>' +
                 '</div>' +
@@ -2070,6 +2196,41 @@ def home():
               source: 'research',
             }};
           }});
+        }}
+
+        async function verifySelectedResearch(apiKey) {{
+          const checkedIndexes = Array.from(document.querySelectorAll('.research-checkbox:checked')).map((checkbox) => Number(checkbox.getAttribute('data-research-index') || -1));
+          checkedIndexes.forEach((index) => {{
+            if (researchedStories[index]) {{
+              researchedStories[index].selected = true;
+            }}
+          }});
+          const selected = selectedResearchStories();
+          if (!selected.length) {{
+            showBanner('Select at least one suggested story to verify.', 'error');
+            return [];
+          }}
+
+          const payload = await postJson('/research/verify', {{
+            stories: selected,
+            start_date: previewStartDate || String(new FormData(form).get('start_date') || ''),
+            end_date: previewEndDate || String(new FormData(form).get('end_date') || ''),
+            openai_api_key: apiKey || '',
+          }});
+          const byUrl = {{}};
+          (payload.results || []).forEach((item) => {{
+            byUrl[String(item.url || '')] = item;
+          }});
+          researchedStories = researchedStories.map((story, idx) => {{
+            const verification = byUrl[String(story.url || '')];
+            if (!verification) return story;
+            return Object.assign({{}}, story, {{
+              verification: verification,
+              selected: checkedIndexes.includes(idx),
+            }});
+          }});
+          renderResearch(researchedStories);
+          return payload.results || [];
         }}
 
         async function parseJsonResponse(response) {{
@@ -2147,15 +2308,40 @@ def home():
           }}
         }});
 
+        verifyResearchButton.addEventListener('click', async () => {{
+          verifyResearchButton.disabled = true;
+          const previousLabel = verifyResearchButton.textContent;
+          verifyResearchButton.textContent = 'Verifying...';
+          bannerRoot.innerHTML = '';
+
+          try {{
+            const apiKey = String(new FormData(form).get('openai_api_key') || '').trim();
+            const results = await verifySelectedResearch(apiKey);
+            if (results.length) {{
+              const verifiedCount = results.filter((item) => item.status === 'verified').length;
+              showBanner('Verified ' + verifiedCount + ' of ' + results.length + ' selected suggestions.', verifiedCount === results.length ? 'success' : 'error');
+            }}
+          }} catch (error) {{
+            showBanner(error.message, 'error');
+          }} finally {{
+            verifyResearchButton.disabled = false;
+            verifyResearchButton.textContent = previousLabel;
+          }}
+        }});
+
         selectResearchButton.addEventListener('click', () => {{
           document.querySelectorAll('.research-checkbox:not(:disabled)').forEach((checkbox) => {{
             checkbox.checked = true;
+            const index = Number(checkbox.getAttribute('data-research-index') || -1);
+            if (researchedStories[index]) researchedStories[index].selected = true;
           }});
         }});
 
         clearResearchButton.addEventListener('click', () => {{
           document.querySelectorAll('.research-checkbox').forEach((checkbox) => {{
             checkbox.checked = false;
+            const index = Number(checkbox.getAttribute('data-research-index') || -1);
+            if (researchedStories[index]) researchedStories[index].selected = false;
           }});
         }});
 
@@ -2164,6 +2350,7 @@ def home():
           button.disabled = true;
           previewButton.disabled = true;
           researchButton.disabled = true;
+          verifyResearchButton.disabled = true;
           button.textContent = 'Generating...';
           bannerRoot.innerHTML = '';
           resetProgress();
@@ -2174,7 +2361,23 @@ def home():
             const startPayload = await postForm('/generate/start', formData);
             const stories = Array.isArray(startPayload.stories) ? startPayload.stories : [];
             renderPreview(stories, startPayload.start_date, startPayload.end_date);
-            const researchSelection = selectedResearchStories();
+            let researchSelection = selectedResearchStories();
+            if (researchSelection.length) {{
+              updateProgress({{
+                message: 'Verifying selected researched stories before generation...',
+                total: stories.length + researchSelection.length,
+                scanned: 0,
+                parsed: 0,
+                skipped: 0,
+                fallback: 0,
+              }});
+              const verificationResults = await verifySelectedResearch(apiKey);
+              const failedResearch = verificationResults.filter((item) => item.status !== 'verified');
+              if (failedResearch.length) {{
+                throw new Error('Research verification blocked generation: ' + failedResearch.map((item) => (item.title_seed || item.url || 'story') + ' (' + item.label + ')').join('; '));
+              }}
+              researchSelection = selectedResearchStories();
+            }}
             const selectedStories = stories.concat(researchSelection);
             const total = selectedStories.length;
             if (!total) {{
@@ -2280,6 +2483,7 @@ def home():
             button.disabled = false;
             previewButton.disabled = false;
             researchButton.disabled = false;
+            verifyResearchButton.disabled = false;
             button.textContent = 'Generate Latest Newsletter';
           }}
         }});
@@ -2420,6 +2624,12 @@ def research_stories():
             existing_stories,
             limit=int(os.getenv("STORY_RESEARCH_LIMIT", "20")),
         )
+        research_window = {
+            "start_date": start_dt.strftime("%Y-%m-%d"),
+            "end_date": end_dt.strftime("%Y-%m-%d"),
+        }
+        for candidate in candidates:
+            candidate["research_window"] = research_window
         return jsonify(
             {
                 "ok": True,
@@ -2427,6 +2637,41 @@ def research_stories():
                 "start_date": start_dt.strftime("%Y-%m-%d"),
                 "end_date": end_dt.strftime("%Y-%m-%d"),
                 "candidates": candidates,
+            }
+        )
+    except Exception as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+
+
+@app.route("/research/verify", methods=["POST"])
+@require_auth
+def verify_research_stories():
+    payload = request.get_json(silent=True) or {}
+    try:
+        prepare_runtime_env(
+            api_key=(payload.get("openai_api_key") or "").strip(),
+            require_openai=False,
+        )
+        start_dt, end_dt = resolve_date_range(
+            payload.get("start_date", ""),
+            payload.get("end_date", ""),
+            days=DEFAULT_LOOKBACK_DAYS,
+        )
+        raw_stories = payload.get("stories") or []
+        if not isinstance(raw_stories, list):
+            return jsonify({"ok": False, "error": "Invalid stories payload."}), 400
+
+        results = [
+            verify_research_candidate(story, start_dt, end_dt)
+            for story in raw_stories
+            if isinstance(story, dict)
+        ]
+        return jsonify(
+            {
+                "ok": True,
+                "total": len(results),
+                "verified": sum(1 for item in results if item.get("status") == "verified"),
+                "results": results,
             }
         )
     except Exception as exc:

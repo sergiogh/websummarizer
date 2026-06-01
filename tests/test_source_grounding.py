@@ -17,6 +17,7 @@ class SourceGroundingTests(unittest.TestCase):
           <head>
             <title>IonQ launches new system</title>
             <meta property="og:title" content="IonQ launches new quantum system">
+            <meta property="article:published_time" content="2026-05-30T08:00:00Z">
           </head>
           <body>
             <nav>Latest: WrongCo raises $900 million for unrelated chips</nav>
@@ -36,6 +37,7 @@ class SourceGroundingTests(unittest.TestCase):
         self.assertIn("IonQ announced", extraction["text"])
         self.assertNotIn("WrongCo raises", extraction["text"])
         self.assertEqual(extraction["metadata"]["h1"], "IonQ launches new quantum system")
+        self.assertEqual(extraction["metadata"]["published_time"], "2026-05-30T08:00:00Z")
 
     def test_grounding_flags_wrong_downloaded_story(self):
         source = (

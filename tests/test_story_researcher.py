@@ -4,7 +4,9 @@ from datetime import datetime
 from story_researcher import (
     build_research_prompt,
     extract_response_text,
+    is_date_in_window,
     normalize_research_candidates,
+    parse_candidate_date,
     parse_research_response,
     title_signature,
 )
@@ -60,6 +62,50 @@ class StoryResearcherTests(unittest.TestCase):
         self.assertEqual(candidates[0]["duplicate_of"], "IonQ launches new quantum system")
         self.assertIsNone(candidates[1]["duplicate_of"])
         self.assertEqual(candidates[1]["confidence"], 0.8)
+
+    def test_normalize_candidates_filters_outside_date_window(self):
+        raw = [
+            {
+                "title": "Before window",
+                "url": "https://example.com/before",
+                "published_at": "2026-05-23",
+            },
+            {
+                "title": "Inside window",
+                "url": "https://example.com/inside",
+                "published_at": "May 30, 2026",
+            },
+            {
+                "title": "After window",
+                "url": "https://example.com/after",
+                "published_at": "2026-05-31",
+            },
+            {
+                "title": "Unknown date",
+                "url": "https://example.com/unknown",
+            },
+        ]
+
+        candidates = normalize_research_candidates(
+            raw,
+            start_date=datetime(2026, 5, 24),
+            end_date=datetime(2026, 5, 30),
+        )
+
+        self.assertEqual([candidate["title"] for candidate in candidates], ["Inside window"])
+        self.assertEqual(candidates[0]["published_at"], "2026-05-30")
+
+    def test_date_window_is_inclusive(self):
+        self.assertTrue(
+            is_date_in_window("2026-05-24", datetime(2026, 5, 24), datetime(2026, 5, 30))
+        )
+        self.assertTrue(
+            is_date_in_window("2026-05-30", datetime(2026, 5, 24), datetime(2026, 5, 30))
+        )
+        self.assertFalse(
+            is_date_in_window("2026-05-31", datetime(2026, 5, 24), datetime(2026, 5, 30))
+        )
+        self.assertIsNone(parse_candidate_date("last week"))
 
     def test_build_research_prompt_includes_date_window_and_existing_stories(self):
         prompt = build_research_prompt(

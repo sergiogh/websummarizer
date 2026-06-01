@@ -3,7 +3,7 @@ import os
 import re
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import date, datetime
 from typing import Dict, Iterable, List, Optional
 from urllib.parse import urlparse
 
@@ -72,10 +72,66 @@ def _coerce_confidence(value) -> float:
         return 0.0
 
 
+def parse_candidate_date(value: str):
+    cleaned = (value or "").strip()
+    if not cleaned:
+        return None
+
+    iso_match = re.search(r"\b(20\d{2})-(\d{1,2})-(\d{1,2})\b", cleaned)
+    if iso_match:
+        year, month, day = iso_match.groups()
+        try:
+            return date(int(year), int(month), int(day))
+        except ValueError:
+            return None
+
+    slash_match = re.search(r"\b(\d{1,2})/(\d{1,2})/(20\d{2})\b", cleaned)
+    if slash_match:
+        month, day, year = slash_match.groups()
+        try:
+            return date(int(year), int(month), int(day))
+        except ValueError:
+            return None
+
+    for fmt in ("%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y"):
+        try:
+            return datetime.strptime(cleaned, fmt).date()
+        except ValueError:
+            continue
+
+    return None
+
+
+def _date_window_bounds(start_date, end_date):
+    def _as_date(value):
+        if isinstance(value, datetime):
+            return value.date()
+        if isinstance(value, date):
+            return value
+        if isinstance(value, str):
+            return parse_candidate_date(value)
+        return None
+
+    return _as_date(start_date), _as_date(end_date)
+
+
+def is_date_in_window(published_at: str, start_date=None, end_date=None) -> bool:
+    if start_date is None and end_date is None:
+        return True
+
+    candidate_date = parse_candidate_date(published_at)
+    start_bound, end_bound = _date_window_bounds(start_date, end_date)
+    if candidate_date is None or start_bound is None or end_bound is None:
+        return False
+    return start_bound <= candidate_date <= end_bound
+
+
 def normalize_research_candidates(
     raw_candidates,
     existing_stories: Iterable[Dict[str, object]] = (),
     limit: int = DEFAULT_RESEARCH_LIMIT,
+    start_date=None,
+    end_date=None,
 ) -> List[Dict[str, object]]:
     if not isinstance(raw_candidates, list):
         return []
@@ -103,6 +159,9 @@ def normalize_research_candidates(
         duplicate_of = is_duplicate_candidate({"url": url, "title": title}, existing_index)
         publisher = str(raw.get("publisher") or raw.get("source") or "").strip()
         published_at = str(raw.get("published_at") or raw.get("date") or "").strip()
+        parsed_published_date = parse_candidate_date(published_at)
+        if not is_date_in_window(published_at, start_date, end_date):
+            continue
         rationale = str(raw.get("rationale") or raw.get("why_it_matters") or "").strip()
         citation_urls = raw.get("citation_urls") or raw.get("citations") or [url]
         if not isinstance(citation_urls, list):
@@ -116,7 +175,7 @@ def normalize_research_candidates(
                 "title": title,
                 "title_seed": title,
                 "publisher": publisher,
-                "published_at": published_at,
+                "published_at": parsed_published_date.isoformat() if parsed_published_date else published_at,
                 "tag": tag,
                 "rationale": rationale,
                 "source": "openai_web_search",
@@ -198,7 +257,8 @@ def build_research_prompt(start_date: datetime, end_date: datetime, existing_sto
         "  ]\n"
         "}\n\n"
         "Exclude duplicates of the already covered stories where possible. Do not write newsletter summaries. "
-        "Do not include a candidate without a URL."
+        "Do not include a candidate without a URL. Do not include a candidate unless its publication date is known "
+        "and falls inside DATE_WINDOW_START through DATE_WINDOW_END, inclusive."
     )
 
 
@@ -254,7 +314,13 @@ class OpenAIWebSearchResearchProvider:
             raise RuntimeError(f"OpenAI research request failed: {exc.reason}") from exc
 
         raw_candidates = parse_research_response(extract_response_text(payload))
-        return normalize_research_candidates(raw_candidates, existing_stories, limit=limit)
+        return normalize_research_candidates(
+            raw_candidates,
+            existing_stories,
+            limit=limit,
+            start_date=start_date,
+            end_date=end_date,
+        )
 
 
 def research_quantum_stories(
