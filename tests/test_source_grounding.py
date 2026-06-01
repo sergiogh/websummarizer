@@ -1,7 +1,12 @@
 import unittest
 
 from qa_checks import validate_aggregate_grounding, validate_story_grounding, validate_summary_claims
-from story_grounding import failure_summary, filter_passed_stories
+from story_grounding import (
+    build_extractive_fallback_summary,
+    build_safe_summary_fallback,
+    failure_summary,
+    filter_passed_stories,
+)
 from url_processor import extract_article_payload
 
 
@@ -82,6 +87,61 @@ class SourceGroundingTests(unittest.TestCase):
     def test_failure_summary_mentions_manual_review_reason(self):
         message = failure_summary("source_mismatch", ["source_title_mismatch"])
         self.assertIn("does not clearly match", message)
+
+    def test_extractive_fallback_reuses_source_sentences(self):
+        source = (
+            "IonQ announced a new quantum computing system for enterprise users. "
+            "The company said the launch expands access for existing customers. "
+            "The system includes 64 qubits and targets production workloads. "
+            "Related article: a networking company announced a classical switch. "
+            "IonQ said the release is intended for customers testing larger circuits."
+        )
+
+        fallback = build_extractive_fallback_summary(
+            "IonQ launches new quantum system",
+            source,
+            {"html_title": "IonQ launches new quantum system", "h1": "IonQ launches new quantum system"},
+        )
+
+        self.assertEqual(fallback["status"], "extractive_fallback")
+        self.assertIn("IonQ announced", fallback["summary"])
+        self.assertIn("64 qubits", fallback["summary"])
+        self.assertNotIn("Related article", fallback["summary"])
+
+    def test_safe_fallback_repairs_summary_claim_failure(self):
+        source = (
+            "Quantum Machines introduced a control platform for quantum processors. "
+            "The company said the platform helps laboratories coordinate calibration and control workflows. "
+            "It includes new orchestration software for experiments across multiple hardware backends. "
+            "Quantum Machines said the release is aimed at research teams moving from prototypes to repeatable operations."
+        )
+
+        fallback = build_safe_summary_fallback(
+            "Quantum Machines introduces control platform",
+            source,
+            {"html_title": "Quantum Machines introduces control platform", "h1": "Quantum Machines introduces control platform"},
+            ["summary_claims_not_supported", "summary_entities_not_in_source"],
+        )
+
+        self.assertIsNotNone(fallback)
+        self.assertEqual(fallback["remaining_flags"], [])
+        self.assertNotIn("Unable to generate", fallback["summary"])
+
+    def test_safe_fallback_refuses_source_mismatch(self):
+        source = (
+            "WrongCo announced a networking product for data centers. "
+            "The article focuses on Ethernet switching and rack-scale cloud infrastructure. "
+            "WrongCo said the release targets lower latency operations for enterprise customers."
+        )
+
+        fallback = build_safe_summary_fallback(
+            "IonQ launches new quantum system",
+            source,
+            {"html_title": "WrongCo announces networking product", "h1": "WrongCo announces networking product"},
+            ["source_title_mismatch"],
+        )
+
+        self.assertIsNone(fallback)
 
     def test_filter_passed_stories_excludes_flagged_items(self):
         stories = [

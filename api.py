@@ -27,6 +27,7 @@ from quantum_bits_comic import (
 )
 from story_organizer import build_story_digest, order_stories
 from story_grounding import (
+    build_safe_summary_fallback,
     failure_summary,
     filter_passed_stories,
     generate_grounded_summary,
@@ -437,7 +438,21 @@ def regenerate_story(run_id, story_id, overrides):
         grounding_result["passed"] = False
         grounding_result["claim_check"] = claim_result
     if not grounding_result["passed"]:
-        summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+        fallback_summary = build_safe_summary_fallback(
+            title_seed,
+            clean_content,
+            source_metadata,
+            grounding_result["flags"],
+        )
+        if fallback_summary:
+            summary = fallback_summary["summary"]
+            grounding_result["fallback_summary"] = fallback_summary
+            grounding_result["flags"] = fallback_summary.get("remaining_flags", [])
+            grounding_result["passed"] = not grounding_result["flags"]
+            summary_result["evidence"] = fallback_summary.get("evidence", [])
+            summary_result["status"] = fallback_summary.get("status", "extractive_fallback")
+        else:
+            summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
         qa_result["summary_fixed"] = summary
         qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
     final_title = qa_result["title_fixed"]
@@ -645,7 +660,21 @@ def run_generation(selected_stories, source="api"):
             grounding_result["passed"] = False
             grounding_result["claim_check"] = claim_result
         if not grounding_result["passed"]:
-            summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+            fallback_summary = build_safe_summary_fallback(
+                story["title"],
+                content_bundle["clean"],
+                content_bundle.get("metadata", {}),
+                grounding_result["flags"],
+            )
+            if fallback_summary:
+                summary = fallback_summary["summary"]
+                grounding_result["fallback_summary"] = fallback_summary
+                grounding_result["flags"] = fallback_summary.get("remaining_flags", [])
+                grounding_result["passed"] = not grounding_result["flags"]
+                summary_result["evidence"] = fallback_summary.get("evidence", [])
+                summary_result["status"] = fallback_summary.get("status", "extractive_fallback")
+            else:
+                summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
             qa_result["summary_fixed"] = summary
             qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
         artifact_store.save_json(run_id, story_id, "qa", qa_result)

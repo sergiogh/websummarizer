@@ -41,7 +41,8 @@ from story_organizer import (
     curate_stories,
     order_stories,
 )
-from story_grounding import failure_summary
+from story_researcher import research_quantum_stories
+from story_grounding import build_extractive_fallback_summary, build_safe_summary_fallback, failure_summary
 from title_utils import remove_publisher_mentions, sanitize_story_title
 
 load_dotenv()
@@ -459,7 +460,7 @@ def extract_quick_text(url: str) -> str:
             text = re.sub(r"<style[\s\S]*?</style>", " ", text, flags=re.IGNORECASE)
             text = re.sub(r"<[^>]+>", " ", text)
         text = re.sub(r"\s+", " ", text).strip()
-        return text[:500]
+        return text[:5000]
     except Exception:
         return ""
 
@@ -472,14 +473,27 @@ def build_fallback_story(index: int, url: str, title_seed: str, tag: str, reason
     title = remove_publisher_mentions(title, url)
 
     quick_text = extract_quick_text(url)
-    summary_parts = [
-        "Unable to generate a source-grounded summary: source parsing exceeded the processing budget, so this item needs manual review.",
-    ]
+    fallback_summary = build_extractive_fallback_summary(
+        title,
+        quick_text,
+        {"html_title": title, "h1": title, "extraction_status": "timeout_fallback"},
+        max_words=90,
+    )
+    summary_parts = []
+    if fallback_summary.get("summary"):
+        summary_parts.append(
+            "Source parsing exceeded the processing budget. Available source text says: %s"
+            % fallback_summary["summary"]
+        )
+    else:
+        summary_parts.append(
+            "Source parsing exceeded the processing budget, and the quick source extract did not contain enough article text for a grounded summary."
+        )
     if reason:
         summary_parts.append(f"Reason: {reason}.")
-    if quick_text:
+    if not fallback_summary.get("summary") and quick_text:
         summary_parts.append(f"Quick extracted text: {quick_text}")
-    else:
+    elif not fallback_summary.get("summary"):
         summary_parts.append(f"Source URL: {url}")
 
     fallback_image = ""
@@ -572,7 +586,21 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
         content_bundle.get("metadata", {}),
     )
     if not grounding_result["passed"]:
-        summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
+        fallback_summary = build_safe_summary_fallback(
+            rewritten_title,
+            content_bundle["clean"],
+            content_bundle.get("metadata", {}),
+            grounding_result["flags"],
+        )
+        if fallback_summary:
+            summary = fallback_summary["summary"]
+            grounding_result["fallback_summary"] = fallback_summary
+            grounding_result["flags"] = fallback_summary.get("remaining_flags", [])
+            grounding_result["passed"] = not grounding_result["flags"]
+            summary_result["evidence"] = fallback_summary.get("evidence", [])
+            summary_result["status"] = fallback_summary.get("status", "extractive_fallback")
+        else:
+            summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
         qa_result["summary_fixed"] = summary
         qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
 
@@ -1693,6 +1721,10 @@ def home():
           max-height: 280px;
           overflow-y: auto;
         }}
+        .research-list {{
+          max-height: 320px;
+          overflow-y: auto;
+        }}
         .preview-actions {{
           display: flex;
           gap: 10px;
@@ -1721,6 +1753,28 @@ def home():
           width: 18px;
           height: 18px;
         }}
+        .story-checkbox {{
+          flex: 0 0 auto;
+          margin-top: 3px;
+          width: 18px;
+          height: 18px;
+        }}
+        .story-badge {{
+          display: inline-block;
+          margin: 6px 8px 0 0;
+          border: 1px solid #c9dceb;
+          border-radius: 999px;
+          padding: 3px 8px;
+          color: #334155;
+          font-size: 0.78rem;
+          font-weight: 700;
+          background: #ffffff;
+        }}
+        .story-badge.warning {{
+          border-color: #fed7aa;
+          color: #9a3412;
+          background: #fff7ed;
+        }}
       </style>
     </head>
     <body>
@@ -1743,6 +1797,7 @@ def home():
             {key_fields}
             <div class="actions">
               <button type="button" class="secondary-button" id="preview-button">Preview Stories</button>
+              <button type="button" class="secondary-button" id="research-button">Research Extra Stories</button>
               <button type="submit" id="generate-button">Generate Latest Newsletter</button>
             </div>
             <div class="note">Story parsing timeout: {story_timeout}s per story. Slow stories fall back automatically.</div>
@@ -1755,6 +1810,19 @@ def home():
             </div>
             <div id="preview-list" class="preview-list">
               <div class="empty-state">No preview loaded yet.</div>
+            </div>
+          </section>
+          <section class="archive-panel" id="research-panel">
+            <div class="archive-header">
+              <h2>Suggested Stories</h2>
+              <div class="note" id="research-meta">Run research to find extra candidates.</div>
+            </div>
+            <div class="preview-actions">
+              <button type="button" class="tiny-button" id="select-research-button">Select suggested</button>
+              <button type="button" class="tiny-button" id="clear-research-button">Clear suggested</button>
+            </div>
+            <div id="research-list" class="research-list">
+              <div class="empty-state">No researched stories yet.</div>
             </div>
           </section>
           <section class="archive-panel progress-panel" id="progress-panel">
@@ -1789,6 +1857,9 @@ def home():
         const form = document.getElementById('generate-form');
         const button = document.getElementById('generate-button');
         const previewButton = document.getElementById('preview-button');
+        const researchButton = document.getElementById('research-button');
+        const selectResearchButton = document.getElementById('select-research-button');
+        const clearResearchButton = document.getElementById('clear-research-button');
         const browserArchives = document.getElementById('browser-archives');
         const progressPanel = document.getElementById('progress-panel');
         const progressCounter = document.getElementById('progress-counter');
@@ -1796,9 +1867,12 @@ def home():
         const progressLog = document.getElementById('progress-log');
         const previewList = document.getElementById('preview-list');
         const previewMeta = document.getElementById('preview-meta');
+        const researchList = document.getElementById('research-list');
+        const researchMeta = document.getElementById('research-meta');
         const browserArchiveKey = 'websummarizer-browser-archive';
         let previewStartDate = '';
         let previewEndDate = '';
+        let researchedStories = [];
 
         function readBrowserArchive() {{
           try {{
@@ -1911,7 +1985,7 @@ def home():
 
         function refreshPreviewMeta() {{
           previewMeta.textContent = previewStartDate && previewEndDate
-            ? 'All stories between ' + previewStartDate + ' and ' + previewEndDate + ' will be generated as full newsletter items.'
+            ? 'Spreadsheet stories between ' + previewStartDate + ' and ' + previewEndDate + ' will be generated; selected suggestions are added on top.'
             : '';
         }}
 
@@ -1942,6 +2016,60 @@ def home():
             '</li>';
           }}).join('') + '</ul>';
           refreshPreviewMeta();
+        }}
+
+        function renderResearch(candidates) {{
+          researchedStories = Array.isArray(candidates) ? candidates : [];
+          if (!researchedStories.length) {{
+            researchList.innerHTML = '<div class="empty-state">No suggested stories found.</div>';
+            researchMeta.textContent = 'No researched candidates available for this range.';
+            return;
+          }}
+
+          const selectableCount = researchedStories.filter((story) => !story.duplicate_of).length;
+          researchMeta.textContent = selectableCount + ' selectable suggestions · duplicates stay unselected';
+          researchList.innerHTML = '<ul class="archive-list">' + researchedStories.map((story, idx) => {{
+            const title = escapeHtml(story.title_seed || story.title || '(No headline)');
+            const url = escapeHtml(story.url || '');
+            const tag = escapeHtml(story.tag || 'research');
+            const published = escapeHtml(story.published_at || 'unknown date');
+            const publisher = escapeHtml(story.publisher || 'unknown source');
+            const rationale = escapeHtml(story.rationale || '');
+            const duplicate = story.duplicate_of ? String(story.duplicate_of) : '';
+            const disabled = duplicate ? ' disabled' : '';
+            const checked = duplicate ? '' : '';
+            const badges = '<span class="story-badge">' + tag + '</span>' +
+              '<span class="story-badge">' + publisher + '</span>' +
+              (duplicate ? '<span class="story-badge warning">Likely duplicate</span>' : '<span class="story-badge">New lead</span>');
+            return '<li class="archive-item">' +
+              '<div class="preview-item">' +
+                '<input class="story-checkbox research-checkbox" type="checkbox" data-research-index="' + idx + '"' + checked + disabled + ' />' +
+                '<div>' +
+                  '<div class="archive-name">' + title + '</div>' +
+                  '<div class="archive-meta">' + published + ' · ' + url + '</div>' +
+                  (rationale ? '<div class="archive-meta">' + rationale + '</div>' : '') +
+                  (duplicate ? '<div class="archive-meta">Already represented by: ' + escapeHtml(duplicate) + '</div>' : '') +
+                  '<div>' + badges + '</div>' +
+                '</div>' +
+              '</div>' +
+            '</li>';
+          }}).join('') + '</ul>';
+        }}
+
+        function selectedResearchStories() {{
+          return Array.from(document.querySelectorAll('.research-checkbox:checked')).map((checkbox) => {{
+            const index = Number(checkbox.getAttribute('data-research-index') || -1);
+            return researchedStories[index];
+          }}).filter(Boolean).map((story) => {{
+            return {{
+              index: story.index,
+              url: story.url,
+              title_seed: story.title_seed || story.title,
+              tag: story.tag || 'research',
+              published_at: story.published_at || '',
+              source: 'research',
+            }};
+          }});
         }}
 
         async function parseJsonResponse(response) {{
@@ -2000,10 +2128,42 @@ def home():
           }}
         }});
 
+        researchButton.addEventListener('click', async () => {{
+          researchButton.disabled = true;
+          const previousLabel = researchButton.textContent;
+          researchButton.textContent = 'Researching...';
+          bannerRoot.innerHTML = '';
+
+          try {{
+            const formData = new FormData(form);
+            const payload = await postForm('/research/stories', formData);
+            renderResearch(payload.candidates || []);
+            showBanner('Research found ' + payload.total + ' candidate stories.', 'success');
+          }} catch (error) {{
+            showBanner(error.message, 'error');
+          }} finally {{
+            researchButton.disabled = false;
+            researchButton.textContent = previousLabel;
+          }}
+        }});
+
+        selectResearchButton.addEventListener('click', () => {{
+          document.querySelectorAll('.research-checkbox:not(:disabled)').forEach((checkbox) => {{
+            checkbox.checked = true;
+          }});
+        }});
+
+        clearResearchButton.addEventListener('click', () => {{
+          document.querySelectorAll('.research-checkbox').forEach((checkbox) => {{
+            checkbox.checked = false;
+          }});
+        }});
+
         form.addEventListener('submit', async (event) => {{
           event.preventDefault();
           button.disabled = true;
           previewButton.disabled = true;
+          researchButton.disabled = true;
           button.textContent = 'Generating...';
           bannerRoot.innerHTML = '';
           resetProgress();
@@ -2014,7 +2174,8 @@ def home():
             const startPayload = await postForm('/generate/start', formData);
             const stories = Array.isArray(startPayload.stories) ? startPayload.stories : [];
             renderPreview(stories, startPayload.start_date, startPayload.end_date);
-            const selectedStories = stories;
+            const researchSelection = selectedResearchStories();
+            const selectedStories = stories.concat(researchSelection);
             const total = selectedStories.length;
             if (!total) {{
               throw new Error('No stories were found in this date range.');
@@ -2024,7 +2185,7 @@ def home():
             let fallbackCount = 0;
 
             updateProgress({{
-              message: 'Loaded ' + stories.length + ' stories from sheet; generating every story as a full newsletter item.',
+              message: 'Loaded ' + stories.length + ' stories from sheet and ' + researchSelection.length + ' researched stories; generating selected items.',
               total: total,
               scanned: 0,
               parsed: 0,
@@ -2046,7 +2207,7 @@ def home():
               }});
 
               const storyPayload = await postJson('/generate/story', {{
-                index: story.index,
+                index: i,
                 url: story.url,
                 title_seed: story.title_seed,
                 tag: story.tag,
@@ -2118,6 +2279,7 @@ def home():
           }} finally {{
             button.disabled = false;
             previewButton.disabled = false;
+            researchButton.disabled = false;
             button.textContent = 'Generate Latest Newsletter';
           }}
         }});
@@ -2214,6 +2376,57 @@ def stories_preview():
                 "start_date": start_dt.strftime("%Y-%m-%d"),
                 "end_date": end_dt.strftime("%Y-%m-%d"),
                 "stories": stories,
+            }
+        )
+    except Exception as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+
+
+@app.route("/research/stories", methods=["POST"])
+@require_auth
+def research_stories():
+    try:
+        api_key = request.form.get("openai_api_key", "").strip()
+        prepare_runtime_env(api_key=api_key)
+        start_dt, end_dt = resolve_date_range(
+            request.form.get("start_date", ""),
+            request.form.get("end_date", ""),
+            days=DEFAULT_LOOKBACK_DAYS,
+        )
+        existing_stories = []
+        try:
+            spreadsheet_handler = load_spreadsheet_data(
+                DEFAULT_LOOKBACK_DAYS,
+                start_date=start_dt,
+                end_date=end_dt,
+            )
+            for index, url in enumerate(spreadsheet_handler.urls):
+                existing_stories.append(
+                    {
+                        "index": index,
+                        "url": url,
+                        "title_seed": spreadsheet_handler.titles[index],
+                        "tag": spreadsheet_handler.tags[index],
+                        "published_at": spreadsheet_handler.published_at[index],
+                    }
+                )
+        except Exception as exc:
+            if "No stories found" not in str(exc):
+                raise
+
+        candidates = research_quantum_stories(
+            start_dt,
+            end_dt,
+            existing_stories,
+            limit=int(os.getenv("STORY_RESEARCH_LIMIT", "20")),
+        )
+        return jsonify(
+            {
+                "ok": True,
+                "total": len(candidates),
+                "start_date": start_dt.strftime("%Y-%m-%d"),
+                "end_date": end_dt.strftime("%Y-%m-%d"),
+                "candidates": candidates,
             }
         )
     except Exception as exc:
