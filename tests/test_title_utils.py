@@ -1,6 +1,6 @@
 import unittest
 
-from title_utils import remove_publisher_mentions, sanitize_generated_headline
+from title_utils import remove_publisher_mentions, sanitize_generated_headline, sanitize_story_title
 
 
 class TestTitleUtils(unittest.TestCase):
@@ -36,6 +36,16 @@ class TestTitleUtils(unittest.TestCase):
         )
 
         self.assertEqual(headline, "Quantum startup raises seed round")
+
+    def test_sanitize_story_title_removes_generic_news_source_suffix(self):
+        title = sanitize_story_title(
+            "Google Explains Why It Passed On Trump's $2 Billion Quantum Initiative — TradingView News"
+        )
+
+        self.assertEqual(
+            title,
+            "Google Explains Why It Passed On Trump's $2 Billion Quantum Initiative",
+        )
 
 
 if __name__ == "__main__":

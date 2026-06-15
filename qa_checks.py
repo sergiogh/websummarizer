@@ -177,7 +177,7 @@ def validate_story_grounding(
     summary_entities = _proper_noun_phrases(summary)
     missing_title_entities = sorted(entity for entity in title_entities if entity not in source_entities)
     missing_summary_entities = sorted(entity for entity in summary_entities if entity not in source_entities)
-    if missing_title_entities:
+    if missing_title_entities and title_overlap < 0.4 and body_overlap < 0.4:
         flags.append("title_entities_not_in_source")
     if missing_summary_entities:
         flags.append("summary_entities_not_in_source")
@@ -224,12 +224,15 @@ def validate_summary_claims(summary: str, source_text: str) -> Dict[str, object]
         best_sentence = best_evidence[0] if best_evidence else ""
         source_tokens = _token_set(best_sentence)
         overlap = len(claim_tokens & source_tokens) / max(1, len(claim_tokens))
+        full_source_tokens = _token_set(source_text)
+        full_source_overlap = len(claim_tokens & full_source_tokens) / max(1, len(claim_tokens))
         missing_numbers = sorted(_numbers(claim) - _numbers(source_text))
-        if overlap < 0.35 or missing_numbers:
+        if missing_numbers or (overlap < 0.35 and full_source_overlap < 0.2):
             unsupported.append(
                 {
                     "claim": claim,
                     "overlap": round(overlap, 3),
+                    "full_source_overlap": round(full_source_overlap, 3),
                     "missing_numbers": missing_numbers,
                     "best_evidence": best_sentence,
                 }
