@@ -1,3 +1,4 @@
 .env
 newsletter.html
+newsletter_[0-9]*.html
 .vercel
