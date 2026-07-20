@@ -9,6 +9,7 @@ from story_organizer import (
     build_story_digest,
     classify_story_bucket,
     curate_stories,
+    deduplicate_stories,
     order_stories,
     standardize_story_summary,
 )
@@ -228,6 +229,80 @@ class StoryOrganizerTests(unittest.TestCase):
         curated = curate_stories(stories, primary_limit=8, overflow_limit=4)
         self.assertEqual(len(curated["primary"]), 24)
         self.assertEqual(curated["overflow"], [])
+
+    def test_deduplicate_stories_normalizes_tracking_urls(self):
+        stories = [
+            {
+                "story_id": "sheet-1",
+                "source": "spreadsheet",
+                "title": "IBM publishes a new quantum error correction result",
+                "summary": "Spreadsheet summary.",
+                "url": "https://www.example.com/news/result?utm_source=email",
+            },
+            {
+                "story_id": "web-1",
+                "source": "research",
+                "title": "IBM publishes a new quantum error correction result",
+                "summary": "Web summary.",
+                "url": "https://example.com/news/result?fbclid=abc",
+            },
+        ]
+
+        deduplicated = deduplicate_stories(stories)
+
+        self.assertEqual(len(deduplicated), 1)
+        self.assertEqual(deduplicated[0]["story_id"], "sheet-1")
+        self.assertEqual(len(deduplicated[0]["related_sources"]), 2)
+        self.assertEqual(deduplicated[0]["duplicate_story_ids"], ["web-1"])
+
+    def test_deduplicate_stories_matches_paraphrased_headlines(self):
+        stories = [
+            {
+                "story_id": "sheet-1",
+                "source": "spreadsheet",
+                "title": "Diraq raises $20 million to scale silicon quantum computers",
+                "summary": "The company secured new funding.",
+                "url": "https://example.com/diraq",
+            },
+            {
+                "story_id": "web-1",
+                "source": "research",
+                "title": "$20 million Diraq funding will scale silicon quantum computer work",
+                "summary": "The financing supports development.",
+                "url": "https://different.example.org/diraq-funding",
+            },
+        ]
+
+        deduplicated = deduplicate_stories(stories)
+
+        self.assertEqual(len(deduplicated), 1)
+        self.assertEqual(deduplicated[0]["source"], "spreadsheet")
+
+    def test_deduplicate_stories_prefers_grounded_web_copy_over_flagged_sheet_copy(self):
+        stories = [
+            {
+                "story_id": "sheet-1",
+                "source": "spreadsheet",
+                "title": "IonQ opens a quantum computing facility in Maryland",
+                "summary": "Unable to generate a source-grounded summary.",
+                "url": "https://example.com/ionq-facility",
+                "qa_flags": ["source_title_mismatch"],
+            },
+            {
+                "story_id": "web-1",
+                "source": "research",
+                "title": "IonQ opens Maryland quantum computing facility",
+                "summary": "IonQ opened a Maryland facility for quantum computing systems.",
+                "url": "https://news.example.org/ionq-maryland",
+                "qa_flags": [],
+                "grounding": {"passed": True},
+            },
+        ]
+
+        deduplicated = deduplicate_stories(stories)
+
+        self.assertEqual(len(deduplicated), 1)
+        self.assertEqual(deduplicated[0]["story_id"], "web-1")
 
 
 if __name__ == "__main__":

@@ -3,11 +3,13 @@ from datetime import datetime
 
 from story_researcher import (
     build_research_prompt,
+    clamp_research_window,
     extract_response_text,
     is_date_in_window,
     normalize_research_candidates,
     parse_candidate_date,
     parse_research_response,
+    research_quantum_stories,
     title_signature,
 )
 
@@ -119,6 +121,36 @@ class StoryResearcherTests(unittest.TestCase):
         self.assertIn("DATE_WINDOW_END: 2026-05-30", prompt)
         self.assertIn("MAX_CANDIDATES: 12", prompt)
         self.assertIn("Already covered | https://example.com/covered", prompt)
+        self.assertIn("at most seven calendar days", prompt)
+
+    def test_research_window_is_capped_to_final_seven_calendar_days(self):
+        start, end = clamp_research_window(
+            datetime(2026, 5, 1),
+            datetime(2026, 5, 30, 23, 59, 59),
+        )
+
+        self.assertEqual(start.strftime("%Y-%m-%d"), "2026-05-24")
+        self.assertEqual(end.strftime("%Y-%m-%d"), "2026-05-30")
+
+    def test_research_provider_never_receives_more_than_seven_days(self):
+        class RecordingProvider:
+            def __init__(self):
+                self.window = None
+
+            def search(self, start_date, end_date, existing_stories, limit):
+                self.window = (start_date, end_date)
+                return []
+
+        provider = RecordingProvider()
+        research_quantum_stories(
+            datetime(2026, 5, 1),
+            datetime(2026, 5, 30, 23, 59, 59),
+            [],
+            provider=provider,
+        )
+
+        self.assertEqual(provider.window[0].strftime("%Y-%m-%d"), "2026-05-24")
+        self.assertEqual(provider.window[1].strftime("%Y-%m-%d"), "2026-05-30")
 
     def test_extract_response_text_reads_responses_output_shape(self):
         text = extract_response_text(

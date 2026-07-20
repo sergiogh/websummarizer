@@ -41,8 +41,18 @@ from story_organizer import (
     curate_stories,
     order_stories,
 )
-from story_researcher import is_date_in_window, parse_candidate_date, research_quantum_stories
-from story_grounding import build_extractive_fallback_summary, build_safe_summary_fallback, failure_summary
+from story_researcher import (
+    clamp_research_window,
+    is_date_in_window,
+    parse_candidate_date,
+    research_quantum_stories,
+)
+from story_grounding import (
+    build_extractive_fallback_summary,
+    build_safe_summary_fallback,
+    evaluate_human_summary_style,
+    failure_summary,
+)
 from title_utils import remove_publisher_mentions, sanitize_story_title
 
 load_dotenv()
@@ -194,6 +204,21 @@ def render_newsletter_html(
         image_html = ""
         if story_image:
             image_html = '<img src="%s" alt="%s" class="story-image" />' % (story_image, story_title)
+        related_links = []
+        for related in story.get("related_sources", []) or []:
+            related_url = str(related.get("url", "") or "")
+            if not related_url or related_url == story.get("url"):
+                continue
+            related_links.append(
+                '<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>'
+                % (
+                    escape(related_url, quote=True),
+                    escape(str(related.get("title", "") or related_url)),
+                )
+            )
+        related_html = ""
+        if related_links:
+            related_html = '<p class="source-link">Related coverage: %s</p>' % " · ".join(related_links)
         sections.append(
             """
             <article class="story-card">
@@ -201,9 +226,10 @@ def render_newsletter_html(
               %s
               <p>%s</p>
               <p class="source-link"><a href="%s" target="_blank" rel="noopener noreferrer">Read source</a></p>
+              %s
             </article>
             """
-            % (story_url, story_title, image_html, story_summary, story_url)
+            % (story_url, story_title, image_html, story_summary, story_url, related_html)
         )
 
     comic_section = render_comic_section(comic)
@@ -465,7 +491,15 @@ def extract_quick_text(url: str) -> str:
         return ""
 
 
-def build_fallback_story(index: int, url: str, title_seed: str, tag: str, reason: str = ""):
+def build_fallback_story(
+    index: int,
+    url: str,
+    title_seed: str,
+    tag: str,
+    reason: str = "",
+    source: str = "spreadsheet",
+    published_at: str = "",
+):
     paper_processor = ScientificPaperProcessor(url)
     is_paper = paper_processor.is_scientific_paper()
     title = title_seed.strip() if title_seed and title_seed.strip() else "Untitled story"
@@ -512,6 +546,8 @@ def build_fallback_story(index: int, url: str, title_seed: str, tag: str, reason
         "summary": qa_result["summary_fixed"],
         "image_url": fallback_image,
         "tag": tag,
+        "source": source,
+        "published_at": published_at,
         "is_paper": is_paper,
         "paper_type": paper_processor.paper_type,
         "is_fallback": True,
@@ -622,13 +658,28 @@ def verify_research_candidate(candidate: dict, start_dt: datetime, end_dt: datet
     return result
 
 
-def process_story_with_timeout(index: int, url: str, title_seed: str, tag: str, timeout_seconds: int):
+def process_story_with_timeout(
+    index: int,
+    url: str,
+    title_seed: str,
+    tag: str,
+    timeout_seconds: int,
+    source: str = "spreadsheet",
+    published_at: str = "",
+):
     container = {"story": None, "error": None}
     done = threading.Event()
 
     def _worker():
         try:
-            container["story"] = process_story(index, url, title_seed, tag)
+            container["story"] = process_story(
+                index,
+                url,
+                title_seed,
+                tag,
+                source=source,
+                published_at=published_at,
+            )
         except Exception as exc:
             container["error"] = str(exc)
         finally:
@@ -650,7 +701,14 @@ def _emit_progress(progress_callback, payload):
         progress_callback(payload)
 
 
-def process_story(index: int, url: str, title_seed: str, tag: str):
+def process_story(
+    index: int,
+    url: str,
+    title_seed: str,
+    tag: str,
+    source: str = "spreadsheet",
+    published_at: str = "",
+):
     paper_processor = ScientificPaperProcessor(url)
     is_paper = paper_processor.is_scientific_paper()
     content_bundle = process_url(url, title_seed, "")
@@ -705,6 +763,12 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
         qa_result["summary_fixed"] = summary
         qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
 
+    summary_style = evaluate_human_summary_style(summary, content_bundle["clean"])
+    if not summary_style["passed"]:
+        qa_result["flags"] = list(
+            dict.fromkeys(qa_result.get("flags", []) + summary_style["flags"])
+        )
+
     article_image = ""
     try:
         image_extractor = ImageExtractor(url)
@@ -720,12 +784,15 @@ def process_story(index: int, url: str, title_seed: str, tag: str):
         "summary": qa_result["summary_fixed"],
         "image_url": article_image,
         "tag": tag,
+        "source": source,
+        "published_at": published_at,
         "is_paper": bool(content_bundle["is_paper"] or is_paper),
         "paper_type": content_bundle["paper_type"],
         "is_fallback": False,
         "qa_flags": qa_result.get("flags", []),
         "source_metadata": content_bundle.get("metadata", {}),
         "summary_evidence": summary_result.get("evidence", []),
+        "summary_style": summary_style,
         "grounding": grounding_result,
     }
 
@@ -793,6 +860,8 @@ def finalize_newsletter(results, additional_links=None):
         "aggregate_qa": aggregate_outputs["aggregate_qa"],
         "passed_story_ids": [story.get("story_id") for story in aggregate_outputs["passed_results"]],
         "included_story_ids": [story.get("story_id") for story in primary_results],
+        "input_story_count": len(results),
+        "deduplicated_story_count": curated.get("deduplicated_count", 0),
         "html": html_content,
         "comic": comic,
         "cover_image_src": cover_image_src,
@@ -841,11 +910,26 @@ def build_weekly_newsletter(
                 "url": url,
             },
         )
+        published_at = spreadsheet_handler.published_at[index]
         story, failure_reason = process_story_with_timeout(
-            index, url, title_seed, tag, STORY_PARSE_TIMEOUT_SECONDS
+            index,
+            url,
+            title_seed,
+            tag,
+            STORY_PARSE_TIMEOUT_SECONDS,
+            source="spreadsheet",
+            published_at=published_at,
         )
         if not story:
-            story = build_fallback_story(index, url, title_seed, tag, reason=failure_reason or "No summary generated")
+            story = build_fallback_story(
+                index,
+                url,
+                title_seed,
+                tag,
+                reason=failure_reason or "No summary generated",
+                source="spreadsheet",
+                published_at=published_at,
+            )
             skipped_count += 1
             _emit_progress(
                 progress_callback,
@@ -1681,6 +1765,12 @@ def home():
           cursor: pointer;
           box-shadow: 0 12px 24px rgba(15,118,110,0.2);
         }}
+        button:disabled {{
+          cursor: not-allowed;
+          opacity: 0.48;
+          filter: saturate(0.45);
+          box-shadow: none;
+        }}
         .secondary-button {{
           background: white;
           color: #134e4a;
@@ -1883,7 +1973,7 @@ def home():
         <section class="hero">
           <div class="eyebrow">Private Weekly Runner</div>
           <h1>Quantum Newsletter Control Room</h1>
-          <p class="lead">Generate the latest weekly newsletter from the sheet, then open any archived HTML file directly from this page.</p>
+          <p class="lead">Load the spreadsheet first, optionally add verified web research from the final seven-day window, then generate one deduplicated newsletter.</p>
           <form class="controls" id="generate-form">
             <div class="field-row">
               <label class="field">
@@ -1897,9 +1987,9 @@ def home():
             </div>
             {key_fields}
             <div class="actions">
-              <button type="button" class="secondary-button" id="preview-button">Preview Stories</button>
-              <button type="button" class="secondary-button" id="research-button">Research Extra Stories</button>
-              <button type="submit" id="generate-button">Generate Latest Newsletter</button>
+              <button type="button" class="secondary-button" id="preview-button">1. Load Spreadsheet Stories</button>
+              <button type="button" class="secondary-button" id="research-button" disabled>2. Research Last 7 Days (Optional)</button>
+              <button type="submit" id="generate-button" disabled>3. Generate Deduplicated Newsletter</button>
             </div>
             <div class="note">Story parsing timeout: {story_timeout}s per story. Slow stories fall back automatically.</div>
           </form>
@@ -1916,12 +2006,12 @@ def home():
           <section class="archive-panel" id="research-panel">
             <div class="archive-header">
               <h2>Suggested Stories</h2>
-              <div class="note" id="research-meta">Run research to find extra candidates.</div>
+              <div class="note" id="research-meta">Load spreadsheet stories first. Research is restricted to the final seven calendar days.</div>
             </div>
             <div class="preview-actions">
-              <button type="button" class="tiny-button" id="verify-research-button">Verify selected</button>
-              <button type="button" class="tiny-button" id="select-research-button">Select suggested</button>
-              <button type="button" class="tiny-button" id="clear-research-button">Clear suggested</button>
+              <button type="button" class="tiny-button" id="verify-research-button" disabled>Verify selected</button>
+              <button type="button" class="tiny-button" id="select-research-button" disabled>Select suggested</button>
+              <button type="button" class="tiny-button" id="clear-research-button" disabled>Clear suggested</button>
             </div>
             <div id="research-list" class="research-list">
               <div class="empty-state">No researched stories yet.</div>
@@ -1976,6 +2066,7 @@ def home():
         let previewStartDate = '';
         let previewEndDate = '';
         let researchedStories = [];
+        let spreadsheetStoriesLoaded = false;
 
         function readBrowserArchive() {{
           try {{
@@ -2096,6 +2187,9 @@ def home():
           const list = Array.isArray(stories) ? stories : [];
           previewStartDate = startDate || '';
           previewEndDate = endDate || '';
+          spreadsheetStoriesLoaded = true;
+          researchButton.disabled = false;
+          button.disabled = false;
           if (!list.length) {{
             previewList.innerHTML = '<div class="empty-state">No stories found for this range.</div>';
             refreshPreviewMeta();
@@ -2123,6 +2217,10 @@ def home():
 
         function renderResearch(candidates) {{
           researchedStories = Array.isArray(candidates) ? candidates : [];
+          const hasResearchCandidates = researchedStories.length > 0;
+          verifyResearchButton.disabled = !hasResearchCandidates;
+          selectResearchButton.disabled = !hasResearchCandidates;
+          clearResearchButton.disabled = !hasResearchCandidates;
           if (!researchedStories.length) {{
             researchList.innerHTML = '<div class="empty-state">No suggested stories found.</div>';
             researchMeta.textContent = 'No researched candidates available for this range.';
@@ -2130,7 +2228,11 @@ def home():
           }}
 
           const selectableCount = researchedStories.filter((story) => !story.duplicate_of).length;
-          researchMeta.textContent = selectableCount + ' selectable suggestions · duplicates stay unselected';
+          const firstWindow = researchedStories[0] && researchedStories[0].research_window ? researchedStories[0].research_window : {{}};
+          const boundedWindow = firstWindow.start_date && firstWindow.end_date
+            ? (' · web window ' + firstWindow.start_date + ' to ' + firstWindow.end_date)
+            : '';
+          researchMeta.textContent = selectableCount + ' selectable suggestions · duplicates stay unselected' + boundedWindow;
           researchList.innerHTML = '<ul class="archive-list">' + researchedStories.map((story, idx) => {{
             const title = escapeHtml(story.title_seed || story.title || '(No headline)');
             const url = escapeHtml(story.url || '');
@@ -2194,6 +2296,7 @@ def home():
               tag: story.tag || 'research',
               published_at: story.published_at || '',
               source: 'research',
+              research_window: story.research_window || {{}},
             }};
           }});
         }}
@@ -2290,6 +2393,10 @@ def home():
         }});
 
         researchButton.addEventListener('click', async () => {{
+          if (!spreadsheetStoriesLoaded) {{
+            showBanner('Load the spreadsheet stories before running research.', 'error');
+            return;
+          }}
           researchButton.disabled = true;
           const previousLabel = researchButton.textContent;
           researchButton.textContent = 'Researching...';
@@ -2361,6 +2468,9 @@ def home():
             const startPayload = await postForm('/generate/start', formData);
             const stories = Array.isArray(startPayload.stories) ? startPayload.stories : [];
             renderPreview(stories, startPayload.start_date, startPayload.end_date);
+            button.disabled = true;
+            previewButton.disabled = true;
+            researchButton.disabled = true;
             let researchSelection = selectedResearchStories();
             if (researchSelection.length) {{
               updateProgress({{
@@ -2409,11 +2519,15 @@ def home():
                 url: story.url || '',
               }});
 
-              const storyPayload = await postJson('/generate/story', {{
+            const storyPayload = await postJson('/generate/story', {{
                 index: i,
                 url: story.url,
                 title_seed: story.title_seed,
                 tag: story.tag,
+                source: story.source || 'spreadsheet',
+                published_at: story.published_at || '',
+                start_date: startPayload.start_date,
+                end_date: startPayload.end_date,
                 openai_api_key: apiKey,
               }});
 
@@ -2482,10 +2596,30 @@ def home():
           }} finally {{
             button.disabled = false;
             previewButton.disabled = false;
-            researchButton.disabled = false;
-            verifyResearchButton.disabled = false;
-            button.textContent = 'Generate Latest Newsletter';
+            researchButton.disabled = !spreadsheetStoriesLoaded;
+            verifyResearchButton.disabled = !researchedStories.length;
+            selectResearchButton.disabled = !researchedStories.length;
+            clearResearchButton.disabled = !researchedStories.length;
+            button.disabled = !spreadsheetStoriesLoaded;
+            button.textContent = '3. Generate Deduplicated Newsletter';
           }}
+        }});
+
+        form.querySelectorAll('input[name="start_date"], input[name="end_date"]').forEach((input) => {{
+          input.addEventListener('change', () => {{
+            spreadsheetStoriesLoaded = false;
+            previewStartDate = '';
+            previewEndDate = '';
+            researchedStories = [];
+            researchButton.disabled = true;
+            button.disabled = true;
+            verifyResearchButton.disabled = true;
+            selectResearchButton.disabled = true;
+            clearResearchButton.disabled = true;
+            researchList.innerHTML = '<div class="empty-state">Load the updated spreadsheet range before researching.</div>';
+            researchMeta.textContent = 'Research is restricted to the final seven calendar days of the selected range.';
+            previewMeta.textContent = 'Dates changed. Load spreadsheet stories again.';
+          }});
         }});
       </script>
     </body>
@@ -2597,6 +2731,7 @@ def research_stories():
             request.form.get("end_date", ""),
             days=DEFAULT_LOOKBACK_DAYS,
         )
+        research_start_dt, research_end_dt = clamp_research_window(start_dt, end_dt)
         existing_stories = []
         try:
             spreadsheet_handler = load_spreadsheet_data(
@@ -2619,14 +2754,14 @@ def research_stories():
                 raise
 
         candidates = research_quantum_stories(
-            start_dt,
-            end_dt,
+            research_start_dt,
+            research_end_dt,
             existing_stories,
             limit=int(os.getenv("STORY_RESEARCH_LIMIT", "20")),
         )
         research_window = {
-            "start_date": start_dt.strftime("%Y-%m-%d"),
-            "end_date": end_dt.strftime("%Y-%m-%d"),
+            "start_date": research_start_dt.strftime("%Y-%m-%d"),
+            "end_date": research_end_dt.strftime("%Y-%m-%d"),
         }
         for candidate in candidates:
             candidate["research_window"] = research_window
@@ -2634,8 +2769,8 @@ def research_stories():
             {
                 "ok": True,
                 "total": len(candidates),
-                "start_date": start_dt.strftime("%Y-%m-%d"),
-                "end_date": end_dt.strftime("%Y-%m-%d"),
+                "start_date": research_start_dt.strftime("%Y-%m-%d"),
+                "end_date": research_end_dt.strftime("%Y-%m-%d"),
                 "candidates": candidates,
             }
         )
@@ -2657,6 +2792,7 @@ def verify_research_stories():
             payload.get("end_date", ""),
             days=DEFAULT_LOOKBACK_DAYS,
         )
+        start_dt, end_dt = clamp_research_window(start_dt, end_dt)
         raw_stories = payload.get("stories") or []
         if not isinstance(raw_stories, list):
             return jsonify({"ok": False, "error": "Invalid stories payload."}), 400
@@ -2686,6 +2822,8 @@ def generate_story():
     url = (payload.get("url") or "").strip()
     title_seed = payload.get("title_seed") or ""
     tag = payload.get("tag") or ""
+    source = (payload.get("source") or "spreadsheet").strip().lower()
+    published_at = (payload.get("published_at") or "").strip()
 
     try:
         prepare_runtime_env(api_key=(payload.get("openai_api_key") or "").strip())
@@ -2695,8 +2833,32 @@ def generate_story():
     if not url:
         return jsonify({"ok": False, "error": "Story URL is missing."}), 400
 
+    if source == "research":
+        try:
+            research_start, research_end = resolve_date_range(
+                payload.get("start_date", ""),
+                payload.get("end_date", ""),
+                days=DEFAULT_LOOKBACK_DAYS,
+            )
+            research_start, research_end = clamp_research_window(research_start, research_end)
+        except Exception as exc:
+            return jsonify({"ok": False, "error": str(exc)}), 400
+        if not is_date_in_window(published_at, research_start, research_end):
+            return jsonify(
+                {
+                    "ok": False,
+                    "error": "Researched stories must have a verified publication date inside the final seven-day window.",
+                }
+            ), 400
+
     story, failure_reason = process_story_with_timeout(
-        index, url, title_seed, tag, STORY_PARSE_TIMEOUT_SECONDS
+        index,
+        url,
+        title_seed,
+        tag,
+        STORY_PARSE_TIMEOUT_SECONDS,
+        source=source,
+        published_at=published_at,
     )
 
     if not story:
@@ -2706,6 +2868,8 @@ def generate_story():
             title_seed,
             tag,
             reason=failure_reason or "No summary generated",
+            source=source,
+            published_at=published_at,
         )
         return jsonify(
             {

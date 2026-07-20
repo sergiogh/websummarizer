@@ -26,10 +26,12 @@ from quantum_bits_comic import fetch_latest_quantum_bits_comic, resolve_comic_fo
 from story_organizer import (
     build_story_digest,
     curate_stories,
+    deduplicate_stories,
     order_stories,
 )
 from story_grounding import (
     build_safe_summary_fallback,
+    evaluate_human_summary_style,
     failure_summary,
     filter_passed_stories,
     generate_grounded_summary,
@@ -181,7 +183,7 @@ def generate_podcast_summary(total_content):
     return podcast_summarizer.summary
 
 def build_aggregate_outputs(results):
-    passed_results = filter_passed_stories(results)
+    passed_results = filter_passed_stories(deduplicate_stories(results))
     if not passed_results:
         return {
             "passed_results": [],
@@ -737,6 +739,11 @@ def main() -> None:
                 summary = failure_summary(summary_result.get("status", ""), grounding_result["flags"])
             qa_result["summary_fixed"] = summary
             qa_result["flags"] = list(dict.fromkeys(qa_result["flags"] + grounding_result["flags"]))
+        summary_style = evaluate_human_summary_style(summary, content_bundle["clean"])
+        if not summary_style["passed"]:
+            qa_result["flags"] = list(
+                dict.fromkeys(qa_result.get("flags", []) + summary_style["flags"])
+            )
         artifact_store.save_json(run_id, story_id, "qa", qa_result)
 
         spreadsheet_handler.titles[i] = qa_result["title_fixed"]
@@ -770,6 +777,7 @@ def main() -> None:
             'qa_flags': qa_result.get("flags", []),
             'source_metadata': content_bundle.get("metadata", {}),
             'summary_evidence': summary_result.get("evidence", []),
+            'summary_style': summary_style,
             'grounding': grounding_result,
         })
 

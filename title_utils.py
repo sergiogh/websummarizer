@@ -54,6 +54,12 @@ def strip_source_from_title(title):
     cleaned = re.sub(rf'\s*\[\s*(?:{source_union})\s*\]\s*$', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(rf'\s+(?:via|from|on)\s+(?:{source_union})\s*$', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(rf'^(?:from|via)\s+(?:{source_union})\s*[:-]\s*', '', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(
+        r"\s*[-–—|:]\s*[A-Z][A-Za-z0-9&.'’ ]{2,60}\s+(?:News|International)\s*$",
+        "",
+        cleaned,
+        flags=re.IGNORECASE,
+    )
     cleaned = re.sub(r'\s*[-–—|:]\s*(?:https?://)?(?:www\.)?\S+\.\w{2,}.*$', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\s+', ' ', cleaned).strip()
 

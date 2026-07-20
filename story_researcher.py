@@ -3,12 +3,13 @@ import os
 import re
 import urllib.error
 import urllib.request
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from typing import Dict, Iterable, List, Optional
 from urllib.parse import urlparse
 
 
 DEFAULT_RESEARCH_LIMIT = 20
+MAX_RESEARCH_WINDOW_DAYS = 7
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
 
 
@@ -113,6 +114,33 @@ def _date_window_bounds(start_date, end_date):
         return None
 
     return _as_date(start_date), _as_date(end_date)
+
+
+def clamp_research_window(start_date, end_date, max_days: int = MAX_RESEARCH_WINDOW_DAYS):
+    """Return an inclusive research window capped at the final ``max_days`` days."""
+    start_bound, end_bound = _date_window_bounds(start_date, end_date)
+    if start_bound is None or end_bound is None:
+        raise ValueError("Research requires valid start and end dates.")
+    if start_bound > end_bound:
+        raise ValueError("Research start date must be before end date.")
+
+    safe_days = max(1, min(int(max_days), MAX_RESEARCH_WINDOW_DAYS))
+    earliest_allowed = end_bound - timedelta(days=safe_days - 1)
+    bounded_start = max(start_bound, earliest_allowed)
+
+    if isinstance(end_date, datetime):
+        bounded_end = end_date
+    else:
+        bounded_end = datetime.combine(end_bound, datetime.max.time())
+    if isinstance(start_date, datetime):
+        bounded_start_dt = start_date.replace(
+            year=bounded_start.year,
+            month=bounded_start.month,
+            day=bounded_start.day,
+        )
+    else:
+        bounded_start_dt = datetime.combine(bounded_start, datetime.min.time())
+    return bounded_start_dt, bounded_end
 
 
 def is_date_in_window(published_at: str, start_date=None, end_date=None) -> bool:
@@ -238,6 +266,7 @@ def build_research_prompt(start_date: datetime, end_date: datetime, existing_sto
         "university or company announcements, government publications, standards/security items, and reputable reporting.\n\n"
         f"DATE_WINDOW_START: {start_date.strftime('%Y-%m-%d')}\n"
         f"DATE_WINDOW_END: {end_date.strftime('%Y-%m-%d')}\n"
+        "DATE_WINDOW_RULE: This inclusive window is at most seven calendar days. Never return older stories.\n"
         f"MAX_CANDIDATES: {limit}\n\n"
         "Already covered spreadsheet stories:\n"
         f"{existing_block or '(none)'}\n\n"
@@ -258,7 +287,8 @@ def build_research_prompt(start_date: datetime, end_date: datetime, existing_sto
         "}\n\n"
         "Exclude duplicates of the already covered stories where possible. Do not write newsletter summaries. "
         "Do not include a candidate without a URL. Do not include a candidate unless its publication date is known "
-        "and falls inside DATE_WINDOW_START through DATE_WINDOW_END, inclusive."
+        "and falls inside DATE_WINDOW_START through DATE_WINDOW_END, inclusive. Treat the publication date as a "
+        "hard filter, not a relevance hint."
     )
 
 
@@ -330,5 +360,6 @@ def research_quantum_stories(
     limit: int = DEFAULT_RESEARCH_LIMIT,
     provider=None,
 ):
+    start_date, end_date = clamp_research_window(start_date, end_date)
     active_provider = provider or OpenAIWebSearchResearchProvider()
     return active_provider.search(start_date, end_date, existing_stories, limit=limit)

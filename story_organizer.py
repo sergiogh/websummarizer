@@ -1,7 +1,8 @@
 import re
 from datetime import datetime
+from difflib import SequenceMatcher
 from typing import Dict, Iterable, List, Sequence, Tuple
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 
 STORY_BUCKET_RESEARCH = "research"
@@ -250,6 +251,21 @@ _STOPWORDS = {
     "uses",
     "this",
     "that",
+    "says",
+    "said",
+    "announces",
+    "announced",
+    "unveils",
+    "unveiled",
+}
+
+_TRACKING_QUERY_KEYS = {
+    "fbclid",
+    "gclid",
+    "mc_cid",
+    "mc_eid",
+    "ref",
+    "source",
 }
 
 
@@ -517,6 +533,172 @@ def _topic_signature(title: str) -> str:
     return " ".join(filtered[:6])
 
 
+def _canonical_story_url(url: str) -> str:
+    parsed = urlparse((url or "").strip())
+    if not parsed.netloc:
+        return ""
+    netloc = parsed.netloc.lower()
+    if netloc.startswith("www."):
+        netloc = netloc[4:]
+    path = re.sub(r"/+$", "", parsed.path or "") or "/"
+    query_items = []
+    for key, value in parse_qsl(parsed.query, keep_blank_values=False):
+        lowered = key.lower()
+        if lowered.startswith("utm_") or lowered in _TRACKING_QUERY_KEYS:
+            continue
+        query_items.append((key, value))
+    return urlunparse(
+        (
+            (parsed.scheme or "https").lower(),
+            netloc,
+            path,
+            "",
+            urlencode(sorted(query_items)),
+            "",
+        )
+    )
+
+
+def _title_tokens(title: str) -> List[str]:
+    tokens = []
+    for token in re.findall(r"[a-z0-9]+", (title or "").lower()):
+        if len(token) <= 1 or token in _STOPWORDS:
+            continue
+        if len(token) > 4 and token.endswith("s") and not token.endswith("ss"):
+            token = token[:-1]
+        tokens.append(token)
+    return tokens
+
+
+def _titles_represent_same_story(left: str, right: str) -> bool:
+    left_tokens = _title_tokens(left)
+    right_tokens = _title_tokens(right)
+    if not left_tokens or not right_tokens:
+        return False
+    left_set = set(left_tokens)
+    right_set = set(right_tokens)
+    shared = left_set & right_set
+    if len(shared) < 3:
+        return False
+    union = left_set | right_set
+    jaccard = len(shared) / max(1, len(union))
+    containment = len(shared) / max(1, min(len(left_set), len(right_set)))
+    normalized_left = " ".join(left_tokens)
+    normalized_right = " ".join(right_tokens)
+    sequence_ratio = SequenceMatcher(None, normalized_left, normalized_right).ratio()
+    return jaccard >= 0.62 or containment >= 0.8 or sequence_ratio >= 0.78
+
+
+def _story_passes_checks(story: Dict[str, object]) -> bool:
+    if story.get("qa_flags"):
+        return False
+    grounding = story.get("grounding")
+    return not isinstance(grounding, dict) or grounding.get("passed") is not False
+
+
+def _story_preference(story: Dict[str, object]) -> Tuple[int, int, int]:
+    source = str(story.get("source", "") or "").lower()
+    summary_words = len(str(story.get("summary", "") or "").split())
+    return (
+        1 if _story_passes_checks(story) else 0,
+        1 if source in {"spreadsheet", "sheet"} else 0,
+        min(summary_words, 140),
+    )
+
+
+def _source_reference(story: Dict[str, object]) -> Dict[str, str]:
+    return {
+        "url": str(story.get("url", "") or ""),
+        "title": str(story.get("title", "") or story.get("title_seed", "") or ""),
+        "source": str(story.get("source", "") or ""),
+    }
+
+
+def _source_references(story: Dict[str, object]) -> List[Dict[str, str]]:
+    references = []
+    candidates = [_source_reference(story)]
+    candidates.extend(
+        item
+        for item in (story.get("related_sources", []) or [])
+        if isinstance(item, dict)
+    )
+    seen = set()
+    for candidate in candidates:
+        url = str(candidate.get("url", "") or "")
+        if not url or url in seen:
+            continue
+        references.append(
+            {
+                "url": url,
+                "title": str(candidate.get("title", "") or ""),
+                "source": str(candidate.get("source", "") or ""),
+            }
+        )
+        seen.add(url)
+    return references
+
+
+def deduplicate_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, object]]:
+    """Merge duplicate coverage while preserving every distinct story.
+
+    Exact/canonical URL matches and strong headline matches are grouped. The
+    best grounded version becomes the visible story, while all source URLs are
+    retained in ``related_sources`` for provenance.
+    """
+    groups: List[Dict[str, object]] = []
+
+    for index, raw_story in enumerate(results or []):
+        story = raw_story.copy()
+        story.setdefault("_index", index)
+        story_url = _canonical_story_url(str(story.get("url", "") or ""))
+        story_title = str(story.get("title", "") or story.get("title_seed", "") or "")
+        match = None
+        for group in groups:
+            if story_url and story_url in group["urls"]:
+                match = group
+                break
+            if _titles_represent_same_story(story_title, str(group["story"].get("title", "") or "")):
+                match = group
+                break
+
+        if match is None:
+            references = _source_references(story)
+            groups.append(
+                {
+                    "story": story,
+                    "urls": {story_url} if story_url else set(),
+                    "sources": references,
+                    "story_ids": [str(story.get("story_id", "") or "")],
+                }
+            )
+            continue
+
+        if story_url:
+            match["urls"].add(story_url)
+        existing_source_urls = {item["url"] for item in match["sources"]}
+        for reference in _source_references(story):
+            if reference["url"] not in existing_source_urls:
+                match["sources"].append(reference)
+                existing_source_urls.add(reference["url"])
+        match["story_ids"].append(str(story.get("story_id", "") or ""))
+
+        current = match["story"]
+        if _story_preference(story) > _story_preference(current):
+            earliest_index = min(int(current.get("_index", index)), int(story.get("_index", index)))
+            story["_index"] = earliest_index
+            match["story"] = story
+
+    deduplicated = []
+    for group in groups:
+        story = group["story"].copy()
+        story["related_sources"] = group["sources"]
+        duplicate_ids = [story_id for story_id in group["story_ids"] if story_id and story_id != str(story.get("story_id", ""))]
+        if duplicate_ids:
+            story["duplicate_story_ids"] = duplicate_ids
+        deduplicated.append(story)
+    return sorted(deduplicated, key=lambda item: int(item.get("_index", 0)))
+
+
 def _extract_url_date(url: str):
     if not url:
         return None
@@ -609,28 +791,15 @@ def order_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, object
     return [story for _, story in ordered]
 
 
-def _dedupe_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, object]]:
-    seen_signatures = set()
-    deduped: List[Dict[str, object]] = []
-
-    for story in sorted(results, key=lambda item: (-int(item.get("_score", 0)), int(item.get("_index", 0)))):
-        signature = _topic_signature(str(story.get("title", "") or ""))
-        if signature and signature in seen_signatures:
-            continue
-        if signature:
-            seen_signatures.add(signature)
-        deduped.append(story)
-
-    return deduped
-
-
 def curate_stories(
     results: Iterable[Dict[str, object]],
     primary_limit: int = _DEFAULT_PRIMARY_LIMIT,
     overflow_limit: int = _DEFAULT_OVERFLOW_LIMIT,
 ) -> Dict[str, object]:
     prepared: List[Dict[str, object]] = []
-    for index, result in enumerate(results):
+    source_results = list(results or [])
+    deduplicated_results = deduplicate_stories(source_results)
+    for index, result in enumerate(deduplicated_results):
         enriched = enrich_story(result)
         enriched["_index"] = index
         enriched["_score"] = _score_story(enriched, index)
@@ -649,6 +818,8 @@ def curate_stories(
         "primary": primary,
         "overflow": [],
         "channel_counts": channel_counts,
+        "input_count": len(source_results),
+        "deduplicated_count": len(source_results) - len(deduplicated_results),
     }
 
 

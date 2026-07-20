@@ -4,13 +4,35 @@ from qa_checks import validate_aggregate_grounding, validate_story_grounding, va
 from story_grounding import (
     build_extractive_fallback_summary,
     build_safe_summary_fallback,
+    evaluate_human_summary_style,
     failure_summary,
     filter_passed_stories,
+    sanitize_story_summary_text,
 )
 from url_processor import extract_article_payload
 
 
 class SourceGroundingTests(unittest.TestCase):
+    def test_human_summary_style_flags_press_release_language(self):
+        result = evaluate_human_summary_style(
+            "We are proud to announce a groundbreaking, world-leading quantum platform for our customers.",
+            "The company introduced a quantum platform for customers.",
+        )
+
+        self.assertFalse(result["passed"])
+        self.assertIn("summary_promotional_language", result["flags"])
+        self.assertIn("summary_press_release_voice", result["flags"])
+
+    def test_human_summary_style_flags_long_verbatim_copy(self):
+        copied = (
+            "The company introduced a new neutral atom quantum computer that uses optical tweezers "
+            "to arrange individual atoms and execute larger experimental circuits for research teams."
+        )
+        result = evaluate_human_summary_style(copied, copied)
+
+        self.assertFalse(result["passed"])
+        self.assertIn("summary_excessive_verbatim_overlap", result["flags"])
+
     def test_article_extraction_prefers_article_body_over_related_links(self):
         html = """
         <html>
@@ -86,6 +108,28 @@ class SourceGroundingTests(unittest.TestCase):
         self.assertIn("summary_numbers_not_in_source", result["flags"])
         self.assertIn("64", result["missing_numbers"])
 
+    def test_grounding_does_not_treat_headline_case_as_missing_entity_when_source_matches(self):
+        source = (
+            "Nokia has expanded its work in artificial intelligence-driven networking and quantum security. "
+            "The company introduced Deepfield Genome Shield for telecom and cloud networks, partnered with "
+            "Quantropi on quantum-safe key distribution, and is working with Indosat Ooredoo Hutchison and "
+            "NVIDIA to modernize Indonesia's 5G networks."
+        )
+        metadata = {
+            "html_title": "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+            "h1": "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+            "extraction_status": "article",
+        }
+
+        result = validate_story_grounding(
+            "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+            "Nokia has expanded its work in artificial intelligence-driven networking and quantum security.",
+            source,
+            metadata,
+        )
+
+        self.assertNotIn("title_entities_not_in_source", result["flags"])
+
     def test_failure_summary_mentions_manual_review_reason(self):
         message = failure_summary("source_mismatch", ["source_title_mismatch"])
         self.assertIn("does not clearly match", message)
@@ -109,6 +153,92 @@ class SourceGroundingTests(unittest.TestCase):
         self.assertIn("IonQ announced", fallback["summary"])
         self.assertIn("64 qubits", fallback["summary"])
         self.assertNotIn("Related article", fallback["summary"])
+
+    def test_summary_sanitizer_removes_market_preamble_and_keeps_story_paragraph(self):
+        dirty = (
+            "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership "
+            "Simply Wall St Fri, June 12, 2026 at 1:12 AM EDT 4 min read NOKIA.HE NVDA NOK "
+            "Find winning stocks in any market cycle. "
+            "Nokia is working with Indosat Ooredoo Hutchison and NVIDIA to modernize "
+            "Indonesia's 5G networks using AI centric technologies. "
+            "The company has partnered with Quantropi to work on carrier grade, "
+            "quantum safe key distribution for future resistant networking."
+        )
+
+        result = sanitize_story_summary_text(
+            dirty,
+            "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+        )
+
+        cleaned = result["summary"]
+        self.assertNotIn("Simply Wall St", cleaned)
+        self.assertNotIn("4 min read", cleaned)
+        self.assertNotIn("NOKIA.HE", cleaned)
+        self.assertNotIn("Find winning stocks", cleaned)
+        self.assertIn("5G networks", cleaned)
+        self.assertIn("AI centric technologies", cleaned)
+        self.assertTrue(cleaned.startswith("Nokia is working"))
+
+    def test_summary_sanitizer_removes_press_release_dateline(self):
+        dirty = (
+            "BOULDER, Colo., June 15, 2026 /PRNewswire/ -- Atom Computing announced "
+            "a new neutral atom quantum computing system for commercial users. "
+            "The company said the system is designed to support larger experiments "
+            "and improve access for enterprise research teams."
+        )
+
+        result = sanitize_story_summary_text(
+            dirty,
+            "Atom Computing announced a new quantum computing system",
+        )
+
+        cleaned = result["summary"]
+        self.assertNotIn("BOULDER", cleaned)
+        self.assertNotIn("PRNewswire", cleaned)
+        self.assertTrue(cleaned.startswith("Atom Computing announced"))
+        self.assertIn("enterprise research teams", cleaned)
+
+    def test_summary_sanitizer_removes_fragments_without_dropping_story(self):
+        dirty = (
+            "Latest update. Quantum Machines introduced a control platform for quantum processors. "
+            "The company said the platform helps laboratories coordinate calibration workflows."
+        )
+
+        result = sanitize_story_summary_text(
+            dirty,
+            "Quantum Machines introduced a control platform",
+        )
+
+        cleaned = result["summary"]
+        self.assertNotIn("Latest update", cleaned)
+        self.assertTrue(cleaned.startswith("Quantum Machines introduced"))
+
+    def test_extractive_fallback_skips_market_metadata_preamble(self):
+        source = (
+            "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership "
+            "Simply Wall St Fri, June 12, 2026 at 1:12 AM EDT 4 min read NOKIA.HE NVDA NOK "
+            "Find winning stocks in any market cycle. "
+            "Nokia is working with Indosat Ooredoo Hutchison and NVIDIA to modernize "
+            "Indonesia's 5G networks using AI centric technologies. "
+            "The company has partnered with Quantropi to work on carrier grade, "
+            "quantum safe key distribution for future resistant networking. "
+            "The work is positioned as part of Nokia's broader push to apply security and "
+            "automation technologies to communications infrastructure."
+        )
+
+        fallback = build_extractive_fallback_summary(
+            "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+            source,
+            {
+                "html_title": "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+                "h1": "Nokia Extends AI Networking And Quantum Security Push With 5G Partnership",
+            },
+        )
+
+        self.assertEqual(fallback["status"], "extractive_fallback")
+        self.assertNotIn("Simply Wall St", fallback["summary"])
+        self.assertNotIn("NOKIA.HE", fallback["summary"])
+        self.assertIn("Nokia is working", fallback["summary"])
 
     def test_safe_fallback_repairs_summary_claim_failure(self):
         source = (
