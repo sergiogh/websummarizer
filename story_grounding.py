@@ -87,6 +87,20 @@ _SUMMARY_JUNK_HINTS = (
     "ticker",
 )
 
+_PROMOTIONAL_SUMMARY_PHRASES = (
+    "best-in-class",
+    "game-changing",
+    "groundbreaking",
+    "industry-leading",
+    "pleased to announce",
+    "proud to announce",
+    "revolutionary",
+    "transformative",
+    "unprecedented opportunity",
+    "world-class",
+    "world-leading",
+)
+
 _DATE_OR_READTIME_RE = re.compile(
     r"\b(?:mon|tue|wed|thu|fri|sat|sun|monday|tuesday|wednesday|thursday|friday|saturday|sunday),?\s+"
     r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|january|february|march|april|june|july|"
@@ -289,6 +303,54 @@ def _summary_needs_repair(summary: str) -> bool:
     return False
 
 
+def _longest_shared_token_run(left: str, right: str) -> int:
+    left_tokens = re.findall(r"[a-z0-9][a-z0-9'-]*", (left or "").lower())
+    right_tokens = re.findall(r"[a-z0-9][a-z0-9'-]*", (right or "").lower())
+    if not left_tokens or not right_tokens:
+        return 0
+
+    previous = [0] * (len(right_tokens) + 1)
+    longest = 0
+    for left_token in left_tokens:
+        current = [0]
+        for right_index, right_token in enumerate(right_tokens, start=1):
+            if left_token == right_token:
+                run = previous[right_index - 1] + 1
+                current.append(run)
+                longest = max(longest, run)
+            else:
+                current.append(0)
+        previous = current
+    return longest
+
+
+def evaluate_human_summary_style(summary: str, source_text: str = "") -> Dict[str, object]:
+    """Flag summaries that are long, promotional, or too close to source prose."""
+    cleaned = _normalize_spaces(summary)
+    words = cleaned.split()
+    lowered = cleaned.lower()
+    flags = []
+    if cleaned and len(words) < 70:
+        flags.append("summary_too_short")
+    if len(words) > 145:
+        flags.append("summary_too_long")
+    if any(phrase in lowered for phrase in _PROMOTIONAL_SUMMARY_PHRASES):
+        flags.append("summary_promotional_language")
+    if re.search(r"\b(?:we|our)\s+(?:are|believe|expect|have|will)\b", cleaned, flags=re.IGNORECASE):
+        flags.append("summary_press_release_voice")
+
+    longest_shared_run = _longest_shared_token_run(cleaned, source_text)
+    if longest_shared_run >= 18:
+        flags.append("summary_excessive_verbatim_overlap")
+
+    return {
+        "passed": not flags,
+        "flags": flags,
+        "word_count": len(words),
+        "longest_shared_token_run": longest_shared_run,
+    }
+
+
 def _split_source_sentences(text: str):
     cleaned = _normalize_spaces(text)
     if not cleaned:
@@ -480,6 +542,38 @@ def generate_grounded_summary(
             evidence = fallback.get("evidence", evidence)
             cleanup_flags = list(dict.fromkeys(cleanup_flags + ["summary_repaired_with_extractive_fallback"]))
 
+    style_result = evaluate_human_summary_style(summary, article_text)
+    style_rewritten = False
+    if status == "ok" and not style_result["passed"]:
+        rewrite_payload = json.dumps(
+            {
+                "INTENDED_TITLE": intended_title or "",
+                "PAGE_TITLE": (metadata or {}).get("html_title", ""),
+                "PAGE_HEADLINE": (metadata or {}).get("h1", ""),
+                "ARTICLE_TEXT": (article_text or "")[:12000],
+                "DRAFT_SUMMARY": summary,
+                "STYLE_ISSUES": style_result["flags"],
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        rewrite = SummaryGenerator("").generate_json_summary(
+            get_prompt("summary.story.human_rewrite"),
+            rewrite_payload,
+        )
+        rewritten_summary = sanitize_story_summary_text(
+            str(rewrite.get("summary", "") or ""),
+            intended_title,
+        ).get("summary", "")
+        rewritten_style = evaluate_human_summary_style(rewritten_summary, article_text)
+        if rewritten_summary and rewritten_style["passed"]:
+            summary = rewritten_summary
+            style_result = rewritten_style
+            style_rewritten = True
+            rewrite_evidence = rewrite.get("evidence", [])
+            if isinstance(rewrite_evidence, list):
+                evidence = rewrite_evidence
+
     return {
         "status": status,
         "summary": summary,
@@ -487,6 +581,8 @@ def generate_grounded_summary(
         "evidence": [str(item).strip() for item in evidence if str(item).strip()][:4],
         "confidence": max(0.0, min(1.0, confidence)),
         "cleanup_flags": cleanup_flags,
+        "style": style_result,
+        "style_rewritten": style_rewritten,
     }
 
 

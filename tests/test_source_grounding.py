@@ -4,6 +4,7 @@ from qa_checks import validate_aggregate_grounding, validate_story_grounding, va
 from story_grounding import (
     build_extractive_fallback_summary,
     build_safe_summary_fallback,
+    evaluate_human_summary_style,
     failure_summary,
     filter_passed_stories,
     sanitize_story_summary_text,
@@ -12,6 +13,26 @@ from url_processor import extract_article_payload
 
 
 class SourceGroundingTests(unittest.TestCase):
+    def test_human_summary_style_flags_press_release_language(self):
+        result = evaluate_human_summary_style(
+            "We are proud to announce a groundbreaking, world-leading quantum platform for our customers.",
+            "The company introduced a quantum platform for customers.",
+        )
+
+        self.assertFalse(result["passed"])
+        self.assertIn("summary_promotional_language", result["flags"])
+        self.assertIn("summary_press_release_voice", result["flags"])
+
+    def test_human_summary_style_flags_long_verbatim_copy(self):
+        copied = (
+            "The company introduced a new neutral atom quantum computer that uses optical tweezers "
+            "to arrange individual atoms and execute larger experimental circuits for research teams."
+        )
+        result = evaluate_human_summary_style(copied, copied)
+
+        self.assertFalse(result["passed"])
+        self.assertIn("summary_excessive_verbatim_overlap", result["flags"])
+
     def test_article_extraction_prefers_article_body_over_related_links(self):
         html = """
         <html>
