@@ -9,6 +9,7 @@ from urllib.parse import urlparse
 
 
 DEFAULT_RESEARCH_LIMIT = 20
+DEFAULT_ALTERNATE_SOURCE_LIMIT = 4
 MAX_RESEARCH_WINDOW_DAYS = 7
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
 
@@ -288,7 +289,47 @@ def build_research_prompt(start_date: datetime, end_date: datetime, existing_sto
         "Exclude duplicates of the already covered stories where possible. Do not write newsletter summaries. "
         "Do not include a candidate without a URL. Do not include a candidate unless its publication date is known "
         "and falls inside DATE_WINDOW_START through DATE_WINDOW_END, inclusive. Treat the publication date as a "
-        "hard filter, not a relevance hint."
+        "hard filter, not a relevance hint. Before returning a candidate, open the proposed URL and confirm that "
+        "the dated article, announcement, paper, or abstract is accessible and contains enough relevant text to "
+        "summarize. Exclude search-result snippets, home pages, login walls, inaccessible sources, and pages whose "
+        "visible publication date conflicts with the date window."
+    )
+
+
+def build_alternate_source_prompt(
+    title: str,
+    original_url: str,
+    start_date: datetime,
+    end_date: datetime,
+    limit: int = DEFAULT_ALTERNATE_SOURCE_LIMIT,
+) -> str:
+    return (
+        "Find accessible source pages covering the exact same news event described below. "
+        "This is source recovery for one newsletter item, not a request for related topic coverage.\n\n"
+        f"STORY_TITLE: {title}\n"
+        f"ORIGINAL_URL: {original_url}\n"
+        f"DATE_WINDOW_START: {start_date.strftime('%Y-%m-%d')}\n"
+        f"DATE_WINDOW_END: {end_date.strftime('%Y-%m-%d')}\n"
+        f"MAX_CANDIDATES: {limit}\n\n"
+        "Return only valid JSON with this shape:\n"
+        "{\n"
+        '  "candidates": [\n'
+        "    {\n"
+        '      "title": "headline from the alternate source",\n'
+        '      "url": "direct article, announcement, or paper URL",\n'
+        '      "publisher": "source name",\n'
+        '      "published_at": "YYYY-MM-DD",\n'
+        '      "tag": "research|industry|policy|ecosystem|other",\n'
+        '      "rationale": "why this is the exact same event",\n'
+        '      "citation_urls": ["supporting URL"],\n'
+        '      "confidence": 0.0\n'
+        "    }\n"
+        "  ]\n"
+        "}\n\n"
+        "Open each proposed URL before returning it. Exclude the original URL, search-result pages, home pages, "
+        "login walls, inaccessible pages, undated pages, syndicated pages with a conflicting date, and coverage "
+        "of a merely related event. Every candidate must name the same primary actor and concrete event as "
+        "STORY_TITLE, and its publication date must fall inside the inclusive date window. Do not summarize."
     )
 
 
@@ -353,6 +394,65 @@ class OpenAIWebSearchResearchProvider:
         )
 
 
+class OpenAIAlternateSourceProvider:
+    def __init__(self, api_key: str = "", model: str = ""):
+        self.api_key = api_key or os.getenv("OPENAI_API_KEY", "")
+        self.model = model or os.getenv("OPENAI_RESEARCH_MODEL", "gpt-5.1")
+
+    def search(
+        self,
+        title: str,
+        original_url: str,
+        start_date: datetime,
+        end_date: datetime,
+        limit: int = DEFAULT_ALTERNATE_SOURCE_LIMIT,
+    ):
+        if not self.api_key:
+            return []
+
+        request_body = {
+            "model": self.model,
+            "tools": [{"type": "web_search"}],
+            "tool_choice": "auto",
+            "input": build_alternate_source_prompt(
+                title,
+                original_url,
+                start_date,
+                end_date,
+                limit,
+            ),
+        }
+        request = urllib.request.Request(
+            OPENAI_RESPONSES_URL,
+            data=json.dumps(request_body).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        timeout_seconds = int(os.getenv("ALTERNATE_SOURCE_SEARCH_TIMEOUT_SECONDS", "60"))
+        try:
+            with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        except Exception:
+            return []
+
+        original_normalized = normalize_url(original_url)
+        candidates = normalize_research_candidates(
+            parse_research_response(extract_response_text(payload)),
+            (),
+            limit=limit,
+            start_date=start_date,
+            end_date=end_date,
+        )
+        return [
+            candidate
+            for candidate in candidates
+            if normalize_url(str(candidate.get("url", "") or "")) != original_normalized
+        ]
+
+
 def research_quantum_stories(
     start_date: datetime,
     end_date: datetime,
@@ -363,3 +463,21 @@ def research_quantum_stories(
     start_date, end_date = clamp_research_window(start_date, end_date)
     active_provider = provider or OpenAIWebSearchResearchProvider()
     return active_provider.search(start_date, end_date, existing_stories, limit=limit)
+
+
+def research_alternate_story_sources(
+    title: str,
+    original_url: str,
+    start_date: datetime,
+    end_date: datetime,
+    limit: int = DEFAULT_ALTERNATE_SOURCE_LIMIT,
+    provider=None,
+):
+    active_provider = provider or OpenAIAlternateSourceProvider()
+    return active_provider.search(
+        title,
+        original_url,
+        start_date,
+        end_date,
+        limit=limit,
+    )

@@ -589,6 +589,129 @@ def _titles_represent_same_story(left: str, right: str) -> bool:
     return jaccard >= 0.62 or containment >= 0.8 or sequence_ratio >= 0.78
 
 
+_GENERIC_TOPIC_TOKENS = {
+    "advance",
+    "announc",
+    "company",
+    "computer",
+    "computing",
+    "development",
+    "industry",
+    "innovation",
+    "news",
+    "processor",
+    "quantum",
+    "research",
+    "researcher",
+    "result",
+    "story",
+    "system",
+    "technology",
+    "update",
+}
+
+_TOPIC_ACTION_GROUPS = {
+    "funding": {
+        "back",
+        "financ",
+        "fund",
+        "funding",
+        "invest",
+        "investment",
+        "raise",
+        "raised",
+        "round",
+        "secure",
+        "secured",
+    },
+    "launch": {"debut", "introduc", "launch", "release", "unveil"},
+    "partnership": {"collaborat", "partner", "partnership", "team"},
+    "facility": {"campus", "center", "centre", "facility", "factory", "open", "site"},
+    "contract": {"award", "contract", "procurement", "select", "selected"},
+    "acquisition": {"acquire", "acquisition", "buy", "merger"},
+    "research_result": {
+        "achiev",
+        "benchmark",
+        "demonstrat",
+        "experiment",
+        "publish",
+        "report",
+        "study",
+    },
+}
+
+
+def _topic_tokens(text: str) -> set:
+    return {
+        token
+        for token in _title_tokens(text)
+        if token not in _GENERIC_TOPIC_TOKENS
+    }
+
+
+def _topic_action_groups(story: Dict[str, object]) -> set:
+    tokens = set(
+        _title_tokens(
+            " ".join(
+                str(story.get(key, "") or "")
+                for key in ("title", "title_seed", "summary")
+            )
+        )
+    )
+    groups = set()
+    for group, hints in _TOPIC_ACTION_GROUPS.items():
+        if any(any(token.startswith(hint) for hint in hints) for token in tokens):
+            groups.add(group)
+    return groups
+
+
+def _stories_represent_same_topic(
+    left: Dict[str, object],
+    right: Dict[str, object],
+) -> bool:
+    """Detect one news event covered with materially different headlines."""
+    left_title = str(left.get("title", "") or left.get("title_seed", "") or "")
+    right_title = str(right.get("title", "") or right.get("title_seed", "") or "")
+    if _titles_represent_same_story(left_title, right_title):
+        return True
+    left_title_numbers = set(re.findall(r"\b\d+(?:[.,]\d+)?\b", left_title))
+    right_title_numbers = set(re.findall(r"\b\d+(?:[.,]\d+)?\b", right_title))
+    if left_title_numbers and right_title_numbers and not (left_title_numbers & right_title_numbers):
+        return False
+
+    left_title_tokens = _topic_tokens(left_title)
+    right_title_tokens = _topic_tokens(right_title)
+    shared_title = left_title_tokens & right_title_tokens
+    if not shared_title:
+        return False
+
+    left_text = " ".join(
+        str(left.get(key, "") or "") for key in ("title", "title_seed", "summary")
+    )
+    right_text = " ".join(
+        str(right.get(key, "") or "") for key in ("title", "title_seed", "summary")
+    )
+    left_tokens = _topic_tokens(left_text)
+    right_tokens = _topic_tokens(right_text)
+    shared = left_tokens & right_tokens
+    if len(shared) < 3:
+        return False
+
+    combined_containment = len(shared) / max(1, min(len(left_tokens), len(right_tokens)))
+    shared_actions = _topic_action_groups(left) & _topic_action_groups(right)
+    left_numbers = set(re.findall(r"\b\d+(?:[.,]\d+)?\b", left_text))
+    right_numbers = set(re.findall(r"\b\d+(?:[.,]\d+)?\b", right_text))
+    shared_numbers = left_numbers & right_numbers
+
+    if len(shared_title) >= 2 and (shared_actions or combined_containment >= 0.42):
+        return True
+    if shared_actions and combined_containment >= 0.34:
+        return True
+    if shared_numbers and combined_containment >= 0.3:
+        return True
+    return False
+
+
 def _story_passes_checks(story: Dict[str, object]) -> bool:
     if story.get("qa_flags"):
         return False
@@ -638,12 +761,79 @@ def _source_references(story: Dict[str, object]) -> List[Dict[str, str]]:
     return references
 
 
-def deduplicate_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, object]]:
-    """Merge duplicate coverage while preserving every distinct story.
+def _summary_sentences(summary: str) -> List[str]:
+    return [
+        sentence.strip()
+        for sentence in re.split(r"(?<=[.!?])\s+", summary or "")
+        if sentence.strip()
+    ]
 
-    Exact/canonical URL matches and strong headline matches are grouped. The
-    best grounded version becomes the visible story, while all source URLs are
-    retained in ``related_sources`` for provenance.
+
+def _sentence_is_redundant(sentence: str, existing_sentences: Sequence[str]) -> bool:
+    candidate_tokens = set(_title_tokens(sentence))
+    if not candidate_tokens:
+        return True
+    normalized_candidate = " ".join(_title_tokens(sentence))
+    for existing in existing_sentences:
+        existing_tokens = set(_title_tokens(existing))
+        if not existing_tokens:
+            continue
+        shared = candidate_tokens & existing_tokens
+        containment = len(shared) / max(1, min(len(candidate_tokens), len(existing_tokens)))
+        sequence_ratio = SequenceMatcher(
+            None,
+            normalized_candidate,
+            " ".join(_title_tokens(existing)),
+        ).ratio()
+        if containment >= 0.72 or sequence_ratio >= 0.74:
+            return True
+    return False
+
+
+def _consolidate_story_summaries(
+    primary: Dict[str, object],
+    grouped_stories: Sequence[Dict[str, object]],
+    max_words: int = 145,
+) -> str:
+    """Add distinct, grounded facts from duplicate coverage to one summary."""
+    primary_summary = str(primary.get("summary", "") or "").strip()
+    if not primary_summary:
+        return primary_summary
+
+    sentences = _summary_sentences(primary_summary)
+    combined_tokens = set(_title_tokens(primary_summary))
+    combined_numbers = set(re.findall(r"\b\d+(?:[.,]\d+)?%?\b", primary_summary))
+
+    for story in grouped_stories:
+        if story is primary or not _story_passes_checks(story):
+            continue
+        summary = str(story.get("summary", "") or "").strip()
+        if not summary or summary.lower().startswith("unable to generate"):
+            continue
+        for sentence in _summary_sentences(summary):
+            sentence_tokens = set(_title_tokens(sentence))
+            if len(sentence_tokens) < 6 or _sentence_is_redundant(sentence, sentences):
+                continue
+            sentence_numbers = set(re.findall(r"\b\d+(?:[.,]\d+)?%?\b", sentence))
+            novel_tokens = sentence_tokens - combined_tokens
+            adds_number = bool(sentence_numbers - combined_numbers)
+            if not adds_number and len(novel_tokens) < 3:
+                continue
+            if len(" ".join(sentences + [sentence]).split()) > max_words:
+                continue
+            sentences.append(sentence)
+            combined_tokens.update(sentence_tokens)
+            combined_numbers.update(sentence_numbers)
+
+    return " ".join(sentences)
+
+
+def deduplicate_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, object]]:
+    """Merge same-topic coverage into one consolidated newsletter story.
+
+    Exact URLs, strong headline matches, and same-event topic matches are
+    grouped across the complete issue. The best grounded version becomes the
+    visible story; complementary facts and every source URL are retained.
     """
     groups: List[Dict[str, object]] = []
 
@@ -657,7 +847,10 @@ def deduplicate_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, 
             if story_url and story_url in group["urls"]:
                 match = group
                 break
-            if _titles_represent_same_story(story_title, str(group["story"].get("title", "") or "")):
+            if any(
+                _stories_represent_same_topic(story, grouped_story)
+                for grouped_story in group["stories"]
+            ):
                 match = group
                 break
 
@@ -665,7 +858,7 @@ def deduplicate_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, 
             references = _source_references(story)
             groups.append(
                 {
-                    "story": story,
+                    "stories": [story],
                     "urls": {story_url} if story_url else set(),
                     "sources": references,
                     "story_ids": [str(story.get("story_id", "") or "")],
@@ -681,20 +874,23 @@ def deduplicate_stories(results: Iterable[Dict[str, object]]) -> List[Dict[str, 
                 match["sources"].append(reference)
                 existing_source_urls.add(reference["url"])
         match["story_ids"].append(str(story.get("story_id", "") or ""))
-
-        current = match["story"]
-        if _story_preference(story) > _story_preference(current):
-            earliest_index = min(int(current.get("_index", index)), int(story.get("_index", index)))
-            story["_index"] = earliest_index
-            match["story"] = story
+        match["stories"].append(story)
 
     deduplicated = []
     for group in groups:
-        story = group["story"].copy()
+        grouped_stories = group["stories"]
+        primary = max(grouped_stories, key=_story_preference)
+        story = primary.copy()
+        story["_index"] = min(int(item.get("_index", 0)) for item in grouped_stories)
+        story["summary"] = _consolidate_story_summaries(primary, grouped_stories)
         story["related_sources"] = group["sources"]
         duplicate_ids = [story_id for story_id in group["story_ids"] if story_id and story_id != str(story.get("story_id", ""))]
         if duplicate_ids:
             story["duplicate_story_ids"] = duplicate_ids
+            story["consolidated_story_ids"] = [
+                story_id for story_id in group["story_ids"] if story_id
+            ]
+            story["consolidated_source_count"] = len(group["sources"])
         deduplicated.append(story)
     return sorted(deduplicated, key=lambda item: int(item.get("_index", 0)))
 

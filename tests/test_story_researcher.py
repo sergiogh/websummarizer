@@ -2,6 +2,7 @@ import unittest
 from datetime import datetime
 
 from story_researcher import (
+    build_alternate_source_prompt,
     build_research_prompt,
     clamp_research_window,
     extract_response_text,
@@ -9,6 +10,7 @@ from story_researcher import (
     normalize_research_candidates,
     parse_candidate_date,
     parse_research_response,
+    research_alternate_story_sources,
     research_quantum_stories,
     title_signature,
 )
@@ -122,6 +124,46 @@ class StoryResearcherTests(unittest.TestCase):
         self.assertIn("MAX_CANDIDATES: 12", prompt)
         self.assertIn("Already covered | https://example.com/covered", prompt)
         self.assertIn("at most seven calendar days", prompt)
+        self.assertIn("confirm that the dated article", prompt)
+        self.assertIn("inaccessible sources", prompt)
+
+    def test_alternate_source_prompt_requires_exact_accessible_event_coverage(self):
+        prompt = build_alternate_source_prompt(
+            "Photon Queue receives a grant for New Mexico operations",
+            "https://blocked.example.com/photon-queue",
+            datetime(2026, 7, 14),
+            datetime(2026, 7, 20),
+            limit=3,
+        )
+
+        self.assertIn("exact same news event", prompt)
+        self.assertIn("ORIGINAL_URL: https://blocked.example.com/photon-queue", prompt)
+        self.assertIn("DATE_WINDOW_START: 2026-07-14", prompt)
+        self.assertIn("MAX_CANDIDATES: 3", prompt)
+        self.assertIn("Exclude the original URL", prompt)
+
+    def test_alternate_source_provider_receives_story_and_date_window(self):
+        class RecordingProvider:
+            def __init__(self):
+                self.request = None
+
+            def search(self, title, original_url, start_date, end_date, limit):
+                self.request = (title, original_url, start_date, end_date, limit)
+                return [{"url": "https://example.com/alternate"}]
+
+        provider = RecordingProvider()
+        candidates = research_alternate_story_sources(
+            "Photon Queue grant",
+            "https://blocked.example.com/story",
+            datetime(2026, 7, 14),
+            datetime(2026, 7, 20),
+            limit=2,
+            provider=provider,
+        )
+
+        self.assertEqual(candidates[0]["url"], "https://example.com/alternate")
+        self.assertEqual(provider.request[0], "Photon Queue grant")
+        self.assertEqual(provider.request[4], 2)
 
     def test_research_window_is_capped_to_final_seven_calendar_days(self):
         start, end = clamp_research_window(

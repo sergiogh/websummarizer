@@ -31,7 +31,11 @@ class SummaryGenerator:
     def __init__(self, content: str):
         self.content: str = content
         self.summary: Optional[str] = None
-        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+        self.client = OpenAI(
+            api_key=os.getenv('OPENAI_API_KEY'),
+            timeout=float(os.getenv("OPENAI_REQUEST_TIMEOUT_SECONDS", "45")),
+            max_retries=int(os.getenv("OPENAI_REQUEST_MAX_RETRIES", "0")),
+        )
         self.model = os.getenv('OPENAI_MODEL', 'gpt-4.1')
 
     def generate_summary(self, prompt) -> None:

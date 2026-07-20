@@ -304,6 +304,62 @@ class StoryOrganizerTests(unittest.TestCase):
         self.assertEqual(len(deduplicated), 1)
         self.assertEqual(deduplicated[0]["story_id"], "web-1")
 
+    def test_deduplicate_stories_consolidates_complementary_same_topic_coverage(self):
+        stories = [
+            {
+                "story_id": "sheet-1",
+                "source": "spreadsheet",
+                "title": "QuEra expands its neutral-atom roadmap after new financing",
+                "summary": (
+                    "QuEra secured financing to expand its neutral-atom hardware and "
+                    "fault-tolerant computing roadmap."
+                ),
+                "url": "https://example.com/quera-roadmap",
+                "qa_flags": [],
+            },
+            {
+                "story_id": "web-1",
+                "source": "research",
+                "title": "Nvidia-backed round gives QuEra $230 million for fault-tolerant systems",
+                "summary": (
+                    "The financing totals $230 million and will expand QuEra's neutral-atom "
+                    "hardware program. The company will also grow its Boston facility."
+                ),
+                "url": "https://news.example.org/quera-financing",
+                "qa_flags": [],
+            },
+        ]
+
+        deduplicated = deduplicate_stories(stories)
+
+        self.assertEqual(len(deduplicated), 1)
+        self.assertIn("$230 million", deduplicated[0]["summary"])
+        self.assertIn("Boston facility", deduplicated[0]["summary"])
+        self.assertEqual(deduplicated[0]["consolidated_source_count"], 2)
+        self.assertEqual(len(deduplicated[0]["related_sources"]), 2)
+
+    def test_deduplicate_stories_keeps_different_topics_from_same_company(self):
+        stories = [
+            {
+                "story_id": "ionq-facility",
+                "source": "spreadsheet",
+                "title": "IonQ opens a new Maryland quantum computing facility",
+                "summary": "IonQ opened a Maryland manufacturing facility for trapped-ion systems.",
+                "url": "https://example.com/ionq-facility",
+            },
+            {
+                "story_id": "ionq-contract",
+                "source": "research",
+                "title": "IonQ wins a United States Air Force quantum networking contract",
+                "summary": "The Air Force awarded IonQ a contract for quantum networking research.",
+                "url": "https://example.org/ionq-contract",
+            },
+        ]
+
+        deduplicated = deduplicate_stories(stories)
+
+        self.assertEqual(len(deduplicated), 2)
+
 
 if __name__ == "__main__":
     unittest.main()
