@@ -34,6 +34,7 @@ from blob_archive import (
 )
 from image_extractor import ImageExtractor
 from prompt_loader import get_prompt
+from quantum_bullshit_detector import assess_quantum_claim, render_detector_badge
 from quantum_bits_comic import fetch_latest_quantum_bits_comic, resolve_comic_for_render
 from qa_checks import qa_title_summary, validate_story_grounding
 from scientific_paper_processor import ScientificPaperProcessor
@@ -204,6 +205,7 @@ def render_newsletter_html(
         story_url = escape(story["url"], quote=True)
         story_title = escape(story["title"])
         story_summary = render_summary_html(story["summary"])
+        detector_badge = render_detector_badge(story.get("quantum_bs_detector"))
         story_image = escape(story.get("image_url", ""), quote=True)
         image_html = ""
         if story_image:
@@ -226,14 +228,22 @@ def render_newsletter_html(
         sections.append(
             """
             <article class="story-card">
-              <h3><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></h3>
+              <h3><a href="%s" target="_blank" rel="noopener noreferrer">%s</a>%s</h3>
               %s
               <p>%s</p>
               <p class="source-link"><a href="%s" target="_blank" rel="noopener noreferrer">Read source</a></p>
               %s
             </article>
             """
-            % (story_url, story_title, image_html, story_summary, story_url, related_html)
+            % (
+                story_url,
+                story_title,
+                detector_badge,
+                image_html,
+                story_summary,
+                story_url,
+                related_html,
+            )
         )
 
     comic_section = render_comic_section(comic)
@@ -978,6 +988,13 @@ def process_story(
             dict.fromkeys(qa_result.get("flags", []) + summary_style["flags"])
         )
 
+    detector_assessment = assess_quantum_claim(
+        qa_result["title_fixed"],
+        qa_result["summary_fixed"],
+        content_bundle["clean"],
+        is_paper=bool(content_bundle["is_paper"] or is_paper),
+    )
+
     article_image = ""
     try:
         image_extractor = ImageExtractor(resolved_url)
@@ -1003,6 +1020,7 @@ def process_story(
         "source_metadata": content_bundle.get("metadata", {}),
         "summary_evidence": summary_result.get("evidence", []),
         "summary_style": summary_style,
+        "quantum_bs_detector": detector_assessment,
         "grounding": grounding_result,
         "status": "parsed",
         "source_attempts": source_attempts,

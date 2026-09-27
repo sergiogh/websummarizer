@@ -14,6 +14,7 @@ import html
 
 from artifact_store import ArtifactStore
 from prompt_loader import get_prompt
+from quantum_bullshit_detector import assess_quantum_claim, render_detector_badge
 from qa_checks import (
     qa_title_summary,
     validate_aggregate_grounding,
@@ -299,8 +300,9 @@ def render_articles(results):
         article_url = _escape(result.get('url', ''))
         article_title = _escape(result.get('title', ''))
         article_summary = render_summary_html(result.get('summary', ''))
+        detector_badge = render_detector_badge(result.get('quantum_bs_detector'))
         sections.append(
-            f"<div><h3><a href='{article_url}'>{article_title}</a></h3>"
+            f"<div><h3><a href='{article_url}'>{article_title}</a>{detector_badge}</h3>"
             f"<p>{article_summary}</p>"
             f"<p><a href='{article_url}'>{article_url}</a></p></div>"
         )
@@ -699,6 +701,19 @@ def run_generation(selected_stories, source="api"):
         story["title"] = qa_result["title_fixed"]
         summary = qa_result["summary_fixed"]
 
+        detector_assessment = assess_quantum_claim(
+            story["title"],
+            summary,
+            content_bundle["clean"],
+            is_paper=bool(content_bundle["is_paper"] or is_paper),
+        )
+        artifact_store.save_json(
+            run_id,
+            story_id,
+            "quantum_bs_detector",
+            detector_assessment or {"eligible": False},
+        )
+
         why_log = extract_key_facts(content_bundle["clean"])
         artifact_store.save_json(
             run_id,
@@ -725,6 +740,7 @@ def run_generation(selected_stories, source="api"):
             'source_metadata': content_bundle.get("metadata", {}),
             'summary_evidence': summary_result.get("evidence", []),
             'summary_style': summary_style,
+            'quantum_bs_detector': detector_assessment,
             'grounding': grounding_result
         })
 
